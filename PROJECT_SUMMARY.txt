@@ -1,0 +1,764 @@
+================================================================================
+MIWESU GAME FARM - COMPREHENSIVE PROJECT SUMMARY
+================================================================================
+
+Generated: January 27, 2025
+Project: MIWESU GAME FARM Website
+Technology Stack: Next.js 14.2.5, React 18.3.1, TypeScript 5.5.4, Tailwind CSS 3.4.7
+
+================================================================================
+1. PROJECT OVERVIEW
+================================================================================
+
+MIWESU GAME FARM is a luxury private residence collection website located in the
+Makoppa district, Thabazimbi, Limpopo, South Africa. The website showcases an
+exclusive game farm offering luxury accommodations, ethical hunting experiences,
+and conservation activities in the Arid Sweet Bushveld biome.
+
+The website is built with Next.js 14 App Router, utilizing React Server Components
+for optimal performance and SEO. The design philosophy emphasizes luxury, elegance,
+and the natural beauty of the African bushveld.
+
+================================================================================
+2. TECHNOLOGY STACK
+================================================================================
+
+Core Framework:
+- Next.js 14.2.5 (App Router)
+- React 18.3.1
+- TypeScript 5.5.4
+- Node.js (Latest LTS)
+
+Styling & UI:
+- Tailwind CSS 3.4.7
+- Custom CSS utilities (globals.css)
+- Responsive design (mobile-first approach)
+
+Icons & Assets:
+- Lucide React 0.427.0 (Icon library)
+- Next.js Image Optimization
+- Custom image assets in /public/images/
+
+Build Tools:
+- PostCSS 8.4.40
+- Autoprefixer 10.4.19
+- TypeScript Compiler
+
+================================================================================
+3. PROJECT STRUCTURE
+================================================================================
+
+/app/
+  ├── layout.tsx              # Root layout with metadata, fonts, global config
+  ├── page.tsx                # Homepage
+  ├── globals.css             # Global styles, utilities, animations
+  ├── sitemap.ts              # Dynamic sitemap generation
+  ├── robots.ts               # Robots.txt generation
+  │
+  ├── about/
+  │   ├── layout.tsx          # About page metadata
+  │   └── page.tsx            # About page content
+  │
+  ├── activities/
+  │   ├── layout.tsx          # Activities page metadata
+  │   └── page.tsx            # Activities page content
+  │
+  ├── conservation/
+  │   ├── layout.tsx          # Conservation page metadata
+  │   └── page.tsx            # Conservation page content
+  │
+  ├── contact/
+  │   ├── layout.tsx          # Contact page metadata
+  │   └── page.tsx            # Contact page with form
+  │
+  ├── faq/
+  │   ├── layout.tsx          # FAQ page metadata
+  │   └── page.tsx            # FAQ page with accordion
+  │
+  ├── gallery/
+  │   ├── layout.tsx          # Gallery page metadata
+  │   └── page.tsx            # Gallery page with lightbox
+  │
+  ├── rates/
+  │   ├── layout.tsx          # Rates page metadata
+  │   └── page.tsx            # Rates and pricing page
+  │
+  ├── residences/
+  │   ├── layout.tsx          # Residences page metadata
+  │   └── page.tsx            # Residences page content
+  │
+  └── wildlife/
+      ├── layout.tsx          # Wildlife page metadata
+      └── page.tsx            # Wildlife and species page
+
+/components/
+  ├── Layout.tsx              # Main layout wrapper (Navigation + Footer)
+  ├── Navigation.tsx          # Fixed navigation with mobile menu
+  ├── Footer.tsx              # Site footer with links and contact info
+  ├── StructuredData.tsx      # JSON-LD schema components
+  └── VettingModal.tsx        # Access request modal
+
+/lib/
+  └── seo.ts                  # SEO helper functions (canonical URLs, OG tags)
+
+/public/
+  └── images/                 # Image assets (69 JPG files)
+
+================================================================================
+4. PAGES & ROUTES
+================================================================================
+
+Total Pages: 10 main pages + 2 system routes (sitemap.xml, robots.txt)
+
+1. HOME PAGE (/)
+   - Hero section with full-screen background image
+   - The Estate / Origins section
+   - Private Residences showcase
+   - Conservation Harvest / Species section
+   - Lifestyle / Observer section
+   - Legacy / Impact section
+   - Features: Scroll reveal animations, gradient text effects
+
+2. ABOUT PAGE (/about)
+   - Company story and history
+   - Geological background (Makoppa Dome, Penge Formation)
+   - Sweetveld advantage explanation
+   - Family hunting experience
+   - Trophy quality showcase
+   - Mission and conservation philosophy
+   - Stats grid (Established 1984, Sweetveld, Makoppa, Malaria-Free)
+
+3. RESIDENCES PAGE (/residences)
+   - The Homestead (10-sleeper)
+   - The Stone Villa (4-sleeper)
+   - Detailed residence information
+   - Amenities and facilities grid
+   - Daily housekeeping information
+   - Location and access details
+   - Image galleries for each residence
+
+4. ACTIVITIES PAGE (/activities)
+   - Conservation Harvest
+   - Photographic Safaris
+   - Celestial Safaris (Astronomy)
+   - Mobile Wellness
+   - Vita-Darting (Green Hunt)
+   - Wildlife Viewing
+   - Birding section
+   - 4x4 Trails
+   - Walking Safaris
+   - Custom experiences CTA
+
+5. WILDLIFE PAGE (/wildlife)
+   - Species showcase (Greater Kudu, Blue Wildebeest, Impala, Gemsbok, Warthog)
+   - Detailed species information
+   - Featured Greater Kudu section
+   - Species gallery
+   - Specialist species section
+   - Predators section (Leopard, Brown Hyena)
+   - Ecological management information
+   - Sweetveld advantage explanation
+
+6. CONSERVATION PAGE (/conservation)
+   - "If It Pays, It Stays" philosophy
+   - Economic sustainability explanation
+   - Guardian's Pledge
+   - Impact stats (100% Meat Donated, 24/7 Anti-Poaching, 300 Families Fed)
+   - Anti-Poaching Units section
+   - Community support section
+   - Habitat restoration
+   - Ecological research
+   - Conservation programs grid
+
+7. GALLERY PAGE (/gallery)
+   - Filterable image gallery (All, Landscape, Wildlife, Accommodation)
+   - Lightbox modal for full-size viewing
+   - Featured collections
+   - Image categories with descriptions
+
+8. RATES PAGE (/rates)
+   - Accommodation rates (The Homestead, The Stone Villa)
+   - Activity rates
+   - Detailed pricing sections
+   - Trophy fees information
+   - Investment Guide CTA
+   - Custom packages information
+
+9. FAQ PAGE (/faq)
+   - Expandable FAQ accordion (10 questions)
+   - Location & Access information
+   - Vetting process explanation
+   - What's included section
+   - Best time to visit (seasonal information)
+   - Contact CTA
+
+10. CONTACT PAGE (/contact)
+    - Contact form with validation
+    - Contact information (address, email, phone)
+    - Location details with GPS coordinates
+    - Google Maps embed
+    - Directions from Thabazimbi
+    - Important notes section
+    - Additional information cards
+
+================================================================================
+5. COMPONENTS DETAILED
+================================================================================
+
+NAVIGATION COMPONENT (components/Navigation.tsx)
+- Fixed position navigation bar
+- Transparent on scroll, solid on scroll down
+- Left: Menu trigger with "Concierge" label
+- Center: Logo (MIWESU) with tagline
+- Right: "Private Access" button (desktop only)
+- Full-screen mobile menu overlay
+- Smooth transitions and animations
+- Scroll detection for background change
+- Mobile-responsive with hamburger menu
+
+FOOTER COMPONENT (components/Footer.tsx)
+- 5-column grid layout (responsive)
+- Brand section with logo and description
+- Navigation links (Residence, Experiences, Concierge)
+- Contact information with icons
+- Social media links (Instagram, Facebook)
+- Copyright notice
+- Responsive grid (2 cols mobile, 3 cols tablet, 5 cols desktop)
+
+LAYOUT COMPONENT (components/Layout.tsx)
+- Wrapper component for all pages
+- Includes Navigation, VettingModal, and Footer
+- Client component (uses 'use client' for interactivity)
+- Children prop for page content
+
+STRUCTURED DATA COMPONENT (components/StructuredData.tsx)
+- OrganizationSchema: Organization JSON-LD
+- LocalBusinessSchema: LodgingBusiness JSON-LD
+- Server-side rendered for SEO
+- Injected into homepage
+
+VETTING MODAL COMPONENT (components/VettingModal.tsx)
+- Access request modal
+- Form for vetting process
+- Hidden by default, triggered by buttons
+- Overlay with backdrop
+
+================================================================================
+6. DESIGN SYSTEM & STYLING
+================================================================================
+
+COLOR PALETTE
+
+Gold Colors (Primary Accent):
+- gold-300: #E5C687 (Pale Gold)
+- gold-400: #D4AF37 (Standard Gold)
+- gold-500: #C5A059 (Rich Dubai Gold - Primary)
+- gold-600: #997B3D (Dark Antique Gold)
+
+Onyx Colors (Dark/Luxury):
+- onyx: #050505 (True Black - Deep Luxury)
+- onyx-light: #121212 (Slightly lighter for cards)
+
+Marble Colors (Light Backgrounds):
+- marble: #FAFAFA (Ultra White)
+- marble-dark: #F4F4F4 (Off White)
+
+Text Colors:
+- Primary: #111111 (Dark gray on light backgrounds)
+- Secondary: Gray scale (gray-300, gray-400, gray-500, gray-600)
+- White: #FFFFFF (on dark backgrounds)
+
+TYPOGRAPHY
+
+Primary Font (Headings):
+- Font: Cinzel (Google Fonts)
+- Weights: 400, 500, 600, 700, 800, 900
+- Usage: All headings (h1, h2, h3), brand name, luxury text
+- CSS Variable: --font-cinzel
+- Style: Serif, elegant, luxury
+
+Secondary Font (Body):
+- Font: Montserrat (Google Fonts)
+- Weights: 200, 300, 400, 500, 600
+- Usage: Body text, descriptions, UI elements
+- CSS Variable: --font-montserrat
+- Style: Sans-serif, modern, readable
+
+Font Loading:
+- Optimized via next/font
+- Local hosting (no external requests)
+- Automatic size-adjust for CLS prevention
+- Display: swap (default)
+
+Typography Scale:
+- Hero Titles: text-4xl to text-9xl (responsive)
+- Section Titles: text-3xl to text-7xl
+- Body Text: text-base to text-lg
+- Small Text: text-xs to text-sm
+- Tracking: Wide letter spacing for luxury feel
+
+DESIGN ELEMENTS
+
+Gradients:
+- Gold Gradient: Linear gradient (45deg) from #C5A059 to #E5C687
+- Luxury Gradient: Linear gradient (135deg) from #050505 to #1a1a1a
+- Text Gradient Gold: Animated shine effect on gold text
+
+Shadows:
+- Luxury Shadow: 0 20px 50px -12px rgba(0, 0, 0, 0.25)
+- Gold Glow: 0 0 20px rgba(197, 160, 89, 0.3)
+
+Glassmorphism:
+- Glass Panel: rgba(255, 255, 255, 0.8) with blur(12px)
+- Glass Panel Dark: rgba(17, 17, 17, 0.7) with blur(12px)
+- Used for overlays and cards
+
+Animations:
+- Reveal Animation: Fade in + slide up on scroll
+- Shine Animation: Gold gradient text animation (5s infinite)
+- Menu Overlay: Slide in from left with cubic-bezier easing
+- Hover Effects: Scale, color transitions, border highlights
+
+Spacing System:
+- Consistent padding: p-4 (mobile) to p-12 (desktop)
+- Section spacing: py-16 to py-32
+- Gap spacing: gap-4 to gap-16 (responsive)
+
+Borders:
+- Subtle borders: border-white/5, border-white/10
+- Gold accents: border-gold-500
+- Luxury borders: border-gray-100
+
+================================================================================
+7. RESPONSIVE DESIGN
+================================================================================
+
+Breakpoints (Tailwind Default):
+- sm: 640px (Small tablets, large phones)
+- md: 768px (Tablets)
+- lg: 1024px (Small laptops)
+- xl: 1280px (Desktops)
+- 2xl: 1536px (Large desktops)
+
+Mobile-First Approach:
+- Base styles for mobile
+- Progressive enhancement for larger screens
+- Flexible grid layouts (1 col mobile, 2-3 cols desktop)
+- Responsive typography (smaller on mobile, larger on desktop)
+- Touch-friendly button sizes
+- Optimized image sizes per breakpoint
+
+Key Responsive Features:
+- Navigation: Hamburger menu on mobile, full nav on desktop
+- Hero sections: Reduced height on mobile (50vh vs 60vh)
+- Grid layouts: Stack on mobile, multi-column on desktop
+- Text sizing: Scales from mobile to desktop
+- Image containers: Responsive heights
+- Padding: Reduced on mobile, generous on desktop
+- Footer: 2-column mobile, 5-column desktop
+
+Mobile Optimizations:
+- Removed grayscale image overlays (now full color)
+- Fixed text overlapping issues
+- Improved spacing and padding
+- Better image container sizing
+- Optimized touch targets
+- Smooth scrolling
+- No horizontal overflow
+
+================================================================================
+8. SEO IMPLEMENTATION
+================================================================================
+
+METADATA ARCHITECTURE
+
+Root Layout (app/layout.tsx):
+- metadataBase: Set to process.env.NEXT_PUBLIC_BASE_URL (https://www.miwesu.com)
+- Title Template: '%s | MIWESU GAME FARM'
+- Default Title: 'MIWESU GAME FARM | The Royal Residence'
+- Description: Comprehensive site description with keywords
+- Keywords: 20+ relevant keywords
+- Authors, Creator, Publisher: MIWESU GAME FARM
+- Format Detection: Disabled for email, address, telephone
+- Open Graph: Complete OG tags with images, locale, type
+- Twitter Cards: Summary large image cards
+- Robots: index: true, follow: true with GoogleBot settings
+- Canonical URL: Set for homepage
+- Icons: Favicon, icon-32x32, icon-192x192, apple-icon
+- Verification: Placeholder for Google Search Console
+
+Page-Level Metadata:
+All 10 pages have dedicated layout.tsx files with:
+- Unique titles (using template)
+- Unique descriptions (150-160 characters)
+- Relevant keywords per page
+- Open Graph tags
+- Twitter Card metadata
+- Canonical URLs
+- Consistent structure
+
+TECHNICAL SEO ASSETS
+
+Sitemap (app/sitemap.ts):
+- Dynamic generation via MetadataRoute.Sitemap
+- Includes all 10 main pages
+- lastModified: Current date
+- changeFrequency: Weekly (homepage), Monthly (other pages)
+- priority: 1.0 (homepage), 0.8 (other pages)
+- Accessible at: /sitemap.xml
+
+Robots.txt (app/robots.ts):
+- Environment-aware (blocks non-production)
+- Production: Allows all, disallows /api/, /admin/, /_next/, /private/
+- Non-production: Blocks all crawlers
+- Sitemap reference included
+- Accessible at: /robots.txt
+
+STRUCTURED DATA (JSON-LD)
+
+Organization Schema:
+- Type: Organization
+- Name: MIWESU GAME FARM
+- Address: D1432 Road, Makoppa District, Thabazimbi, Limpopo 0380
+- Contact: Phone, Email
+- Logo, Description, URL
+
+LocalBusiness Schema:
+- Type: LodgingBusiness
+- Complete business information
+- GeoCoordinates: -24.4523956, 27.0450853
+- Opening hours: 24/7
+- Amenity features: 11 amenities listed
+- Price range: $$$
+
+PERFORMANCE OPTIMIZATIONS
+
+Image Optimization:
+- All images use next/image component
+- Hero images use priority prop for LCP
+- Automatic format conversion (WebP, AVIF)
+- Lazy loading for below-fold images
+- Proper sizing and aspect ratios
+- Descriptive alt text on all images
+
+Font Optimization:
+- next/font for Google Fonts
+- Local hosting (no external requests)
+- Automatic size-adjust for CLS prevention
+- Font display: swap
+
+Server Components:
+- Root layout is Server Component
+- Maximum server-side rendering
+- Client components pushed to leaf nodes
+- Reduced JavaScript bundle size
+
+Core Web Vitals:
+- LCP: Optimized with priority images
+- CLS: Prevented with proper image sizing
+- INP: Minimized with Server Components
+- TBT: Reduced with minimal client JS
+
+SECURITY HEADERS
+
+Configured in next.config.js:
+- X-Content-Type-Options: nosniff
+- X-Frame-Options: DENY
+- X-XSS-Protection: 1; mode=block
+- Referrer-Policy: strict-origin-when-cross-origin
+- X-Robots-Tag: noindex, nofollow (non-production only)
+
+================================================================================
+9. CONTENT & COPY
+================================================================================
+
+Brand Voice:
+- Luxury, exclusive, sophisticated
+- Conservation-focused
+- Authentic African bushveld experience
+- Family-friendly
+- Ethical and sustainable
+
+Key Messaging:
+- "Luxury is silence"
+- "If It Pays, It Stays"
+- "The Royal Residence"
+- "Iron Eden"
+- "2.5 Billion Years in the making"
+- "The Makoppa Sanctuary"
+
+Content Themes:
+- Geological heritage (Makoppa Dome, Penge Formation)
+- Sweetveld advantage (nutrient-rich grasses)
+- Conservation through utilization
+- Family hunting destination
+- Malaria-free zone
+- Ethical practices
+- Community support
+
+Location Details:
+- D1432 Road, Makoppa District
+- Thabazimbi, Limpopo 0380
+- South Africa
+- GPS: -24.4523956, 27.0450853
+- Approximately 40km from Thabazimbi town
+
+Contact Information:
+- Email: guardians@miwesu.com
+- Phone: +27 73 030 9679
+- 24/7 Access
+
+================================================================================
+10. IMAGES & ASSETS
+================================================================================
+
+Image Strategy:
+- High-resolution photography
+- Professional wildlife and landscape images
+- Luxury accommodation photography
+- 69 JPG files in /public/images/
+- Optimized via Next.js Image component
+- Responsive sizing
+- Descriptive alt text for accessibility
+
+Key Image Categories:
+- Hero images (homepage, all pages)
+- Species photography (Kudu, Wildebeest, Impala, Gemsbok, Warthog)
+- Residence images (Homestead, Stone Villa)
+- Landscape photography (Makoppa district, granite koppies)
+- Activity images (hunting, safaris, wellness)
+- Conservation images
+
+Image Specifications:
+- Format: JPEG
+- Optimization: Automatic via Next.js
+- Lazy loading: Enabled (except hero images)
+- Priority: Hero images only
+- Alt text: Descriptive and SEO-friendly
+
+================================================================================
+11. INTERACTIVE FEATURES
+================================================================================
+
+Navigation:
+- Fixed position navigation
+- Scroll detection
+- Mobile hamburger menu
+- Full-screen overlay menu
+- Smooth transitions
+
+Forms:
+- Contact form with validation
+- Vetting modal form
+- Primary Intent dropdown
+- Required field validation
+- Guardian's Pledge checkbox
+
+Modals:
+- Vetting Modal (access request)
+- Gallery Lightbox (image viewer)
+- Full-screen overlays
+
+Animations:
+- Scroll reveal animations
+- Gold gradient text shine
+- Hover effects (scale, color, border)
+- Menu slide transitions
+- Image zoom on hover
+
+Interactive Elements:
+- FAQ accordion (expandable)
+- Gallery filter buttons
+- Image lightbox
+- Smooth scroll navigation
+- Button hover states
+
+================================================================================
+12. ACCESSIBILITY
+================================================================================
+
+Semantic HTML:
+- Proper heading hierarchy (h1, h2, h3)
+- <main> tags for main content
+- <nav> for navigation
+- <footer> for footer
+- ARIA labels where needed
+
+Image Accessibility:
+- Descriptive alt text on all images
+- Meaningful descriptions
+- Context-appropriate alt attributes
+
+Keyboard Navigation:
+- Focus states on interactive elements
+- Tab navigation support
+- Enter/Space key support for buttons
+
+Color Contrast:
+- High contrast text (onyx on marble, white on onyx)
+- Gold accents meet contrast requirements
+- Accessible color combinations
+
+Screen Reader Support:
+- Semantic HTML structure
+- ARIA labels
+- Descriptive link text
+- Form labels
+
+================================================================================
+13. BUILD & DEPLOYMENT
+================================================================================
+
+Build Configuration:
+- Next.js 14.2.5
+- TypeScript strict mode
+- React Strict Mode enabled
+- Trailing slash: false
+- Image domains configured
+
+Build Output:
+- 15 static routes generated
+- Sitemap.xml generated
+- Robots.txt generated
+- Optimized JavaScript bundles
+- Static page generation (SSG)
+
+Environment Variables:
+- NEXT_PUBLIC_BASE_URL: Site URL (https://www.miwesu.com)
+- NODE_ENV: Environment detection
+- VERCEL_ENV: Vercel environment detection
+
+Deployment Ready:
+- Production build successful
+- Zero build errors
+- Zero linting errors
+- Type checking passed
+- All routes optimized
+
+================================================================================
+14. SEO CHECKLIST STATUS
+================================================================================
+
+✅ FOUNDATION & CONFIGURATION
+- Next.js 14.2.5+ confirmed
+- React Strict Mode enabled
+- Trailing slash configured
+
+✅ METADATA ARCHITECTURE
+- metadataBase defined
+- Title template configured
+- Default OG image defined
+- Robots allow indexing
+- All pages have unique metadata
+- Canonical URLs set
+
+✅ TECHNICAL SEO ASSETS
+- Sitemap.ts exists and generates valid URLs
+- Robots.ts exists and points to sitemap
+- Favicon metadata configured
+
+✅ PERFORMANCE & CORE WEB VITALS
+- LCP optimization (priority images)
+- Font loading (next/font)
+- Server Components (no 'use client' in root)
+
+✅ CONTENT & STRUCTURE
+- Semantic HTML (<main> tags)
+- Image alt text (all images)
+- Structured Data (JSON-LD)
+
+✅ ADVANCED FEATURES
+- Open Graph tags (all pages)
+- Twitter Cards (all pages)
+- Security headers configured
+
+✅ SIGN-OFF QUALITY GATE
+- Build passes with 0 errors
+- Type checking passed
+- Linting passed
+- All routes generated successfully
+
+================================================================================
+15. RECENT UPDATES & FIXES
+================================================================================
+
+Mobile Responsiveness (January 27, 2025):
+- Fixed text overlapping issues
+- Improved spacing and padding on mobile
+- Fixed image cutting off problems
+- Enhanced responsive grid layouts
+- Optimized hero section mobile display
+- Updated Navigation and Footer for mobile
+- Removed grayscale image overlays (now full color)
+
+SEO Implementation (January 27, 2025):
+- Complete metadata architecture
+- Structured data implementation
+- Sitemap and robots.txt generation
+- Performance optimizations
+- Security headers configuration
+
+================================================================================
+16. FUTURE ENHANCEMENTS
+================================================================================
+
+Recommended Additions:
+- Google Search Console verification code
+- Lighthouse CI/CD integration
+- Additional structured data schemas (BreadcrumbList, Article)
+- Internationalization (i18n) if needed
+- Blog/news section for content marketing
+- Online booking system integration
+- Testimonials/reviews section
+- Virtual tour integration
+- Newsletter signup
+- Social media feed integration
+
+================================================================================
+17. FILE COUNT SUMMARY
+================================================================================
+
+Pages: 10 main pages + 2 system routes = 12 total routes
+Components: 5 reusable components
+Layout Files: 10 page layouts + 1 root layout = 11 layouts
+Utility Files: 1 SEO helper file
+Image Assets: 69 JPG files
+Configuration Files: 5 (next.config.js, tailwind.config.js, tsconfig.json, package.json, postcss.config.js)
+Documentation Files: Multiple markdown files for SEO, image prompts, etc.
+
+================================================================================
+18. KEY FEATURES HIGHLIGHT
+================================================================================
+
+✨ Luxury Design System
+✨ Fully Responsive (Mobile-First)
+✨ SEO Optimized (100% Checklist Complete)
+✨ Performance Optimized (Core Web Vitals)
+✨ Accessibility Compliant
+✨ Type-Safe (TypeScript)
+✨ Server-Side Rendered (RSC)
+✨ Image Optimized (Next.js Image)
+✨ Structured Data (JSON-LD)
+✨ Security Headers Configured
+✨ Dynamic Sitemap Generation
+✨ Environment-Aware Robots.txt
+✨ Scroll Animations
+✨ Interactive Gallery
+✨ Contact Forms
+✨ Mobile Menu System
+
+================================================================================
+END OF PROJECT SUMMARY
+================================================================================
+
+This document provides a comprehensive overview of the MIWESU GAME FARM website
+project. All technical details, design specifications, and implementation status
+are documented above.
+
+For questions or updates, refer to:
+- SEO_AUDIT.md for SEO status
+- README.md for setup instructions
+- Individual component files for implementation details
+
+Last Updated: January 27, 2025
+

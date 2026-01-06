@@ -28,7 +28,7 @@ export default function ConservationPage() {
     <Layout>
       <main className="min-h-screen bg-marble">
         {/* Hero Section */}
-        <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
+        <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/conservation-hero.jpg"
@@ -39,11 +39,11 @@ export default function ConservationPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
-          <div className="relative z-20 text-center px-4">
-            <span className="text-gold-400 text-xs md:text-sm tracking-[0.5em] uppercase font-bold mb-6 block">
+          <div className="relative z-20 text-center px-4 sm:px-6">
+            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
               Our Legacy
             </span>
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-6 leading-none">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
               If It Pays,<br />
               <span className="text-gradient-gold">It Stays.</span>
             </h1>
@@ -56,26 +56,26 @@ export default function ConservationPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-onyx via-onyx/90 to-transparent"></div>
 
           <div className="max-w-7xl mx-auto px-6 relative z-10">
-            <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center mb-12 sm:mb-20">
               <div className="reveal">
-                <div className="inline-block bg-gold-500 text-onyx px-4 py-1 text-[10px] font-bold uppercase tracking-widest mb-6">
+                <div className="inline-block bg-gold-500 text-onyx px-4 py-1 text-[10px] font-bold uppercase tracking-widest mb-4 sm:mb-6">
                   Conservation First
                 </div>
-                <h2 className="font-serif text-5xl md:text-7xl mb-8 text-white">
+                <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-7xl mb-6 sm:mb-8 text-white">
                   Economic Sustainability
                 </h2>
-                <p className="text-gray-400 text-lg leading-loose mb-10 font-light">
+                <p className="text-gray-400 text-base sm:text-lg leading-loose mb-6 sm:mb-10 font-light">
                   The reality of African conservation is economic. Your visit directly funds our Anti-Poaching Units and habitat restoration. The meat from your harvest feeds 300 local families monthly.
                 </p>
-                <div className="grid grid-cols-2 gap-12">
+                <div className="grid grid-cols-2 gap-6 sm:gap-12">
                   <div>
-                    <span className="block text-6xl font-serif text-gold-500">100%</span>
+                    <span className="block text-4xl sm:text-6xl font-serif text-gold-500">100%</span>
                     <span className="uppercase text-[10px] tracking-widest text-white mt-2 block">
                       Meat Donated
                     </span>
                   </div>
                   <div>
-                    <span className="block text-6xl font-serif text-gold-500">24/7</span>
+                    <span className="block text-4xl sm:text-6xl font-serif text-gold-500">24/7</span>
                     <span className="uppercase text-[10px] tracking-widest text-white mt-2 block">
                       Anti-Poaching
                     </span>
@@ -83,8 +83,8 @@ export default function ConservationPage() {
                 </div>
               </div>
 
-              <div className="relative reveal delay-100">
-                <div className="glass-panel-dark p-12 border border-gold-500/30">
+              <div className="relative reveal delay-100 w-full md:w-auto">
+                <div className="glass-panel-dark p-8 sm:p-12 border border-gold-500/30">
                   <Quote className="w-8 h-8 text-gold-500 mb-6" />
                   <p className="text-white font-serif text-2xl mb-8 leading-normal">
                     "I acknowledge that Miwesu is a sanctuary of silence. I respect the ethics of the fair chase and the peace of the Iron Mountain."
@@ -97,31 +97,31 @@ export default function ConservationPage() {
             </div>
 
             {/* Impact Stats */}
-            <div className="grid md:grid-cols-4 gap-8 mb-20">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-12 sm:mb-20">
               <div className="text-center reveal">
-                <Shield className="w-12 h-12 text-gold-500 mx-auto mb-4" />
-                <span className="block font-serif text-4xl text-white mb-2">24/7</span>
+                <Shield className="w-10 h-10 sm:w-12 sm:h-12 text-gold-500 mx-auto mb-3 sm:mb-4" />
+                <span className="block font-serif text-3xl sm:text-4xl text-white mb-2">24/7</span>
                 <span className="text-[10px] uppercase tracking-widest text-gray-400">
                   Protection
                 </span>
               </div>
               <div className="text-center reveal delay-100">
-                <Users className="w-12 h-12 text-gold-500 mx-auto mb-4" />
-                <span className="block font-serif text-4xl text-white mb-2">300</span>
+                <Users className="w-10 h-10 sm:w-12 sm:h-12 text-gold-500 mx-auto mb-3 sm:mb-4" />
+                <span className="block font-serif text-3xl sm:text-4xl text-white mb-2">300</span>
                 <span className="text-[10px] uppercase tracking-widest text-gray-400">
                   Families Fed
                 </span>
               </div>
               <div className="text-center reveal delay-200">
-                <Heart className="w-12 h-12 text-gold-500 mx-auto mb-4" />
-                <span className="block font-serif text-4xl text-white mb-2">100%</span>
+                <Heart className="w-10 h-10 sm:w-12 sm:h-12 text-gold-500 mx-auto mb-3 sm:mb-4" />
+                <span className="block font-serif text-3xl sm:text-4xl text-white mb-2">100%</span>
                 <span className="text-[10px] uppercase tracking-widest text-gray-400">
                   Meat Donated
                 </span>
               </div>
               <div className="text-center reveal delay-300">
-                <Leaf className="w-12 h-12 text-gold-500 mx-auto mb-4" />
-                <span className="block font-serif text-4xl text-white mb-2">Ongoing</span>
+                <Leaf className="w-10 h-10 sm:w-12 sm:h-12 text-gold-500 mx-auto mb-3 sm:mb-4" />
+                <span className="block font-serif text-3xl sm:text-4xl text-white mb-2">Ongoing</span>
                 <span className="text-[10px] uppercase tracking-widest text-gray-400">
                   Restoration
                 </span>

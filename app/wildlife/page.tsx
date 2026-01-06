@@ -81,7 +81,7 @@ export default function WildlifePage() {
     <Layout>
       <main className="min-h-screen bg-marble">
         {/* Hero Section */}
-        <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
+        <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/wildlife-hero.jpg"
@@ -92,11 +92,11 @@ export default function WildlifePage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
-          <div className="relative z-20 text-center px-4">
-            <span className="text-gold-400 text-xs md:text-sm tracking-[0.5em] uppercase font-bold mb-6 block">
+          <div className="relative z-20 text-center px-4 sm:px-6">
+            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
               The Portfolio
             </span>
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-6 leading-none">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
               Conservation <span className="text-gradient-gold">Harvest</span>
             </h1>
           </div>
@@ -117,18 +117,18 @@ export default function WildlifePage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 sm:mb-20">
               {species.map((animal, index) => (
                 <div
                   key={index}
                   className="group relative bg-onyx-light border border-white/5 hover:border-gold-500/50 transition-all duration-500 reveal"
                 >
-                  <div className="h-64 overflow-hidden relative">
+                  <div className="h-56 sm:h-64 overflow-hidden relative">
                     <Image
                       src={animal.image}
                       alt={animal.name}
                       fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                      className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute top-4 right-4">
                       <span className={`${animal.tagColor} text-onyx text-[10px] font-bold px-3 py-1 uppercase tracking-widest ${animal.tagColor.includes('gold') ? 'text-onyx' : 'text-white'}`}>
@@ -136,15 +136,15 @@ export default function WildlifePage() {
                       </span>
                     </div>
                   </div>
-                  <div className="p-8">
-                    <h3 className="font-serif text-2xl text-white mb-1">
+                  <div className="p-6 sm:p-8">
+                    <h3 className="font-serif text-xl sm:text-2xl text-white mb-1">
                       {animal.name}
                     </h3>
-                    <p className="text-gold-500 text-[10px] italic font-serif mb-6">
+                    <p className="text-gold-500 text-[10px] italic font-serif mb-4 sm:mb-6">
                       {animal.scientific}
                     </p>
-                    <div className="space-y-4 border-t border-white/10 pt-6">
-                      <div className="flex justify-between text-xs font-sans text-gray-400">
+                    <div className="space-y-3 sm:space-y-4 border-t border-white/10 pt-4 sm:pt-6">
+                      <div className="flex justify-between text-xs font-sans text-gray-400 flex-wrap gap-1">
                         <span className="uppercase tracking-widest flex items-center">
                           <Target className="w-3 h-3 mr-2" /> Caliber
                         </span>
@@ -172,8 +172,8 @@ export default function WildlifePage() {
             <div className="space-y-20 mt-20">
               {/* Greater Kudu - Featured */}
               <div className="reveal">
-                <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
-                  <div className="relative h-[500px]">
+                <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-8 sm:mb-12">
+                  <div className="relative h-[350px] sm:h-[450px] md:h-[500px]">
                     <Image
                       src="/images/wildlife-kudu-featured.jpg"
                       alt="Greater Kudu bull - The Grey Ghost"
@@ -182,16 +182,16 @@ export default function WildlifePage() {
                     />
                   </div>
                   <div>
-                    <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-4 block">
+                    <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-3 sm:mb-4 block">
                       The Grey Ghost
                     </span>
-                    <h3 className="font-serif text-4xl md:text-5xl text-white mb-6">
+                    <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white mb-4 sm:mb-6">
                       Greater Kudu
                     </h3>
-                    <p className="text-gray-300 text-lg leading-loose mb-6">
+                    <p className="text-gray-300 text-base sm:text-lg leading-loose mb-4 sm:mb-6">
                       The Makoppa area is famous for its heavy-horned Kudu bulls which thrive in the thick Acacia thickets. These magnificent animals are the "Grey Ghost" of the bushveld—elusive, intelligent, and a true test of the hunter's skill.
                     </p>
-                    <p className="text-gray-300 text-lg leading-loose mb-8">
+                    <p className="text-gray-300 text-base sm:text-lg leading-loose mb-6 sm:mb-8">
                       Our Sweetveld sustains Kudu in peak condition year-round, resulting in exceptional trophy quality. The thick mountain thickets provide perfect habitat, and our annual census ensures sustainable management of this iconic species.
                     </p>
                     <div className="grid grid-cols-2 gap-4">
@@ -209,8 +209,8 @@ export default function WildlifePage() {
               </div>
 
               {/* Species Gallery */}
-              <div className="grid md:grid-cols-3 gap-6 mb-20 reveal delay-100">
-                <div className="relative h-[400px]">
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-20 reveal delay-100">
+                <div className="relative h-[300px] sm:h-[400px]">
                   <Image
                     src="/images/wildlife-species-gallery-1.jpg"
                     alt="Blue Wildebeest in Sweetveld"

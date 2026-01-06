@@ -66,7 +66,7 @@ export default function FAQPage() {
     <Layout>
       <main className="min-h-screen bg-marble">
         {/* Hero Section */}
-        <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
+        <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/faq-hero.jpg"
@@ -77,20 +77,20 @@ export default function FAQPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
-          <div className="relative z-20 text-center px-4">
-            <span className="text-gold-400 text-xs md:text-sm tracking-[0.5em] uppercase font-bold mb-6 block">
+          <div className="relative z-20 text-center px-4 sm:px-6">
+            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
               Information
             </span>
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-6 leading-none">
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
               Frequently Asked <span className="text-gradient-gold">Questions</span>
             </h1>
           </div>
         </section>
 
         {/* FAQ Section */}
-        <section className="py-32 bg-marble">
-          <div className="max-w-4xl mx-auto px-6">
-            <div className="space-y-4">
+        <section className="py-16 sm:py-32 bg-marble">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6">
+            <div className="space-y-3 sm:space-y-4">
               {faqs.map((faq, index) => (
                 <div
                   key={index}
@@ -98,9 +98,9 @@ export default function FAQPage() {
                 >
                   <button
                     onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                    className="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors"
+                    className="w-full px-4 sm:px-8 py-4 sm:py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors gap-4"
                   >
-                    <h3 className="font-serif text-xl text-onyx pr-8">
+                    <h3 className="font-serif text-lg sm:text-xl text-onyx pr-4 sm:pr-8">
                       {faq.question}
                     </h3>
                     {openIndex === index ? (
@@ -110,8 +110,8 @@ export default function FAQPage() {
                     )}
                   </button>
                   {openIndex === index && (
-                    <div className="px-8 pb-6">
-                      <p className="font-sans text-gray-600 leading-loose">
+                    <div className="px-4 sm:px-8 pb-4 sm:pb-6">
+                      <p className="font-sans text-gray-600 leading-loose text-sm sm:text-base">
                         {faq.answer}
                       </p>
                     </div>
@@ -121,13 +121,13 @@ export default function FAQPage() {
             </div>
 
             {/* Additional Information Sections */}
-            <div className="mt-20 space-y-16">
+            <div className="mt-12 sm:mt-20 space-y-8 sm:space-y-16">
               {/* Location Information */}
-              <div className="bg-white border border-gray-100 p-10 reveal">
-                <div className="flex items-start gap-4 mb-6">
-                  <MapPin className="w-8 h-8 text-gold-500 mt-1 flex-shrink-0" />
+              <div className="bg-white border border-gray-100 p-6 sm:p-10 reveal">
+                <div className="flex items-start gap-3 sm:gap-4 mb-4 sm:mb-6">
+                  <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-gold-500 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-serif text-2xl text-onyx mb-4">Location & Access</h3>
+                    <h3 className="font-serif text-xl sm:text-2xl text-onyx mb-3 sm:mb-4">Location & Access</h3>
                     <p className="font-sans text-gray-600 leading-loose mb-4">
                       MIWESU GAME FARM is located on D1432 Road, Makoppa District, Thabazimbi, Limpopo 0380, South Africa. Approximately 40 kilometers from Thabazimbi town on a district gravel road.
                     </p>

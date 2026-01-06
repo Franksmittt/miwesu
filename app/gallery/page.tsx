@@ -130,7 +130,7 @@ export default function GalleryPage() {
     <Layout>
       <main className="min-h-screen bg-marble">
         {/* Hero Section */}
-        <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
+        <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/gallery-hero.jpg"
@@ -141,20 +141,20 @@ export default function GalleryPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
-          <div className="relative z-20 text-center px-4">
-            <span className="text-gold-400 text-xs md:text-sm tracking-[0.5em] uppercase font-bold mb-6 block">
+          <div className="relative z-20 text-center px-4 sm:px-6">
+            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
               Visual Journey
             </span>
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-6 leading-none">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
               The <span className="text-gradient-gold">Gallery</span>
             </h1>
           </div>
         </section>
 
         {/* Filter Section */}
-        <section className="py-12 bg-onyx border-b border-white/5">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="flex flex-wrap justify-center gap-4">
+        <section className="py-8 sm:py-12 bg-onyx border-b border-white/5">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+            <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
               {categories.map((category) => (
                 <button
                   key={category}
@@ -181,18 +181,18 @@ export default function GalleryPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-20">
               {filteredImages.map((image, index) => (
                 <div
                   key={index}
-                  className="group relative h-80 overflow-hidden cursor-pointer reveal"
+                  className="group relative h-64 sm:h-80 overflow-hidden cursor-pointer reveal"
                   onClick={() => setSelectedImage(image.src)}
                 >
                   <Image
                     src={image.src}
                     alt={image.title || `Gallery image ${index + 1}`}
                     fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-onyx/90 via-onyx/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
                     <div className="absolute bottom-4 left-4 right-4">
@@ -211,8 +211,8 @@ export default function GalleryPage() {
             <div className="space-y-16 mb-20">
               <div className="reveal">
                 <h3 className="font-serif text-3xl text-white mb-8 text-center">Featured Collections</h3>
-                <div className="grid md:grid-cols-3 gap-8">
-                  <div className="relative h-[400px] group cursor-pointer">
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
+                  <div className="relative h-[300px] sm:h-[400px] group cursor-pointer">
                     <Image
                       src="/images/gallery-wildlife-collection.jpg"
                       alt="Wildlife Collection"

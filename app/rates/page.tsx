@@ -35,7 +35,7 @@ export default function RatesPage() {
     <Layout>
       <main className="min-h-screen bg-marble">
         {/* Hero Section */}
-        <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
+        <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/rates-hero.jpg"
@@ -46,11 +46,11 @@ export default function RatesPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
-          <div className="relative z-20 text-center px-4">
-            <span className="text-gold-400 text-xs md:text-sm tracking-[0.5em] uppercase font-bold mb-6 block">
+          <div className="relative z-20 text-center px-4 sm:px-6">
+            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
               Investment Guide
             </span>
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-6 leading-none">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
               Rates & <span className="text-gradient-gold">Pricing</span>
             </h1>
           </div>
@@ -77,47 +77,47 @@ export default function RatesPage() {
                 <Calendar className="w-8 h-8 text-gold-500 mr-4" />
                 Accommodation Rates
               </h3>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="bg-onyx-light border border-white/5 p-8">
-                  <h4 className="font-serif text-2xl text-white mb-4">The Homestead</h4>
-                  <p className="text-gray-400 mb-6">10-sleeper exclusive use</p>
-                  <div className="space-y-4">
-                    <div className="flex justify-between items-center border-b border-white/10 pb-4">
+              <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
+                <div className="bg-onyx-light border border-white/5 p-6 sm:p-8">
+                  <h4 className="font-serif text-xl sm:text-2xl text-white mb-3 sm:mb-4">The Homestead</h4>
+                  <p className="text-gray-400 mb-4 sm:mb-6 text-sm sm:text-base">10-sleeper exclusive use</p>
+                  <div className="space-y-3 sm:space-y-4">
+                    <div className="flex justify-between items-center border-b border-white/10 pb-3 sm:pb-4 flex-wrap gap-2">
                       <span className="text-gray-400 uppercase text-xs tracking-widest">
                         Per Night
                       </span>
-                      <span className="font-serif text-2xl text-gold-500">
+                      <span className="font-serif text-xl sm:text-2xl text-gold-500">
                         From R 25,000
                       </span>
                     </div>
-                    <div className="flex justify-between items-center border-b border-white/10 pb-4">
+                    <div className="flex justify-between items-center border-b border-white/10 pb-3 sm:pb-4 flex-wrap gap-2">
                       <span className="text-gray-400 uppercase text-xs tracking-widest">
                         Weekly Rate
                       </span>
-                      <span className="font-serif text-2xl text-gold-500">
+                      <span className="font-serif text-xl sm:text-2xl text-gold-500">
                         From R 150,000
                       </span>
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-onyx-light border border-white/5 p-8">
-                  <h4 className="font-serif text-2xl text-white mb-4">The Stone Villa</h4>
-                  <p className="text-gray-400 mb-6">4-sleeper exclusive use</p>
-                  <div className="space-y-4">
-                    <div className="flex justify-between items-center border-b border-white/10 pb-4">
+                <div className="bg-onyx-light border border-white/5 p-6 sm:p-8">
+                  <h4 className="font-serif text-xl sm:text-2xl text-white mb-3 sm:mb-4">The Stone Villa</h4>
+                  <p className="text-gray-400 mb-4 sm:mb-6 text-sm sm:text-base">4-sleeper exclusive use</p>
+                  <div className="space-y-3 sm:space-y-4">
+                    <div className="flex justify-between items-center border-b border-white/10 pb-3 sm:pb-4 flex-wrap gap-2">
                       <span className="text-gray-400 uppercase text-xs tracking-widest">
                         Per Night
                       </span>
-                      <span className="font-serif text-2xl text-gold-500">
+                      <span className="font-serif text-xl sm:text-2xl text-gold-500">
                         From R 12,000
                       </span>
                     </div>
-                    <div className="flex justify-between items-center border-b border-white/10 pb-4">
+                    <div className="flex justify-between items-center border-b border-white/10 pb-3 sm:pb-4 flex-wrap gap-2">
                       <span className="text-gray-400 uppercase text-xs tracking-widest">
                         Weekly Rate
                       </span>
-                      <span className="font-serif text-2xl text-gold-500">
+                      <span className="font-serif text-xl sm:text-2xl text-gold-500">
                         From R 70,000
                       </span>
                     </div>

@@ -28,7 +28,7 @@ export default function AboutPage() {
     <Layout>
       <main className="min-h-screen bg-marble">
         {/* Hero Section */}
-        <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
+        <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/about-hero.jpg"
@@ -39,11 +39,11 @@ export default function AboutPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
-          <div className="relative z-20 text-center px-4">
-            <span className="text-gold-400 text-xs md:text-sm tracking-[0.5em] uppercase font-bold mb-6 block">
+          <div className="relative z-20 text-center px-4 sm:px-6">
+            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
               The Provenance
             </span>
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-6 leading-none">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
               Our <span className="text-gradient-gold">Story</span>
             </h1>
           </div>
@@ -52,27 +52,27 @@ export default function AboutPage() {
         {/* Main Content */}
         <section className="py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-16 items-start mb-20">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-12 sm:mb-20">
               <div className="reveal">
                 <Image
                   src="/images/about-makoppa-dome.jpg"
                   alt="Makoppa Dome - Ancient granite and gneiss formations in the Thabazimbi district"
                   width={800}
                   height={600}
-                  className="w-full h-[500px] object-cover shadow-luxury"
+                  className="w-full h-[350px] sm:h-[450px] md:h-[500px] object-cover shadow-luxury"
                 />
               </div>
               <div className="reveal delay-100">
-                <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
+                <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 sm:mb-6 block">
                   Established 1984
                 </span>
-                <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-8">
+                <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-onyx mb-6 sm:mb-8">
                   Grounded in Precious Earth
                 </h2>
-                <p className="font-sans text-gray-600 leading-loose text-lg font-light mb-6">
+                <p className="font-sans text-gray-600 leading-loose text-base sm:text-lg font-light mb-4 sm:mb-6">
                   MIWESU GAME FARM stands within the <span className="text-onyx font-medium">Makoppa Dome</span>, a geological structure of ancient Swazian granite and gneiss dating back billions of years. This is not merely land; it is a monument to deep time.
                 </p>
-                <p className="font-sans text-gray-600 leading-loose text-lg font-light mb-8">
+                <p className="font-sans text-gray-600 leading-loose text-base sm:text-lg font-light mb-6 sm:mb-8">
                   Located in the <span className="text-onyx font-medium">Arid Sweet Bushveld</span> of the Makoppa district, our nutrient-rich grasses sustain game in peak condition year-round. The red sandy loam and granite koppies create a landscape of rare beauty and ecological significance. Here, roughly 40 kilometers from Thabazimbi on the D1432 road, we have created a sanctuary that honors both the ancient landscape and the luxury of silence.
                 </p>
                 <div className="border-l-2 border-gold-500 pl-8 py-2">
@@ -84,31 +84,31 @@ export default function AboutPage() {
             </div>
 
             {/* Stats Grid */}
-            <div className="grid md:grid-cols-4 gap-8 mb-20">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-12 sm:mb-20">
               <div className="text-center reveal">
-                <Calendar className="w-12 h-12 text-gold-500 mx-auto mb-4" />
-                <span className="block font-serif text-4xl text-onyx mb-2">1984</span>
+                <Calendar className="w-10 h-10 sm:w-12 sm:h-12 text-gold-500 mx-auto mb-3 sm:mb-4" />
+                <span className="block font-serif text-3xl sm:text-4xl text-onyx mb-2">1984</span>
                 <span className="text-[10px] text-gold-600 uppercase tracking-widest font-bold">
                   Established
                 </span>
               </div>
               <div className="text-center reveal delay-100">
-                <Mountain className="w-12 h-12 text-gold-500 mx-auto mb-4" />
-                <span className="block font-serif text-4xl text-onyx mb-2">Sweetveld</span>
+                <Mountain className="w-10 h-10 sm:w-12 sm:h-12 text-gold-500 mx-auto mb-3 sm:mb-4" />
+                <span className="block font-serif text-3xl sm:text-4xl text-onyx mb-2">Sweetveld</span>
                 <span className="text-[10px] text-gold-600 uppercase tracking-widest font-bold">
                   Nutrient Rich
                 </span>
               </div>
               <div className="text-center reveal delay-200">
-                <MapPin className="w-12 h-12 text-gold-500 mx-auto mb-4" />
-                <span className="block font-serif text-4xl text-onyx mb-2">Makoppa</span>
+                <MapPin className="w-10 h-10 sm:w-12 sm:h-12 text-gold-500 mx-auto mb-3 sm:mb-4" />
+                <span className="block font-serif text-3xl sm:text-4xl text-onyx mb-2">Makoppa</span>
                 <span className="text-[10px] text-gold-600 uppercase tracking-widest font-bold">
                   District
                 </span>
               </div>
               <div className="text-center reveal delay-300">
-                <Leaf className="w-12 h-12 text-gold-500 mx-auto mb-4" />
-                <span className="block font-serif text-4xl text-onyx mb-2">Malaria</span>
+                <Leaf className="w-10 h-10 sm:w-12 sm:h-12 text-gold-500 mx-auto mb-3 sm:mb-4" />
+                <span className="block font-serif text-3xl sm:text-4xl text-onyx mb-2">Malaria</span>
                 <span className="text-[10px] text-gold-600 uppercase tracking-widest font-bold">
                   Free Zone
                 </span>
@@ -218,20 +218,20 @@ export default function AboutPage() {
             </div>
 
             {/* Trophy Quality Section */}
-            <div className="mb-20 reveal">
-              <div className="text-center mb-12">
-                <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
+            <div className="mb-12 sm:mb-20 reveal">
+              <div className="text-center mb-8 sm:mb-12">
+                <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 sm:mb-6 block">
                   Trophy Quality
                 </span>
-                <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+                <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-onyx mb-4 sm:mb-6">
                   The Grey Ghost of the Thickets
                 </h2>
-                <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto leading-loose">
+                <p className="font-sans text-gray-600 text-base sm:text-lg max-w-3xl mx-auto leading-loose px-4">
                   The Makoppa area is famous for its heavy-horned Kudu bulls which thrive in the thick Acacia thickets. Our Sweetveld sustains game in peak condition, resulting in exceptional trophy quality.
                 </p>
               </div>
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="relative h-[400px]">
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
+                <div className="relative h-[300px] sm:h-[400px]">
                   <Image
                     src="/images/about-trophy-kudu.jpg"
                     alt="Greater Kudu bull - trophy quality"

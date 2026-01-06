@@ -84,7 +84,7 @@ export default function ActivitiesPage() {
     <Layout>
       <main className="min-h-screen bg-marble">
         {/* Hero Section */}
-        <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
+        <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/activities-hero.jpg"
@@ -95,11 +95,11 @@ export default function ActivitiesPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
-          <div className="relative z-20 text-center px-4">
-            <span className="text-gold-400 text-xs md:text-sm tracking-[0.5em] uppercase font-bold mb-6 block">
+          <div className="relative z-20 text-center px-4 sm:px-6">
+            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
               The Experience
             </span>
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-6 leading-none">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
               Our <span className="text-gradient-gold">Pursuits</span>
             </h1>
           </div>
@@ -108,7 +108,7 @@ export default function ActivitiesPage() {
         {/* Activities Grid */}
         <section className="py-32 bg-onyx text-white relative">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 sm:mb-20">
               {activities.map((activity, index) => {
                 const Icon = activity.icon
                 return (
@@ -117,20 +117,20 @@ export default function ActivitiesPage() {
                     className="group relative bg-onyx-light border border-white/5 hover:border-gold-500/50 transition-all duration-500 overflow-hidden reveal"
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
-                    <div className="h-64 overflow-hidden relative">
+                    <div className="h-56 sm:h-64 overflow-hidden relative">
                       <Image
                         src={activity.image}
                         alt={activity.title}
                         fill
-                        className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                        className="object-cover transition-transform duration-700 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-onyx to-transparent"></div>
                       <div className="absolute top-6 right-6">
                         <Icon className="w-10 h-10 text-gold-500" />
                       </div>
                     </div>
-                    <div className="p-8">
-                      <h3 className="font-serif text-2xl text-white mb-4">
+                    <div className="p-6 sm:p-8">
+                      <h3 className="font-serif text-xl sm:text-2xl text-white mb-3 sm:mb-4">
                         {activity.title}
                       </h3>
                       <p className="text-gray-400 text-sm font-sans leading-relaxed">
@@ -146,8 +146,8 @@ export default function ActivitiesPage() {
             <div className="space-y-20 mt-20">
               {/* Conservation Harvest - Detailed */}
               <div className="reveal">
-                <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
-                  <div className="relative h-[500px]">
+                <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-8 sm:mb-12">
+                  <div className="relative h-[350px] sm:h-[450px] md:h-[500px]">
                     <Image
                       src="/images/conservation-harvest-main.jpg"
                       alt="Conservation harvest - ethical hunting"
@@ -156,16 +156,16 @@ export default function ActivitiesPage() {
                     />
                   </div>
                   <div>
-                    <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-4 block">
+                    <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-3 sm:mb-4 block">
                       Conservation Harvest
                     </span>
-                    <h3 className="font-serif text-4xl md:text-5xl text-white mb-6">
+                    <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white mb-4 sm:mb-6">
                       Ethical Hunting in the Sweetveld
                     </h3>
-                    <p className="text-gray-300 text-lg leading-loose mb-6">
+                    <p className="text-gray-300 text-base sm:text-lg leading-loose mb-4 sm:mb-6">
                       Our conservation harvest program is guided by professional trackers who understand the Makoppa ecosystem intimately. Every hunt follows strict conservation quotas and ethical practices, ensuring sustainable utilization of the resource.
                     </p>
-                    <p className="text-gray-300 text-lg leading-loose mb-8">
+                    <p className="text-gray-300 text-base sm:text-lg leading-loose mb-6 sm:mb-8">
                       The Sweetveld advantage means animals are in peak condition year-round, resulting in superior trophy quality and exceptional meat. All harvests are processed in our professional slaughter facility, and 100% of the meat is donated to local families—feeding 300 families monthly.
                     </p>
                     <div className="grid grid-cols-2 gap-4">
@@ -182,8 +182,8 @@ export default function ActivitiesPage() {
                 </div>
                 
                 {/* Conservation Harvest Gallery */}
-                <div className="grid md:grid-cols-3 gap-6 mb-12">
-                  <div className="relative h-[300px]">
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
+                  <div className="relative h-[250px] sm:h-[300px]">
                     <Image
                       src="/images/conservation-harvest-tracker.jpg"
                       alt="Professional tracker in the bushveld"

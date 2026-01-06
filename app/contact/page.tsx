@@ -43,7 +43,7 @@ export default function ContactPage() {
     <Layout>
       <main className="min-h-screen bg-marble">
         {/* Hero Section */}
-        <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
+        <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/contact-hero.jpg"
@@ -54,11 +54,11 @@ export default function ContactPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
-          <div className="relative z-20 text-center px-4">
-            <span className="text-gold-400 text-xs md:text-sm tracking-[0.5em] uppercase font-bold mb-6 block">
+          <div className="relative z-20 text-center px-4 sm:px-6">
+            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
               Get In Touch
             </span>
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-6 leading-none">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
               Contact <span className="text-gradient-gold">Us</span>
             </h1>
           </div>
@@ -67,13 +67,13 @@ export default function ContactPage() {
         {/* Contact Section */}
         <section className="py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-16">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-16">
               {/* Contact Info */}
               <div className="reveal">
-                <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-8">
+                <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-onyx mb-6 sm:mb-8">
                   Concierge Services
                 </h2>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-12">
+                <p className="font-sans text-gray-600 text-base sm:text-lg leading-loose mb-8 sm:mb-12">
                   Our concierge team is available to assist with all inquiries, bookings, and special requests. We vet all prospective guests to maintain our conservation standards and privacy. Located on the D1432 district road in the Makoppa district, approximately 40 kilometers from Thabazimbi. High-clearance vehicles recommended, especially during the summer rainy season (October–March).
                 </p>
 
@@ -234,24 +234,24 @@ export default function ContactPage() {
             </div>
 
             {/* Additional Information */}
-            <div className="mt-20 grid md:grid-cols-3 gap-8 mb-20">
-              <div className="bg-white p-8 border border-gray-100 reveal delay-200">
-                <Clock className="w-10 h-10 text-gold-500 mb-4" />
-                <h3 className="font-serif text-xl text-onyx mb-3">Response Time</h3>
+            <div className="mt-12 sm:mt-20 grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-20">
+              <div className="bg-white p-6 sm:p-8 border border-gray-100 reveal delay-200">
+                <Clock className="w-8 h-8 sm:w-10 sm:h-10 text-gold-500 mb-3 sm:mb-4" />
+                <h3 className="font-serif text-lg sm:text-xl text-onyx mb-2 sm:mb-3">Response Time</h3>
                 <p className="font-sans text-gray-600 text-sm leading-relaxed">
                   Our concierge team typically responds within 24-48 hours. For urgent inquiries, please call directly.
                 </p>
               </div>
-              <div className="bg-white p-8 border border-gray-100 reveal delay-300">
-                <Car className="w-10 h-10 text-gold-500 mb-4" />
-                <h3 className="font-serif text-xl text-onyx mb-3">Transportation</h3>
+              <div className="bg-white p-6 sm:p-8 border border-gray-100 reveal delay-300">
+                <Car className="w-8 h-8 sm:w-10 sm:h-10 text-gold-500 mb-3 sm:mb-4" />
+                <h3 className="font-serif text-lg sm:text-xl text-onyx mb-2 sm:mb-3">Transportation</h3>
                 <p className="font-sans text-gray-600 text-sm leading-relaxed">
                   We can arrange airport transfers from OR Tambo International Airport (approximately 2.5 hours). High-clearance vehicles recommended for the D1432.
                 </p>
               </div>
-              <div className="bg-white p-8 border border-gray-100 reveal delay-400">
-                <MapPin className="w-10 h-10 text-gold-500 mb-4" />
-                <h3 className="font-serif text-xl text-onyx mb-3">Location</h3>
+              <div className="bg-white p-6 sm:p-8 border border-gray-100 reveal delay-400 sm:col-span-2 md:col-span-1">
+                <MapPin className="w-8 h-8 sm:w-10 sm:h-10 text-gold-500 mb-3 sm:mb-4" />
+                <h3 className="font-serif text-lg sm:text-xl text-onyx mb-2 sm:mb-3">Location</h3>
                 <p className="font-sans text-gray-600 text-sm leading-relaxed">
                   D1432 Road, Makoppa District. Approximately 40km from Thabazimbi town. GPS: -24.4523956, 27.0450853
                 </p>

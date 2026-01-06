@@ -72,22 +72,22 @@ export default function Home() {
 
         <div className="absolute inset-8 md:inset-12 border border-white/5 z-10 pointer-events-none hidden md:block"></div>
 
-        <div className="relative z-20 text-center px-4 max-w-6xl mx-auto mt-12 pb-32">
+        <div className="relative z-20 text-center px-4 sm:px-6 max-w-6xl mx-auto mt-20 sm:mt-12 pb-20 sm:pb-32">
           <div className="flex flex-col items-center">
-            <div className="h-20 w-px bg-gradient-to-b from-transparent via-gold-500 to-transparent mb-8"></div>
-            <span className="text-gold-400 text-xs md:text-sm tracking-[0.5em] uppercase font-bold mb-6">
+            <div className="h-12 sm:h-20 w-px bg-gradient-to-b from-transparent via-gold-500 to-transparent mb-6 sm:mb-8"></div>
+            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 px-4">
               The Makoppa Sanctuary
             </span>
-            <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-white mb-6 leading-none tracking-tight">
+            <h1 className="font-serif text-4xl sm:text-6xl md:text-8xl lg:text-9xl text-white mb-4 sm:mb-6 leading-none tracking-tight px-4">
               Iron <span className="text-gradient-gold">Eden</span>
             </h1>
-            <p className="font-sans text-gray-300 text-lg md:text-xl max-w-xl mx-auto mb-12 font-light leading-relaxed tracking-wide">
+            <p className="font-sans text-gray-300 text-base sm:text-lg md:text-xl max-w-xl mx-auto mb-8 sm:mb-12 font-light leading-relaxed tracking-wide px-4">
               A peerless sanctuary of silence.
               <br />
               <span className="text-gold-300">2.5 Billion Years</span> in the making.
             </p>
 
-            <div className="flex flex-col md:flex-row gap-6 items-center">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center w-full sm:w-auto px-4">
               <a
                 href="#accommodation"
                 onClick={(e) => {
@@ -152,17 +152,17 @@ export default function Home() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-16 items-start">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
             <div className="relative reveal group">
-              <div className="relative h-[600px] w-full overflow-hidden shadow-luxury">
+              <div className="relative h-[400px] sm:h-[500px] md:h-[600px] w-full overflow-hidden shadow-luxury">
                 <Image
                   src="/images/home-origins-main.jpg"
                   alt="Ancient Penge Formation geological rock formation showing 2.5 billion year old iron-rich earth"
                   fill
-                  className="object-cover transition-transform duration-1000 group-hover:scale-105 grayscale hover:grayscale-0"
+                  className="object-cover transition-transform duration-1000 group-hover:scale-105"
                 />
               </div>
-              <div className="absolute -bottom-12 -right-12 w-64 h-64 border-8 border-white shadow-2xl hidden md:block z-20">
+              <div className="absolute -bottom-8 md:-bottom-12 -right-8 md:-right-12 w-48 h-48 md:w-64 md:h-64 border-4 md:border-8 border-white shadow-2xl hidden md:block z-20">
                 <Image
                   src="/images/home-origins-soil.jpg"
                   alt="Red sandy loam soil characteristic of the Makoppa district Sweetveld"
@@ -172,13 +172,13 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="pt-10 reveal delay-100">
-                <p className="font-sans text-gray-600 leading-loose text-lg font-light mb-8">
+            <div className="pt-6 md:pt-10 reveal delay-100">
+                <p className="font-sans text-gray-600 leading-loose text-base sm:text-lg font-light mb-6 sm:mb-8">
                   Miwesu stands within the{' '}
                   <span className="text-onyx font-medium">Makoppa Dome</span>, a
                   geological structure of ancient Swazian granite and gneiss dating back billions of years. This is not merely land; it is a monument to deep time.
                 </p>
-                <p className="font-sans text-gray-600 leading-loose text-lg font-light mb-12">
+                <p className="font-sans text-gray-600 leading-loose text-base sm:text-lg font-light mb-8 sm:mb-12">
                   Located in the <span className="text-onyx font-medium">Arid Sweet Bushveld</span>, our nutrient-rich grasses sustain game in peak condition year-round. The red sandy loam and granite koppies create a landscape of rare beauty and ecological significance.
                 </p>
 
@@ -229,13 +229,13 @@ export default function Home() {
             <div className="h-1 w-20 bg-gold-gradient mx-auto mt-8"></div>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {/* Residence Card 1 */}
             <Link
               href="/residences"
               className="group relative bg-onyx-light border border-white/5 hover:border-gold-500/50 transition-all duration-500 overflow-hidden reveal block"
             >
-              <div className="h-80 overflow-hidden relative">
+              <div className="h-64 sm:h-80 overflow-hidden relative">
                 <Image
                   src="/images/home-residence-homestead.jpg"
                   alt="The Homestead - Luxury 10-sleeper private residence at Miwesu Game Reserve"
@@ -244,18 +244,18 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-onyx to-transparent"></div>
               </div>
-              <div className="p-10 relative">
-                <div className="absolute -top-6 right-8 bg-gold-500 text-onyx w-12 h-12 flex items-center justify-center font-serif text-xl font-bold shadow-gold-glow">
+              <div className="p-6 sm:p-10 relative">
+                <div className="absolute -top-4 sm:-top-6 right-4 sm:right-8 bg-gold-500 text-onyx w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center font-serif text-lg sm:text-xl font-bold shadow-gold-glow">
                   I
                 </div>
-                <h3 className="font-serif text-2xl text-white mb-4">
+                <h3 className="font-serif text-xl sm:text-2xl text-white mb-3 sm:mb-4">
                   The Homestead
                 </h3>
-                <p className="text-gray-400 text-sm font-sans leading-relaxed mb-8">
+                <p className="text-gray-400 text-sm font-sans leading-relaxed mb-6 sm:mb-8">
                   The pinnacle of exclusive use. A 10-sleeper manor offering absolute
                   autonomy.
                 </p>
-                <div className="grid grid-cols-2 gap-4 text-[10px] uppercase tracking-widest text-gold-400">
+                <div className="grid grid-cols-2 gap-3 sm:gap-4 text-[10px] uppercase tracking-widest text-gold-400">
                   <span className="flex items-center">
                     <ChefHat className="w-3 h-3 mr-2" /> Chef's Kitchen
                   </span>
@@ -315,12 +315,12 @@ export default function Home() {
             </Link>
 
             {/* Features Box */}
-            <div className="bg-gold-500 p-10 flex flex-col justify-center reveal delay-200 shadow-gold-glow">
-              <Gem className="w-12 h-12 text-onyx mb-6" />
-              <h3 className="font-serif text-3xl text-onyx mb-6">
+            <div className="bg-gold-500 p-6 sm:p-10 flex flex-col justify-center reveal delay-200 shadow-gold-glow md:col-span-2 lg:col-span-1">
+              <Gem className="w-10 h-10 sm:w-12 sm:h-12 text-onyx mb-4 sm:mb-6" />
+              <h3 className="font-serif text-2xl sm:text-3xl text-onyx mb-4 sm:mb-6">
                 Bespoke Living
               </h3>
-              <p className="text-onyx/80 font-sans leading-relaxed mb-8">
+              <p className="text-onyx/80 font-sans leading-relaxed mb-6 sm:mb-8 text-sm sm:text-base">
                 We have reimagined the self-catering model. Expect industrial Smeg
                 appliances, Le Creuset cookware, and daily housekeeping that
                 operates invisibly.
@@ -338,7 +338,7 @@ export default function Home() {
 
       {/* The Royal Pursuit */}
       <section id="hunting" className="py-32 bg-onyx text-white relative">
-        <div className="absolute inset-0 bg-hero-pattern opacity-5 bg-fixed grayscale"></div>
+        <div className="absolute inset-0 bg-hero-pattern opacity-5 bg-fixed"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-onyx via-transparent to-onyx"></div>
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -357,30 +357,30 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {/* Species Card 1: Greater Kudu */}
             <Link
               href="/wildlife"
               className="group relative bg-onyx-light border border-white/5 hover:border-gold-500/50 transition-all duration-500 reveal block"
             >
-              <div className="h-64 overflow-hidden relative">
+              <div className="h-56 sm:h-64 overflow-hidden relative">
                 <Image
                   src="/images/home-species-kudu.jpg"
                   alt="Greater Kudu (Tragelaphus strepsiceros) - Iconic antelope species at Miwesu"
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute top-4 right-4 bg-gold-500 text-onyx text-[10px] font-bold px-3 py-1 uppercase tracking-widest">
                   Iconic
                 </div>
               </div>
-              <div className="p-8">
-                <h3 className="font-serif text-2xl text-white mb-1">Greater Kudu</h3>
-                <p className="text-gold-500 text-[10px] italic font-serif mb-6">
+              <div className="p-6 sm:p-8">
+                <h3 className="font-serif text-xl sm:text-2xl text-white mb-1">Greater Kudu</h3>
+                <p className="text-gold-500 text-[10px] italic font-serif mb-4 sm:mb-6">
                   Tragelaphus strepsiceros
                 </p>
-                <div className="space-y-4 border-t border-white/10 pt-6">
-                  <div className="flex justify-between text-xs font-sans text-gray-400">
+                <div className="space-y-3 sm:space-y-4 border-t border-white/10 pt-4 sm:pt-6">
+                  <div className="flex justify-between text-xs font-sans text-gray-400 flex-wrap gap-1">
                     <span className="uppercase tracking-widest">Caliber</span>
                     <span className="text-white">.300 Win Mag / .30-06</span>
                   </div>
@@ -406,7 +406,7 @@ export default function Home() {
                   src="/images/home-species-wildebeest.jpg"
                   alt="Blue Wildebeest (Connochaetes taurinus) - Tough plains game species"
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute top-4 right-4 bg-white/10 text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">
                   Tough
@@ -446,7 +446,7 @@ export default function Home() {
                   src="/images/home-species-impala.jpg"
                   alt="Impala (Aepyceros melampus) - Classic African antelope species"
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute top-4 right-4 bg-white/10 text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">
                   Classic
@@ -484,7 +484,7 @@ export default function Home() {
                   src="/images/home-species-gemsbok.jpg"
                   alt="Gemsbok (Oryx gazella) - Distinct desert antelope with long straight horns"
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute top-4 right-4 bg-white/10 text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">
                   Distinct
@@ -522,7 +522,7 @@ export default function Home() {
                   src="/images/home-species-warthog.jpg"
                   alt="Warthog (Phacochoerus africanus) - Opportunistic game species at waterholes"
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute top-4 right-4 bg-white/10 text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">
                   Opportunity
@@ -585,12 +585,12 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-0 shadow-luxury bg-white">
             <Link
               href="/activities"
-              className="group relative p-12 border-r border-gray-100 hover:bg-onyx transition-colors duration-500 cursor-pointer block"
+              className="group relative p-8 sm:p-12 border-r border-b md:border-b-0 border-gray-100 hover:bg-onyx transition-colors duration-500 cursor-pointer block"
             >
-              <div className="mb-8">
-                <Star className="w-10 h-10 text-gold-500 mx-auto" />
+              <div className="mb-6 sm:mb-8">
+                <Star className="w-8 h-8 sm:w-10 sm:h-10 text-gold-500 mx-auto" />
               </div>
-              <h3 className="font-serif text-2xl text-onyx group-hover:text-white transition-colors mb-4">
+              <h3 className="font-serif text-xl sm:text-2xl text-onyx group-hover:text-white transition-colors mb-3 sm:mb-4">
                 Celestial Safaris
               </h3>
               <p className="font-sans text-sm text-gray-500 group-hover:text-gray-400 transition-colors leading-relaxed">
@@ -600,12 +600,12 @@ export default function Home() {
             </Link>
             <Link
               href="/activities"
-              className="group relative p-12 border-r border-gray-100 hover:bg-onyx transition-colors duration-500 cursor-pointer block"
+              className="group relative p-8 sm:p-12 border-r border-b md:border-b-0 border-gray-100 hover:bg-onyx transition-colors duration-500 cursor-pointer block"
             >
-              <div className="mb-8">
-                <Heart className="w-10 h-10 text-gold-500 mx-auto" />
+              <div className="mb-6 sm:mb-8">
+                <Heart className="w-8 h-8 sm:w-10 sm:h-10 text-gold-500 mx-auto" />
               </div>
-              <h3 className="font-serif text-2xl text-onyx group-hover:text-white transition-colors mb-4">
+              <h3 className="font-serif text-xl sm:text-2xl text-onyx group-hover:text-white transition-colors mb-3 sm:mb-4">
                 Mobile Wellness
               </h3>
               <p className="font-sans text-sm text-gray-500 group-hover:text-gray-400 transition-colors leading-relaxed">
@@ -615,12 +615,12 @@ export default function Home() {
             </Link>
             <Link
               href="/activities"
-              className="group relative p-12 hover:bg-onyx transition-colors duration-500 cursor-pointer block"
+              className="group relative p-8 sm:p-12 hover:bg-onyx transition-colors duration-500 cursor-pointer block"
             >
-              <div className="mb-8">
-                <Activity className="w-10 h-10 text-gold-500 mx-auto" />
+              <div className="mb-6 sm:mb-8">
+                <Activity className="w-8 h-8 sm:w-10 sm:h-10 text-gold-500 mx-auto" />
               </div>
-              <h3 className="font-serif text-2xl text-onyx group-hover:text-white transition-colors mb-4">
+              <h3 className="font-serif text-xl sm:text-2xl text-onyx group-hover:text-white transition-colors mb-3 sm:mb-4">
                 Vita-Darting
               </h3>
               <p className="font-sans text-sm text-gray-500 group-hover:text-gray-400 transition-colors leading-relaxed">
@@ -640,30 +640,30 @@ export default function Home() {
         <div className="absolute inset-0 bg-hero-pattern opacity-10 bg-fixed"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-onyx via-onyx/90 to-transparent"></div>
 
-        <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center justify-between">
-          <div className="md:w-1/2 mb-16 md:mb-0 reveal">
-            <div className="inline-block bg-gold-500 text-onyx px-4 py-1 text-[10px] font-bold uppercase tracking-widest mb-6">
+        <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
+          <div className="md:w-1/2 mb-8 md:mb-0 reveal">
+            <div className="inline-block bg-gold-500 text-onyx px-4 py-1 text-[10px] font-bold uppercase tracking-widest mb-4 sm:mb-6">
               Conservation First
             </div>
-            <h2 className="font-serif text-5xl md:text-7xl mb-8 text-white">
+            <h2 className="font-serif text-3xl sm:text-5xl md:text-7xl mb-6 sm:mb-8 text-white">
               If It Pays,
               <br />
               It Stays.
             </h2>
-            <p className="text-gray-400 text-lg leading-loose mb-10 font-light max-w-lg">
+            <p className="text-gray-400 text-base sm:text-lg leading-loose mb-6 sm:mb-10 font-light max-w-lg">
               The reality of African conservation is economic. Your visit directly
               funds our Anti-Poaching Units and habitat restoration. The meat from
               your harvest feeds 300 local families monthly.
             </p>
-            <div className="grid grid-cols-2 gap-12">
+            <div className="grid grid-cols-2 gap-6 sm:gap-12">
               <div>
-                <span className="block text-6xl font-serif text-gold-500">100%</span>
+                <span className="block text-4xl sm:text-6xl font-serif text-gold-500">100%</span>
                 <span className="uppercase text-[10px] tracking-widest text-white mt-2 block">
                   Meat Donated
                 </span>
               </div>
               <div>
-                <span className="block text-6xl font-serif text-gold-500">24/7</span>
+                <span className="block text-4xl sm:text-6xl font-serif text-gold-500">24/7</span>
                 <span className="uppercase text-[10px] tracking-widest text-white mt-2 block">
                   Anti-Poaching
                 </span>
@@ -671,8 +671,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="md:w-1/3 relative reveal delay-100">
-            <div className="glass-panel-dark p-12 border border-gold-500/30">
+          <div className="md:w-1/3 relative reveal delay-100 w-full md:w-auto">
+            <div className="glass-panel-dark p-8 sm:p-12 border border-gold-500/30">
               <Quote className="w-8 h-8 text-gold-500 mb-6" />
               <p className="text-white font-serif text-2xl mb-8 leading-normal">
                 "I acknowledge that Miwesu is a sanctuary of silence. I respect the

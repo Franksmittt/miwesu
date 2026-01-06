@@ -37,18 +37,18 @@ export default function Navigation() {
           : 'bg-gradient-to-b from-onyx/80 to-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
         {/* Left: Menu Trigger */}
         <button
           onClick={toggleMenu}
-          className="group flex items-center space-x-3 text-white hover:text-gold-500 transition-colors focus:outline-none"
+          className="group flex items-center space-x-2 sm:space-x-3 text-white hover:text-gold-500 transition-colors focus:outline-none z-10"
         >
           <div className="space-y-1.5">
-            <div className="w-8 h-px bg-current transition-all group-hover:w-6"></div>
-            <div className="w-8 h-px bg-current transition-all group-hover:w-8"></div>
-            <div className="w-8 h-px bg-current transition-all group-hover:w-4"></div>
+            <div className="w-6 sm:w-8 h-px bg-current transition-all group-hover:w-5 sm:group-hover:w-6"></div>
+            <div className="w-6 sm:w-8 h-px bg-current transition-all group-hover:w-6 sm:group-hover:w-8"></div>
+            <div className="w-6 sm:w-8 h-px bg-current transition-all group-hover:w-4 sm:group-hover:w-4"></div>
           </div>
-          <span className="text-[10px] uppercase tracking-[0.2em] font-sans font-medium hidden md:block">
+          <span className="text-[9px] sm:text-[10px] uppercase tracking-[0.2em] font-sans font-medium hidden md:block">
             Concierge
           </span>
         </button>
@@ -56,10 +56,10 @@ export default function Navigation() {
         {/* Center: Logo */}
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
           <Link href="/" className="block group">
-            <span className="block font-serif text-2xl md:text-3xl lg:text-4xl tracking-widest-xl text-white font-bold group-hover:text-gold-500 transition-colors duration-500">
+            <span className="block font-serif text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-widest-xl text-white font-bold group-hover:text-gold-500 transition-colors duration-500">
               MIWESU
             </span>
-            <span className="block text-[8px] md:text-[10px] tracking-[0.4em] text-gold-500 uppercase font-sans mt-1 opacity-80 group-hover:opacity-100 transition-opacity">
+            <span className="block text-[7px] sm:text-[8px] md:text-[10px] tracking-[0.3em] sm:tracking-[0.4em] text-gold-500 uppercase font-sans mt-0.5 sm:mt-1 opacity-80 group-hover:opacity-100 transition-opacity">
               Est. 1984 • Iron Eden
             </span>
           </Link>

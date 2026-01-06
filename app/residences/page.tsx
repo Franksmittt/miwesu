@@ -47,7 +47,7 @@ export default function ResidencesPage() {
     <Layout>
       <main className="min-h-screen bg-marble">
         {/* Hero Section */}
-        <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
+        <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/residences-hero.jpg"
@@ -58,11 +58,11 @@ export default function ResidencesPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
-          <div className="relative z-20 text-center px-4">
-            <span className="text-gold-400 text-xs md:text-sm tracking-[0.5em] uppercase font-bold mb-6 block">
+          <div className="relative z-20 text-center px-4 sm:px-6">
+            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
               The Collection
             </span>
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white mb-6 leading-none">
+            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
               Private <span className="text-gradient-gold">Residences</span>
             </h1>
           </div>
@@ -83,10 +83,10 @@ export default function ResidencesPage() {
               <div className="h-1 w-20 bg-gold-gradient mx-auto mt-8"></div>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-12 mb-20">
+            <div className="grid lg:grid-cols-2 gap-8 md:gap-12 mb-12 sm:mb-20">
               {/* Residence 1: The Homestead */}
               <div className="group relative bg-onyx-light border border-white/5 hover:border-gold-500/50 transition-all duration-500 overflow-hidden reveal">
-                <div className="h-96 overflow-hidden relative">
+                <div className="h-72 sm:h-96 overflow-hidden relative">
                   <Image
                     src="/images/residences-homestead-main.jpg"
                     alt="The Homestead"
@@ -98,12 +98,12 @@ export default function ResidencesPage() {
                     I
                   </div>
                 </div>
-                <div className="p-10 relative">
-                  <h3 className="font-serif text-3xl text-white mb-4">The Homestead</h3>
-                  <p className="text-gray-400 text-base font-sans leading-relaxed mb-6">
+                <div className="p-6 sm:p-10 relative">
+                  <h3 className="font-serif text-2xl sm:text-3xl text-white mb-3 sm:mb-4">The Homestead</h3>
+                  <p className="text-gray-400 text-sm sm:text-base font-sans leading-relaxed mb-4 sm:mb-6">
                     The pinnacle of exclusive use. A 10-sleeper manor offering absolute autonomy in the heart of the reserve.
                   </p>
-                  <div className="grid grid-cols-2 gap-4 mb-8 text-sm uppercase tracking-widest text-gold-400">
+                  <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8 text-xs sm:text-sm uppercase tracking-widest text-gold-400">
                     <span className="flex items-center">
                       <Bed className="w-4 h-4 mr-2" /> 10 Guests
                     </span>
@@ -185,18 +185,18 @@ export default function ResidencesPage() {
             <div className="space-y-20 mb-20">
               {/* The Homestead - Detailed */}
               <div className="reveal">
-                <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
+                <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-8 sm:mb-12">
                   <div>
-                    <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-4 block">
+                    <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-3 sm:mb-4 block">
                       The Homestead
                     </span>
-                    <h3 className="font-serif text-4xl md:text-5xl text-white mb-6">
+                    <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white mb-4 sm:mb-6">
                       The Pinnacle of Exclusive Use
                     </h3>
-                    <p className="text-gray-300 text-lg leading-loose mb-6">
+                    <p className="text-gray-300 text-base sm:text-lg leading-loose mb-4 sm:mb-6">
                       A 10-sleeper manor offering absolute autonomy in the heart of the reserve. The Homestead is designed for those who demand uncompromising luxury and complete privacy. Every detail has been considered, from the industrial-grade kitchen to the private boma where stories are shared under the African stars.
                     </p>
-                    <p className="text-gray-300 text-lg leading-loose mb-8">
+                    <p className="text-gray-300 text-base sm:text-lg leading-loose mb-6 sm:mb-8">
                       With five spacious bedrooms, each with en-suite facilities, The Homestead accommodates large families or groups seeking the ultimate bushveld experience. The property features its own secure perimeter, ensuring children can play safely while adults enjoy the tranquility of the reserve.
                     </p>
                     <div className="grid grid-cols-2 gap-4">
@@ -210,7 +210,7 @@ export default function ResidencesPage() {
                       </div>
                     </div>
                   </div>
-                  <div className="relative h-[500px]">
+                  <div className="relative h-[350px] sm:h-[450px] md:h-[500px]">
                     <Image
                       src="/images/residences-homestead-main.jpg"
                       alt="The Homestead - luxury accommodation"
@@ -221,8 +221,8 @@ export default function ResidencesPage() {
                 </div>
                 
                 {/* Homestead Gallery */}
-                <div className="grid md:grid-cols-3 gap-6 mb-12">
-                  <div className="relative h-[300px]">
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
+                  <div className="relative h-[250px] sm:h-[300px]">
                     <Image
                       src="/images/residences-homestead-kitchen.jpg"
                       alt="The Homestead kitchen with industrial appliances"

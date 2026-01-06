@@ -8,18 +8,18 @@ export default function Footer() {
     <footer className="bg-black pt-24 pb-12 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12 mb-16">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 sm:gap-8 md:gap-12 mb-12 sm:mb-16">
           {/* Brand & Description */}
-          <div className="col-span-2">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-8 h-8 bg-gold-500 rounded-full flex items-center justify-center text-onyx font-serif font-bold">
+          <div className="col-span-2 sm:col-span-3 md:col-span-2">
+            <div className="flex items-center gap-3 mb-4 sm:mb-6">
+              <div className="w-7 h-7 sm:w-8 sm:h-8 bg-gold-500 rounded-full flex items-center justify-center text-onyx font-serif font-bold text-sm sm:text-base">
                 M
               </div>
-              <span className="font-serif text-2xl text-white tracking-widest uppercase font-bold">
+              <span className="font-serif text-xl sm:text-2xl text-white tracking-widest uppercase font-bold">
                 MIWESU
               </span>
             </div>
-            <p className="text-gray-500 max-w-md text-sm leading-loose font-sans">
+            <p className="text-gray-500 max-w-md text-xs sm:text-sm leading-loose font-sans">
               MIWESU GAME FARM - An exclusive private residence collection in the Makoppa district, Thabazimbi. Located in the Arid Sweet Bushveld, dedicated to the preservation of the African bushveld through sustainable utilization and uncompromising luxury.
             </p>
           </div>

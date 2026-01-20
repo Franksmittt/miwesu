@@ -34,6 +34,7 @@ export default function WildlifePage() {
       terrain: 'Mountain Thickets',
       tag: 'Iconic',
       tagColor: 'bg-gold-500',
+      slug: 'greater-kudu',
     },
     {
       name: 'Blue Wildebeest',
@@ -44,6 +45,7 @@ export default function WildlifePage() {
       terrain: 'Open Plains',
       tag: 'Tough',
       tagColor: 'bg-white/10',
+      slug: 'wildebeest',
     },
     {
       name: 'Impala',
@@ -54,6 +56,7 @@ export default function WildlifePage() {
       terrain: 'Bushveld Fringe',
       tag: 'Classic',
       tagColor: 'bg-white/10',
+      slug: 'impala',
     },
     {
       name: 'Gemsbok',
@@ -64,6 +67,7 @@ export default function WildlifePage() {
       terrain: 'Open Scrub',
       tag: 'Distinct',
       tagColor: 'bg-white/10',
+      slug: 'gemsbok',
     },
     {
       name: 'Warthog',
@@ -74,6 +78,106 @@ export default function WildlifePage() {
       terrain: 'Waterholes / Mud Wallows',
       tag: 'Opportunity',
       tagColor: 'bg-white/10',
+      slug: 'warthog',
+    },
+    {
+      name: 'Blesbok',
+      scientific: 'Damaliscus pygargus phillipsi',
+      image: '/images/home-species-wildebeest.jpg',
+      caliber: '.308 Win',
+      rowlandWard: 'Min. 16 ½"',
+      terrain: 'Highveld Grasslands',
+      tag: 'Keystone',
+      tagColor: 'bg-white/10',
+      slug: 'blesbok',
+    },
+    {
+      name: 'Bushbuck',
+      scientific: 'Tragelaphus sylvaticus',
+      image: '/images/home-species-kudu.jpg',
+      caliber: '.308 Win',
+      rowlandWard: 'Min. 15"',
+      terrain: 'Riverine Thickets',
+      tag: 'Thickets',
+      tagColor: 'bg-white/10',
+      slug: 'bushbuck',
+    },
+    {
+      name: 'Cape Buffalo',
+      scientific: 'Syncerus caffer',
+      image: '/images/home-species-wildebeest.jpg',
+      caliber: '.375 H&H Minimum',
+      rowlandWard: 'Min. 40"',
+      terrain: 'Dense Bushveld',
+      tag: 'Dangerous',
+      tagColor: 'bg-white/10',
+      slug: 'cape-buffalo',
+    },
+    {
+      name: 'Dapple Impala',
+      scientific: 'Aepyceros melampus',
+      image: '/images/home-species-impala.jpg',
+      caliber: '.243 / 6.5mm Creedmoor',
+      rowlandWard: 'Min. 23 5/8"',
+      terrain: 'Bushveld Fringe',
+      tag: 'Variant',
+      tagColor: 'bg-white/10',
+      slug: 'dapple-impala',
+    },
+    {
+      name: 'Golden Wildebeest',
+      scientific: 'Connochaetes taurinus',
+      image: '/images/home-species-wildebeest.jpg',
+      caliber: '.375 H&H Recommended',
+      rowlandWard: 'Min. 28 1/2" (Width)',
+      terrain: 'Open Plains',
+      tag: 'Variant',
+      tagColor: 'bg-white/10',
+      slug: 'golden-wildebeest',
+    },
+    {
+      name: 'Springbok',
+      scientific: 'Antidorcas marsupialis',
+      image: '/images/home-species-wildebeest.jpg',
+      caliber: '.243 Win',
+      rowlandWard: 'Min. 14"',
+      terrain: 'Open Plains',
+      tag: 'Classic',
+      tagColor: 'bg-white/10',
+      slug: 'springbok',
+    },
+    {
+      name: 'Red Hartebeest',
+      scientific: 'Alcelaphus buselaphus caama',
+      image: '/images/home-species-wildebeest.jpg',
+      caliber: '.30-06',
+      rowlandWard: 'Min. 18"',
+      terrain: 'Open Plains',
+      tag: 'Fast',
+      tagColor: 'bg-white/10',
+      slug: 'red-hartebeest',
+    },
+    {
+      name: 'Lechwe',
+      scientific: 'Kobus leche',
+      image: '/images/home-species-impala.jpg',
+      caliber: '.270 Win',
+      rowlandWard: 'Min. 20"',
+      terrain: 'Wetlands / Water',
+      tag: 'Water',
+      tagColor: 'bg-white/10',
+      slug: 'lechwe',
+    },
+    {
+      name: 'Livingstone Eland',
+      scientific: 'Taurotragus oryx livingstonei',
+      image: '/images/home-species-kudu.jpg',
+      caliber: '.375 H&H',
+      rowlandWard: 'Min. 30"',
+      terrain: 'Open Bushveld',
+      tag: 'Giant',
+      tagColor: 'bg-white/10',
+      slug: 'livingstone-eland',
     },
   ]
 
@@ -119,9 +223,10 @@ export default function WildlifePage() {
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 sm:mb-20">
               {species.map((animal, index) => (
-                <div
+                <Link
                   key={index}
-                  className="group relative bg-onyx-light border border-white/5 hover:border-gold-500/50 transition-all duration-500 reveal"
+                  href={`/${animal.slug}`}
+                  className="group relative bg-onyx-light border border-white/5 hover:border-gold-500/50 transition-all duration-500 reveal block"
                 >
                   <div className="h-56 sm:h-64 overflow-hidden relative">
                     <Image
@@ -162,9 +267,14 @@ export default function WildlifePage() {
                         </span>
                         <span className="text-white">{animal.terrain}</span>
                       </div>
+                      <div className="pt-2 border-t border-white/5">
+                        <span className="text-gold-400 text-xs uppercase tracking-widest flex items-center group-hover:text-gold-300 transition-colors">
+                          View Details <ArrowRight className="w-3 h-3 ml-2 group-hover:translate-x-1 transition-transform" />
+                        </span>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
 
@@ -254,9 +364,21 @@ export default function WildlifePage() {
                   <h3 className="font-serif text-3xl text-white mb-6">Specialist Species</h3>
                   <div className="space-y-6">
                     <div className="border-l-2 border-gold-500 pl-6">
-                      <h4 className="font-serif text-xl text-white mb-2">Eland</h4>
+                      <h4 className="font-serif text-xl text-white mb-2">Blesbok</h4>
                       <p className="text-gray-300 text-sm leading-relaxed">
-                        The largest antelope, often kept for meat hunting and trophy status. Thrives in the open areas of the reserve.
+                        The keystone species of the South African Highveld. A bread-and-butter antelope offering excellent trophy quality and exceptional venison.
+                      </p>
+                    </div>
+                    <div className="border-l-2 border-gold-500 pl-6">
+                      <h4 className="font-serif text-xl text-white mb-2">Bushbuck</h4>
+                      <p className="text-gray-300 text-sm leading-relaxed">
+                        The Prince of the Thickets. A challenging quarry that offers a hunting challenge disproportionate to its size and arguably peerless venison quality.
+                      </p>
+                    </div>
+                    <div className="border-l-2 border-gold-500 pl-6">
+                      <h4 className="font-serif text-xl text-white mb-2">Springbok</h4>
+                      <p className="text-gray-300 text-sm leading-relaxed">
+                        The pronking gazelle. A classic plains antelope known for its spectacular leaping displays and excellent table fare.
                       </p>
                     </div>
                     <div className="border-l-2 border-gold-500 pl-6">
@@ -266,9 +388,15 @@ export default function WildlifePage() {
                       </p>
                     </div>
                     <div className="border-l-2 border-gold-500 pl-6">
-                      <h4 className="font-serif text-xl text-white mb-2">Warthog</h4>
+                      <h4 className="font-serif text-xl text-white mb-2">Livingstone Eland</h4>
                       <p className="text-gray-300 text-sm leading-relaxed">
-                        Character and charm around the waterholes. Often seen at mud wallows, providing excellent opportunities for observation and harvest.
+                        The largest antelope, often kept for meat hunting and trophy status. Thrives in the open areas of the reserve.
+                      </p>
+                    </div>
+                    <div className="border-l-2 border-gold-500 pl-6">
+                      <h4 className="font-serif text-xl text-white mb-2">Lechwe</h4>
+                      <p className="text-gray-300 text-sm leading-relaxed">
+                        The water antelope. Specializes in wetland habitats, offering unique hunting opportunities near water sources.
                       </p>
                     </div>
                   </div>

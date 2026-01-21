@@ -79,8 +79,8 @@ export default function BushbuckPage() {
         {/* Introduction Section */}
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-12 items-center mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="flex flex-col">
                 <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
                   Introduction
                 </span>
@@ -97,7 +97,7 @@ export default function BushbuckPage() {
                   In the Makoppa district, Bushbuck thrive in the dense riverine thickets and forest edges. Their preference for cover makes them challenging to hunt, but their exceptional venison quality and the thrill of the pursuit make them a highly sought-after trophy.
                 </p>
               </div>
-              <div className="relative h-[400px] md:h-[500px]">
+              <div className="relative h-full min-h-[400px] md:min-h-[500px]">
                 <Image
                   src="/images/home-species-kudu.jpg"
                   alt="Bushbuck ram in thicket"
@@ -121,8 +121,8 @@ export default function BushbuckPage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-4">Taxonomic Classification</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   The Bushbuck belongs to the family Bovidae, subfamily Bovinae, and the tribe Tragelaphini. Recent genetic research has revealed that what was once considered a single species is actually two distinct species that diverged approximately 2.5 to 2.7 million years ago.
@@ -137,7 +137,7 @@ export default function BushbuckPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-[400px] md:h-[500px]">
+              <div className="relative h-full min-h-[400px] md:min-h-[500px]">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Bushbuck Taxonomy Comparison Image Placeholder</span>
                 </div>
@@ -230,8 +230,8 @@ export default function BushbuckPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div className="relative h-[400px]">
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="relative h-full min-h-[400px]">
                 <Image
                   src="/images/home-species-kudu.jpg"
                   alt="Bushbuck coat coloration and markings"
@@ -257,8 +257,8 @@ export default function BushbuckPage() {
             </div>
 
             {/* Horn Configuration */}
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Only rams carry horns, which are distinct from the wide spirals of the Kudu. Bushbuck horns are relatively straight but feature a strong spiral keel that twists around the core. They grow backward, roughly parallel to the neck, preventing snagging on vines and branches when running through thick bush.
@@ -273,7 +273,7 @@ export default function BushbuckPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-[400px]">
+              <div className="relative h-full min-h-[400px]">
                 <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Bushbuck Horn Detail Image Placeholder</span>
                 </div>
@@ -343,8 +343,8 @@ export default function BushbuckPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div className="relative h-[400px]">
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="relative h-full min-h-[400px]">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Bushbuck Behavior Image Placeholder</span>
                 </div>
@@ -404,8 +404,8 @@ export default function BushbuckPage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">The Edge Effect</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   The Bushbuck is an "ecotone" specialist. It thrives at the interface between two habitats: dense cover (for safety/rest) and open clearing (for high-quality forage). They are rarely found far from dense vegetation—riverine forest, montane forest, coastal dune bush, or dense Acacia thickets.
@@ -417,7 +417,7 @@ export default function BushbuckPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-[400px]">
+              <div className="relative h-full min-h-[400px]">
                 <Image
                   src="/images/home-species-kudu.jpg"
                   alt="Bushbuck in riverine thicket"
@@ -427,8 +427,8 @@ export default function BushbuckPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div className="relative h-[400px]">
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="relative h-full min-h-[400px]">
                 <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Bushbuck Feeding Image Placeholder</span>
                 </div>
@@ -468,8 +468,8 @@ export default function BushbuckPage() {
             </div>
 
             {/* Hunting Strategies */}
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Hunting Strategies</h3>
                 <div className="space-y-6">
                   <div className="bg-onyx-light border border-white/10 p-6">
@@ -497,7 +497,7 @@ export default function BushbuckPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-[500px]">
+              <div className="relative h-full min-h-[500px]">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Hunting Stalk Image Placeholder</span>
                 </div>
@@ -572,8 +572,8 @@ export default function BushbuckPage() {
             </div>
 
             {/* Shot Placement */}
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div className="relative h-[500px]">
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="relative h-full min-h-[500px]">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Shot Placement Diagram Image Placeholder</span>
                 </div>
@@ -623,8 +623,8 @@ export default function BushbuckPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">The "Ear Rule"</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-6">
                   The most reliable field estimation method involves comparing the horn length to the ear length.
@@ -663,7 +663,7 @@ export default function BushbuckPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-[500px]">
+              <div className="relative h-full min-h-[500px]">
                 <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Trophy Bushbuck Ram Image Placeholder</span>
                 </div>
@@ -709,8 +709,8 @@ export default function BushbuckPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Meat Characteristics</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Because Bushbuck are browsers, the meat is aromatic and flavorful. It is fine-grained, darker than Impala, and lacks the stringy texture of larger antelope. The meat is often described as having a rich, gamey flavor that is more pronounced than grazers.
@@ -722,7 +722,7 @@ export default function BushbuckPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-[400px]">
+              <div className="relative h-full min-h-[400px]">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Bushbuck Venison Image Placeholder</span>
                 </div>
@@ -780,7 +780,7 @@ export default function BushbuckPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-[500px]">
+              <div className="relative h-full min-h-[500px]">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Culinary Preparation Image Placeholder</span>
                 </div>

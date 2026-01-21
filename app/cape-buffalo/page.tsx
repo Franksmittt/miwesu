@@ -94,8 +94,8 @@ export default function CapeBuffaloPage() {
         {/* Introduction Section */}
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-12 items-center mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="flex flex-col">
                 <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
                   Introduction
                 </span>
@@ -112,7 +112,7 @@ export default function CapeBuffaloPage() {
                   In the Makoppa district, Cape Buffalo thrive in the dense bushveld areas where they can find both grazing opportunities and thick cover. Their presence adds an element of danger and excitement to the reserve, even for those not actively hunting them.
                 </p>
               </div>
-              <div className="relative h-[400px] md:h-[500px]">
+              <div className="relative h-full min-h-[400px] md:min-h-[500px]">
                 <Image
                   src="/images/home-species-wildebeest.jpg"
                   alt="Cape Buffalo bull in dense bushveld"
@@ -136,8 +136,8 @@ export default function CapeBuffaloPage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-4">Taxonomic Classification</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   The Cape Buffalo belongs to the family Bovidae, subfamily Bovinae, and the genus <em className="text-gold-400">Syncerus</em>. The specific name <em className="text-gold-400">caffer</em> derives from the Latin word for "Cape," referring to the Cape of Good Hope where European explorers first encountered them.
@@ -152,7 +152,7 @@ export default function CapeBuffaloPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-[400px] md:h-[500px]">
+              <div className="relative h-full min-h-[400px] md:min-h-[500px]">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Cape Buffalo Taxonomy Image Placeholder</span>
                 </div>
@@ -245,8 +245,8 @@ export default function CapeBuffaloPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div className="relative h-[400px]">
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="relative h-full min-h-[400px]">
                 <Image
                   src="/images/home-species-wildebeest.jpg"
                   alt="Cape Buffalo coat coloration"
@@ -272,8 +272,8 @@ export default function CapeBuffaloPage() {
             </div>
 
             {/* Horn Configuration */}
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Both bulls and cows carry horns, though bulls' horns are typically larger and more massive. The horns grow outward and downward from the sides of the head, then curve upward and inward, creating the distinctive "boss" where they meet on the forehead in mature bulls.
@@ -288,7 +288,7 @@ export default function CapeBuffaloPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-[400px]">
+              <div className="relative h-full min-h-[400px]">
                 <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Cape Buffalo Horn Detail Image Placeholder</span>
                 </div>
@@ -358,8 +358,8 @@ export default function CapeBuffaloPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div className="relative h-[400px]">
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="relative h-full min-h-[400px]">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Cape Buffalo Herd Behavior Image Placeholder</span>
                 </div>
@@ -419,8 +419,8 @@ export default function CapeBuffaloPage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Grazing Preferences</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Cape Buffalo are bulk grazers, feeding primarily on grasses. They prefer fresh, green growth and will move to areas with recent rain or new growth. Their grazing helps maintain grassland health by preventing grass from becoming too tall and unpalatable.
@@ -432,7 +432,7 @@ export default function CapeBuffaloPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-[400px]">
+              <div className="relative h-full min-h-[400px]">
                 <Image
                   src="/images/home-species-wildebeest.jpg"
                   alt="Cape Buffalo grazing"
@@ -442,8 +442,8 @@ export default function CapeBuffaloPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div className="relative h-[400px]">
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="relative h-full min-h-[400px]">
                 <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Waterhole Activity Image Placeholder</span>
                 </div>
@@ -503,8 +503,8 @@ export default function CapeBuffaloPage() {
             </div>
 
             {/* Hunting Strategies */}
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Hunting Strategies</h3>
                 <div className="space-y-6">
                   <div className="bg-onyx-light border border-white/10 p-6">
@@ -532,7 +532,7 @@ export default function CapeBuffaloPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-[500px]">
+              <div className="relative h-full min-h-[500px]">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Hunting Stalk Image Placeholder</span>
                 </div>
@@ -592,8 +592,8 @@ export default function CapeBuffaloPage() {
             </div>
 
             {/* Shot Placement */}
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div className="relative h-[500px]">
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="relative h-full min-h-[500px]">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Shot Placement Diagram Image Placeholder</span>
                 </div>
@@ -643,8 +643,8 @@ export default function CapeBuffaloPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Distinguishing Bulls vs. Cows</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-6">
                   Shooting a cow by mistake is a serious error in trophy hunting. Careful observation is required, especially at distance.
@@ -685,7 +685,7 @@ export default function CapeBuffaloPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-[500px]">
+              <div className="relative h-full min-h-[500px]">
                 <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Bull vs Cow Comparison Image Placeholder</span>
                 </div>
@@ -757,8 +757,8 @@ export default function CapeBuffaloPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Meat Characteristics</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Cape Buffalo meat is dark red, fine-grained, and lean. It has a rich, gamey flavor that is often compared to beef but with a distinctive wild game character. The meat is versatile and can be prepared in a variety of ways.
@@ -770,7 +770,7 @@ export default function CapeBuffaloPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-[400px]">
+              <div className="relative h-full min-h-[400px]">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Cape Buffalo Venison Image Placeholder</span>
                 </div>

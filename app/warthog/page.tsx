@@ -79,8 +79,8 @@ export default function WarthogPage() {
         {/* Introduction Section */}
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-12 items-center mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="flex flex-col">
                 <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
                   Introduction
                 </span>
@@ -97,7 +97,7 @@ export default function WarthogPage() {
                   In the Makoppa district, Warthogs are commonly found near waterholes and mud wallows, where they can be seen wallowing to cool off and protect themselves from insects. Their opportunistic feeding habits and adaptability make them an important part of the ecosystem.
                 </p>
               </div>
-              <div className="relative h-[400px] md:h-[500px]">
+              <div className="relative h-full min-h-[400px] md:min-h-[500px]">
                 <Image
                   src="/images/home-species-warthog.jpg"
                   alt="Warthog boar at waterhole"
@@ -121,8 +121,8 @@ export default function WarthogPage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-4">Taxonomic Classification</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   The Warthog belongs to the family Suidae (pigs), making it distinct from the antelope species that dominate African hunting. The genus <em className="text-gold-400">Phacochoerus</em> contains two species: the Common Warthog (Phacochoerus africanus) and the Desert Warthog (Phacochoerus aethiopicus).
@@ -137,7 +137,7 @@ export default function WarthogPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-[400px] md:h-[500px]">
+              <div className="relative h-full min-h-[400px] md:min-h-[500px]">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Warthog Taxonomy Image Placeholder</span>
                 </div>
@@ -230,8 +230,8 @@ export default function WarthogPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div className="relative h-[400px]">
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="relative h-full min-h-[400px]">
                 <Image
                   src="/images/home-species-warthog.jpg"
                   alt="Warthog coat coloration and markings"
@@ -257,8 +257,8 @@ export default function WarthogPage() {
             </div>
 
             {/* Tusk Configuration */}
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Tusk Configuration</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Both boars and sows carry tusks, though boars' tusks are typically larger and more impressive. The upper tusks are long and curve upward, while the lower tusks are shorter and sharper, used for sharpening the upper tusks.
@@ -273,7 +273,7 @@ export default function WarthogPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-[400px]">
+              <div className="relative h-full min-h-[400px]">
                 <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Warthog Tusk Detail Image Placeholder</span>
                 </div>
@@ -343,8 +343,8 @@ export default function WarthogPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div className="relative h-[400px]">
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="relative h-full min-h-[400px]">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Warthog Behavior Image Placeholder</span>
                 </div>
@@ -404,8 +404,8 @@ export default function WarthogPage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Opportunistic Feeding</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Warthogs are true opportunists, consuming a wide variety of food sources. They primarily graze on short grasses, but also root for roots, bulbs, and tubers. They will eat fruits, berries, and occasionally carrion when available.
@@ -417,7 +417,7 @@ export default function WarthogPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-[400px]">
+              <div className="relative h-full min-h-[400px]">
                 <Image
                   src="/images/home-species-warthog.jpg"
                   alt="Warthog feeding"
@@ -427,8 +427,8 @@ export default function WarthogPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div className="relative h-[400px]">
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="relative h-full min-h-[400px]">
                 <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Waterhole Activity Image Placeholder</span>
                 </div>
@@ -468,8 +468,8 @@ export default function WarthogPage() {
             </div>
 
             {/* Hunting Strategies */}
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Hunting Strategies</h3>
                 <div className="space-y-6">
                   <div className="bg-onyx-light border border-white/10 p-6">
@@ -497,7 +497,7 @@ export default function WarthogPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-[500px]">
+              <div className="relative h-full min-h-[500px]">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Hunting Stalk Image Placeholder</span>
                 </div>
@@ -557,8 +557,8 @@ export default function WarthogPage() {
             </div>
 
             {/* Shot Placement */}
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div className="relative h-[500px]">
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="relative h-full min-h-[500px]">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Shot Placement Diagram Image Placeholder</span>
                 </div>
@@ -608,8 +608,8 @@ export default function WarthogPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Distinguishing Boars vs. Sows</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-6">
                   Shooting a sow by mistake is a serious error in trophy hunting. Careful observation is required.
@@ -650,7 +650,7 @@ export default function WarthogPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-[500px]">
+              <div className="relative h-full min-h-[500px]">
                 <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Boar vs Sow Comparison Image Placeholder</span>
                 </div>
@@ -716,8 +716,8 @@ export default function WarthogPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Meat Characteristics</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Warthog meat is dark red, fine-grained, and lean. It has a rich, gamey flavor that is often compared to wild boar. The meat is versatile and can be prepared in a variety of ways.
@@ -729,7 +729,7 @@ export default function WarthogPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-[400px]">
+              <div className="relative h-full min-h-[400px]">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Warthog Venison Image Placeholder</span>
                 </div>

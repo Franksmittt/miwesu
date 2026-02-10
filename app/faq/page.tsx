@@ -5,72 +5,21 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '@/components/Layout'
 import { ChevronDown, ChevronUp, Shield, MapPin, Users, Calendar, ArrowRight } from 'lucide-react'
+import { FAQ_ITEMS } from '@/lib/faq-data'
 
 export default function FAQPage() {
   const [openIndex, setOpenIndex] = useState<number | null>(0)
-
-  const faqs = [
-    {
-      question: 'What is the vetting process?',
-      answer:
-        'Miwesu is a private sanctuary that maintains strict conservation standards and privacy. All prospective guests are vetted to ensure they understand and respect our conservation philosophy, the Guardian\'s Pledge, and our commitment to ethical practices. This process helps us maintain the integrity of the reserve and ensure all guests have a meaningful experience.',
-    },
-    {
-      question: 'What is included in the accommodation rate?',
-      answer:
-        'Accommodation rates include exclusive use of the residence, daily housekeeping, all utilities, fiber optic internet, and access to the reserve. Meals, activities, and conservation harvest fees are additional. Our concierge team can provide detailed breakdowns upon inquiry.',
-    },
-    {
-      question: 'How does the conservation harvest work?',
-      answer:
-        'We manage an ecosystem, not a hunting operation. Species availability is determined by our annual ecological census to ensure sustainable population management. All harvests follow strict ethical guidelines, and 100% of the meat is donated to local communities. Trophy fees vary by species and are detailed in our Investment Guide.',
-    },
-    {
-      question: 'What activities are available for non-hunters?',
-      answer:
-        'We offer photographic safaris, guided game drives, walking safaris, celestial safaris (astronomy), mobile wellness treatments, and vita-darting (non-lethal conservation activities). The reserve is perfect for observers, photographers, and those seeking a luxury wilderness experience.',
-    },
-    {
-      question: 'Is Miwesu malaria-free?',
-      answer:
-        'Yes, the Waterberg region is malaria-free, making it safe for all visitors without the need for malaria prophylaxis.',
-    },
-    {
-      question: 'What is the minimum stay?',
-      answer:
-        'Minimum stay requirements vary by season and residence. Generally, we recommend a minimum of 3 nights to fully experience the reserve. During peak seasons, longer minimum stays may apply. Contact our concierge for specific requirements.',
-    },
-    {
-      question: 'How do I get to Miwesu?',
-      answer:
-        'MIWESU GAME FARM is located on D1432 Road, Makoppa District, Thabazimbi, Limpopo 0380, South Africa. Approximately 40 kilometers from Thabazimbi town. The nearest major airport is OR Tambo International Airport in Johannesburg (approximately 2.5 hours drive). GPS coordinates: -24.4523956, 27.0450853. High-clearance vehicles recommended for the D1432 district road, especially during the summer rainy season.',
-    },
-    {
-      question: 'What is the Guardian\'s Pledge?',
-      answer:
-        'The Guardian\'s Pledge is our code of conduct that all guests must acknowledge. It states: "I acknowledge that Miwesu is a sanctuary of silence. I respect the ethics of the fair chase and the peace of the Iron Mountain." Disrespectful behavior or noise that disturbs wildlife will result in immediate eviction.',
-    },
-    {
-      question: 'Can I bring children?',
-      answer:
-        'Yes, children are welcome at Miwesu. However, all guests, including children, must respect the Guardian\'s Pledge and the quiet, respectful atmosphere of the reserve. We recommend discussing your family\'s needs with our concierge when booking.',
-    },
-    {
-      question: 'What should I pack?',
-      answer:
-        'We recommend neutral-colored clothing for game viewing, comfortable walking shoes, warm layers for early mornings and evenings, sun protection, and binoculars. For conservation harvest activities, appropriate gear will be discussed during booking. The residences are fully equipped, so you only need personal items.',
-    },
-  ]
+  const faqs = FAQ_ITEMS
 
   return (
     <Layout>
-      <main className="min-h-screen bg-marble">
+      <main id="main-content" className="min-h-screen bg-marble">
         {/* Hero Section */}
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/faq-hero.jpg"
-              alt="FAQ"
+              alt="Frequently asked questions about MIWESU Game Farm - Makoppa district, Thabazimbi, Limpopo"
               fill
               className="object-cover opacity-50"
               priority

@@ -1,10 +1,11 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '@/components/Layout'
 import { OrganizationSchema, LocalBusinessSchema } from '@/components/StructuredData'
+import { getCurrency, getIntent } from '@/lib/cookies'
 import {
   Thermometer,
   Wind,
@@ -24,6 +25,14 @@ import {
 } from 'lucide-react'
 
 export default function Home() {
+  const [intent, setIntent] = useState<'biltong' | 'trophy'>('trophy')
+  const [currency, setCurrency] = useState<'ZAR' | 'USD'>('USD')
+
+  useEffect(() => {
+    setIntent(getIntent())
+    setCurrency(getCurrency())
+  }, [])
+
   useEffect(() => {
     // Reveal Animation on Scroll
     const reveal = () => {
@@ -55,7 +64,7 @@ export default function Home() {
     <Layout>
       <OrganizationSchema />
       <LocalBusinessSchema />
-      <main>
+      <main id="main-content">
 
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden bg-onyx">
@@ -351,9 +360,9 @@ export default function Home() {
               <span className="text-gradient-gold">Harvest</span>
             </h2>
             <p className="font-sans text-gray-400 text-sm max-w-2xl mx-auto leading-loose">
-              We do not sell animals; we manage an ecosystem. The availability of
-              specific quarry is dictated strictly by our annual ecological census.
-              Below are the primary species of the Iron Mountain.
+              {intent === 'biltong'
+                ? 'Ons verkoop nie diere nie; ons bestuur \'n ekosisteem. Beskikbaarheid word deur ons jaarlikse sensus bepaal. Pryse in Rand. Hier is die primêre spesies van die Ystergberg.'
+                : 'We do not sell animals; we manage an ecosystem. The availability of specific quarry is dictated strictly by our annual ecological census. Inquire for USD packages. Below are the primary species of the Iron Mountain.'}
             </p>
           </div>
 
@@ -554,11 +563,12 @@ export default function Home() {
             <div className="group relative bg-gold-500 border border-gold-500 hover:bg-white hover:text-onyx transition-all duration-500 reveal delay-200 flex flex-col justify-center items-center p-8 text-center">
               <Download className="w-12 h-12 mb-6 text-onyx group-hover:text-gold-500 transition-colors" />
               <h3 className="font-serif text-2xl text-onyx mb-4">
-                Investment Guide
+                {intent === 'biltong' ? 'Jag & Biltong pryse' : 'Investment Guide'}
               </h3>
               <p className="font-sans text-xs text-onyx/70 mb-8 leading-relaxed">
-                Download our confidential 2025 Conservation Investment Guide,
-                detailing trophy fees, taxidermy logistics, and meat processing.
+                {intent === 'biltong'
+                  ? 'Vra toegang tot ons 2026 jag- en biltongpryse, slagfooi en vleisverwerking.'
+                  : 'Download our confidential 2026 Conservation Investment Guide, detailing trophy fees, taxidermy logistics, and meat processing.'}
               </p>
               <button
                 onClick={openModal}

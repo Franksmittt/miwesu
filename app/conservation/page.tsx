@@ -26,13 +26,13 @@ export default function ConservationPage() {
 
   return (
     <Layout>
-      <main className="min-h-screen bg-marble">
+      <main id="main-content" className="min-h-screen bg-marble">
         {/* Hero Section */}
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/conservation-hero.jpg"
-              alt="Conservation"
+              alt="MIWESU Game Farm conservation - anti-poaching, community support, habitat restoration Makoppa district"
               fill
               className="object-cover opacity-50"
               priority

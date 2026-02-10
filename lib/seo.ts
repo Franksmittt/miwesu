@@ -86,7 +86,7 @@ export function generateOrganizationSchema() {
     alternateName: 'Miwesu',
     url: baseUrl,
     logo: `${baseUrl}/logo.png`,
-    description: 'An exclusive private residence collection in the heart of the Makoppa district, Thabazimbi. Dedicated to the preservation of the African bushveld through sustainable utilization and uncompromising luxury.',
+    description: 'Luxury game farm and hunting lodge in the Makoppa district, Thabazimbi, Limpopo. Trophy hunting, plains game, malaria-free Waterberg. Private residences and conservation harvest. Dedicated to the African bushveld through sustainable utilization.',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'D1432 Road, Makoppa District',
@@ -105,6 +105,11 @@ export function generateOrganizationSchema() {
     sameAs: [
       // Add social media URLs when available
     ],
+    areaServed: [
+      { '@type': 'State', name: 'Limpopo', containedInPlace: { '@type': 'Country', name: 'South Africa' } },
+      { '@type': 'City', name: 'Thabazimbi' },
+      { '@type': 'Place', name: 'Waterberg' },
+    ],
   }
 }
 
@@ -117,7 +122,7 @@ export function generateLocalBusinessSchema() {
     '@type': 'LodgingBusiness',
     name: 'MIWESU GAME FARM',
     image: `${baseUrl}/og-image.jpg`,
-    description: 'An exclusive private residence collection in the Makoppa district, Thabazimbi, Limpopo. Located in the Arid Sweet Bushveld, offering luxury accommodations, ethical hunting, conservation experiences, and family-friendly stays. D1432 Road, approximately 40km from Thabazimbi town.',
+    description: 'Luxury game farm and hunting lodge in the Makoppa district, Thabazimbi, Limpopo. Plains game and trophy hunting, malaria-free Waterberg. Private residences, conservation harvest, safari. D1432 Road, approximately 40km from Thabazimbi town.',
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'D1432 Road, Makoppa District',
@@ -126,6 +131,11 @@ export function generateLocalBusinessSchema() {
       postalCode: '0380',
       addressCountry: 'ZA',
     },
+    areaServed: [
+      { '@type': 'State', name: 'Limpopo' },
+      { '@type': 'City', name: 'Thabazimbi' },
+      { '@type': 'Place', name: 'Waterberg' },
+    ],
     geo: {
       '@type': 'GeoCoordinates',
       latitude: -24.4523956,
@@ -206,6 +216,150 @@ export function generateLocalBusinessSchema() {
         value: true,
       },
     ],
+  }
+}
+
+/** Species schema params for Taxon / about entity (E-E-A-T, Knowledge Graph) */
+export type SpeciesSchemaParams = {
+  name: string
+  scientificName: string
+  wikidataId?: string
+  wikipediaUrl?: string
+}
+
+/**
+ * Generates JSON-LD for species page: WebPage with mainEntity about Taxon.
+ * Links to Wikidata/Wikipedia for E-E-A-T and disambiguation.
+ */
+export function generateSpeciesTaxonSchema(
+  params: SpeciesSchemaParams,
+  pageUrl: string
+) {
+  const { name, scientificName, wikidataId, wikipediaUrl } = params
+  const sameAs: string[] = []
+  if (wikidataId) sameAs.push(`https://www.wikidata.org/wiki/${wikidataId}`)
+  if (wikipediaUrl) sameAs.push(wikipediaUrl)
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: `${name} Hunting Guide | MIWESU Game Farm`,
+    description: `Comprehensive guide to ${name} (${scientificName}) hunting in the Makoppa district, Limpopo. Trophy hunting, biology, and conservation at MIWESU.`,
+    url: pageUrl,
+    mainEntity: {
+      '@type': 'Thing',
+      name,
+      alternateName: scientificName,
+      description: `${name} (${scientificName}) - trophy hunting and conservation at MIWESU Game Farm, Makoppa district.`,
+      ...(sameAs.length > 0 && { sameAs }),
+    },
+  }
+}
+
+/**
+ * Product schema for a hunting package (rich snippets: price, availability).
+ */
+export function generateProductSchema(params: {
+  name: string
+  description: string
+  sku: string
+  price: number
+  priceCurrency: 'USD' | 'ZAR'
+  imageUrl?: string
+  availability?: 'InStock' | 'OutOfStock' | 'PreOrder'
+  validFrom?: string
+}) {
+  const {
+    name,
+    description,
+    sku,
+    price,
+    priceCurrency,
+    imageUrl,
+    availability = 'InStock',
+    validFrom = '2026-01-01',
+  } = params
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name,
+    description,
+    sku,
+    brand: { '@type': 'Brand', name: 'MIWESU GAME FARM' },
+    ...(imageUrl && { image: imageUrl }),
+    offers: {
+      '@type': 'Offer',
+      priceCurrency,
+      price: String(price),
+      availability: `https://schema.org/${availability}`,
+      validFrom,
+      url: `${baseUrl}/rates`,
+    },
+  }
+}
+
+/**
+ * TouristTrip schema for safari itineraries (Google Travel, GEO).
+ */
+export function generateTouristTripSchema(params: {
+  name: string
+  description?: string
+  itinerary: string[]
+}) {
+  const { name, description, itinerary } = params
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'TouristTrip',
+    name,
+    ...(description && { description }),
+    touristType: 'Hunter',
+    itinerary: {
+      '@type': 'ItemList',
+      itemListElement: itinerary.map((text, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: text,
+      })),
+    },
+  }
+}
+
+/**
+ * FAQPage schema for FAQ accordions (rich results in SERPs).
+ */
+export function generateFAQPageSchema(
+  faqs: Array<{ question: string; answer: string }>
+) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(({ question, answer }) => ({
+      '@type': 'Question',
+      name: question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: answer,
+      },
+    })),
+  }
+}
+
+/**
+ * BreadcrumbList schema for navigation hierarchy (SERP breadcrumbs).
+ * @param items - Ordered list of { name, url }; url should be absolute.
+ */
+export function generateBreadcrumbSchema(
+  items: Array<{ name: string; url: string }>
+) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: item.name,
+      item: item.url,
+    })),
   }
 }
 

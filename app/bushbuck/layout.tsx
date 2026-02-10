@@ -1,7 +1,17 @@
 import { Metadata } from 'next'
 import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard } from '@/lib/seo'
+import { SpeciesTaxonSchema, BreadcrumbSchema } from '@/components/StructuredData'
+import { SPECIES_BY_SLUG } from '@/lib/species-data'
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.com'
+const slug = 'bushbuck'
+const species = SPECIES_BY_SLUG[slug]
+const pageUrl = constructCanonicalUrl(slug)
+const breadcrumbItems = [
+  { name: 'Home', url: baseUrl + '/' },
+  { name: 'Wildlife & Species', url: constructCanonicalUrl('wildlife') },
+  { name: species.name, url: pageUrl },
+]
 
 export const metadata: Metadata = {
   title: 'Bushbuck Hunting Guide | Tragelaphus sylvaticus',
@@ -29,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: generateOpenGraph(
     'Bushbuck Hunting Guide | Tragelaphus sylvaticus',
     'Comprehensive guide to Bushbuck hunting at MIWESU Game Farm. Learn about the Prince of the Thickets - morphology, behavior, hunting strategies, trophy evaluation, and venison utilization.',
-    constructCanonicalUrl('bushbuck'),
+    pageUrl,
     `${baseUrl}/og-image.jpg`
   ),
   twitter: generateTwitterCard(
@@ -37,9 +47,7 @@ export const metadata: Metadata = {
     'Comprehensive guide to Bushbuck hunting at MIWESU Game Farm. Learn about the Prince of the Thickets - morphology, behavior, hunting strategies, trophy evaluation, and venison utilization.',
     `${baseUrl}/og-image.jpg`
   ),
-  alternates: {
-    canonical: constructCanonicalUrl('bushbuck'),
-  },
+  alternates: { canonical: pageUrl, languages: { 'en-US': pageUrl, 'x-default': pageUrl } },
 }
 
 export default function BushbuckLayout({
@@ -47,6 +55,12 @@ export default function BushbuckLayout({
 }: {
   children: React.ReactNode
 }) {
-  return <>{children}</>
+  return (
+    <>
+      <BreadcrumbSchema items={breadcrumbItems} />
+      <SpeciesTaxonSchema params={species} pageUrl={pageUrl} />
+      {children}
+    </>
+  )
 }
 

@@ -1,12 +1,22 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '@/components/Layout'
 import { DollarSign, Calendar, Users, ArrowRight, Download, Home, Target, Camera, Star } from 'lucide-react'
+import { getCurrency, getIntent } from '@/lib/cookies'
+import CurrencySwitcher from '@/components/CurrencySwitcher'
 
 export default function RatesPage() {
+  const [currency, setCurrency] = useState<'ZAR' | 'USD'>('USD')
+  const [intent, setIntent] = useState<'biltong' | 'trophy'>('trophy')
+
+  useEffect(() => {
+    setCurrency(getCurrency())
+    setIntent(getIntent())
+  }, [])
+
   useEffect(() => {
     const reveal = () => {
       const reveals = document.querySelectorAll('.reveal')
@@ -33,13 +43,13 @@ export default function RatesPage() {
 
   return (
     <Layout>
-      <main className="min-h-screen bg-marble">
+      <main id="main-content" className="min-h-screen bg-marble">
         {/* Hero Section */}
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/rates-hero.jpg"
-              alt="Rates"
+              alt="Rates and pricing - MIWESU Game Farm accommodation and activities, Makoppa district Thabazimbi"
               fill
               className="object-cover opacity-50"
               priority
@@ -48,11 +58,14 @@ export default function RatesPage() {
           </div>
           <div className="relative z-20 text-center px-4 sm:px-6">
             <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
-              Investment Guide
+              {intent === 'biltong' ? 'Jag & Biltong pryse' : 'Investment Guide'}
             </span>
             <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
               Rates & <span className="text-gradient-gold">Pricing</span>
             </h1>
+            <p className="text-white/70 text-sm mt-2">
+              {currency === 'ZAR' ? 'Pryse in Rand (ZAR)' : 'Contact concierge for USD quotes and international packages'}
+            </p>
           </div>
         </section>
 
@@ -60,6 +73,9 @@ export default function RatesPage() {
         <section className="py-32 bg-onyx text-white relative">
           <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-20 reveal">
+              <div className="flex justify-center mb-4">
+                <CurrencySwitcher current={currency} className="text-white/80" />
+              </div>
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold">
                 Exclusive Pricing
               </span>
@@ -67,7 +83,9 @@ export default function RatesPage() {
                 Transparent Investment
               </h2>
               <p className="font-sans text-gray-400 text-lg max-w-2xl mx-auto leading-loose">
-                All rates are quoted in South African Rand (ZAR). Pricing varies by season, residence, and activities. Contact our concierge for detailed quotes.
+                {currency === 'ZAR'
+                  ? 'All rates in South African Rand (ZAR). Pricing varies by season, residence, and activities. Contact our concierge for detailed quotes.'
+                  : 'Rates are quoted in ZAR; contact our concierge for USD pricing and international packages. Pricing varies by season, residence, and activities.'}
               </p>
             </div>
 

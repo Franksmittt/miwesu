@@ -26,7 +26,7 @@ export default function GreaterKuduPage() {
 
   return (
     <Layout>
-      <main className="min-h-screen bg-marble">
+      <main id="main-content" className="min-h-screen bg-marble">
         {/* Hero Section */}
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
@@ -79,8 +79,8 @@ export default function GreaterKuduPage() {
         {/* Introduction Section */}
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-12 items-center mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+              <div className="flex flex-col">
                 <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
                   Introduction
                 </span>
@@ -97,7 +97,7 @@ export default function GreaterKuduPage() {
                   Our Sweetveld sustains Kudu in peak condition year-round, resulting in exceptional trophy quality. The thick mountain thickets provide perfect habitat, and our annual census ensures sustainable management of this iconic species.
                 </p>
               </div>
-              <div className="relative h-[400px] md:h-[500px]">
+              <div className="relative h-full min-h-[400px] md:min-h-[500px]">
                 <Image
                   src="/images/wildlife-kudu-featured.jpg"
                   alt="Greater Kudu bull in thicket"
@@ -121,8 +121,8 @@ export default function GreaterKuduPage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-4">Taxonomic Classification</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   The Greater Kudu belongs to the family Bovidae, subfamily Bovinae, and the tribe Tragelaphini. This tribe includes other spiral-horned antelope such as the Nyala, Bushbuck, and Eland. The genus <em className="text-gold-400">Tragelaphus</em> is characterized by spiral horns (in males), a preference for dense cover, and browsing habits.
@@ -137,7 +137,7 @@ export default function GreaterKuduPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-[400px] md:h-[500px]">
+              <div className="relative h-full min-h-[400px] md:min-h-[500px]">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Kudu Taxonomy Comparison Image Placeholder</span>
                 </div>
@@ -230,8 +230,8 @@ export default function GreaterKuduPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div className="relative h-[400px]">
+            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
+              <div className="relative h-full min-h-[400px]">
                 <Image
                   src="/images/home-species-kudu.jpg"
                   alt="Greater Kudu coat coloration"
@@ -239,7 +239,7 @@ export default function GreaterKuduPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div>
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Coat Coloration and Markings</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   The Greater Kudu's coat is a masterpiece of camouflage. The base color ranges from greyish-brown to reddish-brown, with older bulls often appearing darker, almost charcoal-grey. This coloration blends perfectly with the dappled shadows of thick bushveld.
@@ -257,8 +257,8 @@ export default function GreaterKuduPage() {
             </div>
 
             {/* Horn Configuration */}
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   The spiral horns of the Greater Kudu are among the most impressive in the animal kingdom. Only males carry horns, which begin growing at around 6-9 months of age and continue throughout the bull's life.
@@ -273,7 +273,7 @@ export default function GreaterKuduPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-[400px]">
+              <div className="relative h-full min-h-[400px]">
                 <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Kudu Horn Detail Image Placeholder</span>
                 </div>
@@ -343,13 +343,13 @@ export default function GreaterKuduPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div className="relative h-[400px]">
+            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
+              <div className="relative h-full min-h-[400px]">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Kudu Behavior Image Placeholder</span>
                 </div>
               </div>
-              <div>
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Daily Activity Cycle</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Kudu are crepuscular, with peak activity during early morning (dawn) and late afternoon (dusk). During these periods, they emerge from thick cover to feed in more open areas, taking advantage of the cooler temperatures and reduced visibility to predators.
@@ -404,8 +404,8 @@ export default function GreaterKuduPage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Browsing Preferences</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Kudu are selective browsers, feeding on over 100 different plant species. They prefer the leaves, shoots, and fruits of trees and shrubs, particularly Acacia species, Combretum, and various bushveld trees.
@@ -417,7 +417,7 @@ export default function GreaterKuduPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-[400px]">
+              <div className="relative h-full min-h-[400px]">
                 <Image
                   src="/images/about-sweetveld-kudu.jpg"
                   alt="Kudu browsing in Sweetveld"
@@ -427,8 +427,8 @@ export default function GreaterKuduPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div className="relative h-[400px]">
+            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
+              <div className="relative h-full min-h-[400px]">
                 <Image
                   src="/images/conservation-harvest-kudu.jpg"
                   alt="Kudu in thicket habitat"
@@ -436,7 +436,7 @@ export default function GreaterKuduPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div>
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Habitat Requirements</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Kudu require a combination of dense cover for security and more open areas for feeding. The ideal habitat includes riverine thickets, mountain slopes with bushveld, and areas where dense vegetation provides escape cover.
@@ -471,8 +471,8 @@ export default function GreaterKuduPage() {
             </div>
 
             {/* Hunting Strategies */}
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Hunting Strategies</h3>
                 <div className="space-y-6">
                   <div className="bg-onyx-light border border-white/10 p-6">
@@ -500,7 +500,7 @@ export default function GreaterKuduPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-[500px]">
+              <div className="relative h-full min-h-[500px]">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Hunting Stalk Image Placeholder</span>
                 </div>
@@ -560,13 +560,13 @@ export default function GreaterKuduPage() {
             </div>
 
             {/* Shot Placement */}
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div className="relative h-[500px]">
+            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
+              <div className="relative h-full min-h-[500px]">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Shot Placement Diagram Image Placeholder</span>
                 </div>
               </div>
-              <div>
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Shot Placement</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   Proper shot placement is critical. The Kudu's vitals are positioned slightly lower and more forward than in North American deer.
@@ -611,8 +611,8 @@ export default function GreaterKuduPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Trophy Characteristics</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-6">
                   A trophy Kudu bull is defined by horn length, spiral quality, and overall mass.
@@ -649,7 +649,7 @@ export default function GreaterKuduPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-[500px]">
+              <div className="relative h-full min-h-[500px]">
                 <Image
                   src="/images/about-trophy-kudu.jpg"
                   alt="Trophy Kudu bull"
@@ -698,8 +698,8 @@ export default function GreaterKuduPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 reveal">
-              <div>
+            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
+              <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Meat Characteristics</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Kudu meat is deep red, fine-grained, and extremely lean. It has a rich, gamey flavor that is more pronounced than that of grazers like Impala or Blesbok, reflecting the animal's browsing diet.
@@ -711,7 +711,7 @@ export default function GreaterKuduPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-[400px]">
+              <div className="relative h-full min-h-[400px]">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Kudu Venison Image Placeholder</span>
                 </div>
@@ -815,6 +815,12 @@ export default function GreaterKuduPage() {
                   className="inline-flex items-center justify-center px-8 py-4 border-2 border-onyx text-onyx font-sans font-semibold uppercase tracking-wider hover:bg-onyx hover:text-white transition-colors duration-300"
                 >
                   Explore Other Species
+                </Link>
+                <Link
+                  href="/rates"
+                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-gold-500 text-gold-600 font-sans font-semibold uppercase tracking-wider hover:bg-gold-500 hover:text-onyx transition-colors duration-300"
+                >
+                  Rates & Investment Guide
                 </Link>
               </div>
             </div>

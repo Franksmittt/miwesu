@@ -26,7 +26,7 @@ export default function LechwePage() {
 
   return (
     <Layout>
-      <main className="min-h-screen bg-marble">
+      <main id="main-content" className="min-h-screen bg-marble">
         {/* Hero Section */}
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
@@ -681,6 +681,12 @@ export default function LechwePage() {
                   className="inline-flex items-center justify-center px-8 py-4 border-2 border-onyx text-onyx font-sans font-semibold uppercase tracking-wider hover:bg-onyx hover:text-white transition-colors duration-300"
                 >
                   Explore Other Species
+                </Link>
+                <Link
+                  href="/rates"
+                  className="inline-flex items-center justify-center px-8 py-4 border-2 border-gold-500 text-gold-600 font-sans font-semibold uppercase tracking-wider hover:bg-gold-500 hover:text-onyx transition-colors duration-300"
+                >
+                  Rates & Investment Guide
                 </Link>
               </div>
             </div>

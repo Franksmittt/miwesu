@@ -1,12 +1,17 @@
 import { Metadata } from 'next'
-import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard } from '@/lib/seo'
+import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard, generateProductSchema } from '@/lib/seo'
+import { ProductSchema, BreadcrumbSchema } from '@/components/StructuredData'
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.com'
+const breadcrumbItems = [
+  { name: 'Home', url: baseUrl + '/' },
+  { name: 'Rates & Pricing', url: constructCanonicalUrl('rates') },
+]
 
 export const metadata: Metadata = {
   title: 'Rates & Pricing | Investment Guide',
-  description: 'View transparent pricing for MIWESU GAME FARM accommodations and activities. Rates for The Homestead and The Stone Villa, plus activity pricing. Request our confidential 2025 Conservation Investment Guide. Located in Makoppa district, Thabazimbi.',
-  keywords: ['Miwesu rates', 'accommodation pricing', 'game farm prices', 'luxury accommodation cost', 'South Africa safari rates', 'Thabazimbi', 'Makoppa district', 'MIWESU GAME FARM'],
+  description: 'Rates and pricing for MIWESU GAME FARM, Limpopo. Accommodation, plains game packages, and trophy hunting. The Homestead and Stone Villa. Request our 2026 Conservation Investment Guide. Makoppa district, Thabazimbi.',
+  keywords: ['Miwesu rates', 'accommodation pricing', 'game farm prices', 'luxury accommodation cost', 'South Africa safari rates', 'Limpopo hunting cost', 'plains game packages', 'trophy hunting rates', 'Thabazimbi', 'Makoppa district', 'MIWESU GAME FARM'],
   openGraph: generateOpenGraph(
     'Rates & Pricing | Investment Guide',
     'View transparent pricing for MIWESU GAME FARM accommodations and activities. Request our confidential Investment Guide.',
@@ -23,11 +28,28 @@ export const metadata: Metadata = {
   },
 }
 
+const samplePackageSchema = generateProductSchema({
+  name: '7-Day Plains Game & Golden Wildebeest Safari',
+  description: 'All-inclusive hunting safari at MIWESU Game Farm in the Makoppa Sweetveld, Limpopo. Targets Golden Wildebeest, Impala, Warthog and other plains game. Luxury accommodation, professional guides.',
+  sku: 'HUNT-GOLD-001',
+  price: 5500,
+  priceCurrency: 'USD',
+  imageUrl: `${baseUrl}/images/home-species-wildebeest.jpg`,
+  availability: 'InStock',
+  validFrom: '2026-01-01',
+})
+
 export default function RatesLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  return <>{children}</>
+  return (
+    <>
+      <BreadcrumbSchema items={breadcrumbItems} />
+      <ProductSchema schema={samplePackageSchema} />
+      {children}
+    </>
+  )
 }
 

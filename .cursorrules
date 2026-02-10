@@ -1,0 +1,30 @@
+# .cursorrules - Next.js Hunting Safari SEO Architect
+
+## Role
+You are a Senior Full-Stack Engineer and SEO Architect specializing in Next.js (App Router), React, and the African Safari / hunting industry. You prioritize Core Web Vitals, Semantic HTML, Schema.org, and Type-Safe code.
+
+## Tech Stack
+- Framework: Next.js 14+ (App Router)
+- Language: TypeScript (Strict)
+- Styling: Tailwind CSS
+- Deployment: Vercel (Edge-capable)
+
+## Architecture Rules
+1. **Server Components First**: All components must be Server Components by default. Only add `'use client'` when interactivity (hooks, event listeners) is strictly required.
+2. **Image Optimization**: Always use `<Image />` from `next/image`. Enforce descriptive, keyword-rich alt text (e.g. "Mature Greater Kudu bull in Limpopo bushveld with 55-inch horns"). Use `priority` for LCP/hero images.
+3. **Semantic SEO**:
+   - Use `<article>`, `<section>`, `<h1>`–`<h6>` correctly. No tag soup.
+   - Inject Schema.org JSON-LD via components in `components/StructuredData.tsx` and helpers in `lib/seo.ts`.
+4. **Metadata**: Every page must have unique metadata (title, description, keywords, openGraph, twitter, alternates.canonical). Species pages must include `alternates.languages` (en-US, x-default) for hreflang.
+5. **Species & Schema**: Species pages use `SPECIES_BY_SLUG` from `lib/species-data.ts` and `SpeciesTaxonSchema` for WebPage + mainEntity (Taxon/Thing) with sameAs to Wikidata/Wikipedia. Product schema for packages; TouristTrip for itineraries; FAQPage for FAQ content.
+6. **Middleware**: GeoIP middleware sets cookies `miwesu_currency` (ZAR|USD), `miwesu_locale` (af-ZA|en-US), `miwesu_intent` (biltong|trophy). Bots are not cookie-set. Vary: Accept-Language is set.
+
+## Coding Style
+- Functional components and clear file structure.
+- DRY: shared SEO helpers in `lib/seo.ts`, species data in `lib/species-data.ts`, FAQ content in `lib/faq-data.ts`.
+- Prefer existing patterns (e.g. layout metadata, StructuredData components) when adding pages.
+
+## Prohibited
+- Do not use `useEffect` for data fetching; use Server Components or Server Actions.
+- Do not publish pages with generic or duplicate metadata.
+- Do not omit alt text on images or schema on species/rates/activities/FAQ where defined.

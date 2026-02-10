@@ -2,9 +2,9 @@
 MIWESU GAME FARM - COMPREHENSIVE PROJECT SUMMARY
 ================================================================================
 
-Generated: January 27, 2025
+Generated: February 10, 2026
 Project: MIWESU GAME FARM Website
-Technology Stack: Next.js 14.2.5, React 18.3.1, TypeScript 5.5.4, Tailwind CSS 3.4.7
+Technology Stack: Next.js 14.2.35, React 18.3.1, TypeScript 5.5.4, Tailwind CSS 3.4.7
 
 ================================================================================
 1. PROJECT OVERVIEW
@@ -24,7 +24,7 @@ and the natural beauty of the African bushveld.
 ================================================================================
 
 Core Framework:
-- Next.js 14.2.5 (App Router)
+- Next.js 14.2.35 (App Router)
 - React 18.3.1
 - TypeScript 5.5.4
 - Node.js (Latest LTS)
@@ -87,9 +87,25 @@ Build Tools:
   │   ├── layout.tsx          # Residences page metadata
   │   └── page.tsx            # Residences page content
   │
-  └── wildlife/
-      ├── layout.tsx          # Wildlife page metadata
-      └── page.tsx            # Wildlife and species page
+  ├── wildlife/
+  │   ├── layout.tsx          # Wildlife page metadata
+  │   └── page.tsx            # Wildlife overview and species links
+  │
+  ├── blesbok/                # Species: Blesbok
+  ├── bushbuck/               # Species: Bushbuck
+  ├── cape-buffalo/           # Species: Cape Buffalo
+  ├── dapple-impala/          # Species: Dapple Impala
+  ├── gemsbok/                # Species: Gemsbok
+  ├── golden-wildebeest/      # Species: Golden Wildebeest
+  ├── greater-kudu/           # Species: Greater Kudu
+  ├── impala/                 # Species: Impala
+  ├── lechwe/                 # Species: Lechwe
+  ├── livingstone-eland/      # Species: Livingstone Eland
+  ├── red-hartebeest/         # Species: Red Hartebeest
+  ├── springbok/              # Species: Springbok
+  ├── warthog/                # Species: Warthog
+  └── wildebeest/             # Species: Blue Wildebeest
+      (each: layout.tsx + page.tsx)
 
 /components/
   ├── Layout.tsx              # Main layout wrapper (Navigation + Footer)
@@ -99,16 +115,26 @@ Build Tools:
   └── VettingModal.tsx        # Access request modal
 
 /lib/
-  └── seo.ts                  # SEO helper functions (canonical URLs, OG tags)
+  ├── seo.ts                  # SEO helpers: canonical, OG, Twitter, Schema generators
+  ├── species-data.ts         # Canonical species data (name, scientificName, wikidataId) for 14 species
+  └── faq-data.ts             # Shared FAQ content for page + FAQPage schema
+
+/middleware.ts                # GeoIP: sets currency (ZAR/USD), locale (af-ZA/en-US), intent (biltong/trophy); Vary: Accept-Language; bot-safe
+
+/.cursorrules                 # Next.js Hunting SEO architecture rules for AI-assisted development
 
 /public/
-  └── images/                 # Image assets (69 JPG files)
+  └── images/                 # Image assets (69+ JPG files)
+
+/animals/                     # Species source content (reference)
+  └── *.docx, *.jpg, *.txt    # Drafts and assets for species pages
 
 ================================================================================
 4. PAGES & ROUTES
 ================================================================================
 
-Total Pages: 10 main pages + 2 system routes (sitemap.xml, robots.txt)
+Total Pages: 10 main pages + 14 species pages + 2 system routes = 26 routes
+(sitemap.xml, robots.txt)
 
 1. HOME PAGE (/)
    - Hero section with full-screen background image
@@ -150,16 +176,36 @@ Total Pages: 10 main pages + 2 system routes (sitemap.xml, robots.txt)
    - Custom experiences CTA
 
 5. WILDLIFE PAGE (/wildlife)
-   - Species showcase (Greater Kudu, Blue Wildebeest, Impala, Gemsbok, Warthog)
-   - Detailed species information
-   - Featured Greater Kudu section
+   - Species showcase with links to all 14 dedicated species pages
+   - Species cards: Greater Kudu, Blue Wildebeest, Impala, Gemsbok, Warthog,
+     Blesbok, Bushbuck, Cape Buffalo, Dapple Impala, Golden Wildebeest,
+     Lechwe, Livingstone Eland, Red Hartebeest, Springbok
+   - Featured species section
    - Species gallery
-   - Specialist species section
    - Predators section (Leopard, Brown Hyena)
    - Ecological management information
    - Sweetveld advantage explanation
 
-6. CONSERVATION PAGE (/conservation)
+6. SPECIES PAGES (14 dedicated pages)
+   Each species has its own route with layout.tsx + page.tsx. Full content
+   (overview, taxonomy, physical description, behavior, habitat, hunting
+   notes, field judging, caliber recommendations, conservation status).
+   - /blesbok          - Blesbok
+   - /bushbuck         - Bushbuck
+   - /cape-buffalo     - Cape Buffalo
+   - /dapple-impala    - Dapple Impala
+   - /gemsbok          - Gemsbok
+   - /golden-wildebeest - Golden Wildebeest
+   - /greater-kudu     - Greater Kudu
+   - /impala           - Impala
+   - /lechwe           - Lechwe
+   - /livingstone-eland - Livingstone Eland
+   - /red-hartebeest   - Red Hartebeest
+   - /springbok        - Springbok
+   - /warthog          - Warthog
+   - /wildebeest       - Blue Wildebeest
+
+7. CONSERVATION PAGE (/conservation)
    - "If It Pays, It Stays" philosophy
    - Economic sustainability explanation
    - Guardian's Pledge
@@ -170,13 +216,13 @@ Total Pages: 10 main pages + 2 system routes (sitemap.xml, robots.txt)
    - Ecological research
    - Conservation programs grid
 
-7. GALLERY PAGE (/gallery)
+8. GALLERY PAGE (/gallery)
    - Filterable image gallery (All, Landscape, Wildlife, Accommodation)
    - Lightbox modal for full-size viewing
    - Featured collections
    - Image categories with descriptions
 
-8. RATES PAGE (/rates)
+9. RATES PAGE (/rates)
    - Accommodation rates (The Homestead, The Stone Villa)
    - Activity rates
    - Detailed pricing sections
@@ -184,7 +230,7 @@ Total Pages: 10 main pages + 2 system routes (sitemap.xml, robots.txt)
    - Investment Guide CTA
    - Custom packages information
 
-9. FAQ PAGE (/faq)
+10. FAQ PAGE (/faq)
    - Expandable FAQ accordion (10 questions)
    - Location & Access information
    - Vetting process explanation
@@ -192,7 +238,7 @@ Total Pages: 10 main pages + 2 system routes (sitemap.xml, robots.txt)
    - Best time to visit (seasonal information)
    - Contact CTA
 
-10. CONTACT PAGE (/contact)
+11. CONTACT PAGE (/contact)
     - Contact form with validation
     - Contact information (address, email, phone)
     - Location details with GPS coordinates
@@ -228,14 +274,18 @@ FOOTER COMPONENT (components/Footer.tsx)
 LAYOUT COMPONENT (components/Layout.tsx)
 - Wrapper component for all pages
 - Includes Navigation, VettingModal, and Footer
+- Skip link: first focusable element is <a href="#main-content">Skip to main content</a> (off-screen until focus)
 - Client component (uses 'use client' for interactivity)
 - Children prop for page content
 
 STRUCTURED DATA COMPONENT (components/StructuredData.tsx)
-- OrganizationSchema: Organization JSON-LD
-- LocalBusinessSchema: LodgingBusiness JSON-LD
-- Server-side rendered for SEO
-- Injected into homepage
+- OrganizationSchema, LocalBusinessSchema (homepage)
+- SpeciesTaxonSchema (each species layout: WebPage + mainEntity with Wikidata/Wikipedia)
+- ProductSchema (rates layout: sample hunting package)
+- TouristTripSchema (activities layout: sample safari itinerary)
+- FAQPageSchema (FAQ layout: from lib/faq-data.ts)
+- BreadcrumbSchema (BreadcrumbList) on all main and species layouts (Home → section → page)
+- All server-rendered JSON-LD for SEO and rich results
 
 VETTING MODAL COMPONENT (components/VettingModal.tsx)
 - Access request modal
@@ -388,20 +438,20 @@ Root Layout (app/layout.tsx):
 - Verification: Placeholder for Google Search Console
 
 Page-Level Metadata:
-All 10 pages have dedicated layout.tsx files with:
-- Unique titles (using template)
-- Unique descriptions (150-160 characters)
-- Relevant keywords per page
-- Open Graph tags
-- Twitter Card metadata
-- Canonical URLs
-- Consistent structure
+All 24 content pages (10 main + 14 species) have dedicated layout.tsx files with:
+- Unique titles (using template '%s | MIWESU GAME FARM')
+- Unique, keyword-rich descriptions
+- Relevant keywords per page (including Makoppa, Limpopo where appropriate)
+- Open Graph and Twitter Card metadata
+- Canonical URLs (constructCanonicalUrl)
+- Species pages: alternates.languages (en-US, x-default) for hreflang readiness
+- No duplicate or generic metadata across pages
 
 TECHNICAL SEO ASSETS
 
 Sitemap (app/sitemap.ts):
 - Dynamic generation via MetadataRoute.Sitemap
-- Includes all 10 main pages
+- Includes all 24 content pages (10 main + 14 species)
 - lastModified: Current date
 - changeFrequency: Weekly (homepage), Monthly (other pages)
 - priority: 1.0 (homepage), 0.8 (other pages)
@@ -416,20 +466,28 @@ Robots.txt (app/robots.ts):
 
 STRUCTURED DATA (JSON-LD)
 
-Organization Schema:
-- Type: Organization
-- Name: MIWESU GAME FARM
-- Address: D1432 Road, Makoppa District, Thabazimbi, Limpopo 0380
-- Contact: Phone, Email
-- Logo, Description, URL
+Organization Schema (homepage):
+- Type: Organization. Name, Address, Contact, Logo, URL.
 
-LocalBusiness Schema:
-- Type: LodgingBusiness
-- Complete business information
-- GeoCoordinates: -24.4523956, 27.0450853
-- Opening hours: 24/7
-- Amenity features: 11 amenities listed
-- Price range: $$$
+LocalBusiness Schema (homepage):
+- Type: LodgingBusiness. GeoCoordinates, opening hours 24/7, 11 amenity features, price range $$$.
+
+SpeciesTaxonSchema (all 14 species pages):
+- WebPage + mainEntity (Thing) with name, scientificName, sameAs (Wikidata, Wikipedia) for E-E-A-T and Knowledge Graph.
+
+ProductSchema (rates layout):
+- Sample hunting package: "7-Day Plains Game & Golden Wildebeest Safari" with Offer (price, currency, availability, validFrom).
+
+TouristTripSchema (activities layout):
+- Sample 10-day Conservation Harvest Safari itinerary (ItemList by day).
+
+FAQPageSchema (FAQ layout):
+- Generated from shared FAQ_ITEMS; enables FAQ rich results in SERPs.
+
+MIDDLEWARE (Geo-Fence / Dual Market)
+- middleware.ts runs on Vercel Edge; matcher excludes _next, api, static files.
+- Reads x-vercel-ip-country: ZA → cookies miwesu_currency=ZAR, miwesu_locale=af-ZA, miwesu_intent=biltong; else USD, en-US, trophy.
+- Bots (Googlebot, Bingbot, etc.): no cookies set; Vary: Accept-Language always set.
 
 PERFORMANCE OPTIMIZATIONS
 
@@ -439,7 +497,8 @@ Image Optimization:
 - Automatic format conversion (WebP, AVIF)
 - Lazy loading for below-fold images
 - Proper sizing and aspect ratios
-- Descriptive alt text on all images
+- Descriptive, keyword-rich alt text on all images (no generic "FAQ", "Rates", etc.; location/species context included)
+- Single <h1> per page; semantic <main> and <section> structure
 
 Font Optimization:
 - next/font for Google Fonts
@@ -523,7 +582,7 @@ Image Strategy:
 
 Key Image Categories:
 - Hero images (homepage, all pages)
-- Species photography (Kudu, Wildebeest, Impala, Gemsbok, Warthog)
+- Species photography (all 14 species: Kudu, Wildebeest, Impala, Gemsbok, Warthog, Blesbok, Bushbuck, Cape Buffalo, Dapple Impala, Golden Wildebeest, Lechwe, Livingstone Eland, Red Hartebeest, Springbok)
 - Residence images (Homestead, Stone Villa)
 - Landscape photography (Makoppa district, granite koppies)
 - Activity images (hunting, safaris, wellness)
@@ -617,7 +676,7 @@ Build Configuration:
 - Image domains configured
 
 Build Output:
-- 15 static routes generated
+- 26 static routes generated (24 content + sitemap.xml + robots.txt)
 - Sitemap.xml generated
 - Robots.txt generated
 - Optimized JavaScript bundles
@@ -682,6 +741,46 @@ Deployment Ready:
 15. RECENT UPDATES & FIXES
 ================================================================================
 
+SEO Audit & Hardening (February 2026):
+- Full page-by-page SEO audit: metadata, canonicals, OG, Twitter, keywords.
+- Wildlife page metadata updated to list all 14 species in description/keywords.
+- Rates page: "2025" → "2026" in Investment Guide copy.
+- Hero image alt text improved site-wide: replaced generic alts (e.g. "FAQ", "Rates", "Contact", "Gallery", "Wildlife", "Residences", "Activities", "Conservation") with descriptive, location-keyword-rich alts for accessibility and image SEO.
+- Verified: every page has single <h1>, canonical, unique title/description; sitemap and robots.ts include all routes; no empty alt attributes.
+
+Species Pages Expansion (2025–2026):
+- Added 14 dedicated species pages with full content (layout + page per species)
+- Species: Blesbok, Bushbuck, Cape Buffalo, Dapple Impala, Gemsbok,
+  Golden Wildebeest, Greater Kudu, Impala, Lechwe, Livingstone Eland,
+  Red Hartebeest, Springbok, Warthog, Blue Wildebeest
+- Each species layout: SpeciesTaxonSchema (WebPage + mainEntity with Wikidata/Wikipedia sameAs), alternates.languages (en-US, x-default).
+- Sitemap and wildlife overview updated to include all species routes
+- Source content/assets in /animals/ (docx, images, reference text)
+
+Hunting SEO Strategy Implementation (February 2026):
+- middleware.ts: GeoIP-based currency/locale/intent cookies (ZAR/af-ZA/biltong for ZA; USD/en-US/trophy else); bot-safe; Vary: Accept-Language.
+- lib/seo.ts: generateSpeciesTaxonSchema, generateProductSchema, generateTouristTripSchema, generateFAQPageSchema.
+- lib/species-data.ts: SPECIES_BY_SLUG (name, scientificName, wikidataId, wikipediaUrl) for all 14 species.
+- lib/faq-data.ts: FAQ_ITEMS shared between FAQ page and FAQPageSchema.
+- StructuredData.tsx: SpeciesTaxonSchema, ProductSchema, TouristTripSchema, FAQPageSchema components.
+- Rates layout: ProductSchema for sample 7-day package. Activities layout: TouristTripSchema for 10-day safari itinerary. FAQ layout: FAQPageSchema.
+- .cursorrules added for Next.js hunting SEO architecture (Server Components, images, schema, metadata, middleware).
+
+Flawless polish (February 2026):
+- Cookie-driven UI: homepage and Rates page read miwesu_currency and miwesu_intent; hero/subtext and CTAs vary (Jag & Biltong pryse vs Investment Guide, ZAR vs USD).
+- CurrencySwitcher component on Rates page: ZAR/USD toggle sets cookie and reloads so users can override GeoIP.
+- BreadcrumbSchema (BreadcrumbList JSON-LD) on all main pages (About, Activities, Conservation, Contact, FAQ, Gallery, Rates, Residences, Wildlife) and all 14 species layouts (Home → [section] → [page]).
+- Accessibility: skip link ("Skip to main content") as first focusable in Layout; every page has <main id="main-content"> for keyboard/screen-reader navigation.
+- lib/cookies.ts: client helpers getCurrency(), getIntent(), setCurrency(), setIntent() for cookie read/write.
+
+Domination SEO (February 2026):
+- SEO_DOMINATION_PLAN.md: page-by-page audit and actions for organic search dominance (Limpopo, Thabazimbi, Waterberg, plains game, trophy hunting, hunting lodge).
+- Sitemap priority tiers: home 1.0; rates/activities/wildlife + all 14 species 0.95; about/residences/conservation 0.9; faq/contact/gallery 0.85.
+- Root and all main layout metadata: description and keywords boosted (game farm, hunting lodge, plains game, trophy hunting, Waterberg, malaria-free, Limpopo hunting cost, game farm booking, etc.).
+- Organization and LocalBusiness schema: areaServed (Limpopo, Thabazimbi, Waterberg); descriptions updated with trophy hunting, plains game, malaria-free.
+- All 14 species pages: CTA now includes "Rates & Investment Guide" link; Wildlife page CTA includes Rates link.
+- FAQ expanded with 3 high-intent questions (Limpopo hunting safari cost, best time for plains game in South Africa, what's in a typical Limpopo hunting package) for featured snippets and PAA.
+
 Mobile Responsiveness (January 27, 2025):
 - Fixed text overlapping issues
 - Improved spacing and padding on mobile
@@ -703,28 +802,32 @@ SEO Implementation (January 27, 2025):
 ================================================================================
 
 Recommended Additions:
-- Google Search Console verification code
+- Google Search Console verification code (placeholder in root layout)
 - Lighthouse CI/CD integration
-- Additional structured data schemas (BreadcrumbList, Article)
-- Internationalization (i18n) if needed
+- Article schema if blog added (BreadcrumbList already on all main and species pages)
+- Internationalization (i18n): Afrikaans routes (/af/jag/...) when ready; middleware already sets locale cookies
 - Blog/news section for content marketing
 - Online booking system integration
-- Testimonials/reviews section
+- Testimonials/reviews section (and aggregateRating schema)
 - Virtual tour integration
 - Newsletter signup
 - Social media feed integration
+- Replace image placeholders on species pages (e.g. taxonomy diagrams, shot placement) with real assets
 
 ================================================================================
 17. FILE COUNT SUMMARY
 ================================================================================
 
-Pages: 10 main pages + 2 system routes = 12 total routes
-Components: 5 reusable components
-Layout Files: 10 page layouts + 1 root layout = 11 layouts
-Utility Files: 1 SEO helper file
-Image Assets: 69 JPG files
+Pages: 10 main pages + 14 species pages + 2 system routes = 26 total routes (29 including _not-found, robots, sitemap)
+Components: 6 reusable components (Layout, Navigation, Footer, StructuredData, VettingModal, CurrencySwitcher)
+Layout Files: 24 page layouts + 1 root layout = 25 layouts
+Middleware: 1 file (middleware.ts) for GeoIP and cookies
+Utility/Data Files: lib/seo.ts, lib/species-data.ts, lib/faq-data.ts, lib/cookies.ts
+Image Assets: 69+ JPG files in /public/images/; additional assets in /animals/
 Configuration Files: 5 (next.config.js, tailwind.config.js, tsconfig.json, package.json, postcss.config.js)
-Documentation Files: Multiple markdown files for SEO, image prompts, etc.
+Project Rules: .cursorrules (Next.js Hunting SEO architecture)
+Documentation Files: SEO_DOMINATION_PLAN.md (page-by-page organic dominance), SEO_AUDIT.md, other SEO/image docs
+Source Content: /animals/ folder (species reference content: docx, jpg, txt)
 
 ================================================================================
 18. KEY FEATURES HIGHLIGHT
@@ -742,6 +845,13 @@ Documentation Files: Multiple markdown files for SEO, image prompts, etc.
 ✨ Security Headers Configured
 ✨ Dynamic Sitemap Generation
 ✨ Environment-Aware Robots.txt
+✨ GeoIP Middleware (currency/locale/intent cookies)
+✨ Multi-Schema JSON-LD (Organization, LocalBusiness, Species/Taxon, Product, TouristTrip, FAQPage, BreadcrumbList)
+✨ Species hreflang-ready (alternates.languages)
+✨ Skip link + main landmark (id="main-content") on every page
+✨ Currency switcher (Rates) + cookie-driven copy (Home, Rates)
+✨ Tiered sitemap priorities + domination keywords (Limpopo, plains game, trophy hunting, hunting lodge)
+✨ Species + Wildlife CTAs to Rates & Investment Guide; FAQ snippet-targeting (cost, best time, packages)
 ✨ Scroll Animations
 ✨ Interactive Gallery
 ✨ Contact Forms
@@ -756,9 +866,10 @@ project. All technical details, design specifications, and implementation status
 are documented above.
 
 For questions or updates, refer to:
+- SEO_DOMINATION_PLAN.md for page-by-page organic dominance strategy and checklist
 - SEO_AUDIT.md for SEO status
 - README.md for setup instructions
 - Individual component files for implementation details
 
-Last Updated: January 27, 2025
+Last Updated: February 10, 2026
 

@@ -1,12 +1,17 @@
 import { Metadata } from 'next'
 import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard } from '@/lib/seo'
+import { BreadcrumbSchema } from '@/components/StructuredData'
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.com'
+const breadcrumbItems = [
+  { name: 'Home', url: baseUrl + '/' },
+  { name: 'Private Residences', url: constructCanonicalUrl('residences') },
+]
 
 export const metadata: Metadata = {
   title: 'Private Residences | Luxury Accommodation',
-  description: 'Experience exclusive luxury at MIWESU GAME FARM. Choose from The Homestead (10-sleeper) or The Stone Villa (4-sleeper). Bespoke living with industrial appliances, daily housekeeping, and absolute privacy in the Makoppa district, Thabazimbi.',
-  keywords: ['luxury accommodation', 'private residence', 'Makoppa district', 'Thabazimbi', 'The Homestead', 'The Stone Villa', 'exclusive use', 'self-catering', 'MIWESU GAME FARM'],
+  description: 'Luxury hunting lodge accommodation at MIWESU GAME FARM. The Homestead (10-sleeper) or The Stone Villa (4-sleeper). Game farm stay in Thabazimbi, Makoppa district. Bespoke living, daily housekeeping, absolute privacy.',
+  keywords: ['luxury accommodation', 'private residence', 'hunting lodge accommodation', 'game farm stay Thabazimbi', 'hunting lodge accommodation Limpopo', 'Makoppa district', 'Thabazimbi', 'The Homestead', 'The Stone Villa', 'exclusive use', 'self-catering', 'MIWESU GAME FARM'],
   openGraph: generateOpenGraph(
     'Private Residences | Luxury Accommodation',
     'Experience exclusive luxury at MIWESU GAME FARM. Choose from The Homestead or The Stone Villa. Bespoke living with absolute privacy in the Makoppa district.',
@@ -28,6 +33,11 @@ export default function ResidencesLayout({
 }: {
   children: React.ReactNode
 }) {
-  return <>{children}</>
+  return (
+    <>
+      <BreadcrumbSchema items={breadcrumbItems} />
+      {children}
+    </>
+  )
 }
 

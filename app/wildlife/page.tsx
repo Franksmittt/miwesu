@@ -183,13 +183,13 @@ export default function WildlifePage() {
 
   return (
     <Layout>
-      <main className="min-h-screen bg-marble">
+      <main id="main-content" className="min-h-screen bg-marble">
         {/* Hero Section */}
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/wildlife-hero.jpg"
-              alt="Wildlife"
+              alt="Wildlife and species at MIWESU Game Farm - conservation harvest in Arid Sweet Bushveld Makoppa Thabazimbi"
               fill
               className="object-cover opacity-50"
               priority
@@ -525,6 +525,12 @@ export default function WildlifePage() {
                 className="inline-flex items-center px-10 py-4 border-2 border-gold-500 text-gold-500 uppercase tracking-widest text-xs font-bold hover:bg-gold-500 hover:text-onyx transition-all"
               >
                 Explore Activities <ArrowRight className="w-4 h-4 ml-2" />
+              </Link>
+              <Link
+                href="/rates"
+                className="inline-flex items-center px-10 py-4 border-2 border-white/50 text-white uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-onyx transition-all"
+              >
+                Rates & Investment Guide <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </div>
           </div>

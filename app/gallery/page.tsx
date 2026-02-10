@@ -128,13 +128,13 @@ export default function GalleryPage() {
 
   return (
     <Layout>
-      <main className="min-h-screen bg-marble">
+      <main id="main-content" className="min-h-screen bg-marble">
         {/* Hero Section */}
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/gallery-hero.jpg"
-              alt="Gallery"
+              alt="Gallery - MIWESU Game Farm landscapes, wildlife and luxury accommodation photography Makoppa district"
               fill
               className="object-cover opacity-50"
               priority

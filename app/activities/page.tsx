@@ -82,13 +82,13 @@ export default function ActivitiesPage() {
 
   return (
     <Layout>
-      <main className="min-h-screen bg-marble">
+      <main id="main-content" className="min-h-screen bg-marble">
         {/* Hero Section */}
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/activities-hero.jpg"
-              alt="Activities"
+              alt="Activities at MIWESU Game Farm - conservation harvest, photographic safari, celestial safari Makoppa Thabazimbi"
               fill
               className="object-cover opacity-50"
               priority

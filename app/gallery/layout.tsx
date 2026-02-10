@@ -1,12 +1,17 @@
 import { Metadata } from 'next'
 import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard } from '@/lib/seo'
+import { BreadcrumbSchema } from '@/components/StructuredData'
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.com'
+const breadcrumbItems = [
+  { name: 'Home', url: baseUrl + '/' },
+  { name: 'Gallery', url: constructCanonicalUrl('gallery') },
+]
 
 export const metadata: Metadata = {
   title: 'Gallery | Visual Journey',
   description: 'Explore our gallery showcasing the beauty of MIWESU GAME FARM: landscapes, wildlife, and luxury accommodations in the Makoppa district, Thabazimbi, Limpopo. Arid Sweet Bushveld photography and game farm imagery.',
-  keywords: ['Miwesu gallery', 'Makoppa district photos', 'Thabazimbi', 'wildlife photography', 'game farm images', 'luxury accommodation photos', 'Arid Sweet Bushveld', 'MIWESU GAME FARM'],
+  keywords: ['Miwesu gallery', 'Makoppa district photos', 'Thabazimbi', 'Limpopo game farm photos', 'Thabazimbi wildlife', 'wildlife photography', 'game farm images', 'luxury accommodation photos', 'Arid Sweet Bushveld', 'MIWESU GAME FARM'],
   openGraph: generateOpenGraph(
     'Gallery | Visual Journey',
     'Explore our gallery showcasing the beauty of MIWESU GAME FARM: landscapes, wildlife, and luxury accommodations in the Makoppa district.',
@@ -28,6 +33,11 @@ export default function GalleryLayout({
 }: {
   children: React.ReactNode
 }) {
-  return <>{children}</>
+  return (
+    <>
+      <BreadcrumbSchema items={breadcrumbItems} />
+      {children}
+    </>
+  )
 }
 

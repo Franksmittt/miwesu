@@ -70,6 +70,16 @@ export default function Footer() {
                   Conservation
                 </Link>
               </li>
+              <li>
+                <Link href="/blog" className="hover:text-gold-500 transition-colors block">
+                  Hunter&apos;s Journal
+                </Link>
+              </li>
+              <li>
+                <Link href="/partners" className="hover:text-gold-500 transition-colors block">
+                  Partners
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -80,6 +90,16 @@ export default function Footer() {
               <li>
                 <Link href="/rates" className="hover:text-gold-500 transition-colors block">
                   Rates
+                </Link>
+              </li>
+              <li>
+                <Link href="/trophy-export" className="hover:text-gold-500 transition-colors block">
+                  Trophy Export
+                </Link>
+              </li>
+              <li>
+                <Link href="/availability" className="hover:text-gold-500 transition-colors block">
+                  Availability
                 </Link>
               </li>
               <li>

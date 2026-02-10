@@ -68,4 +68,9 @@ export const FAQ_ITEMS: Array<{ question: string; answer: string }> = [
     answer:
       'A typical Limpopo hunting package often includes accommodation, professional hunter/guide, daily rates, and trophy fees per species. At MIWESU GAME FARM our rates are broken down into residence (exclusive use), daily housekeeping and utilities, and activity/conservation harvest fees. We provide a detailed 2026 Conservation Investment Guide on request. All packages are tailored; contact guardians@miwesu.com for a custom quote.',
   },
+  {
+    question: 'How much does a buffalo hunt cost in South Africa 2026?',
+    answer:
+      'Cape Buffalo hunt costs in South Africa for 2026 vary by outfitter, package length, and inclusion. At MIWESU GAME FARM we offer dangerous game as part of our conservation harvest in the Makoppa district, Limpopo. Trophy fees and daily rates are detailed in our confidential 2026 Conservation Investment Guide. Contact our concierge at guardians@miwesu.com for a tailored buffalo hunt quote. We are malaria-free in the Waterberg.',
+  },
 ]

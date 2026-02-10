@@ -133,8 +133,8 @@ Build Tools:
 4. PAGES & ROUTES
 ================================================================================
 
-Total Pages: 10 main pages + 14 species pages + 2 system routes = 26 routes
-(sitemap.xml, robots.txt)
+Total Pages: 14 main pages + 14 species pages + blog (index + 2 articles) + 2 locale landings (DE, ES) + 2 system routes = 34+ routes
+(sitemap.xml, robots.txt). New: Trophy Export, Partners, Availability, Hunter's Journal (blog), DE/ES.
 
 1. HOME PAGE (/)
    - Hero section with full-screen background image
@@ -222,7 +222,28 @@ Total Pages: 10 main pages + 14 species pages + 2 system routes = 26 routes
    - Featured collections
    - Image categories with descriptions
 
-9. RATES PAGE (/rates)
+9. TROPHY EXPORT PAGE (/trophy-export)
+   - Trophy Export & Travel guide: field prep, dipping/CITES, shipping, timeline
+   - Getting to MIWESU (OR Tambo, D1432, malaria-free)
+   - Link to Trusted Partners; CTA to contact
+
+10. PARTNERS PAGE (/partners)
+   - Trusted Partners: Dipping & Shipping, Taxidermy, Travel Insurance
+   - Positions MIWESU as complete logistics solution; CTAs to /trophy-export and /contact
+
+11. AVAILABILITY PAGE (/availability)
+   - Check dates / request booking; placeholder for live availability view
+   - The Homestead and Stone Villa summary; CTA to contact
+
+12. HUNTER'S JOURNAL (Blog) (/blog)
+   - Blog index with 3 power pages: Sweetveld vs Sourveld, Limpopo vs Eastern Cape, Trophy Export (links to /trophy-export)
+   - /blog/sweetveld-vs-sourveld, /blog/limpopo-vs-eastern-cape: authority content for SEO and HNWI anxieties
+
+13. LOCALE LANDINGS (/de, /es)
+   - German (Jagd in Limpopo) and Spanish (Caza en Limpopo) landing pages for EU trophy hunters
+   - Hero, key copy, CTA to contact and link back to English
+
+15. RATES PAGE (/rates)
    - Accommodation rates (The Homestead, The Stone Villa)
    - Activity rates
    - Detailed pricing sections
@@ -230,7 +251,7 @@ Total Pages: 10 main pages + 14 species pages + 2 system routes = 26 routes
    - Investment Guide CTA
    - Custom packages information
 
-10. FAQ PAGE (/faq)
+16. FAQ PAGE (/faq)
    - Expandable FAQ accordion (10 questions)
    - Location & Access information
    - Vetting process explanation
@@ -238,7 +259,7 @@ Total Pages: 10 main pages + 14 species pages + 2 system routes = 26 routes
    - Best time to visit (seasonal information)
    - Contact CTA
 
-11. CONTACT PAGE (/contact)
+17. CONTACT PAGE (/contact)
     - Contact form with validation
     - Contact information (address, email, phone)
     - Location details with GPS coordinates
@@ -781,6 +802,16 @@ Domination SEO (February 2026):
 - All 14 species pages: CTA now includes "Rates & Investment Guide" link; Wildlife page CTA includes Rates link.
 - FAQ expanded with 3 high-intent questions (Limpopo hunting safari cost, best time for plains game in South Africa, what's in a typical Limpopo hunting package) for featured snippets and PAA.
 
+Trust & Authority roadmap (February 2026):
+- Trophy Export & Travel page (/trophy-export): full logistics guide (field prep, dipping/CITES, shipping, timeline, travel to MIWESU) to capture anxious international traffic.
+- Trusted Partners page (/partners): dipping/shipping, taxidermy, travel insurance; positions MIWESU as complete logistics solution.
+- Availability page (/availability): check dates and request booking; placeholder for future live availability/calendar.
+- Hunter's Journal (blog): /blog index + power pages Sweetveld vs Sourveld, Limpopo vs Eastern Cape; third entry links to /trophy-export. Authority content for HNWI and comparison/voice search.
+- FAQ: added "How much does a buffalo hunt cost in South Africa 2026?" for AI-answer and voice optimization.
+- Adaptive social proof on homepage: "What Guests Say" section shows US-style testimonials (JFK, Florida, malaria-free) vs SA-style (family biltong, weekend getaway) based on cookie intent.
+- German (/de) and Spanish (/es) locale landing pages for EU trophy hunters; hero, key copy, CTA to contact.
+- Footer: added Trophy Export, Availability under Concierge; Hunter's Journal, Partners under Experiences. Sitemap updated with all new routes.
+
 Mobile Responsiveness (January 27, 2025):
 - Fixed text overlapping issues
 - Improved spacing and padding on mobile
@@ -804,9 +835,9 @@ SEO Implementation (January 27, 2025):
 Recommended Additions:
 - Google Search Console verification code (placeholder in root layout)
 - Lighthouse CI/CD integration
-- Article schema if blog added (BreadcrumbList already on all main and species pages)
-- Internationalization (i18n): Afrikaans routes (/af/jag/...) when ready; middleware already sets locale cookies
-- Blog/news section for content marketing
+- Article schema for blog posts (optional; BreadcrumbList already on all pages)
+- Internationalization (i18n): Afrikaans routes (/af/jag/...) when ready; German (/de) and Spanish (/es) landings added. Middleware already sets locale cookies.
+- Blog (Hunter's Journal) added; more power pages as needed for content marketing.
 - Online booking system integration
 - Testimonials/reviews section (and aggregateRating schema)
 - Virtual tour integration
@@ -818,9 +849,9 @@ Recommended Additions:
 17. FILE COUNT SUMMARY
 ================================================================================
 
-Pages: 10 main pages + 14 species pages + 2 system routes = 26 total routes (29 including _not-found, robots, sitemap)
+Pages: 14 main + 14 species + blog (3 entries) + 2 locale (DE, ES) + 2 system = 35+ routes (sitemap includes all)
 Components: 6 reusable components (Layout, Navigation, Footer, StructuredData, VettingModal, CurrencySwitcher)
-Layout Files: 24 page layouts + 1 root layout = 25 layouts
+Layout Files: 31+ page layouts + 1 root layout (trophy-export, partners, availability, blog, blog articles, de, es)
 Middleware: 1 file (middleware.ts) for GeoIP and cookies
 Utility/Data Files: lib/seo.ts, lib/species-data.ts, lib/faq-data.ts, lib/cookies.ts
 Image Assets: 69+ JPG files in /public/images/; additional assets in /animals/
@@ -851,7 +882,8 @@ Source Content: /animals/ folder (species reference content: docx, jpg, txt)
 ✨ Skip link + main landmark (id="main-content") on every page
 ✨ Currency switcher (Rates) + cookie-driven copy (Home, Rates)
 ✨ Tiered sitemap priorities + domination keywords (Limpopo, plains game, trophy hunting, hunting lodge)
-✨ Species + Wildlife CTAs to Rates & Investment Guide; FAQ snippet-targeting (cost, best time, packages)
+✨ Species + Wildlife CTAs to Rates & Investment Guide; FAQ snippet-targeting (cost, best time, packages, buffalo 2026)
+✨ Hunter's Journal (blog) + Trophy Export & Partners pages; Availability placeholder; adaptive testimonials (US vs SA); DE/ES locale landings
 ✨ Scroll Animations
 ✨ Interactive Gallery
 ✨ Contact Forms

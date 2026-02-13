@@ -21,6 +21,7 @@ export default function FAQPage() {
               src="/images/faq-hero.jpg"
               alt="Frequently asked questions about MIWESU Game Farm - Makoppa district, Thabazimbi, Limpopo"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />
@@ -46,20 +47,24 @@ export default function FAQPage() {
                   className="bg-white border border-gray-100 overflow-hidden"
                 >
                   <button
+                    type="button"
+                    id={`faq-question-${index}`}
+                    aria-expanded={openIndex === index}
+                    aria-controls={`faq-answer-${index}`}
                     onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                    className="w-full px-4 sm:px-8 py-4 sm:py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors gap-4"
+                    className="w-full px-4 sm:px-8 py-4 sm:py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors gap-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-inset"
                   >
                     <h3 className="font-serif text-lg sm:text-xl text-onyx pr-4 sm:pr-8">
                       {faq.question}
                     </h3>
                     {openIndex === index ? (
-                      <ChevronUp className="w-6 h-6 text-gold-500 flex-shrink-0" />
+                      <ChevronUp className="w-6 h-6 text-gold-500 flex-shrink-0" aria-hidden />
                     ) : (
-                      <ChevronDown className="w-6 h-6 text-gold-500 flex-shrink-0" />
+                      <ChevronDown className="w-6 h-6 text-gold-500 flex-shrink-0" aria-hidden />
                     )}
                   </button>
                   {openIndex === index && (
-                    <div className="px-4 sm:px-8 pb-4 sm:pb-6">
+                    <div id={`faq-answer-${index}`} role="region" aria-labelledby={`faq-question-${index}`} className="px-4 sm:px-8 pb-4 sm:pb-6">
                       <p className="font-sans text-gray-600 leading-loose text-sm sm:text-base">
                         {faq.answer}
                       </p>

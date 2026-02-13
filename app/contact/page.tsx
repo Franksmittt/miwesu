@@ -49,6 +49,7 @@ export default function ContactPage() {
               src="/images/contact-hero.jpg"
               alt="Contact MIWESU Game Farm concierge - D1432 Road Makoppa District Thabazimbi Limpopo"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />
@@ -112,13 +113,21 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-serif text-xl text-onyx mb-2">Phone</h3>
                       <a
+                        href="https://wa.me/27727172572"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-sans text-gray-600 hover:text-gold-500 transition-colors block"
+                      >
+                        +27 72 717 2572 (Business WhatsApp)
+                      </a>
+                      <a
                         href="tel:+27730309679"
-                        className="font-sans text-gray-600 hover:text-gold-500 transition-colors"
+                        className="font-sans text-gray-600 hover:text-gold-500 transition-colors block mt-1"
                       >
                         +27 73 030 9679
                       </a>
                       <p className="font-sans text-gray-500 text-sm mt-1">
-                        24/7 Access
+                        24/7 Access • Wood orders welcome via WhatsApp
                       </p>
                     </div>
                   </div>
@@ -129,15 +138,16 @@ export default function ContactPage() {
               <div className="reveal delay-100">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
-                    <label className="block text-[10px] uppercase text-gold-600 tracking-widest font-bold mb-3">
+                    <label id="contact-intent-label" htmlFor="contact-intent" className="block text-[10px] uppercase text-gold-600 tracking-widest font-bold mb-3">
                       Primary Intent
                     </label>
                     <select
+                      id="contact-intent"
                       value={formData.intent}
                       onChange={(e) =>
                         setFormData({ ...formData, intent: e.target.value })
                       }
-                      className="w-full bg-gray-50 border-0 border-b border-gray-200 text-onyx p-4 focus:border-gold-500 focus:ring-0 outline-none font-serif"
+                      className="w-full bg-gray-50 border-0 border-b border-gray-200 text-onyx p-4 focus:border-gold-500 focus:ring-0 outline-none font-serif focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-0"
                       required
                     >
                       <option value="">Select an option</option>
@@ -151,72 +161,78 @@ export default function ContactPage() {
 
                   <div className="grid grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-[10px] uppercase text-gold-600 tracking-widest font-bold mb-3">
+                      <label htmlFor="contact-name" className="block text-[10px] uppercase text-gold-600 tracking-widest font-bold mb-3">
                         Name
                       </label>
                       <input
+                        id="contact-name"
                         type="text"
                         value={formData.name}
                         onChange={(e) =>
                           setFormData({ ...formData, name: e.target.value })
                         }
-                        className="w-full bg-gray-50 border-0 border-b border-gray-200 text-onyx p-4 focus:border-gold-500 outline-none"
+                        className="w-full bg-gray-50 border-0 border-b border-gray-200 text-onyx p-4 focus:border-gold-500 outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-0"
                         required
                       />
                     </div>
                     <div>
-                      <label className="block text-[10px] uppercase text-gold-600 tracking-widest font-bold mb-3">
+                      <label htmlFor="contact-phone" className="block text-[10px] uppercase text-gold-600 tracking-widest font-bold mb-3">
                         Phone
                       </label>
                       <input
+                        id="contact-phone"
                         type="tel"
                         value={formData.phone}
                         onChange={(e) =>
                           setFormData({ ...formData, phone: e.target.value })
                         }
-                        className="w-full bg-gray-50 border-0 border-b border-gray-200 text-onyx p-4 focus:border-gold-500 outline-none"
+                        className="w-full bg-gray-50 border-0 border-b border-gray-200 text-onyx p-4 focus:border-gold-500 outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-0"
                         required
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="block text-[10px] uppercase text-gold-600 tracking-widest font-bold mb-3">
+                    <label htmlFor="contact-email" className="block text-[10px] uppercase text-gold-600 tracking-widest font-bold mb-3">
                       Email
                     </label>
                     <input
+                      id="contact-email"
                       type="email"
                       value={formData.email}
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })
                       }
-                      className="w-full bg-gray-50 border-0 border-b border-gray-200 text-onyx p-4 focus:border-gold-500 outline-none"
+                      className="w-full bg-gray-50 border-0 border-b border-gray-200 text-onyx p-4 focus:border-gold-500 outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-0"
                       required
                     />
                   </div>
 
                   <div>
-                    <label className="block text-[10px] uppercase text-gold-600 tracking-widest font-bold mb-3">
+                    <label htmlFor="contact-message" className="block text-[10px] uppercase text-gold-600 tracking-widest font-bold mb-3">
                       Message
                     </label>
                     <textarea
+                      id="contact-message"
                       value={formData.message}
                       onChange={(e) =>
                         setFormData({ ...formData, message: e.target.value })
                       }
                       rows={6}
-                      className="w-full bg-gray-50 border-0 border-b border-gray-200 text-onyx p-4 focus:border-gold-500 outline-none resize-none"
+                      className="w-full bg-gray-50 border-0 border-b border-gray-200 text-onyx p-4 focus:border-gold-500 outline-none resize-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-0"
                       required
                     ></textarea>
                   </div>
 
                   <div className="flex items-start space-x-4">
                     <input
+                      id="contact-pledge"
                       type="checkbox"
-                      className="mt-1 border-gray-300 rounded text-gold-500 focus:ring-gold-500 h-5 w-5"
+                      aria-describedby="contact-pledge-desc"
+                      className="mt-1 border-gray-300 rounded text-gold-500 focus:ring-gold-500 h-5 w-5 focus-visible:ring-2 focus-visible:ring-gold-500"
                       required
                     />
-                    <p className="text-xs text-gray-400 leading-normal font-sans">
+                    <p id="contact-pledge-desc" className="text-xs text-gray-400 leading-normal font-sans">
                       I agree to the "Guardian's Pledge" and understand that noisy
                       behavior or disrespect for wildlife will result in immediate
                       eviction.
@@ -225,7 +241,7 @@ export default function ContactPage() {
 
                   <button
                     type="submit"
-                    className="w-full bg-onyx text-white py-5 uppercase tracking-widest text-xs font-bold hover:bg-gold-500 transition-colors shadow-luxury flex items-center justify-center"
+                    className="w-full bg-onyx text-white py-5 uppercase tracking-widest text-xs font-bold hover:bg-gold-500 transition-colors shadow-luxury flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2"
                   >
                     Submit Inquiry <Send className="w-4 h-4 ml-2" />
                   </button>

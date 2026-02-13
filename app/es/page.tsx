@@ -27,6 +27,7 @@ export default function EsPage() {
               src="/images/home-hero.jpg"
               alt="MIWESU Game Farm - Caza en Limpopo, Makoppa Thabazimbi"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />

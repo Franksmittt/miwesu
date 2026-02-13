@@ -6,7 +6,25 @@
   body {
     @apply bg-marble text-[#111111] antialiased overflow-x-hidden;
   }
-  
+
+  /* Core Web Vitals: prevent layout shift from focus outline */
+  :focus {
+    outline: 2px solid transparent;
+  }
+  :focus-visible {
+    outline: 2px solid #C5A059;
+    outline-offset: 2px;
+  }
+
+  /* Accessibility: respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
   ::selection {
     @apply bg-gold-500 text-white;
   }
@@ -44,16 +62,19 @@
     border: 1px solid rgba(255, 255, 255, 0.05);
   }
 
-  /* Smooth reveal animation */
+  /* Smooth reveal animation - transform/opacity only to avoid CLS */
   .reveal {
     opacity: 0;
     transform: translateY(40px);
-    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
   }
-  
   .reveal.active {
     opacity: 1;
     transform: translateY(0);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; }
+    .reveal.active { opacity: 1; transform: none; }
   }
 
   /* Vertical text */

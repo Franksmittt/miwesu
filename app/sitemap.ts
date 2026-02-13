@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'wildebeest',
     'conservation',
     'gallery',
+    'wood',
     'rates',
     'faq',
     'contact',
@@ -42,7 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     if (['rates', 'activities', 'wildlife'].includes(route)) return 0.95
     if (['blesbok', 'bushbuck', 'cape-buffalo', 'dapple-impala', 'gemsbok', 'golden-wildebeest', 'greater-kudu', 'impala', 'lechwe', 'livingstone-eland', 'red-hartebeest', 'springbok', 'warthog', 'wildebeest'].includes(route)) return 0.95
     if (['about', 'residences', 'conservation', 'trophy-export', 'blog'].includes(route)) return 0.9
-    return 0.85 // faq, contact, gallery, partners, availability, blog articles, de, es
+    return 0.85 // faq, contact, gallery, wood, partners, availability, blog articles, de, es
   }
 
   return routes.map((route) => ({

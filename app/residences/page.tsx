@@ -6,23 +6,15 @@ import Layout from '@/components/Layout'
 import Link from 'next/link'
 import {
   ChefHat,
-  Wifi,
   Flame,
   Shield,
-  Sun,
-  Wind,
-  Star,
-  Coffee,
-  Bed,
-  Users,
   ArrowRight,
-  Home,
-  Droplets,
   Car,
-  UtensilsCrossed,
-  Snowflake,
-  Eye,
   MapPin,
+  Layout as LayoutIcon,
+  TreePine,
+  Activity,
+  Waves,
 } from 'lucide-react'
 
 export default function ResidencesPage() {
@@ -53,6 +45,7 @@ export default function ResidencesPage() {
               src="/images/residences-hero.jpg"
               alt="Private residences at MIWESU Game Farm - The Homestead and The Stone Villa luxury accommodation Makoppa"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />
@@ -84,45 +77,33 @@ export default function ResidencesPage() {
             </div>
 
             <div className="grid lg:grid-cols-2 gap-8 md:gap-12 mb-12 sm:mb-20">
-              {/* Residence 1: The Homestead */}
+              {/* Main Lodge House */}
               <div className="group relative bg-onyx-light border border-white/5 hover:border-gold-500/50 transition-all duration-500 overflow-hidden reveal">
                 <div className="h-72 sm:h-96 overflow-hidden relative">
                   <Image
                     src="/images/residences-homestead-main.jpg"
-                    alt="The Homestead"
+                    alt="Main Lodge House at MIWESU Game Farm"
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover transition-transform duration-1000 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-onyx to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-onyx to-transparent" />
                   <div className="absolute top-6 right-6 bg-gold-500 text-onyx w-16 h-16 flex items-center justify-center font-serif text-2xl font-bold shadow-gold-glow">
                     I
                   </div>
                 </div>
                 <div className="p-6 sm:p-10 relative">
-                  <h3 className="font-serif text-2xl sm:text-3xl text-white mb-3 sm:mb-4">The Homestead</h3>
+                  <h3 className="font-serif text-2xl sm:text-3xl text-white mb-3 sm:mb-4">Main Lodge House</h3>
                   <p className="text-gray-400 text-sm sm:text-base font-sans leading-relaxed mb-4 sm:mb-6">
-                    The pinnacle of exclusive use. A 10-sleeper manor offering absolute autonomy in the heart of the reserve.
+                    The heart of the property. Bedrooms on two levels, full kitchen, living area, boma, lapa with pool table and darts, braai under the trees, trampoline, jungle gym and swimming pool with slide.
                   </p>
-                  <div className="grid grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8 text-xs sm:text-sm uppercase tracking-widest text-gold-400">
-                    <span className="flex items-center">
-                      <Bed className="w-4 h-4 mr-2" /> 10 Guests
-                    </span>
-                    <span className="flex items-center">
-                      <Users className="w-4 h-4 mr-2" /> 5 Bedrooms
-                    </span>
-                    <span className="flex items-center">
-                      <ChefHat className="w-4 h-4 mr-2" /> Chef's Kitchen
-                    </span>
-                    <span className="flex items-center">
-                      <Wifi className="w-4 h-4 mr-2" /> Fiber Optic
-                    </span>
-                    <span className="flex items-center">
-                      <Flame className="w-4 h-4 mr-2" /> Private Boma
-                    </span>
-                    <span className="flex items-center">
-                      <Shield className="w-4 h-4 mr-2" /> Secure
-                    </span>
-                  </div>
+                  <ul className="text-gray-400 text-xs sm:text-sm space-y-1.5 mb-6 sm:mb-8">
+                    <li>Lower Room 1 & 2 · Kitchen · Living Area</li>
+                    <li>Upper Room 1 & 2</li>
+                    <li>Boma and Braai (BBQ) · Lapa (pool table & darts)</li>
+                    <li>Braai under the trees · Trampoline & Jungle Gym</li>
+                    <li>Swimming pool with slide</li>
+                  </ul>
                   <Link
                     href="/contact"
                     className="inline-flex items-center px-8 py-3 border border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-onyx transition-all text-xs uppercase tracking-widest font-bold"
@@ -132,45 +113,33 @@ export default function ResidencesPage() {
                 </div>
               </div>
 
-              {/* Residence 2: The Stone Villa */}
+              {/* 2nd House (Near the pool) */}
               <div className="group relative bg-onyx-light border border-white/5 hover:border-gold-500/50 transition-all duration-500 overflow-hidden reveal delay-100">
-                <div className="h-96 overflow-hidden relative">
+                <div className="h-72 sm:h-96 overflow-hidden relative">
                   <Image
                     src="/images/residences-stone-villa-main.jpg"
-                    alt="The Stone Villa"
+                    alt="Second house near the pool at MIWESU Game Farm"
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover transition-transform duration-1000 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-onyx to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-onyx to-transparent" />
                   <div className="absolute top-6 right-6 bg-white text-onyx w-16 h-16 flex items-center justify-center font-serif text-2xl font-bold">
                     II
                   </div>
                 </div>
-                <div className="p-10 relative">
-                  <h3 className="font-serif text-3xl text-white mb-4">The Stone Villa</h3>
-                  <p className="text-gray-400 text-base font-sans leading-relaxed mb-6">
-                    Carved into the ridge. An intimate 4-sleeper sanctuary with panoramic views of the Makoppa district.
+                <div className="p-6 sm:p-10 relative">
+                  <h3 className="font-serif text-2xl sm:text-3xl text-white mb-2 sm:mb-3">2nd House</h3>
+                  <p className="text-gold-400/90 text-xs italic mb-3">Near the pool</p>
+                  <p className="text-gray-400 text-sm sm:text-base font-sans leading-relaxed mb-4 sm:mb-6">
+                    Kitchen, living area, master bedroom with en-suite, second bedroom with bunk beds (very small) and en-suite. Outdoor braai area overlooking the dam.
                   </p>
-                  <div className="grid grid-cols-2 gap-4 mb-8 text-sm uppercase tracking-widest text-gold-400">
-                    <span className="flex items-center">
-                      <Bed className="w-4 h-4 mr-2" /> 4 Guests
-                    </span>
-                    <span className="flex items-center">
-                      <Users className="w-4 h-4 mr-2" /> 2 Bedrooms
-                    </span>
-                    <span className="flex items-center">
-                      <Sun className="w-4 h-4 mr-2" /> Plunge Pool
-                    </span>
-                    <span className="flex items-center">
-                      <Wind className="w-4 h-4 mr-2" /> Deck
-                    </span>
-                    <span className="flex items-center">
-                      <Star className="w-4 h-4 mr-2" /> Telescope
-                    </span>
-                    <span className="flex items-center">
-                      <Coffee className="w-4 h-4 mr-2" /> Nespresso
-                    </span>
-                  </div>
+                  <ul className="text-gray-400 text-xs sm:text-sm space-y-1.5 mb-6 sm:mb-8">
+                    <li>Kitchen · Living Area</li>
+                    <li>Master Bedroom · En-suite Bathroom</li>
+                    <li>2nd Bedroom (bunk beds) · En-suite Bathroom</li>
+                    <li>Outdoor Braai overlooking the dam</li>
+                  </ul>
                   <Link
                     href="/contact"
                     className="inline-flex items-center px-8 py-3 border border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-onyx transition-all text-xs uppercase tracking-widest font-bold"
@@ -181,197 +150,133 @@ export default function ResidencesPage() {
               </div>
             </div>
 
-            {/* Detailed Residence Sections */}
+            {/* Main Lodge House — Facilities */}
             <div className="space-y-20 mb-20">
-              {/* The Homestead - Detailed */}
               <div className="reveal">
-                <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-8 sm:mb-12">
-                  <div>
-                    <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-3 sm:mb-4 block">
-                      The Homestead
-                    </span>
-                    <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white mb-4 sm:mb-6">
-                      The Pinnacle of Exclusive Use
-                    </h3>
-                    <p className="text-gray-300 text-base sm:text-lg leading-loose mb-4 sm:mb-6">
-                      A 10-sleeper manor offering absolute autonomy in the heart of the reserve. The Homestead is designed for those who demand uncompromising luxury and complete privacy. Every detail has been considered, from the industrial-grade kitchen to the private boma where stories are shared under the African stars.
-                    </p>
-                    <p className="text-gray-300 text-base sm:text-lg leading-loose mb-6 sm:mb-8">
-                      With five spacious bedrooms, each with en-suite facilities, The Homestead accommodates large families or groups seeking the ultimate bushveld experience. The property features its own secure perimeter, ensuring children can play safely while adults enjoy the tranquility of the reserve.
-                    </p>
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="border-l-2 border-gold-500 pl-4">
-                        <span className="block font-serif text-2xl text-gold-400 mb-1">10</span>
-                        <span className="text-xs uppercase tracking-widest text-gray-400">Sleepers</span>
-                      </div>
-                      <div className="border-l-2 border-gold-500 pl-4">
-                        <span className="block font-serif text-2xl text-gold-400 mb-1">5</span>
-                        <span className="text-xs uppercase tracking-widest text-gray-400">Bedrooms</span>
-                      </div>
+                <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-3 block">
+                  Main Lodge House
+                </span>
+                <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white mb-6">
+                  Facilities & Layout
+                </h3>
+                <p className="text-gray-300 text-base sm:text-lg leading-loose mb-10 max-w-3xl">
+                  The main lodge is the heart of the property: two levels of bedrooms, full kitchen and living area, boma and braai, lapa with pool table and darts, braai under the trees, trampoline and jungle gym, and swimming pool with slide.
+                </p>
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                  {[
+                    { src: '/images/residences-homestead-main.jpg', label: 'Main Lodge House' },
+                    { src: '/images/residences-main-lodge-lower-room-1.jpg', label: 'Lower Room 1' },
+                    { src: '/images/residences-main-lodge-lower-room-2.jpg', label: 'Lower Room 2' },
+                    { src: '/images/residences-main-lodge-kitchen.jpg', label: 'Kitchen' },
+                    { src: '/images/residences-main-lodge-living.jpg', label: 'Living Area' },
+                    { src: '/images/residences-main-lodge-upper-room-1.jpg', label: 'Upper Room 1' },
+                    { src: '/images/residences-main-lodge-upper-room-2.jpg', label: 'Upper Room 2' },
+                    { src: '/images/residences-main-lodge-boma-braai.jpg', label: 'Boma and Braai (BBQ)' },
+                    { src: '/images/residences-main-lodge-lapa.jpg', label: 'Lapa (pool table & darts)' },
+                    { src: '/images/residences-main-lodge-braai-trees.jpg', label: 'Braai under the trees' },
+                    { src: '/images/residences-main-lodge-trampoline-jungle-gym.jpg', label: 'Trampoline & Jungle Gym' },
+                    { src: '/images/residences-main-lodge-pool.jpg', label: 'Swimming pool with slide' },
+                  ].map((item) => (
+                    <div key={item.label} className="relative h-[220px] sm:h-[260px] overflow-hidden border border-white/5">
+                      <Image
+                        src={item.src}
+                        alt={item.label}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        className="object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-onyx via-transparent to-transparent" />
+                      <span className="absolute bottom-3 left-3 right-3 font-serif text-white text-sm sm:text-base drop-shadow-lg">
+                        {item.label}
+                      </span>
                     </div>
-                  </div>
-                  <div className="relative h-[350px] sm:h-[450px] md:h-[500px]">
-                    <Image
-                      src="/images/residences-homestead-main.jpg"
-                      alt="The Homestead - luxury accommodation"
-                      fill
-                      className="object-cover shadow-luxury"
-                    />
-                  </div>
-                </div>
-                
-                {/* Homestead Gallery */}
-                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
-                  <div className="relative h-[250px] sm:h-[300px]">
-                    <Image
-                      src="/images/residences-homestead-kitchen.jpg"
-                      alt="The Homestead kitchen with industrial appliances"
-                      fill
-                      className="object-cover shadow-luxury"
-                    />
-                  </div>
-                  <div className="relative h-[300px]">
-                    <Image
-                      src="/images/residences-homestead-living.jpg"
-                      alt="The Homestead living area"
-                      fill
-                      className="object-cover shadow-luxury"
-                    />
-                  </div>
-                  <div className="relative h-[300px]">
-                    <Image
-                      src="/images/residences-homestead-boma.jpg"
-                      alt="The Homestead private boma and fire pit"
-                      fill
-                      className="object-cover shadow-luxury"
-                    />
-                  </div>
+                  ))}
                 </div>
               </div>
 
-              {/* The Stone Villa - Detailed */}
+              {/* 2nd House (Near the pool) — Facilities */}
               <div className="reveal delay-100">
-                <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
-                  <div className="relative h-[500px] order-2 md:order-1">
-                    <Image
-                      src="/images/residences-stone-villa-main.jpg"
-                      alt="The Stone Villa carved into the ridge"
-                      fill
-                      className="object-cover shadow-luxury"
-                    />
-                  </div>
-                  <div className="order-1 md:order-2">
-                    <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-4 block">
-                      The Stone Villa
-                    </span>
-                    <h3 className="font-serif text-4xl md:text-5xl text-white mb-6">
-                      Carved Into the Ridge
-                    </h3>
-                    <p className="text-gray-300 text-lg leading-loose mb-6">
-                      An intimate 4-sleeper sanctuary with panoramic views of the Makoppa district. The Stone Villa is carved into the granite ridge, offering a unique architectural experience that blends seamlessly with the ancient landscape.
-                    </p>
-                    <p className="text-gray-300 text-lg leading-loose mb-8">
-                      Perfect for couples or small families, this intimate residence features two en-suite bedrooms, a plunge pool with views over the bushveld, and a private deck ideal for stargazing. The telescope provided allows you to explore the famously dark skies of the Thabazimbi region.
-                    </p>
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="border-l-2 border-gold-500 pl-4">
-                        <span className="block font-serif text-2xl text-gold-400 mb-1">4</span>
-                        <span className="text-xs uppercase tracking-widest text-gray-400">Sleepers</span>
-                      </div>
-                      <div className="border-l-2 border-gold-500 pl-4">
-                        <span className="block font-serif text-2xl text-gold-400 mb-1">2</span>
-                        <span className="text-xs uppercase tracking-widest text-gray-400">Bedrooms</span>
-                      </div>
+                <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-3 block">
+                  2nd House
+                </span>
+                <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white mb-2">
+                  Near the Pool
+                </h3>
+                <p className="text-gray-400 text-sm italic mb-6">Likely the owner&apos;s house.</p>
+                <p className="text-gray-300 text-base sm:text-lg leading-loose mb-10 max-w-3xl">
+                  Kitchen, living area, master bedroom with en-suite bathroom, second bedroom with bunk beds (very small) and en-suite bathroom. Outdoor braai area overlooking the dam.
+                </p>
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                  {[
+                    { src: '/images/residences-second-house-main.jpg', label: '2nd House' },
+                    { src: '/images/residences-second-house-kitchen.jpg', label: 'Kitchen' },
+                    { src: '/images/residences-second-house-living.jpg', label: 'Living Area' },
+                    { src: '/images/residences-second-house-master-bedroom.jpg', label: 'Master Bedroom' },
+                    { src: '/images/residences-second-house-ensuite.jpg', label: 'En-suite Bathroom' },
+                    { src: '/images/residences-second-house-bedroom-2.jpg', label: '2nd Bedroom (bunk beds)' },
+                    { src: '/images/residences-second-house-braai-dam.jpg', label: 'Outdoor Braai overlooking the dam' },
+                  ].map((item) => (
+                    <div key={item.label} className="relative h-[220px] sm:h-[260px] overflow-hidden border border-white/5">
+                      <Image
+                        src={item.src}
+                        alt={item.label}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        className="object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-onyx via-transparent to-transparent" />
+                      <span className="absolute bottom-3 left-3 right-3 font-serif text-white text-sm sm:text-base drop-shadow-lg">
+                        {item.label}
+                      </span>
                     </div>
-                  </div>
-                </div>
-
-                {/* Stone Villa Gallery */}
-                <div className="grid md:grid-cols-3 gap-6 mb-12">
-                  <div className="relative h-[300px]">
-                    <Image
-                      src="/images/residences-stone-villa-pool.jpg"
-                      alt="The Stone Villa plunge pool with bushveld views"
-                      fill
-                      className="object-cover shadow-luxury"
-                    />
-                  </div>
-                  <div className="relative h-[300px]">
-                    <Image
-                      src="/images/residences-stone-villa-bedroom.jpg"
-                      alt="The Stone Villa bedroom with panoramic views"
-                      fill
-                      className="object-cover shadow-luxury"
-                    />
-                  </div>
-                  <div className="relative h-[300px]">
-                    <Image
-                      src="/images/residences-stone-villa-deck.jpg"
-                      alt="The Stone Villa deck for stargazing"
-                      fill
-                      className="object-cover shadow-luxury"
-                    />
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
 
-            {/* Amenities & Facilities */}
+            {/* Amenities overview */}
             <div className="mb-20 reveal delay-200">
               <div className="text-center mb-12">
                 <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
-                  Bespoke Living
+                  On the Property
                 </span>
                 <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
-                  Every Detail Curated
+                  Main Lodge & Second House
                 </h2>
                 <p className="text-gray-300 text-lg max-w-3xl mx-auto leading-loose">
-                  We have reimagined the self-catering model. Expect industrial Smeg appliances, Le Creuset cookware, and daily housekeeping that operates invisibly.
+                  Main lodge: bedrooms on two levels, kitchen, living area, boma and braai, lapa with pool table and darts, braai under the trees, trampoline, jungle gym and swimming pool with slide. Second house near the pool: kitchen, living, master and second bedroom (bunk beds), en-suites, outdoor braai overlooking the dam.
                 </p>
               </div>
-              
-              <div className="grid md:grid-cols-3 gap-8 mb-12">
-                <div className="bg-onyx-light border border-white/5 p-8 text-center">
-                  <ChefHat className="w-12 h-12 text-gold-500 mx-auto mb-4" />
-                  <h4 className="font-serif text-xl text-white mb-3">Chef's Kitchen</h4>
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    Industrial Smeg appliances, Le Creuset cookware, and everything needed for gourmet self-catering.
-                  </p>
+              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
+                <div className="bg-onyx-light border border-white/5 p-6 text-center">
+                  <ChefHat className="w-10 h-10 text-gold-500 mx-auto mb-3" />
+                  <h4 className="font-serif text-lg text-white mb-2">Kitchen</h4>
+                  <p className="text-gray-400 text-sm leading-relaxed">Full kitchen in main lodge and second house.</p>
                 </div>
-                <div className="bg-onyx-light border border-white/5 p-8 text-center">
-                  <Droplets className="w-12 h-12 text-gold-500 mx-auto mb-4" />
-                  <h4 className="font-serif text-xl text-white mb-3">Swimming Pool</h4>
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    Essential in the 40°C Thabazimbi summer. Perfect for cooling off after a day in the bush.
-                  </p>
+                <div className="bg-onyx-light border border-white/5 p-6 text-center">
+                  <Flame className="w-10 h-10 text-gold-500 mx-auto mb-3" />
+                  <h4 className="font-serif text-lg text-white mb-2">Boma & Braai</h4>
+                  <p className="text-gray-400 text-sm leading-relaxed">Boma and braai at main lodge; outdoor braai at second house overlooking the dam.</p>
                 </div>
-                <div className="bg-onyx-light border border-white/5 p-8 text-center">
-                  <Flame className="w-12 h-12 text-gold-500 mx-auto mb-4" />
-                  <h4 className="font-serif text-xl text-white mb-3">Private Boma</h4>
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    Fire pit and outdoor dining area. The heart of the African bushveld experience.
-                  </p>
+                <div className="bg-onyx-light border border-white/5 p-6 text-center">
+                  <LayoutIcon className="w-10 h-10 text-gold-500 mx-auto mb-3" />
+                  <h4 className="font-serif text-lg text-white mb-2">Lapa</h4>
+                  <p className="text-gray-400 text-sm leading-relaxed">Pool table and darts at main lodge lapa.</p>
                 </div>
-                <div className="bg-onyx-light border border-white/5 p-8 text-center">
-                  <Snowflake className="w-12 h-12 text-gold-500 mx-auto mb-4" />
-                  <h4 className="font-serif text-xl text-white mb-3">Cold Room</h4>
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    Professional meat storage facility for your harvest. Essential for summer preservation.
-                  </p>
+                <div className="bg-onyx-light border border-white/5 p-6 text-center">
+                  <TreePine className="w-10 h-10 text-gold-500 mx-auto mb-3" />
+                  <h4 className="font-serif text-lg text-white mb-2">Braai under the trees</h4>
+                  <p className="text-gray-400 text-sm leading-relaxed">Additional braai area at main lodge.</p>
                 </div>
-                <div className="bg-onyx-light border border-white/5 p-8 text-center">
-                  <UtensilsCrossed className="w-12 h-12 text-gold-500 mx-auto mb-4" />
-                  <h4 className="font-serif text-xl text-white mb-3">Slaughter Room</h4>
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    Fully equipped facility for processing your harvest. Professional standards maintained.
-                  </p>
+                <div className="bg-onyx-light border border-white/5 p-6 text-center">
+                  <Activity className="w-10 h-10 text-gold-500 mx-auto mb-3" />
+                  <h4 className="font-serif text-lg text-white mb-2">Trampoline & Jungle Gym</h4>
+                  <p className="text-gray-400 text-sm leading-relaxed">Family-friendly at main lodge.</p>
                 </div>
-                <div className="bg-onyx-light border border-white/5 p-8 text-center">
-                  <Wifi className="w-12 h-12 text-gold-500 mx-auto mb-4" />
-                  <h4 className="font-serif text-xl text-white mb-3">WiFi (Lodge Only)</h4>
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    Solar-powered internet connectivity. Available at The Homestead for essential communications.
-                  </p>
+                <div className="bg-onyx-light border border-white/5 p-6 text-center">
+                  <Waves className="w-10 h-10 text-gold-500 mx-auto mb-3" />
+                  <h4 className="font-serif text-lg text-white mb-2">Swimming pool with slide</h4>
+                  <p className="text-gray-400 text-sm leading-relaxed">At main lodge; second house is near the pool.</p>
                 </div>
               </div>
             </div>
@@ -383,6 +288,7 @@ export default function ResidencesPage() {
                   src="/images/residences-housekeeping.jpg"
                   alt="Daily housekeeping service at Miwesu"
                   fill
+                  sizes="(max-width: 768px) 100vw, 800px"
                   className="object-cover shadow-luxury"
                 />
               </div>

@@ -79,6 +79,10 @@ Build Tools:
   │   ├── layout.tsx          # Gallery page metadata
   │   └── page.tsx            # Gallery page with lightbox
   │
+  ├── wood/
+  │   ├── layout.tsx          # Wood & Thermal page metadata
+  │   └── page.tsx            # Wood & Thermal: engineering-grade fuel, products, CTA to standalone order site
+  │
   ├── rates/
   │   ├── layout.tsx          # Rates page metadata
   │   └── page.tsx            # Rates and pricing page
@@ -125,6 +129,10 @@ Build Tools:
 
 /public/
   └── images/                 # Image assets (69+ JPG files)
+
+/standalone-thermal/          # Optional: copy elsewhere to host as separate paid site
+  ├── miwesu-thermal-2026.html  # Single-file Thermal OS order experience (loader, hero, products, allocation panel)
+  └── README.md                 # Hosting and env var instructions
 
 /animals/                     # Species source content (reference)
   └── *.docx, *.jpg, *.txt    # Drafts and assets for species pages
@@ -242,6 +250,11 @@ Total Pages: 14 main pages + 14 species pages + blog (index + 2 articles) + 2 lo
 13. LOCALE LANDINGS (/de, /es)
    - German (Jagd in Limpopo) and Spanish (Caza en Limpopo) landing pages for EU trophy hunters
    - Hero, key copy, CTA to contact and link back to English
+
+14. WOOD & THERMAL PAGE (/wood)
+   - Engineering-grade fuel (Sekelbos, Geelhak, Braai Mix); stats (980°C, 11% moisture, 0% additives)
+   - Product cards and CTA to standalone order site via NEXT_PUBLIC_THERMAL_ORDER_URL; fallback contact for bulk/other regions
+   - Linked from main nav and footer
 
 15. RATES PAGE (/rates)
    - Accommodation rates (The Homestead, The Stone Villa)
@@ -513,13 +526,12 @@ MIDDLEWARE (Geo-Fence / Dual Market)
 PERFORMANCE OPTIMIZATIONS
 
 Image Optimization:
-- All images use next/image component
-- Hero images use priority prop for LCP
-- Automatic format conversion (WebP, AVIF)
-- Lazy loading for below-fold images
-- Proper sizing and aspect ratios
-- Descriptive, keyword-rich alt text on all images (no generic "FAQ", "Rates", etc.; location/species context included)
-- Single <h1> per page; semantic <main> and <section> structure
+- All images use next/image component with explicit sizes= for LCP and correct srcset (100vw heroes; responsive breakpoints for cards/content).
+- Hero images use priority prop for LCP on every page.
+- Automatic format conversion (WebP, AVIF); deviceSizes and imageSizes in next.config for optimal srcset.
+- Lazy loading for below-fold images; fill images have sizes to prevent layout shift (CLS).
+- Descriptive, keyword-rich alt text on all images.
+- Single <h1> per page; semantic <main> and <section> structure.
 
 Font Optimization:
 - next/font for Google Fonts
@@ -802,6 +814,15 @@ Domination SEO (February 2026):
 - All 14 species pages: CTA now includes "Rates & Investment Guide" link; Wildlife page CTA includes Rates link.
 - FAQ expanded with 3 high-intent questions (Limpopo hunting safari cost, best time for plains game in South Africa, what's in a typical Limpopo hunting package) for featured snippets and PAA.
 
+Core Web Vitals & Lighthouse (February 2026):
+- globals.css: :focus-visible outline for keyboard focus; prefers-reduced-motion for animations (accessibility).
+- next.config: image deviceSizes/imageSizes; experimental.optimizePackageImports for lucide-react (smaller JS).
+- All fill Images: sizes= added site-wide (heroes 100vw; cards/content responsive) for LCP and CLS.
+- Forms: Contact and VettingModal—every input has id, label htmlFor/aria-labelledby, aria-describedby for checkboxes; focus-visible ring.
+- FAQ accordion: aria-expanded, aria-controls, role="region", aria-labelledby for accessibility.
+- Skip link and icon buttons: focus-visible styles; modal close button type="button" and aria-label.
+- Reveal animations: prefer-reduced-motion respected; transition only opacity/transform to avoid CLS.
+
 Trust & Authority roadmap (February 2026):
 - Trophy Export & Travel page (/trophy-export): full logistics guide (field prep, dipping/CITES, shipping, timeline, travel to MIWESU) to capture anxious international traffic.
 - Trusted Partners page (/partners): dipping/shipping, taxidermy, travel insurance; positions MIWESU as complete logistics solution.
@@ -884,6 +905,7 @@ Source Content: /animals/ folder (species reference content: docx, jpg, txt)
 ✨ Tiered sitemap priorities + domination keywords (Limpopo, plains game, trophy hunting, hunting lodge)
 ✨ Species + Wildlife CTAs to Rates & Investment Guide; FAQ snippet-targeting (cost, best time, packages, buffalo 2026)
 ✨ Hunter's Journal (blog) + Trophy Export & Partners pages; Availability placeholder; adaptive testimonials (US vs SA); DE/ES locale landings
+✨ Core Web Vitals: image sizes site-wide, focus-visible, reduced-motion, form a11y, FAQ aria; next.config image/package optimizations
 ✨ Scroll Animations
 ✨ Interactive Gallery
 ✨ Contact Forms

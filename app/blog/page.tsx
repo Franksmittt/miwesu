@@ -54,6 +54,7 @@ export default function BlogPage() {
               src="/images/about-hero.jpg"
               alt="Hunter's Journal - MIWESU Game Farm Makoppa district Thabazimbi"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />

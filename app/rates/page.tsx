@@ -51,6 +51,7 @@ export default function RatesPage() {
               src="/images/rates-hero.jpg"
               alt="Rates and pricing - MIWESU Game Farm accommodation and activities, Makoppa district Thabazimbi"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />

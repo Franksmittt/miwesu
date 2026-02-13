@@ -34,6 +34,7 @@ export default function ImpalaPage() {
               src="/images/home-species-impala.jpg"
               alt="Impala in natural habitat"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />

@@ -27,6 +27,7 @@ export default function DePage() {
               src="/images/home-hero.jpg"
               alt="MIWESU Game Farm - Jagd in Limpopo, Makoppa Thabazimbi"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />

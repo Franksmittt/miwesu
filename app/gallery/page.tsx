@@ -136,6 +136,7 @@ export default function GalleryPage() {
               src="/images/gallery-hero.jpg"
               alt="Gallery - MIWESU Game Farm landscapes, wildlife and luxury accommodation photography Makoppa district"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />
@@ -192,6 +193,7 @@ export default function GalleryPage() {
                     src={image.src}
                     alt={image.title || `Gallery image ${index + 1}`}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-onyx/90 via-onyx/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
@@ -217,6 +219,7 @@ export default function GalleryPage() {
                       src="/images/gallery-wildlife-collection.jpg"
                       alt="Wildlife Collection"
                       fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-onyx/90 to-transparent flex items-end">
@@ -231,6 +234,7 @@ export default function GalleryPage() {
                       src="/images/gallery-landscape-collection.jpg"
                       alt="Landscape Collection"
                       fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-onyx/90 to-transparent flex items-end">
@@ -245,6 +249,7 @@ export default function GalleryPage() {
                       src="/images/gallery-accommodation-collection.jpg"
                       alt="Accommodation Collection"
                       fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-onyx/90 to-transparent flex items-end">
@@ -277,6 +282,7 @@ export default function GalleryPage() {
                 src={selectedImage}
                 alt="Full size"
                 fill
+                sizes="100vw"
                 className="object-contain"
                 onClick={(e) => e.stopPropagation()}
               />

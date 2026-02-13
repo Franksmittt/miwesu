@@ -73,6 +73,7 @@ export default function Home() {
             src="/images/home-hero.jpg"
             alt="MIWESU GAME FARM - Makoppa district landscape with dramatic sky, granite koppies, and rolling bushveld"
             fill
+            sizes="100vw"
             className="object-cover opacity-50 scale-110"
             priority
           />
@@ -168,6 +169,7 @@ export default function Home() {
                   src="/images/home-origins-main.jpg"
                   alt="Ancient Penge Formation geological rock formation showing 2.5 billion year old iron-rich earth"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover transition-transform duration-1000 group-hover:scale-105"
                 />
               </div>
@@ -176,6 +178,7 @@ export default function Home() {
                   src="/images/home-origins-soil.jpg"
                   alt="Red sandy loam soil characteristic of the Makoppa district Sweetveld"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
@@ -249,6 +252,7 @@ export default function Home() {
                   src="/images/home-residence-homestead.jpg"
                   alt="The Homestead - Luxury 10-sleeper private residence at Miwesu Game Reserve"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-1000 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-onyx to-transparent"></div>
@@ -291,6 +295,7 @@ export default function Home() {
                   src="/images/home-residence-stone-villa.jpg"
                   alt="The Stone Villa - Intimate 4-sleeper luxury accommodation carved into the ridge"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-1000 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-onyx to-transparent"></div>
@@ -377,6 +382,7 @@ export default function Home() {
                   src="/images/home-species-kudu.jpg"
                   alt="Greater Kudu (Tragelaphus strepsiceros) - Iconic antelope species at Miwesu"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute top-4 right-4 bg-gold-500 text-onyx text-[10px] font-bold px-3 py-1 uppercase tracking-widest">
@@ -415,6 +421,7 @@ export default function Home() {
                   src="/images/home-species-wildebeest.jpg"
                   alt="Blue Wildebeest (Connochaetes taurinus) - Tough plains game species"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute top-4 right-4 bg-white/10 text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">
@@ -455,6 +462,7 @@ export default function Home() {
                   src="/images/home-species-impala.jpg"
                   alt="Impala (Aepyceros melampus) - Classic African antelope species"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute top-4 right-4 bg-white/10 text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">
@@ -493,6 +501,7 @@ export default function Home() {
                   src="/images/home-species-gemsbok.jpg"
                   alt="Gemsbok (Oryx gazella) - Distinct desert antelope with long straight horns"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute top-4 right-4 bg-white/10 text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">
@@ -531,6 +540,7 @@ export default function Home() {
                   src="/images/home-species-warthog.jpg"
                   alt="Warthog (Phacochoerus africanus) - Opportunistic game species at waterholes"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute top-4 right-4 bg-white/10 text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">

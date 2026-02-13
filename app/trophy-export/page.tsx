@@ -34,6 +34,7 @@ export default function TrophyExportPage() {
               src="/images/conservation-harvest-kudu.jpg"
               alt="Trophy preparation at MIWESU Game Farm - Limpopo conservation harvest, Makoppa district"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />

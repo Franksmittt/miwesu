@@ -33,6 +33,7 @@ export default function AvailabilityPage() {
               src="/images/residences-hero.jpg"
               alt="MIWESU Game Farm residences availability - The Homestead and Stone Villa Makoppa Thabazimbi"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />

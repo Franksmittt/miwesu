@@ -34,6 +34,7 @@ export default function LivingstoneElandPage() {
               src="/images/home-species-kudu.jpg"
               alt="Livingstone Eland in natural habitat"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />

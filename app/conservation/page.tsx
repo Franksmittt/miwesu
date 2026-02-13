@@ -34,6 +34,7 @@ export default function ConservationPage() {
               src="/images/conservation-hero.jpg"
               alt="MIWESU Game Farm conservation - anti-poaching, community support, habitat restoration Makoppa district"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />

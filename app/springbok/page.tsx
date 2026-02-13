@@ -34,6 +34,7 @@ export default function SpringbokPage() {
               src="/images/home-species-wildebeest.jpg"
               alt="Springbok in natural habitat"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />

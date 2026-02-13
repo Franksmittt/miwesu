@@ -4,6 +4,11 @@ const nextConfig = {
   trailingSlash: false, // No trailing slashes (default Next.js behavior)
   images: {
     domains: ['images.unsplash.com'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256],
+  },
+  experimental: {
+    optimizePackageImports: ['lucide-react'],
   },
   async headers() {
     const isProduction = process.env.NODE_ENV === 'production' || 

@@ -34,6 +34,7 @@ export default function GreaterKuduPage() {
               src="/images/home-species-kudu.jpg"
               alt="Greater Kudu in natural habitat"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />
@@ -102,6 +103,7 @@ export default function GreaterKuduPage() {
                   src="/images/wildlife-kudu-featured.jpg"
                   alt="Greater Kudu bull in thicket"
                   fill
+                  sizes="(max-width: 768px) 100vw, 800px"
                   className="object-cover shadow-luxury"
                 />
               </div>
@@ -236,6 +238,7 @@ export default function GreaterKuduPage() {
                   src="/images/home-species-kudu.jpg"
                   alt="Greater Kudu coat coloration"
                   fill
+                  sizes="(max-width: 768px) 100vw, 800px"
                   className="object-cover shadow-luxury"
                 />
               </div>
@@ -422,6 +425,7 @@ export default function GreaterKuduPage() {
                   src="/images/about-sweetveld-kudu.jpg"
                   alt="Kudu browsing in Sweetveld"
                   fill
+                  sizes="(max-width: 768px) 100vw, 800px"
                   className="object-cover shadow-luxury"
                 />
               </div>
@@ -433,6 +437,7 @@ export default function GreaterKuduPage() {
                   src="/images/conservation-harvest-kudu.jpg"
                   alt="Kudu in thicket habitat"
                   fill
+                  sizes="(max-width: 768px) 100vw, 800px"
                   className="object-cover shadow-luxury"
                 />
               </div>
@@ -654,6 +659,7 @@ export default function GreaterKuduPage() {
                   src="/images/about-trophy-kudu.jpg"
                   alt="Trophy Kudu bull"
                   fill
+                  sizes="(max-width: 768px) 100vw, 800px"
                   className="object-cover shadow-luxury"
                 />
               </div>

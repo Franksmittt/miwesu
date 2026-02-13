@@ -90,6 +90,7 @@ export default function ActivitiesPage() {
               src="/images/activities-hero.jpg"
               alt="Activities at MIWESU Game Farm - conservation harvest, photographic safari, celestial safari Makoppa Thabazimbi"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />
@@ -122,6 +123,7 @@ export default function ActivitiesPage() {
                         src={activity.image}
                         alt={activity.title}
                         fill
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         className="object-cover transition-transform duration-700 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-onyx to-transparent"></div>
@@ -152,6 +154,7 @@ export default function ActivitiesPage() {
                       src="/images/conservation-harvest-main.jpg"
                       alt="Conservation harvest - ethical hunting"
                       fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover shadow-luxury"
                     />
                   </div>
@@ -188,6 +191,7 @@ export default function ActivitiesPage() {
                       src="/images/conservation-harvest-tracker.jpg"
                       alt="Professional tracker in the bushveld"
                       fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover shadow-luxury"
                     />
                   </div>
@@ -196,6 +200,7 @@ export default function ActivitiesPage() {
                       src="/images/conservation-harvest-kudu.jpg"
                       alt="Kudu bull in peak condition"
                       fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover shadow-luxury"
                     />
                   </div>
@@ -204,6 +209,7 @@ export default function ActivitiesPage() {
                       src="/images/conservation-harvest-processing.jpg"
                       alt="Meat processing facility"
                       fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover shadow-luxury"
                     />
                   </div>
@@ -236,6 +242,7 @@ export default function ActivitiesPage() {
                       src="/images/photographic-safari-main.jpg"
                       alt="Photographic safari in the Makoppa district"
                       fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover shadow-luxury"
                     />
                   </div>
@@ -248,6 +255,7 @@ export default function ActivitiesPage() {
                       src="/images/photographic-safari-waterhole.jpg"
                       alt="Wildlife photography at waterhole"
                       fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover shadow-luxury"
                     />
                   </div>
@@ -256,6 +264,7 @@ export default function ActivitiesPage() {
                       src="/images/photographic-safari-koppies.jpg"
                       alt="Landscape photography of granite koppies"
                       fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover shadow-luxury"
                     />
                   </div>
@@ -264,6 +273,7 @@ export default function ActivitiesPage() {
                       src="/images/photographic-safari-sunset.jpg"
                       alt="Sunset photography in the bushveld"
                       fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover shadow-luxury"
                     />
                   </div>
@@ -279,6 +289,7 @@ export default function ActivitiesPage() {
                         src="/images/celestial-safari-main.jpg"
                         alt="Stargazing in Thabazimbi dark skies"
                         fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
                         className="object-cover shadow-luxury"
                       />
                     </div>
@@ -349,6 +360,7 @@ export default function ActivitiesPage() {
                       src="/images/birding-main.jpg"
                       alt="Birding in the Makoppa district"
                       fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover shadow-luxury"
                     />
                   </div>
@@ -362,6 +374,7 @@ export default function ActivitiesPage() {
                     src="/images/4x4-trails-main.jpg"
                     alt="4x4 tracks through the Makoppa district"
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover shadow-luxury"
                   />
                 </div>
@@ -410,7 +423,8 @@ export default function ActivitiesPage() {
                     src="/images/walking-safari-main.jpg"
                     alt="Walking safari in the Makoppa district"
                     fill
-                      className="object-cover shadow-luxury"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover shadow-luxury"
                   />
                 </div>
               </div>

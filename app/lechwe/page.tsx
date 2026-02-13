@@ -34,6 +34,7 @@ export default function LechwePage() {
               src="/images/home-species-impala.jpg"
               alt="Lechwe in natural habitat"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />

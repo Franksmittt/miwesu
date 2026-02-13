@@ -34,6 +34,7 @@ export default function CapeBuffaloPage() {
               src="/images/home-species-wildebeest.jpg"
               alt="Cape Buffalo in natural habitat"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />

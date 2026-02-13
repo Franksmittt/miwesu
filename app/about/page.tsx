@@ -34,6 +34,7 @@ export default function AboutPage() {
               src="/images/about-hero.jpg"
               alt="Miwesu Estate"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />
@@ -59,6 +60,7 @@ export default function AboutPage() {
                   alt="Makoppa Dome - Ancient granite and gneiss formations in the Thabazimbi district"
                   width={800}
                   height={600}
+                  sizes="(max-width: 768px) 100vw, 800px"
                   className="w-full h-[350px] sm:h-[450px] md:h-[500px] object-cover shadow-luxury"
                 />
               </div>
@@ -140,6 +142,7 @@ export default function AboutPage() {
                   alt="Dust road through the Makoppa district bushveld"
                   width={800}
                   height={600}
+                  sizes="(max-width: 768px) 100vw, 800px"
                   className="w-full h-[500px] object-cover shadow-luxury"
                 />
               </div>
@@ -179,6 +182,7 @@ export default function AboutPage() {
                       alt="Kudu bull in the Sweetveld - peak condition"
                       width={800}
                       height={600}
+                      sizes="(max-width: 768px) 100vw, 800px"
                       className="w-full h-[500px] object-cover shadow-luxury"
                     />
                   </div>
@@ -194,6 +198,7 @@ export default function AboutPage() {
                   alt="Family-friendly hunting experience at Miwesu"
                   width={800}
                   height={600}
+                  sizes="(max-width: 768px) 100vw, 800px"
                   className="w-full h-[500px] object-cover shadow-luxury"
                 />
               </div>
@@ -236,6 +241,7 @@ export default function AboutPage() {
                     src="/images/about-trophy-kudu.jpg"
                     alt="Greater Kudu bull - trophy quality"
                     fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover shadow-luxury"
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-onyx/90 to-transparent p-6">
@@ -248,6 +254,7 @@ export default function AboutPage() {
                     src="/images/about-trophy-wildebeest.jpg"
                     alt="Blue Wildebeest in Sweetveld"
                     fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover shadow-luxury"
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-onyx/90 to-transparent p-6">
@@ -260,6 +267,7 @@ export default function AboutPage() {
                     src="/images/about-trophy-gemsbok.jpg"
                     alt="Gemsbok in Arid Sweet Bushveld"
                     fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover shadow-luxury"
                   />
                   <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-onyx/90 to-transparent p-6">

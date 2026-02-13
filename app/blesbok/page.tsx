@@ -34,6 +34,7 @@ export default function BlesbokPage() {
               src="/images/home-species-wildebeest.jpg"
               alt="Blesbok in natural habitat"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />

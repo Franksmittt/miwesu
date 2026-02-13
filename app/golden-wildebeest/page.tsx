@@ -34,6 +34,7 @@ export default function GoldenWildebeestPage() {
               src="/images/home-species-wildebeest.jpg"
               alt="Golden Wildebeest in natural habitat"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />

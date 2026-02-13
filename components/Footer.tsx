@@ -80,6 +80,11 @@ export default function Footer() {
                   Partners
                 </Link>
               </li>
+              <li>
+                <Link href="/wood" className="hover:text-gold-500 transition-colors block">
+                  Wood & Thermal
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -132,12 +137,14 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="w-3.5 h-3.5 text-gold-500 flex-shrink-0" />
-                <a
-                  href="tel:+27730309679"
-                  className="hover:text-gold-500 transition-colors text-xs"
-                >
-                  +27 73 030 9679
-                </a>
+                <span className="text-xs space-y-1 flex flex-col">
+                  <a href="https://wa.me/27727172572" target="_blank" rel="noopener noreferrer" className="hover:text-gold-500 transition-colors">
+                    +27 72 717 2572 (WhatsApp)
+                  </a>
+                  <a href="tel:+27730309679" className="hover:text-gold-500 transition-colors block">
+                    +27 73 030 9679
+                  </a>
+                </span>
               </li>
             </ul>
           </div>

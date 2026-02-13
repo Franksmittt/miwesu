@@ -150,6 +150,13 @@ export default function Navigation() {
               Gallery
             </Link>
             <Link
+              href="/wood"
+              onClick={closeMenu}
+              className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-white hover:text-gold-500 transition-colors tracking-widest py-2"
+            >
+              Wood & Thermal
+            </Link>
+            <Link
               href="/rates"
               onClick={closeMenu}
               className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-white hover:text-gold-500 transition-colors tracking-widest py-2"

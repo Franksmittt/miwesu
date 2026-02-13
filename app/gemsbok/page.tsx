@@ -34,6 +34,7 @@ export default function GemsbokPage() {
               src="/images/home-species-gemsbok.jpg"
               alt="Gemsbok in natural habitat"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />

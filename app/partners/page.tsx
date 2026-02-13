@@ -33,6 +33,7 @@ export default function PartnersPage() {
               src="/images/activities-hero.jpg"
               alt="MIWESU Game Farm experiences - Makoppa district Thabazimbi Limpopo"
               fill
+              sizes="100vw"
               className="object-cover opacity-50"
               priority
             />

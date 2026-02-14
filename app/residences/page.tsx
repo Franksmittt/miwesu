@@ -117,7 +117,7 @@ export default function ResidencesPage() {
               <div className="group relative bg-onyx-light border border-white/5 hover:border-gold-500/50 transition-all duration-500 overflow-hidden reveal delay-100">
                 <div className="h-72 sm:h-96 overflow-hidden relative">
                   <Image
-                    src="/images/residences-stone-villa-main.jpg"
+                    src="/images/residences-second-house-main.jpg"
                     alt="Second house near the pool at MIWESU Game Farm"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -165,14 +165,14 @@ export default function ResidencesPage() {
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
                   {[
                     { src: '/images/residences-homestead-main.jpg', label: 'Main Lodge House' },
-                    { src: '/images/residences-main-lodge-lower-room-1.jpg', label: 'Lower Room 1' },
-                    { src: '/images/residences-main-lodge-lower-room-2.jpg', label: 'Lower Room 2' },
-                    { src: '/images/residences-main-lodge-kitchen.jpg', label: 'Kitchen' },
-                    { src: '/images/residences-main-lodge-living.jpg', label: 'Living Area' },
-                    { src: '/images/residences-main-lodge-upper-room-1.jpg', label: 'Upper Room 1' },
-                    { src: '/images/residences-main-lodge-upper-room-2.jpg', label: 'Upper Room 2' },
+                    { src: '/images/residences-homestead-main.jpg', label: 'Lower Room 1' },
+                    { src: '/images/residences-homestead-main.jpg', label: 'Lower Room 2' },
+                    { src: '/images/residences-homestead-kitchen.jpg', label: 'Kitchen' },
+                    { src: '/images/residences-homestead-living.jpg', label: 'Living Area' },
+                    { src: '/images/residences-homestead-main.jpg', label: 'Upper Room 1' },
+                    { src: '/images/residences-homestead-main.jpg', label: 'Upper Room 2' },
                     { src: '/images/residences-main-lodge-boma-braai.jpg', label: 'Boma and Braai (BBQ)' },
-                    { src: '/images/residences-main-lodge-lapa.jpg', label: 'Lapa (pool table & darts)' },
+                    { src: '/images/residences-main-lodge-lapa.jpeg', label: 'Lapa (pool table & darts)' },
                     { src: '/images/residences-main-lodge-braai-trees.jpg', label: 'Braai under the trees' },
                     { src: '/images/residences-main-lodge-trampoline-jungle-gym.jpg', label: 'Trampoline & Jungle Gym' },
                     { src: '/images/residences-main-lodge-pool.jpg', label: 'Swimming pool with slide' },
@@ -213,8 +213,8 @@ export default function ResidencesPage() {
                     { src: '/images/residences-second-house-living.jpg', label: 'Living Area' },
                     { src: '/images/residences-second-house-master-bedroom.jpg', label: 'Master Bedroom' },
                     { src: '/images/residences-second-house-ensuite.jpg', label: 'En-suite Bathroom' },
-                    { src: '/images/residences-second-house-bedroom-2.jpg', label: '2nd Bedroom (bunk beds)' },
-                    { src: '/images/residences-second-house-braai-dam.jpg', label: 'Outdoor Braai overlooking the dam' },
+                    { src: '/images/residences-second-house-living.jpg', label: '2nd Bedroom (bunk beds)' },
+                    { src: '/images/residences-main-lodge-braai-trees.jpg', label: 'Outdoor Braai overlooking the dam' },
                   ].map((item) => (
                     <div key={item.label} className="relative h-[220px] sm:h-[260px] overflow-hidden border border-white/5">
                       <Image

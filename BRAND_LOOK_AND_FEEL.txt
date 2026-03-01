@@ -1,0 +1,103 @@
+================================================================================
+MIWESU — BRAND LOOK & FEEL (for ads, social, and marketing)
+================================================================================
+Use this when creating Facebook ads, Instagram posts, or any marketing so everything feels like the same brand as the website.
+
+--------------------------------------------------------------------------------
+1. COLOUR PALETTE
+--------------------------------------------------------------------------------
+Use these exact colours so ads match the site.
+
+  PRIMARY (use for accents, CTAs, key words, borders, icons)
+  - Rich Gold:     #C5A059  (main gold — buttons, highlights, "gradient" words)
+  - Pale Gold:     #E5C687  (lighter accent, subtext)
+  - Dark Antique:  #997B3D  (darker gold for depth)
+
+  BACKGROUNDS
+  - Onyx (black):  #050505  (heroes, dark sections, premium feel)
+  - Onyx light:    #121212  (cards, panels on dark)
+  - Marble:        #FAFAFA  (light sections, body background)
+
+  TEXT
+  - Headlines on dark:  white #FFFFFF
+  - Body on dark:       grey  #D1D5DB or #9CA3AF
+  - Body on light:      near-black #111111
+
+  RULE: Dark backgrounds + gold accents + white/grey text = premium. Avoid bright or neon colours.
+
+--------------------------------------------------------------------------------
+2. TYPOGRAPHY STYLE
+--------------------------------------------------------------------------------
+  HEADLINES
+  - Serif, elegant, editorial (e.g. Cinzel or similar).
+  - One or two words can be in gold or gold-gradient for emphasis (e.g. "Iron Eden", "Heat. Redefined.").
+  - Often large and sparse — don’t crowd the headline.
+
+  BODY / SUPPORTING TEXT
+  - Clean sans-serif (e.g. Montserrat or similar).
+  - Light or regular weight for a refined feel; avoid heavy black type.
+
+  LABELS / EYEBROWS (small text above headlines)
+  - UPPERCASE.
+  - Wide letter-spacing (e.g. 0.3em–0.5em).
+  - Gold or pale gold colour.
+  - Small font size (e.g. 10px–12px).
+
+--------------------------------------------------------------------------------
+3. TONE OF VOICE
+--------------------------------------------------------------------------------
+  - Premium but not stuffy: "sanctuary", "peerless", "crafted", "redefined".
+  - Bushveld / African: "Makoppa", "sweetveld", "koppies", "Iron Eden".
+  - Short, confident lines: "Heat. Redefined." / "A peerless sanctuary of silence."
+  - Avoid: slang, hypey sales speak, all caps for whole sentences.
+  - Do: one clear idea per line, room to breathe, gold on one or two key words.
+
+--------------------------------------------------------------------------------
+4. IMAGERY STYLE
+--------------------------------------------------------------------------------
+  - Real photography: landscape, wildlife, accommodation, firewood, people on the farm.
+  - Mood: warm, natural, golden hour where possible; not cold or overly filtered.
+  - On dark backgrounds: images often slightly darkened (e.g. 40–50% opacity or gradient overlay) so white/gold text reads clearly.
+  - Frames: thin white or gold borders (e.g. border-white/5 or gold at low opacity) can echo the site’s "frame" look.
+  - Avoid: clip art, loud graphics, cluttered layouts. Keep one strong focal point per ad.
+
+--------------------------------------------------------------------------------
+5. LAYOUT & COMPOSITION (for ad creative)
+--------------------------------------------------------------------------------
+  - Plenty of negative space; don’t fill every pixel.
+  - Headline + one short line of support + CTA is enough.
+  - Align to centre for hero-style ads; left-align for carousel or text-heavy units.
+  - Gold line or thin divider under headlines (like the site) works well.
+  - Buttons: gold background (#C5A059 or gradient to #997B3D), white text, rounded corners.
+
+--------------------------------------------------------------------------------
+6. FIREWOOD / THERMAL SITE (standalone-thermal)
+--------------------------------------------------------------------------------
+  That part of the brand uses a similar dark + copper/gold feel:
+  - Copper: #B87333 (primary), deeper #8E4000.
+  - Same idea: dark background, warm metal accent, clean type.
+  - Copy: "Heat. Redefined.", "Certified dry.", "Free delivery in Gauteng."
+  - Use for any firewood/braai ads so they feel consistent with the thermal site.
+
+--------------------------------------------------------------------------------
+7. QUICK CHECKLIST FOR EACH AD
+--------------------------------------------------------------------------------
+  [ ] Background dark (onyx) or light (marble), not random bright colours.
+  [ ] Gold/copper used for accent only (CTA, one or two words, or thin lines).
+  [ ] Headline serif or strong sans; one key word in gold if it fits.
+  [ ] Uppercase, spaced-out label above headline if you have room.
+  [ ] Real photography, slightly muted on dark for readability.
+  [ ] Short, confident copy; no long paragraphs.
+  [ ] CTA button: gold, white text, simple wording ("Inquire", "Order Now", "Get Allocation").
+
+--------------------------------------------------------------------------------
+8. EXAMPLE HEADLINES / LINES (adapt for ads)
+--------------------------------------------------------------------------------
+  - Iron Eden. / The Makoppa Sanctuary.
+  - Heat. Redefined.
+  - A peerless sanctuary of silence.
+  - 2.5 Billion Years in the making.
+  - Certified dry. Delivered. Stacked.
+  - Your private sanctuary. / Your fire. Your rules.
+
+Use this doc next to any Facebook (or other) ad creative so the look and feel stay on brand with the project.

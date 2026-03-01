@@ -1,0 +1,166 @@
+{
+  "meta": {
+    "title": "AI image generation prompts – Blue Wildebeest, Greater Kudu, Impala, Gemsbok",
+    "purpose": "Limpopo game reserve, MIWESU. Natural, beautiful shots only. No hunters, no weapons, no blood, no mutilation.",
+    "location": "Limpopo province, South Africa – Makoppa district / Waterberg region",
+    "terrain": "Flat to gently undulating. No mountains, no dramatic peaks or cliffs in frame.",
+    "vegetation_reference": {
+      "description": "Limpopo bushveld / Arid Sweet Bushveld – use for all backgrounds",
+      "ground": "Red to reddish-brown soil (Hutton-type, iron-rich). Fine, powdery; can show hoof prints. Short to medium sweetveld grasses, dry season: pale straw-yellow or ash-grey; wet season: green.",
+      "trees_shrubs": "Mopane (Colophospermum mopane) – butterfly-shaped leaves, copper/yellow in dry season; Sicklebush (Dichrostachys cinerea); Acacia (e.g. umbrella thorn, blackthorn) – thorny, often flat-topped; Leadwood (Combretum); Grewia. Sparse to moderate canopy, not dense forest.",
+      "lighting": "Golden hour (dawn/dusk) or soft overcast; harsh midday OK for some scenes. Dust in dry season can create warm, saturated light.",
+      "forbidden": "Mountains, snow, tropical rainforest, desert dunes, European woodland, people, vehicles, fences, buildings, hunting, blood, wounded or dead animals."
+    }
+  },
+  "species": [
+    {
+      "species": "Blue Wildebeest",
+      "scientific": "Connochaetes taurinus",
+      "key_traits": "Large, front-heavy; slate-grey to bluish-grey coat with silvery sheen in sun; dark vertical stripes (brindled); jet-black forehead and face in mature bull, chestnut-brown forehead in cow; short stiff black mane; shaggy black beard; horse-like long black tail; horns curve out then up and in (both sexes), heavy boss in bulls.",
+      "prompts": [
+        {
+          "id": "wildebeest_01",
+          "scene": "Bull portrait in bushveld",
+          "count": 2,
+          "prompt": "Adult male blue wildebeest bull, close-up portrait, dark slate-grey coat with silvery sheen, jet-black forehead and face, heavy curved horns with thick boss, short black mane and shaggy beard, alert expression. Limpopo bushveld background: flat land, red soil, short dry grass, scattered Mopane and Acacia trees, soft golden hour light. Photorealistic, no people, no mountains.",
+          "suggested_filenames": ["wildebeest-bull-portrait-01.jpg", "wildebeest-bull-portrait-02.jpg"]
+        },
+        {
+          "id": "wildebeest_02",
+          "scene": "Bull standing in open grass",
+          "count": 2,
+          "prompt": "Single adult blue wildebeest bull standing in open flat grassland, full body visible, dark grey brindled coat, black mane and beard, curved horns. Reddish soil and short grass, Limpopo South Africa, flat horizon, no mountains. Peaceful, natural, golden hour or overcast. Photorealistic wildlife photography.",
+          "suggested_filenames": ["wildebeest-bull-standing-01.jpg", "wildebeest-bull-standing-02.jpg"]
+        },
+        {
+          "id": "wildebeest_03",
+          "scene": "Cow with calf (optional)",
+          "count": 1,
+          "prompt": "Adult female blue wildebeest cow, lighter slate-grey coat, chestnut-brown forehead between horns, thinner horns. Standing in flat bushveld with red soil, Mopane trees in background. Optional: small fawn-coloured calf beside her. Limpopo, no mountains, natural light.",
+          "suggested_filenames": ["wildebeest-cow-bushveld-01.jpg"]
+        },
+        {
+          "id": "wildebeest_04",
+          "scene": "Small herd in distance",
+          "count": 1,
+          "prompt": "Small group of blue wildebeest (3–5 animals) in flat open bushveld, red soil and short grass, scattered trees, Limpopo South Africa. Wide shot, peaceful, no people, no mountains. Photorealistic.",
+          "suggested_filenames": ["wildebeest-herd-bushveld-01.jpg"]
+        }
+      ],
+      "total_images": 6
+    },
+    {
+      "species": "Greater Kudu",
+      "scientific": "Tragelaphus strepsiceros",
+      "key_traits": "Large spiral-horned antelope. Bull: slate-grey to bluish-grey, 6–10 vertical white stripes, white facial chevron, throat beard, massive spiral horns (2.5 twists). Cow: tawny/reddish-brown/cinnamon, no horns, smaller. Large ears, white tail underside (flag).",
+      "prompts": [
+        {
+          "id": "kudu_01",
+          "scene": "Bull portrait, horns and stripes visible",
+          "count": 2,
+          "prompt": "Adult male greater kudu bull, close-up, slate-grey coat with 6–10 narrow vertical white stripes, white chevron on forehead, long dark throat beard, massive spiral horns (two and a half twists). Large rounded ears. Limpopo bushveld: flat terrain, red soil, Mopane and Acacia, soft light. Photorealistic, no people, no mountains.",
+          "suggested_filenames": ["kudu-bull-portrait-01.jpg", "kudu-bull-portrait-02.jpg"]
+        },
+        {
+          "id": "kudu_02",
+          "scene": "Bull standing in bushveld",
+          "count": 2,
+          "prompt": "Greater kudu bull full body, standing in flat bushveld, grey body with white stripes, spiral horns, throat beard. Red soil, short grass, scattered Mopane and Acacia, Limpopo South Africa, flat horizon. Natural, peaceful. Photorealistic wildlife photo.",
+          "suggested_filenames": ["kudu-bull-standing-01.jpg", "kudu-bull-standing-02.jpg"]
+        },
+        {
+          "id": "kudu_03",
+          "scene": "Cow in vegetation",
+          "count": 1,
+          "prompt": "Female greater kudu (cow), tawny reddish-brown coat, no horns, large ears. Standing among bushveld vegetation, red soil, flat land, Mopane trees. Limpopo, photorealistic, no mountains.",
+          "suggested_filenames": ["kudu-cow-bushveld-01.jpg"]
+        },
+        {
+          "id": "kudu_04",
+          "scene": "Bull in dappled shade",
+          "count": 1,
+          "prompt": "Greater kudu bull in dappled shade under Acacia or Mopane, stripes and spiral horns visible, alert. Flat Limpopo bushveld, red earth, natural light. Photorealistic, no people.",
+          "suggested_filenames": ["kudu-bull-shade-01.jpg"]
+        }
+      ],
+      "total_images": 6
+    },
+    {
+      "species": "Impala",
+      "scientific": "Aepyceros melampus",
+      "key_traits": "Medium antelope. Reddish-brown dorsal saddle, pale fawn flanks, white underbelly. Black M-marking on rump, black stripe down tail, black ear tips, black tufts above heels. Only male has lyre-shaped ridged horns.",
+      "prompts": [
+        {
+          "id": "impala_01",
+          "scene": "Ram portrait",
+          "count": 2,
+          "prompt": "Adult male impala ram, close-up portrait, reddish-brown and tan coat, white underbelly, black ear tips, lyre-shaped ridged horns. Limpopo bushveld, flat land, red soil, Mopane or Acacia in background. Soft light. Photorealistic, no people, no mountains.",
+          "suggested_filenames": ["impala-ram-portrait-01.jpg", "impala-ram-portrait-02.jpg"]
+        },
+        {
+          "id": "impala_02",
+          "scene": "Ram standing in grass",
+          "count": 2,
+          "prompt": "Single impala ram full body, reddish-brown back, pale flanks, white belly, black M on rump, lyre horns. Flat grassland with red soil, short grass, Limpopo. Peaceful, natural. Photorealistic.",
+          "suggested_filenames": ["impala-ram-standing-01.jpg", "impala-ram-standing-02.jpg"]
+        },
+        {
+          "id": "impala_03",
+          "scene": "Ewe (female)",
+          "count": 1,
+          "prompt": "Female impala (ewe), no horns, reddish-brown and tan countershading, black markings on rump and ears. Standing in flat bushveld, red soil, Mopane trees. Limpopo, photorealistic, no mountains.",
+          "suggested_filenames": ["impala-ewe-bushveld-01.jpg"]
+        },
+        {
+          "id": "impala_04",
+          "scene": "Small herd",
+          "count": 1,
+          "prompt": "Small herd of impala (4–6 animals) in flat open bushveld, red soil, short grass, scattered trees. Limpopo South Africa, wide shot, peaceful. Photorealistic, no people, no mountains.",
+          "suggested_filenames": ["impala-herd-bushveld-01.jpg"]
+        }
+      ],
+      "total_images": 6
+    },
+    {
+      "species": "Gemsbok",
+      "scientific": "Oryx gazella",
+      "key_traits": "Large, heavy-fronted. Fawn-grey/sandy-tan coat, white underbelly. Stark white face with black warpaint: inverted triangle on nose/forehead, broad black stripes from horn base over eyes to jaw, black chin-to-chest stripe. Thick black horizontal band on flanks; white legs with black patches above knees/hocks. Long straight horns (both sexes): heavily annulated lower 2/3, smooth sharp tip. Male horns thicker shorter (83–96 cm), female longer thinner (96–120 cm). Short stiff black dorsal mane. Long black brush tail.",
+      "prompts": [
+        {
+          "id": "gemsbok_01",
+          "scene": "Portrait, facial warpaint",
+          "count": 2,
+          "prompt": "Adult gemsbok (oryx) close-up portrait, fawn-grey coat, stark white face with black warpaint markings (inverted triangle on nose, broad stripes over eyes to jaw, chin stripe). Long straight annulated horns. Limpopo bushveld: flat terrain, red or grey soil, Mopane or Acacia, soft light. Photorealistic, no people, no mountains.",
+          "suggested_filenames": ["gemsbok-portrait-01.jpg", "gemsbok-portrait-02.jpg"]
+        },
+        {
+          "id": "gemsbok_02",
+          "scene": "Full body standing in bushveld",
+          "count": 2,
+          "prompt": "Gemsbok full body standing in flat Limpopo bushveld, fawn body, white belly, black flank band, white legs with black knee patches, long straight horns. Red soil, short grass, Mopane trees. Peaceful, natural. Photorealistic, no mountains.",
+          "suggested_filenames": ["gemsbok-standing-01.jpg", "gemsbok-standing-02.jpg"]
+        },
+        {
+          "id": "gemsbok_03",
+          "scene": "Small group in open",
+          "count": 1,
+          "prompt": "Two or three gemsbok in flat open bushveld, red soil, grass, scattered Mopane or knob thorn. Limpopo South Africa, wide shot, golden hour or overcast. Photorealistic, no people, no mountains.",
+          "suggested_filenames": ["gemsbok-group-bushveld-01.jpg"]
+        },
+        {
+          "id": "gemsbok_04",
+          "scene": "In dappled shade",
+          "count": 1,
+          "prompt": "Single gemsbok in dappled shade under Acacia or Mopane scrub, black-and-white face and fawn body visible. Flat bushveld, red/grey soil. Limpopo, photorealistic, no mountains.",
+          "suggested_filenames": ["gemsbok-shade-bushveld-01.jpg"]
+        }
+      ],
+      "total_images": 6
+    }
+  ],
+  "summary": {
+    "total_prompts": 16,
+    "total_images": 24,
+    "naming_convention": "species-subject-number.jpg (e.g. wildebeest-bull-portrait-01.jpg)"
+  }
+}

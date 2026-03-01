@@ -1,0 +1,83 @@
+{
+  "_comment": "MIWESU thermal wood ad — AI image generation. Use this JSON in your image AI tool. Same message for 9:16 and 1:1; only aspect_ratio and layout_notes change. Copy is LOCKED; do not let the AI change headline, sub, footer or contact.",
+  "_reference_image_instruction": "ATTACH YOUR REFERENCE IMAGE of the exact bag you want. The bag in the generated ad must match the attached image in appearance: same material, weave, shape, top closure, texture. Use the attachment as the visual reference for the bag only; keep the rest (bed of hardwood, lighting, text) as described below.",
+  "_brand_fusion": "Visual style = Apple (rim light, low-key, minimal, punchy type) + Samsung (bold headline, clear hierarchy, premium tech feel) + Woolworths (ethical premium, restraint, provenance, clean sans).",
+  "_source_docs": "Apple Ad Style (1 & 2), Woolworths Marketing Strategy, WHAT THE WOOD LOOKS LIKE, Wood Bag Prompt Engineering, Samsung Marketing/Brand Research, BRAND_LOOK_AND_FEEL.txt, MIWESU wood page & wood-products.",
+
+  "brand": {
+    "name": "MIWESU",
+    "palette": {
+      "primary_gold": "#C5A059",
+      "pale_gold": "#E5C687",
+      "onyx": "#050505",
+      "onyx_light": "#121212",
+      "marble": "#FAFAFA",
+      "text_on_dark": "#FFFFFF",
+      "text_secondary_dark": "#9CA3AF"
+    },
+    "typography": {
+      "headline": "Serif or strong geometric sans; one key word may be in gold. Large, sparse.",
+      "body": "Clean sans-serif, light or regular weight.",
+      "eyebrow": "UPPERCASE, wide letter-spacing (0.3em–0.5em), gold or pale gold, small (10–12px)."
+    }
+  },
+
+  "copy_locked": {
+    "headline": "MIWESU",
+    "subline": "50 x 10kg Bags • R1250 • Free Delivery in Gauteng",
+    "footer": "Get 500kg Wood Delivered to your door for R1250",
+    "contact_line": "WhatsApp 072 717 2572  ·  Tel 073 030 9679",
+    "product_name": "GEELHAAK HARDWOOD",
+    "cta_button": "ORDER NOW"
+  },
+
+  "variants": [
+    {
+      "id": "vertical_9_16",
+      "aspect_ratio": "9:16",
+      "orientation": "portrait",
+      "layout_notes": "Vertical story: headline at top, product (bag) or wood stack in centre, subline under or beside it, footer and contact at bottom. Generous negative space. Single focal point (bag or wood)."
+    },
+    {
+      "id": "square_1_1",
+      "aspect_ratio": "1:1",
+      "orientation": "square",
+      "layout_notes": "Square: headline top or top-left, product centre, subline and footer bottom or bottom-left. Contact small at very bottom or corner. Same copy as 9:16; layout adapts to square."
+    }
+  ],
+
+  "prompt_parameters": {
+    "style": "Premium vertical ad (9:16), high-end mobile/social style. Pure, solid black background. Bag resting ON a bed of chopped hardwood. Use the attached reference image for the exact bag appearance (material, shape, texture, top). Modern sans-serif (Futura, Gotham style). Warm metallic bronze-to-orange accents and soft glows on headline and CTA. Photorealistic, 8K.",
+    "lighting": "Dramatic, high-contrast dual studio rim-lighting: brilliant, glowing, intense warm orange rim-light heavily strikes the entire right side of the bag, illuminating the woven texture and making the edge glow; cooler, thinner white rim-light gently highlights the left edge; front-facing center of the bag remains in deep shadow, contrasting sharply with the brightly lit textured edges. Pure black background.",
+    "mood": "Premium, confident, sustainable. Engineering-grade fuel. Trust and clarity — like Apple product reveal, Samsung hero shot, and Woolworths premium food packaging combined."
+  },
+
+  "subject_product": {
+    "option_a_bag": {
+      "description": "A highly detailed, photorealistic image of a single, upright woven polypropylene sack, on a pure, solid black background. The bag is resting ON a bed of chopped hardwood (Southern African hardwoods: split pieces of Geelhaak, Sekelbos, Braai Mix — dark brown, mustard-yellow, russet, espresso and cream). Match the bag exactly to the attached reference image: same material, weave, shape, top closure, texture. The bag's material is a semi-translucent white plastic mesh with a distinct, tight, criss-cross woven texture. The sack is bulging, filled with heavy, angular, chunky dark objects resembling wood logs, whose dark, shadowed silhouettes are clearly visible through the translucent mesh. The top edge of the bag is folded over flat and crimped straight across. The surface of the bag has deep, structural creases, folds, and crinkles caused by the heavy contents stretching the plastic. Lighting is dramatic, high-contrast dual studio rim-lighting: a brilliant, glowing, intense warm orange rim-light heavily strikes the entire right side of the bag, illuminating the individual fibers of the woven texture and making the edge appear to glow. A cooler, thinner white rim-light gently highlights the left edge. The front-facing center of the bag remains in deep shadow, contrasting sharply with the brightly lit textured edges. Inside the bag the wood is stacked HORIZONTALLY ONLY, ALL FACING THE SAME WAY; logs wide so they fill the bag and touch the edges. 8k resolution, macro-level material texture.",
+      "wood_inside": "Southern African hardwood in small split pieces: mix of dark purple-brown heartwood with distinct yellow sapwood ring (Geelhaak type), and pieces with bright mustard-yellow outer ring and reddish-brown core (Sekelbos type). Split faces smooth, stone-like; deep radial cracks at end grain (extreme dryness). Bark thick, fissured, grey-black. Wood split into smaller chunks, pieces wide enough to fill the bag and touch the inner edges; looks dense and dry, not pale or pine-like. REALISTIC, not a show piece: pieces varied in size and shape, some irregular, uneven splits, bits of bark, natural imperfections — like real firewood, not flawless or curated for display."
+    },
+    "option_b_wood_only": {
+      "description": "Stack or arrangement of Southern African hardwood firewood (no bag). Small split pieces and kindling-sized wedges LYING FLAT, horizontal, all facing the same way. Rich, saturated earth tones: dark purple-brown and straw-yellow (Geelhaak), mustard-yellow and russet red (Sekelbos), some dark espresso and cream (Braai Mix). Dense, hyper-dry look; radial checks on end grain. Bark rugged, grey-black or grey-brown, deeply fissured. Rim-lit against black void. Wood split into smaller pieces; conveys weight and premium heat. REALISTIC, not a show piece: varied sizes, irregular shapes, uneven splits, natural imperfections, like real firewood not a display."
+    }
+  },
+
+  "text_overlay_spec": {
+    "headline": "Exact text: MIWESU. Large bold sans-serif (Futura/Gotham). Metallic gradient deep bronze to lighter orange; strong soft warm orange glow around letters. Centered at top.",
+    "subline": "Exact text: 50 x 10kg Bags • R1250 • Free Delivery in Gauteng. Smaller white sans-serif. Bullet (•) as separator. Centered below MIWESU.",
+    "product_name": "Exact text: GEELHAAK HARDWOOD. Large bold white sans-serif. Centered below the bag.",
+    "cta_button": "Exact text: ORDER NOW. Oval button, metallic bronze/orange fill, subtle orange outline or glow, white bold text. Centered at bottom.",
+    "footer": "Optional: Get 500kg Wood Delivered to your door for R1250.",
+    "contact": "Exact text: WhatsApp 072 717 2572  ·  Tel 073 030 9679. Smallest. Grey or pale gold. Bottom corner or under footer."
+  },
+
+  "negative_prompt": "VERTICAL WOOD, standing logs, upright logs, logs pointing up. White or bright grey background. Cluttered layout. Different headline or tagline. Wrong phone numbers. Extra text not specified. Pine, birch, oak, or generic light-coloured firewood. Sloppy typography. Neon colours. Cartoon. Low resolution. Blurry. Cropped product. Changing the words MIWESU, GEELHAAK HARDWOOD, R1250, 10kg, ORDER NOW, or contact numbers. Flawless wood, show-piece, display wood, perfect uniform pieces, curated stack, pristine firewood. Wood inside bag in different directions or vertical. Bag cut open, open top, bag opened. Embers, sparks, atmospheric effects, surrounding environment, teal background.",
+
+  "ready_to_paste_prompts": {
+    "for_9_16": "Premium ad, 9:16 vertical. Highly detailed, photorealistic. Single upright woven polypropylene sack on pure solid black. Bag resting ON a bed of chopped hardwood (Southern African hardwoods: Geelhaak, Sekelbos, Braai Mix — dark brown, mustard-yellow, russet pieces). Match the bag exactly to the attached reference image for material, weave, shape, top, texture. Bag bulging with heavy angular chunky dark wood, silhouettes visible through mesh; deep creases, folds, crinkles. Lighting: dramatic dual studio rim — intense warm orange on right (edge glows), cooler white on left; front center deep shadow. Wood inside stacked HORIZONTALLY ONLY, same direction; logs wide, touching bag edges. 8k, macro texture. Top: 'MIWESU' large bold sans-serif with metallic bronze-to-orange gradient and soft warm orange glow, centered. Under it: '50 x 10kg Bags • R1250 • Free Delivery in Gauteng' white, smaller, bullets, centered. Below bag: 'GEELHAAK HARDWOOD' large bold white, centered. Bottom: oval 'ORDER NOW' button, metallic bronze/orange fill, orange glow, white bold text, centered. Optional smallest: contact. 8K photorealistic.",
+    "for_1_1": "Premium ad, 1:1 square. Single upright woven polypropylene sack on pure solid black. Bag resting ON a bed of chopped hardwood (Geelhaak, Sekelbos, Braai Mix — dark brown, mustard-yellow, russet). Match bag to attached reference image. Bulging with heavy angular dark wood, silhouettes through mesh; deep creases, folds, crinkles. Dual rim-lighting: warm orange right, cooler white left; center deep shadow. Wood inside stacked HORIZONTALLY ONLY, same direction; logs wide, touch edges. 8k macro texture. 'MIWESU' metallic bronze-orange gradient and glow, centered. Subline '50 x 10kg Bags • R1250 • Free Delivery in Gauteng'. Below bag 'GEELHAAK HARDWOOD' bold white. Bottom oval 'ORDER NOW' button bronze/orange. Optional contact. 8K photorealistic.",
+    "wood_only_9_16": "Premium ad, 9:16. Black void. Stack of Southern African hardwood firewood in small split pieces, horizontal only, all facing the same way, realistic not show-piece — varied sizes, irregular, natural imperfections. Dark purple-brown heartwood with yellow sapwood ring, mustard-yellow and russet, dense, dry, radial cracks. Rim-lit. Text: 'MIWESU' metallic glow; '50 x 10kg Bags • R1250 • Free Delivery in Gauteng'; 'GEELHAAK HARDWOOD' below bag; oval 'ORDER NOW' button; contact optional. 8K."
+  },
+
+  "instructions_for_ai_tool": "1. ATTACH your reference image of the exact bag; the generated bag must match the attachment in appearance. 2. Use copy_locked for ALL text; do not rephrase. 3. Use subject_product option_a_bag or option_b_wood_only for the visual. 4. Bag must sit ON a bed of chopped hardwood. 5. Enforce negative_prompt to avoid wrong wood orientation and wrong copy. 6. Generate twice: once with aspect_ratio 9:16, once 1:1, same message. 7. If your tool needs one string, use ready_to_paste_prompts.for_9_16 or for_1_1."
+}

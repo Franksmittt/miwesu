@@ -34,3 +34,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# large photoshoot source (keep local only, do not push)
+Miwesu-20260228T133504Z-1-001/
+

@@ -1,0 +1,87 @@
+================================================================================
+IMAGES TO MOVE — Copy ONE image from each SOURCE folder, paste into public/images, and RENAME to the DESTINATION filename.
+================================================================================
+
+Your Card 1 path:   C:\Users\User1\miwesu\Miwesu-20260228T133504Z-1-001\Miwesu\Card 1
+Destination folder: C:\Users\User1\miwesu\public\images
+
+Do this for each row: open the SOURCE folder → pick one photo → copy it → paste into public\images → rename the pasted file to the DESTINATION name.
+
+--------------------------------------------------------------------------------
+MAIN LODGE
+--------------------------------------------------------------------------------
+
+SOURCE (pick one image from this folder):
+  Card 1\main_house_outside
+DESTINATION (rename to this in public\images):
+  residences-homestead-main.jpg
+
+SOURCE: Card 1\main_house_lower_room_1_sleeps_3
+DESTINATION: residences-main-lodge-lower-room-1.jpg
+
+SOURCE: Card 1\main_house_lower_room_2_sleeps_3
+DESTINATION: residences-main-lodge-lower-room-2.jpg
+
+SOURCE: Card 1\main_house_kitchen_living_room
+DESTINATION: residences-homestead-kitchen.jpg
+
+SOURCE: Card 1\main_house_kitchen_living_room
+DESTINATION: residences-homestead-living.jpg
+(Use a different image than the one you used for kitchen — same folder, two images)
+
+SOURCE: Card 1\main_house_first_outside_area_before_boma_and_braai
+DESTINATION: residences-main-lodge-first-patio.jpg
+
+SOURCE: Card 1\main_house_boma_and_braai
+DESTINATION: residences-main-lodge-boma-braai.jpg
+
+SOURCE: Card 1\main_house_upper_room_1_sleeps_5
+DESTINATION: residences-main-lodge-upper-room-1.jpg
+
+SOURCE: Card 1\main_house_upper_room_2_sleeps_5
+DESTINATION: residences-main-lodge-upper-room-2.jpg
+
+SOURCE: Card 1\03_lapa_kitchen_pool_table
+DESTINATION: residences-main-lodge-lapa.jpeg
+
+SOURCE: Card 1\06_boma_braai_under_trees
+DESTINATION: residences-main-lodge-braai-trees.jpg
+
+SOURCE: Card 1\05_trampoline_jungle_gym
+DESTINATION: residences-main-lodge-trampoline-jungle-gym.jpg
+
+SOURCE: Card 1\01_swimming_pool_slide
+DESTINATION: residences-main-lodge-pool.jpg
+
+--------------------------------------------------------------------------------
+SECOND HOUSE
+--------------------------------------------------------------------------------
+
+SOURCE: Card 1\house2_outside
+DESTINATION: residences-second-house-main.jpg
+
+SOURCE: Card 1\house2_kitchen
+DESTINATION: residences-second-house-kitchen.jpg
+
+SOURCE: Card 1\house2_living_room
+DESTINATION: residences-second-house-living.jpg
+
+SOURCE: Card 1\house2_main_bedroom
+DESTINATION: residences-second-house-master-bedroom.jpg
+
+SOURCE: Card 1\house2_main_bedroom_bathroom
+DESTINATION: residences-second-house-ensuite.jpg
+
+SOURCE: Card 1\house2_room2
+DESTINATION: residences-second-house-bedroom-2.jpg
+
+SOURCE: Card 1\house2_room2_bathroom
+DESTINATION: residences-second-house-room2-ensuite.jpg
+
+SOURCE: Card 1\house2_outside
+DESTINATION: residences-second-house-braai.jpg
+(Use a different image than the one for residences-second-house-main.jpg — same folder, e.g. one showing the braai)
+
+--------------------------------------------------------------------------------
+SUMMARY: 21 destination files. Some folders (kitchen/living, house2_outside) supply 2 images each — pick 2 different photos from that folder.
+--------------------------------------------------------------------------------

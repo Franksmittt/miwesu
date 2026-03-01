@@ -1,0 +1,301 @@
+================================================================================
+MIWESU LODGE — PHOTOSHOOT IMAGE CATALOG & SORTING GUIDE
+================================================================================
+Source folder: Miwesu-20260228T133504Z-1-001
+Total images: 289 (Card 1: Thabazimbi N | Card 2: Thabazimbi W | Card 3: Miwesu Wild)
+Created from photographer list + visual review. Use this to sort and tag images.
+
+--------------------------------------------------------------------------------
+PHOTOGRAPHER'S RECOLLECTION (for reference)
+--------------------------------------------------------------------------------
+  • Main Lodge House: Ground floor room 1, Ground floor room 2, Kitchen, Living area,
+    Upper floor room 1, Upper floor room 2, Boma and braai, Lapa (pool table & darts),
+    Braai under trees, Trampoline and jungle gym, Swimming pool with slide.
+  • 2nd House (near pool): Kitchen, Living area, Main bedroom, En-suite bathroom,
+    2nd room with bunk beds (very small), En-suite bathroom, Braai overlooking dam.
+
+--------------------------------------------------------------------------------
+OUR NARRATIVE (from image review)
+--------------------------------------------------------------------------------
+  ENTRANCE
+  • Gate, wall, MIWESU GAME FARM signage, orange logo panels, dirt road, trees.
+  • Card 1: Thabazimbi N (1)–(5) and likely (6)–(9) = entrance / signage variants.
+
+  MAIN LODGE HOUSE (large, thatched roof, two levels)
+  • Living/dining: High thatched roof, dark wooden beams, large dining table (14–16 chairs),
+    L-shaped leather sofa, trophy mounts (eland, kudu, oryx), tree-trunk pillar, TV with
+    security feeds, staircase to upper floor.
+  • Kitchen: Thatched roof, wooden bar/island with mosaic wood front, tree-trunk pillars,
+    wall cabinets (wood mosaic), bar stools, cast-iron potjies, wooden blinds.
+  • Ground-floor bedrooms: 3 single beds, rustic wooden headboards, textured plaster walls,
+    dark wooden ceiling beams, impala artwork, air conditioning, Venetian blinds, dark grey
+    floor tiles. (Room 1 vs 2 distinguished by bed layout/art/furniture when you compare.)
+  • Ground-floor bathroom(s): Light beige/grey square wall tiles, dark grey floor tiles,
+    wooden ceiling with rounded beams, glass shower, pedestal sink, toilet, bird/plant
+    on sill. Second bathroom: curved glass shower, bathtub edge visible, wooden door.
+  • Upper-floor bedroom(s): Thatched roof visible, wooden floorboards, animal hide rug,
+    main bed + side bed/daybed, olive/gold bedding, exposed thatch and beams.
+  • Other main-house bathroom: Brown-orange wall tiles, grey floor, glass shower, pedestal
+    sink (warm tile scheme = possible second house or different en-suite).
+
+  OUTDOOR (main lodge area)
+  • Trampoline & jungle gym: In-ground trampoline, wooden playset with swings/tire,
+    green lawn, wooden log fence, trees, blue sky.
+  • Pool, boma, braai under trees, lapa (pool table/darts): To be tagged when viewing
+    remaining Card 1 and Card 2 images.
+
+  SECOND HOUSE (smaller, near pool)
+  • Smaller kitchen and living area; main bedroom + en-suite; second room with bunk beds
+    (very small) + en-suite; braai overlooking dam. Likely many Card 2 (Thabazimbi W)
+    images — distinguish by size of space and absence of thatched roof / trophy room.
+
+  WILDLIFE
+  • Card 3 (Miwesu Wild) 1–21: Wildebeest on dirt track, bushveld, trees. All → 05_wildlife.
+
+--------------------------------------------------------------------------------
+FOLDER STRUCTURE (under ...\Miwesu-20260228T133504Z-1-001\sorted\)
+--------------------------------------------------------------------------------
+  01_entrance
+  02_main_house\ground_floor_room_1
+  02_main_house\ground_floor_room_2
+  02_main_house\kitchen
+  02_main_house\living_area
+  02_main_house\upper_floor_room_1
+  02_main_house\upper_floor_room_2
+  02_main_house\bathrooms
+  02_main_house\boma_braai
+  02_main_house\lapa_pool_table_darts
+  03_outdoor\braai_under_trees
+  03_outdoor\trampoline_jungle_gym
+  03_outdoor\swimming_pool_slide
+  04_second_house\kitchen
+  04_second_house\living_area
+  04_second_house\main_bedroom
+  04_second_house\main_bedroom_ensuite
+  04_second_house\second_room_bunk_beds
+  04_second_house\second_room_ensuite
+  04_second_house\braai_overlooking_dam
+  05_wildlife
+  99_uncategorized
+  99_duplicates_to_review
+
+--------------------------------------------------------------------------------
+IDENTIFIERS FOR DETECTIVE WORK
+--------------------------------------------------------------------------------
+  • Main house: thatched roof, dark wooden beams, trophy mounts, large dining table,
+    tree-trunk pillars, staircase to upper floor.
+  • Main house ground-floor rooms: textured plaster walls, 3 single beds common, impala
+    art, dark grey floor tiles, ceiling beams (not thatch).
+  • Main house upper floor: thatched roof visible, wooden floorboards, hide rugs.
+  • Main house bathrooms: light beige/grey tiles OR wooden ceiling with rounded beams.
+  • Second house: smaller scale, different tile colours (e.g. brown-orange), bunk beds
+    in one room, no trophy room.
+  • Same room / en-suite: match wall colour, tile pattern, or visible door between room
+    and bathroom in adjacent shots.
+
+--------------------------------------------------------------------------------
+DUPLICATE CANDIDATES (same number, different extension — review and keep one)
+--------------------------------------------------------------------------------
+  Thabazimbi N (132).jpeg / Thabazimbi N (132).jpg
+  Thabazimbi N (136).jpeg / Thabazimbi N (136).jpg
+  Thabazimbi N (138).jpeg / Thabazimbi N (138).jpg
+  Thabazimbi N (140).jpeg / Thabazimbi N (140).jpg
+  Thabazimbi N (142).jpeg / Thabazimbi N (142).jpg
+
+--------------------------------------------------------------------------------
+IMAGE-BY-IMAGE LOG (filename → contents / suggested folder)
+--------------------------------------------------------------------------------
+Format: filename | description or suggested folder
+
+--- CARD 1 (Thabazimbi N) ---
+
+Thabazimbi N (1).jpeg    | Entrance: gate, wall, MIWESU GAME FARM signage, orange panel, dirt road, trees. → 01_entrance
+Thabazimbi N (2).jpeg    | Entrance: wide view gate, cream wall, signage both sides, dirt road. → 01_entrance
+Thabazimbi N (3).jpeg    | Entrance: wall, metallic MIWESU GAME FARM sign, animal plaque, gate, security. → 01_entrance
+Thabazimbi N (4).jpeg    | Entrance: wall pillar, MIWESU GAME FARM sign, tree, orange logo. → 01_entrance
+Thabazimbi N (5).jpeg    | Entrance: concrete wall, logo plaque, nameplate, trees. → 01_entrance
+Thabazimbi N (6).jpeg    | [View to confirm] Likely entrance variant. → 01_entrance or 99_uncategorized
+Thabazimbi N (7).jpeg    | [View to confirm] Likely entrance variant. → 01_entrance or 99_uncategorized
+Thabazimbi N (8).jpeg    | [View to confirm] Likely entrance variant. → 01_entrance or 99_uncategorized
+Thabazimbi N (9).jpeg    | [View to confirm] Likely entrance variant. → 01_entrance or 99_uncategorized
+Thabazimbi N (10).jpeg   | Bedroom: 3 single beds, wooden headboards, grey bedspreads, impala art, ceiling beams, AC, Venetian blinds. → 02_main_house\ground_floor_room_1 or room_2
+Thabazimbi N (11).jpeg   | [View to confirm] Likely bedroom/living. → 02_main_house
+Thabazimbi N (12).jpeg   | [View to confirm] → 02_main_house or 99_uncategorized
+Thabazimbi N (13).jpeg   | [View to confirm] → 02_main_house or 99_uncategorized
+Thabazimbi N (14).jpeg   | [View to confirm] → 02_main_house or 99_uncategorized
+Thabazimbi N (15).jpeg   | Bedroom: 3 single beds, live-edge headboards, textured walls, wooden beams, impala art, round mirror, AC. → 02_main_house\ground_floor_room_1 or room_2
+Thabazimbi N (16).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (17).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (18).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (19).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (20).jpeg   | Bathroom: glass shower, toilet, pedestal sink, light beige tiles, dark floor, wooden ceiling beams, spherical light. → 02_main_house\bathrooms
+Thabazimbi N (21).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (22).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (23).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (24).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (25).jpeg   | Living/dining: thatched roof, staircase, large table, L-shaped sofa, trophy mounts, tree pillar, TV. → 02_main_house\living_area
+Thabazimbi N (26).jpeg   | [View to confirm] Likely living/kitchen. → 02_main_house
+Thabazimbi N (27).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (28).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (29).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (30).jpeg   | Kitchen: thatched roof, wood bar/island, tree trunks, mosaic wood cabinets, bar stools, potjies. → 02_main_house\kitchen
+Thabazimbi N (31).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (32).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (33).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (34).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (35).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (36).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (37).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (38).jpg    | [View to confirm] → 02_main_house
+Thabazimbi N (40).jpeg   | Bedroom: thatched roof, wooden floor, hide rug, main bed + side bed/daybed, olive/gold bedding. → 02_main_house\upper_floor_room_1 or upper_floor_room_2
+Thabazimbi N (41).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (42).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (43).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (44).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (45).jpg    | [View to confirm] → 02_main_house
+Thabazimbi N (50).jpg    | [View to confirm] → 02_main_house
+Thabazimbi N (60).jpg    | [View to confirm] → 02_main_house
+Thabazimbi N (72).jpg    | [View to confirm] → 02_main_house or 03_outdoor
+Thabazimbi N (74).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (75).jpg    | [View to confirm] → 02_main_house
+Thabazimbi N (77).jpg    | [View to confirm] → 02_main_house or 03_outdoor
+Thabazimbi N (79).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (80).jpeg   | Bathroom: light tiles, pedestal sink, curved shower, toilet, bathtub edge, wooden door. → 02_main_house\bathrooms
+Thabazimbi N (81).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (82).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (83).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (85).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (86).jpg    | [View to confirm] → 02_main_house
+Thabazimbi N (87).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (88).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (89).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (90).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (91).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (92).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (93).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (96).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (97).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (98).jpeg   | [View to confirm] → 02_main_house
+Thabazimbi N (100).jpeg  | Bedroom: 3 single beds, thatched roof, wooden floor, hide rug, animal-print bedding, nightstand, kudu art. → 02_main_house\ground_floor_room_1 or room_2 or upper
+Thabazimbi N (101).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (111).jpg   | [View to confirm] → 02_main_house or 03_outdoor
+Thabazimbi N (112).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (113).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (116).jpg   | [View to confirm] → 02_main_house or 03_outdoor
+Thabazimbi N (117).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (118).jpg   | [View to confirm] → 02_main_house or 03_outdoor
+Thabazimbi N (120).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (121).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (122).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (123).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (124).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (126).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (127).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (128).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (129).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (130).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (131).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (132).jpeg  | [View to confirm] → 02_main_house  [DUPLICATE CANDIDATE: see (132).jpg]
+Thabazimbi N (132).jpg   | [View to confirm] → 99_duplicates_to_review
+Thabazimbi N (134).jpg   | [View to confirm] → 02_main_house
+Thabazimbi N (135).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (136).jpeg  | [View to confirm] → 02_main_house  [DUPLICATE CANDIDATE: see (136).jpg]
+Thabazimbi N (136).jpg   | [View to confirm] → 99_duplicates_to_review
+Thabazimbi N (137).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (138).jpeg  | [View to confirm] → 02_main_house  [DUPLICATE CANDIDATE: see (138).jpg]
+Thabazimbi N (138).jpg   | [View to confirm] → 99_duplicates_to_review
+Thabazimbi N (139).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (140).jpeg  | Trampoline and jungle gym on lawn, wooden fence, trees. → 03_outdoor\trampoline_jungle_gym
+Thabazimbi N (140).jpg   | [Same as (140).jpeg?] → 99_duplicates_to_review
+Thabazimbi N (141).jpeg  | [View to confirm] → 03_outdoor or 02_main_house
+Thabazimbi N (142).jpeg  | [View to confirm] → 02_main_house  [DUPLICATE CANDIDATE: see (142).jpg]
+Thabazimbi N (142).jpg   | [View to confirm] → 99_duplicates_to_review
+Thabazimbi N (143).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (144).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (145).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (146).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (147).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (148).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (149).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (150).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (151).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (152).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (153).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (154).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (158).jpeg  | [View to confirm] → 02_main_house or 03_outdoor
+Thabazimbi N (159).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (160).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (161).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (162).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (163).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (164).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (165).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (166).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (167).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (168).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (169).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (170).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (171).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (172).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (173).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (174).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (175).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (176).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (177).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (178).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (179).jpeg  | [View to confirm] → 02_main_house
+Thabazimbi N (180).jpeg  | Bathroom: brown-orange wall tiles, grey floor, glass shower, pedestal sink, arched mirror. → 02_main_house\bathrooms or 04_second_house (match to room)
+Thabazimbi N (181).jpeg  | [View to confirm] → 02_main_house or 04_second_house
+Thabazimbi N (182).jpeg  | [View to confirm] → 02_main_house or 04_second_house
+Thabazimbi N (183).jpeg  | [View to confirm] → 02_main_house or 04_second_house
+Thabazimbi N (184).jpeg  | [View to confirm] → 02_main_house or 04_second_house
+Thabazimbi N (185).jpg   | [View to confirm] → 02_main_house or 03_outdoor
+Thabazimbi N (194).jpeg  | [View to confirm] → 02_main_house or 03_outdoor
+Thabazimbi N (195).jpeg  | [View to confirm] → 02_main_house or 03_outdoor
+Thabazimbi N (196).jpeg  | [View to confirm] → 02_main_house or 03_outdoor
+Thabazimbi N (197).jpeg  | [View to confirm] → 02_main_house or 03_outdoor
+Thabazimbi N (198).jpeg  | [View to confirm] → 02_main_house or 03_outdoor
+Thabazimbi N (199).jpeg  | [View to confirm] → 02_main_house or 03_outdoor
+Thabazimbi N (200).jpeg  | [View to confirm] → 02_main_house or 03_outdoor
+
+--- CARD 2 (Thabazimbi W) — Likely mix of second house, pool, boma, lapa, braai ---
+
+[All Thabazimbi W (1)–(121): View and assign using identifiers above. Smaller kitchen/living + bunk room + braai overlooking dam = 04_second_house. Pool, slide, boma, lapa, braai under trees = 03_outdoor or 02_main_house\boma_braai / lapa_pool_table_darts. Use ALL_IMAGES_LIST.txt in the source folder for full paths.]
+
+--- CARD 3 (Miwesu Wild) — Wildlife ---
+
+Miwesu Wild (1).jpg   | Wildebeest on dirt track, bushveld, trees. → 05_wildlife
+Miwesu Wild (2).jpg   | [Likely wildlife] → 05_wildlife
+Miwesu Wild (3).jpg   | [Likely wildlife] → 05_wildlife
+Miwesu Wild (4).jpg   | [Likely wildlife] → 05_wildlife
+Miwesu Wild (5).jpg   | [Likely wildlife] → 05_wildlife
+Miwesu Wild (6).jpg   | [Likely wildlife] → 05_wildlife
+Miwesu Wild (7).jpg   | [Likely wildlife] → 05_wildlife
+Miwesu Wild (9).jpg   | [Likely wildlife] → 05_wildlife
+Miwesu Wild (10).jpg  | [Likely wildlife] → 05_wildlife
+Miwesu Wild (11).jpg  | [Likely wildlife] → 05_wildlife
+Miwesu Wild (12).jpg  | [Likely wildlife] → 05_wildlife
+Miwesu Wild (13).jpg  | [Likely wildlife] → 05_wildlife
+Miwesu Wild (14).jpg  | [Likely wildlife] → 05_wildlife
+Miwesu Wild (15).jpg  | [Likely wildlife] → 05_wildlife
+Miwesu Wild (16).jpg  | [Likely wildlife] → 05_wildlife
+Miwesu Wild (17).jpg  | [Likely wildlife] → 05_wildlife
+Miwesu Wild (18).jpg  | [Likely wildlife] → 05_wildlife
+Miwesu Wild (19).jpg  | [Likely wildlife] → 05_wildlife
+Miwesu Wild (20).jpg  | [Likely wildlife] → 05_wildlife
+Miwesu Wild (21).jpg  | [Likely wildlife] → 05_wildlife
+
+--------------------------------------------------------------------------------
+NEXT STEPS
+--------------------------------------------------------------------------------
+  1. Run sort_photoshoot_images.js (or .ps1) after filling in the mapping for Card 2 and
+     any Card 1 entries you re-categorize (see README in sorted folder).
+  2. Review 99_duplicates_to_review: keep best of each pair, move the other to correct
+     folder or delete.
+  3. Move anything in 99_uncategorized into the correct folder after viewing.
+  4. Update this catalog when you confirm room names (e.g. which is ground floor room 1
+     vs room 2, upper 1 vs 2, and which bathroom belongs to which room).
+
+================================================================================
+End of catalog. Full paths: Miwesu-20260228T133504Z-1-001\ALL_IMAGES_LIST.txt
+================================================================================

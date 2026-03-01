@@ -92,10 +92,10 @@ export default function GemsbokPage() {
                   The Gemsbok, also known as the South African Oryx, is one of Africa's most striking and resilient antelope species. Known as "The Desert Warrior" for its ability to thrive in harsh, arid environments, this large antelope is a symbol of adaptation and survival.
                 </p>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
-                  With its distinctive black and white facial markings, long straight horns, and elegant build, the Gemsbok is instantly recognizable. Their ability to survive without water for extended periods, extracting moisture from roots and tubers, makes them perfectly adapted to the arid regions of southern Africa.
+                  With its striking black-and-white facial "warpaint," long, nearly straight rapier-like horns, and heavy-fronted build, the Gemsbok is instantly recognizable. They can survive for long periods without surface water by extracting moisture from diet and dew; when water is available—such as at Limpopo reserve waterholes—they drink readily.
                 </p>
                 <p className="font-sans text-gray-600 text-lg leading-loose">
-                  In the Makoppa district, Gemsbok thrive in the open scrub and transition zones between grassland and desert. The Arid Sweet Bushveld provides ideal habitat, sustaining them in peak condition year-round and resulting in exceptional trophy quality.
+                  Gemsbok have been successfully introduced to the Limpopo bushveld and thrive on well-managed reserves like MIWESU. In the Makoppa district, the mix of open grassland, Mopane and Acacia scrub, and flat to gently undulating terrain provides ideal habitat, sustaining them in peak condition and resulting in exceptional trophy quality.
                 </p>
               </div>
               <div className="relative h-full min-h-[400px] md:min-h-[500px]">
@@ -151,10 +151,10 @@ export default function GemsbokPage() {
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Range and Habitat</h4>
                   <p className="text-gray-300 leading-loose mb-4">
-                    The Gemsbok's range extends throughout the arid and semi-arid regions of southern Africa, from Namibia and Botswana through South Africa. They favor open scrub, grasslands, and desert fringes where they can find sufficient browse and access to water (though they can survive without it for extended periods).
+                    The Gemsbok is native to the Kalahari and Namib (Namibia, Botswana, South Africa) and has been widely translocated to the Limpopo Province bushveld. They favor open savanna, grassland, and scrub where they can graze short grasses and browse when needed; they can survive long periods without surface water by using metabolic water from food and dew.
                   </p>
                   <p className="text-gray-300 leading-loose">
-                    The Makoppa district's Arid Sweet Bushveld provides ideal habitat, offering both grazing and browsing opportunities. The transition zone between grassland and desert is particularly favored, as it provides diverse food sources and cover.
+                    In Limpopo, gemsbok occur in Central Bushveld and Mopane bioregions: Mopane trees, knob thorn, leadwood, red loams and grey sands, and tall grasses. The Makoppa district's mix of grassland and bushveld provides grazing, browsing, and cover.
                   </p>
                 </div>
                 <div>
@@ -204,15 +204,15 @@ export default function GemsbokPage() {
                   <tbody className="divide-y divide-gray-200">
                     <tr>
                       <td className="px-6 py-4 font-sans text-onyx font-medium">Live Weight</td>
-                      <td className="px-6 py-4 font-sans text-gray-600">180 – 240 kg (397 – 529 lbs)</td>
-                      <td className="px-6 py-4 font-sans text-gray-600">140 – 200 kg (309 – 441 lbs)</td>
-                      <td className="px-6 py-4 font-sans text-gray-500 text-sm">Bulls are significantly larger with thicker necks</td>
+                      <td className="px-6 py-4 font-sans text-gray-600">180 – 240 kg (396 – 530 lbs)</td>
+                      <td className="px-6 py-4 font-sans text-gray-600">180 – 225 kg (396 – 495 lbs)</td>
+                      <td className="px-6 py-4 font-sans text-gray-500 text-sm">Both sexes similarly robust; bulls slightly heavier, thicker horns at base</td>
                     </tr>
                     <tr className="bg-marble">
                       <td className="px-6 py-4 font-sans text-onyx font-medium">Shoulder Height</td>
                       <td className="px-6 py-4 font-sans text-gray-600">115 – 125 cm (45 – 49 in)</td>
-                      <td className="px-6 py-4 font-sans text-gray-600">110 – 120 cm (43 – 47 in)</td>
-                      <td className="px-6 py-4 font-sans text-gray-500 text-sm">Tall, elegant build</td>
+                      <td className="px-6 py-4 font-sans text-gray-600">115 – 125 cm (45 – 49 in)</td>
+                      <td className="px-6 py-4 font-sans text-gray-500 text-sm">Exceptional bulls to 138 cm. Heavy-fronted, equine profile</td>
                     </tr>
                     <tr>
                       <td className="px-6 py-4 font-sans text-onyx font-medium">Head-Body Length</td>
@@ -243,15 +243,15 @@ export default function GemsbokPage() {
               <div>
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Coat Coloration and Markings</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
-                  The Gemsbok's coat is a beautiful fawn to greyish-brown color, with a lighter underside. The most distinctive feature is the striking black and white facial markings: a black stripe runs from the base of the horns down the nose, with white patches on either side of the face.
+                  The Gemsbok's coat is a dense, short, matte fawn-grey or pale sandy-tan with a pure white underbelly. The face is stark white with a high-contrast black "warpaint": an inverted triangular patch on the forehead and bridge of the nose, broad black stripes from the horn bases over the eyes down the cheeks to the jaw, and a black stripe from chin down the throat to the chest.
                 </p>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
-                  Black markings extend down the front legs, and there is a black stripe along the flanks separating the fawn body from the white belly. The tail is black with a white tip. These markings are thought to serve as visual signals and may help with heat regulation.
+                  A thick black horizontal band runs along the lower flanks, separating the fawn body from the white belly. The legs are white with prominent black patches just above the knees and hocks; a narrow black dorsal stripe runs along the spine. The tail is long and brush-like, with coarse black hair. These markings provide disruptive camouflage and are displayed during dominance displays.
                 </p>
                 <div className="bg-gold-500/10 border-l-4 border-gold-500 p-6 mt-6">
-                  <h4 className="font-serif text-xl text-onyx mb-2">Sexual Dimorphism</h4>
+                  <h4 className="font-serif text-xl text-onyx mb-2">Sexual Dimorphism & Reversed Horn Length</h4>
                   <p className="font-sans text-gray-600 leading-relaxed">
-                    Both bulls and cows carry horns, though bulls' horns are typically thicker and more massive. Bulls are also larger and more robust, with thicker necks. The facial markings are similar in both sexes, making field identification more challenging than in species where only males are horned.
+                    Both sexes carry long, straight horns and share similar coat and markings. Bulls have thicker, more robust horns (83–96 cm) for intrasexual combat; cows have longer, more slender horns (96–120 cm), often more prized as trophies. Body size and weight are similar between the sexes.
                   </p>
                 </div>
               </div>
@@ -262,15 +262,15 @@ export default function GemsbokPage() {
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
-                  Both bulls and cows carry long, straight horns that are among the most impressive in the animal kingdom. The horns grow straight up and slightly backward, then curve forward at the tips, creating a distinctive shape.
+                  Both sexes carry long, nearly straight horns that extend backward in a rapier-like line. The horns are hollow keratin over a bony core; the lower two-thirds are heavily annulated (horizontal rings) that act as shock absorbers during combat, while the upper third is smooth and tapers to a needle-sharp tip.
                 </p>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
-                  The horns are heavily ridged (annulated) along their length, with smooth, sharp tips. In bulls, the horns are typically thicker and more massive, while cows' horns are more slender but can be equally long.
+                  Bulls have thicker, shorter horns (83–96 cm) for clashing with rivals; cows have longer, thinner horns (96–120 cm), often more desirable as trophies. The ridged bases often trap dust and soil, giving them a dark, textured appearance.
                 </p>
                 <div className="bg-onyx text-white p-6 mt-6">
                   <h4 className="font-serif text-xl text-gold-400 mb-2">Trophy Characteristics</h4>
                   <p className="text-gray-300 text-sm leading-relaxed">
-                    A mature trophy bull will have horns measuring 40 inches or more, with exceptional specimens exceeding 45 inches. The Rowland Ward minimum is 40 inches. Look for long, straight horns with heavy bases and sharp tips. The horns should appear massive and well-developed, with good symmetry between the two horns.
+                    Rowland Ward minimum is 40 inches (tip-to-tip or length). Male trophies are prized for thick bases; female trophies often score longer (38–48 inches). Look for long, straight horns with heavy annulated bases, smooth upper sections, and sharp tips; good symmetry and dark, textured base from dust and wear.
                   </p>
                 </div>
               </div>

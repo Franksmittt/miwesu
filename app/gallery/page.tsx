@@ -8,15 +8,15 @@ import { galleryAccommodationImages } from '@/lib/residences-data'
 
 const landscapeAndWildlifeImages = [
   { src: '/images/home-hero.jpg', category: 'Landscape' as const, title: 'Makoppa Sunset', description: 'The granite koppies at golden hour' },
-  { src: '/images/home-species-kudu.jpg', category: 'Wildlife' as const, title: 'Greater Kudu', description: 'The Grey Ghost of the thickets' },
+  { src: '/images/kudu-bull-portrait-01.png', category: 'Wildlife' as const, title: 'Greater Kudu', description: 'The Grey Ghost of the thickets' },
   { src: '/images/home-species-wildebeest.jpg', category: 'Wildlife' as const, title: 'Blue Wildebeest', description: 'Thriving on sweet grazing lawns' },
-  { src: '/images/home-species-impala.jpg', category: 'Wildlife' as const, title: 'Impala', description: 'The athlete of the bushveld' },
+  { src: '/images/impala-ram-portrait-01.png', category: 'Wildlife' as const, title: 'Impala', description: 'The athlete of the bushveld' },
   { src: '/images/home-species-gemsbok.jpg', category: 'Wildlife' as const, title: 'Gemsbok', description: 'Kalahari transition zone specialist' },
   { src: '/images/home-species-warthog.jpg', category: 'Wildlife' as const, title: 'Warthog', description: 'Character and charm at waterholes' },
   { src: '/images/home-origins-main.jpg', category: 'Landscape' as const, title: 'Leadwood Forest', description: 'Ancient trees of the Makoppa' },
   { src: '/images/home-origins-soil.jpg', category: 'Landscape' as const, title: 'Arid Sweet Bushveld', description: 'The nutrient-rich heartland' },
   { src: '/images/about-dust-road.jpg', category: 'Landscape' as const, title: 'D1432 Road', description: 'The journey to Miwesu' },
-  { src: '/images/wildlife-kudu-featured.jpg', category: 'Wildlife' as const, title: 'Kudu Bull', description: 'Peak condition in Sweetveld' },
+  { src: '/images/kudu-bull-standing-01.png', category: 'Wildlife' as const, title: 'Kudu Bull', description: 'Peak condition in Sweetveld' },
 ]
 
 export default function GalleryPage() {

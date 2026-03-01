@@ -31,8 +31,8 @@ export default function ImpalaPage() {
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/home-species-impala.jpg"
-              alt="Impala in natural habitat"
+              src="/images/impala-ram-portrait-01.png"
+              alt="Impala ram in Limpopo bushveld"
               fill
               sizes="100vw"
               className="object-cover opacity-50"
@@ -58,7 +58,7 @@ export default function ImpalaPage() {
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div className="reveal">
-                <div className="text-gold-500 font-serif text-2xl md:text-3xl mb-2">40-65 kg</div>
+                <div className="text-gold-500 font-serif text-2xl md:text-3xl mb-2">40-76 kg</div>
                 <div className="text-gray-400 text-xs uppercase tracking-widest">Adult Ram Weight</div>
               </div>
               <div className="reveal">
@@ -100,9 +100,10 @@ export default function ImpalaPage() {
               </div>
               <div className="relative h-full min-h-[400px] md:min-h-[500px]">
                 <Image
-                  src="/images/home-species-impala.jpg"
-                  alt="Impala ram in bushveld"
+                  src="/images/impala-ram-standing-01.png"
+                  alt="Impala ram standing in bushveld"
                   fill
+                  sizes="(max-width: 768px) 100vw, 800px"
                   className="object-cover shadow-luxury"
                 />
               </div>
@@ -139,9 +140,13 @@ export default function ImpalaPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[400px] md:min-h-[500px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Impala Taxonomy Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/impala-ewe-bushveld-01.png"
+                  alt="Female impala in bushveld"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 800px"
+                  className="object-cover"
+                />
               </div>
             </div>
 
@@ -204,8 +209,8 @@ export default function ImpalaPage() {
                   <tbody className="divide-y divide-gray-200">
                     <tr>
                       <td className="px-6 py-4 font-sans text-onyx font-medium">Live Weight</td>
-                      <td className="px-6 py-4 font-sans text-gray-600">40 – 65 kg (88 – 143 lbs)</td>
-                      <td className="px-6 py-4 font-sans text-gray-600">30 – 50 kg (66 – 110 lbs)</td>
+                      <td className="px-6 py-4 font-sans text-gray-600">40 – 76 kg (88 – 168 lbs)</td>
+                      <td className="px-6 py-4 font-sans text-gray-600">30 – 53 kg (66 – 117 lbs)</td>
                       <td className="px-6 py-4 font-sans text-gray-500 text-sm">Rams are significantly larger with thicker necks</td>
                     </tr>
                     <tr className="bg-marble">
@@ -234,9 +239,10 @@ export default function ImpalaPage() {
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
                 <Image
-                  src="/images/home-species-impala.jpg"
-                  alt="Impala coat coloration and markings"
+                  src="/images/impala-ram-portrait-02.png"
+                  alt="Impala ram coat and markings"
                   fill
+                  sizes="(max-width: 768px) 100vw, 800px"
                   className="object-cover shadow-luxury"
                 />
               </div>
@@ -275,9 +281,13 @@ export default function ImpalaPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Impala Horn Detail Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/impala-ram-portrait-01.png"
+                  alt="Impala ram lyre horns detail"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 800px"
+                  className="object-cover shadow-luxury"
+                />
               </div>
             </div>
 
@@ -346,9 +356,13 @@ export default function ImpalaPage() {
 
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Impala Herd Behavior Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/impala-herd-bushveld-01.png"
+                  alt="Impala herd in bushveld"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 800px"
+                  className="object-cover shadow-luxury"
+                />
               </div>
               <div>
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Daily Activity Cycle</h3>
@@ -420,9 +434,10 @@ export default function ImpalaPage() {
               </div>
               <div className="relative h-full min-h-[400px]">
                 <Image
-                  src="/images/home-species-impala.jpg"
-                  alt="Impala feeding in bushveld"
+                  src="/images/impala-ram-standing-02.png"
+                  alt="Impala in Limpopo bushveld"
                   fill
+                  sizes="(max-width: 768px) 100vw, 800px"
                   className="object-cover shadow-luxury"
                 />
               </div>
@@ -430,9 +445,13 @@ export default function ImpalaPage() {
 
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Waterhole Activity Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/impala-herd-bushveld-01.png"
+                  alt="Impala at bushveld"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 800px"
+                  className="object-cover shadow-luxury"
+                />
               </div>
               <div>
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Habitat Requirements</h3>

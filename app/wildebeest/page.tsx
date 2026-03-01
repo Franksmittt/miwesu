@@ -58,7 +58,7 @@ export default function WildebeestPage() {
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div className="reveal">
-                <div className="text-gold-500 font-serif text-2xl md:text-3xl mb-2">180-270 kg</div>
+                <div className="text-gold-500 font-serif text-2xl md:text-3xl mb-2">250-290 kg</div>
                 <div className="text-gray-400 text-xs uppercase tracking-widest">Adult Bull Weight</div>
               </div>
               <div className="reveal">
@@ -204,13 +204,13 @@ export default function WildebeestPage() {
                   <tbody className="divide-y divide-gray-200">
                     <tr>
                       <td className="px-6 py-4 font-sans text-onyx font-medium">Live Weight</td>
-                      <td className="px-6 py-4 font-sans text-gray-600">180 – 270 kg (397 – 595 lbs)</td>
-                      <td className="px-6 py-4 font-sans text-gray-600">150 – 220 kg (331 – 485 lbs)</td>
-                      <td className="px-6 py-4 font-sans text-gray-500 text-sm">Bulls are significantly larger with massive necks and shoulders</td>
+                      <td className="px-6 py-4 font-sans text-gray-600">250 – 290 kg (551 – 639 lbs)</td>
+                      <td className="px-6 py-4 font-sans text-gray-600">150 – 260 kg (331 – 573 lbs)</td>
+                      <td className="px-6 py-4 font-sans text-gray-500 text-sm">Bulls heavier with pronounced shoulder hump and jet-black forehead; cows lighter with chestnut forehead</td>
                     </tr>
                     <tr className="bg-marble">
                       <td className="px-6 py-4 font-sans text-onyx font-medium">Shoulder Height</td>
-                      <td className="px-6 py-4 font-sans text-gray-600">130 – 145 cm (51 – 57 in)</td>
+                      <td className="px-6 py-4 font-sans text-gray-600">127 – 152 cm (50 – 60 in)</td>
                       <td className="px-6 py-4 font-sans text-gray-600">115 – 135 cm (45 – 53 in)</td>
                       <td className="px-6 py-4 font-sans text-gray-500 text-sm">High shoulders, sloping back typical of Alcelaphines</td>
                     </tr>

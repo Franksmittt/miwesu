@@ -376,7 +376,7 @@ export default function Home() {
             >
               <div className="h-56 sm:h-64 overflow-hidden relative">
                 <Image
-                  src="/images/home-species-kudu.jpg"
+                  src="/images/kudu-bull-portrait-01.png"
                   alt="Greater Kudu (Tragelaphus strepsiceros) - Iconic antelope species at Miwesu"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -456,7 +456,7 @@ export default function Home() {
             >
               <div className="h-64 overflow-hidden relative">
                 <Image
-                  src="/images/home-species-impala.jpg"
+                  src="/images/impala-ram-portrait-01.png"
                   alt="Impala (Aepyceros melampus) - Classic African antelope species"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"

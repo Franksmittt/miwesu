@@ -28,7 +28,7 @@ export default function WildlifePage() {
     {
       name: 'Greater Kudu',
       scientific: 'Tragelaphus strepsiceros',
-      image: '/images/home-species-kudu.jpg',
+      image: '/images/kudu-bull-portrait-01.png',
       caliber: '.300 Win Mag / .30-06',
       rowlandWard: 'Min. 53 7/8"',
       terrain: 'Mountain Thickets',
@@ -50,7 +50,7 @@ export default function WildlifePage() {
     {
       name: 'Impala',
       scientific: 'Aepyceros melampus',
-      image: '/images/home-species-impala.jpg',
+      image: '/images/impala-ram-portrait-01.png',
       caliber: '.243 / 6.5mm Creedmoor',
       rowlandWard: 'Min. 23 5/8"',
       terrain: 'Bushveld Fringe',
@@ -94,7 +94,7 @@ export default function WildlifePage() {
     {
       name: 'Bushbuck',
       scientific: 'Tragelaphus sylvaticus',
-      image: '/images/home-species-kudu.jpg',
+      image: '/images/kudu-bull-portrait-01.png',
       caliber: '.308 Win',
       rowlandWard: 'Min. 15"',
       terrain: 'Riverine Thickets',
@@ -116,7 +116,7 @@ export default function WildlifePage() {
     {
       name: 'Dapple Impala',
       scientific: 'Aepyceros melampus',
-      image: '/images/home-species-impala.jpg',
+      image: '/images/impala-ram-portrait-01.png',
       caliber: '.243 / 6.5mm Creedmoor',
       rowlandWard: 'Min. 23 5/8"',
       terrain: 'Bushveld Fringe',
@@ -160,7 +160,7 @@ export default function WildlifePage() {
     {
       name: 'Lechwe',
       scientific: 'Kobus leche',
-      image: '/images/home-species-impala.jpg',
+      image: '/images/impala-ram-portrait-01.png',
       caliber: '.270 Win',
       rowlandWard: 'Min. 20"',
       terrain: 'Wetlands / Water',
@@ -171,7 +171,7 @@ export default function WildlifePage() {
     {
       name: 'Livingstone Eland',
       scientific: 'Taurotragus oryx livingstonei',
-      image: '/images/home-species-kudu.jpg',
+      image: '/images/kudu-bull-portrait-01.png',
       caliber: '.375 H&H',
       rowlandWard: 'Min. 30"',
       terrain: 'Open Bushveld',
@@ -287,7 +287,7 @@ export default function WildlifePage() {
                 <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-8 sm:mb-12">
                   <div className="relative h-[350px] sm:h-[450px] md:h-[500px]">
                     <Image
-                      src="/images/wildlife-kudu-featured.jpg"
+                      src="/images/kudu-bull-standing-01.png"
                       alt="Greater Kudu bull - The Grey Ghost"
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"

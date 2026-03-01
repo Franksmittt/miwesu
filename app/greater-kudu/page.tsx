@@ -31,8 +31,8 @@ export default function GreaterKuduPage() {
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/home-species-kudu.jpg"
-              alt="Greater Kudu in natural habitat"
+              src="/images/kudu-bull-portrait-01.png"
+              alt="Greater Kudu bull in Limpopo bushveld"
               fill
               sizes="100vw"
               className="object-cover opacity-50"
@@ -58,7 +58,7 @@ export default function GreaterKuduPage() {
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div className="reveal">
-                <div className="text-gold-500 font-serif text-2xl md:text-3xl mb-2">190-270 kg</div>
+                <div className="text-gold-500 font-serif text-2xl md:text-3xl mb-2">190-315 kg</div>
                 <div className="text-gray-400 text-xs uppercase tracking-widest">Adult Bull Weight</div>
               </div>
               <div className="reveal">
@@ -100,8 +100,8 @@ export default function GreaterKuduPage() {
               </div>
               <div className="relative h-full min-h-[400px] md:min-h-[500px]">
                 <Image
-                  src="/images/wildlife-kudu-featured.jpg"
-                  alt="Greater Kudu bull in thicket"
+                  src="/images/kudu-bull-standing-01.png"
+                  alt="Greater Kudu bull standing in bushveld"
                   fill
                   sizes="(max-width: 768px) 100vw, 800px"
                   className="object-cover shadow-luxury"
@@ -140,9 +140,13 @@ export default function GreaterKuduPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[400px] md:min-h-[500px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Kudu Taxonomy Comparison Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/kudu-cow-bushveld-01.png"
+                  alt="Greater Kudu cow in bushveld vegetation"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 800px"
+                  className="object-cover"
+                />
               </div>
             </div>
 
@@ -152,7 +156,7 @@ export default function GreaterKuduPage() {
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Range and Habitat</h4>
                   <p className="text-gray-300 leading-loose mb-4">
-                    The Greater Kudu's range extends from East Africa (Ethiopia, Kenya, Tanzania) southward through Central and Southern Africa. In South Africa, they are found in the northern and eastern regions, favoring areas with dense bushveld, riverine thickets, and mountain slopes.
+                    The Greater Kudu's range extends from East Africa (Ethiopia, Kenya, Tanzania) southward through Central and Southern Africa. In South Africa, they are found in the northern and eastern regions, favoring areas with dense bushveld, riverine thickets, and wooded savanna.
                   </p>
                   <p className="text-gray-300 leading-loose">
                     The Makoppa district's combination of Sweetveld grasslands and dense Acacia thickets provides ideal habitat, allowing Kudu to feed in the open during early morning and late afternoon while retreating to thick cover during the heat of the day.
@@ -205,14 +209,14 @@ export default function GreaterKuduPage() {
                   <tbody className="divide-y divide-gray-200">
                     <tr>
                       <td className="px-6 py-4 font-sans text-onyx font-medium">Live Weight</td>
-                      <td className="px-6 py-4 font-sans text-gray-600">190 – 270 kg (419 – 595 lbs)</td>
+                      <td className="px-6 py-4 font-sans text-gray-600">190 – 315 kg (419 – 694 lbs)</td>
                       <td className="px-6 py-4 font-sans text-gray-600">120 – 210 kg (265 – 463 lbs)</td>
                       <td className="px-6 py-4 font-sans text-gray-500 text-sm">Bulls are significantly larger with massive necks and shoulders</td>
                     </tr>
                     <tr className="bg-marble">
                       <td className="px-6 py-4 font-sans text-onyx font-medium">Shoulder Height</td>
-                      <td className="px-6 py-4 font-sans text-gray-600">130 – 150 cm (51 – 59 in)</td>
-                      <td className="px-6 py-4 font-sans text-gray-600">100 – 130 cm (39 – 51 in)</td>
+                      <td className="px-6 py-4 font-sans text-gray-600">130 – 160 cm (51 – 63 in)</td>
+                      <td className="px-6 py-4 font-sans text-gray-600">120 – 125 cm (47 – 49 in)</td>
                       <td className="px-6 py-4 font-sans text-gray-500 text-sm">Tallest of the Tragelaphines</td>
                     </tr>
                     <tr>
@@ -235,8 +239,8 @@ export default function GreaterKuduPage() {
             <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
               <div className="relative h-full min-h-[400px]">
                 <Image
-                  src="/images/home-species-kudu.jpg"
-                  alt="Greater Kudu coat coloration"
+                  src="/images/kudu-bull-portrait-02.png"
+                  alt="Greater Kudu bull coat and stripes"
                   fill
                   sizes="(max-width: 768px) 100vw, 800px"
                   className="object-cover shadow-luxury"
@@ -277,9 +281,13 @@ export default function GreaterKuduPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Kudu Horn Detail Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/kudu-bull-portrait-01.png"
+                  alt="Greater Kudu bull spiral horns detail"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 800px"
+                  className="object-cover shadow-luxury"
+                />
               </div>
             </div>
 
@@ -348,9 +356,13 @@ export default function GreaterKuduPage() {
 
             <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Kudu Behavior Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/kudu-bull-shade-01.png"
+                  alt="Greater Kudu bull in dappled shade"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 800px"
+                  className="object-cover shadow-luxury"
+                />
               </div>
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Daily Activity Cycle</h3>
@@ -422,8 +434,8 @@ export default function GreaterKuduPage() {
               </div>
               <div className="relative h-full min-h-[400px]">
                 <Image
-                  src="/images/about-sweetveld-kudu.jpg"
-                  alt="Kudu browsing in Sweetveld"
+                  src="/images/kudu-bull-standing-02.png"
+                  alt="Kudu in Limpopo bushveld"
                   fill
                   sizes="(max-width: 768px) 100vw, 800px"
                   className="object-cover shadow-luxury"
@@ -444,7 +456,7 @@ export default function GreaterKuduPage() {
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Habitat Requirements</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
-                  Kudu require a combination of dense cover for security and more open areas for feeding. The ideal habitat includes riverine thickets, mountain slopes with bushveld, and areas where dense vegetation provides escape cover.
+                  Kudu require a combination of dense cover for security and more open areas for feeding. The ideal habitat includes riverine thickets, flat to gently undulating bushveld (such as in Limpopo), and areas where dense vegetation provides escape cover.
                 </p>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   The Makoppa district's Acacia thickets provide perfect daytime cover, while the adjacent Sweetveld grasslands offer excellent feeding opportunities during dawn and dusk.

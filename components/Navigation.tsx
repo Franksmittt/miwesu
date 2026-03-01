@@ -37,11 +37,12 @@ export default function Navigation() {
           : 'bg-gradient-to-b from-onyx/80 to-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
-        {/* Left: Menu Trigger */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center min-h-[56px] sm:min-h-[64px]">
+        {/* Left: Menu Trigger - min 44px touch target */}
         <button
           onClick={toggleMenu}
-          className="group flex items-center space-x-2 sm:space-x-3 text-white hover:text-gold-500 transition-colors focus:outline-none z-10"
+          className="group flex items-center space-x-2 sm:space-x-3 text-white hover:text-gold-500 transition-colors focus:outline-none z-10 p-2 -m-2 min-h-[44px] min-w-[44px] justify-center sm:justify-start"
+          aria-label="Open menu"
         >
           <div className="space-y-1.5">
             <div className="w-6 sm:w-8 h-px bg-current transition-all group-hover:w-5 sm:group-hover:w-6"></div>
@@ -96,7 +97,7 @@ export default function Navigation() {
           </Link>
           <button
             onClick={closeMenu}
-            className="text-white/70 hover:text-white p-2 -m-2 transition-colors"
+            className="flex items-center justify-center min-h-[44px] min-w-[44px] text-white/70 hover:text-white p-2 -m-2 transition-colors touch-manipulation"
             aria-label="Close menu"
           >
             <X className="w-6 h-6 sm:w-7 sm:h-7" />
@@ -108,32 +109,32 @@ export default function Navigation() {
             <div>
               <p className="text-gold-500/90 text-[10px] sm:text-xs uppercase tracking-[0.25em] font-sans font-medium mb-4">Stay</p>
               <ul className="space-y-3">
-                <li><Link href="/" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block">Home</Link></li>
-                <li><Link href="/residences" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block">Residences</Link></li>
-                <li><Link href="/activities" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block">Activities</Link></li>
+                <li><Link href="/" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Home</Link></li>
+                <li><Link href="/residences" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Residences</Link></li>
+                <li><Link href="/activities" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Activities</Link></li>
               </ul>
             </div>
             <div>
               <p className="text-gold-500/90 text-[10px] sm:text-xs uppercase tracking-[0.25em] font-sans font-medium mb-4">Experience</p>
               <ul className="space-y-3">
-                <li><Link href="/wildlife" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block">Wildlife</Link></li>
-                <li><Link href="/conservation" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block">Conservation</Link></li>
-                <li><Link href="/gallery" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block">Gallery</Link></li>
+                <li><Link href="/wildlife" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Wildlife</Link></li>
+                <li><Link href="/conservation" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Conservation</Link></li>
+                <li><Link href="/gallery" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Gallery</Link></li>
               </ul>
             </div>
             <div>
               <p className="text-gold-500/90 text-[10px] sm:text-xs uppercase tracking-[0.25em] font-sans font-medium mb-4">Practical</p>
               <ul className="space-y-3">
-                <li><Link href="/rates" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block">Rates</Link></li>
-                <li><Link href="/faq" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block">FAQ</Link></li>
-                <li><Link href="/wood" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block">Wood & Thermal</Link></li>
+                <li><Link href="/rates" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Rates</Link></li>
+                <li><Link href="/faq" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">FAQ</Link></li>
+                <li><Link href="/wood" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Wood & Thermal</Link></li>
               </ul>
             </div>
             <div>
               <p className="text-gold-500/90 text-[10px] sm:text-xs uppercase tracking-[0.25em] font-sans font-medium mb-4">Reach us</p>
               <ul className="space-y-3">
-                <li><Link href="/contact" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block">Contact</Link></li>
-                <li><Link href="/about" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block">About</Link></li>
+                <li><Link href="/contact" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Contact</Link></li>
+                <li><Link href="/about" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">About</Link></li>
               </ul>
             </div>
           </div>

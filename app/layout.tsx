@@ -1,7 +1,13 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Cinzel, Montserrat } from 'next/font/google'
 import './globals.css'
 import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard } from '@/lib/seo'
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#050505',
+}
 
 const cinzel = Cinzel({
   subsets: ['latin'],
@@ -105,8 +111,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${cinzel.variable} ${montserrat.variable}`}>
+    <html lang="en" className="scroll-smooth overflow-x-hidden">
+      <body className={`${cinzel.variable} ${montserrat.variable} min-w-0`}>
         {children}
       </body>
     </html>

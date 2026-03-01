@@ -89,7 +89,7 @@ export default function ResidencesPage() {
               priority
             />
           </div>
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="bg-onyx-light border border-white/5 p-6 sm:p-10 -mt-0 relative z-10">
               <span className="text-gold-400 text-[10px] sm:text-xs tracking-[0.4em] uppercase font-bold block mb-2">
                 The Collection
@@ -105,11 +105,11 @@ export default function ResidencesPage() {
         </section>
 
         {/* Residences Grid */}
-        <section className="py-32 bg-onyx text-white relative overflow-hidden">
+        <section className="py-16 sm:py-24 lg:py-32 bg-onyx text-white relative overflow-hidden">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gold-500/5 rounded-full blur-[100px]"></div>
 
-          <div className="max-w-7xl mx-auto px-6 relative z-10">
-            <div className="text-center mb-20 reveal">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+            <div className="text-center mb-12 sm:mb-20 reveal">
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold">
                 Exclusive Use
               </span>
@@ -320,8 +320,8 @@ export default function ResidencesPage() {
             </div>
 
             {/* Daily Housekeeping */}
-            <div className="grid md:grid-cols-2 gap-12 items-center mb-20 reveal delay-300">
-              <div className="relative h-[500px]">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-12 sm:mb-20 reveal delay-300">
+              <div className="relative h-[280px] sm:h-[360px] md:h-[500px] min-h-[240px]">
                 <Image
                   src="/images/residences-housekeeping.jpg"
                   alt="Daily housekeeping service at Miwesu"
@@ -347,7 +347,7 @@ export default function ResidencesPage() {
             </div>
 
             {/* Location & Access */}
-            <div className="bg-gradient-to-br from-gold-500/10 to-gold-500/5 border border-gold-500/20 p-12 md:p-16 mb-20 reveal delay-400">
+            <div className="bg-gradient-to-br from-gold-500/10 to-gold-500/5 border border-gold-500/20 p-6 sm:p-10 md:p-16 mb-12 sm:mb-20 reveal delay-400">
               <div className="max-w-4xl mx-auto">
                 <div className="flex items-center gap-4 mb-8">
                   <MapPin className="w-8 h-8 text-gold-500" />
@@ -385,7 +385,7 @@ export default function ResidencesPage() {
             </div>
 
             {/* Call to Action */}
-            <div className="bg-gold-500 p-12 md:p-20 reveal delay-500">
+            <div className="bg-gold-500 p-6 sm:p-10 md:p-20 reveal delay-500">
               <div className="max-w-4xl mx-auto text-center">
                 <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
                   Experience Absolute Privacy

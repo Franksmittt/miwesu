@@ -150,10 +150,10 @@ export default function Home() {
       {/* The Estate / Origins */}
       <section
         id="philosophy"
-        className="py-32 bg-marble relative overflow-hidden"
+        className="py-16 sm:py-24 lg:py-32 bg-marble relative overflow-hidden"
       >
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="flex flex-col items-center mb-20 reveal">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="flex flex-col items-center mb-12 sm:mb-20 reveal">
             <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6">
               The Provenance
             </span>
@@ -227,12 +227,12 @@ export default function Home() {
       {/* Residences */}
       <section
         id="accommodation"
-        className="py-32 bg-onyx text-white relative overflow-hidden"
+        className="py-16 sm:py-24 lg:py-32 bg-onyx text-white relative overflow-hidden"
       >
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gold-500/5 rounded-full blur-[100px]"></div>
 
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="text-center mb-20 reveal">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="text-center mb-12 sm:mb-20 reveal">
             <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold">
               The Collection
             </span>
@@ -289,7 +289,7 @@ export default function Home() {
               href="/residences/stone-villa"
               className="group relative bg-onyx-light border border-white/5 hover:border-gold-500/50 transition-all duration-500 overflow-hidden reveal delay-100 block"
             >
-              <div className="h-80 overflow-hidden relative">
+              <div className="h-64 sm:h-80 overflow-hidden relative">
                 <Image
                   src="/images/residences-second-house-main.jpg"
                   alt="The Stone Villa - 6-sleeper luxury accommodation near the pool at Miwesu"
@@ -298,17 +298,17 @@ export default function Home() {
                   className="object-cover transition-transform duration-1000 group-hover:scale-110"
                 />
               </div>
-              <div className="p-10 relative">
-                <div className="absolute -top-6 right-8 bg-white text-onyx w-12 h-12 flex items-center justify-center font-serif text-xl font-bold">
+              <div className="p-6 sm:p-10 relative">
+                <div className="absolute -top-4 sm:-top-6 right-4 sm:right-8 bg-white text-onyx w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center font-serif text-lg sm:text-xl font-bold">
                   II
                 </div>
-                <h3 className="font-serif text-2xl text-white mb-4">
+                <h3 className="font-serif text-xl sm:text-2xl text-white mb-3 sm:mb-4">
                   The Stone Villa
                 </h3>
-                <p className="text-gray-400 text-sm font-sans leading-relaxed mb-8">
+                <p className="text-gray-400 text-sm font-sans leading-relaxed mb-6 sm:mb-8">
                   {secondHouse.subtitle}. Master bedroom and second bedroom (2 bunk beds), two en-suites, kitchen, living, outdoor braai.
                 </p>
-                <div className="grid grid-cols-2 gap-4 text-[10px] uppercase tracking-widest text-gold-400">
+                <div className="grid grid-cols-2 gap-3 sm:gap-4 text-[10px] uppercase tracking-widest text-gold-400">
                   <span className="flex items-center">
                     <Sun className="w-3 h-3 mr-2" /> En-suite
                   </span>
@@ -348,12 +348,12 @@ export default function Home() {
       </section>
 
       {/* The Royal Pursuit */}
-      <section id="hunting" className="py-32 bg-onyx text-white relative">
+      <section id="hunting" className="py-16 sm:py-24 lg:py-32 bg-onyx text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-hero-pattern opacity-5 bg-fixed"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-onyx via-transparent to-onyx"></div>
 
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="text-center mb-24 reveal">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="text-center mb-12 sm:mb-24 reveal">
             <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold">
               The Portfolio
             </span>
@@ -410,7 +410,7 @@ export default function Home() {
 
             {/* Species Card 2: Blue Wildebeest */}
             <Link
-              href="/wildlife"
+              href="/wildebeest"
               className="group relative bg-onyx-light border border-white/5 hover:border-gold-500/50 transition-all duration-500 reveal delay-100 block"
             >
               <div className="h-64 overflow-hidden relative">
@@ -590,12 +590,12 @@ export default function Home() {
       </section>
 
       {/* Lifestyle / Observer */}
-      <section className="py-32 bg-marble-dark">
-        <div className="max-w-7xl mx-auto px-6 text-center">
+      <section className="py-16 sm:py-24 lg:py-32 bg-marble-dark">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
           <span className="text-gold-600 text-xs tracking-[0.4em] uppercase font-bold">
             Beyond the Rifle
           </span>
-          <h2 className="font-serif text-4xl md:text-6xl text-onyx mt-6 mb-20">
+          <h2 className="font-serif text-4xl md:text-6xl text-onyx mt-6 mb-12 sm:mb-20">
             The Observer's Journey
           </h2>
 
@@ -650,8 +650,8 @@ export default function Home() {
       </section>
 
       {/* Adaptive Social Proof: US vs SA */}
-      <section className="py-24 bg-marble border-y border-gray-100">
-        <div className="max-w-5xl mx-auto px-6">
+      <section className="py-16 sm:py-24 bg-marble border-y border-gray-100">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <span className="text-gold-600 text-xs tracking-[0.4em] uppercase font-bold block text-center mb-6">
             What Guests Say
           </span>
@@ -698,12 +698,12 @@ export default function Home() {
       {/* Legacy / Impact */}
       <section
         id="conservation"
-        className="py-32 bg-onyx relative overflow-hidden"
+        className="py-16 sm:py-24 lg:py-32 bg-onyx relative overflow-hidden"
       >
         <div className="absolute inset-0 bg-hero-pattern opacity-10 bg-fixed"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-onyx via-onyx/90 to-transparent"></div>
 
-        <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
           <div className="md:w-1/2 mb-8 md:mb-0 reveal">
             <div className="inline-block bg-gold-500 text-onyx px-4 py-1 text-[10px] font-bold uppercase tracking-widest mb-4 sm:mb-6">
               Conservation First

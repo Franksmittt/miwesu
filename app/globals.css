@@ -3,8 +3,13 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
   body {
     @apply bg-marble text-[#111111] antialiased overflow-x-hidden;
+    min-width: 0;
   }
 
   /* Core Web Vitals: prevent layout shift from focus outline */

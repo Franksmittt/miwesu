@@ -11,7 +11,7 @@ const landscapeAndWildlifeImages = [
   { src: '/images/kudu-bull-portrait-01.png', category: 'Wildlife' as const, title: 'Greater Kudu', description: 'The Grey Ghost of the thickets' },
   { src: '/images/home-species-wildebeest.jpg', category: 'Wildlife' as const, title: 'Blue Wildebeest', description: 'Thriving on sweet grazing lawns' },
   { src: '/images/impala-ram-portrait-01.png', category: 'Wildlife' as const, title: 'Impala', description: 'The athlete of the bushveld' },
-  { src: '/images/home-species-gemsbok.jpg', category: 'Wildlife' as const, title: 'Gemsbok', description: 'Kalahari transition zone specialist' },
+  { src: '/images/gemsbok-portrait-01.png', category: 'Wildlife' as const, title: 'Gemsbok', description: 'Kalahari transition zone specialist' },
   { src: '/images/home-species-warthog.jpg', category: 'Wildlife' as const, title: 'Warthog', description: 'Character and charm at waterholes' },
   { src: '/images/home-origins-main.jpg', category: 'Landscape' as const, title: 'Leadwood Forest', description: 'Ancient trees of the Makoppa' },
   { src: '/images/home-origins-soil.jpg', category: 'Landscape' as const, title: 'Arid Sweet Bushveld', description: 'The nutrient-rich heartland' },

@@ -61,7 +61,7 @@ export default function WildlifePage() {
     {
       name: 'Gemsbok',
       scientific: 'Oryx gazella',
-      image: '/images/home-species-gemsbok.jpg',
+      image: '/images/gemsbok-portrait-01.png',
       caliber: '.30-06 / .300 Win Mag',
       rowlandWard: 'Min. 40"',
       terrain: 'Open Scrub',

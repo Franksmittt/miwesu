@@ -31,8 +31,8 @@ export default function GemsbokPage() {
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/home-species-gemsbok.jpg"
-              alt="Gemsbok in natural habitat"
+              src="/images/gemsbok-portrait-01.png"
+              alt="Gemsbok in Limpopo bushveld"
               fill
               sizes="100vw"
               className="object-cover opacity-50"
@@ -100,9 +100,10 @@ export default function GemsbokPage() {
               </div>
               <div className="relative h-full min-h-[400px] md:min-h-[500px]">
                 <Image
-                  src="/images/home-species-gemsbok.jpg"
-                  alt="Gemsbok bull in arid habitat"
+                  src="/images/gemsbok-standing-01.png"
+                  alt="Gemsbok standing in bushveld"
                   fill
+                  sizes="(max-width: 768px) 100vw, 800px"
                   className="object-cover shadow-luxury"
                 />
               </div>
@@ -139,9 +140,13 @@ export default function GemsbokPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[400px] md:min-h-[500px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Gemsbok Taxonomy Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/gemsbok-portrait-02.png"
+                  alt="Gemsbok portrait, facial markings"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 800px"
+                  className="object-cover"
+                />
               </div>
             </div>
 
@@ -234,9 +239,10 @@ export default function GemsbokPage() {
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
                 <Image
-                  src="/images/home-species-gemsbok.jpg"
-                  alt="Gemsbok coat coloration and markings"
+                  src="/images/gemsbok-standing-02.png"
+                  alt="Gemsbok coat and markings"
                   fill
+                  sizes="(max-width: 768px) 100vw, 800px"
                   className="object-cover shadow-luxury"
                 />
               </div>
@@ -275,9 +281,13 @@ export default function GemsbokPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Gemsbok Horn Detail Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/gemsbok-portrait-01.png"
+                  alt="Gemsbok horns detail"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 800px"
+                  className="object-cover shadow-luxury"
+                />
               </div>
             </div>
 
@@ -346,9 +356,13 @@ export default function GemsbokPage() {
 
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Gemsbok Herd Behavior Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/gemsbok-group-bushveld-01.png"
+                  alt="Gemsbok group in bushveld"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 800px"
+                  className="object-cover shadow-luxury"
+                />
               </div>
               <div>
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Daily Activity Cycle</h3>
@@ -420,9 +434,10 @@ export default function GemsbokPage() {
               </div>
               <div className="relative h-full min-h-[400px]">
                 <Image
-                  src="/images/home-species-gemsbok.jpg"
-                  alt="Gemsbok feeding in arid habitat"
+                  src="/images/gemsbok-shade-bushveld-01.png"
+                  alt="Gemsbok in bushveld"
                   fill
+                  sizes="(max-width: 768px) 100vw, 800px"
                   className="object-cover shadow-luxury"
                 />
               </div>
@@ -430,9 +445,13 @@ export default function GemsbokPage() {
 
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Arid Habitat Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/gemsbok-group-bushveld-01.png"
+                  alt="Gemsbok in Limpopo habitat"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 800px"
+                  className="object-cover shadow-luxury"
+                />
               </div>
               <div>
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Habitat Requirements</h3>

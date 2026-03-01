@@ -495,7 +495,7 @@ export default function Home() {
             >
               <div className="h-64 overflow-hidden relative">
                 <Image
-                  src="/images/home-species-gemsbok.jpg"
+                  src="/images/gemsbok-portrait-01.png"
                   alt="Gemsbok (Oryx gazella) - Distinct desert antelope with long straight horns"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"

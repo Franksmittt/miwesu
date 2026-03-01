@@ -54,64 +54,70 @@ export default function StoneVillaPage() {
 
   return (
     <Layout>
-      <main id="main-content" className="min-h-screen bg-marble">
-        <section className="relative h-[40vh] min-h-[280px] flex items-center justify-center overflow-hidden bg-onyx">
-          <div className="absolute inset-0 z-0">
-            <Image
-              src="/images/residences-second-house-main.jpg"
-              alt="The Stone Villa at MIWESU Game Farm"
-              fill
-              sizes="100vw"
-              className="object-cover opacity-60"
-              priority
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/50 to-transparent" />
-          </div>
-          <div className="relative z-20 text-center px-4">
+      <main id="main-content" className="min-h-screen bg-onyx">
+        <section className="pt-6 pb-0">
+          <div className="max-w-7xl mx-auto px-6">
             <Link
               href="/residences"
-              className="inline-flex items-center text-gold-400 hover:text-white text-sm uppercase tracking-widest font-bold mb-4"
+              className="inline-flex items-center text-gold-400 hover:text-white text-sm uppercase tracking-widest font-bold mb-6"
             >
               <ArrowLeft className="w-4 h-4 mr-2" /> All Residences
             </Link>
-            <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl text-white leading-none">
-              The Stone Villa
-            </h1>
-            <p className="text-gray-300 mt-4 text-sm sm:text-base">
-              {secondHouse.subtitle} · {lodgeSummary.secondHouse.bedrooms} bedrooms
-            </p>
           </div>
         </section>
 
-        <section className="py-16 sm:py-24 bg-onyx text-white">
-          <div className="max-w-7xl mx-auto px-6">
-            <div className="max-w-2xl mb-12 reveal">
-              <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
+        <section className="px-6 pb-0">
+          <div className="max-w-7xl mx-auto">
+            <div className="relative h-[50vh] min-h-[320px] overflow-hidden">
+              <Image
+                src="/images/residences-second-house-main.jpg"
+                alt="The Stone Villa at MIWESU Game Farm"
+                fill
+                sizes="100vw"
+                className="object-cover"
+                priority
+              />
+            </div>
+            <div className="bg-onyx-light border border-white/5 p-6 sm:p-10 -mt-0 relative z-10">
+              <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white mb-2">
+                The Stone Villa
+              </h1>
+              <p className="text-gold-500 text-sm font-serif mb-6">
+                {secondHouse.subtitle} · {lodgeSummary.secondHouse.bedrooms} bedrooms
+              </p>
+              <p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-6">
                 {lodgeSummary.secondHouse.description}
               </p>
-              <ul className="text-gray-400 text-sm mt-6 space-y-1.5">
+              <ul className="text-gray-400 text-sm space-y-1.5 border-t border-white/10 pt-6">
                 <li>Kitchen · Living Area</li>
                 <li>Master Bedroom · En-suite (shower)</li>
                 <li>Second bedroom (2 bunk beds, sleeps 4) · En-suite (bathtub)</li>
                 <li>Outdoor Braai</li>
               </ul>
             </div>
+          </div>
+        </section>
 
+        <section className="py-16 sm:py-24 bg-onyx text-white">
+          <div className="max-w-7xl mx-auto px-6">
             <h2 className="font-serif text-3xl sm:text-4xl text-white mb-8 reveal">
               Facilities & Layout
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
               {secondHouse.facilities.map((facility) => (
-                <div key={facility.id} className="relative h-[220px] sm:h-[260px] overflow-hidden border border-white/5 reveal">
-                  <FacilityImage
-                    facility={facility}
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-onyx via-transparent to-transparent" />
-                  <span className="absolute bottom-3 left-3 right-3 font-serif text-white text-sm sm:text-base drop-shadow-lg">
-                    {facility.label}
-                  </span>
+                <div key={facility.id} className="bg-onyx-light border border-white/5 overflow-hidden reveal group">
+                  <div className="relative h-[220px] sm:h-[260px] overflow-hidden">
+                    <FacilityImage
+                      facility={facility}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="p-4 sm:p-5 border-t border-white/5">
+                    <span className="font-serif text-white text-sm sm:text-base">
+                      {facility.label}
+                    </span>
+                  </div>
                 </div>
               ))}
             </div>

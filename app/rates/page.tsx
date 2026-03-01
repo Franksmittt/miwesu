@@ -7,6 +7,7 @@ import Layout from '@/components/Layout'
 import { DollarSign, Calendar, Users, ArrowRight, Download, Home, Target, Camera, Star } from 'lucide-react'
 import { getCurrency, getIntent } from '@/lib/cookies'
 import CurrencySwitcher from '@/components/CurrencySwitcher'
+import { lodgeSummary } from '@/lib/residences-data'
 
 export default function RatesPage() {
   const [currency, setCurrency] = useState<'ZAR' | 'USD'>('USD')
@@ -99,7 +100,7 @@ export default function RatesPage() {
               <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
                 <div className="bg-onyx-light border border-white/5 p-6 sm:p-8">
                   <h4 className="font-serif text-xl sm:text-2xl text-white mb-3 sm:mb-4">The Homestead</h4>
-                  <p className="text-gray-400 mb-4 sm:mb-6 text-sm sm:text-base">10-sleeper exclusive use</p>
+                  <p className="text-gray-400 mb-4 sm:mb-6 text-sm sm:text-base">{lodgeSummary.mainHouse.sleepers}-sleeper exclusive use</p>
                   <div className="space-y-3 sm:space-y-4">
                     <div className="flex justify-between items-center border-b border-white/10 pb-3 sm:pb-4 flex-wrap gap-2">
                       <span className="text-gray-400 uppercase text-xs tracking-widest">
@@ -122,7 +123,7 @@ export default function RatesPage() {
 
                 <div className="bg-onyx-light border border-white/5 p-6 sm:p-8">
                   <h4 className="font-serif text-xl sm:text-2xl text-white mb-3 sm:mb-4">The Stone Villa</h4>
-                  <p className="text-gray-400 mb-4 sm:mb-6 text-sm sm:text-base">4-sleeper exclusive use</p>
+                  <p className="text-gray-400 mb-4 sm:mb-6 text-sm sm:text-base">{lodgeSummary.secondHouse.sleepers}-sleeper exclusive use</p>
                   <div className="space-y-3 sm:space-y-4">
                     <div className="flex justify-between items-center border-b border-white/10 pb-3 sm:pb-4 flex-wrap gap-2">
                       <span className="text-gray-400 uppercase text-xs tracking-widest">
@@ -197,7 +198,7 @@ export default function RatesPage() {
                       Exclusive Use Pricing
                     </h3>
                     <p className="text-gray-300 text-lg leading-loose mb-6">
-                      The Homestead offers complete privacy and autonomy for groups of up to 10 guests. Rates include exclusive use of the entire residence, daily housekeeping, all utilities, fiber optic internet, and full access to the reserve.
+                      The Homestead offers complete privacy and autonomy for groups of up to 16 guests. Rates include exclusive use of the entire residence, daily housekeeping, all utilities, fiber optic internet, and full access to the reserve.
                     </p>
                     <p className="text-gray-300 text-lg leading-loose mb-8">
                       Weekly rates offer significant savings for extended stays. Minimum stay requirements may apply during peak seasons. All rates are quoted in South African Rand (ZAR) and are subject to change.

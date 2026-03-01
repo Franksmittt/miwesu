@@ -41,7 +41,7 @@ export default function EsPage() {
               Caza en <span className="text-gradient-gold">Limpopo</span>
             </h1>
             <p className="text-white/80 text-base sm:text-lg max-w-2xl mx-auto mb-10">
-              Residencias privadas de lujo y caza de trofeos en el distrito de Makoppa, Thabazimbi. Waterberg, Arid Sweet Bushveld. 14 especies—kudú, impala, búfalo y más.
+              Residencias privadas de lujo y caza de trofeos en el distrito de Makoppa, Thabazimbi. Waterberg, Arid Sweet Bushveld. 14 especies -kudú, impala, búfalo y más.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

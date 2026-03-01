@@ -304,7 +304,7 @@ export default function ContactPage() {
                 <div className="bg-white p-8 border border-gray-100">
                   <h3 className="font-serif text-xl text-onyx mb-4">Important Notes</h3>
                   <ul className="font-sans text-gray-600 text-sm space-y-2 list-disc list-inside leading-relaxed">
-                    <li>The D1432 is a district gravel road—high-clearance vehicles recommended</li>
+                    <li>The D1432 is a district gravel road -high-clearance vehicles recommended</li>
                     <li>Road conditions can be challenging during summer rainy season (October–March)</li>
                     <li>Stock up on supplies in Thabazimbi before departure</li>
                     <li>Allow approximately 45 minutes travel time from Thabazimbi</li>

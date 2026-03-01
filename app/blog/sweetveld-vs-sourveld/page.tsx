@@ -43,7 +43,7 @@ export default function SweetveldVsSourveldPage() {
 
             <div className="prose prose-lg max-w-none font-sans text-gray-600 space-y-6">
               <p className="reveal leading-relaxed">
-                South Africa&apos;s hunting and wildlife areas are often described as either <strong className="text-onyx">Sweetveld</strong> or <strong className="text-onyx">Sourveld</strong>. The distinction isn&apos;t just academic—it directly affects the condition of the game you hunt and the quality of the trophies you take home. At MIWESU GAME FARM, we sit in the <strong className="text-onyx">Arid Sweet Bushveld</strong> of the Makoppa district, Thabazimbi, and that placement is central to our trophy quality.
+                South Africa&apos;s hunting and wildlife areas are often described as either <strong className="text-onyx">Sweetveld</strong> or <strong className="text-onyx">Sourveld</strong>. The distinction isn&apos;t just academic -it directly affects the condition of the game you hunt and the quality of the trophies you take home. At MIWESU GAME FARM, we sit in the <strong className="text-onyx">Arid Sweet Bushveld</strong> of the Makoppa district, Thabazimbi, and that placement is central to our trophy quality.
               </p>
               <h2 className="font-serif text-2xl text-onyx mt-10 mb-4 reveal">What Is Sweetveld?</h2>
               <p className="reveal leading-relaxed">
@@ -51,11 +51,11 @@ export default function SweetveldVsSourveldPage() {
               </p>
               <h2 className="font-serif text-2xl text-onyx mt-10 mb-4 reveal">Why It Matters for Trophy Hunting</h2>
               <p className="reveal leading-relaxed">
-                Horn and antler growth is nutrient-intensive. Bulls and rams in peak condition—supported by consistent, high-quality forage—develop heavier, more symmetrical horns and better body mass. Our Sweetveld sustains species like kudu, wildebeest, and impala in peak condition year-round, which is why we consistently produce trophies that meet and exceed Rowland Ward and SCI benchmarks. The Makoppa district&apos;s red sandy loam and granite-derived soils, combined with the Arid Sweet Bushveld biome, create an environment where our herds don&apos;t just survive; they thrive.
+                Horn and antler growth is nutrient-intensive. Bulls and rams in peak condition -supported by consistent, high-quality forage -develop heavier, more symmetrical horns and better body mass. Our Sweetveld sustains species like kudu, wildebeest, and impala in peak condition year-round, which is why we consistently produce trophies that meet and exceed Rowland Ward and SCI benchmarks. The Makoppa district&apos;s red sandy loam and granite-derived soils, combined with the Arid Sweet Bushveld biome, create an environment where our herds don&apos;t just survive; they thrive.
               </p>
               <h2 className="font-serif text-2xl text-onyx mt-10 mb-4 reveal">The MIWESU Advantage</h2>
               <p className="reveal leading-relaxed">
-                We don&apos;t simply &quot;have&quot; Sweetveld—we manage for it. Our ecological census and sustainable harvest model ensure that grazing pressure stays in balance with the carrying capacity of the veld. The result is consistent trophy quality and a hunting experience where the biology of the land works in your favor. When you hunt at MIWESU, you&apos;re hunting in one of Limpopo&apos;s prime Sweetveld areas, and that difference shows in the animals on the ground.
+                We don&apos;t simply &quot;have&quot; Sweetveld -we manage for it. Our ecological census and sustainable harvest model ensure that grazing pressure stays in balance with the carrying capacity of the veld. The result is consistent trophy quality and a hunting experience where the biology of the land works in your favor. When you hunt at MIWESU, you&apos;re hunting in one of Limpopo&apos;s prime Sweetveld areas, and that difference shows in the animals on the ground.
               </p>
             </div>
 

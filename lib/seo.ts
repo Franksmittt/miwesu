@@ -3,6 +3,8 @@
  * Provides consistent URL construction and canonical generation
  */
 
+import { lodgeSummary } from '@/lib/residences-data'
+
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.com'
 
 /**
@@ -114,15 +116,17 @@ export function generateOrganizationSchema() {
 }
 
 /**
- * Generates JSON-LD structured data for LocalBusiness
+ * Generates JSON-LD structured data for LocalBusiness (LodgingBusiness)
+ * Accommodation counts from lodgeSummary (residences-data)
  */
 export function generateLocalBusinessSchema() {
+  const totalRooms = lodgeSummary.mainHouse.bedrooms + lodgeSummary.secondHouse.bedrooms
   return {
     '@context': 'https://schema.org',
     '@type': 'LodgingBusiness',
     name: 'MIWESU GAME FARM',
     image: `${baseUrl}/og-image.jpg`,
-    description: 'Luxury game farm and hunting lodge in the Makoppa district, Thabazimbi, Limpopo. Plains game and trophy hunting, malaria-free Waterberg. Private residences, conservation harvest, safari. D1432 Road, approximately 40km from Thabazimbi town.',
+    description: `Luxury game farm and hunting lodge in the Makoppa district, Thabazimbi, Limpopo. ${totalRooms} bedrooms, ${lodgeSummary.totalSleepers} sleepers across two private residences. Plains game and trophy hunting, malaria-free Waterberg. Conservation harvest, safari. D1432 Road, approximately 40km from Thabazimbi town.`,
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'D1432 Road, Makoppa District',
@@ -145,6 +149,7 @@ export function generateLocalBusinessSchema() {
     email: 'guardians@miwesu.com',
     url: baseUrl,
     priceRange: '$$$',
+    numberOfRooms: totalRooms,
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: [

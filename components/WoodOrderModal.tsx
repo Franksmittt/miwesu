@@ -210,14 +210,14 @@ export default function WoodOrderModal({ isOpen, onClose, preselectedProduct }: 
                 >
                   {WOOD_PRODUCTS.map((p) => (
                     <option key={p.id} value={p.id}>
-                      {p.name}{p.subtitle ? ' ' + p.subtitle : ''} — {p.weight} — R{p.price} per bag (MOQ {p.moq})
+                      {p.name}{p.subtitle ? ' ' + p.subtitle : ''}  - {p.weight}  - R{p.price} per bag (MOQ {p.moq})
                     </option>
                   ))}
                 </select>
               </div>
               <div>
                 <label htmlFor="wood-quantity" className="block text-[10px] uppercase text-gold-600 tracking-widest font-bold mb-2">
-                  Quantity (bags) * — MOQ {selectedProduct.moq}
+                  Quantity (bags) *  - MOQ {selectedProduct.moq}
                 </label>
                 <input
                   id="wood-quantity"

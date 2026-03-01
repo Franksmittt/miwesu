@@ -22,7 +22,7 @@ const POSTS = [
   {
     slug: 'trophy-export-guide',
     title: 'The Logistics of Export: How We Get Your Trophy from Limpopo to Your Home',
-    excerpt: 'From field prep to CITES and shipping—what to expect when bringing your trophy home from South Africa.',
+    excerpt: 'From field prep to CITES and shipping -what to expect when bringing your trophy home from South Africa.',
     href: '/trophy-export',
   },
 ]

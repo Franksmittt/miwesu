@@ -749,7 +749,7 @@ export default function GemsbokPage() {
                 <div className="bg-onyx p-6">
                   <h4 className="font-serif text-xl text-gold-400 mb-3">Backstrap (Loin)</h4>
                   <p className="text-gray-300 text-sm leading-relaxed">
-                    Excellent for steaks or whole roasts. Do not overcook—medium-rare is ideal. Overcooking results in tough, dry meat due to the lack of fat.
+                    Excellent for steaks or whole roasts. Do not overcook -medium-rare is ideal. Overcooking results in tough, dry meat due to the lack of fat.
                   </p>
                 </div>
                 <div className="bg-onyx p-6">

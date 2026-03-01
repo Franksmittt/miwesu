@@ -10,7 +10,7 @@ const breadcrumbItems = [
 
 export const metadata: Metadata = {
   title: 'Private Residences | Luxury Accommodation',
-  description: 'Luxury hunting lodge accommodation at MIWESU GAME FARM. The Homestead (10-sleeper) or The Stone Villa (4-sleeper). Game farm stay in Thabazimbi, Makoppa district. Bespoke living, daily housekeeping, absolute privacy.',
+  description: 'Luxury hunting lodge accommodation at MIWESU GAME FARM. The Homestead (16-sleeper main lodge) or The Stone Villa (6-sleeper, near the pool). Game farm stay in Thabazimbi, Makoppa district. Bespoke living, daily housekeeping, absolute privacy.',
   keywords: ['luxury accommodation', 'private residence', 'hunting lodge accommodation', 'game farm stay Thabazimbi', 'hunting lodge accommodation Limpopo', 'Makoppa district', 'Thabazimbi', 'The Homestead', 'The Stone Villa', 'exclusive use', 'self-catering', 'MIWESU GAME FARM'],
   openGraph: generateOpenGraph(
     'Private Residences | Luxury Accommodation',

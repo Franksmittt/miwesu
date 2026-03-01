@@ -91,7 +91,7 @@ export default function ConservationPage() {
                     "I acknowledge that Miwesu is a sanctuary of silence. I respect the ethics of the fair chase and the peace of the Iron Mountain."
                   </p>
                   <p className="text-[10px] uppercase tracking-widest text-gray-400">
-                    — The Guardian's Pledge
+                     - The Guardian's Pledge
                   </p>
                 </div>
               </div>
@@ -294,7 +294,7 @@ export default function ConservationPage() {
                 <span className="block font-serif text-5xl text-onyx mb-4">100%</span>
                 <h3 className="font-serif text-2xl text-onyx mb-4">Meat Donated</h3>
                 <p className="font-sans text-gray-600 leading-relaxed">
-                  Every harvest contributes to community welfare—nothing goes to waste.
+                  Every harvest contributes to community welfare -nothing goes to waste.
                 </p>
               </div>
             </div>

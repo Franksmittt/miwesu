@@ -48,7 +48,7 @@ export default function TrophyExportPage() {
               Trophy Export & <span className="text-gradient-gold">Travel</span>
             </h1>
             <p className="text-white/80 text-sm sm:text-base max-w-2xl mx-auto mt-4">
-              How we get your trophy from Limpopo to Texas—or anywhere in the world.
+              How we get your trophy from Limpopo to Texas -or anywhere in the world.
             </p>
           </div>
         </section>
@@ -131,7 +131,7 @@ export default function TrophyExportPage() {
               <MapPin className="w-10 h-10 text-gold-500 flex-shrink-0 mt-1" />
               <div>
                 <p className="font-sans text-gray-600 leading-relaxed mb-4">
-                  MIWESU GAME FARM is on <strong>D1432 Road, Makoppa District, Thabazimbi, Limpopo</strong>. The nearest major airport is <strong>OR Tambo International (Johannesburg)</strong>, approximately 2.5 hours by road. We recommend a high-clearance vehicle for the district road. GPS: -24.4523956, 27.0450853. The Waterberg is malaria-free—no prophylaxis required.
+                  MIWESU GAME FARM is on <strong>D1432 Road, Makoppa District, Thabazimbi, Limpopo</strong>. The nearest major airport is <strong>OR Tambo International (Johannesburg)</strong>, approximately 2.5 hours by road. We recommend a high-clearance vehicle for the district road. GPS: -24.4523956, 27.0450853. The Waterberg is malaria-free -no prophylaxis required.
                 </p>
                 <p className="font-sans text-gray-600 leading-relaxed">
                   International guests often fly into Johannesburg (ATL, JFK, LHR, FRA, and other hubs connect to OR Tambo). Our concierge can advise on transfers and rental options.
@@ -149,7 +149,7 @@ export default function TrophyExportPage() {
               A Complete Logistics Solution
             </h2>
             <p className="text-gray-300 leading-relaxed mb-8">
-              We don’t just offer the hunt—we connect you with trusted partners for dipping, shipping, and taxidermy so your entire experience, from arrival in Limpopo to trophy at home, is handled with care. See our <Link href="/partners" className="text-gold-400 hover:text-gold-300 underline">Trusted Partners</Link> page for more, or contact our concierge with any logistics questions.
+              We don’t just offer the hunt -we connect you with trusted partners for dipping, shipping, and taxidermy so your entire experience, from arrival in Limpopo to trophy at home, is handled with care. See our <Link href="/partners" className="text-gold-400 hover:text-gold-300 underline">Trusted Partners</Link> page for more, or contact our concierge with any logistics questions.
             </p>
             <Link
               href="/contact"

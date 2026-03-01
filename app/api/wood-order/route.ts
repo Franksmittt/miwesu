@@ -72,7 +72,7 @@ export async function POST(request: NextRequest) {
           '<p><strong>Product:</strong> ' + escapeHtml(productName) + ' (ID: ' + escapeHtml(productId) + ')</p>',
           '<p><strong>Quantity:</strong> ' + String(quantity) + ' bags</p>',
           notes ? '<p><strong>Notes:</strong><br>' + escapeHtml(notes) + '</p>' : '',
-          '<p>— Contact the client to confirm and arrange delivery (Gauteng, COD).</p>',
+          '<p> - Contact the client to confirm and arrange delivery (Gauteng, COD).</p>',
         ].join(''),
       })
       if (error) {

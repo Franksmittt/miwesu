@@ -92,7 +92,7 @@ export default function WildebeestPage() {
                   The Blue Wildebeest, also known as the Brindled Gnu, is one of Africa's most iconic and resilient antelope species. Known as "The Tough One" for its remarkable tenacity and ability to survive in harsh conditions, this large antelope is a cornerstone of the African plains ecosystem.
                 </p>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
-                  The Blue Wildebeest thrives in open plains and grasslands, where it forms large herds that migrate in search of fresh grazing. Their distinctive appearance—with a massive head, shaggy mane, and curved horns—makes them instantly recognizable on the African savanna.
+                  The Blue Wildebeest thrives in open plains and grasslands, where it forms large herds that migrate in search of fresh grazing. Their distinctive appearance -with a massive head, shaggy mane, and curved horns -makes them instantly recognizable on the African savanna.
                 </p>
                 <p className="font-sans text-gray-600 text-lg leading-loose">
                   In the Makoppa district, our Sweetveld grasslands provide ideal habitat for Blue Wildebeest. The nutrient-rich grasses sustain them in peak condition year-round, resulting in exceptional trophy quality and superior meat production.
@@ -749,7 +749,7 @@ export default function WildebeestPage() {
                 <div className="bg-onyx p-6">
                   <h4 className="font-serif text-xl text-gold-400 mb-3">Backstrap (Loin)</h4>
                   <p className="text-gray-300 text-sm leading-relaxed">
-                    Excellent for steaks or whole roasts. Do not overcook—medium-rare is ideal. Overcooking results in tough, dry meat due to the lack of fat.
+                    Excellent for steaks or whole roasts. Do not overcook -medium-rare is ideal. Overcooking results in tough, dry meat due to the lack of fat.
                   </p>
                 </div>
                 <div className="bg-onyx p-6">

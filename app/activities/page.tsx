@@ -169,7 +169,7 @@ export default function ActivitiesPage() {
                       Our conservation harvest program is guided by professional trackers who understand the Makoppa ecosystem intimately. Every hunt follows strict conservation quotas and ethical practices, ensuring sustainable utilization of the resource.
                     </p>
                     <p className="text-gray-300 text-base sm:text-lg leading-loose mb-6 sm:mb-8">
-                      The Sweetveld advantage means animals are in peak condition year-round, resulting in superior trophy quality and exceptional meat. All harvests are processed in our professional slaughter facility, and 100% of the meat is donated to local families—feeding 300 families monthly.
+                      The Sweetveld advantage means animals are in peak condition year-round, resulting in superior trophy quality and exceptional meat. All harvests are processed in our professional slaughter facility, and 100% of the meat is donated to local families -feeding 300 families monthly.
                     </p>
                     <div className="grid grid-cols-2 gap-4">
                       <div className="border-l-2 border-gold-500 pl-4">
@@ -464,7 +464,7 @@ export default function ActivitiesPage() {
               Custom Experiences
             </h2>
             <p className="font-sans text-gray-600 text-lg leading-loose mb-10">
-              Every stay at Miwesu can be tailored to your preferences. Our concierge team will work with you to create a bespoke itinerary that matches your interests—whether you're a hunter, photographer, birder, or simply seeking tranquility in the Makoppa.
+              Every stay at Miwesu can be tailored to your preferences. Our concierge team will work with you to create a bespoke itinerary that matches your interests -whether you're a hunter, photographer, birder, or simply seeking tranquility in the Makoppa.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

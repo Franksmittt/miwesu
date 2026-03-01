@@ -6,6 +6,7 @@ import Link from 'next/link'
 import Layout from '@/components/Layout'
 import { OrganizationSchema, LocalBusinessSchema } from '@/components/StructuredData'
 import { getCurrency, getIntent } from '@/lib/cookies'
+import { lodgeSummary, mainLodgeHouse, secondHouse } from '@/lib/residences-data'
 import {
   Thermometer,
   Wind,
@@ -242,31 +243,29 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-            {/* Residence Card 1 */}
+            {/* Residence Card 1  - The Homestead */}
             <Link
-              href="/residences"
+              href="/residences/homestead"
               className="group relative bg-onyx-light border border-white/5 hover:border-gold-500/50 transition-all duration-500 overflow-hidden reveal block"
             >
               <div className="h-64 sm:h-80 overflow-hidden relative">
                 <Image
-                  src="/images/home-residence-homestead.jpg"
-                  alt="The Homestead - Luxury 10-sleeper private residence at Miwesu Game Reserve"
+                  src="/images/residences-homestead-main.jpg"
+                  alt="The Homestead - Main lodge 16-sleeper private residence at Miwesu Game Reserve"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-1000 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-onyx to-transparent"></div>
               </div>
               <div className="p-6 sm:p-10 relative">
                 <div className="absolute -top-4 sm:-top-6 right-4 sm:right-8 bg-gold-500 text-onyx w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center font-serif text-lg sm:text-xl font-bold shadow-gold-glow">
                   I
                 </div>
                 <h3 className="font-serif text-xl sm:text-2xl text-white mb-3 sm:mb-4">
-                  The Homestead
+                  {mainLodgeHouse.subtitle || 'The Homestead'}
                 </h3>
                 <p className="text-gray-400 text-sm font-sans leading-relaxed mb-6 sm:mb-8">
-                  The pinnacle of exclusive use. A 10-sleeper manor offering absolute
-                  autonomy.
+                  The pinnacle of exclusive use. Main lodge  - {lodgeSummary.mainHouse.sleepers} sleepers, four bedrooms, kitchen, living, boma, lapa, pool and braai.
                 </p>
                 <div className="grid grid-cols-2 gap-3 sm:gap-4 text-[10px] uppercase tracking-widest text-gold-400">
                   <span className="flex items-center">
@@ -285,20 +284,19 @@ export default function Home() {
               </div>
             </Link>
 
-            {/* Residence Card 2 */}
+            {/* Residence Card 2  - The Stone Villa */}
             <Link
-              href="/residences"
+              href="/residences/stone-villa"
               className="group relative bg-onyx-light border border-white/5 hover:border-gold-500/50 transition-all duration-500 overflow-hidden reveal delay-100 block"
             >
               <div className="h-80 overflow-hidden relative">
                 <Image
-                  src="/images/home-residence-stone-villa.jpg"
-                  alt="The Stone Villa - Intimate 4-sleeper luxury accommodation carved into the ridge"
+                  src="/images/residences-second-house-main.jpg"
+                  alt="The Stone Villa - 6-sleeper luxury accommodation near the pool at Miwesu"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-1000 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-onyx to-transparent"></div>
               </div>
               <div className="p-10 relative">
                 <div className="absolute -top-6 right-8 bg-white text-onyx w-12 h-12 flex items-center justify-center font-serif text-xl font-bold">
@@ -308,21 +306,20 @@ export default function Home() {
                   The Stone Villa
                 </h3>
                 <p className="text-gray-400 text-sm font-sans leading-relaxed mb-8">
-                  Carved into the ridge. An intimate 4-sleeper sanctuary with
-                  panoramic views.
+                  {secondHouse.subtitle}. Master bedroom and second bedroom (2 bunk beds), two en-suites, kitchen, living, outdoor braai.
                 </p>
                 <div className="grid grid-cols-2 gap-4 text-[10px] uppercase tracking-widest text-gold-400">
                   <span className="flex items-center">
-                    <Sun className="w-3 h-3 mr-2" /> Plunge Pool
+                    <Sun className="w-3 h-3 mr-2" /> En-suite
                   </span>
                   <span className="flex items-center">
-                    <Wind className="w-3 h-3 mr-2" /> Deck
+                    <Wind className="w-3 h-3 mr-2" /> Outdoor Braai
                   </span>
                   <span className="flex items-center">
-                    <Star className="w-3 h-3 mr-2" /> Telescope
+                    <Star className="w-3 h-3 mr-2" /> Near Pool
                   </span>
                   <span className="flex items-center">
-                    <Coffee className="w-3 h-3 mr-2" /> Nespresso
+                    <Coffee className="w-3 h-3 mr-2" /> Kitchen
                   </span>
                 </div>
               </div>
@@ -374,7 +371,7 @@ export default function Home() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {/* Species Card 1: Greater Kudu */}
             <Link
-              href="/wildlife"
+              href="/greater-kudu"
               className="group relative bg-onyx-light border border-white/5 hover:border-gold-500/50 transition-all duration-500 reveal block"
             >
               <div className="h-56 sm:h-64 overflow-hidden relative">
@@ -454,7 +451,7 @@ export default function Home() {
 
             {/* Species Card 3: Impala */}
             <Link
-              href="/wildlife"
+              href="/impala"
               className="group relative bg-onyx-light border border-white/5 hover:border-gold-500/50 transition-all duration-500 reveal delay-200 block"
             >
               <div className="h-64 overflow-hidden relative">
@@ -493,7 +490,7 @@ export default function Home() {
 
             {/* Species Card 4: Gemsbok */}
             <Link
-              href="/wildlife"
+              href="/gemsbok"
               className="group relative bg-onyx-light border border-white/5 hover:border-gold-500/50 transition-all duration-500 reveal block"
             >
               <div className="h-64 overflow-hidden relative">
@@ -532,7 +529,7 @@ export default function Home() {
 
             {/* Species Card 5: Warthog */}
             <Link
-              href="/wildlife"
+              href="/warthog"
               className="group relative bg-onyx-light border border-white/5 hover:border-gold-500/50 transition-all duration-500 reveal delay-100 block"
             >
               <div className="h-64 overflow-hidden relative">
@@ -664,7 +661,7 @@ export default function Home() {
                 <div className="bg-white p-8 border border-gray-100 shadow-sm reveal">
                   <Quote className="w-10 h-10 text-gold-500 mb-4" />
                   <p className="font-sans text-gray-600 leading-relaxed mb-6">
-                    &quot;Die gesin het na die naweek gevoel of ons werklik onttrek het. Die biltongjag en die koppie-uitsigte—ons kom weer.&quot;
+                    &quot;Die gesin het na die naweek gevoel of ons werklik onttrek het. Die biltongjag en die koppie-uitsigte -ons kom weer.&quot;
                   </p>
                   <p className="text-xs uppercase tracking-widest text-gold-600 font-bold">Family biltong hunt · Gauteng</p>
                 </div>
@@ -681,14 +678,14 @@ export default function Home() {
                 <div className="bg-white p-8 border border-gray-100 shadow-sm reveal">
                   <Quote className="w-10 h-10 text-gold-500 mb-4" />
                   <p className="font-sans text-gray-600 leading-relaxed mb-6">
-                    &quot;Flew JFK to Johannesburg, 2.5 hours to the farm. The kudu we took was exactly what we came for. Logistics and export were handled—no surprises.&quot;
+                    &quot;Flew JFK to Johannesburg, 2.5 hours to the farm. The kudu we took was exactly what we came for. Logistics and export were handled -no surprises.&quot;
                   </p>
                   <p className="text-xs uppercase tracking-widest text-gold-600 font-bold">International hunter · USA</p>
                 </div>
                 <div className="bg-white p-8 border border-gray-100 shadow-sm reveal delay-100">
                   <Quote className="w-10 h-10 text-gold-500 mb-4" />
                   <p className="font-sans text-gray-600 leading-relaxed mb-6">
-                    &quot;Malaria-free was a big deal for us. The Waterberg bushveld and the lodge—first-class. Already planning our next trip.&quot;
+                    &quot;Malaria-free was a big deal for us. The Waterberg bushveld and the lodge -first-class. Already planning our next trip.&quot;
                   </p>
                   <p className="text-xs uppercase tracking-widest text-gold-600 font-bold">Trophy safari · Florida</p>
                 </div>
@@ -745,7 +742,7 @@ export default function Home() {
                 ethics of the fair chase and the peace of the Iron Mountain."
               </p>
               <p className="text-[10px] uppercase tracking-widest text-gray-400">
-                — The Guardian's Pledge
+                 - The Guardian's Pledge
               </p>
             </div>
           </div>

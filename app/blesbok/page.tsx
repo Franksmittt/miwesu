@@ -95,7 +95,7 @@ export default function BlesbokPage() {
                   Historically, this species traversed the treeless plains in herds numbering in the hundreds of thousands, a "brown tide" that shaped the vegetation dynamics of the interior. Today, following a dramatic recovery from the brink of extinction in the late 19th century, the Blesbok stands as the bread-and-butter species of the South African game industry.
                 </p>
                 <p className="font-sans text-gray-600 text-lg leading-loose">
-                  The Blesbok represents a unique intersection of conservation success, commercial utility, and sporting challenge—a testament to the resilience of nature and the efficacy of value-based conservation.
+                  The Blesbok represents a unique intersection of conservation success, commercial utility, and sporting challenge -a testament to the resilience of nature and the efficacy of value-based conservation.
                 </p>
               </div>
               <div className="relative h-full min-h-[400px] md:min-h-[500px]">
@@ -123,7 +123,7 @@ export default function BlesbokPage() {
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-4">Taxonomic Classification</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
-                  The Blesbok is a member of the family Bovidae, falling within the tribe Alcelaphini. This tribe, which also includes the Hartebeest and Wildebeest, is characterized by high shoulders, sloping backs, and elongated skulls—adaptations evolved for endurance running and grazing in open environments.
+                  The Blesbok is a member of the family Bovidae, falling within the tribe Alcelaphini. This tribe, which also includes the Hartebeest and Wildebeest, is characterized by high shoulders, sloping backs, and elongated skulls -adaptations evolved for endurance running and grazing in open environments.
                 </p>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   Specifically, the Blesbok is a subspecies of <em className="text-gold-400">Damaliscus pygargus</em>, sharing its specific epithet with the Bontebok (Damaliscus pygargus pygargus). While they are genetically distinct enough to be classified as separate subspecies, they are close enough to hybridize readily if barriers are removed.
@@ -747,7 +747,7 @@ export default function BlesbokPage() {
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Meat Characteristics</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
-                  Blesbok meat is deep red, fine-grained, and extremely lean. It has a distinctive gamey flavor—often described as "herby" or aromatic due to the essential oils in the Karoo bushes and sweet grasses they consume.
+                  Blesbok meat is deep red, fine-grained, and extremely lean. It has a distinctive gamey flavor -often described as "herby" or aromatic due to the essential oils in the Karoo bushes and sweet grasses they consume.
                 </p>
                 <div className="bg-onyx-light border border-white/10 p-6 mt-6">
                   <h4 className="font-serif text-xl text-gold-400 mb-3">Fat Content</h4>
@@ -781,7 +781,7 @@ export default function BlesbokPage() {
                 <div className="bg-onyx p-6">
                   <h4 className="font-serif text-xl text-gold-400 mb-3">Hindquarters (Leg)</h4>
                   <p className="text-gray-300 text-sm leading-relaxed">
-                    The heavy lifting cuts—Silverside, Topside, Thick Flank. These are ideal for roasting (if larded with bacon to add moisture) or, most commonly, for making Biltong.
+                    The heavy lifting cuts -Silverside, Topside, Thick Flank. These are ideal for roasting (if larded with bacon to add moisture) or, most commonly, for making Biltong.
                   </p>
                 </div>
                 <div className="bg-onyx p-6">

@@ -41,7 +41,7 @@ export default function DePage() {
               Jagd in <span className="text-gradient-gold">Limpopo</span>
             </h1>
             <p className="text-white/80 text-base sm:text-lg max-w-2xl mx-auto mb-10">
-              Luxus-Privatresidenzen und Trophäenjagd im Makoppa-Bezirk, Thabazimbi. Waterberg, Arid Sweet Bushveld. 14 Arten—Kudu, Impala, Büffel und mehr.
+              Luxus-Privatresidenzen und Trophäenjagd im Makoppa-Bezirk, Thabazimbi. Waterberg, Arid Sweet Bushveld. 14 Arten -Kudu, Impala, Büffel und mehr.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

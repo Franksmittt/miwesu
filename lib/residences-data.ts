@@ -1,0 +1,352 @@
+/**
+ * MIWESU Lodge  - Residences & facilities data
+ * Single source of truth for rooms, amenities, and image paths.
+ * Aligned with Card 1 image logs and MIWESU_LODGE_COMPLETE_OVERVIEW_AND_FLOOR_PLANS.txt
+ * Use one image per slot to avoid duplicates; card1Source points to the folder for copying.
+ */
+
+export type ResidenceFacility = {
+  id: string
+  label: string
+  description: string
+  imagePath: string
+  /** Fallback image if the primary is missing (e.g. use main exterior for a room) */
+  fallbackImagePath?: string
+  /** Card 1 folder name  - use one representative image from this folder */
+  card1Source?: string
+}
+
+export type ResidenceGroup = {
+  id: string
+  title: string
+  subtitle?: string
+  /** Total sleepers in this house */
+  sleepers: number
+  facilities: ResidenceFacility[]
+}
+
+/** Main Lodge House (Homestead)  - 16 sleepers, 4 bedrooms, shared spaces + outdoor */
+export const mainLodgeHouse: ResidenceGroup = {
+  id: 'main-lodge',
+  title: 'Main Lodge House',
+  subtitle: 'The Homestead',
+  sleepers: 16,
+  facilities: [
+    {
+      id: 'homestead-exterior',
+      label: 'Main Lodge House',
+      description: 'Thatched roof, multi-peaked; patio, braai, tall pillar. Heart of the property.',
+      imagePath: '/images/residences-homestead-main.jpg',
+      card1Source: 'main_house_outside',
+    },
+    {
+      id: 'lower-room-1',
+      label: 'Lower Room 1 (sleeps 3)',
+      description: 'Three single beds, deer/impala artwork, aircon above bed. En-suite with shower, toilet, sink. Door to kitchen/living.',
+      imagePath: '/images/residences-main-lodge-lower-room-1.jpg',
+      fallbackImagePath: '/images/residences-homestead-main.jpg',
+      card1Source: 'main_house_lower_room_1_sleeps_3',
+    },
+    {
+      id: 'lower-room-2',
+      label: 'Lower Room 2 (sleeps 3)',
+      description: 'Three single beds, Sable antelope painting, aircon near bathroom. En-suite.',
+      imagePath: '/images/residences-main-lodge-lower-room-2.jpg',
+      fallbackImagePath: '/images/residences-homestead-main.jpg',
+      card1Source: 'main_house_lower_room_2_sleeps_3',
+    },
+    {
+      id: 'kitchen',
+      label: 'Kitchen',
+      description: 'Open-plan kitchen, dining, living. Tree trunk, thatched roof, bar, large table, L-shaped sofa, TV. Glass doors to first patio.',
+      imagePath: '/images/residences-homestead-kitchen.jpg',
+      card1Source: 'main_house_kitchen_living_room',
+    },
+    {
+      id: 'living',
+      label: 'Living Area',
+      description: 'Open-plan with kitchen. Dark wood, taxidermy, dark grey tiles. Patio visible left or right depending on angle.',
+      imagePath: '/images/residences-homestead-living.jpg',
+      card1Source: 'main_house_kitchen_living_room',
+    },
+    {
+      id: 'first-patio',
+      label: 'First patio',
+      description: 'First outside area as you step out. Thatched roof, wooden supports, octagonal table and benches, Adirondack chairs, welcome mat. Behind glass: kitchen, bar, living.',
+      imagePath: '/images/residences-main-lodge-first-patio.jpg',
+      fallbackImagePath: '/images/residences-main-lodge-boma-braai.jpg',
+      card1Source: 'main_house_first_outside_area_before_boma_and_braai',
+    },
+    {
+      id: 'boma-braai',
+      label: 'Boma and Braai (BBQ)',
+      description: 'Circular boma (fire pit), built-in braai, bar table and stools, Adirondack chairs. Light brown tiles.',
+      imagePath: '/images/residences-main-lodge-boma-braai.jpg',
+      card1Source: 'main_house_boma_and_braai',
+    },
+    {
+      id: 'upper-room-1',
+      label: 'Upper Room 1 (sleeps 5)',
+      description: 'Five single beds. Three windows behind central bed, no animal portrait, rug tail towards middle bed. Thatched roof, wooden beams.',
+      imagePath: '/images/residences-main-lodge-upper-room-1.jpg',
+      fallbackImagePath: '/images/residences-homestead-main.jpg',
+      card1Source: 'main_house_upper_room_1_sleeps_5',
+    },
+    {
+      id: 'upper-room-2',
+      label: 'Upper Room 2 (sleeps 5)',
+      description: 'Five single beds. One window and Kudu portrait behind central bed, rug tail away from middle. Cream/beige bedding.',
+      imagePath: '/images/residences-main-lodge-upper-room-2.jpg',
+      fallbackImagePath: '/images/residences-homestead-main.jpg',
+      card1Source: 'main_house_upper_room_2_sleeps_5',
+    },
+    {
+      id: 'lapa',
+      label: 'Lapa (pool table & darts)',
+      description: 'Open-sided thatched structure. Pool table, bar with stools, small kitchen/wet bar. Connects to main house and pool area.',
+      imagePath: '/images/residences-main-lodge-lapa.jpeg',
+      card1Source: '03_lapa_kitchen_pool_table',
+    },
+    {
+      id: 'braai-trees',
+      label: 'Braai under the trees',
+      description: 'Boma/braai under trees; circular fire pit with grill, paved area, seating. Waterhole visible in some views.',
+      imagePath: '/images/residences-main-lodge-braai-trees.jpg',
+      card1Source: '06_boma_braai_under_trees',
+    },
+    {
+      id: 'trampoline-jungle-gym',
+      label: 'Trampoline & Jungle Gym',
+      description: 'In-ground trampoline(s) and wooden jungle gym. Family play area; connects to pool area.',
+      imagePath: '/images/residences-main-lodge-trampoline-jungle-gym.jpg',
+      card1Source: '05_trampoline_jungle_gym',
+    },
+    {
+      id: 'pool',
+      label: 'Swimming pool with slide',
+      description: 'Rectangular pool, water slide complex (thatched tower; red/blue stripe and yellow spiral slides). Lawn, thatched umbrella.',
+      imagePath: '/images/residences-main-lodge-pool.jpg',
+      card1Source: '01_swimming_pool_slide',
+    },
+  ],
+}
+
+/** The Stone Villa  - near the pool, 6 sleepers, 2 bedrooms */
+export const secondHouse: ResidenceGroup = {
+  id: 'second-house',
+  title: 'The Stone Villa',
+  subtitle: 'Near the pool · Sleeps 6',
+  sleepers: 6,
+  facilities: [
+    {
+      id: 'second-house-exterior',
+      label: 'The Stone Villa',
+      description: 'Thatched roof, tan stucco, sliding glass doors. Braai to the left of house. Lawn, bushveld.',
+      imagePath: '/images/residences-second-house-main.jpg',
+      card1Source: 'house2_outside',
+    },
+    {
+      id: 'second-house-kitchen',
+      label: 'Kitchen',
+      description: 'Modern, light tones. Open-plan to living room.',
+      imagePath: '/images/residences-second-house-kitchen.jpg',
+      card1Source: 'house2_kitchen',
+    },
+    {
+      id: 'second-house-living',
+      label: 'Living Area',
+      description: 'Sofa, recliners, TV, console, safari art. Connects to kitchen and both bedrooms.',
+      imagePath: '/images/residences-second-house-living.jpg',
+      card1Source: 'house2_living_room',
+    },
+    {
+      id: 'second-house-master',
+      label: 'Master Bedroom',
+      description: 'One main bed (not bunk). Rustic headboard, nightstands. En-suite with shower (no bathtub).',
+      imagePath: '/images/residences-second-house-master-bedroom.jpg',
+      card1Source: 'house2_main_bedroom',
+    },
+    {
+      id: 'second-house-ensuite',
+      label: 'Master En-suite (shower)',
+      description: 'Walk-in glass shower, pedestal basin, toilet. Brown/terracotta wall tiles. No bathtub.',
+      imagePath: '/images/residences-second-house-ensuite.jpg',
+      card1Source: 'house2_main_bedroom_bathroom',
+    },
+    {
+      id: 'second-house-bedroom-2',
+      label: '2nd Bedroom (2 bunks, sleeps 4)',
+      description: 'Two bunk beds (sleeps 4 total). Own en-suite with bathtub. Wardrobe, doors to living and bathroom.',
+      imagePath: '/images/residences-second-house-bedroom-2.jpg',
+      fallbackImagePath: '/images/residences-second-house-living.jpg',
+      card1Source: 'house2_room2',
+    },
+    {
+      id: 'second-house-room2-ensuite',
+      label: '2nd Bedroom En-suite (bathtub)',
+      description: 'Bathtub, pedestal sink, toilet. Light brown/terracotta tiles. Serves bunk room.',
+      imagePath: '/images/residences-second-house-room2-ensuite.jpg',
+      fallbackImagePath: '/images/residences-second-house-ensuite.jpg',
+      card1Source: 'house2_room2_bathroom',
+    },
+    {
+      id: 'second-house-braai',
+      label: 'Outdoor Braai',
+      description: 'Outdoor braai area to the left of the house (from main viewing angle).',
+      imagePath: '/images/residences-second-house-braai.jpg',
+      fallbackImagePath: '/images/residences-second-house-main.jpg',
+      card1Source: 'house2_outside',
+    },
+  ],
+}
+
+/** All residence groups for iteration */
+export const residenceGroups: ResidenceGroup[] = [mainLodgeHouse, secondHouse]
+
+/** Summary counts for copy (e.g. homepage, residences hero) */
+export const lodgeSummary = {
+  mainHouse: {
+    sleepers: 16,
+    bedrooms: 4,
+    lowerRooms: 2,
+    upperRooms: 2,
+    description:
+      'Four bedrooms on two levels (two lower rooms sleeping 3 each, two upper rooms sleeping 5 each), open-plan kitchen and living area, first patio, boma and braai, lapa with pool table and darts, braai under the trees, trampoline, jungle gym and swimming pool with slide.',
+  },
+  secondHouse: {
+    sleepers: 6,
+    bedrooms: 2,
+    description:
+      'Open-plan kitchen and living area, master bedroom (one bed) with en-suite (shower), second bedroom with two bunk beds (sleeps 4) and en-suite (bathtub). Outdoor braai area.',
+  },
+  totalSleepers: 22,
+}
+
+/** Gallery: accommodation images with category and description (one image per slot to avoid doubles) */
+export const galleryAccommodationImages: Array<{
+  src: string
+  category: 'Accommodation'
+  title: string
+  description: string
+}> = [
+  {
+    src: '/images/residences-homestead-main.jpg',
+    category: 'Accommodation',
+    title: 'Main Lodge House',
+    description: 'The Homestead  - 16 sleepers, four bedrooms, kitchen, living, first patio, boma, lapa, pool and braai.',
+  },
+  {
+    src: '/images/residences-second-house-main.jpg',
+    category: 'Accommodation',
+    title: 'The Stone Villa',
+    description: 'Near the pool  - 6 sleepers, kitchen, living, master and bunk room, two en-suites, outdoor braai.',
+  },
+  {
+    src: '/images/residences-homestead-kitchen.jpg',
+    category: 'Accommodation',
+    title: 'Main Lodge Kitchen',
+    description: 'Open-plan kitchen, dining and living with thatched roof and glass doors to first patio.',
+  },
+  {
+    src: '/images/residences-homestead-living.jpg',
+    category: 'Accommodation',
+    title: 'Main Lodge Living',
+    description: 'Living and dining in the main house; patio visible through glass.',
+  },
+  {
+    src: '/images/residences-main-lodge-first-patio.jpg',
+    category: 'Accommodation',
+    title: 'First Patio',
+    description: 'First outside area before boma and braai  - thatched roof, octagonal table, Adirondack chairs.',
+  },
+  {
+    src: '/images/residences-main-lodge-boma-braai.jpg',
+    category: 'Accommodation',
+    title: 'Boma and Braai',
+    description: 'Main lodge patio  - circular fire pit and built-in braai.',
+  },
+  {
+    src: '/images/residences-main-lodge-lapa.jpeg',
+    category: 'Accommodation',
+    title: 'Lapa',
+    description: 'Pool table and darts in open-sided thatched structure.',
+  },
+  {
+    src: '/images/residences-main-lodge-pool.jpg',
+    category: 'Accommodation',
+    title: 'Swimming Pool',
+    description: 'Pool with slide  - family facilities at the main lodge.',
+  },
+  {
+    src: '/images/residences-main-lodge-lower-room-1.jpg',
+    category: 'Accommodation',
+    title: 'Lower Room 1 (sleeps 3)',
+    description: 'Main lodge lower room with deer/impala art and en-suite; door to kitchen.',
+  },
+  {
+    src: '/images/residences-main-lodge-lower-room-2.jpg',
+    category: 'Accommodation',
+    title: 'Lower Room 2 (sleeps 3)',
+    description: 'Second lower room with Sable antelope painting and en-suite.',
+  },
+  {
+    src: '/images/residences-main-lodge-upper-room-1.jpg',
+    category: 'Accommodation',
+    title: 'Upper Room 1 (sleeps 5)',
+    description: 'Main lodge upper room  - three windows behind bed, five single beds.',
+  },
+  {
+    src: '/images/residences-main-lodge-upper-room-2.jpg',
+    category: 'Accommodation',
+    title: 'Upper Room 2 (sleeps 5)',
+    description: 'Second upper room  - Kudu portrait behind bed, five single beds.',
+  },
+  {
+    src: '/images/residences-main-lodge-braai-trees.jpg',
+    category: 'Accommodation',
+    title: 'Braai under the trees',
+    description: 'Boma/braai under trees; waterhole visible in distance in some views.',
+  },
+  {
+    src: '/images/residences-main-lodge-trampoline-jungle-gym.jpg',
+    category: 'Accommodation',
+    title: 'Trampoline & Jungle Gym',
+    description: 'Family play area near the pool.',
+  },
+  {
+    src: '/images/residences-second-house-kitchen.jpg',
+    category: 'Accommodation',
+    title: 'The Stone Villa Kitchen',
+    description: 'Open-plan to living area.',
+  },
+  {
+    src: '/images/residences-second-house-living.jpg',
+    category: 'Accommodation',
+    title: 'The Stone Villa Living',
+    description: 'Living area with doors to master and second bedroom.',
+  },
+  {
+    src: '/images/residences-second-house-master-bedroom.jpg',
+    category: 'Accommodation',
+    title: 'Master Bedroom',
+    description: 'Second house  - one main bed, en-suite with shower.',
+  },
+  {
+    src: '/images/residences-second-house-ensuite.jpg',
+    category: 'Accommodation',
+    title: 'Master En-suite',
+    description: 'Shower, basin, toilet; brown terracotta tiles.',
+  },
+  {
+    src: '/images/residences-second-house-bedroom-2.jpg',
+    category: 'Accommodation',
+    title: '2nd Bedroom (sleeps 4)',
+    description: 'Two bunk beds and en-suite with bathtub.',
+  },
+  {
+    src: '/images/residences-second-house-braai.jpg',
+    category: 'Accommodation',
+    title: 'Outdoor Braai',
+    description: 'Second house outdoor braai area.',
+  },
+]

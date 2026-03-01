@@ -92,7 +92,7 @@ export default function SpringbokPage() {
                   The Springbok is one of South Africa's most iconic and graceful antelope species. Known as "The Pronking Gazelle" for its spectacular jumping display, this medium-sized antelope is a symbol of the open plains and arid regions of southern Africa.
                 </p>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
-                  With its elegant build, distinctive white face markings, and the unique "pronking" behavior—where it leaps straight up into the air with all four legs extended—the Springbok is instantly recognizable. Their ability to survive in arid environments and their remarkable speed make them one of the most adaptable antelope on the continent.
+                  With its elegant build, distinctive white face markings, and the unique "pronking" behavior -where it leaps straight up into the air with all four legs extended -the Springbok is instantly recognizable. Their ability to survive in arid environments and their remarkable speed make them one of the most adaptable antelope on the continent.
                 </p>
                 <p className="font-sans text-gray-600 text-lg leading-loose">
                   In the Makoppa district, Springbok thrive in the open plains and grasslands where they can take advantage of both grazing opportunities and their remarkable ability to survive with minimal water. Their adaptability and high reproductive rate make them an important species for sustainable utilization.
@@ -134,7 +134,7 @@ export default function SpringbokPage() {
                 <div className="bg-onyx-light border border-white/10 p-6 mt-6">
                   <h4 className="font-serif text-xl text-gold-400 mb-3">The Pronking Display</h4>
                   <p className="text-gray-300 text-sm leading-relaxed">
-                    The Springbok's most distinctive feature is the "pronk"—a spectacular jumping display where the animal leaps straight up into the air with all four legs extended and the back arched. During this display, a fold of skin along the back opens, revealing white hair. This behavior serves as both a warning signal and a display of fitness.
+                    The Springbok's most distinctive feature is the "pronk" -a spectacular jumping display where the animal leaps straight up into the air with all four legs extended and the back arched. During this display, a fold of skin along the back opens, revealing white hair. This behavior serves as both a warning signal and a display of fitness.
                   </p>
                 </div>
               </div>
@@ -300,7 +300,7 @@ export default function SpringbokPage() {
                     Springbok are built for speed and agility. Their lightweight build, long legs, and powerful hindquarters allow them to reach speeds of up to 88 km/h (55 mph) and make spectacular leaps.
                   </p>
                   <p className="text-gray-300 leading-loose">
-                    The pronking display—where they leap straight up into the air—is thought to serve multiple purposes: warning conspecifics of danger, displaying fitness to predators, and possibly confusing predators about the animal's location.
+                    The pronking display -where they leap straight up into the air -is thought to serve multiple purposes: warning conspecifics of danger, displaying fitness to predators, and possibly confusing predators about the animal's location.
                   </p>
                 </div>
               </div>
@@ -332,7 +332,7 @@ export default function SpringbokPage() {
                 <Zap className="w-8 h-8 text-gold-500 mb-4" />
                 <h3 className="font-serif text-xl text-white mb-3">The Pronk</h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  The Springbok's most distinctive behavior is the "pronk"—a spectacular jumping display where the animal leaps straight up into the air with all four legs extended. This behavior serves as both a warning signal and a display of fitness.
+                  The Springbok's most distinctive behavior is the "pronk" -a spectacular jumping display where the animal leaps straight up into the air with all four legs extended. This behavior serves as both a warning signal and a display of fitness.
                 </p>
               </div>
               <div className="bg-onyx-light border border-white/10 p-6">

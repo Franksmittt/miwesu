@@ -134,7 +134,7 @@ export default function BushbuckPage() {
                 <div className="bg-onyx-light border border-white/10 p-6 mt-6">
                   <h4 className="font-serif text-xl text-gold-400 mb-3">The Scriptus vs. Sylvaticus Split</h4>
                   <p className="text-gray-300 text-sm leading-relaxed">
-                    The Northern or Harnessed Bushbuck (Tragelaphus scriptus) has a striking "harness" pattern of white stripes. The Southern Bushbuck (T. sylvaticus) has reduced white markings—spots on the flanks, a chevron on the nose, and a throat patch. This distinction is crucial for trophy registration and genetic management.
+                    The Northern or Harnessed Bushbuck (Tragelaphus scriptus) has a striking "harness" pattern of white stripes. The Southern Bushbuck (T. sylvaticus) has reduced white markings -spots on the flanks, a chevron on the nose, and a throat patch. This distinction is crucial for trophy registration and genetic management.
                   </p>
                 </div>
               </div>
@@ -251,7 +251,7 @@ export default function BushbuckPage() {
                 <div className="bg-gold-500/10 border-l-4 border-gold-500 p-6 mt-6">
                   <h4 className="font-serif text-xl text-onyx mb-2">The Dorsal Crest</h4>
                   <p className="font-sans text-gray-600 leading-relaxed">
-                    Males possess a mane of long hair running the length of the spine. This crest is erectile—when threatened, a ram raises this mane to increase his apparent size, a behavior known as lateral display. This is often accompanied by a slow, stiff-legged gait intended to intimidate.
+                    Males possess a mane of long hair running the length of the spine. This crest is erectile -when threatened, a ram raises this mane to increase his apparent size, a behavior known as lateral display. This is often accompanied by a slow, stiff-legged gait intended to intimidate.
                   </p>
                 </div>
               </div>
@@ -409,7 +409,7 @@ export default function BushbuckPage() {
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">The Edge Effect</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
-                  The Bushbuck is an "ecotone" specialist. It thrives at the interface between two habitats: dense cover (for safety/rest) and open clearing (for high-quality forage). They are rarely found far from dense vegetation—riverine forest, montane forest, coastal dune bush, or dense Acacia thickets.
+                  The Bushbuck is an "ecotone" specialist. It thrives at the interface between two habitats: dense cover (for safety/rest) and open clearing (for high-quality forage). They are rarely found far from dense vegetation -riverine forest, montane forest, coastal dune bush, or dense Acacia thickets.
                 </p>
                 <div className="bg-gold-500/10 border-l-4 border-gold-500 p-6 mt-6">
                   <h4 className="font-serif text-xl text-onyx mb-2">Thicket Dependency</h4>
@@ -582,7 +582,7 @@ export default function BushbuckPage() {
               <div>
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Shot Placement</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
-                  Anatomy is key. A wounded Bushbuck is a liability—they are known to counter-attack when cornered. Proper shot placement is absolutely critical.
+                  Anatomy is key. A wounded Bushbuck is a liability -they are known to counter-attack when cornered. Proper shot placement is absolutely critical.
                 </p>
                 <div className="space-y-6">
                   <div className="bg-onyx-light border border-white/10 p-6">
@@ -638,13 +638,13 @@ export default function BushbuckPage() {
                     <div>
                       <h5 className="font-sans font-bold text-onyx mb-2">Benchmark</h5>
                       <p className="text-gray-600 text-sm leading-relaxed">
-                        A mature Bushbuck ram's ear is approximately 6 to 7 inches long. If the horns project straight up and appear to be twice the length of the ear, the ram is likely in the 13-14 inch class—a solid trophy.
+                        A mature Bushbuck ram's ear is approximately 6 to 7 inches long. If the horns project straight up and appear to be twice the length of the ear, the ram is likely in the 13-14 inch class -a solid trophy.
                       </p>
                     </div>
                     <div>
                       <h5 className="font-sans font-bold text-onyx mb-2">The 14-Inch Goal</h5>
                       <p className="text-gray-600 text-sm leading-relaxed">
-                        If the horns appear to be twice the length of the ear, the ram is likely in the 13-14 inch class—a solid trophy.
+                        If the horns appear to be twice the length of the ear, the ram is likely in the 13-14 inch class -a solid trophy.
                       </p>
                     </div>
                     <div>
@@ -742,7 +742,7 @@ export default function BushbuckPage() {
                 <div className="bg-onyx p-6">
                   <h4 className="font-serif text-xl text-gold-400 mb-3">Backstrap (Loin / "Rugstring")</h4>
                   <p className="text-gray-300 text-sm leading-relaxed">
-                    Excellent for steaks or whole roasts. Can be prepared as carpaccio when sliced paper-thin. Do not overcook—medium-rare is ideal.
+                    Excellent for steaks or whole roasts. Can be prepared as carpaccio when sliced paper-thin. Do not overcook -medium-rare is ideal.
                   </p>
                 </div>
                 <div className="bg-onyx p-6">

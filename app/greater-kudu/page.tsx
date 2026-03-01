@@ -253,7 +253,7 @@ export default function GreaterKuduPage() {
                 <div className="bg-gold-500/10 border-l-4 border-gold-500 p-6 mt-6">
                   <h4 className="font-serif text-xl text-onyx mb-2">Sexual Dimorphism</h4>
                   <p className="font-sans text-gray-600 leading-relaxed">
-                    Cows are lighter in color, often with a more reddish tint, and lack the dark, grizzled appearance of mature bulls. The most obvious difference, however, is the presence of horns—only bulls carry the magnificent spiral horns that are the species' defining feature.
+                    Cows are lighter in color, often with a more reddish tint, and lack the dark, grizzled appearance of mature bulls. The most obvious difference, however, is the presence of horns -only bulls carry the magnificent spiral horns that are the species' defining feature.
                   </p>
                 </div>
               </div>
@@ -486,7 +486,7 @@ export default function GreaterKuduPage() {
                       The most rewarding method involves glassing from high vantage points at dawn and dusk, when Kudu emerge to feed. Once a trophy bull is located, the careful stalk begins.
                     </p>
                     <ul className="text-gray-300 text-sm space-y-2 ml-4 list-disc">
-                      <li><strong className="text-gold-400">The Approach:</strong> Move slowly and quietly, using available cover. Kudu have exceptional hearing—one snapped twig can send them bolting.</li>
+                      <li><strong className="text-gold-400">The Approach:</strong> Move slowly and quietly, using available cover. Kudu have exceptional hearing -one snapped twig can send them bolting.</li>
                       <li><strong className="text-gold-400">Wind:</strong> Critical. Kudu's sense of smell is acute. Always stalk with the wind in your face.</li>
                       <li><strong className="text-gold-400">Patience:</strong> Stalks may take hours. Wait for the animal to present a clear shot. Rushing leads to failure.</li>
                     </ul>
@@ -736,7 +736,7 @@ export default function GreaterKuduPage() {
                 <div className="bg-onyx p-6">
                   <h4 className="font-serif text-xl text-gold-400 mb-3">Backstrap (Loin)</h4>
                   <p className="text-gray-300 text-sm leading-relaxed">
-                    Excellent for steaks or whole roasts. Do not overcook—medium-rare is ideal. Overcooking results in tough, dry meat due to the lack of fat.
+                    Excellent for steaks or whole roasts. Do not overcook -medium-rare is ideal. Overcooking results in tough, dry meat due to the lack of fat.
                   </p>
                 </div>
                 <div className="bg-onyx p-6">

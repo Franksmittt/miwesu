@@ -251,7 +251,7 @@ export default function WarthogPage() {
                 <div className="bg-gold-500/10 border-l-4 border-gold-500 p-6 mt-6">
                   <h4 className="font-serif text-xl text-onyx mb-2">Facial Warts</h4>
                   <p className="font-sans text-gray-600 leading-relaxed">
-                    The most distinctive feature is the facial warts—protective pads of thickened skin. Males have two pairs of warts (one below the eyes and one on the cheeks), while females typically have smaller, less prominent warts. These warts protect the face during fights and may also serve as visual signals.
+                    The most distinctive feature is the facial warts -protective pads of thickened skin. Males have two pairs of warts (one below the eyes and one on the cheeks), while females typically have smaller, less prominent warts. These warts protect the face during fights and may also serve as visual signals.
                   </p>
                 </div>
               </div>
@@ -749,7 +749,7 @@ export default function WarthogPage() {
                 <div className="bg-onyx p-6">
                   <h4 className="font-serif text-xl text-gold-400 mb-3">Backstrap (Loin)</h4>
                   <p className="text-gray-300 text-sm leading-relaxed">
-                    Excellent for steaks or whole roasts. Do not overcook—medium-rare is ideal. Overcooking results in tough, dry meat due to the lack of fat.
+                    Excellent for steaks or whole roasts. Do not overcook -medium-rare is ideal. Overcooking results in tough, dry meat due to the lack of fat.
                   </p>
                 </div>
                 <div className="bg-onyx p-6">

@@ -163,7 +163,7 @@ export default function AboutPage() {
                       The Arid Sweet Bushveld of the Makoppa district is a hunter's paradise. Unlike the sour grasses of the mountains, our sweetveld remains nutritious year-round, even when dry and yellow during the winter hunting season.
                     </p>
                     <p className="font-sans text-gray-300 text-lg leading-loose mb-8">
-                      This means animals hunted here are in <span className="text-gold-400 font-medium">peak physical condition</span>—with higher body mass, superior trophy quality, and better meat quality than those in nutrient-poor areas. The Sweetveld advantage is real, and it shows in every harvest.
+                      This means animals hunted here are in <span className="text-gold-400 font-medium">peak physical condition</span> -with higher body mass, superior trophy quality, and better meat quality than those in nutrient-poor areas. The Sweetveld advantage is real, and it shows in every harvest.
                     </p>
                     <div className="grid grid-cols-2 gap-6">
                       <div className="border-l-2 border-gold-500 pl-4">
@@ -291,7 +291,7 @@ export default function AboutPage() {
                   We believe that the future of African wildlife lies in making conservation economically viable. Every guest who visits Miwesu directly contributes to our anti-poaching efforts, habitat restoration, and community support programs.
                 </p>
                 <p className="font-sans text-gray-300 text-lg leading-loose mb-12">
-                  The meat from every harvest feeds 300 local families monthly. Our 24/7 anti-poaching units protect not just our reserve, but the entire ecosystem. This is conservation that pays for itself—ensuring that the Iron Mountain remains a sanctuary for generations to come.
+                  The meat from every harvest feeds 300 local families monthly. Our 24/7 anti-poaching units protect not just our reserve, but the entire ecosystem. This is conservation that pays for itself -ensuring that the Iron Mountain remains a sanctuary for generations to come.
                 </p>
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="text-center">

@@ -47,7 +47,7 @@ export default function PartnersPage() {
               Trusted <span className="text-gradient-gold">Partners</span>
             </h1>
             <p className="text-white/80 text-sm sm:text-base max-w-xl mx-auto">
-              Taxidermy, dipping & shipping, and travel insurance—so your hunt is a complete logistics solution.
+              Taxidermy, dipping & shipping, and travel insurance -so your hunt is a complete logistics solution.
             </p>
           </div>
         </section>
@@ -111,7 +111,7 @@ export default function PartnersPage() {
           <div className="max-w-4xl mx-auto px-6 text-center reveal">
             <Handshake className="w-14 h-14 text-gold-400 mx-auto mb-6" />
             <h2 className="font-serif text-2xl md:text-3xl mb-4">
-              Not Just a Farm—A Full Solution
+              Not Just a Farm -A Full Solution
             </h2>
             <p className="text-gray-300 leading-relaxed mb-8">
               From the moment you land in Johannesburg to the day your trophy hangs at home, we aim to connect you with trusted partners who share our standards. Contact our concierge to start planning.

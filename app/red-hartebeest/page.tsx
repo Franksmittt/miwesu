@@ -129,7 +129,7 @@ export default function RedHartebeestPage() {
                   The Red Hartebeest belongs to the family Bovidae, subfamily Alcelaphinae, and the genus <em className="text-gold-400">Alcelaphus</em>. The specific name <em className="text-gold-400">buselaphus caama</em> refers to the subspecies found in southern Africa, distinguished by its reddish coloration.
                 </p>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
-                  The Red Hartebeest is part of the Alcelaphini tribe, which also includes the Blesbok, Bontebok, and Wildebeest. This tribe is characterized by high shoulders, sloping backs, and elongated skulls—adaptations evolved for endurance running and grazing in open environments.
+                  The Red Hartebeest is part of the Alcelaphini tribe, which also includes the Blesbok, Bontebok, and Wildebeest. This tribe is characterized by high shoulders, sloping backs, and elongated skulls -adaptations evolved for endurance running and grazing in open environments.
                 </p>
                 <div className="bg-onyx-light border border-white/10 p-6 mt-6">
                   <h4 className="font-serif text-xl text-gold-400 mb-3">Subspecies</h4>

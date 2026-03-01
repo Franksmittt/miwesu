@@ -57,7 +57,7 @@ export default function WoodPage() {
               Wood & <span className="text-gradient-gold">Thermal</span>
             </h1>
             <p className="text-white/80 text-sm sm:text-base max-w-xl mx-auto">
-              Engineering grade fuel. Gauteng delivery. Order by enquiry—no checkout online.
+              Engineering grade fuel. Gauteng delivery. Order by enquiry -no checkout online.
             </p>
           </div>
         </section>
@@ -94,7 +94,7 @@ export default function WoodPage() {
                   Shop thermal wood
                 </h2>
                 <p className="text-gray-600 reveal">
-                  Prices and MOQs as listed. Enquire to order—Gauteng delivery, COD on inspection.
+                  Prices and MOQs as listed. Enquire to order -Gauteng delivery, COD on inspection.
                 </p>
               </div>
             </div>
@@ -163,7 +163,7 @@ export default function WoodPage() {
               Order thermal wood
             </h2>
             <p className="text-gray-400 mb-8">
-              Gauteng delivery. Inspect on arrival, pay on delivery (COD). No online checkout—enquire above or use the link below.
+              Gauteng delivery. Inspect on arrival, pay on delivery (COD). No online checkout -enquire above or use the link below.
             </p>
             <button
               type="button"

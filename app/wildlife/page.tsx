@@ -302,7 +302,7 @@ export default function WildlifePage() {
                       Greater Kudu
                     </h3>
                     <p className="text-gray-300 text-base sm:text-lg leading-loose mb-4 sm:mb-6">
-                      The Makoppa area is famous for its heavy-horned Kudu bulls which thrive in the thick Acacia thickets. These magnificent animals are the "Grey Ghost" of the bushveld—elusive, intelligent, and a true test of the hunter's skill.
+                      The Makoppa area is famous for its heavy-horned Kudu bulls which thrive in the thick Acacia thickets. These magnificent animals are the "Grey Ghost" of the bushveld -elusive, intelligent, and a true test of the hunter's skill.
                     </p>
                     <p className="text-gray-300 text-base sm:text-lg leading-loose mb-6 sm:mb-8">
                       Our Sweetveld sustains Kudu in peak condition year-round, resulting in exceptional trophy quality. The thick mountain thickets provide perfect habitat, and our annual census ensures sustainable management of this iconic species.
@@ -471,7 +471,7 @@ export default function WildlifePage() {
                   We do not sell animals; we manage an ecosystem. Our annual ecological census determines which species are available for harvest, ensuring sustainable population management and maintaining the delicate balance of the ecosystem.
                 </p>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-8">
-                  All harvests are conducted ethically, with respect for the animal and the environment. The meat from every harvest is donated to local communities—feeding 300 families monthly—ensuring nothing goes to waste.
+                  All harvests are conducted ethically, with respect for the animal and the environment. The meat from every harvest is donated to local communities -feeding 300 families monthly -ensuring nothing goes to waste.
                 </p>
                 <div className="grid grid-cols-2 gap-6">
                   <div className="border-l-2 border-gold-500 pl-4">
@@ -506,7 +506,7 @@ export default function WildlifePage() {
                   The Arid Sweet Bushveld of the Makoppa district sustains game in peak condition year-round. Unlike sourveld areas where grasses lose nutritional value in winter, our sweetveld remains nutritious even when dry and yellow.
                 </p>
                 <p className="font-sans text-gray-600 text-lg leading-loose">
-                  This means animals hunted here are in superior physical condition—with higher body mass, better trophy quality, and exceptional meat quality. The Sweetveld advantage is real, and it shows in every harvest.
+                  This means animals hunted here are in superior physical condition -with higher body mass, better trophy quality, and exceptional meat quality. The Sweetveld advantage is real, and it shows in every harvest.
                 </p>
               </div>
             </div>

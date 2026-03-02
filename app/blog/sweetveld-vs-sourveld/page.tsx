@@ -22,6 +22,18 @@ export default function SweetveldVsSourveldPage() {
   return (
     <Layout>
       <main id="main-content" className="min-h-screen bg-marble">
+        <section className="bg-marble">
+          <div className="relative w-full aspect-video sm:aspect-[21/9] max-h-[50vh] overflow-hidden">
+            <Image
+              src="/images/about-sweetveld-kudu.jpg"
+              alt="Kudu in Sweetveld habitat - Makoppa district nutrient-rich grasses"
+              fill
+              className="object-cover"
+              priority
+              sizes="100vw"
+            />
+          </div>
+        </section>
         <section className="py-16 md:py-24 bg-marble">
           <div className="max-w-3xl mx-auto px-6">
             <Link href="/blog" className="inline-flex items-center text-gold-600 font-sans text-sm mb-8 hover:underline">
@@ -31,15 +43,6 @@ export default function SweetveldVsSourveldPage() {
               Sweetveld vs. Sourveld: Why Our Nutrient Density Produces Bigger Horns
             </h1>
             <p className="text-gray-500 text-sm mb-12">MIWESU GAME FARM · Makoppa district, Limpopo</p>
-
-            <div className="relative aspect-video mb-12 reveal">
-              <Image
-                src="/images/about-sweetveld-kudu.jpg"
-                alt="Kudu in Sweetveld habitat - Makoppa district nutrient-rich grasses"
-                fill
-                className="object-cover"
-              />
-            </div>
 
             <div className="prose prose-lg max-w-none font-sans text-gray-600 space-y-6">
               <p className="reveal leading-relaxed">

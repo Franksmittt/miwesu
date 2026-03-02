@@ -55,17 +55,6 @@ export default function HomesteadPage() {
   return (
     <Layout>
       <main id="main-content" className="min-h-screen bg-onyx">
-        <section className="pt-6 pb-0">
-          <div className="max-w-7xl mx-auto px-6">
-            <Link
-              href="/residences"
-              className="inline-flex items-center text-gold-400 hover:text-white text-sm uppercase tracking-widest font-bold mb-6"
-            >
-              <ArrowLeft className="w-4 h-4 mr-2" /> All Residences
-            </Link>
-          </div>
-        </section>
-
         <section className="px-6 pb-0">
           <div className="max-w-7xl mx-auto">
             <div className="relative h-[50vh] min-h-[320px] overflow-hidden">
@@ -79,6 +68,12 @@ export default function HomesteadPage() {
               />
             </div>
             <div className="bg-onyx-light border border-white/5 p-6 sm:p-10 -mt-0 relative z-10">
+              <Link
+                href="/residences"
+                className="inline-flex items-center text-gold-400 hover:text-white text-sm uppercase tracking-widest font-bold mb-6"
+              >
+                <ArrowLeft className="w-4 h-4 mr-2" /> All Residences
+              </Link>
               <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white mb-2">
                 The Homestead
               </h1>

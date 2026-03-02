@@ -66,7 +66,7 @@ export async function POST(request: NextRequest) {
     const html = [
       '<h2>New enquiry from miwesu.co.za</h2>',
       '<p><strong>Name:</strong> ' + escapeHtml(name) + '</p>',
-      '<p><strong>Email:</strong> <a href="mailto:' + escapeHtml(email) + '">' + escapeHtml(email) + '</a></p>',
+      '<p><strong>Email:</strong> ' + escapeHtml(email) + '</p>',
       '<p><strong>Phone:</strong> ' + escapeHtml(phone) + '</p>',
       '<p><strong>Primary intent:</strong> ' + escapeHtml(intent) + '</p>',
       '<p><strong>Message:</strong></p>',

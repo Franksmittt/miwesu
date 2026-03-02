@@ -9,6 +9,8 @@ import {
   MOCK_UNITS,
 } from '@/lib/booking-constants'
 
+export const dynamic = 'force-dynamic'
+
 export type AvailabilityResponse =
   | { ok: true; options: Array<{ id: string; name: string; maxGuests: number; description: string | null; basePricePerNight: number; unitIds: string[] }>; demo?: boolean }
   | { ok: false; error: string }

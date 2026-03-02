@@ -276,6 +276,12 @@ export default function ContactPage() {
                   >
                     {submitStatus === 'sending' ? 'Sending…' : 'Submit Inquiry'} <Send className="w-4 h-4 ml-2" />
                   </button>
+                  <p className="text-center text-sm text-gray-500 mt-4">
+                    Or email directly:{' '}
+                    <a href="mailto:info@miwesu.co.za?subject=Enquiry%20from%20miwesu.co.za" className="text-gold-600 hover:text-gold-500 font-medium">
+                      info@miwesu.co.za
+                    </a>
+                  </p>
                 </form>
               </div>
             </div>

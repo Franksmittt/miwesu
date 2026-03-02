@@ -31,7 +31,7 @@ export default function CapeBuffaloPage() {
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/home-species-wildebeest.jpg"
+              src="/images/1cape-buffalo-bull-portrait-01.png"
               alt="Cape Buffalo in natural habitat"
               fill
               sizes="100vw"
@@ -115,7 +115,7 @@ export default function CapeBuffaloPage() {
               </div>
               <div className="relative h-full min-h-[400px] md:min-h-[500px]">
                 <Image
-                  src="/images/home-species-wildebeest.jpg"
+                  src="/images/2cape-buffalo-bull-standing-01.png"
                   alt="Cape Buffalo bull in dense bushveld"
                   fill
                   className="object-cover shadow-luxury"
@@ -154,9 +154,12 @@ export default function CapeBuffaloPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[400px] md:min-h-[500px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Cape Buffalo Taxonomy Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/3cape-buffalo-cow-bushveld-01.png"
+                  alt="Cape Buffalo cow in bushveld"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
 
@@ -290,9 +293,12 @@ export default function CapeBuffaloPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Cape Buffalo Horn Detail Image Placeholder</span>
-                </div>
+                <Image
+                src="/images/4cape-buffalo-bull-portrait-02.png"
+                alt="Cape Buffalo horn configuration and boss"
+                fill
+                className="object-cover shadow-luxury"
+              />
               </div>
             </div>
 
@@ -361,9 +367,12 @@ export default function CapeBuffaloPage() {
 
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Cape Buffalo Herd Behavior Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/5cape-buffalo-herd-bushveld-01.png"
+                  alt="Cape Buffalo herd in bushveld"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div>
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Daily Activity Cycle</h3>
@@ -435,7 +444,7 @@ export default function CapeBuffaloPage() {
               </div>
               <div className="relative h-full min-h-[400px]">
                 <Image
-                  src="/images/home-species-wildebeest.jpg"
+                  src="/images/6cape-buffalo-bull-standing-02.png"
                   alt="Cape Buffalo grazing"
                   fill
                   className="object-cover shadow-luxury"
@@ -445,9 +454,12 @@ export default function CapeBuffaloPage() {
 
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Waterhole Activity Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/6cape-buffalo-bull-standing-02.png"
+                  alt="Cape Buffalo at waterhole"
+                  fill
+                  className="object-cover shadow-luxury"
+                />
               </div>
               <div>
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Habitat Requirements</h3>
@@ -534,9 +546,12 @@ export default function CapeBuffaloPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[500px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Hunting Stalk Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/2cape-buffalo-bull-standing-01.png"
+                  alt="Cape Buffalo in habitat for spot and stalk"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
 
@@ -687,9 +702,12 @@ export default function CapeBuffaloPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[500px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Bull vs Cow Comparison Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/5cape-buffalo-herd-bushveld-01.png"
+                  alt="Cape Buffalo herd showing bulls and cows"
+                  fill
+                  className="object-cover shadow-luxury"
+                />
               </div>
             </div>
 

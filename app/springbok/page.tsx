@@ -31,7 +31,7 @@ export default function SpringbokPage() {
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/home-species-wildebeest.jpg"
+              src="/images/1springbok-ram-portrait-01.png"
               alt="Springbok in natural habitat"
               fill
               sizes="100vw"
@@ -100,7 +100,7 @@ export default function SpringbokPage() {
               </div>
               <div className="relative h-full min-h-[400px] md:min-h-[500px]">
                 <Image
-                  src="/images/home-species-wildebeest.jpg"
+                  src="/images/2springbok-ram-standing-01.png"
                   alt="Springbok ram in open plains"
                   fill
                   className="object-cover shadow-luxury"
@@ -139,9 +139,12 @@ export default function SpringbokPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[400px] md:min-h-[500px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Springbok Taxonomy Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/3springbok-ewe-bushveld-01.png"
+                  alt="Springbok ewe in grassland"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
 
@@ -234,7 +237,7 @@ export default function SpringbokPage() {
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
                 <Image
-                  src="/images/home-species-wildebeest.jpg"
+                  src="/images/4springbok-ram-portrait-02.png"
                   alt="Springbok coat coloration and markings"
                   fill
                   className="object-cover shadow-luxury"
@@ -275,9 +278,12 @@ export default function SpringbokPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Springbok Horn Detail Image Placeholder</span>
-                </div>
+                <Image
+                src="/images/4springbok-ram-portrait-02.png"
+                alt="Springbok horn configuration"
+                fill
+                className="object-cover shadow-luxury"
+              />
               </div>
             </div>
 
@@ -346,9 +352,12 @@ export default function SpringbokPage() {
 
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Springbok Behavior Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/5springbok-herd-bushveld-01.png"
+                  alt="Springbok herd in grassland"
+                  fill
+                  className="object-cover"
+                />
               </div>
               <div>
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Feeding Behavior</h3>
@@ -415,9 +424,12 @@ export default function SpringbokPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[500px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Hunting Stalk Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/6springbok-ram-standing-02.png"
+                  alt="Springbok in habitat for spot and stalk"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
 
@@ -550,9 +562,12 @@ export default function SpringbokPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[500px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Trophy Springbok Ram Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/1springbok-ram-portrait-01.png"
+                  alt="Trophy Springbok ram"
+                  fill
+                  className="object-cover shadow-luxury"
+                />
               </div>
             </div>
 

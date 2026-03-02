@@ -31,8 +31,8 @@ export default function WarthogPage() {
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/home-species-warthog.jpg"
-              alt="Warthog in natural habitat"
+              src="/images/1warthog-boar-portrait-01.png"
+              alt="Warthog boar in natural habitat"
               fill
               sizes="100vw"
               className="object-cover opacity-50"
@@ -100,8 +100,8 @@ export default function WarthogPage() {
               </div>
               <div className="relative h-full min-h-[400px] md:min-h-[500px]">
                 <Image
-                  src="/images/home-species-warthog.jpg"
-                  alt="Warthog boar at waterhole"
+                  src="/images/2warthog-boar-standing-01.png"
+                  alt="Warthog boar in bushveld"
                   fill
                   className="object-cover shadow-luxury"
                 />
@@ -139,9 +139,12 @@ export default function WarthogPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[400px] md:min-h-[500px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Warthog Taxonomy Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/3warthog-sow-bushveld-01.png"
+                  alt="Warthog sow in bushveld habitat"
+                  fill
+                  className="object-cover shadow-luxury"
+                />
               </div>
             </div>
 
@@ -275,9 +278,12 @@ export default function WarthogPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Warthog Tusk Detail Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/4warthog-boar-portrait-02.png"
+                  alt="Warthog boar tusk detail and head structure"
+                  fill
+                  className="object-cover shadow-luxury"
+                />
               </div>
             </div>
 
@@ -346,9 +352,12 @@ export default function WarthogPage() {
 
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Warthog Behavior Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/5warthog-family-bushveld-01.png"
+                  alt="Warthog family in bushveld"
+                  fill
+                  className="object-cover shadow-luxury"
+                />
               </div>
               <div>
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Daily Activity Cycle</h3>
@@ -420,8 +429,8 @@ export default function WarthogPage() {
               </div>
               <div className="relative h-full min-h-[400px]">
                 <Image
-                  src="/images/home-species-warthog.jpg"
-                  alt="Warthog feeding"
+                  src="/images/6warthog-boar-standing-02.png"
+                  alt="Warthog grazing or at water in bushveld"
                   fill
                   className="object-cover shadow-luxury"
                 />
@@ -430,9 +439,12 @@ export default function WarthogPage() {
 
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Waterhole Activity Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/6warthog-boar-standing-02.png"
+                  alt="Warthog at waterhole or mud wallow"
+                  fill
+                  className="object-cover shadow-luxury"
+                />
               </div>
               <div>
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Habitat Requirements</h3>

@@ -31,8 +31,8 @@ export default function WildebeestPage() {
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/home-species-wildebeest.jpg"
-              alt="Blue Wildebeest in natural habitat"
+              src="/images/1wildebeest-bull-portrait-01.png"
+              alt="Blue Wildebeest bull in natural habitat"
               fill
               sizes="100vw"
               className="object-cover opacity-50"
@@ -100,7 +100,7 @@ export default function WildebeestPage() {
               </div>
               <div className="relative h-full min-h-[400px] md:min-h-[500px]">
                 <Image
-                  src="/images/home-species-wildebeest.jpg"
+                  src="/images/2wildebeest-bull-standing-01.png"
                   alt="Blue Wildebeest bull on open plains"
                   fill
                   className="object-cover shadow-luxury"
@@ -139,9 +139,12 @@ export default function WildebeestPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[400px] md:min-h-[500px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Wildebeest Taxonomy Comparison Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/3wildebeest-cow-bushveld-01.png"
+                  alt="Blue Wildebeest cow in bushveld habitat"
+                  fill
+                  className="object-cover shadow-luxury"
+                />
               </div>
             </div>
 
@@ -234,8 +237,8 @@ export default function WildebeestPage() {
             <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
               <div className="relative h-full min-h-[400px]">
                 <Image
-                  src="/images/home-species-wildebeest.jpg"
-                  alt="Blue Wildebeest coat coloration"
+                  src="/images/4wildebeest-bull-portrait-02.png"
+                  alt="Blue Wildebeest coat coloration and horn detail"
                   fill
                   className="object-cover shadow-luxury"
                 />
@@ -275,9 +278,12 @@ export default function WildebeestPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Wildebeest Horn Detail Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/4wildebeest-bull-portrait-02.png"
+                  alt="Blue Wildebeest horn configuration and trophy character"
+                  fill
+                  className="object-cover shadow-luxury"
+                />
               </div>
             </div>
 
@@ -346,9 +352,12 @@ export default function WildebeestPage() {
 
             <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Wildebeest Herd Behavior Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/5wildebeest-herd-bushveld-01.png"
+                  alt="Blue Wildebeest herd in bushveld"
+                  fill
+                  className="object-cover shadow-luxury"
+                />
               </div>
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Daily Activity Cycle</h3>
@@ -420,8 +429,8 @@ export default function WildebeestPage() {
               </div>
               <div className="relative h-full min-h-[400px]">
                 <Image
-                  src="/images/home-species-wildebeest.jpg"
-                  alt="Wildebeest grazing in Sweetveld"
+                  src="/images/6wildebeest-bull-standing-02.png"
+                  alt="Wildebeest grazing in Sweetveld grassland"
                   fill
                   className="object-cover shadow-luxury"
                 />
@@ -430,9 +439,12 @@ export default function WildebeestPage() {
 
             <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Waterhole Activity Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/6wildebeest-bull-standing-02.png"
+                  alt="Blue Wildebeest at water in grassland"
+                  fill
+                  className="object-cover shadow-luxury"
+                />
               </div>
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Water Requirements</h3>

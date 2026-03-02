@@ -80,7 +80,7 @@ export default function WoodOrderModal({ isOpen, onClose, preselectedProduct }: 
       setStatus('success')
     } catch {
       setStatus('error')
-      setErrorMessage('Network error. Please try again or email guardians@miwesu.com.')
+      setErrorMessage('Network error. Please try again or email info@miwesu.co.za.')
     }
   }
 

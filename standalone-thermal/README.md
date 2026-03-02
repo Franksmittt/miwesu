@@ -40,7 +40,7 @@ Orders are sent only when a **form action URL** is set. Two options:
 
 ### If `FORM_ACTION_URL` is left empty
 
-The form falls back to opening the user’s email client (`mailto:guardians@miwesu.com`) with the order details. The success message still appears. Use this only for quick testing.
+The form falls back to opening the user’s email client (`mailto:info@miwesu.co.za`) with the order details. The success message still appears. Use this only for quick testing.
 
 ## How to use
 

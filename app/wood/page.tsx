@@ -179,7 +179,7 @@ export default function WoodPage() {
               </a>
             </p>
             <p className="text-gray-500 text-sm mt-2">
-              Bulk or other regions: <a href="mailto:guardians@miwesu.com" className="text-gold-400 hover:underline">guardians@miwesu.com</a>
+              Bulk or other regions: <a href="mailto:info@miwesu.co.za" className="text-gold-400 hover:underline">info@miwesu.co.za</a>
             </p>
           </div>
         </section>

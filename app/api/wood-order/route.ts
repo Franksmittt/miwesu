@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 
-const WOOD_ORDER_EMAIL = process.env.WOOD_ORDER_EMAIL || 'guardians@miwesu.com'
+const WOOD_ORDER_EMAIL = process.env.WOOD_ORDER_EMAIL || 'info@miwesu.co.za'
 
 function corsHeaders(origin: string | null): HeadersInit {
   const allow = process.env.WOOD_ORDER_CORS_ORIGIN || origin || '*'

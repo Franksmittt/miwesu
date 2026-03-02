@@ -1,10 +1,14 @@
 'use client'
 
+import { usePathname } from 'next/navigation'
 import Navigation from './Navigation'
 import VettingModal from './VettingModal'
 import Footer from './Footer'
 
 export default function Layout({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname()
+  const isHome = pathname === '/'
+
   return (
     <>
       <a
@@ -15,7 +19,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </a>
       <Navigation />
       <VettingModal />
-      {children}
+      <div className={isHome ? '' : 'pt-[100px] sm:pt-[112px]'}>
+        {children}
+      </div>
       <Footer />
     </>
   )

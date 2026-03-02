@@ -1,0 +1,50 @@
+// MIWESU Lodge Booking System - Prisma Schema
+// Use with PostgreSQL (Supabase, Vercel Postgres, or any Postgres)
+// Set DATABASE_URL in .env
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Unit {
+  id                String    @id @default(cuid())
+  name              String    @unique
+  maxGuests         Int
+  description       String?
+  basePricePerNight Decimal   @db.Decimal(10, 2)
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+  bookings          Booking[]
+}
+
+model Booking {
+  id               String       @id @default(cuid())
+  unitId           String
+  unit             Unit         @relation(fields: [unitId], references: [id], onDelete: Restrict)
+  guestName        String
+  guestEmail       String
+  guestPhone       String?
+  checkIn          DateTime
+  checkOut         DateTime
+  totalGuests      Int
+  totalPrice       Decimal      @db.Decimal(10, 2)
+  status           BookingStatus @default(PENDING)
+  stripeSessionId  String?      @unique
+  specialRequests  String?
+  createdAt        DateTime     @default(now())
+  updatedAt        DateTime     @updatedAt
+
+  @@index([unitId, checkIn, checkOut])
+  @@index([status])
+}
+
+enum BookingStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+}

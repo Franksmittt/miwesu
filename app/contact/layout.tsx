@@ -10,7 +10,7 @@ const breadcrumbItems = [
 
 export const metadata: Metadata = {
   title: 'Contact Us | Concierge & Bookings',
-  description: 'Contact MIWESU GAME FARM for game farm booking and hunting lodge inquiries. D1432 Road, Makoppa District, Thabazimbi, Limpopo. guardians@miwesu.com, +27 73 030 9679. 40km from Thabazimbi. Book your safari or conservation harvest.',
+  description: 'Contact MIWESU GAME FARM for game farm booking and hunting lodge inquiries. D1432 Road, Makoppa District, Thabazimbi, Limpopo. info@miwesu.co.za, +27 73 030 9679. 40km from Thabazimbi. Book your safari or conservation harvest.',
   keywords: ['Miwesu contact', 'game reserve booking', 'game farm booking', 'hunting lodge inquiry', 'book hunting safari', 'game farm reservation', 'Thabazimbi', 'Limpopo', 'concierge services', 'reservation'],
   openGraph: generateOpenGraph(
     'Contact Us | Concierge Services',

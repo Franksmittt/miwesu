@@ -102,6 +102,54 @@
     transform: translateX(0);
   }
 
+  /* Booking: react-day-picker on dark background (v8) */
+  .react-day-picker-onyx {
+    --rdp-accent-color: #C5A059;
+    --rdp-background-color: rgba(197, 160, 89, 0.2);
+    --rdp-selected-color: #050505;
+  }
+  .react-day-picker-onyx .rdp-button:not([disabled]) {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  .react-day-picker-onyx .rdp-button:hover:not([disabled]):not(.rdp-day_selected) {
+    background: rgba(197, 160, 89, 0.2);
+    color: #fff;
+  }
+  .react-day-picker-onyx .rdp-day_selected,
+  .react-day-picker-onyx .rdp-day_selected:hover {
+    background: #C5A059 !important;
+    color: #050505 !important;
+  }
+  .react-day-picker-onyx .rdp-caption_label {
+    color: #fff;
+  }
+  .react-day-picker-onyx .rdp-nav_button {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .react-day-picker-onyx .rdp-head_cell {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .react-day-picker-onyx .rdp-button[disabled]:not(.rdp-day_selected) {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  /* Booking step content enter */
+  .booking-step-content {
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .booking-step-content.booking-step-enter {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Booking form inputs */
+  .input-booking {
+    @apply rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-white placeholder:text-white/40;
+    @apply focus:border-gold-500/60 focus:ring-2 focus:ring-gold-500/20 focus:outline-none transition-all;
+  }
+
   /* Scrolled Navigation State */
   nav.scrolled {
     background-color: #050505; /* Onyx */

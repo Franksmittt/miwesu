@@ -32,11 +32,31 @@ export default function ContactPage() {
     return () => window.removeEventListener('scroll', reveal)
   }, [])
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
+  const [errorMessage, setErrorMessage] = useState('')
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    console.log('Form submitted:', formData)
-    alert('Thank you for your inquiry. We will contact you shortly.')
+    setSubmitStatus('sending')
+    setErrorMessage('')
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+      const data = await res.json()
+      if (!res.ok) {
+        setSubmitStatus('error')
+        setErrorMessage(data?.error || 'Something went wrong. Please try again.')
+        return
+      }
+      setSubmitStatus('success')
+      setFormData({ name: '', email: '', phone: '', intent: '', message: '' })
+    } catch {
+      setSubmitStatus('error')
+      setErrorMessage('Network error. Please try again or email us at info@miwesu.co.za.')
+    }
   }
 
   return (
@@ -100,10 +120,10 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-serif text-xl text-onyx mb-2">Email</h3>
                       <a
-                        href="mailto:guardians@miwesu.com"
+                        href="mailto:info@miwesu.co.za"
                         className="font-sans text-gray-600 hover:text-gold-500 transition-colors"
                       >
-                        guardians@miwesu.com
+                        info@miwesu.co.za
                       </a>
                     </div>
                   </div>
@@ -239,11 +259,22 @@ export default function ContactPage() {
                     </p>
                   </div>
 
+                  {submitStatus === 'success' && (
+                    <p className="text-green-700 bg-green-50 border border-green-200 rounded-lg p-4 text-sm">
+                      Thank you, Wayne and Melissa will be in touch shortly.
+                    </p>
+                  )}
+                  {submitStatus === 'error' && errorMessage && (
+                    <p className="text-red-700 bg-red-50 border border-red-200 rounded-lg p-4 text-sm">
+                      {errorMessage}
+                    </p>
+                  )}
                   <button
                     type="submit"
-                    className="w-full bg-onyx text-white py-5 uppercase tracking-widest text-xs font-bold hover:bg-gold-500 transition-colors shadow-luxury flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2"
+                    disabled={submitStatus === 'sending'}
+                    className="w-full bg-onyx text-white py-5 uppercase tracking-widest text-xs font-bold hover:bg-gold-500 transition-colors shadow-luxury flex items-center justify-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed"
                   >
-                    Submit Inquiry <Send className="w-4 h-4 ml-2" />
+                    {submitStatus === 'sending' ? 'Sending…' : 'Submit Inquiry'} <Send className="w-4 h-4 ml-2" />
                   </button>
                 </form>
               </div>

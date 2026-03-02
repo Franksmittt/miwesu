@@ -127,6 +127,14 @@ export default function ResidencesPage() {
                 <span className="text-white font-medium">The Stone Villa:</span> {lodgeSummary.secondHouse.bedrooms} bedrooms, {lodgeSummary.secondHouse.sleepers} sleepers · Kitchen, living, master & bunk room, 2 en-suites, outdoor braai.
                 <span className="block mt-2 text-gold-400/90">Total: {lodgeSummary.totalSleepers} sleepers across two residences.</span>
               </p>
+              <div className="mt-8">
+                <Link
+                  href="/book"
+                  className="inline-flex items-center px-8 py-3 bg-gold-500 text-onyx font-bold uppercase tracking-widest text-sm hover:bg-gold-400 transition-colors"
+                >
+                  Book your stay <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
+              </div>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-8 md:gap-12 mb-12 sm:mb-20">

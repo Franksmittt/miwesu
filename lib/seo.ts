@@ -101,7 +101,7 @@ export function generateOrganizationSchema() {
       '@type': 'ContactPoint',
       telephone: '+27730309679',
       contactType: 'Customer Service',
-      email: 'guardians@miwesu.com',
+      email: 'info@miwesu.co.za',
       availableLanguage: 'English',
     },
     sameAs: [
@@ -146,7 +146,7 @@ export function generateLocalBusinessSchema() {
       longitude: 27.0450853,
     },
     telephone: '+27730309679',
-    email: 'guardians@miwesu.com',
+    email: 'info@miwesu.co.za',
     url: baseUrl,
     priceRange: '$$$',
     numberOfRooms: totalRooms,

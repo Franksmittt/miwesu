@@ -9,6 +9,7 @@ export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const pathname = usePathname()
+  const isHome = pathname === '/'
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,9 +33,9 @@ export default function Navigation() {
     <nav
       id="main-nav"
       className={`fixed top-0 w-full z-50 transition-all duration-300 py-6 ${
-        isScrolled
-          ? 'bg-onyx shadow-lg'
-          : 'bg-gradient-to-b from-onyx/80 to-transparent'
+        isHome && !isScrolled
+          ? 'bg-gradient-to-b from-onyx/80 to-transparent'
+          : 'bg-onyx shadow-lg'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center min-h-[56px] sm:min-h-[64px]">
@@ -111,6 +112,7 @@ export default function Navigation() {
               <ul className="space-y-3">
                 <li><Link href="/" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Home</Link></li>
                 <li><Link href="/residences" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Residences</Link></li>
+                <li><Link href="/book" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Book</Link></li>
                 <li><Link href="/activities" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Activities</Link></li>
               </ul>
             </div>

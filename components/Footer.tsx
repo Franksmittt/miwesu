@@ -67,9 +67,9 @@ export default function Footer() {
                 <span>D1432, Makoppa District<br />Thabazimbi, Limpopo</span>
               </li>
               <li>
-                <a href="mailto:guardians@miwesu.com" className="flex items-center gap-2 hover:text-white transition-colors">
+                <a href="mailto:info@miwesu.co.za" className="flex items-center gap-2 hover:text-white transition-colors">
                   <Mail className="w-4 h-4 text-gold-500/80 flex-shrink-0" />
-                  guardians@miwesu.com
+                  info@miwesu.co.za
                 </a>
               </li>
               <li>

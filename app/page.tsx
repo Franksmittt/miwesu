@@ -24,6 +24,7 @@ import {
   Activity,
   Quote,
 } from 'lucide-react'
+import BookingWidget from '@/components/BookingWidget'
 
 export default function Home() {
   const [intent, setIntent] = useState<'biltong' | 'trophy'>('trophy')
@@ -115,6 +116,7 @@ export default function Home() {
                   View Residences
                 </span>
               </a>
+              <BookingWidget variant="gold" compact />
               <Link
                 href="/residences"
                 className="group relative px-10 py-4 bg-transparent border border-gold-500 overflow-hidden rounded-sm transition-all hover:border-white"
@@ -343,6 +345,12 @@ export default function Home() {
                 Explore Amenities
               </Link>
             </div>
+            <div className="lg:hidden mt-8 flex justify-center reveal">
+              <BookingWidget variant="dark" compact />
+            </div>
+          </div>
+          <div className="mt-12 flex justify-center reveal">
+            <BookingWidget variant="dark" />
           </div>
         </div>
       </section>

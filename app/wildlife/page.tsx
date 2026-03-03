@@ -83,7 +83,7 @@ export default function WildlifePage() {
     {
       name: 'Blesbok',
       scientific: 'Damaliscus pygargus phillipsi',
-      image: '/images/home-species-wildebeest.jpg',
+      image: '/images/1blesbok-ram-portrait-01.png',
       caliber: '.308 Win',
       rowlandWard: 'Min. 16 ½"',
       terrain: 'Highveld Grasslands',

@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Layout from '@/components/Layout'
 import { Target, MapPin, Trophy, Leaf, Clock, Users, ArrowRight, Info, Zap, Shield } from 'lucide-react'
 import Link from 'next/link'
+import CompareButton from '@/components/CompareButton'
 
 export default function DappleImpalaPage() {
   useEffect(() => {
@@ -73,6 +74,9 @@ export default function DappleImpalaPage() {
                 <div className="text-gold-500 font-serif text-2xl md:text-3xl mb-2">12-15 years</div>
                 <div className="text-gray-400 text-xs uppercase tracking-widest">Lifespan</div>
               </div>
+            </div>
+            <div className="flex justify-center mt-8">
+              <CompareButton currentSpeciesSlug="dapple-impala" currentSpeciesName="Dapple Impala" />
             </div>
           </div>
         </section>

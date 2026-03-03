@@ -114,7 +114,7 @@ export const speciesComparisonData: SpeciesComparison[] = [
     name: 'Blesbok',
     scientific: 'Damaliscus pygargus phillipsi',
     slug: 'blesbok',
-    image: '/images/home-species-wildebeest.jpg',
+    image: '/images/1blesbok-ram-portrait-01.png',
     weightMale: '65 – 80 kg',
     weightFemale: '55 – 70 kg',
     shoulderHeightMale: '84 – 100 cm',

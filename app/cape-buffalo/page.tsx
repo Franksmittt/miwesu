@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Layout from '@/components/Layout'
 import { Target, MapPin, Trophy, Leaf, Clock, Users, ArrowRight, Info, Zap, Shield, AlertTriangle } from 'lucide-react'
 import Link from 'next/link'
+import CompareButton from '@/components/CompareButton'
 
 export default function CapeBuffaloPage() {
   useEffect(() => {
@@ -73,6 +74,9 @@ export default function CapeBuffaloPage() {
                 <div className="text-gold-500 font-serif text-2xl md:text-3xl mb-2">15-20 years</div>
                 <div className="text-gray-400 text-xs uppercase tracking-widest">Lifespan</div>
               </div>
+            </div>
+            <div className="flex justify-center mt-8">
+              <CompareButton currentSpeciesSlug="cape-buffalo" currentSpeciesName="Cape Buffalo" />
             </div>
           </div>
         </section>

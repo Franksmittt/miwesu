@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Layout from '@/components/Layout'
 import { Target, MapPin, Trophy, Leaf, Clock, Users, ArrowRight, Info, Zap, Shield } from 'lucide-react'
 import Link from 'next/link'
+import CompareButton from '@/components/CompareButton'
 
 export default function BlesbokPage() {
   useEffect(() => {
@@ -31,8 +32,8 @@ export default function BlesbokPage() {
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/home-species-wildebeest.jpg"
-              alt="Blesbok in natural habitat"
+              src="/images/1blesbok-ram-portrait-01.png"
+              alt="Blesbok ram in natural habitat"
               fill
               sizes="100vw"
               className="object-cover opacity-50"
@@ -74,6 +75,9 @@ export default function BlesbokPage() {
                 <div className="text-gray-400 text-xs uppercase tracking-widest">Lifespan</div>
               </div>
             </div>
+            <div className="flex justify-center mt-8">
+              <CompareButton currentSpeciesSlug="blesbok" currentSpeciesName="Blesbok" />
+            </div>
           </div>
         </section>
 
@@ -99,9 +103,13 @@ export default function BlesbokPage() {
                 </p>
               </div>
               <div className="relative h-full min-h-[400px] md:min-h-[500px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Blesbok Habitat Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/2blesbok-ram-standing-01.png"
+                  alt="Blesbok ram in grassland habitat"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover shadow-luxury"
+                />
               </div>
             </div>
           </div>
@@ -136,9 +144,13 @@ export default function BlesbokPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[400px] md:min-h-[500px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Blesbok vs Bontebok Comparison Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/4blesbok-ram-portrait-02.png"
+                  alt="Blesbok ram portrait showing horn and facial markings"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover shadow-luxury"
+                />
               </div>
             </div>
 
@@ -230,9 +242,13 @@ export default function BlesbokPage() {
 
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Blesbok Coat Coloration Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/3blesbok-ewe-bushveld-01.png"
+                  alt="Blesbok ewe showing coat coloration and markings"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover shadow-luxury"
+                />
               </div>
               <div>
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Coat Coloration and Markings</h3>
@@ -269,9 +285,13 @@ export default function BlesbokPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Blesbok Horn Detail Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/4blesbok-ram-portrait-02.png"
+                  alt="Blesbok ram horn detail and lyre shape"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover shadow-luxury"
+                />
               </div>
             </div>
 
@@ -374,9 +394,13 @@ export default function BlesbokPage() {
 
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Blesbok Herd Behavior Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/5blesbok-herd-bushveld-01.png"
+                  alt="Blesbok herd in bushveld"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover shadow-luxury"
+                />
               </div>
               <div>
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Daily Activity Cycle</h3>
@@ -447,17 +471,25 @@ export default function BlesbokPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Blesbok Grazing Habitat Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/6blesbok-ram-standing-02.png"
+                  alt="Blesbok ram in grassland"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover shadow-luxury"
+                />
               </div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Waterhole Activity Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/6blesbok-ram-standing-02.png"
+                  alt="Blesbok at waterhole or grassland"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover shadow-luxury"
+                />
               </div>
               <div>
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Water Requirements</h3>
@@ -518,9 +550,13 @@ export default function BlesbokPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[500px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Hunting Stalk Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/2blesbok-ram-standing-01.png"
+                  alt="Blesbok hunting stalk in habitat"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover shadow-luxury"
+                />
               </div>
             </div>
 
@@ -677,9 +713,13 @@ export default function BlesbokPage() {
                 </div>
               </div>
               <div className="relative h-full min-h-[500px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Ram vs Ewe Comparison Image Placeholder</span>
-                </div>
+                <Image
+                  src="/images/3blesbok-ewe-bushveld-01.png"
+                  alt="Blesbok ewe and ram comparison in habitat"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover shadow-luxury"
+                />
               </div>
             </div>
 

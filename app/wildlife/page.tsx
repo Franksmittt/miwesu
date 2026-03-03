@@ -3,7 +3,7 @@
 import { useEffect } from 'react'
 import Image from 'next/image'
 import Layout from '@/components/Layout'
-import { Target, MapPin, Info, Trophy, Leaf, Users, ArrowRight } from 'lucide-react'
+import { Target, MapPin, Info, Trophy, Leaf, Users, ArrowRight, Scale } from 'lucide-react'
 import Link from 'next/link'
 
 export default function WildlifePage() {
@@ -220,6 +220,12 @@ export default function WildlifePage() {
               <p className="font-sans text-gray-400 text-lg max-w-2xl mx-auto leading-loose">
                 We do not sell animals; we manage an ecosystem. The availability of specific quarry is dictated strictly by our annual ecological census.
               </p>
+              <Link
+                href="/compare"
+                className="inline-flex items-center gap-2 mt-8 text-gold-400 hover:text-gold-300 font-sans text-sm uppercase tracking-widest transition-colors"
+              >
+                <Scale className="w-4 h-4" /> Compare species side by side
+              </Link>
             </div>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 sm:mb-20">

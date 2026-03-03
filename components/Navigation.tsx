@@ -120,6 +120,7 @@ export default function Navigation() {
               <p className="text-gold-500/90 text-[10px] sm:text-xs uppercase tracking-[0.25em] font-sans font-medium mb-4">Experience</p>
               <ul className="space-y-3">
                 <li><Link href="/wildlife" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Wildlife</Link></li>
+                <li><Link href="/compare" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Compare species</Link></li>
                 <li><Link href="/conservation" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Conservation</Link></li>
                 <li><Link href="/gallery" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Gallery</Link></li>
               </ul>

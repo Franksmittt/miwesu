@@ -223,7 +223,7 @@ export default function CapeBuffaloPage() {
                     <tr>
                       <td className="px-6 py-4 font-sans text-onyx font-medium">Live Weight</td>
                       <td className="px-6 py-4 font-sans text-gray-600">500 – 900 kg (1,102 – 1,984 lbs)</td>
-                      <td className="px-6 py-4 font-sans text-gray-600">400 – 700 kg (882 – 1,543 lbs)</td>
+                      <td className="px-6 py-4 font-sans text-gray-600">300 – 700 kg (661 – 1,543 lbs)</td>
                       <td className="px-6 py-4 font-sans text-gray-500 text-sm">Bulls are significantly larger with massive necks and shoulders</td>
                     </tr>
                     <tr className="bg-marble">

@@ -58,7 +58,7 @@ export default function BlesbokPage() {
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div className="reveal">
-                <div className="text-gold-500 font-serif text-2xl md:text-3xl mb-2">70-85 kg</div>
+                <div className="text-gold-500 font-serif text-2xl md:text-3xl mb-2">65-80 kg</div>
                 <div className="text-gray-400 text-xs uppercase tracking-widest">Adult Ram Weight</div>
               </div>
               <div className="reveal">
@@ -201,14 +201,14 @@ export default function BlesbokPage() {
                   <tbody className="divide-y divide-gray-200">
                     <tr>
                       <td className="px-6 py-4 font-sans text-onyx font-medium">Live Weight</td>
-                      <td className="px-6 py-4 font-sans text-gray-600">70 – 85 kg (154 – 187 lbs)</td>
+                      <td className="px-6 py-4 font-sans text-gray-600">65 – 80 kg (143 – 176 lbs)</td>
                       <td className="px-6 py-4 font-sans text-gray-600">55 – 70 kg (121 – 154 lbs)</td>
                       <td className="px-6 py-4 font-sans text-gray-500 text-sm">Rams are significantly heavier and more muscular in the neck</td>
                     </tr>
                     <tr className="bg-marble">
                       <td className="px-6 py-4 font-sans text-onyx font-medium">Shoulder Height</td>
                       <td className="px-6 py-4 font-sans text-gray-600">95 – 105 cm (37 – 41 in)</td>
-                      <td className="px-6 py-4 font-sans text-gray-600">85 – 95 cm (33 – 37 in)</td>
+                      <td className="px-6 py-4 font-sans text-gray-600">84 – 100 cm (33 – 40 in)</td>
                       <td className="px-6 py-4 font-sans text-gray-500 text-sm">Distinct sloping back profile typical of Alcelaphines</td>
                     </tr>
                     <tr>

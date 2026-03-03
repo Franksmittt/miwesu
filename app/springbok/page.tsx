@@ -213,9 +213,9 @@ export default function SpringbokPage() {
                     </tr>
                     <tr className="bg-marble">
                       <td className="px-6 py-4 font-sans text-onyx font-medium">Shoulder Height</td>
-                      <td className="px-6 py-4 font-sans text-gray-600">70 – 90 cm (28 – 35 in)</td>
-                      <td className="px-6 py-4 font-sans text-gray-600">65 – 85 cm (26 – 33 in)</td>
-                      <td className="px-6 py-4 font-sans text-gray-500 text-sm">Medium-sized antelope</td>
+                      <td className="px-6 py-4 font-sans text-gray-600">71 – 86 cm (28 – 34 in)</td>
+                      <td className="px-6 py-4 font-sans text-gray-600">71 – 84 cm (28 – 33 in)</td>
+                      <td className="px-6 py-4 font-sans text-gray-500 text-sm">Medium-sized antelope; ram slightly taller</td>
                     </tr>
                     <tr>
                       <td className="px-6 py-4 font-sans text-onyx font-medium">Head-Body Length</td>
@@ -365,9 +365,12 @@ export default function SpringbokPage() {
                   Springbok are selective grazers, feeding primarily on grasses and forbs. They prefer fresh, green growth when available and will move to areas with recent rain or new growth. Their grazing helps maintain grassland health by preventing grass from becoming too tall and unpalatable.
                 </p>
                 <div className="bg-onyx-light border border-white/10 p-6 mt-6">
-                  <h4 className="font-serif text-xl text-gold-400 mb-3">The Rut</h4>
+                  <h4 className="font-serif text-xl text-gold-400 mb-3">The Rut and Reproduction</h4>
                   <p className="text-gray-300 text-sm leading-relaxed">
-                    Breeding behavior is seasonal, with the rut typically occurring during the dry season (May-July). During this period, rams become territorial and compete for access to estrous ewes. Territorial rams maintain harems and defend their territories aggressively.
+                    Breeding can occur year-round but is often synchronized with rains. Gestation lasts approximately 25 weeks (167–170 days); the ewe gives birth to a single lamb. For the first two to three days (sometimes up to a few weeks) the lamb uses a "flat" hiding posture in sparse cover while the mother grazes at a distance, then joins nursery groups.
+                  </p>
+                  <p className="text-gray-300 text-sm leading-relaxed mt-2">
+                    During the rut (often May–July in drier areas), rams become territorial and compete for access to estrous ewes. Territorial rams maintain harems and defend their territories aggressively.
                   </p>
                   <p className="text-gray-300 text-sm leading-relaxed mt-4 font-medium">
                     <strong className="text-gold-400">Hunting Insight:</strong> The best times to hunt Springbok are during early morning and late afternoon when they are actively feeding. During these periods, they are more focused on grazing and less alert to potential threats.

@@ -58,7 +58,7 @@ export default function RedHartebeestPage() {
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div className="reveal">
-                <div className="text-gold-500 font-serif text-2xl md:text-3xl mb-2">120-200 kg</div>
+                <div className="text-gold-500 font-serif text-2xl md:text-3xl mb-2">150-160 kg</div>
                 <div className="text-gray-400 text-xs uppercase tracking-widest">Adult Bull Weight</div>
               </div>
               <div className="reveal">
@@ -207,15 +207,15 @@ export default function RedHartebeestPage() {
                   <tbody className="divide-y divide-gray-200">
                     <tr>
                       <td className="px-6 py-4 font-sans text-onyx font-medium">Live Weight</td>
-                      <td className="px-6 py-4 font-sans text-gray-600">120 – 200 kg (265 – 441 lbs)</td>
-                      <td className="px-6 py-4 font-sans text-gray-600">100 – 160 kg (220 – 353 lbs)</td>
-                      <td className="px-6 py-4 font-sans text-gray-500 text-sm">Large, robust build</td>
+                      <td className="px-6 py-4 font-sans text-gray-600">150 – 160 kg (330 – 350 lbs); exceptional to 200 kg</td>
+                      <td className="px-6 py-4 font-sans text-gray-600">~120 kg (265 lbs)</td>
+                      <td className="px-6 py-4 font-sans text-gray-500 text-sm">Large, robust build; distinct sexual size dimorphism</td>
                     </tr>
                     <tr className="bg-marble">
                       <td className="px-6 py-4 font-sans text-onyx font-medium">Shoulder Height</td>
-                      <td className="px-6 py-4 font-sans text-gray-600">120 – 140 cm (47 – 55 in)</td>
-                      <td className="px-6 py-4 font-sans text-gray-600">110 – 130 cm (43 – 51 in)</td>
-                      <td className="px-6 py-4 font-sans text-gray-500 text-sm">High shoulders, sloping back</td>
+                      <td className="px-6 py-4 font-sans text-gray-600">130 – 135 cm (48 – 53 in)</td>
+                      <td className="px-6 py-4 font-sans text-gray-600">120 – 125 cm (47 – 49 in)</td>
+                      <td className="px-6 py-4 font-sans text-gray-500 text-sm">High shoulders, sloping back; elongated face</td>
                     </tr>
                     <tr>
                       <td className="px-6 py-4 font-sans text-onyx font-medium">Head-Body Length</td>
@@ -303,7 +303,7 @@ export default function RedHartebeestPage() {
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Speed and Agility</h4>
                   <p className="text-gray-300 leading-loose mb-4">
-                    Red Hartebeest are among the fastest antelope on the continent, capable of reaching speeds of up to 80 km/h (50 mph) and maintaining high speeds over long distances.
+                    Red Hartebeest are among the fastest antelope on the continent, capable of reaching speeds of 55–70 km/h (35–43 mph) and maintaining high speeds over long distances.
                   </p>
                   <p className="text-gray-300 leading-loose">
                     Their remarkable endurance allows them to outrun predators over long distances. When threatened, they rely on speed and distance rather than cover, making them well-suited to open plains habitats.
@@ -365,9 +365,9 @@ export default function RedHartebeestPage() {
                   Red Hartebeest are bulk grazers, feeding primarily on grasses. They prefer fresh, green growth when available and will move to areas with recent rain or new growth. Their grazing helps maintain grassland health by preventing grass from becoming too tall and unpalatable.
                 </p>
                 <div className="bg-onyx-light border border-white/10 p-6 mt-6">
-                  <h4 className="font-serif text-xl text-gold-400 mb-3">The Rut</h4>
+                  <h4 className="font-serif text-xl text-gold-400 mb-3">The Rut and Reproduction</h4>
                   <p className="text-gray-300 text-sm leading-relaxed">
-                    Breeding behavior is seasonal, with the rut typically occurring during the dry season (May-July). During this period, bulls become highly territorial and compete aggressively for access to estrous cows. Territorial bulls maintain harems and defend their territories with displays and combat.
+                    Breeding behavior is seasonal, with the rut typically occurring during the dry season (May–July). During this period, bulls become highly territorial and compete aggressively for access to estrous cows. Gestation lasts approximately 214–242 days (about eight months); cows synchronize birthing at the onset of the summer rains, with a single calf usually born between October and December. Unlike wildebeest, Red Hartebeest use a "hider" strategy: for the first two weeks the calf lies concealed in dense vegetation while the mother grazes at a distance and returns only to nurse.
                   </p>
                   <p className="text-gray-300 text-sm leading-relaxed mt-4 font-medium">
                     <strong className="text-gold-400">Hunting Insight:</strong> The best times to hunt Red Hartebeest are during early morning and late afternoon when they are actively feeding. During these periods, they are more focused on grazing and less alert to potential threats.

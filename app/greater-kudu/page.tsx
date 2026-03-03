@@ -268,10 +268,10 @@ export default function GreaterKuduPage() {
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
-                  The spiral horns of the Greater Kudu are among the most impressive in the animal kingdom. Only males carry horns, which begin growing at around 6-9 months of age and continue throughout the bull's life.
+                  The spiral horns of the Greater Kudu are among the most impressive in the animal kingdom. Only males carry horns, which begin growing at around 6–12 months of age and continue throughout the bull's life (first full spiral by about two years; full two-and-a-half twists by roughly six years).
                 </p>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
-                  The horns form a tight spiral, typically making 2.5 to 3 full turns. They grow outward, upward, and then curve inward, with the tips often pointing forward. The horns are heavily ridged (annulated) along their length, with smooth, sharp tips.
+                  The horns form a tight spiral, typically completing two to two-and-a-half full twists (exceptional specimens may approach three). They grow outward, upward, and then curve inward, with the tips often pointing forward. The horns are heavily ridged (annulated) along their length, with smooth, sharp tips.
                 </p>
                 <div className="bg-onyx text-white p-6 mt-6">
                   <h4 className="font-serif text-xl text-gold-400 mb-2">Trophy Characteristics</h4>
@@ -387,7 +387,7 @@ export default function GreaterKuduPage() {
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Breeding Season</h4>
                   <p className="text-gray-300 leading-loose mb-4">
-                    The rut typically occurs from April to August in southern Africa, with peak activity in June-July. During this period, bulls become more active and vocal, emitting deep, guttural grunts that can carry for kilometers.
+                    In the Limpopo region, the rut generally occurs as the rains cease, between April and May. During this period, bulls become more active and vocal, emitting deep, guttural grunts that can carry for kilometers.
                   </p>
                   <p className="text-gray-300 leading-loose">
                     Bulls will seek out estrous females, often following cow herds for days. Competition between bulls is usually ritualized, involving parallel walks and horn displays, though physical combat can occur.
@@ -396,7 +396,7 @@ export default function GreaterKuduPage() {
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Calving and Maternal Care</h4>
                   <p className="text-gray-300 leading-loose mb-4">
-                    After a gestation period of approximately 9 months, calves are born from January to March. Newborn calves are hidden in dense cover, with the mother returning periodically to nurse. This "hider" strategy protects vulnerable young from predators.
+                    After a gestation period of approximately 7 to 9 months (around 240 days), calves are born from January to March, aligning with the wet season. Newborn calves are hidden in dense cover, with the mother returning periodically to nurse. This "hider" strategy protects vulnerable young from predators.
                   </p>
                   <p className="text-gray-300 leading-loose">
                     Calves remain hidden for 2-4 weeks before joining the mother's herd. This period is critical for survival, and disturbance by humans or predators can cause the mother to abandon the calf.

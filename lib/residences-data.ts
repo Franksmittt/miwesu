@@ -269,6 +269,12 @@ export const galleryAccommodationImages: Array<{
     description: 'Brick patio in front of Stone Villa; thatched roof, sliding door; outdoor living in the bushveld.',
   },
   {
+    src: '/images/_filename_Thabazimbi_W_110jpg__Nano_Banana_Pro_77108.jpg',
+    category: 'Accommodation',
+    title: 'The Stone Villa – evening',
+    description: 'Night outside the villa: lantern-lit lawn, starry sky; warm interior visible through glass doors.',
+  },
+  {
     src: '/images/_filename_Thabazimbi_N_38jpg_s_Nano_Banana_Pro_03494.jpg',
     category: 'Accommodation',
     title: 'Main House Living Area',

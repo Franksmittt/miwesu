@@ -98,8 +98,8 @@ export const mainLodgeHouse: ResidenceGroup = {
       id: 'upper-room-1',
       label: 'Upper Room 1 (sleeps 5)',
       description: 'Five single beds. Three windows behind central bed, no animal portrait, rug tail towards middle bed. Thatched roof, wooden beams.',
-      imagePath: '/images/residences-main-lodge-upper-room-1.jpg',
-      fallbackImagePath: '/images/residences-homestead-main.jpg',
+      imagePath: '/images/_filename_Thabazimbi_N_72jpg_s_Nano_Banana_Pro_17678.jpg',
+      fallbackImagePath: '/images/residences-main-lodge-upper-room-1.jpg',
       card1Source: 'main_house_upper_room_1_sleeps_5',
     },
     {
@@ -401,6 +401,24 @@ export const galleryAccommodationImages: Array<{
     category: 'Accommodation',
     title: 'Upper Room 1 (sleeps 5)',
     description: 'Main lodge upper room  - three windows behind bed, five single beds.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_N_72jpg_s_Nano_Banana_Pro_17678.jpg',
+    category: 'Accommodation',
+    title: 'Upper Room 1 (sleeps 5)',
+    description: 'Main lodge upper room  - two beds, thatched roof, elephant and rhino art; view to garden.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_N_41jpeg__Nano_Banana_Pro_68873.jpg',
+    category: 'Accommodation',
+    title: 'Upper Room 1 (sleeps 5)',
+    description: 'Main lodge upper room  - multiple single beds, animal hide rug, thatched roof.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_N_111jpg__Nano_Banana_Pro_24733.jpg',
+    category: 'Accommodation',
+    title: 'Upper Room 1 (sleeps 5)',
+    description: 'Main lodge upper room  - dormitory-style, sliding barn door, wildlife art and towel rack.',
   },
   {
     src: '/images/residences-main-lodge-upper-room-2.jpg',

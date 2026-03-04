@@ -179,7 +179,8 @@ export const secondHouse: ResidenceGroup = {
       id: 'second-house-master',
       label: 'Master Bedroom',
       description: 'One main bed (not bunk). Rustic headboard, nightstands. En-suite with shower (no bathtub).',
-      imagePath: '/images/residences-second-house-master-bedroom.jpg',
+      imagePath: '/images/_filename_Thabazimbi_W_105jpg__Nano_Banana_Pro_96888.jpg',
+      fallbackImagePath: '/images/residences-second-house-master-bedroom.jpg',
       card1Source: 'house2_main_bedroom',
     },
     {
@@ -508,6 +509,30 @@ export const galleryAccommodationImages: Array<{
     category: 'Accommodation',
     title: 'Master Bedroom',
     description: 'Second house  - one main bed, en-suite with shower.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_W_105jpg__Nano_Banana_Pro_96888.jpg',
+    category: 'Accommodation',
+    title: 'Master Bedroom',
+    description: 'Stone Villa master  - wooden bed, cow artwork, wardrobe; en-suite visible.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_W_103jpg__Nano_Banana_Pro_85162.jpg',
+    category: 'Accommodation',
+    title: 'Master Bedroom',
+    description: 'Stone Villa master  - queen bed, rustic headboard, nightstands and cow-at-sunset art.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_W_103jpg__Nano_Banana_Pro_87934.jpg',
+    category: 'Accommodation',
+    title: 'Master Bedroom',
+    description: 'Stone Villa master  - bed, headboard and artwork.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_W_101jpg__Nano_Banana_Pro_04906.jpg',
+    category: 'Accommodation',
+    title: 'Master Bedroom',
+    description: 'Stone Villa master  - dresser with mirror, bed and African decor.',
   },
   {
     src: '/images/residences-second-house-ensuite.jpg',

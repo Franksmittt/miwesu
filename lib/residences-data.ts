@@ -171,7 +171,8 @@ export const secondHouse: ResidenceGroup = {
       id: 'second-house-living',
       label: 'Living Area',
       description: 'Sofa, recliners, TV, console, safari art. Connects to kitchen and both bedrooms.',
-      imagePath: '/images/residences-second-house-living.jpg',
+      imagePath: '/images/_filename_Thabazimbi_N_171jpeg_Nano_Banana_Pro_19305.jpg',
+      fallbackImagePath: '/images/residences-second-house-living.jpg',
       card1Source: 'house2_living_room',
     },
     {
@@ -483,6 +484,24 @@ export const galleryAccommodationImages: Array<{
     category: 'Accommodation',
     title: 'The Stone Villa Living',
     description: 'Living area with doors to master and second bedroom.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_N_171jpeg_Nano_Banana_Pro_19305.jpg',
+    category: 'Accommodation',
+    title: 'The Stone Villa Living',
+    description: 'Open-plan living with leather recliners, kitchen area; Stone Villa.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_N_166jpeg_Nano_Banana_Pro_08274.jpg',
+    category: 'Accommodation',
+    title: 'The Stone Villa Living',
+    description: 'Living/suite area with bed, TV and leather recliner; warm earthy tones.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_N_174jpeg_Nano_Banana_Pro_17489.jpg',
+    category: 'Accommodation',
+    title: 'The Stone Villa Living',
+    description: 'Entertainment area with smart TV, buffalo art and giraffe sculpture; Stone Villa.',
   },
   {
     src: '/images/residences-second-house-master-bedroom.jpg',

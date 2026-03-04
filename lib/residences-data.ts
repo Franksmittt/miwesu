@@ -56,6 +56,14 @@ export const mainLodgeHouse: ResidenceGroup = {
       card1Source: 'main_house_lower_room_2_sleeps_3',
     },
     {
+      id: 'lower-room-en-suite',
+      label: 'Lower Room En-suite (bathroom)',
+      description: 'Corner bathtub with shower, toilet, pedestal sink. Light tiles, dark floor. Serves lower rooms (sleeps 3 each).',
+      imagePath: '/images/_filename_Thabazimbi_W_7jpg_st_Nano_Banana_Pro_78784.jpg',
+      fallbackImagePath: '/images/residences-main-lodge-lower-room-1.jpg',
+      card1Source: '04_lower_room_sleeps_3_bathroom',
+    },
+    {
       id: 'kitchen',
       label: 'Kitchen',
       description: 'Open-plan kitchen, dining, living. Tree trunk, thatched roof, bar, large table, L-shaped sofa, TV. Glass doors to first patio.',
@@ -372,6 +380,18 @@ export const galleryAccommodationImages: Array<{
     category: 'Accommodation',
     title: 'Lower Room 2 (sleeps 3)',
     description: 'Second lower room with Sable antelope painting and en-suite.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_W_7jpg_st_Nano_Banana_Pro_78784.jpg',
+    category: 'Accommodation',
+    title: 'Lower Room En-suite',
+    description: 'Main lodge lower room bathroom – corner bathtub, glass shower, pedestal sink, toilet; wooden beam ceiling.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_N_79jpeg__Nano_Banana_Pro_52109.jpg',
+    category: 'Accommodation',
+    title: 'Lower Room En-suite (bathtub)',
+    description: 'Main lodge lower room bathroom – corner bathtub, toilet, pedestal sink; light tiles, relaxed setting.',
   },
   {
     src: '/images/residences-main-lodge-upper-room-1.jpg',

@@ -121,7 +121,7 @@ export const mainLodgeHouse: ResidenceGroup = {
       id: 'braai-trees',
       label: 'Braai under the trees',
       description: 'Boma/braai under trees; circular fire pit with grill, paved area, seating. Waterhole visible in some views.',
-      imagePath: '/images/_filename_Thabazimbi_W_62jpg_s_Nano_Banana_Pro_55401.jpg',
+      imagePath: '/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg',
       fallbackImagePath: '/images/residences-main-lodge-braai-trees.jpg',
       card1Source: '06_boma_braai_under_trees',
     },
@@ -411,6 +411,24 @@ export const galleryAccommodationImages: Array<{
     category: 'Accommodation',
     title: 'Braai under the trees',
     description: 'Boma/braai under trees; waterhole visible in distance in some views.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg',
+    category: 'Accommodation',
+    title: 'Braai under the trees',
+    description: 'Circular braai pit with grill under large tree; paved patio, wooden windbreak; savanna and water in distance.',
+  },
+  {
+    src: '/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg',
+    category: 'Accommodation',
+    title: 'Braai under the trees (panoramic)',
+    description: 'Wide view of braai area with circular pit, seating and shade tree; watering hole and bushveld beyond.',
+  },
+  {
+    src: '/images/_filename_Panoramicjpg_style_A_Nano_Banana_Pro_56938.jpg',
+    category: 'Accommodation',
+    title: 'Braai under the trees (panoramic)',
+    description: 'Panoramic braai area with pit, bench and tree; dam and savanna landscape in background.',
   },
   {
     src: '/images/residences-main-lodge-trampoline-jungle-gym.jpg',

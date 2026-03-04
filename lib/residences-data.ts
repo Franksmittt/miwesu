@@ -129,7 +129,8 @@ export const mainLodgeHouse: ResidenceGroup = {
       id: 'trampoline-jungle-gym',
       label: 'Trampoline & Jungle Gym',
       description: 'In-ground trampoline(s) and wooden jungle gym. Family play area; connects to pool area.',
-      imagePath: '/images/residences-main-lodge-trampoline-jungle-gym.jpg',
+      imagePath: '/images/_filename_Thabazimbi_N_140jpg__Nano_Banana_Pro_44533.jpg',
+      fallbackImagePath: '/images/residences-main-lodge-trampoline-jungle-gym.jpg',
       card1Source: '05_trampoline_jungle_gym',
     },
     {
@@ -416,6 +417,24 @@ export const galleryAccommodationImages: Array<{
     category: 'Accommodation',
     title: 'Trampoline & Jungle Gym',
     description: 'Family play area near the pool.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_N_140jpg__Nano_Banana_Pro_44533.jpg',
+    category: 'Accommodation',
+    title: 'Trampoline & Jungle Gym',
+    description: 'In-ground trampoline with jungle gym in background; lawn, trees and bushveld; main lodge play area.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_N_146jpeg_Nano_Banana_Pro_23687.jpg',
+    category: 'Accommodation',
+    title: 'Jungle Gym & Swings',
+    description: 'Wooden playground with playhouse, swings and tire swing, climbing; bushveld setting.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_N_146jpeg_Nano_Banana_Pro_98513.jpg',
+    category: 'Accommodation',
+    title: 'Jungle Gym – swings & climbing',
+    description: 'Wooden jungle gym with playhouse, swing set and tire swing; main lodge family play area.',
   },
   {
     src: '/images/residences-second-house-kitchen.jpg',

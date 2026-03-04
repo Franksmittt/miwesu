@@ -152,7 +152,8 @@ export const secondHouse: ResidenceGroup = {
       id: 'second-house-kitchen',
       label: 'Kitchen',
       description: 'Modern, light tones. Open-plan to living room.',
-      imagePath: '/images/residences-second-house-kitchen.jpg',
+      imagePath: '/images/_filename_Thabazimbi_N_158jpeg_Nano_Banana_Pro_84550.jpg',
+      fallbackImagePath: '/images/residences-second-house-kitchen.jpg',
       card1Source: 'house2_kitchen',
     },
     {
@@ -381,6 +382,24 @@ export const galleryAccommodationImages: Array<{
     category: 'Accommodation',
     title: 'The Stone Villa Kitchen',
     description: 'Open-plan to living area.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_N_158jpeg_Nano_Banana_Pro_84550.jpg',
+    category: 'Accommodation',
+    title: 'The Stone Villa Kitchen',
+    description: 'U-shaped kitchen, breakfast bar and stools; light wood cabinets, dark granite; buffalo art, rooster decor.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_N_162jpeg_Nano_Banana_Pro_88825.jpg',
+    category: 'Accommodation',
+    title: 'The Stone Villa Kitchen (peninsula)',
+    description: 'Stone Villa kitchen – peninsula, appliances, sink area; light wood and dark countertops.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_N_164jpeg_Nano_Banana_Pro_50956.jpg',
+    category: 'Accommodation',
+    title: 'The Stone Villa Kitchen & bedroom',
+    description: 'Kitchenette/bar with buffalo art; glimpse into bedroom with dark headboard; open-plan layout.',
   },
   {
     src: '/images/residences-second-house-living.jpg',

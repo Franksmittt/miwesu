@@ -144,7 +144,8 @@ export const secondHouse: ResidenceGroup = {
       id: 'second-house-exterior',
       label: 'The Stone Villa',
       description: 'Thatched roof, tan stucco, sliding glass doors. Braai to the left of house. Lawn, bushveld.',
-      imagePath: '/images/residences-second-house-main.jpg',
+      imagePath: '/images/_filename_Thabazimbi_N_200jpeg_Nano_Banana_Pro_84885.jpg',
+      fallbackImagePath: '/images/residences-second-house-main.jpg',
       card1Source: 'house2_outside',
     },
     {
@@ -242,6 +243,30 @@ export const galleryAccommodationImages: Array<{
     category: 'Accommodation',
     title: 'The Stone Villa',
     description: 'Near the pool  - 6 sleepers, kitchen, living, master and bunk room, two en-suites, outdoor braai.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_N_200jpeg_Nano_Banana_Pro_84885.jpg',
+    category: 'Accommodation',
+    title: 'The Stone Villa (exterior)',
+    description: 'Thatched roof, tan walls, sliding glass doors; lawn and brick pathway; bushveld setting.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_N_150jpeg_Nano_Banana_Pro_22262.jpg',
+    category: 'Accommodation',
+    title: 'The Stone Villa at dusk',
+    description: 'Exterior at twilight with warm interior and pathway lighting; thatched roof, lawn and fence.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_W_110jpg__Nano_Banana_Pro_89562.jpg',
+    category: 'Accommodation',
+    title: 'The Stone Villa – lawn & patio',
+    description: 'Family-friendly exterior; thatched roof, sliding doors, brick patio and lawn; bushveld beyond.',
+  },
+  {
+    src: '/images/_filename_Thabazimbi_W_111jpg__Nano_Banana_Pro_22777.jpg',
+    category: 'Accommodation',
+    title: 'The Stone Villa – morning patio',
+    description: 'Brick patio in front of Stone Villa; thatched roof, sliding door; outdoor living in the bushveld.',
   },
   {
     src: '/images/_filename_Thabazimbi_N_38jpg_s_Nano_Banana_Pro_03494.jpg',

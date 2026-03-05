@@ -28,7 +28,7 @@ module.exports = {
         sans: ['var(--font-montserrat)', 'sans-serif'],
       },
       backgroundImage: {
-        'hero-pattern': "url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?q=80&w=2071&auto=format&fit=crop')",
+        'hero-pattern': "url('/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg')",
         'luxury-gradient': "linear-gradient(135deg, #050505 0%, #1a1a1a 100%)",
         'gold-gradient': "linear-gradient(45deg, #C5A059, #E5C687, #C5A059)",
       },

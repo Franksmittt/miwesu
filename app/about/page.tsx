@@ -31,8 +31,8 @@ export default function AboutPage() {
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/about-hero.jpg"
-              alt="Miwesu Estate"
+              src="/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg"
+              alt="MIWESU Hunters Lodge - Patio and braai under thatch with waterhole and bushveld"
               fill
               sizes="100vw"
               className="object-cover opacity-50"

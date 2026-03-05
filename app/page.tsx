@@ -7,6 +7,7 @@ import Layout from '@/components/Layout'
 import { OrganizationSchema, LocalBusinessSchema } from '@/components/StructuredData'
 import { getCurrency, getIntent } from '@/lib/cookies'
 import { lodgeSummary, mainLodgeHouse, secondHouse } from '@/lib/residences-data'
+import { heroImages } from '@/lib/hero-images'
 import {
   Thermometer,
   Wind,
@@ -72,8 +73,8 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden bg-onyx">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/home-hero.jpg"
-            alt="MIWESU GAME FARM - Makoppa district landscape with dramatic sky, granite koppies, and rolling bushveld"
+            src={heroImages.home}
+            alt="MIWESU Hunters Lodge - Braai and patio under thatch with waterhole and bushveld"
             fill
             sizes="100vw"
             className="object-cover opacity-50 scale-110"

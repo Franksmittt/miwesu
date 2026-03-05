@@ -51,7 +51,7 @@ export default function BlogPage() {
         <section className="relative h-[45vh] sm:h-[50vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/about-hero.jpg"
+              src="/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg"
               alt="Hunter's Journal - MIWESU Game Farm Makoppa district Thabazimbi"
               fill
               sizes="100vw"

@@ -81,8 +81,8 @@ export default function ResidencesPage() {
         <section className="bg-onyx">
           <div className="relative h-[50vh] sm:h-[60vh] min-h-[300px] overflow-hidden">
             <Image
-              src="/images/residences-hero.jpg"
-              alt="Private residences at MIWESU Game Farm - The Homestead and The Stone Villa luxury accommodation Makoppa"
+              src="/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg"
+              alt="Private residences at MIWESU - Braai under the trees, savanna and water; lodge life at Thabazimbi"
               fill
               sizes="100vw"
               className="object-cover"

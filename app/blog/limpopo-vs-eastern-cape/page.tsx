@@ -25,7 +25,7 @@ export default function LimpopoVsEasternCapePage() {
         <section className="bg-marble">
           <div className="relative w-full aspect-video sm:aspect-[21/9] max-h-[50vh] overflow-hidden">
             <Image
-              src="/images/wildlife-hero.jpg"
+              src="/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg"
               alt="Plains game in Limpopo bushveld - MIWESU Game Farm Makoppa district"
               fill
               className="object-cover"

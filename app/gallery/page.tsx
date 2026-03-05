@@ -7,7 +7,7 @@ import { X } from 'lucide-react'
 import { galleryAccommodationImages } from '@/lib/residences-data'
 
 const landscapeAndWildlifeImages = [
-  { src: '/images/home-hero.jpg', category: 'Landscape' as const, title: 'Makoppa Sunset', description: 'The granite koppies at golden hour' },
+  { src: '/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg', category: 'Landscape' as const, title: 'Lodge patio and braai', description: 'Braai under thatch with waterhole and bushveld' },
   { src: '/images/kudu-bull-portrait-01.png', category: 'Wildlife' as const, title: 'Greater Kudu', description: 'The Grey Ghost of the thickets' },
   { src: '/images/home-species-wildebeest.jpg', category: 'Wildlife' as const, title: 'Blue Wildebeest', description: 'Thriving on sweet grazing lawns' },
   { src: '/images/impala-ram-portrait-01.png', category: 'Wildlife' as const, title: 'Impala', description: 'The athlete of the bushveld' },
@@ -56,7 +56,7 @@ export default function GalleryPage() {
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/gallery-hero.jpg"
+              src="/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg"
               alt="Gallery - MIWESU Game Farm landscapes, wildlife and luxury accommodation photography Makoppa district"
               fill
               sizes="100vw"

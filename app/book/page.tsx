@@ -169,7 +169,7 @@ export default function BookPage() {
         <section className="relative border-b border-white/10">
           <div className="absolute inset-0 z-0 opacity-30">
             <Image
-              src="/images/home-hero.jpg"
+              src="/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg"
               alt=""
               fill
               sizes="100vw"

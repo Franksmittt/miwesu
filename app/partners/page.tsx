@@ -30,7 +30,7 @@ export default function PartnersPage() {
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/activities-hero.jpg"
+              src="/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg"
               alt="MIWESU Game Farm experiences - Makoppa district Thabazimbi Limpopo"
               fill
               sizes="100vw"

@@ -188,7 +188,7 @@ export default function WildlifePage() {
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/wildlife-hero.jpg"
+              src="/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg"
               alt="Wildlife and species at MIWESU Game Farm - conservation harvest in Arid Sweet Bushveld Makoppa Thabazimbi"
               fill
               sizes="100vw"

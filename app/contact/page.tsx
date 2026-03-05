@@ -66,7 +66,7 @@ export default function ContactPage() {
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/contact-hero.jpg"
+              src="/images/_filename_Panoramicjpg_style_A_Nano_Banana_Pro_56938.jpg"
               alt="Contact MIWESU Game Farm concierge - D1432 Road Makoppa District Thabazimbi Limpopo"
               fill
               sizes="100vw"

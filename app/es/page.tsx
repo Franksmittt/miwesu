@@ -24,7 +24,7 @@ export default function EsPage() {
         <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/home-hero.jpg"
+              src="/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg"
               alt="MIWESU Game Farm - Caza en Limpopo, Makoppa Thabazimbi"
               fill
               sizes="100vw"

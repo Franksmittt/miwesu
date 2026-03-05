@@ -24,7 +24,7 @@ export const WOOD_PRODUCTS: WoodProduct[] = [
     moq: 50,
     unitLabel: 'bag',
     description: 'Dense, dark hardwood. Sustained heat for long braais.',
-    image: '/images/conservation-hero.jpg',
+    image: '/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg',
     imageAlt: 'Geelhak 12kg bags - MIWESU thermal wood',
   },
   {

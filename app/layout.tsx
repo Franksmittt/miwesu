@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Cinzel, Montserrat } from 'next/font/google'
 import './globals.css'
 import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard } from '@/lib/seo'
+import { AmbientAudioProvider } from '@/components/AmbientAudio'
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -113,7 +114,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth overflow-x-hidden">
       <body className={`${cinzel.variable} ${montserrat.variable} min-w-0`}>
-        {children}
+        <AmbientAudioProvider>{children}</AmbientAudioProvider>
       </body>
     </html>
   )

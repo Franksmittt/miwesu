@@ -7,7 +7,7 @@
 
 ## Executive summary
 
-**Everything that can be done without you is done.** The site is fully built, all code and content are in place, and the only remaining items require **you** (or the client): **backend config** (env vars, database, Stripe, Resend), **hosting/domain**, and **optional** species photos / Search Console. You can invoice for a completed project; the list below is your handover checklist.
+**Everything that can be done without you is done.** The site is fully built, all code and content are in place, and the only remaining items require **you** (or the client): **backend config** (env vars, database, Stripe, Resend, Supabase if you use it), **hosting/domain**, and **optional** species photos / Search Console / ambient audio file. You can invoice for a completed project; the list below is your handover checklist.
 
 ---
 
@@ -17,9 +17,9 @@ Everything in this section is **done**. No backend access or keys were required.
 
 ### 1.1 Site build & code (100%)
 
-- **All 48 routes** built and working: Home, About, Residences (Homestead, Stone Villa), Book, Availability, Rates, Contact, FAQ, Activities, Wildlife, Compare, Conservation, Gallery, Partners, Wood, Trophy Export, Blog (2 articles), DE/ES, 14 species pages, admin bookings, sitemap, robots.
-- **Design system:** Gold/Onyx/Marble, Cinzel + Montserrat, responsive, mobile-first.
-- **Layout & nav:** Fixed nav, full-screen menu, footer, VettingModal, skip link.
+- **54 routes** built and working: Home, About, Residences (Homestead, Stone Villa), Book, Availability, Rates, Contact, FAQ, Activities, Wildlife, Compare, Conservation, Gallery, Partners, Wood, Trophy Export, Blog (2 articles), DE/ES, 14 species pages, **Tools hub + SAPS 520, Biltong Calculator, Telemetry**, admin bookings, sitemap, robots.
+- **Design system:** Gold/Onyx/Marble, Cinzel + Montserrat, responsive, mobile-first. **Liquid Glass** CSS and **Bento Grid** quick-facts on all 14 species pages.
+- **Layout & nav:** Fixed nav, full-screen menu, **Tools** and **ambient-audio toggle** in nav, footer, VettingModal, skip link.
 - **Hero & activity images:** All use real Thabazimbi/lodge images (`lib/hero-images.ts`, `lib/activity-images.ts`); no placeholder filenames.
 - **Motion:** Ken Burns heroes, Design Your Escape (HoverTakeover), Day in Eden (DayInLife), ScrollReveal, gallery by vibe; reduced-motion respected.
 - **Build:** `npm run build` passes; TypeScript and lint clean.
@@ -30,8 +30,10 @@ Everything in this section is **done**. No backend access or keys were required.
 - **Availability API:** Uses DB when `DATABASE_URL` is set; falls back to mock options when not.
 - **Contact form & API:** Validation, intent dropdown; sends via Resend when `RESEND_API_KEY` is set; returns clear 503 if not.
 - **Stripe:** Checkout session + webhook implemented; works when keys are set.
-- **Prisma:** Schema (Unit, Booking), seed for Homestead + Stone Villa, client; ready for `db:push` + `db:seed` once you have a DB.
+- **Prisma:** Schema (Unit, Booking), seed for Homestead + Stone Villa, client; ready for `db:push` + `db:seed` once you have a DB (e.g. Supabase Postgres).
 - **Admin bookings:** `/admin/bookings?secret=...` and API; protected by `NEXT_PUBLIC_ADMIN_BOOKING_SECRET`.
+- **Tools:** **SAPS 520 Generator** (form → PDF for temporary firearm import), **Biltong Yield Calculator** (species + carcass weight → dry biltong estimate), **Live Telemetry Dashboard** (conservation + kiln moisture; simulated data). All linked from **/tools** and the main menu.
+- **Sensory UX:** **Ambient audio** toggle in nav (add `public/audio/bushveld.mp3` to enable). **Haptic feedback** on primary actions: book submit, SAPS 520 Generate PDF, Compare confirm.
 - **SEO:** Per-page metadata, canonicals, OG/Twitter, JSON-LD, sitemap, robots.
 
 ### 1.3 Assets & config done without you
@@ -69,6 +71,7 @@ Nothing in this section can be done without **you** (or the client): credentials
 | **Google Search Console** | When you have the verification code, add it in `app/layout.tsx` under `verification: { google: 'your-code' }` (see comment around lines 102–104). |
 | **Species images (5)** | Dapple Impala, Lechwe, Livingstone Eland, Bushbuck, Golden Wildebeest still use placeholder/wrong-species images. Prompts and filenames are in `docs/*_IMAGE_PROMPTS.md` and `docs/IMAGE_NEEDED_CHECKLIST.md`; you need to supply or commission the photos. |
 | **Custom OG image** | Replace `public/og-image.jpg` with a 1200×630 image if you want a dedicated social card. |
+| **Ambient sound** | Add `public/audio/bushveld.mp3` (bushveld soundscape loop) for the nav audio toggle. See `public/audio/README.md`. |
 
 ---
 
@@ -120,13 +123,13 @@ WOOD_ORDER_CORS_ORIGIN=https://www.miwesu.co.za
 4. [ ] Contact form: set `RESEND_API_KEY` and test.
 5. [ ] If taking payments: Stripe live keys + webhook URL configured.
 6. [ ] (Optional) Google Search Console verification code added in layout.
-7. [ ] Smoke test: Home, Book, Contact, one species, Compare, Gallery, Rates.
+7. [ ] Smoke test: Home, Book, Contact, one species, Compare, Gallery, Rates, **Tools** (SAPS 520, Biltong, Telemetry).
 
 ---
 
 ## 6. Invoicing position
 
-- **Delivered:** Full site (48 routes), booking flow, contact form, availability API, 14 species pages, compare tool, gallery, blog, DE/ES, SEO, Thabazimbi imagery, motion features, OG image, and `.env.example` ready for production.
+- **Delivered:** Full site (54 routes), booking flow, contact form, availability API, 14 species pages (Liquid Glass + Bento quick-facts), compare tool, **Tools** (SAPS 520 PDF generator, Biltong Yield Calculator, Live Telemetry), gallery, blog, DE/ES, SEO, Thabazimbi imagery, motion features, **ambient audio toggle**, **haptic feedback** on primary buttons, OG image, and `.env.example` ready for production.
 - **Outstanding:** Only tasks that require **you** (env, DB, Resend, Stripe, hosting, domain) or optional assets (5 species images, GSC, custom OG). No further dev work is blocked on the codebase.
 
 You can **invoice as project complete** and hand this document (or the checklist in §5) to the client so they know exactly what’s done and what they need to do to go live.

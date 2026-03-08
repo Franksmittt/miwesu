@@ -6,6 +6,7 @@ import Layout from '@/components/Layout'
 import { Target, MapPin, Trophy, Leaf, Clock, Users, ArrowRight, Info, Zap, Shield } from 'lucide-react'
 import Link from 'next/link'
 import CompareButton from '@/components/CompareButton'
+import SpeciesBentoGrid from '@/components/SpeciesBentoGrid'
 
 export default function WarthogPage() {
   useEffect(() => {
@@ -54,31 +55,18 @@ export default function WarthogPage() {
           </div>
         </section>
 
-        {/* Quick Facts Banner */}
-        <section className="bg-onyx text-white py-12 border-y border-white/10">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-              <div className="reveal">
-                <div className="text-gold-500 font-serif text-2xl md:text-3xl mb-2">50-150 kg</div>
-                <div className="text-gray-400 text-xs uppercase tracking-widest">Adult Boar Weight</div>
-              </div>
-              <div className="reveal">
-                <div className="text-gold-500 font-serif text-2xl md:text-3xl mb-2">13+ inches</div>
-                <div className="text-gray-400 text-xs uppercase tracking-widest">Trophy Benchmark</div>
-              </div>
-              <div className="reveal">
-                <div className="text-gold-500 font-serif text-2xl md:text-3xl mb-2">.308 Win</div>
-                <div className="text-gray-400 text-xs uppercase tracking-widest">Recommended Caliber</div>
-              </div>
-              <div className="reveal">
-                <div className="text-gold-500 font-serif text-2xl md:text-3xl mb-2">12-15 years</div>
-                <div className="text-gray-400 text-xs uppercase tracking-widest">Lifespan</div>
-              </div>
-            </div>
-            <div className="flex justify-center mt-8">
-              <CompareButton currentSpeciesSlug="warthog" currentSpeciesName="Warthog" />
-            </div>
-          </div>
+        {/* Quick Facts – Bento Grid */}
+        <section className="bg-onyx text-white py-12 sm:py-16 border-y border-white/10">
+          <SpeciesBentoGrid
+            variant="dark"
+            cells={[
+              { label: 'Adult Boar Weight', value: '50–150 kg' },
+              { label: 'Trophy Benchmark', value: '13+ inches' },
+              { label: 'Recommended Caliber', value: '.308 Win' },
+              { label: 'Lifespan', value: '12–15 years' },
+            ]}
+            footer={<CompareButton currentSpeciesSlug="warthog" currentSpeciesName="Warthog" />}
+          />
         </section>
 
         {/* Introduction Section */}

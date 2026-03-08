@@ -22,6 +22,7 @@ import 'react-day-picker/dist/style.css'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { hapticConfirm } from '@/lib/haptic'
 
 const guestSchema = z.object({
   firstName: z.string().min(1, 'First name required'),
@@ -122,6 +123,7 @@ export default function BookPage() {
 
   const onGuestSubmit = (formData: GuestFormData) => {
     if (!selectedOption || !checkIn || !checkOut) return
+    hapticConfirm()
     const payload = {
       unitId: selectedOption.unitIds[0],
       unitIds: selectedOption.unitIds,

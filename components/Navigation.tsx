@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { X } from 'lucide-react'
+import { AmbientAudioToggle } from '@/components/AmbientAudio'
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -67,8 +68,9 @@ export default function Navigation() {
           </Link>
         </div>
 
-        {/* Right: CTA */}
-        <div className="flex items-center space-x-6">
+        {/* Right: Ambient + CTA */}
+        <div className="flex items-center space-x-2 sm:space-x-6">
+          <AmbientAudioToggle />
           <button
             onClick={() => {
               if (typeof window !== 'undefined') {
@@ -131,6 +133,7 @@ export default function Navigation() {
                 <li><Link href="/rates" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Rates</Link></li>
                 <li><Link href="/faq" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">FAQ</Link></li>
                 <li><Link href="/wood" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Wood & Thermal</Link></li>
+                <li><Link href="/tools" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Tools</Link></li>
               </ul>
             </div>
             <div>

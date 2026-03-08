@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Scale, X, ChevronDown } from 'lucide-react'
+import { hapticConfirm, hapticLight } from '@/lib/haptic'
 import { speciesComparisonData, type SpeciesComparison } from '@/lib/species-comparison-data'
 
 interface CompareButtonProps {
@@ -26,6 +27,7 @@ export default function CompareButton({ currentSpeciesSlug, currentSpeciesName, 
 
   const handleCompare = () => {
     if (!selectedSlug) return
+    hapticConfirm()
     setOpen(false)
     setSelectedSlug(null)
     router.push(`/compare?a=${currentSpeciesSlug}&b=${selectedSlug}`)
@@ -45,7 +47,7 @@ export default function CompareButton({ currentSpeciesSlug, currentSpeciesName, 
     <>
       <button
         type="button"
-        onClick={handleOpen}
+        onClick={() => { hapticLight(); handleOpen() }}
         className={
           isHero
             ? 'inline-flex items-center gap-2 mt-6 px-5 py-2.5 rounded border border-gold-500/60 text-gold-400 hover:bg-gold-500/10 hover:border-gold-400 font-sans text-sm uppercase tracking-widest transition-colors'

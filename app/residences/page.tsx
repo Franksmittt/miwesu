@@ -80,16 +80,20 @@ export default function ResidencesPage() {
         {/* Hero: image only, then text box below */}
         <section className="bg-onyx">
           <div className="relative h-[50vh] sm:h-[60vh] min-h-[300px] overflow-hidden">
-            <Image
-              src="/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg"
-              alt="Private residences at MIWESU - Braai under the trees, savanna and water; lodge life at Thabazimbi"
-              fill
-              sizes="100vw"
-              className="object-cover"
-              priority
-            />
+            <div className="absolute inset-0 overflow-hidden">
+              <div className="absolute w-[120%] h-[120%] -left-[10%] -top-[10%] animate-ken-burns">
+                <Image
+                  src="/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg"
+                  alt="Private residences at MIWESU - Braai under the trees, savanna and water; lodge life at Thabazimbi"
+                  fill
+                  sizes="100vw"
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </div>
           </div>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="bg-onyx-light border border-white/5 p-6 sm:p-10 -mt-0 relative z-10">
               <span className="text-gold-400 text-[10px] sm:text-xs tracking-[0.4em] uppercase font-bold block mb-2">
                 The Collection
@@ -108,7 +112,7 @@ export default function ResidencesPage() {
         <section className="py-16 sm:py-24 lg:py-32 bg-onyx text-white relative overflow-hidden">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gold-500/5 rounded-full blur-[100px]"></div>
 
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center mb-12 sm:mb-20 reveal">
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold">
                 Exclusive Use

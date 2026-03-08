@@ -53,13 +53,13 @@ export default function PartnersPage() {
         </section>
 
         <section className="py-16 md:py-24 bg-marble">
-          <div className="max-w-4xl mx-auto px-6 text-center reveal mb-16">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal mb-16">
             <p className="font-sans text-gray-600 text-lg leading-relaxed">
               MIWESU GAME FARM works with a select group of partners to ensure your trophy and your trip are handled from the field in the Makoppa district to your home. Contact our concierge for current recommendations and introductions.
             </p>
           </div>
 
-          <div className="max-w-5xl mx-auto px-6 space-y-16">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
             <div className="reveal grid md:grid-cols-[auto_1fr] gap-8 items-start p-8 bg-white border border-gray-100 shadow-sm">
               <div className="w-14 h-14 rounded-full bg-gold-500/10 flex items-center justify-center flex-shrink-0">
                 <Package className="w-7 h-7 text-gold-600" />
@@ -108,7 +108,7 @@ export default function PartnersPage() {
         </section>
 
         <section className="py-16 md:py-24 bg-onyx text-white">
-          <div className="max-w-4xl mx-auto px-6 text-center reveal">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
             <Handshake className="w-14 h-14 text-gold-400 mx-auto mb-6" />
             <h2 className="font-serif text-2xl md:text-3xl mb-4">
               Not Just a Farm -A Full Solution

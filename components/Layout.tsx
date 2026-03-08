@@ -19,7 +19,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </a>
       <Navigation />
       <VettingModal />
-      <div className={isHome ? '' : 'pt-[100px] sm:pt-[112px]'}>
+      <div className={`min-w-0 overflow-x-hidden ${isHome ? '' : 'pt-[100px] sm:pt-[112px]'}`}>
         {children}
       </div>
       <Footer />

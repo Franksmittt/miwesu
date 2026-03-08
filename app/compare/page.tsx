@@ -68,7 +68,7 @@ export default function ComparePage() {
       <main id="main-content" className="min-h-screen bg-marble">
         {/* Hero */}
         <section className="bg-onyx text-white py-16 md:py-24 border-b border-white/10">
-          <div className="max-w-7xl mx-auto px-6 text-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
               Wildlife
             </span>
@@ -84,7 +84,7 @@ export default function ComparePage() {
 
         {/* Selectors */}
         <section className="py-12 md:py-16 bg-marble border-b border-gray-200">
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-8">
               <div className="relative">
                 <label className="block text-xs font-sans uppercase tracking-widest text-gray-500 mb-2">
@@ -175,7 +175,7 @@ export default function ComparePage() {
         {/* Side-by-side cards + table */}
         {speciesA && speciesB && (
           <section className="py-12 md:py-20 bg-marble">
-            <div className="max-w-7xl mx-auto px-6">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid md:grid-cols-2 gap-8 mb-16">
                 <div className="bg-white border border-gray-200 overflow-hidden">
                   <div className="relative h-56 md:h-64 bg-onyx">
@@ -279,7 +279,7 @@ export default function ComparePage() {
 
         {/* CTA */}
         <section className="py-16 md:py-24 bg-onyx text-white border-t border-white/10">
-          <div className="max-w-7xl mx-auto px-6 text-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="font-serif text-2xl md:text-4xl text-white mb-4">
               Explore all species
             </h2>

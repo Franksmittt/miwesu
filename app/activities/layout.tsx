@@ -10,8 +10,8 @@ const breadcrumbItems = [
 
 export const metadata: Metadata = {
   title: 'Activities & Experiences | Miwesu Pursuits',
-  description: 'Discover diverse experiences at MIWESU GAME FARM: conservation harvest, photographic safaris, celestial safaris, mobile wellness, vita-darting, and wildlife viewing. Custom experiences tailored to your interests in the Makoppa district, Thabazimbi.',
-  keywords: ['conservation harvest', 'photographic safari', 'celestial safari', 'wellness', 'vita-darting', 'wildlife viewing', 'game drives', 'Limpopo safari', 'plains game hunting packages', 'Makoppa district', 'Thabazimbi', 'MIWESU GAME FARM'],
+  description: 'Discover diverse experiences at MIWESU GAME FARM: conservation harvest, photographic safaris, celestial safaris, mobile wellness, and wildlife viewing. Custom experiences tailored to your interests in the Makoppa district, Thabazimbi.',
+  keywords: ['conservation harvest', 'photographic safari', 'celestial safari', 'wellness', 'wildlife viewing', 'game drives', 'Limpopo safari', 'plains game hunting packages', 'Makoppa district', 'Thabazimbi', 'MIWESU GAME FARM'],
   openGraph: generateOpenGraph(
     'Activities & Experiences | Miwesu Pursuits',
     'Discover diverse experiences at MIWESU GAME FARM: conservation harvest, photographic safaris, celestial safaris, and more in the Makoppa district.',

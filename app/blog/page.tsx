@@ -74,7 +74,7 @@ export default function BlogPage() {
         </section>
 
         <section className="py-16 md:py-24 bg-marble">
-          <div className="max-w-4xl mx-auto px-6">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="space-y-10">
               {POSTS.map((post, i) => (
                 <article key={post.slug} className="reveal border-b border-gray-200 pb-10 last:border-0 last:pb-0">

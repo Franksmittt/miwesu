@@ -35,7 +35,7 @@ export default function LimpopoVsEasternCapePage() {
           </div>
         </section>
         <section className="py-16 md:py-24 bg-marble">
-          <div className="max-w-3xl mx-auto px-6">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <Link href="/blog" className="inline-flex items-center text-gold-600 font-sans text-sm mb-8 hover:underline">
               <ArrowLeft className="w-4 h-4 mr-2" /> Hunter&apos;s Journal
             </Link>

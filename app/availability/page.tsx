@@ -52,8 +52,8 @@ export default function AvailabilityPage() {
           </div>
         </section>
 
-        <section className="py-16 md:py-24 bg-marble">
-          <div className="max-w-3xl mx-auto px-6">
+        <section className="py-16 sm:py-24 lg:py-32 bg-marble">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="reveal bg-white border border-gray-100 shadow-sm p-8 md:p-12 text-center mb-12">
               <Calendar className="w-16 h-16 text-gold-500 mx-auto mb-6" />
               <h2 className="font-serif text-2xl md:text-3xl text-onyx mb-4">

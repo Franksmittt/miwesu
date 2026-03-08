@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '@/components/Layout'
+import { activityImages } from '@/lib/activity-images'
 import {
   Target,
   Star,
@@ -46,37 +47,31 @@ export default function ActivitiesPage() {
       icon: Target,
       title: 'Conservation Harvest',
       description: 'Ethical hunting experiences guided by our professional trackers. All harvests follow strict conservation quotas and ethical practices.',
-      image: '/images/activity-conservation-harvest-card.jpg',
+      image: activityImages.conservationHarvestCard,
     },
     {
       icon: Camera,
       title: 'Photographic Safaris',
       description: 'Capture the beauty of the Makoppa district with guided photographic safaris. Perfect for wildlife enthusiasts and photographers.',
-      image: '/images/activity-photographic-safari-card.jpg',
+      image: activityImages.photographicSafariCard,
     },
     {
       icon: Star,
       title: 'Celestial Safaris',
       description: 'Thabazimbi offers some of the darkest skies in the southern hemisphere. Private astronomy sessions available.',
-      image: '/images/activity-celestial-safari-card.jpg',
+      image: activityImages.celestialSafariCard,
     },
     {
       icon: Heart,
       title: 'Mobile Wellness',
       description: 'In-villa spa treatments using indigenous Marula oils. Relaxation without leaving your sanctuary.',
-      image: '/images/activity-mobile-wellness-card.jpg',
-    },
-    {
-      icon: Activity,
-      title: 'Vita-Darting',
-      description: 'Participate in a non-lethal "Green Hunt." Assist vets with DNA collection and micro-chipping.',
-      image: '/images/activity-vita-darting-card.jpg',
+      image: activityImages.mobileWellnessCard,
     },
     {
       icon: Binoculars,
       title: 'Wildlife Viewing',
       description: 'Guided game drives and walking safaris to observe the diverse wildlife of the Iron Mountain.',
-      image: '/images/activity-wildlife-viewing-card.jpg',
+      image: activityImages.wildlifeViewingCard,
     },
   ]
 
@@ -85,15 +80,17 @@ export default function ActivitiesPage() {
       <main id="main-content" className="min-h-screen bg-marble">
         {/* Hero Section */}
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
-          <div className="absolute inset-0 z-0">
-            <Image
-              src="/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg"
-              alt="Activities at MIWESU Game Farm - conservation harvest, photographic safari, celestial safari Makoppa Thabazimbi"
-              fill
-              sizes="100vw"
-              className="object-cover opacity-50"
-              priority
-            />
+          <div className="absolute inset-0 z-0 overflow-hidden">
+            <div className="absolute w-[120%] h-[120%] -left-[10%] -top-[10%] animate-ken-burns">
+              <Image
+                src={activityImages.hero}
+                alt="Activities at MIWESU Game Farm - conservation harvest, photographic safari, celestial safari Makoppa Thabazimbi"
+                fill
+                sizes="100vw"
+                className="object-cover opacity-50"
+                priority
+              />
+            </div>
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
           <div className="relative z-20 text-center px-4 sm:px-6">
@@ -107,8 +104,8 @@ export default function ActivitiesPage() {
         </section>
 
         {/* Activities Grid */}
-        <section className="py-32 bg-onyx text-white relative">
-          <div className="max-w-7xl mx-auto px-6">
+        <section className="py-16 sm:py-24 lg:py-32 bg-onyx text-white relative">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 sm:mb-20">
               {activities.map((activity, index) => {
                 const Icon = activity.icon
@@ -151,7 +148,7 @@ export default function ActivitiesPage() {
                 <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-8 sm:mb-12">
                   <div className="relative h-[350px] sm:h-[450px] md:h-[500px]">
                     <Image
-                      src="/images/conservation-harvest-main.jpg"
+                      src={activityImages.conservationHarvestMain}
                       alt="Conservation harvest - ethical hunting"
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
@@ -188,7 +185,7 @@ export default function ActivitiesPage() {
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
                   <div className="relative h-[250px] sm:h-[300px]">
                     <Image
-                      src="/images/conservation-harvest-tracker.jpg"
+                      src={activityImages.conservationHarvestTracker}
                       alt="Professional tracker in the bushveld"
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
@@ -206,7 +203,7 @@ export default function ActivitiesPage() {
                   </div>
                   <div className="relative h-[300px]">
                     <Image
-                      src="/images/conservation-harvest-processing.jpg"
+                      src={activityImages.conservationHarvestProcessing}
                       alt="Meat processing facility"
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
@@ -239,7 +236,7 @@ export default function ActivitiesPage() {
                   </div>
                   <div className="relative h-[500px]">
                     <Image
-                      src="/images/photographic-safari-main.jpg"
+                      src={activityImages.photographicSafariMain}
                       alt="Photographic safari in the Makoppa district"
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
@@ -252,7 +249,7 @@ export default function ActivitiesPage() {
                 <div className="grid md:grid-cols-3 gap-6 mb-12">
                   <div className="relative h-[300px]">
                     <Image
-                      src="/images/photographic-safari-waterhole.jpg"
+                      src={activityImages.photographicSafariWaterhole}
                       alt="Wildlife photography at waterhole"
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
@@ -261,7 +258,7 @@ export default function ActivitiesPage() {
                   </div>
                   <div className="relative h-[300px]">
                     <Image
-                      src="/images/photographic-safari-koppies.jpg"
+                      src={activityImages.photographicSafariKoppies}
                       alt="Landscape photography of granite koppies"
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
@@ -270,7 +267,7 @@ export default function ActivitiesPage() {
                   </div>
                   <div className="relative h-[300px]">
                     <Image
-                      src="/images/photographic-safari-sunset.jpg"
+                      src={activityImages.photographicSafariSunset}
                       alt="Sunset photography in the bushveld"
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
@@ -286,7 +283,7 @@ export default function ActivitiesPage() {
                   <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="relative h-[500px]">
                       <Image
-                        src="/images/celestial-safari-main.jpg"
+                        src={activityImages.celestialSafariMain}
                         alt="Stargazing in Thabazimbi dark skies"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
@@ -357,7 +354,7 @@ export default function ActivitiesPage() {
                   </div>
                   <div className="relative h-[400px]">
                     <Image
-                      src="/images/birding-main.jpg"
+                      src={activityImages.birdingMain}
                       alt="Birding in the Makoppa district"
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
@@ -420,7 +417,7 @@ export default function ActivitiesPage() {
                 </div>
                 <div className="relative h-[500px]">
                   <Image
-                    src="/images/walking-safari-main.jpg"
+                    src={activityImages.walkingSafariMain}
                     alt="Walking safari in the Makoppa district"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -429,19 +426,9 @@ export default function ActivitiesPage() {
                 </div>
               </div>
 
-              {/* Vita-Darting & Mobile Wellness */}
-              <div className="grid md:grid-cols-2 gap-12 mb-20">
+              {/* Mobile Wellness */}
+              <div className="grid md:grid-cols-1 gap-12 mb-20">
                 <div className="bg-onyx-light border border-white/5 p-10 reveal delay-600">
-                  <Activity className="w-12 h-12 text-gold-500 mb-6" />
-                  <h3 className="font-serif text-3xl text-white mb-4">Vita-Darting</h3>
-                  <p className="text-gray-300 text-lg leading-loose mb-6">
-                    Participate in a non-lethal "Green Hunt." Assist our veterinary team with DNA collection, micro-chipping, and health monitoring of the reserve's wildlife. This hands-on conservation experience is perfect for those who want to contribute directly to wildlife management.
-                  </p>
-                  <p className="text-gray-300 text-lg leading-loose">
-                    Work alongside professionals to ensure the health and genetic diversity of the herd. This is conservation in action, and you're part of it.
-                  </p>
-                </div>
-                <div className="bg-onyx-light border border-white/5 p-10 reveal delay-700">
                   <Heart className="w-12 h-12 text-gold-500 mb-6" />
                   <h3 className="font-serif text-3xl text-white mb-4">Mobile Wellness</h3>
                   <p className="text-gray-300 text-lg leading-loose mb-6">
@@ -457,8 +444,8 @@ export default function ActivitiesPage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-32 bg-marble-dark">
-          <div className="max-w-7xl mx-auto px-6 text-center reveal">
+        <section className="py-16 sm:py-24 lg:py-32 bg-marble-dark">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
             <Mountain className="w-16 h-16 text-gold-500 mx-auto mb-8" />
             <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-8">
               Custom Experiences

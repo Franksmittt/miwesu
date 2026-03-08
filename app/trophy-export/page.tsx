@@ -55,7 +55,7 @@ export default function TrophyExportPage() {
 
         {/* Intro */}
         <section className="py-16 md:py-24 bg-marble">
-          <div className="max-w-4xl mx-auto px-6 text-center reveal">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
             <p className="font-sans text-gray-600 text-lg leading-relaxed">
               International hunters often ask one question above all: <strong className="text-onyx">How do I get my trophy home?</strong> At MIWESU GAME FARM we work with trusted dipping, shipping, and taxidermy partners so your Limpopo trophy reaches you without hassle. This guide outlines the process from field to your door.
             </p>
@@ -64,7 +64,7 @@ export default function TrophyExportPage() {
 
         {/* Process Steps */}
         <section className="py-16 md:py-24 bg-onyx text-white">
-          <div className="max-w-4xl mx-auto px-6">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-serif text-3xl md:text-4xl text-center mb-16 reveal">
               From the Bushveld to Your Home
             </h2>
@@ -123,7 +123,7 @@ export default function TrophyExportPage() {
 
         {/* Travel to Miwesu */}
         <section className="py-16 md:py-24 bg-marble">
-          <div className="max-w-4xl mx-auto px-6">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-serif text-3xl md:text-4xl text-onyx text-center mb-10 reveal">
               Getting to MIWESU
             </h2>
@@ -143,7 +143,7 @@ export default function TrophyExportPage() {
 
         {/* Trust */}
         <section className="py-16 md:py-24 bg-onyx text-white">
-          <div className="max-w-4xl mx-auto px-6 text-center reveal">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
             <Shield className="w-14 h-14 text-gold-400 mx-auto mb-6" />
             <h2 className="font-serif text-2xl md:text-3xl mb-4">
               A Complete Logistics Solution

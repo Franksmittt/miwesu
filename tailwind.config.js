@@ -38,7 +38,16 @@ module.exports = {
       },
       letterSpacing: {
         'widest-xl': '0.3em',
-      }
+      },
+      keyframes: {
+        kenBurns: {
+          '0%': { transform: 'scale(1) translate(0, 0)' },
+          '100%': { transform: 'scale(1.08) translate(-2%, -2%)' },
+        },
+      },
+      animation: {
+        'ken-burns': 'kenBurns 18s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

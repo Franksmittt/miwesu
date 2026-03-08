@@ -176,7 +176,6 @@ Total Pages: 14 main pages + 14 species pages + blog (index + 2 articles) + 2 lo
    - Photographic Safaris
    - Celestial Safaris (Astronomy)
    - Mobile Wellness
-   - Vita-Darting (Green Hunt)
    - Wildlife Viewing
    - Birding section
    - 4x4 Trails

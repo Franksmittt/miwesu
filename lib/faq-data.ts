@@ -21,7 +21,7 @@ export const FAQ_ITEMS: Array<{ question: string; answer: string }> = [
   {
     question: 'What activities are available for non-hunters?',
     answer:
-      'We offer photographic safaris, guided game drives, walking safaris, celestial safaris (astronomy), mobile wellness treatments, and vita-darting (non-lethal conservation activities). The reserve is perfect for observers, photographers, and those seeking a luxury wilderness experience.',
+      'We offer photographic safaris, guided game drives, walking safaris, celestial safaris (astronomy), and mobile wellness treatments. The reserve is perfect for observers, photographers, and those seeking a luxury wilderness experience.',
   },
   {
     question: 'Is Miwesu malaria-free?',

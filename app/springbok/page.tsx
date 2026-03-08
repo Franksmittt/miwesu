@@ -56,7 +56,7 @@ export default function SpringbokPage() {
 
         {/* Quick Facts Banner */}
         <section className="bg-onyx text-white py-12 border-y border-white/10">
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div className="reveal">
                 <div className="text-gold-500 font-serif text-2xl md:text-3xl mb-2">30-50 kg</div>
@@ -83,7 +83,7 @@ export default function SpringbokPage() {
 
         {/* Introduction Section */}
         <section className="py-20 md:py-32 bg-marble">
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
               <div className="flex flex-col">
                 <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
@@ -116,7 +116,7 @@ export default function SpringbokPage() {
 
         {/* Taxonomy & History Section */}
         <section className="py-20 md:py-32 bg-onyx text-white">
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16 reveal">
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Classification & History
@@ -180,7 +180,7 @@ export default function SpringbokPage() {
 
         {/* Morphology & Physical Characteristics */}
         <section className="py-20 md:py-32 bg-marble">
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16 reveal">
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Physical Characteristics
@@ -320,7 +320,7 @@ export default function SpringbokPage() {
 
         {/* Behavior & Ecology */}
         <section className="py-20 md:py-32 bg-onyx text-white">
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16 reveal">
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Behavioral Ecology
@@ -387,7 +387,7 @@ export default function SpringbokPage() {
 
         {/* Hunting Section */}
         <section className="py-20 md:py-32 bg-marble">
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16 reveal">
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 The Hunt
@@ -531,7 +531,7 @@ export default function SpringbokPage() {
 
         {/* Trophy Evaluation */}
         <section className="py-20 md:py-32 bg-onyx text-white">
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16 reveal">
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Trophy Evaluation
@@ -604,7 +604,7 @@ export default function SpringbokPage() {
 
         {/* Venison & Utilization */}
         <section className="py-20 md:py-32 bg-marble">
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16 reveal">
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 The Harvest
@@ -641,7 +641,7 @@ export default function SpringbokPage() {
 
         {/* Conclusion Section */}
         <section className="py-20 md:py-32 bg-onyx text-white">
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16 reveal">
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Conclusion
@@ -683,7 +683,7 @@ export default function SpringbokPage() {
 
         {/* CTA Section */}
         <section className="py-20 md:py-32 bg-marble">
-          <div className="max-w-7xl mx-auto px-6 text-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="reveal">
               <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
                 Experience the Springbok at MIWESU

@@ -52,11 +52,11 @@ export default function ConservationPage() {
         </section>
 
         {/* Main Content */}
-        <section className="py-32 bg-onyx text-white relative overflow-hidden">
+        <section className="py-16 sm:py-24 lg:py-32 bg-onyx text-white relative overflow-hidden">
           <div className="absolute inset-0 bg-hero-pattern opacity-10 bg-fixed"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-onyx via-onyx/90 to-transparent"></div>
 
-          <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center mb-12 sm:mb-20">
               <div className="reveal">
                 <div className="inline-block bg-gold-500 text-onyx px-4 py-1 text-[10px] font-bold uppercase tracking-widest mb-4 sm:mb-6">
@@ -258,8 +258,8 @@ export default function ConservationPage() {
         </section>
 
         {/* Impact Section */}
-        <section className="py-32 bg-marble-dark">
-          <div className="max-w-7xl mx-auto px-6">
+        <section className="py-16 sm:py-24 lg:py-32 bg-marble-dark">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-20 reveal">
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
                 The Impact

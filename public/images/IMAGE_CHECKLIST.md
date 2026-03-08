@@ -14,7 +14,6 @@ Use **.jpg** or **.jpeg** (both work). **Done** = file is in folder and will dis
 | `activity-photographic-safari-card.jpg` | Card image: Photographic Safaris | **done** |
 | `activity-celestial-safari-card.jpg` | Card image: Celestial Safaris (stargazing) | **done** |
 | `activity-mobile-wellness-card.jpg` | Card image: Mobile Wellness (spa / Marula) | **done** |
-| `activity-vita-darting-card.jpg` | Card image: Vita-Darting (green hunt) | **done** |
 | `activity-wildlife-viewing-card.jpg` | Card image: Wildlife Viewing (game drives) | **done** |
 | `conservation-harvest-main.jpg` | Conservation harvest section: main scene | **done** |
 | `conservation-harvest-tracker.jpg` | Tracker / guide in the field | **done** |

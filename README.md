@@ -1,107 +1,109 @@
-# Miwesu - The Royal Residence
+# MIWESU — The Royal Residence
 
-A luxury Next.js website for Miwesu Game Reserve, showcasing the Iron Eden sanctuary in the Waterberg region of South Africa.
+Luxury Next.js website for **MIWESU Game Farm / Hunters Lodge**, Thabazimbi, South Africa — the **Iron Eden** sanctuary in the Makoppa district (Waterberg).
 
-## Features
+---
 
-- Modern Next.js 14 with App Router
-- Tailwind CSS with custom luxury color palette (Gold, Onyx, Marble)
-- Responsive design with mobile menu
-- Smooth scroll animations
-- Lucide React icons
-- Google Fonts (Cinzel & Montserrat)
-- Image optimization with Next.js Image component
-- **Multipage structure ready** - Easy to add new pages
+## Project overview
 
-## Getting Started
+For a full project overview (lodge features & benefits, wildlife, accommodation & facilities, layout & styling, and a summary of every page), see:
+
+- **[docs/PROJECT_OVERVIEW.md](docs/PROJECT_OVERVIEW.md)**
+
+It covers:
+
+- Lodge / farm features and benefits (location, accommodation summary, on-site facilities, activities, conservation).
+- All 14 wildlife species (Greater Kudu, Blue Wildebeest, Impala, Gemsbok, Warthog, Blesbok, Bushbuck, Cape Buffalo, Dapple Impala, Golden Wildebeest, Springbok, Red Hartebeest, Lechwe, Livingstone Eland).
+- Accommodation and facilities (Homestead 16 sleepers, Stone Villa 6 sleepers; facilities data model and gallery).
+- Layout and styling (design system, colours, fonts, hero images, navigation, responsiveness).
+- Every page and a short summary of each (Home, About, Residences, Book, Activities, Wildlife, Compare, Conservation, Gallery, Rates, Contact, FAQ, species pages, blog, etc.).
+
+---
+
+## Features (site)
+
+- Next.js 14 with App Router
+- Tailwind CSS with custom luxury palette (Gold, Onyx, Marble) and Cinzel / Montserrat
+- Responsive layout, mobile menu, scroll-reveal animations
+- Lodge imagery (Thabazimbi) for heroes and accommodation
+- Species comparison tool (side-by-side, shareable URLs)
+- Booking flow, availability, contact, Stripe checkout/webhooks (as configured)
+- Prisma for bookings (if enabled)
+
+---
+
+## Getting started
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm or yarn
 
 ### Installation
 
-1. Install dependencies:
 ```bash
 npm install
 ```
 
-2. Run the development server:
+### Development
+
 ```bash
 npm run dev
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000).
 
-### Build for Production
+### Production build
 
 ```bash
 npm run build
 npm start
 ```
 
-## Project Structure
+---
+
+## Project structure (high level)
 
 ```
 miwesu/
 ├── app/
-│   ├── layout.tsx      # Root layout with fonts
-│   ├── page.tsx        # Home page (landing page)
-│   ├── about/
-│   │   └── page.tsx    # Example: About page
-│   └── globals.css     # Global styles and Tailwind
+│   ├── layout.tsx, page.tsx, globals.css
+│   ├── about/, activities/, book/, compare/, contact/, conservation/
+│   ├── faq/, gallery/, rates/, wildlife/, wood/, trophy-export/
+│   ├── availability/, partners/
+│   ├── residences/ (index, homestead, stone-villa)
+│   ├── blog/ (index, limpopo-vs-eastern-cape, sweetveld-vs-sourveld)
+│   ├── [slug]/          # Species pages (greater-kudu, blesbok, etc.)
+│   ├── de/, es/          # Locale entry pages
+│   ├── admin/bookings/
+│   └── api/              # contact, availability, checkout, webhooks, wood-order, admin
 ├── components/
-│   ├── Layout.tsx      # Shared layout (Navigation + Modal)
-│   ├── Navigation.tsx  # Navigation bar with mobile menu
-│   └── VettingModal.tsx # Access request modal
-├── public/             # Static assets
-├── tailwind.config.js  # Tailwind configuration
-├── next.config.js      # Next.js configuration
-└── package.json        # Dependencies
+│   ├── Layout.tsx, Navigation.tsx, BookingWidget.tsx, CompareButton.tsx
+│   ├── StructuredData.tsx, VettingModal.tsx
+│   └── ...
+├── lib/
+│   ├── residences-data.ts    # Accommodation & facilities
+│   ├── species-comparison-data.ts
+│   ├── hero-images.ts
+│   └── ...
+├── public/images/           # Lodge and species imagery
+├── docs/
+│   ├── PROJECT_OVERVIEW.md  # Full overview (this doc)
+│   └── *_IMAGE_PROMPTS.md, IMAGE_NEEDED_CHECKLIST.md
+├── tailwind.config.js
+├── next.config.js
+└── package.json
 ```
 
-## Adding New Pages
-
-To add a new page, create a new folder in the `app` directory with a `page.tsx` file:
-
-```
-app/
-  ├── your-page/
-  │   └── page.tsx
-```
-
-Example:
-```tsx
-import Layout from '@/components/Layout'
-
-export default function YourPage() {
-  return (
-    <Layout>
-      <main className="min-h-screen bg-marble pt-24">
-        {/* Your page content */}
-      </main>
-    </Layout>
-  )
-}
-```
-
-The `Layout` component automatically includes the Navigation and VettingModal on all pages.
+---
 
 ## Customization
 
-### Colors
+- **Colours:** `tailwind.config.js` — Gold (300–600), Onyx, Marble.
+- **Fonts:** `app/layout.tsx` — Cinzel (serif), Montserrat (sans).
+- **Hero images:** `lib/hero-images.ts` and per-page overrides; assets in `public/images/`.
 
-The color palette is defined in `tailwind.config.js`:
-- **Gold**: 300 (#E5C687), 400 (#D4AF37), 500 (#C5A059), 600 (#997B3D)
-- **Onyx**: DEFAULT (#050505), light (#121212)
-- **Marble**: DEFAULT (#FAFAFA), dark (#F4F4F4)
-
-### Fonts
-
-Fonts are loaded via Next.js Google Fonts in `app/layout.tsx`:
-- **Cinzel**: Serif font for headings
-- **Montserrat**: Sans-serif font for body text
+---
 
 ## Technologies
 
@@ -110,7 +112,8 @@ Fonts are loaded via Next.js Google Fonts in `app/layout.tsx`:
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Lucide React](https://lucide.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
+- Prisma (optional, for bookings)
 
-## License
+---
 
-© 2025 Miwesu Game Reserve
+© 2025 MIWESU Game Reserve · Thabazimbi, South Africa

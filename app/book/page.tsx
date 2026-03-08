@@ -177,7 +177,7 @@ export default function BookPage() {
             />
           </div>
           <div className="absolute inset-0 z-0 bg-gradient-to-b from-onyx/60 to-onyx" />
-          <div className="relative z-10 max-w-4xl mx-auto px-6 py-12 sm:py-16">
+          <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
             <Link
               href="/residences"
               className="inline-flex items-center text-gold-400/90 hover:text-white text-xs sm:text-sm uppercase tracking-[0.2em] font-medium mb-6 transition-colors"
@@ -195,7 +195,7 @@ export default function BookPage() {
 
         {/* Step progress */}
         <div className="sticky top-[72px] sm:top-[88px] z-20 border-b border-white/10 bg-onyx/95 backdrop-blur-md">
-          <div className="max-w-4xl mx-auto px-6">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <nav className="flex items-center justify-between gap-2 py-4" aria-label="Booking progress">
               {STEPS.map((s, i) => {
                 const isActive = step === s.num
@@ -232,7 +232,7 @@ export default function BookPage() {
           </div>
         </div>
 
-        <div className="max-w-4xl mx-auto px-6 py-10 sm:py-14">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
           {/* Trip summary bar (steps 2 & 3) */}
           {(step === 2 || step === 3) && dateSummary && (
             <div className="mb-8 flex flex-wrap items-center gap-3 rounded-xl bg-white/5 border border-white/10 px-4 py-3 text-sm">

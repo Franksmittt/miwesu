@@ -38,8 +38,8 @@ export default function FAQPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 sm:py-32 bg-marble">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6">
+        <section className="py-16 sm:py-24 lg:py-32 bg-marble">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="space-y-3 sm:space-y-4">
               {faqs.map((faq, index) => (
                 <div
@@ -52,7 +52,7 @@ export default function FAQPage() {
                     aria-expanded={openIndex === index}
                     aria-controls={`faq-answer-${index}`}
                     onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                    className="w-full px-4 sm:px-8 py-4 sm:py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors gap-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-inset"
+                    className="w-full min-h-[44px] px-4 sm:px-8 py-4 sm:py-6 text-left flex justify-between items-center hover:bg-gray-50 transition-colors gap-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-inset touch-manipulation"
                   >
                     <h3 className="font-serif text-lg sm:text-xl text-onyx pr-4 sm:pr-8">
                       {faq.question}

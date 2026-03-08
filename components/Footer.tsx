@@ -6,9 +6,9 @@ import { MapPin, Mail, Phone, ArrowUpRight } from 'lucide-react'
 export default function Footer() {
   return (
     <footer className="bg-onyx border-t border-white/5 overflow-x-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top: Brand + tagline */}
-        <div className="pt-16 pb-12 border-b border-white/5">
+        <div className="pt-16 sm:pt-20 pb-12 sm:pb-14 border-b border-white/5">
           <Link href="/" className="inline-block group">
             <span className="block font-serif text-2xl sm:text-3xl tracking-[0.2em] text-white font-bold group-hover:text-gold-500 transition-colors">
               MIWESU
@@ -23,16 +23,16 @@ export default function Footer() {
         </div>
 
         {/* Links: two rows  - primary then secondary */}
-        <div className="py-10 sm:py-12 grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 md:gap-12">
+        <div className="py-12 sm:py-14 lg:py-16 grid grid-cols-2 sm:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
           <div>
             <h4 className="text-[10px] uppercase tracking-[0.25em] text-gold-500 font-bold mb-4 font-sans">
               Stay
             </h4>
             <ul className="space-y-2 sm:space-y-3 font-sans text-sm">
-              <li><Link href="/residences" className="text-gray-400 hover:text-white transition-colors flex items-center gap-1 group py-2 -my-2 block"><span>Residences</span><ArrowUpRight className="w-3 h-3 opacity-0 -translate-y-0.5 translate-x-0.5 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all" /></Link></li>
-              <li><Link href="/residences/homestead" className="text-gray-400 hover:text-white transition-colors py-2 -my-2 block">The Homestead</Link></li>
-              <li><Link href="/residences/stone-villa" className="text-gray-400 hover:text-white transition-colors py-2 -my-2 block">The Stone Villa</Link></li>
-              <li><Link href="/gallery" className="text-gray-400 hover:text-white transition-colors py-2 -my-2 block">Gallery</Link></li>
+              <li><Link href="/residences" className="text-gray-400 hover:text-white transition-colors flex items-center gap-1 group min-h-[44px] py-3 touch-manipulation"><span>Residences</span><ArrowUpRight className="w-3 h-3 opacity-0 -translate-y-0.5 translate-x-0.5 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all flex-shrink-0" /></Link></li>
+              <li><Link href="/residences/homestead" className="text-gray-400 hover:text-white transition-colors min-h-[44px] py-3 flex items-center touch-manipulation block">The Homestead</Link></li>
+              <li><Link href="/residences/stone-villa" className="text-gray-400 hover:text-white transition-colors min-h-[44px] py-3 flex items-center touch-manipulation block">The Stone Villa</Link></li>
+              <li><Link href="/gallery" className="text-gray-400 hover:text-white transition-colors min-h-[44px] py-3 flex items-center touch-manipulation block">Gallery</Link></li>
             </ul>
           </div>
           <div>
@@ -40,10 +40,10 @@ export default function Footer() {
               Experience
             </h4>
             <ul className="space-y-2 sm:space-y-3 font-sans text-sm">
-              <li><Link href="/activities" className="text-gray-400 hover:text-white transition-colors py-2 -my-2 block">Activities</Link></li>
-              <li><Link href="/wildlife" className="text-gray-400 hover:text-white transition-colors py-2 -my-2 block">Wildlife</Link></li>
-              <li><Link href="/conservation" className="text-gray-400 hover:text-white transition-colors py-2 -my-2 block">Conservation</Link></li>
-              <li><Link href="/about" className="text-gray-400 hover:text-white transition-colors py-2 -my-2 block">About</Link></li>
+              <li><Link href="/activities" className="text-gray-400 hover:text-white transition-colors min-h-[44px] py-3 flex items-center touch-manipulation block">Activities</Link></li>
+              <li><Link href="/wildlife" className="text-gray-400 hover:text-white transition-colors min-h-[44px] py-3 flex items-center touch-manipulation block">Wildlife</Link></li>
+              <li><Link href="/conservation" className="text-gray-400 hover:text-white transition-colors min-h-[44px] py-3 flex items-center touch-manipulation block">Conservation</Link></li>
+              <li><Link href="/about" className="text-gray-400 hover:text-white transition-colors min-h-[44px] py-3 flex items-center touch-manipulation block">About</Link></li>
             </ul>
           </div>
           <div>
@@ -51,10 +51,10 @@ export default function Footer() {
               Concierge
             </h4>
             <ul className="space-y-2 sm:space-y-3 font-sans text-sm">
-              <li><Link href="/rates" className="text-gray-400 hover:text-white transition-colors py-2 -my-2 block">Rates</Link></li>
-              <li><Link href="/availability" className="text-gray-400 hover:text-white transition-colors py-2 -my-2 block">Availability</Link></li>
-              <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors py-2 -my-2 block">Contact</Link></li>
-              <li><Link href="/faq" className="text-gray-400 hover:text-white transition-colors py-2 -my-2 block">FAQ</Link></li>
+              <li><Link href="/rates" className="text-gray-400 hover:text-white transition-colors min-h-[44px] py-3 flex items-center touch-manipulation block">Rates</Link></li>
+              <li><Link href="/availability" className="text-gray-400 hover:text-white transition-colors min-h-[44px] py-3 flex items-center touch-manipulation block">Availability</Link></li>
+              <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors min-h-[44px] py-3 flex items-center touch-manipulation block">Contact</Link></li>
+              <li><Link href="/faq" className="text-gray-400 hover:text-white transition-colors min-h-[44px] py-3 flex items-center touch-manipulation block">FAQ</Link></li>
             </ul>
           </div>
           <div>
@@ -83,7 +83,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="py-5 sm:py-6 flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-4 border-t border-white/5">
+        <div className="py-6 sm:py-8 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-6 border-t border-white/5">
           <p className="text-gray-500 text-[10px] uppercase tracking-widest font-sans">
             © {new Date().getFullYear()} MIWESU GAME FARM
           </p>

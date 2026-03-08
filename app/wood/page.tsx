@@ -64,7 +64,7 @@ export default function WoodPage() {
 
         {/* Stats strip */}
         <section className="py-10 md:py-14 bg-onyx text-white border-t border-white/5">
-          <div className="max-w-5xl mx-auto px-6">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
               <div className="reveal text-center p-6 border border-white/10 rounded-xl">
                 <Zap className="w-10 h-10 text-gold-500 mx-auto mb-3" />
@@ -87,7 +87,7 @@ export default function WoodPage() {
 
         {/* Shop: product grid */}
         <section className="py-16 md:py-24 bg-marble">
-          <div className="max-w-6xl mx-auto px-6">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
               <div>
                 <h2 className="font-serif text-3xl md:text-4xl text-onyx mb-2 reveal">
@@ -157,7 +157,7 @@ export default function WoodPage() {
 
         {/* CTA */}
         <section className="py-16 md:py-24 bg-onyx text-white">
-          <div className="max-w-3xl mx-auto px-6 text-center reveal">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
             <Package className="w-14 h-14 text-gold-500 mx-auto mb-6" />
             <h2 className="font-serif text-3xl md:text-4xl mb-4">
               Order thermal wood

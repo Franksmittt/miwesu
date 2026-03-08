@@ -208,8 +208,8 @@ export default function WildlifePage() {
         </section>
 
         {/* Species Section */}
-        <section className="py-32 bg-onyx text-white relative">
-          <div className="max-w-7xl mx-auto px-6">
+        <section className="py-16 sm:py-24 lg:py-32 bg-onyx text-white relative">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-20 reveal">
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold">
                 The Species
@@ -464,7 +464,7 @@ export default function WildlifePage() {
 
         {/* Ecological Management Section */}
         <section className="py-32 bg-marble-dark">
-          <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-16 items-center mb-20 reveal">
               <div>
                 <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
@@ -520,8 +520,8 @@ export default function WildlifePage() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-32 bg-onyx text-white">
-          <div className="max-w-4xl mx-auto px-6 text-center reveal">
+        <section className="py-16 sm:py-24 lg:py-32 bg-onyx text-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
             <h2 className="font-serif text-4xl md:text-5xl mb-8">
               Experience the Portfolio
             </h2>

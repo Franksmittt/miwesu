@@ -72,8 +72,8 @@ export default function RatesPage() {
         </section>
 
         {/* Rates Section */}
-        <section className="py-32 bg-onyx text-white relative">
-          <div className="max-w-7xl mx-auto px-6">
+        <section className="py-16 sm:py-24 lg:py-32 bg-onyx text-white relative">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-20 reveal">
               <div className="flex justify-center mb-4">
                 <CurrencySwitcher current={currency} className="text-white/80" />
@@ -315,8 +315,8 @@ export default function RatesPage() {
         </section>
 
         {/* Contact CTA */}
-        <section className="py-32 bg-marble-dark">
-          <div className="max-w-4xl mx-auto px-6 text-center reveal">
+        <section className="py-16 sm:py-24 lg:py-32 bg-marble-dark">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
             <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-8">
               Custom Packages Available
             </h2>

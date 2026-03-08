@@ -93,8 +93,8 @@ export default function HomesteadPage() {
           </div>
         </section>
 
-        <section className="py-16 sm:py-24 bg-onyx text-white">
-          <div className="max-w-7xl mx-auto px-6">
+        <section className="py-16 sm:py-24 lg:py-32 bg-onyx text-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="font-serif text-3xl sm:text-4xl text-white mb-8 reveal">
               Facilities & Layout
             </h2>

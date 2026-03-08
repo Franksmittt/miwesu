@@ -26,6 +26,9 @@ import {
   Quote,
 } from 'lucide-react'
 import BookingWidget from '@/components/BookingWidget'
+import HoverTakeover from '@/components/HoverTakeover'
+import DayInLife from '@/components/DayInLife'
+import ScrollReveal from '@/components/ScrollReveal'
 
 export default function Home() {
   const [intent, setIntent] = useState<'biltong' | 'trophy'>('trophy')
@@ -69,17 +72,19 @@ export default function Home() {
       <LocalBusinessSchema />
       <main id="main-content">
 
-      {/* Hero Section */}
+      {/* Hero Section — Slow-Breathe (Ken Burns) for immersion */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden bg-onyx">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src={heroImages.home}
-            alt="MIWESU Hunters Lodge - Braai and patio under thatch with waterhole and bushveld"
-            fill
-            sizes="100vw"
-            className="object-cover opacity-50 scale-110"
-            priority
-          />
+        <div className="absolute inset-0 z-0 overflow-hidden">
+          <div className="absolute w-[120%] h-[120%] -left-[10%] -top-[10%] animate-ken-burns">
+            <Image
+              src={heroImages.home}
+              alt="MIWESU Hunters Lodge - Braai and patio under thatch with waterhole and bushveld"
+              fill
+              sizes="100vw"
+              className="object-cover opacity-50"
+              priority
+            />
+          </div>
           <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
         </div>
 
@@ -133,7 +138,7 @@ export default function Home() {
 
         {/* Bottom Info Bar */}
         <div className="absolute bottom-0 w-full border-t border-white/5 bg-onyx/90 backdrop-blur-md py-6 hidden md:block z-20">
-          <div className="max-w-7xl mx-auto px-6 flex justify-between text-white/50 text-[10px] uppercase tracking-[0.2em] font-sans">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between text-white/50 text-[10px] uppercase tracking-[0.2em] font-sans">
             <div className="flex items-center">
               <Thermometer className="inline w-3 h-3 mr-2 mb-0.5 text-gold-600" />{' '}
               28°C / Clear Sky
@@ -150,12 +155,15 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Design Your Escape — vibe hover takeover */}
+      <HoverTakeover />
+
       {/* The Estate / Origins */}
       <section
         id="philosophy"
         className="py-16 sm:py-24 lg:py-32 bg-marble relative overflow-hidden"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col items-center mb-12 sm:mb-20 reveal">
             <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6">
               The Provenance
@@ -234,8 +242,8 @@ export default function Home() {
       >
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gold-500/5 rounded-full blur-[100px]"></div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-          <div className="text-center mb-12 sm:mb-20 reveal">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <ScrollReveal className="text-center mb-12 sm:mb-20">
             <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold">
               The Collection
             </span>
@@ -243,7 +251,7 @@ export default function Home() {
               Private Residences
             </h2>
             <div className="h-1 w-20 bg-gold-gradient mx-auto mt-8"></div>
-          </div>
+          </ScrollReveal>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {/* Residence Card 1  - The Homestead */}
@@ -356,13 +364,16 @@ export default function Home() {
         </div>
       </section>
 
+      {/* A Day in Eden — scroll timeline */}
+      <DayInLife />
+
       {/* The Royal Pursuit */}
       <section id="hunting" className="py-16 sm:py-24 lg:py-32 bg-onyx text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-hero-pattern opacity-5 bg-fixed"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-onyx via-transparent to-onyx"></div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-          <div className="text-center mb-12 sm:mb-24 reveal">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <ScrollReveal className="text-center mb-12 sm:mb-24">
             <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold">
               The Portfolio
             </span>
@@ -375,7 +386,7 @@ export default function Home() {
                 ? 'Ons verkoop nie diere nie; ons bestuur \'n ekosisteem. Beskikbaarheid word deur ons jaarlikse sensus bepaal. Pryse in Rand. Hier is die primêre spesies van die Ystergberg.'
                 : 'We do not sell animals; we manage an ecosystem. The availability of specific quarry is dictated strictly by our annual ecological census. Inquire for USD packages. Below are the primary species of the Iron Mountain.'}
             </p>
-          </div>
+          </ScrollReveal>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {/* Species Card 1: Greater Kudu */}
@@ -600,7 +611,7 @@ export default function Home() {
 
       {/* Lifestyle / Observer */}
       <section className="py-16 sm:py-24 lg:py-32 bg-marble-dark">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="text-gold-600 text-xs tracking-[0.4em] uppercase font-bold">
             Beyond the Rifle
           </span>
@@ -608,7 +619,7 @@ export default function Home() {
             The Observer's Journey
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-0 shadow-luxury bg-white">
+          <div className="grid md:grid-cols-2 gap-0 shadow-luxury bg-white">
             <Link
               href="/activities"
               className="group relative p-8 sm:p-12 border-r border-b md:border-b-0 border-gray-100 hover:bg-onyx transition-colors duration-500 cursor-pointer block"
@@ -626,7 +637,7 @@ export default function Home() {
             </Link>
             <Link
               href="/activities"
-              className="group relative p-8 sm:p-12 border-r border-b md:border-b-0 border-gray-100 hover:bg-onyx transition-colors duration-500 cursor-pointer block"
+              className="group relative p-8 sm:p-12 hover:bg-onyx transition-colors duration-500 cursor-pointer block"
             >
               <div className="mb-6 sm:mb-8">
                 <Heart className="w-8 h-8 sm:w-10 sm:h-10 text-gold-500 mx-auto" />
@@ -639,28 +650,13 @@ export default function Home() {
                 without leaving your sanctuary.
               </p>
             </Link>
-            <Link
-              href="/activities"
-              className="group relative p-8 sm:p-12 hover:bg-onyx transition-colors duration-500 cursor-pointer block"
-            >
-              <div className="mb-6 sm:mb-8">
-                <Activity className="w-8 h-8 sm:w-10 sm:h-10 text-gold-500 mx-auto" />
-              </div>
-              <h3 className="font-serif text-xl sm:text-2xl text-onyx group-hover:text-white transition-colors mb-3 sm:mb-4">
-                Vita-Darting
-              </h3>
-              <p className="font-sans text-sm text-gray-500 group-hover:text-gray-400 transition-colors leading-relaxed">
-                Participate in a non-lethal "Green Hunt." Assist vets with DNA
-                collection and micro-chipping.
-              </p>
-            </Link>
           </div>
         </div>
       </section>
 
       {/* Adaptive Social Proof: US vs SA */}
-      <section className="py-16 sm:py-24 bg-marble border-y border-gray-100">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+      <section className="py-16 sm:py-24 lg:py-28 bg-marble border-y border-gray-100">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <span className="text-gold-600 text-xs tracking-[0.4em] uppercase font-bold block text-center mb-6">
             What Guests Say
           </span>
@@ -712,7 +708,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-hero-pattern opacity-10 bg-fixed"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-onyx via-onyx/90 to-transparent"></div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
           <div className="md:w-1/2 mb-8 md:mb-0 reveal">
             <div className="inline-block bg-gold-500 text-onyx px-4 py-1 text-[10px] font-bold uppercase tracking-widest mb-4 sm:mb-6">
               Conservation First

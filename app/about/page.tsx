@@ -51,8 +51,8 @@ export default function AboutPage() {
         </section>
 
         {/* Main Content */}
-        <section className="py-32 bg-marble">
-          <div className="max-w-7xl mx-auto px-6">
+        <section className="py-16 sm:py-24 lg:py-32 bg-marble">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-12 sm:mb-20">
               <div className="reveal">
                 <Image

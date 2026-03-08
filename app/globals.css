@@ -80,6 +80,7 @@
   @media (prefers-reduced-motion: reduce) {
     .reveal { opacity: 1; transform: none; }
     .reveal.active { opacity: 1; transform: none; }
+    .animate-ken-burns { animation: none; }
   }
 
   /* Vertical text */

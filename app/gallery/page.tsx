@@ -7,6 +7,7 @@ import Layout from '@/components/Layout'
 import { X } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { galleryAccommodationImages } from '@/lib/residences-data'
+import AuthenticGallery from '@/components/AuthenticGallery'
 
 const vibeGroups = [
   {
@@ -207,6 +208,9 @@ export default function GalleryPage() {
                 </div>
               ))}
             </div>
+
+            {/* Moments in Eden – curated real-world Facebook images (Cinematic Verité, Clean Kill) */}
+            <AuthenticGallery />
 
             {/* Featured Collections */}
             <div className="space-y-16 mb-20">

@@ -40,7 +40,7 @@ export default function WoodPage() {
         <section className="relative h-[45vh] sm:h-[50vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg"
+              src="/images/_filename_wood-macro-grainjpg__Nano_Banana_Pro_31490.jpg"
               alt="MIWESU Game Farm wood and thermal fuel from the Makoppa district"
               fill
               sizes="100vw"

@@ -33,7 +33,7 @@ export default function DappleImpalaPage() {
         <section className="relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/home-species-impala.jpg"
+              src="/images/_filename_dapple-impala-ram-po_Nano_Banana_Pro_49376.jpg"
               alt="Dapple Impala in natural habitat"
               fill
               sizes="100vw"
@@ -92,7 +92,7 @@ export default function DappleImpalaPage() {
               </div>
               <div className="relative h-full min-h-[400px] md:min-h-[500px]">
                 <Image
-                  src="/images/home-species-impala.jpg"
+                  src="/images/_filename_dapple-impala-ram-po_Nano_Banana_Pro_49376.jpg"
                   alt="Dapple Impala ram showing unique coloration"
                   fill
                   className="object-cover shadow-luxury"
@@ -226,7 +226,7 @@ export default function DappleImpalaPage() {
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
                 <Image
-                  src="/images/home-species-impala.jpg"
+                  src="/images/_filename_dapple-impala-ram-po_Nano_Banana_Pro_49376.jpg"
                   alt="Dapple Impala horn configuration"
                   fill
                   className="object-cover shadow-luxury"

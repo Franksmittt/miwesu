@@ -72,8 +72,8 @@ export default function WildebeestPage() {
         {/* Introduction Section */}
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
                   Introduction
                 </span>
@@ -90,7 +90,7 @@ export default function WildebeestPage() {
                   In the Makoppa district, our Sweetveld grasslands provide ideal habitat for Blue Wildebeest. The nutrient-rich grasses sustain them in peak condition year-round, resulting in exceptional trophy quality and superior meat production.
                 </p>
               </div>
-              <div className="relative h-full min-h-[400px] md:min-h-[500px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/2wildebeest-bull-standing-01.png"
                   alt="Blue Wildebeest bull on open plains"
@@ -114,8 +114,8 @@ export default function WildebeestPage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-4">Taxonomic Classification</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   The Blue Wildebeest belongs to the family Bovidae, subfamily Alcelaphinae, and the tribe Alcelaphini. This tribe includes other large grazers such as the Hartebeest and Topi. The genus <em className="text-gold-400">Connochaetes</em> contains two species: the Blue Wildebeest (Connochaetes taurinus) and the Black Wildebeest (Connochaetes gnou).
@@ -130,7 +130,7 @@ export default function WildebeestPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px] md:min-h-[500px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/3wildebeest-cow-bushveld-01.png"
                   alt="Blue Wildebeest cow in bushveld habitat"
@@ -226,8 +226,8 @@ export default function WildebeestPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
-              <div className="relative h-full min-h-[400px]">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/4wildebeest-bull-portrait-02.png"
                   alt="Blue Wildebeest coat coloration and horn detail"
@@ -235,7 +235,7 @@ export default function WildebeestPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Coat Coloration and Markings</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   The Blue Wildebeest's coat is a distinctive bluish-grey to dark grey, with darker vertical stripes running along the flanks. The name "Blue" refers to this bluish-grey coloration, which can appear almost black in certain lighting conditions.
@@ -253,8 +253,8 @@ export default function WildebeestPage() {
             </div>
 
             {/* Horn Configuration */}
-            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Both bulls and cows carry horns, which is unusual among antelope. The horns are broad at the base and curve outward, then upward, and finally inward, creating a distinctive shape that resembles a handlebar mustache or the letter "S".
@@ -269,7 +269,7 @@ export default function WildebeestPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/4wildebeest-bull-portrait-02.png"
                   alt="Blue Wildebeest horn configuration and trophy character"
@@ -342,8 +342,8 @@ export default function WildebeestPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
-              <div className="relative h-full min-h-[400px]">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/5wildebeest-herd-bushveld-01.png"
                   alt="Blue Wildebeest herd in bushveld"
@@ -351,7 +351,7 @@ export default function WildebeestPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Daily Activity Cycle</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Wildebeest are active throughout the day, with peak feeding activity during the early morning and late afternoon. During the heat of midday, they may rest in the shade or stand in groups, but they remain alert and ready to flee.
@@ -406,8 +406,8 @@ export default function WildebeestPage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Grazing Preferences</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Blue Wildebeest are bulk grazers, feeding primarily on short, sweet grasses. They prefer Themeda triandra (red grass), Cynodon dactylon (couch grass), and other palatable grass species. They favor areas with fresh growth, often moving to recently burned or mowed areas where new grass is sprouting.
@@ -419,7 +419,7 @@ export default function WildebeestPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/6wildebeest-bull-standing-02.png"
                   alt="Wildebeest grazing in Sweetveld grassland"
@@ -429,8 +429,8 @@ export default function WildebeestPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
-              <div className="relative h-full min-h-[400px]">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/6wildebeest-bull-standing-02.png"
                   alt="Blue Wildebeest at water in grassland"
@@ -438,7 +438,7 @@ export default function WildebeestPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Water Requirements</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Wildebeest are water-dependent and must drink daily when water is available. This dependency makes waterholes focal points for their daily movement patterns, especially during the dry season.
@@ -473,8 +473,8 @@ export default function WildebeestPage() {
             </div>
 
             {/* Hunting Strategies */}
-            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Hunting Strategies</h3>
                 <div className="space-y-6">
                   <div className="bg-onyx-light border border-white/10 p-6">
@@ -502,7 +502,7 @@ export default function WildebeestPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-full min-h-[500px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Hunting Stalk Image Placeholder</span>
                 </div>
@@ -562,13 +562,13 @@ export default function WildebeestPage() {
             </div>
 
             {/* Shot Placement */}
-            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
-              <div className="relative h-full min-h-[500px]">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Shot Placement Diagram Image Placeholder</span>
                 </div>
               </div>
-              <div className="flex flex-col">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Shot Placement</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   Proper shot placement is critical. The Wildebeest's vitals are positioned slightly lower and more forward than in North American deer, and the animal's toughness means marginal shots may not anchor the animal.
@@ -613,8 +613,8 @@ export default function WildebeestPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Distinguishing Bulls vs. Cows</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-6">
                   Shooting a cow by mistake is a serious error in trophy hunting. Careful observation is required.
@@ -655,7 +655,7 @@ export default function WildebeestPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-full min-h-[500px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Bull vs Cow Comparison Image Placeholder</span>
                 </div>
@@ -721,8 +721,8 @@ export default function WildebeestPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Meat Characteristics</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Wildebeest meat is deep red, fine-grained, and extremely lean. It has a rich, gamey flavor that reflects the animal's grass-based diet. The meat is often described as having a "beef-like" quality but with a distinctive wild game character.
@@ -734,7 +734,7 @@ export default function WildebeestPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Wildebeest Venison Image Placeholder</span>
                 </div>

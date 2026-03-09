@@ -708,8 +708,8 @@ export default function GreaterKuduPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Meat Characteristics</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Kudu meat is deep red, fine-grained, and extremely lean. It has a rich, gamey flavor that is more pronounced than that of grazers like Impala or Blesbok, reflecting the animal's browsing diet.
@@ -721,10 +721,8 @@ export default function GreaterKuduPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Kudu Venison Image Placeholder</span>
-                </div>
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden bg-gray-800 border border-white/10 flex items-center justify-center">
+                <span className="text-gray-400 text-sm">Kudu Venison Image Placeholder</span>
               </div>
             </div>
 

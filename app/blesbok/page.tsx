@@ -72,8 +72,8 @@ export default function BlesbokPage() {
         {/* Introduction Section */}
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
                   Introduction
                 </span>
@@ -90,7 +90,7 @@ export default function BlesbokPage() {
                   The Blesbok represents a unique intersection of conservation success, commercial utility, and sporting challenge -a testament to the resilience of nature and the efficacy of value-based conservation.
                 </p>
               </div>
-              <div className="relative h-full min-h-[400px] md:min-h-[500px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/2blesbok-ram-standing-01.png"
                   alt="Blesbok ram in grassland habitat"
@@ -115,8 +115,8 @@ export default function BlesbokPage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-4">Taxonomic Classification</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   The Blesbok is a member of the family Bovidae, falling within the tribe Alcelaphini. This tribe, which also includes the Hartebeest and Wildebeest, is characterized by high shoulders, sloping backs, and elongated skulls -adaptations evolved for endurance running and grazing in open environments.
@@ -131,7 +131,7 @@ export default function BlesbokPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px] md:min-h-[500px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/4blesbok-ram-portrait-02.png"
                   alt="Blesbok ram portrait showing horn and facial markings"
@@ -228,8 +228,8 @@ export default function BlesbokPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="relative h-full min-h-[400px]">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/3blesbok-ewe-bushveld-01.png"
                   alt="Blesbok ewe showing coat coloration and markings"
@@ -238,7 +238,7 @@ export default function BlesbokPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div>
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Coat Coloration and Markings</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   The coat of the Blesbok is a study in camouflage and signaling. The dorsal hair is a reddish-brown, which can appear quite dark, almost purple-black, in older rams, especially when viewed in low light.
@@ -256,8 +256,8 @@ export default function BlesbokPage() {
             </div>
 
             {/* Horn Configuration */}
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Unlike Impala or Kudu where only males carry horns, both Blesbok rams and ewes are horned. This evolutionary trait suggests that females may need weapons to defend feeding territories or calves in the open plains where hiding is difficult.
@@ -272,7 +272,7 @@ export default function BlesbokPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/4blesbok-ram-portrait-02.png"
                   alt="Blesbok ram horn detail and lyre shape"
@@ -380,8 +380,8 @@ export default function BlesbokPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="relative h-full min-h-[400px]">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/5blesbok-herd-bushveld-01.png"
                   alt="Blesbok herd in bushveld"
@@ -390,7 +390,7 @@ export default function BlesbokPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div>
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Daily Activity Cycle</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Blesbok are diurnal, with peak feeding times in the cool of the early morning and late afternoon. During the heat of the day (11:00 AM – 3:00 PM), they exhibit "shade seeking," often standing in the shade of Acacia trees or clustering with heads lowered, facing away from the sun.
@@ -445,8 +445,8 @@ export default function BlesbokPage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Grazing Preferences</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Blesbok are selective bulk grazers, with a strong preference for short, sweet grasses (Themeda triandra, Cynodon dactylon, Eragrostis species). They favor open grassland plains (Highveld) and are particularly attracted to areas that have been recently burned or mowed, where the new growth is fresh and high in protein.
@@ -458,7 +458,7 @@ export default function BlesbokPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/6blesbok-ram-standing-02.png"
                   alt="Blesbok ram in grassland"
@@ -469,8 +469,8 @@ export default function BlesbokPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="relative h-full min-h-[400px]">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/6blesbok-ram-standing-02.png"
                   alt="Blesbok at waterhole or grassland"
@@ -479,7 +479,7 @@ export default function BlesbokPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div>
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Water Requirements</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Unlike the Gemsbok or Springbok which can extract moisture from roots and tubers, the Blesbok must drink surface water regularly, typically once a day. This dependency means they rarely wander more than a few kilometers from a water source.
@@ -514,8 +514,8 @@ export default function BlesbokPage() {
             </div>
 
             {/* Hunting Strategies */}
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Hunting Strategies</h3>
                 <div className="space-y-6">
                   <div className="bg-onyx-light border border-white/10 p-6">
@@ -537,7 +537,7 @@ export default function BlesbokPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-full min-h-[500px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/2blesbok-ram-standing-01.png"
                   alt="Blesbok hunting stalk in habitat"
@@ -607,13 +607,13 @@ export default function BlesbokPage() {
             </div>
 
             {/* Shot Placement */}
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="relative h-full min-h-[500px]">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Shot Placement Diagram Image Placeholder</span>
                 </div>
               </div>
-              <div>
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Shot Placement</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   African antelope anatomy places the heart and lungs slightly lower and further forward than in North American deer.
@@ -658,8 +658,8 @@ export default function BlesbokPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Distinguishing Rams vs. Ewes</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-6">
                   Shooting a female by mistake is a cardinal sin in trophy hunting.
@@ -700,7 +700,7 @@ export default function BlesbokPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-full min-h-[500px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/3blesbok-ewe-bushveld-01.png"
                   alt="Blesbok ewe and ram comparison in habitat"
@@ -771,8 +771,8 @@ export default function BlesbokPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Meat Characteristics</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Blesbok meat is deep red, fine-grained, and extremely lean. It has a distinctive gamey flavor -often described as "herby" or aromatic due to the essential oils in the Karoo bushes and sweet grasses they consume.
@@ -784,10 +784,8 @@ export default function BlesbokPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Blesbok Venison Image Placeholder</span>
-                </div>
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden flex items-center justify-center bg-gray-800 border border-white/10">
+                <span className="text-gray-400 text-sm">Blesbok Venison Image Placeholder</span>
               </div>
             </div>
 
@@ -821,8 +819,8 @@ export default function BlesbokPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 reveal">
-              <div>
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 reveal">
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Traditional Recipes</h3>
                 <div className="space-y-6">
                   <div className="bg-onyx-light border border-white/10 p-6">
@@ -845,7 +843,7 @@ export default function BlesbokPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-full min-h-[500px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Culinary Preparation Image Placeholder</span>
                 </div>
@@ -869,8 +867,8 @@ export default function BlesbokPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Spoor (Footprints)</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Blesbok hooves are heart-shaped but elongated, typical of the Alcelaphine tribe.
@@ -886,20 +884,20 @@ export default function BlesbokPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Blesbok Spoor (Footprint) Image Placeholder</span>
                 </div>
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="relative h-full min-h-[400px]">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Dung Midden Image Placeholder</span>
                 </div>
               </div>
-              <div>
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Dung (Scat) and Middens</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Blesbok dung appears as small, black pellets, often clustered together. When fresh, they are shiny and moist.

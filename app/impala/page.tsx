@@ -238,7 +238,7 @@ export default function ImpalaPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div>
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Coat Coloration and Markings</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   The Impala's coat is a beautiful reddish-brown to tan color, with a lighter underside. The most distinctive feature is the black markings: a vertical stripe on each hind leg (the "M" marking), black patches on the forehead, and black tips on the ears.
@@ -356,7 +356,7 @@ export default function ImpalaPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div>
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Daily Activity Cycle</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Impala are active throughout the day, with peak feeding activity during early morning and late afternoon. During the heat of midday, they may rest in the shade, but remain alert and ready to flee.
@@ -445,7 +445,7 @@ export default function ImpalaPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div>
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Habitat Requirements</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Impala prefer areas with a mix of grassland and woodland, known as "bushveld fringe." They require access to both open areas for grazing and dense cover for security. This mixed habitat provides food, water, and protection from predators.
@@ -575,7 +575,7 @@ export default function ImpalaPage() {
                   <span className="text-gray-400 text-sm">Shot Placement Diagram Image Placeholder</span>
                 </div>
               </div>
-              <div>
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Shot Placement</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   Proper shot placement is critical. The Impala's vitals are positioned slightly lower and more forward than in North American deer.
@@ -704,8 +704,8 @@ export default function ImpalaPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Meat Characteristics</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Impala meat is deep red, fine-grained, and extremely lean. It has a mild, sweet flavor that is less gamey than some other antelope species. The meat is tender and versatile, suitable for a wide variety of cooking methods.
@@ -717,10 +717,8 @@ export default function ImpalaPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Impala Venison Image Placeholder</span>
-                </div>
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden bg-gray-800 border border-white/10 flex items-center justify-center">
+                <span className="text-gray-400 text-sm">Impala Venison Image Placeholder</span>
               </div>
             </div>
 

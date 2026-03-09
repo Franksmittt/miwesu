@@ -72,8 +72,8 @@ export default function GemsbokPage() {
         {/* Introduction Section */}
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
                   Introduction
                 </span>
@@ -90,7 +90,7 @@ export default function GemsbokPage() {
                   Gemsbok have been successfully introduced to the Limpopo bushveld and thrive on well-managed reserves like MIWESU. In the Makoppa district, the mix of open grassland, Mopane and Acacia scrub, and flat to gently undulating terrain provides ideal habitat, sustaining them in peak condition and resulting in exceptional trophy quality.
                 </p>
               </div>
-              <div className="relative h-full min-h-[400px] md:min-h-[500px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/gemsbok-standing-01.png"
                   alt="Gemsbok standing in bushveld"
@@ -115,8 +115,8 @@ export default function GemsbokPage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-4">Taxonomic Classification</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   The Gemsbok belongs to the family Bovidae, subfamily Hippotraginae. The genus <em className="text-gold-400">Oryx</em> contains four species, with the Gemsbok (Oryx gazella) being the largest and most widespread. This subfamily also includes the Sable Antelope and Roan Antelope.
@@ -131,7 +131,7 @@ export default function GemsbokPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px] md:min-h-[500px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/gemsbok-portrait-02.png"
                   alt="Gemsbok portrait, facial markings"
@@ -228,8 +228,8 @@ export default function GemsbokPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="relative h-full min-h-[400px]">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/gemsbok-standing-02.png"
                   alt="Gemsbok coat and markings"
@@ -238,7 +238,7 @@ export default function GemsbokPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div>
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Coat Coloration and Markings</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   The Gemsbok's coat is a dense, short, matte fawn-grey or pale sandy-tan with a pure white underbelly. The face is stark white with a high-contrast black "warpaint": an inverted triangular patch on the forehead and bridge of the nose, broad black stripes from the horn bases over the eyes down the cheeks to the jaw, and a black stripe from chin down the throat to the chest.
@@ -256,8 +256,8 @@ export default function GemsbokPage() {
             </div>
 
             {/* Horn Configuration */}
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Both sexes carry long, nearly straight horns that extend backward in a rapier-like line. The horns are hollow keratin over a bony core; the lower two-thirds are heavily annulated (horizontal rings) that act as shock absorbers during combat, while the upper third is smooth and tapers to a needle-sharp tip.
@@ -272,7 +272,7 @@ export default function GemsbokPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/gemsbok-portrait-01.png"
                   alt="Gemsbok horns detail"
@@ -346,8 +346,8 @@ export default function GemsbokPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="relative h-full min-h-[400px]">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/gemsbok-group-bushveld-01.png"
                   alt="Gemsbok group in bushveld"
@@ -356,7 +356,7 @@ export default function GemsbokPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div>
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Daily Activity Cycle</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Gemsbok are active throughout the day, with peak feeding activity during early morning and late afternoon. During the heat of midday, they may rest in the shade, but remain alert and ready to flee.
@@ -411,8 +411,8 @@ export default function GemsbokPage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Mixed Feeding Strategy</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Gemsbok are unique in their ability to both graze and browse effectively, and to extract moisture from roots and tubers. They feed on grasses, leaves, fruits, and roots, adapting their diet to seasonal availability. This flexibility allows them to thrive in harsh, arid environments.
@@ -424,7 +424,7 @@ export default function GemsbokPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/gemsbok-shade-bushveld-01.png"
                   alt="Gemsbok in bushveld"
@@ -435,8 +435,8 @@ export default function GemsbokPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="relative h-full min-h-[400px]">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/gemsbok-group-bushveld-01.png"
                   alt="Gemsbok in Limpopo habitat"
@@ -445,7 +445,7 @@ export default function GemsbokPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div>
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Habitat Requirements</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Gemsbok prefer open scrub, grasslands, and desert fringes. They favor areas with a mix of vegetation types, allowing them to both graze and browse. The transition zone between grassland and desert is particularly favored.
@@ -480,8 +480,8 @@ export default function GemsbokPage() {
             </div>
 
             {/* Hunting Strategies */}
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Hunting Strategies</h3>
                 <div className="space-y-6">
                   <div className="bg-onyx-light border border-white/10 p-6">
@@ -509,7 +509,7 @@ export default function GemsbokPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-full min-h-[500px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Hunting Stalk Image Placeholder</span>
                 </div>
@@ -569,13 +569,13 @@ export default function GemsbokPage() {
             </div>
 
             {/* Shot Placement */}
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="relative h-full min-h-[500px]">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Shot Placement Diagram Image Placeholder</span>
                 </div>
               </div>
-              <div>
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Shot Placement</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   Proper shot placement is critical. The Gemsbok's vitals are positioned slightly lower and more forward than in North American deer, and the animal's toughness means marginal shots may not anchor the animal.
@@ -620,8 +620,8 @@ export default function GemsbokPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Distinguishing Bulls vs. Cows</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-6">
                   Shooting a cow by mistake is a serious error in trophy hunting. Careful observation is required.
@@ -662,7 +662,7 @@ export default function GemsbokPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-full min-h-[500px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Bull vs Cow Comparison Image Placeholder</span>
                 </div>
@@ -728,8 +728,8 @@ export default function GemsbokPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Meat Characteristics</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Gemsbok meat is deep red, fine-grained, and extremely lean. It has a rich, gamey flavor that reflects the animal's mixed diet of grasses, leaves, and roots. The meat is often described as having a "beef-like" quality but with a distinctive wild game character.
@@ -741,7 +741,7 @@ export default function GemsbokPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Gemsbok Venison Image Placeholder</span>
                 </div>

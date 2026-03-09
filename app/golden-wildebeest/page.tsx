@@ -72,8 +72,8 @@ export default function GoldenWildebeestPage() {
         {/* Introduction Section */}
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
                   Introduction
                 </span>
@@ -90,7 +90,7 @@ export default function GoldenWildebeestPage() {
                   In the Makoppa district, Golden Wildebeest occur naturally within Blue Wildebeest populations, though they are relatively rare. Their unique appearance and rarity make them a special trophy for hunters seeking something beyond the ordinary.
                 </p>
               </div>
-              <div className="relative h-full min-h-[400px] md:min-h-[500px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/_filename_golden-wildebeest-bu_Nano_Banana_Pro_61762.jpg"
                   alt="Golden Wildebeest bull showing unique golden coloration"
@@ -114,8 +114,8 @@ export default function GoldenWildebeestPage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-4">Genetic Variation</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   The Golden Wildebeest's unique coloration is the result of a genetic variation that affects pigmentation. This variation can be inherited, though the expression of the golden color can vary significantly between individuals. Some Golden Wildebeest show subtle golden tones, while others display dramatic blonde or golden coloration throughout their body.
@@ -130,7 +130,7 @@ export default function GoldenWildebeestPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px] md:min-h-[500px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Golden Wildebeest Color Pattern Image Placeholder</span>
                 </div>
@@ -223,8 +223,8 @@ export default function GoldenWildebeestPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="relative h-full min-h-[400px]">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/_filename_golden-wildebeest-bu_Nano_Banana_Pro_61762.jpg"
                   alt="Golden Wildebeest horn configuration"
@@ -232,7 +232,7 @@ export default function GoldenWildebeestPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div>
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Both bulls and cows carry horns, though bulls' horns are typically larger and more massive. The horns grow outward and then curve upward and inward, creating a distinctive shape. Horn development and characteristics are identical to standard Blue Wildebeest.
@@ -290,13 +290,13 @@ export default function GoldenWildebeestPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="relative h-full min-h-[400px]">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Golden Wildebeest Behavior Image Placeholder</span>
                 </div>
               </div>
-              <div>
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Feeding Behavior</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Golden Wildebeest are bulk grazers, feeding primarily on grasses. They prefer fresh, green grass when available and will move to areas with recent rain or new growth. Their grazing helps maintain grassland health by preventing grass from becoming too tall and unpalatable.
@@ -328,8 +328,8 @@ export default function GoldenWildebeestPage() {
             </div>
 
             {/* Hunting Strategies */}
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Hunting Strategies</h3>
                 <div className="space-y-6">
                   <div className="bg-white border border-gray-200 shadow-sm p-6">
@@ -357,7 +357,7 @@ export default function GoldenWildebeestPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-full min-h-[500px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Hunting Stalk Image Placeholder</span>
                 </div>
@@ -417,13 +417,13 @@ export default function GoldenWildebeestPage() {
             </div>
 
             {/* Shot Placement */}
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="relative h-full min-h-[500px]">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Shot Placement Diagram Image Placeholder</span>
                 </div>
               </div>
-              <div>
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Shot Placement</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-6">
                   Proper shot placement is essential for clean kills and to preserve the unique hide for taxidermy. Since Golden Wildebeest are often mounted as full mounts to showcase the golden coloration, careful shot placement is important.
@@ -468,8 +468,8 @@ export default function GoldenWildebeestPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Horn Evaluation</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   Horn evaluation follows the same criteria as standard Blue Wildebeest: width (spread), mass, and symmetry. A mature bull will have horns with a spread of 28 inches or more, with exceptional specimens exceeding 35 inches.
@@ -492,7 +492,7 @@ export default function GoldenWildebeestPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-full min-h-[500px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Trophy Golden Wildebeest Bull Image Placeholder</span>
                 </div>
@@ -552,8 +552,8 @@ export default function GoldenWildebeestPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Meat Characteristics</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Golden Wildebeest venison is lean, dark red, and flavorful. The meat has a rich, gamey flavor that is often compared to beef but with a distinctive wild game character. It is highly regarded and versatile in the kitchen.
@@ -565,7 +565,7 @@ export default function GoldenWildebeestPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Golden Wildebeest Venison Image Placeholder</span>
                 </div>

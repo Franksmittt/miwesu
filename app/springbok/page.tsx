@@ -72,8 +72,8 @@ export default function SpringbokPage() {
         {/* Introduction Section */}
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
                   Introduction
                 </span>
@@ -90,7 +90,7 @@ export default function SpringbokPage() {
                   In the Makoppa district, Springbok thrive in the open plains and grasslands where they can take advantage of both grazing opportunities and their remarkable ability to survive with minimal water. Their adaptability and high reproductive rate make them an important species for sustainable utilization.
                 </p>
               </div>
-              <div className="relative h-full min-h-[400px] md:min-h-[500px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/2springbok-ram-standing-01.png"
                   alt="Springbok ram in open plains"
@@ -114,8 +114,8 @@ export default function SpringbokPage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-4">Taxonomic Classification</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   The Springbok belongs to the family Bovidae, subfamily Antilopinae, and the genus <em className="text-gold-400">Antidorcas</em>. The specific name <em className="text-gold-400">marsupialis</em> refers to the "pouch" or fold of skin along the back that opens when the animal pronks, revealing white hair.
@@ -130,7 +130,7 @@ export default function SpringbokPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px] md:min-h-[500px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/3springbok-ewe-bushveld-01.png"
                   alt="Springbok ewe in grassland"
@@ -226,8 +226,8 @@ export default function SpringbokPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="relative h-full min-h-[400px]">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/4springbok-ram-portrait-02.png"
                   alt="Springbok coat coloration and markings"
@@ -235,7 +235,7 @@ export default function SpringbokPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div>
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Coat Coloration and Markings</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   The Springbok's coat is a light tan or fawn color on the back and sides, with a white underbelly. A distinctive dark brown stripe runs along the flanks, separating the tan upper body from the white underbelly. The face is white with dark brown markings around the eyes and on the forehead.
@@ -253,8 +253,8 @@ export default function SpringbokPage() {
             </div>
 
             {/* Horn Configuration */}
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Both rams and ewes carry horns, though rams' horns are typically longer and more massive. The horns grow upward and backward in a graceful curve, creating a distinctive lyre shape. They are ridged and black-tipped.
@@ -269,7 +269,7 @@ export default function SpringbokPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                 src="/images/4springbok-ram-portrait-02.png"
                 alt="Springbok horn configuration"
@@ -342,8 +342,8 @@ export default function SpringbokPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="relative h-full min-h-[400px]">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/5springbok-herd-bushveld-01.png"
                   alt="Springbok herd in grassland"
@@ -389,8 +389,8 @@ export default function SpringbokPage() {
             </div>
 
             {/* Hunting Strategies */}
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Hunting Strategies</h3>
                 <div className="space-y-6">
                   <div className="bg-white border border-gray-200 shadow-sm p-6">
@@ -418,7 +418,7 @@ export default function SpringbokPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-full min-h-[500px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/6springbok-ram-standing-02.png"
                   alt="Springbok in habitat for spot and stalk"
@@ -481,13 +481,13 @@ export default function SpringbokPage() {
             </div>
 
             {/* Shot Placement */}
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="relative h-full min-h-[500px]">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Shot Placement Diagram Image Placeholder</span>
                 </div>
               </div>
-              <div>
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Shot Placement</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-6">
                   Proper shot placement is essential for clean kills. Springbok are relatively small, so accurate shot placement is critical. The animal's speed and alertness make shot placement even more important.
@@ -532,8 +532,8 @@ export default function SpringbokPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Field Judging Guide</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   When evaluating a Springbok trophy, look for long, graceful horns with good curvature. The horns should be thick at the base and maintain good mass throughout. Symmetry is important, as asymmetrical horns reduce trophy value.
@@ -556,7 +556,7 @@ export default function SpringbokPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-full min-h-[500px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
                   src="/images/1springbok-ram-portrait-01.png"
                   alt="Trophy Springbok ram"
@@ -605,8 +605,8 @@ export default function SpringbokPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Meat Characteristics</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Springbok venison is lean, fine-grained, and flavorful. The meat is lighter in color than browsing antelope and has a mild, sweet flavor. It is highly regarded and versatile in the kitchen.
@@ -618,7 +618,7 @@ export default function SpringbokPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Springbok Venison Image Placeholder</span>
                 </div>

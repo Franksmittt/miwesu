@@ -244,7 +244,7 @@ export default function WildlifePage() {
                       className="object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute top-4 right-4">
-                      <span className={`${animal.tagColor} text-onyx text-[10px] font-bold px-3 py-1 uppercase tracking-widest ${animal.tagColor.includes('gold') ? 'text-onyx' : 'text-white'}`}>
+                      <span className="bg-black/90 text-white text-[10px] font-bold px-3 py-1 uppercase tracking-widest">
                         {animal.tag}
                       </span>
                     </div>
@@ -290,17 +290,17 @@ export default function WildlifePage() {
             <div className="space-y-20 mt-20">
               {/* Greater Kudu - Featured */}
               <div className="reveal">
-                <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-8 sm:mb-12">
-                  <div className="relative h-[350px] sm:h-[450px] md:h-[500px]">
+                <div className="flex flex-col md:flex-row md:items-stretch gap-8 md:gap-12 mb-8 sm:mb-12">
+                  <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                     <Image
                       src="/images/kudu-bull-standing-01.png"
                       alt="Greater Kudu bull - The Grey Ghost"
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-cover shadow-luxury"
+                      className="object-cover object-center shadow-luxury"
                     />
                   </div>
-                  <div>
+                  <div className="md:w-[calc(50%-1.5rem)]">
                     <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-3 sm:mb-4 block">
                       The Grey Ghost
                     </span>
@@ -371,8 +371,8 @@ export default function WildlifePage() {
               </div>
 
               {/* Additional Species */}
-              <div className="grid md:grid-cols-2 gap-12 mb-20 reveal delay-200">
-                <div>
+              <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-20 reveal delay-200">
+                <div className="md:w-[calc(50%-1.5rem)]">
                   <h3 className="font-serif text-3xl text-white mb-6">Specialist Species</h3>
                   <div className="space-y-6">
                     <div className="border-l-2 border-gold-500 pl-6">
@@ -413,13 +413,13 @@ export default function WildlifePage() {
                     </div>
                   </div>
                 </div>
-                <div className="relative h-[500px]">
+                <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                   <Image
                     src="/images/wildlife-warthog.jpg"
                     alt="Warthog at waterhole"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover shadow-luxury"
+                    className="object-cover object-center shadow-luxury"
                   />
                 </div>
               </div>
@@ -465,8 +465,8 @@ export default function WildlifePage() {
         {/* Ecological Management Section */}
         <section className="py-32 bg-marble-dark">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-16 items-center mb-20 reveal">
-              <div>
+            <div className="flex flex-col md:flex-row md:items-stretch gap-16 mb-20 reveal">
+              <div className="md:w-[calc(50%-2rem)]">
                 <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
                   Sustainable Management
                 </span>
@@ -490,13 +490,13 @@ export default function WildlifePage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-[500px]">
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-2rem)] overflow-hidden">
                 <Image
                   src="/images/wildlife-ecological-management.jpg"
                   alt="Ecological management and conservation"
                   fill
                   sizes="(max-width: 768px) 100vw, 800px"
-                  className="object-cover shadow-luxury"
+                  className="object-cover object-center shadow-luxury"
                 />
               </div>
             </div>

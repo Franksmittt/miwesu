@@ -13,7 +13,7 @@ export async function GET(request: NextRequest) {
       orderBy: { checkIn: 'asc' },
       include: { unit: true },
     })
-    const rows = bookings.map((b) => ({
+    const rows = bookings.map((b: { id: string; guestName: string; guestEmail: string; checkIn: Date; checkOut: Date; unit: { name: string }; totalGuests: number; totalPrice: unknown; status: string }) => ({
       id: b.id,
       guestName: b.guestName,
       guestEmail: b.guestEmail,

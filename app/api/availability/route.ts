@@ -56,7 +56,7 @@ export async function GET(request: NextRequest) {
     let demo = false
 
     try {
-      const units = await prisma.unit.findMany({ orderBy: { name: 'asc' } })
+      const units = await prisma.unit.findMany({ orderBy: { name: 'asc' } }) as Array<{ id: string; name: string; maxGuests: number; description: string | null; basePricePerNight: { toString?: () => string } }>
       const homestead = units.find((u) => u.name === HOMESTEAD_NAME)
       const stoneVilla = units.find((u) => u.name === STONE_VILLA_NAME)
 
@@ -67,7 +67,7 @@ export async function GET(request: NextRequest) {
           checkOut: { gt: checkIn },
         },
         select: { unitId: true },
-      })
+      }) as Array<{ unitId: string }>
       const bookedUnitIds = new Set(overlappingBookings.map((b) => b.unitId))
 
       const homesteadAvailable = homestead && !bookedUnitIds.has(homestead.id) && guests <= HOMESTEAD_MAX

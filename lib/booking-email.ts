@@ -1,11 +1,18 @@
 import { Resend } from 'resend'
-import type { Booking, Unit } from '@prisma/client'
 
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null
 const fromEmail = process.env.MIWESU_BOOKING_FROM_EMAIL || 'bookings@miwesu.co.za'
 const adminEmail = process.env.MIWESU_ADMIN_EMAIL || 'info@miwesu.co.za'
 
-type BookingWithUnit = Booking & { unit: Unit }
+export type BookingWithUnit = {
+  guestName: string
+  guestEmail: string
+  checkIn: Date
+  checkOut: Date
+  totalGuests: number
+  totalPrice: number | { toString?: () => string }
+  unit: { name: string }
+}
 
 export async function sendBookingConfirmationEmail(booking: BookingWithUnit): Promise<void> {
   if (!resend) return

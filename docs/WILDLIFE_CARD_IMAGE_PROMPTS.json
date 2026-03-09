@@ -1,0 +1,123 @@
+{
+  "_meta": {
+    "purpose": "AI image generation prompts for /wildlife species card images. Use with DALL·E, Midjourney, or similar. Replace existing card images in app/wildlife/page.tsx.",
+    "aspectRatio": "3:2",
+    "reason": "Card container is h-56 sm:h-64 with full width; 3:2 landscape fills without awkward crop. Image uses object-cover.",
+    "vegetationContext": "MIWESU Game Farm, Makoppa district, Thabazimbi, Limpopo. Arid Sweet Bushveld: reddish-brown soil, dry golden-brown grass, patchy green grass, acacia-like trees (flat-topped, thorny), gnarled dark-bark trees, thorny shrubs, dense bushveld thickets, dry season savanna. Warm, natural light; no power lines or man-made objects in frame.",
+    "styleRules": "Warm wildlife photography. Shallow depth of field (subject sharp, background softly blurred). Average, typical specimen only (not 'largest', 'most beautiful', or 'trophy'). Natural pose in habitat. No blood, no gore. Dignified. Golden hour or soft overcast preferred."
+  },
+  "species": [
+    {
+      "slug": "greater-kudu",
+      "name": "Greater Kudu",
+      "scientific": "Tragelaphus strepsiceros",
+      "aspectRatio": "3:2",
+      "habitatNote": "Mountain thickets, acacia bushveld",
+      "prompt": "Single adult male greater kudu (Tragelaphus strepsiceros), typical bull with spiral horns, grey-brown coat with white stripes, standing in Arid Sweet Bushveld. Reddish-brown soil, dry golden-brown grass, acacia-like thorn trees and gnarled branches in soft bokeh background. Shallow depth of field, subject sharp. Warm afternoon light, golden tones. Average specimen, natural pose, no superlatives. Makoppa-style Limpopo bushveld vegetation. Wildlife photography, cinematic, dignified. No people, no blood."
+    },
+    {
+      "slug": "blue-wildebeest",
+      "name": "Blue Wildebeest",
+      "scientific": "Connochaetes taurinus",
+      "aspectRatio": "3:2",
+      "habitatNote": "Open plains, sweetveld grass",
+      "prompt": "Single adult blue wildebeest (brindled gnu), typical bull with dark mane and beard, standing in open bushveld. Dry golden-brown grass, patchy green, reddish-brown soil, distant acacia trees and low shrubs in soft bokeh. Shallow depth of field, warm lighting. Average specimen, natural stance. Arid Sweet Bushveld, Limpopo. Wildlife photography, warm palette, no people, no blood."
+    },
+    {
+      "slug": "impala",
+      "name": "Impala",
+      "scientific": "Aepyceros melampus",
+      "aspectRatio": "3:2",
+      "habitatNote": "Bushveld fringe",
+      "prompt": "Single adult male impala (Aepyceros melampus), typical ram with lyre horns, reddish-brown coat with white underparts, standing in bushveld fringe. Dry grass, thorny shrubs, acacia-like trees in soft bokeh. Shallow depth of field, warm golden light. Average specimen, relaxed pose. Makoppa-style vegetation: red-brown soil, dry golden grass. Wildlife photography, warm tones, dignified, no people."
+    },
+    {
+      "slug": "gemsbok",
+      "name": "Gemsbok",
+      "scientific": "Oryx gazella",
+      "aspectRatio": "3:2",
+      "habitatNote": "Open scrub, arid bushveld",
+      "prompt": "Single adult gemsbok (oryx), typical bull, black-and-white face mask, long straight horns, grey-tan coat, standing in open scrub. Dry golden-brown grass, reddish soil, sparse thorn trees and shrubs in soft bokeh. Shallow depth of field, warm light. Average specimen. Arid Sweet Bushveld, Limpopo. Wildlife photography, warm palette, no people, no blood."
+    },
+    {
+      "slug": "warthog",
+      "name": "Warthog",
+      "scientific": "Phacochoerus africanus",
+      "aspectRatio": "3:2",
+      "habitatNote": "Waterholes, mud wallows, bushveld",
+      "prompt": "Single adult warthog (Phacochoerus africanus), typical boar with visible tusks and facial warts, standing in dry bushveld near sparse vegetation. Reddish-brown soil, dry grass, thorny shrubs in soft bokeh. Shallow depth of field, warm afternoon light. Average specimen, natural pose. Makoppa bushveld. Wildlife photography, warm tones, dignified, no people."
+    },
+    {
+      "slug": "blesbok",
+      "name": "Blesbok",
+      "scientific": "Damaliscus pygargus phillipsi",
+      "aspectRatio": "3:2",
+      "habitatNote": "Grasslands, open bushveld",
+      "prompt": "Single adult male blesbok, typical ram with white blaze on face and lyre horns, reddish-brown coat with purple sheen, standing in open grassland bushveld. Dry golden-brown grass, patchy green, red-brown soil, distant trees in soft bokeh. Shallow depth of field, warm light. Average specimen. Arid Sweet Bushveld, Limpopo. Wildlife photography, warm palette, no people."
+    },
+    {
+      "slug": "bushbuck",
+      "name": "Bushbuck",
+      "scientific": "Tragelaphus sylvaticus",
+      "aspectRatio": "3:2",
+      "habitatNote": "Riverine thickets, dense bush",
+      "prompt": "Single adult male bushbuck (Tragelaphus sylvaticus), typical ram with spiral horns, reddish-brown coat with white spots and stripes, standing at edge of thicket. Dense bushveld shrubs, gnarled trees, dry golden-brown grass, red-brown soil in soft bokeh. Shallow depth of field, warm dappled light. Average specimen, shy demeanour. Riverine thicket vegetation, Makoppa. Wildlife photography, warm tones, no people."
+    },
+    {
+      "slug": "cape-buffalo",
+      "name": "Cape Buffalo",
+      "scientific": "Syncerus caffer",
+      "aspectRatio": "3:2",
+      "habitatNote": "Dense bushveld",
+      "prompt": "Single adult male Cape buffalo (Syncerus caffer), typical bull with heavy boss and curved horns, dark grey-black coat, standing in dense bushveld. Patchy green grass, red-brown soil, dense green trees and thorny shrubs in soft bokeh. Shallow depth of field, warm overcast or golden light. Average specimen, calm. Arid Sweet Bushveld, Limpopo. Wildlife photography, warm palette, dignified, no people, no gore."
+    },
+    {
+      "slug": "dapple-impala",
+      "name": "Dapple Impala",
+      "scientific": "Aepyceros melampus",
+      "aspectRatio": "3:2",
+      "habitatNote": "Bushveld fringe, colour variant",
+      "prompt": "Single adult male dapple impala (piebald colour variant), typical ram with lyre horns, distinctive white dappling on reddish-brown coat, standing in bushveld fringe. Dry grass, thorny shrubs, acacia-like trees in soft bokeh. Shallow depth of field, warm golden light. Average colour-variant specimen, natural pose. Makoppa bushveld vegetation. Wildlife photography, warm tones, no people."
+    },
+    {
+      "slug": "golden-wildebeest",
+      "name": "Golden Wildebeest",
+      "scientific": "Connochaetes taurinus",
+      "aspectRatio": "3:2",
+      "habitatNote": "Open plains, colour variant",
+      "prompt": "Single adult golden wildebeest (colour variant), typical bull with golden-copper-honey coat and matching mane, standing in open plains bushveld. Dry golden-brown grass, reddish soil, distant acacia trees in soft bokeh. Shallow depth of field, warm afternoon light. Average specimen, natural stance. Arid Sweet Bushveld, Limpopo. Wildlife photography, warm palette, no people."
+    },
+    {
+      "slug": "springbok",
+      "name": "Springbok",
+      "scientific": "Antidorcas marsupialis",
+      "aspectRatio": "3:2",
+      "habitatNote": "Open plains",
+      "prompt": "Single adult male springbok (Antidorcas marsupialis), typical ram with lyre horns, tan and white coat with dark flank stripe, standing in open plains. Dry golden-brown grass, red-brown soil, sparse shrubs in soft bokeh. Shallow depth of field, warm light. Average specimen. Arid Sweet Bushveld, Limpopo. Wildlife photography, warm tones, no people."
+    },
+    {
+      "slug": "red-hartebeest",
+      "name": "Red Hartebeest",
+      "scientific": "Alcelaphus buselaphus caama",
+      "aspectRatio": "3:2",
+      "habitatNote": "Open plains",
+      "prompt": "Single adult male red hartebeest (Alcelaphus buselaphus caama), typical bull with lyre-shaped horns and reddish-brown coat, elongated face, standing in open plains. Dry golden-brown grass, gnarled trees in background bokeh, red-brown soil. Shallow depth of field, warm golden light. Average specimen. Arid Sweet Bushveld, Limpopo. Wildlife photography, warm palette, no people."
+    },
+    {
+      "slug": "lechwe",
+      "name": "Lechwe",
+      "scientific": "Kobus leche",
+      "aspectRatio": "3:2",
+      "habitatNote": "Wetlands, water edge",
+      "prompt": "Single adult male lechwe (Kobus leche), typical ram with long lyre horns, reddish-brown coat, standing at wetland or water edge with bushveld behind. Patchy green and dry grass, reeds or damp soil, acacia and shrubs in soft bokeh. Shallow depth of field, warm light. Average specimen. Makoppa-style wetland edge vegetation. Wildlife photography, warm tones, no people."
+    },
+    {
+      "slug": "livingstone-eland",
+      "name": "Livingstone Eland",
+      "scientific": "Taurotragus oryx livingstonei",
+      "aspectRatio": "3:2",
+      "habitatNote": "Open bushveld",
+      "prompt": "Single adult Livingstone eland bull (Taurotragus oryx livingstonei), typical large antelope with spiral horns and dewlap, sandy-brown coat, standing in open bushveld. Dry ground, light-brown grass, acacia-like trees and woody shrubs in soft bokeh. Shallow depth of field, warm midday or golden light. Average specimen. Arid Sweet Bushveld, Limpopo. Wildlife photography, warm palette, dignified, no people."
+    }
+  ]
+}

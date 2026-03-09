@@ -28,7 +28,7 @@ export default function WildlifePage() {
     {
       name: 'Greater Kudu',
       scientific: 'Tragelaphus strepsiceros',
-      image: '/images/kudu-bull-portrait-01.png',
+      image: '/images/greater-kudu_card.png',
       caliber: '.300 Win Mag / .30-06',
       rowlandWard: 'Min. 53 7/8"',
       terrain: 'Mountain Thickets',
@@ -39,7 +39,7 @@ export default function WildlifePage() {
     {
       name: 'Blue Wildebeest',
       scientific: 'Connochaetes taurinus',
-      image: '/images/home-species-wildebeest.jpg',
+      image: '/images/blue-wildebeest_card.png',
       caliber: '.375 H&H Recommended',
       rowlandWard: 'Min. 28 1/2" (Width)',
       terrain: 'Open Plains',
@@ -50,7 +50,7 @@ export default function WildlifePage() {
     {
       name: 'Impala',
       scientific: 'Aepyceros melampus',
-      image: '/images/impala-ram-portrait-01.png',
+      image: '/images/impala_card.png',
       caliber: '.243 / 6.5mm Creedmoor',
       rowlandWard: 'Min. 23 5/8"',
       terrain: 'Bushveld Fringe',
@@ -61,7 +61,7 @@ export default function WildlifePage() {
     {
       name: 'Gemsbok',
       scientific: 'Oryx gazella',
-      image: '/images/gemsbok-portrait-01.png',
+      image: '/images/gemsbok_card.png',
       caliber: '.30-06 / .300 Win Mag',
       rowlandWard: 'Min. 40"',
       terrain: 'Open Scrub',
@@ -72,7 +72,7 @@ export default function WildlifePage() {
     {
       name: 'Warthog',
       scientific: 'Phacochoerus africanus',
-      image: '/images/home-species-warthog.jpg',
+      image: '/images/warthog_card.png',
       caliber: '7x57 Mauser / .308',
       rowlandWard: 'Min. 13" (Tusk)',
       terrain: 'Waterholes / Mud Wallows',
@@ -83,7 +83,7 @@ export default function WildlifePage() {
     {
       name: 'Blesbok',
       scientific: 'Damaliscus pygargus phillipsi',
-      image: '/images/1blesbok-ram-portrait-01.png',
+      image: '/images/blesbok_card.png',
       caliber: '.308 Win',
       rowlandWard: 'Min. 16 ½"',
       terrain: 'Highveld Grasslands',
@@ -94,7 +94,7 @@ export default function WildlifePage() {
     {
       name: 'Bushbuck',
       scientific: 'Tragelaphus sylvaticus',
-      image: '/images/kudu-bull-portrait-01.png',
+      image: '/images/bushbuck_card.png',
       caliber: '.308 Win',
       rowlandWard: 'Min. 15"',
       terrain: 'Riverine Thickets',
@@ -105,7 +105,7 @@ export default function WildlifePage() {
     {
       name: 'Cape Buffalo',
       scientific: 'Syncerus caffer',
-      image: '/images/home-species-wildebeest.jpg',
+      image: '/images/cape-buffalo_card.png',
       caliber: '.375 H&H Minimum',
       rowlandWard: 'Min. 40"',
       terrain: 'Dense Bushveld',
@@ -116,7 +116,7 @@ export default function WildlifePage() {
     {
       name: 'Dapple Impala',
       scientific: 'Aepyceros melampus',
-      image: '/images/impala-ram-portrait-01.png',
+      image: '/images/dapple-impala_card.png',
       caliber: '.243 / 6.5mm Creedmoor',
       rowlandWard: 'Min. 23 5/8"',
       terrain: 'Bushveld Fringe',
@@ -127,7 +127,7 @@ export default function WildlifePage() {
     {
       name: 'Golden Wildebeest',
       scientific: 'Connochaetes taurinus',
-      image: '/images/home-species-wildebeest.jpg',
+      image: '/images/golden-wildebeest_card.png',
       caliber: '.375 H&H Recommended',
       rowlandWard: 'Min. 28 1/2" (Width)',
       terrain: 'Open Plains',
@@ -138,7 +138,7 @@ export default function WildlifePage() {
     {
       name: 'Springbok',
       scientific: 'Antidorcas marsupialis',
-      image: '/images/home-species-wildebeest.jpg',
+      image: '/images/springbok_card.png',
       caliber: '.243 Win',
       rowlandWard: 'Min. 14"',
       terrain: 'Open Plains',
@@ -149,7 +149,7 @@ export default function WildlifePage() {
     {
       name: 'Red Hartebeest',
       scientific: 'Alcelaphus buselaphus caama',
-      image: '/images/home-species-wildebeest.jpg',
+      image: '/images/red-hartebeest_card.png',
       caliber: '.30-06',
       rowlandWard: 'Min. 18"',
       terrain: 'Open Plains',
@@ -160,7 +160,7 @@ export default function WildlifePage() {
     {
       name: 'Lechwe',
       scientific: 'Kobus leche',
-      image: '/images/impala-ram-portrait-01.png',
+      image: '/images/Lechwe_card.png',
       caliber: '.270 Win',
       rowlandWard: 'Min. 20"',
       terrain: 'Wetlands / Water',
@@ -171,7 +171,7 @@ export default function WildlifePage() {
     {
       name: 'Livingstone Eland',
       scientific: 'Taurotragus oryx livingstonei',
-      image: '/images/kudu-bull-portrait-01.png',
+      image: '/images/livingstone-eland_card.png',
       caliber: '.375 H&H',
       rowlandWard: 'Min. 30"',
       terrain: 'Open Bushveld',

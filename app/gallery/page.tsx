@@ -1,13 +1,42 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Layout from '@/components/Layout'
 import { X } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { galleryAccommodationImages } from '@/lib/residences-data'
-import AuthenticGallery from '@/components/AuthenticGallery'
+import { authenticGalleryItems } from '@/lib/facebook-gallery'
+
+type GalleryCategory = 'Landscape' | 'Wildlife' | 'Accommodation'
+
+type GalleryImage = {
+  src: string
+  category: GalleryCategory
+  title?: string
+  description?: string
+}
+
+/** Fisher–Yates shuffle; returns new array so we can keep referential stability in useMemo */
+function shuffle<T>(array: T[]): T[] {
+  const out = [...array]
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [out[i], out[j]] = [out[j], out[i]]
+  }
+  return out
+}
+
+/** Map Facebook "Lodge" to "Accommodation" for unified gallery filter */
+const facebookAsGallery = authenticGalleryItems.map(
+  (item): GalleryImage => ({
+    src: item.src,
+    category: item.category === 'Lodge' ? 'Accommodation' : item.category,
+    title: item.title,
+    description: '',
+  })
+)
 
 const vibeGroups = [
   {
@@ -73,7 +102,15 @@ export default function GalleryPage() {
     return () => window.removeEventListener('scroll', reveal)
   }, [])
 
-  const galleryImages = [...landscapeAndWildlifeImages, ...galleryAccommodationImages]
+  const galleryImages = useMemo(
+    () =>
+      shuffle([
+        ...landscapeAndWildlifeImages,
+        ...galleryAccommodationImages,
+        ...facebookAsGallery,
+      ] as GalleryImage[]),
+    []
+  )
 
   const categories = ['All', 'Landscape', 'Wildlife', 'Accommodation']
   const [activeCategory, setActiveCategory] = useState('All')
@@ -183,34 +220,22 @@ export default function GalleryPage() {
             </div>
 
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-20">
-              {filteredImages.map((image, index) => (
+              {filteredImages.map((image) => (
                 <div
-                  key={index}
+                  key={image.src}
                   className="group relative h-64 sm:h-80 overflow-hidden cursor-pointer reveal"
                   onClick={() => setSelectedImage(image.src)}
                 >
                   <Image
                     src={image.src}
-                    alt={image.title || `Gallery image ${index + 1}`}
+                    alt={image.title || `Gallery image`}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-onyx/90 via-onyx/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <h4 className="text-white font-serif text-lg mb-1">{image.title || image.category}</h4>
-                      <p className="text-gray-300 text-xs">{image.description || ''}</p>
-                      <span className="text-gold-400 text-xs uppercase tracking-widest mt-2 block">
-                        {image.category}
-                      </span>
-                    </div>
-                  </div>
                 </div>
               ))}
             </div>
-
-            {/* Moments in Eden – curated real-world Facebook images (Cinematic Verité, Clean Kill) */}
-            <AuthenticGallery />
 
             {/* Featured Collections */}
             <div className="space-y-16 mb-20">

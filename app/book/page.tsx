@@ -180,12 +180,12 @@ export default function BookPage() {
           </div>
           <div className="absolute inset-0 z-0 bg-gradient-to-b from-onyx/60 to-onyx" />
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
-            <Link
-              href="/residences"
+          <Link
+            href="/residences"
               className="inline-flex items-center text-gold-400/90 hover:text-white text-xs sm:text-sm uppercase tracking-[0.2em] font-medium mb-6 transition-colors"
-            >
-              <ArrowLeft className="w-4 h-4 mr-2" /> Residences
-            </Link>
+          >
+            <ArrowLeft className="w-4 h-4 mr-2" /> Residences
+          </Link>
             <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-white mb-3 tracking-tight">
               Book your stay
             </h1>
@@ -257,7 +257,7 @@ export default function BookPage() {
 
           <div className="booking-step-content">
             {/* ——— Step 1: Dates & guests ——— */}
-            {step === 1 && (
+          {step === 1 && (
               <section className="grid lg:grid-cols-[1fr,320px] gap-8 lg:gap-12">
                 <div className="rounded-2xl border border-white/10 bg-onyx-light/50 p-6 sm:p-8">
                   <h2 className="font-serif text-2xl text-white mb-1 flex items-center gap-2">
@@ -300,18 +300,18 @@ export default function BookPage() {
                       >
                         <ChevronUp className="w-5 h-5" />
                       </button>
-                    </div>
+              </div>
                     <p className="text-white/50 text-xs mt-3">Up to 22 for entire lodge</p>
                     {availabilityError && (
                       <div className="mt-4 flex items-start gap-2 rounded-lg bg-red-500/10 border border-red-500/30 px-4 py-3 text-red-300 text-sm">
                         <AlertCircle className="w-4 h-4 shrink-0 mt-0.5" />
                         {availabilityError}
-                      </div>
+              </div>
                     )}
-                    <button
-                      type="button"
-                      onClick={checkAvailability}
-                      disabled={availabilityLoading}
+              <button
+                type="button"
+                onClick={checkAvailability}
+                disabled={availabilityLoading}
                       className="mt-6 w-full py-4 px-6 bg-gold-500 text-onyx font-bold uppercase tracking-widest text-sm hover:bg-gold-400 transition-all rounded-xl disabled:opacity-50 flex items-center justify-center gap-2"
                     >
                       {availabilityLoading ? (
@@ -319,32 +319,32 @@ export default function BookPage() {
                       ) : (
                         <>Check availability <ArrowRight className="w-4 h-4" /></>
                       )}
-                    </button>
+              </button>
                   </div>
                 </div>
-              </section>
-            )}
+            </section>
+          )}
 
             {/* ——— Step 2: Choose accommodation ——— */}
-            {step === 2 && (
+          {step === 2 && (
               <section>
-                {isDemo && (
+              {isDemo && (
                   <div className="mb-6 flex items-center gap-3 rounded-xl bg-gold-500/10 border border-gold-500/30 px-4 py-3 text-gold-300 text-sm">
                     <Sparkles className="w-4 h-4 shrink-0" />
-                    Demo mode: database not connected. All options shown as available.
+                  Demo mode: database not connected. All options shown as available.
                   </div>
-                )}
+              )}
                 <h2 className="font-serif text-2xl sm:text-3xl text-white mb-2">Choose your accommodation</h2>
                 <p className="text-gray-400 mb-8">Select one option for your dates.</p>
                 <div className="grid sm:grid-cols-2 gap-6">
-                  {options.map((opt) => (
-                    <button
-                      key={opt.id}
-                      type="button"
-                      onClick={() => {
-                        setSelectedOption(opt)
-                        setStep(3)
-                      }}
+                {options.map((opt) => (
+                  <button
+                    key={opt.id}
+                    type="button"
+                    onClick={() => {
+                      setSelectedOption(opt)
+                      setStep(3)
+                    }}
                       className="group text-left rounded-2xl border-2 border-white/10 bg-onyx-light/50 hover:border-gold-500/50 hover:bg-onyx-light/80 p-6 sm:p-8 transition-all duration-300"
                     >
                       <div className="flex items-start justify-between mb-4">
@@ -368,27 +368,27 @@ export default function BookPage() {
                       </p>
                       <span className="inline-flex items-center gap-2 mt-4 text-sm font-medium text-gold-400 group-hover:text-gold-300">
                         Select <ArrowRight className="w-4 h-4" />
-                      </span>
-                    </button>
-                  ))}
-                </div>
-                <button
-                  type="button"
-                  onClick={() => setStep(1)}
+                    </span>
+                  </button>
+                ))}
+              </div>
+              <button
+                type="button"
+                onClick={() => setStep(1)}
                   className="mt-8 inline-flex items-center gap-2 text-gray-400 hover:text-white text-sm font-medium transition-colors"
-                >
-                  <ArrowLeft className="w-4 h-4" /> Change dates
-                </button>
-              </section>
-            )}
+              >
+                <ArrowLeft className="w-4 h-4" /> Change dates
+              </button>
+            </section>
+          )}
 
             {/* ——— Step 3: Guest details + summary ——— */}
-            {step === 3 && selectedOption && (
+          {step === 3 && selectedOption && (
               <section className="grid lg:grid-cols-[1fr,340px] gap-8 lg:gap-12">
-                <form onSubmit={handleSubmit(onGuestSubmit)} className="space-y-6">
+              <form onSubmit={handleSubmit(onGuestSubmit)} className="space-y-6">
                   <h2 className="font-serif text-2xl sm:text-3xl text-white mb-2">Your details</h2>
                   <p className="text-gray-400 mb-6">We’ll use this for confirmation and contact.</p>
-                  <div className="grid sm:grid-cols-2 gap-4">
+                <div className="grid sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-medium text-gray-300 mb-2">First name</label>
                       <input
@@ -432,8 +432,8 @@ export default function BookPage() {
                       className="input-booking w-full"
                       placeholder="+27 …"
                     />
-                  </div>
-                  <div>
+                </div>
+                <div>
                     <label className="block text-sm font-medium text-gray-300 mb-2">Special requests <span className="text-white/40 font-normal">(optional)</span></label>
                     <textarea
                       {...register('specialRequests')}
@@ -441,24 +441,24 @@ export default function BookPage() {
                       className="input-booking w-full resize-none"
                       placeholder="Dietary needs, accessibility, late arrival…"
                     />
-                  </div>
+                </div>
                   <div className="flex flex-wrap gap-4 pt-4">
-                    <button
-                      type="button"
-                      onClick={() => setStep(2)}
+                  <button
+                    type="button"
+                    onClick={() => setStep(2)}
                       className="inline-flex items-center gap-2 text-gray-400 hover:text-white font-medium transition-colors"
-                    >
-                      <ArrowLeft className="w-4 h-4" /> Back
-                    </button>
-                    <button
-                      type="submit"
-                      disabled={checkoutLoading}
+                  >
+                    <ArrowLeft className="w-4 h-4" /> Back
+                  </button>
+                  <button
+                    type="submit"
+                    disabled={checkoutLoading}
                       className="inline-flex items-center gap-2 py-3 px-8 bg-gold-500 text-onyx font-bold uppercase tracking-widest text-sm hover:bg-gold-400 rounded-xl transition-colors disabled:opacity-50"
-                    >
+                  >
                       {checkoutLoading ? 'Processing…' : <>Proceed to payment <CreditCard className="w-4 h-4" /></>}
-                    </button>
-                  </div>
-                </form>
+                  </button>
+                </div>
+              </form>
                 {/* Sticky summary card */}
                 <div className="lg:pt-0">
                   <div className="rounded-2xl border border-white/10 bg-onyx-light/50 p-6 sticky top-[180px]">
@@ -489,11 +489,11 @@ export default function BookPage() {
                     </div>
                   </div>
                 </div>
-              </section>
-            )}
+            </section>
+          )}
 
             {/* ——— Step 4: Success or error ——— */}
-            {step === 4 && (checkoutDemo || checkoutError) && (
+          {step === 4 && (checkoutDemo || checkoutError) && (
               <section className="max-w-lg mx-auto">
                 <div
                   className={`rounded-2xl border p-8 text-center ${
@@ -514,24 +514,24 @@ export default function BookPage() {
                         <Check className="w-7 h-7 text-gold-400" />
                       </div>
                       <h2 className="font-serif text-2xl text-white mb-2">Request received</h2>
-                      <p className="text-gray-300 mb-4">
+                  <p className="text-gray-300 mb-4">
                         {checkoutDemo?.message ||
                           'Booking system is in demo mode. Configure DATABASE_URL and Stripe to enable real bookings.'}
-                      </p>
+                  </p>
                       {checkoutDemo?.bookingId && (
                         <p className="text-sm text-gray-500 mb-4">Reference: {checkoutDemo.bookingId}</p>
                       )}
-                    </>
-                  )}
+                </>
+              )}
                   <Link
                     href="/book"
                     className="inline-flex items-center gap-2 py-3 px-6 bg-gold-500 text-onyx font-bold uppercase tracking-widest text-sm hover:bg-gold-400 rounded-xl transition-colors"
                   >
                     <ArrowLeft className="w-4 h-4" /> Start over
-                  </Link>
+              </Link>
                 </div>
-              </section>
-            )}
+            </section>
+          )}
           </div>
         </div>
       </main>

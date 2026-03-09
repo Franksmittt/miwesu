@@ -2,10 +2,8 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 import Layout from '@/components/Layout'
 import { X } from 'lucide-react'
-import { motion } from 'framer-motion'
 import { galleryAccommodationImages } from '@/lib/residences-data'
 import { authenticGalleryItems } from '@/lib/facebook-gallery'
 
@@ -37,37 +35,6 @@ const facebookAsGallery = authenticGalleryItems.map(
     description: '',
   })
 )
-
-const vibeGroups = [
-  {
-    id: 'oasis',
-    title: 'The Oasis',
-    description: 'Pool, lawn, trampoline, jungle gym. Family laughs and thatched shade.',
-    image: '/images/_filename_Gemini_Generated_Ima_Nano_Banana_Pro_63120.jpg',
-    href: '/residences',
-  },
-  {
-    id: 'after-dark',
-    title: 'After Dark',
-    description: 'Lapa wet bar, fire pit, starry skies. Mood and unplug.',
-    image: '/images/_filename_Thabazimbi_W_110jpg__Nano_Banana_Pro_77108.jpg',
-    href: '/activities',
-  },
-  {
-    id: 'homestead',
-    title: 'The Homestead',
-    description: 'Open-plan living, morning patio, kitchen and braai. Scale and comfort.',
-    image: '/images/_filename_Thabazimbi_N_38jpg_s_Nano_Banana_Pro_03494.jpg',
-    href: '/residences/homestead',
-  },
-  {
-    id: 'disconnect',
-    title: 'The Disconnect',
-    description: 'Wellness, quiet bush walks, silence. Soulful relaxation.',
-    image: '/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg',
-    href: '/activities',
-  },
-]
 
 const landscapeAndWildlifeImages = [
   { src: '/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg', category: 'Landscape' as const, title: 'Lodge patio and braai', description: 'Braai under thatch with waterhole and bushveld' },
@@ -167,55 +134,12 @@ export default function GalleryPage() {
           </div>
         </section>
 
-        {/* By Vibe — asymmetric narrative grouping */}
-        <section className="py-12 sm:py-16 bg-onyx border-b border-white/5">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-10 sm:mb-12">
-              <span className="text-gold-500 text-[10px] sm:text-xs tracking-[0.3em] uppercase font-bold block mb-3">
-                Experience by vibe
-              </span>
-              <h2 className="font-serif text-3xl sm:text-4xl text-white">
-                Feel your <span className="text-gradient-gold">Eden</span>
-              </h2>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-              {vibeGroups.map((vibe, i) => (
-                <motion.div
-                  key={vibe.id}
-                  initial={{ opacity: 0, y: 24 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: '-40px' }}
-                  transition={{ duration: 0.5, delay: i * 0.08 }}
-                >
-                  <Link
-                    href={vibe.href}
-                    className="group block relative h-64 sm:h-72 overflow-hidden border border-white/10 hover:border-gold-500/40 transition-colors"
-                  >
-                    <Image
-                      src={vibe.image}
-                      alt={vibe.title}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/30 to-transparent" />
-                    <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-5">
-                      <h3 className="font-serif text-lg sm:text-xl text-white mb-1">{vibe.title}</h3>
-                      <p className="text-gray-400 text-xs sm:text-sm line-clamp-2">{vibe.description}</p>
-                    </div>
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Gallery Grid */}
         <section className="py-16 sm:py-24 lg:py-32 bg-onyx">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16 reveal">
               <p className="font-sans text-gray-400 text-lg max-w-2xl mx-auto leading-loose">
-                Explore the beauty of MIWESU GAME FARM through our visual journey. From the ancient granite koppies to the wildlife that calls the Makoppa home, every image tells a story of conservation, luxury, and the African bushveld.
+                Private access. No crowds, no queues—just the Iron Eden. These moments are from the reserve: golden-hour savanna, thatched bomas under the stars, and the species of the Makoppa in their Sweetveld home. Every frame is real—captured on the farm, not staged for brochures.
               </p>
             </div>
 

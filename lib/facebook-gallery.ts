@@ -49,4 +49,7 @@ export const authenticGalleryItems: AuthenticGalleryItem[] = [
   { src: `${BASE}/472280935_122145546524347210_4393666419911566418_n.jpg`, category: 'Wildlife', title: 'Full-body giraffe in dry savanna' },
   { src: `${BASE}/472239700_122145523454347210_5298227541206384290_n.jpg`, category: 'Wildlife', title: 'Trail cam; warthogs foraging at night' },
   { src: `${BASE}/472295295_122145522788347210_473922214345027533_n.jpg`, category: 'Wildlife', title: 'Trail cam; honey badgers foraging at night' },
+  // Extra two from Facebook folder
+  { src: `${BASE}/469445759_122145814202331002_8412168224364807253_n.jpg`, category: 'Wildlife', title: 'Three giraffes; thatched lodge in background' },
+  { src: `${BASE}/469490837_122145814052331002_8566440733817305386_n.jpg`, category: 'Landscape', title: 'Eland and kudu on dirt road; dawn pastel sky' },
 ]

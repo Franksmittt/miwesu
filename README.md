@@ -1,6 +1,6 @@
-# MIWESU — The Royal Residence
+# MIWESU - The Royal Residence
 
-Luxury Next.js website for **MIWESU Game Farm / Hunters Lodge**, Thabazimbi, South Africa — the **Iron Eden** sanctuary in the Makoppa district (Waterberg).
+Luxury Next.js website for **MIWESU Game Farm / Hunters Lodge**, Thabazimbi, South Africa: the **Iron Eden** sanctuary in the Makoppa district (Waterberg).
 
 ---
 
@@ -99,8 +99,8 @@ miwesu/
 
 ## Customization
 
-- **Colours:** `tailwind.config.js` — Gold (300–600), Onyx, Marble.
-- **Fonts:** `app/layout.tsx` — Cinzel (serif), Montserrat (sans).
+- **Colours:** `tailwind.config.js`: Gold (300–600), Onyx, Marble.
+- **Fonts:** `app/layout.tsx`: Cinzel (serif), Montserrat (sans).
 - **Hero images:** `lib/hero-images.ts` and per-page overrides; assets in `public/images/`.
 
 ---

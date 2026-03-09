@@ -21,7 +21,7 @@ const tools = [
   },
   {
     title: 'Live Telemetry Dashboard',
-    description: 'Conservation impact metrics and kiln moisture data—live-style dashboards for the Iron Eden and Engineered Heat.',
+    description: 'Conservation impact metrics and kiln moisture data: live-style dashboards for the Iron Eden and Engineered Heat.',
     href: '/tools/telemetry',
     icon: Activity,
     label: 'Impact & moisture',
@@ -41,7 +41,7 @@ export default function ToolsPage() {
               Tools
             </h1>
             <p className="font-sans text-gray-400 text-lg max-w-2xl mx-auto">
-              SAPS 520 preparation, biltong yield estimates, and live telemetry—everything you need to plan and verify.
+              SAPS 520 preparation, biltong yield estimates, and live telemetry: everything you need to plan and verify.
             </p>
           </div>
         </section>

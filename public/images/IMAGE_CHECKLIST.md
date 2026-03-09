@@ -36,7 +36,7 @@ Use **.jpg** or **.jpeg** (both work). **Done** = file is in folder and will dis
 
 | Copy as this filename | Use for / Description | Card 1 folder | Status |
 |-----------------------|------------------------|----------------|--------|
-| `residences-hero.jpg` | Hero: private residences overview (wide) | — | **done** |
+| `residences-hero.jpg` | Hero: private residences overview (wide) | - | **done** |
 | **Main Lodge House (Homestead)** | | | |
 | `residences-homestead-main.jpg` | Main lodge exterior / main shot (home & gallery) | `main_house_outside` | **done** |
 | `residences-main-lodge-lower-room-1.jpg` | Lower Room 1 (sleeps 3, deer/impala art) | `main_house_lower_room_1_sleeps_3` | |
@@ -61,7 +61,7 @@ Use **.jpg** or **.jpeg** (both work). **Done** = file is in folder and will dis
 | `residences-second-house-room2-ensuite.jpg` | Second bedroom en-suite (bathtub) | `house2_room2_bathroom` | |
 | `residences-second-house-braai.jpg` | Outdoor braai (left of house) | `house2_outside` | |
 | **General** | | | |
-| `residences-housekeeping.jpg` | Daily housekeeping / invisible service | — | **done** |
+| `residences-housekeeping.jpg` | Daily housekeeping / invisible service | - | **done** |
 
 **Note:** Site uses fallbacks for missing images (e.g. homestead main for lower/upper rooms until files are added). Gallery uses the same accommodation list from `lib/residences-data.ts`.
 
@@ -128,8 +128,8 @@ Use **.jpg** or **.jpeg** (both work). **Done** = file is in folder and will dis
 
 ## Still to add (for full coverage)
 
-- **Residences (Main Lodge):** `residences-main-lodge-lower-room-1.jpg`, `residences-main-lodge-lower-room-2.jpg`, `residences-main-lodge-first-patio.jpg`, `residences-main-lodge-upper-room-1.jpg`, `residences-main-lodge-upper-room-2.jpg` — pick one image per Card 1 folder; site uses fallbacks until added.
-- **Residences (Second House):** `residences-second-house-bedroom-2.jpg`, `residences-second-house-room2-ensuite.jpg`, `residences-second-house-braai.jpg` — pick one from the Card 1 folder; site uses fallbacks until added.
+- **Residences (Main Lodge):** `residences-main-lodge-lower-room-1.jpg`, `residences-main-lodge-lower-room-2.jpg`, `residences-main-lodge-first-patio.jpg`, `residences-main-lodge-upper-room-1.jpg`, `residences-main-lodge-upper-room-2.jpg`: pick one image per Card 1 folder; site uses fallbacks until added.
+- **Residences (Second House):** `residences-second-house-bedroom-2.jpg`, `residences-second-house-room2-ensuite.jpg`, `residences-second-house-braai.jpg`: pick one from the Card 1 folder; site uses fallbacks until added.
 
 All paths are relative to **`public/images/`** (e.g. the site uses `/images/activities-hero.jpg` → file in `public/images/activities-hero.jpg`).
 

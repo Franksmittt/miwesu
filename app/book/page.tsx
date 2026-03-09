@@ -256,7 +256,7 @@ export default function BookPage() {
           )}
 
           <div className="booking-step-content">
-            {/* ——— Step 1: Dates & guests ——— */}
+            {/* Step 1: Dates & guests */}
           {step === 1 && (
               <section className="grid lg:grid-cols-[1fr,320px] gap-8 lg:gap-12">
                 <div className="rounded-2xl border border-white/10 bg-onyx-light/50 p-6 sm:p-8">
@@ -382,7 +382,7 @@ export default function BookPage() {
             </section>
           )}
 
-            {/* ——— Step 3: Guest details + summary ——— */}
+            {/* Step 3: Guest details + summary */}
           {step === 3 && selectedOption && (
               <section className="grid lg:grid-cols-[1fr,340px] gap-8 lg:gap-12">
               <form onSubmit={handleSubmit(onGuestSubmit)} className="space-y-6">
@@ -492,7 +492,7 @@ export default function BookPage() {
             </section>
           )}
 
-            {/* ——— Step 4: Success or error ——— */}
+            {/* Step 4: Success or error */}
           {step === 4 && (checkoutDemo || checkoutError) && (
               <section className="max-w-lg mx-auto">
                 <div

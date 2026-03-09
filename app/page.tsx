@@ -72,7 +72,7 @@ export default function Home() {
       <LocalBusinessSchema />
       <main id="main-content">
 
-      {/* Hero Section — Slow-Breathe (Ken Burns) for immersion */}
+      {/* Hero Section: Slow-Breathe (Ken Burns) for immersion */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden bg-onyx">
         <div className="absolute inset-0 z-0 overflow-hidden">
           <div className="absolute w-[120%] h-[120%] -left-[10%] -top-[10%] animate-ken-burns">
@@ -155,7 +155,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Design Your Escape — vibe hover takeover */}
+      {/* Design Your Escape: vibe hover takeover */}
       <HoverTakeover />
 
       {/* The Estate / Origins */}
@@ -364,7 +364,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* A Day in Eden — scroll timeline */}
+      {/* A Day in Eden: scroll timeline */}
       <DayInLife />
 
       {/* The Royal Pursuit */}

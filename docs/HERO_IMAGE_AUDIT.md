@@ -1,4 +1,4 @@
-# MIWESU — Hero Image Audit & Crop Specs
+# MIWESU - Hero Image Audit & Crop Specs
 
 **Purpose:** Finalize hero images across the site. Use this checklist to crop and replace assets in `/public/images/` to match layout, safe zones, and brand (Hardware Noir, Cinematic Verité, Clean Kill).
 
@@ -13,7 +13,7 @@
 - **Section:** `relative h-[50vh] sm:h-[60vh] flex items-center justify-center overflow-hidden bg-onyx`
 - **Image:** `fill`, `sizes="100vw"`, `object-cover opacity-50`
 - **Overlay:** `bg-gradient-to-t from-onyx via-onyx/40 to-transparent` (darkest at bottom, fade to transparent top)
-- **Text:** `relative z-20 text-center px-4 sm:px-6` — **centered**, sitting over the **center-middle** of the image with the gradient darkening the **bottom half** for contrast.
+- **Text:** `relative z-20 text-center px-4 sm:px-6`: **centered**, sitting over the **center-middle** of the image with the gradient darkening the **bottom half** for contrast.
 
 **Crop guidance for this pattern:**
 - **Desktop:** Effective viewport is ~16:9 to 2:1 landscape (50–60vh × 100vw). Crop to **16:9 landscape**; keep important subject/content in the **center third** vertically; **bottom 40%** will be darkened by gradient (safe for text).
@@ -21,7 +21,7 @@
 
 ---
 
-## 2. Master table — every page with a hero image
+## 2. Master table: every page with a hero image
 
 | # | Page Name | Route | Section dimensions | Image (current) | Desktop crop | Mobile crop | Text overlay / safe zone | Content & aesthetic directive |
 |---|-----------|--------|--------------------|------------------|--------------|-------------|---------------------------|--------------------------------|
@@ -40,18 +40,18 @@
 | 13 | **Wildlife** | `/wildlife` | `h-[50vh] sm:h-[60vh]` | `_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg` | 16:9 | 4:5 or center | **Center.** “The Portfolio”, “Conservation Harvest”. Bottom gradient. | Species/landscape that says “portfolio” — one iconic wildlife or habitat shot. |
 | 14 | **Residences (overview)** | `/residences` | `h-[50vh] sm:h-[60vh] min-h-[300px]`; **Ken Burns**, **no opacity** (full saturation) | `_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg` | 16:9 | 4:5 or center | **No text on image.** Title block sits **below** the hero in a card. Hero is full-bleed only. | Braai under trees, savanna, water; warm architectural/lodge life contrasting with dark bushveld. |
 | 15 | **Residences – Homestead** | `/residences/homestead` | `h-[50vh] min-h-[320px]`; **no gradient** | `residences-homestead-main.jpg` | 16:9 | 4:5 or center | **No text on image.** Title/copy in card below. | **The Homestead:** warm architectural lighting, building + bushveld; day or golden hour. |
-| 16 | **Residences – Stone Villa** | `/residences/stone-villa` | `h-[50vh] min-h-[320px]`; **no gradient** | `residences-second-house-main.jpg` | 16:9 | 4:5 or center | **No text on image.** Title/copy in card below. | **Stone Villa:** same as Homestead — warm lights, structure, dark bushveld contrast. |
+| 16 | **Residences – Stone Villa** | `/residences/stone-villa` | `h-[50vh] min-h-[320px]`; **no gradient** | `residences-second-house-main.jpg` | 16:9 | 4:5 or center | **No text on image.** Title/copy in card below. | **Stone Villa:** same as Homestead: warm lights, structure, dark bushveld contrast. |
 | 17 | **Book** | `/book` | Content-height strip (no fixed vh). `opacity-30` + `bg-gradient-to-b from-onyx/60 to-onyx` | `_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg` | **Wide 21:9 or 3:1** (short strip) | Same | **Left-aligned block** (max-w-4xl mx-auto). “Book your stay” + subtext. Image is subtle background; keep **left-center** and **center** relatively uncluttered. | Soft lodge/panoramic; supports booking, not dominant. |
 | 18 | **DE (German)** | `/de` | `min-h-[70vh]`; gradient `via-onyx/50` | `_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg` | **Tall 16:9 or 3:4** (70vh feel) | 4:5 | **Center.** “Jagd in Limpopo”, CTA. Bottom gradient. | Same as Home: Limpopo, malaria-free, EU hunter. |
 | 19 | **ES (Spanish)** | `/es` | `min-h-[70vh]`; gradient `via-onyx/50` | `_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg` | Tall 16:9 or 3:4 | 4:5 | **Center.** “Caza en Limpopo”, CTA. Bottom gradient. | Same as DE. |
 | 20 | **Blog index** | `/blog` | `h-[45vh] sm:h-[50vh]` | `_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg` | 16:9 | 4:5 or center | **Center.** Hunter’s Journal title. Bottom gradient. | Lodge or bushveld that says “stories” and authority. |
 | 21 | **Blog – Sweetveld** | `/blog/sweetveld-vs-sourveld` | **No text on image.** Container: `aspect-video sm:aspect-[21/9] max-h-[50vh]` | `about-sweetveld-kudu.jpg` | **21:9 ultrawide** (or 16:9) | 16:9 | Title and copy **below** image. | Kudu in Sweetveld habitat; nutrient-rich grasses, Makoppa. |
 | 22 | **Blog – Limpopo** | `/blog/limpopo-vs-eastern-cape` | Same: `aspect-video sm:aspect-[21/9] max-h-[50vh]` | `_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg` | 21:9 or 16:9 | 16:9 | Title below. | Plains game / Limpopo bushveld; editorial, comparison. |
-| 23 | **Compare** | `/compare` | **No hero image.** Solid `bg-onyx` section, text only. | — | — | — | — | N/A |
+| 23 | **Compare** | `/compare` | **No hero image.** Solid `bg-onyx` section, text only. | - | - | - | - | N/A |
 
 ---
 
-## 3. Species pages (14) — one table
+## 3. Species pages (14): one table
 
 All species heroes use the **same layout**:  
 `h-[50vh] sm:h-[60vh]`, `fill`, `object-cover opacity-50`, gradient `from-onyx via-onyx/40 to-transparent`, **text centered** (tagline, species name, scientific name).
@@ -87,7 +87,7 @@ Moody, **parallax-ready portrait** of the animal. **Direct eye contact** with ca
 
 ---
 
-## 5. Quick reference — aspect ratios
+## 5. Quick reference: aspect ratios
 
 | Context | Aspect ratio | Notes |
 |--------|--------------|--------|

@@ -84,7 +84,7 @@ export default function GemsbokPage() {
                   The Gemsbok, also known as the South African Oryx, is one of Africa's most striking and resilient antelope species. Known as "The Desert Warrior" for its ability to thrive in harsh, arid environments, this large antelope is a symbol of adaptation and survival.
                 </p>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
-                  With its striking black-and-white facial "warpaint," long, nearly straight rapier-like horns, and heavy-fronted build, the Gemsbok is instantly recognizable. They can survive for long periods without surface water by extracting moisture from diet and dew; when water is available—such as at Limpopo reserve waterholes—they drink readily.
+                  With its striking black-and-white facial "warpaint," long, nearly straight rapier-like horns, and heavy-fronted build, the Gemsbok is instantly recognizable. They can survive for long periods without surface water by extracting moisture from diet and dew; when water is available, such as at Limpopo reserve waterholes, they drink readily.
                 </p>
                 <p className="font-sans text-gray-600 text-lg leading-loose">
                   Gemsbok have been successfully introduced to the Limpopo bushveld and thrive on well-managed reserves like MIWESU. In the Makoppa district, the mix of open grassland, Mopane and Acacia scrub, and flat to gently undulating terrain provides ideal habitat, sustaining them in peak condition and resulting in exceptional trophy quality.

@@ -56,6 +56,6 @@ export async function sendBookingConfirmationEmail(booking: BookingWithUnit): Pr
     from: fromEmail,
     to: [...new Set(adminTo)],
     subject: `New booking: ${booking.guestName} – ${booking.unit.name}`,
-    html: `<p>New confirmed booking from ${booking.guestName} (${booking.guestEmail}) for ${booking.unit.name}, ${checkIn} – ${checkOut}, ${booking.totalGuests} guests.</p><p>— Wayne & Melissa (MIWESU)</p>`,
+    html: `<p>New confirmed booking from ${booking.guestName} (${booking.guestEmail}) for ${booking.unit.name}, ${checkIn} – ${checkOut}, ${booking.totalGuests} guests.</p><p>Wayne & Melissa (MIWESU)</p>`,
   })
 }

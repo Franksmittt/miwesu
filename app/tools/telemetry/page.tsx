@@ -75,7 +75,7 @@ export default function TelemetryPage() {
               <div>
                 <h1 className="font-serif text-3xl md:text-4xl text-white">Live Telemetry</h1>
                 <p className="text-gray-400 text-sm mt-1">
-                  Conservation impact and kiln moisture — simulated live data
+                  Conservation impact and kiln moisture: simulated live data
                 </p>
               </div>
             </div>
@@ -119,7 +119,7 @@ export default function TelemetryPage() {
             <div className="liquid-glass-dark rounded-xl border border-white/10 overflow-hidden">
               <div className="px-6 py-4 border-b border-white/10 flex items-center gap-2">
                 <Flame className="w-5 h-5 text-gold-500" />
-                <h2 className="font-serif text-xl text-white">Kiln Telemetry — Engineered Heat</h2>
+                <h2 className="font-serif text-xl text-white">Kiln Telemetry: Engineered Heat</h2>
               </div>
               {loading ? (
                 <div className="p-8 text-gray-400 text-center">Loading…</div>

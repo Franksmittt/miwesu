@@ -139,7 +139,7 @@ export default function GalleryPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16 reveal">
               <p className="font-sans text-gray-400 text-lg max-w-2xl mx-auto leading-loose">
-                Private access. No crowds, no queues—just the Iron Eden. These moments are from the reserve: golden-hour savanna, thatched bomas under the stars, and the species of the Makoppa in their Sweetveld home. Every frame is real—captured on the farm, not staged for brochures.
+                Private access. No crowds, no queues, just the Iron Eden. These moments are from the reserve: golden-hour savanna, thatched bomas under the stars, and the species of the Makoppa in their Sweetveld home. Every frame is real, captured on the farm, not staged for brochures.
               </p>
             </div>
 

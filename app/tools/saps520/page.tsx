@@ -90,7 +90,7 @@ export default function SAPS520Page() {
               <div>
                 <h1 className="font-serif text-3xl md:text-4xl text-white">SAPS 520 Generator</h1>
                 <p className="text-gray-400 text-sm mt-1">
-                  Temporary firearm import — application data for South Africa
+                  Temporary firearm import: application data for South Africa
                 </p>
               </div>
             </div>

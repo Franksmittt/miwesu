@@ -71,7 +71,7 @@ export async function POST(request: NextRequest) {
       '<p><strong>Primary intent:</strong> ' + escapeHtml(intent) + '</p>',
       '<p><strong>Message:</strong></p>',
       '<p style="white-space: pre-wrap;">' + escapeHtml(message) + '</p>',
-      '<p style="margin-top: 24px; color: #666;">— Reply to the sender using the email above. Wayne & Melissa (MIWESU)</p>',
+      '<p style="margin-top: 24px; color: #666;">Reply to the sender using the email above. Wayne & Melissa (MIWESU)</p>',
     ].join('')
 
     const { error } = await resend.emails.send({

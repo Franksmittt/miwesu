@@ -45,11 +45,11 @@ export async function POST(request: NextRequest) {
     const write = (label: string, value: string, indent = 0) => {
       page.drawText(label, { x: 50 + indent, y, size: 9, font: fontBold, color: rgb(0.2, 0.2, 0.2) })
       y -= 14
-      page.drawText(value || '—', { x: 50 + indent, y, size: 10, font, color: rgb(0, 0, 0) })
+      page.drawText(value || '-', { x: 50 + indent, y, size: 10, font, color: rgb(0, 0, 0) })
       y -= 18
     }
 
-    page.drawText('SAPS 520 — Application data (MIWESU)', {
+    page.drawText('SAPS 520 - Application data (MIWESU)', {
       x: 50,
       y,
       size: 16,

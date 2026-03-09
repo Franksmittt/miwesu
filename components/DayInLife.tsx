@@ -60,7 +60,7 @@ export default function DayInLife() {
             From dawn to <span className="text-gradient-gold">starlight</span>
           </h2>
           <p className="font-sans text-gray-400 mt-4 max-w-xl mx-auto text-sm sm:text-base">
-            One day. Five moments. Hunters, families, couples — everyone finds their rhythm.
+            One day. Five moments. Hunters, families, couples: everyone finds their rhythm.
           </p>
         </motion.div>
 

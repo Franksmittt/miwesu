@@ -33,7 +33,7 @@ export default function AuthenticGallery() {
             Moments in Eden
           </h2>
           <p className="font-sans text-gray-400 text-sm sm:text-base max-w-2xl mx-auto">
-            Curated from the field—golden hour, lodge life, and wildlife in their habitat. No filter.
+            Curated from the field: golden hour, lodge life, and wildlife in their habitat. No filter.
           </p>
         </div>
 

@@ -77,7 +77,7 @@ export default function ComparePage() {
               Species Comparison
             </h1>
             <p className="font-sans text-gray-400 text-lg max-w-2xl mx-auto">
-              Compare two species side by side—weight, size, habitat, trophy criteria, and more.
+              Compare two species side by side: weight, size, habitat, trophy criteria, and more.
             </p>
           </div>
         </section>
@@ -250,8 +250,8 @@ export default function ComparePage() {
                       const valA = speciesA[key]
                       const valB = speciesB[key]
                       if (key === 'trophyNote' && !valA && !valB) return null
-                      const displayA = typeof valA === 'string' ? valA : '—'
-                      const displayB = typeof valB === 'string' ? valB : '—'
+                      const displayA = typeof valA === 'string' ? valA : '-'
+                      const displayB = typeof valB === 'string' ? valB : '-'
                       return (
                         <tr key={key} className="hover:bg-marble/50 transition-colors">
                           <td className="px-6 py-4 font-medium text-gray-600 align-top">

@@ -34,7 +34,7 @@ export default function BiltongPage() {
               <div>
                 <h1 className="font-serif text-3xl md:text-4xl text-white">Biltong Yield Calculator</h1>
                 <p className="text-gray-400 text-sm mt-1">
-                  Estimate dry biltong yield from wet carcass — SA processing (2cm with grain, coriander/vinegar cure)
+                  Estimate dry biltong yield from wet carcass, SA processing (2cm with grain, coriander/vinegar cure)
                 </p>
               </div>
             </div>

@@ -63,7 +63,7 @@ export default function HoverTakeover() {
           priority={false}
         />
       </div>
-      {/* Hover takeover layer — cross-fades when a vibe card is hovered */}
+      {/* Hover takeover layer: cross-fades when a vibe card is hovered */}
       <motion.div
         className="absolute inset-0 z-0"
         initial={{ opacity: 0 }}
@@ -92,7 +92,7 @@ export default function HoverTakeover() {
             Who&apos;s <span className="text-gradient-gold">Eden</span>?
           </h2>
           <p className="font-sans text-gray-400 mt-4 max-w-xl mx-auto text-sm sm:text-base">
-            Hover to step into your vibe — hunters, families, couples, bachelors, city escapees.
+            Hover to step into your vibe: hunters, families, couples, bachelors, city escapees.
           </p>
         </div>
 

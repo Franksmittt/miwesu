@@ -1,5 +1,5 @@
 /**
- * Activity page images — real Thabazimbi / lodge photos (no placeholders).
+ * Activity page images: real Thabazimbi / lodge photos (no placeholders).
  * All paths point to files in public/images.
  */
 export const activityImages = {

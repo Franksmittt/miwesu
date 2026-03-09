@@ -479,10 +479,14 @@ export default function RedHartebeestPage() {
 
             {/* Shot Placement */}
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="relative h-full min-h-[500px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Shot Placement Diagram Image Placeholder</span>
-                </div>
+              <div className="relative h-full min-h-[500px] overflow-hidden rounded-sm">
+                <Image
+                  src="/images/redhardt_Shotplacement.png"
+                  alt="Red Hartebeest shot placement diagram: broadside, quartering away, and frontal aim points"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <div>
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Shot Placement</h3>
@@ -602,8 +606,8 @@ export default function RedHartebeestPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
-              <div className="flex flex-col">
+            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Meat Characteristics</h3>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
                   Red Hartebeest venison is lean, dark red, and flavorful. The meat has a rich, gamey flavor that is often compared to beef but with a distinctive wild game character. It is highly regarded and versatile in the kitchen.
@@ -615,10 +619,14 @@ export default function RedHartebeestPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Red Hartebeest Venison Image Placeholder</span>
-                </div>
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+                <Image
+                  src="/images/Gemini_Generated_Image_aclqtfaclqtfaclq.png"
+                  alt="Red Hartebeest venison: lean, dark red meat"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
           </div>

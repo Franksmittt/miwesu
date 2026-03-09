@@ -1,0 +1,26 @@
+{
+  "_meta": {
+    "purpose": "AI image for the Greater Kudu page, Hunting Strategies section (next to Spot and Stalk, Ambush, Tracking text). Place image in app/greater-kudu/page.tsx replacing 'Hunting Stalk Image Placeholder'.",
+    "pageRoute": "/greater-kudu",
+    "sectionTitle": "Hunting Strategies",
+    "brandRules": "Cinematic Verité (natural light, deep shadows, documentary feel). Clean Kill policy: no blood, no gore, no wounded animals. Dignified, atmospheric.",
+    "usageNote": "Use with DALL·E, Midjourney, Stable Diffusion, or similar. Output should be landscape; crop to match layout (image sits beside text block, flexible height)."
+  },
+  "aspectRatio": "3:2",
+  "recommendedDimensions": "1200×800 px or higher (landscape)",
+  "vegetationContext": "Arid Sweet Bushveld, Makoppa district, Limpopo: reddish-brown soil, dry golden-brown grass, patchy green, flat-topped acacia trees, thorny shrubs, dense thickets in middle distance, distant hills. Dawn or late afternoon light.",
+  "styleRules": [
+    "Warm wildlife/documentary photography. No people in frame (or only subtle suggestion of vantage, e.g. out-of-frame perspective).",
+    "No weapons, no blood, no gore. No hunting camp or vehicles.",
+    "Mood: anticipation, patience, the moment before the stalk. Golden hour or soft dawn/dusk.",
+    "Shallow depth of field optional; can be sharp through frame for 'glassing' clarity."
+  ],
+  "prompts": {
+    "primary": "Golden hour view over African bushveld from a high vantage point. Rolling hills of dry golden grass and reddish-brown soil, scattered flat-topped acacia trees and thorny shrubs, dense green thickets in the middle distance. A single adult male greater kudu (Tragelaphus strepsiceros) with spiral horns and grey-brown striped coat, standing at the edge of acacia thicket in the middle distance, partially visible - the 'grey ghost' in his habitat. Dawn or late afternoon light, long shadows, warm amber and gold tones. Limpopo bushveld, South Africa. Cinematic wildlife documentary style, no people in frame, no blood, no gore. Atmospheric, dignified.",
+    "alternate_vista": "Dramatic wide landscape at first light. African savanna bushveld from a hilltop perspective: golden grass, acacia trees, distant mountains. A greater kudu bull walking through tall grass in the middle distance, silhouette or soft detail. Mist or haze in the valleys. Warm sunrise palette. Documentary style, no people, no weapons, no blood.",
+    "alternate_close": "Single adult male greater kudu bull with spiral horns and grey-brown coat with white stripes, standing alert at the edge of dense acacia thicket. Golden hour backlight, rim light on horns and shoulder. Reddish-brown soil, dry grass, thorny branches in soft bokeh. Arid Sweet Bushveld, Limpopo. The elusive 'grey ghost' in typical habitat. Wildlife photography, warm tones, shallow depth of field, dignified. No people, no blood."
+  },
+  "negativePrompt": "People, hunters, rifles, weapons, blood, gore, wounded animal, vehicles, buildings, fences, power lines, oversaturated, cartoon, painting, text overlay.",
+  "suggestedFileName": "greater-kudu-hunting-strategies.png",
+  "integrationNote": "Save generated image to public/images/ then in app/greater-kudu/page.tsx replace the placeholder div with: <div className=\"relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden\"><Image src=\"/images/greater-kudu-hunting-strategies.png\" alt=\"Greater kudu in bushveld at golden hour - spot and stalk habitat\" fill className=\"object-cover object-center\" sizes=\"(max-width: 768px) 100vw, 50vw\" /></div>"
+}

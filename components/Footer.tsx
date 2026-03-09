@@ -1,25 +1,46 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { MapPin, Mail, Phone, ArrowUpRight } from 'lucide-react'
+import { authenticGalleryItems } from '@/lib/facebook-gallery'
 
 export default function Footer() {
+  const footerImages = [...authenticGalleryItems, ...authenticGalleryItems]
+
   return (
     <footer className="bg-onyx border-t border-white/5 overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Top: Brand + tagline */}
-        <div className="pt-16 sm:pt-20 pb-12 sm:pb-14 border-b border-white/5">
-          <Link href="/" className="inline-block group">
-            <span className="block font-serif text-2xl sm:text-3xl tracking-[0.2em] text-white font-bold group-hover:text-gold-500 transition-colors">
-              MIWESU
-            </span>
-            <span className="block text-[10px] sm:text-xs tracking-[0.3em] text-gold-500/90 uppercase font-sans mt-1">
-              Est. 1984 · The Makoppa Sanctuary
-            </span>
-          </Link>
-          <p className="mt-6 max-w-md text-gray-400 text-sm font-sans leading-relaxed">
-            Private residence collection in the Arid Sweet Bushveld. Exclusive use, bespoke living, absolute privacy.
-          </p>
+        {/* Top: section in 6 — cols 1–2 text, cols 3–6 infinite scroll of Facebook images */}
+        <div className="pt-16 sm:pt-20 pb-12 sm:pb-14 border-b border-white/5 grid grid-cols-2 md:grid-cols-6 gap-4 md:gap-6">
+          <div className="col-span-2 flex flex-col justify-center order-2 md:order-1">
+            <Link href="/" className="inline-block group">
+              <span className="block font-serif text-2xl sm:text-3xl tracking-[0.2em] text-white font-bold group-hover:text-gold-500 transition-colors">
+                MIWESU
+              </span>
+              <span className="block text-[10px] sm:text-xs tracking-[0.3em] text-gold-500/90 uppercase font-sans mt-1">
+                Est. 1984 · The Makoppa Sanctuary
+              </span>
+            </Link>
+            <p className="mt-6 max-w-md text-gray-400 text-sm font-sans leading-relaxed">
+              Private residence collection in the Arid Sweet Bushveld. Exclusive use, bespoke living, absolute privacy.
+            </p>
+          </div>
+          <div className="col-span-2 md:col-span-4 overflow-hidden order-1 md:order-2 min-h-[140px] md:min-h-[200px]">
+            <div className="flex w-max h-full animate-footer-marquee">
+              {footerImages.map((item, i) => (
+                <div key={i} className="relative flex-shrink-0 w-[140px] h-[140px] md:w-[200px] md:h-[200px] rounded-sm overflow-hidden border border-white/10 ml-2 md:ml-4 first:ml-0">
+                  <Image
+                    src={item.src}
+                    alt={item.title ?? 'MIWESU'}
+                    fill
+                    className="object-cover"
+                    sizes="200px"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Links: two rows  - primary then secondary */}

@@ -1,0 +1,104 @@
+{
+  "_meta": {
+    "purpose": "AI image generation prompts for shot placement diagrams on each species page. One image per species: animal in broadside view with a single target marking ideal vitals. Replace Shot Placement placeholders in app/[species]/page.tsx.",
+    "aspectRatio": "4:5",
+    "orientation": "portrait (vertical)",
+    "constraints": "No text, no labels, no text overlays. Uniform style across all species.",
+    "shotPlacementFact": "For all species the ideal broadside shot is: one-third of the way up the body, just behind the front leg (heart and lungs). Diagram shows this single aim point only."
+  },
+  "uniformStyleSpec": {
+    "description": "Use this exact style for every species so all images look like one set.",
+    "style": "Clean technical illustration or diagram. Single animal in broadside view (side profile), standing or walking. One clear aim-point marker: a circle or crosshair or shaded oval on the chest, positioned one-third of the way up from the belly line, just behind the front leg. No text. No labels. No words. Minimal or no background; neutral flat colour or very subtle gradient only.",
+    "visual": "Line art or soft diagrammatic illustration. Consistent line weight. Animal recognizable but simplified enough to read as a diagram. Target marker: single colour (e.g. red circle, or dark grey crosshair), same style across all images. No blood, no gore, no graphic detail.",
+    "negativePrompt": "Text, letters, words, labels, captions, numbers, arrows with text. Photorealistic. Cartoon. Cute. Multiple animals. Different style from the others. Cluttered background. Blood, gore."
+  },
+  "species": [
+    {
+      "slug": "greater-kudu",
+      "name": "Greater Kudu",
+      "prompt": "Technical diagram illustration, no text. Single greater kudu bull in strict broadside view, side profile. Grey-brown body with white vertical stripes, long spiral horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "slug": "impala",
+      "name": "Impala",
+      "prompt": "Technical diagram illustration, no text. Single impala ram in strict broadside view, side profile. Reddish-brown coat, white underbelly, lyre-shaped horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "slug": "blesbok",
+      "name": "Blesbok",
+      "prompt": "Technical diagram illustration, no text. Single blesbok ram in strict broadside view, side profile. Reddish-brown coat, white face blaze, lyre horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "slug": "bushbuck",
+      "name": "Bushbuck",
+      "prompt": "Technical diagram illustration, no text. Single bushbuck ram in strict broadside view, side profile. Reddish-brown to dark brown coat, white spots and stripes, short spiral horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "slug": "cape-buffalo",
+      "name": "Cape Buffalo",
+      "prompt": "Technical diagram illustration, no text. Single Cape buffalo bull in strict broadside view, side profile. Massive dark grey-black body, heavy boss, curved horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "slug": "dapple-impala",
+      "name": "Dapple Impala",
+      "prompt": "Technical diagram illustration, no text. Single dapple impala ram in strict broadside view, side profile. Reddish-brown coat with white dappling or patches, lyre horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "slug": "gemsbok",
+      "name": "Gemsbok",
+      "prompt": "Technical diagram illustration, no text. Single gemsbok in strict broadside view, side profile. Grey-tan body, black-and-white face mask, long straight horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "slug": "golden-wildebeest",
+      "name": "Golden Wildebeest",
+      "prompt": "Technical diagram illustration, no text. Single golden wildebeest bull in strict broadside view, side profile. Golden-tan or blonde coat, dark mane and beard, curved horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "slug": "wildebeest",
+      "name": "Blue Wildebeest",
+      "prompt": "Technical diagram illustration, no text. Single blue wildebeest bull in strict broadside view, side profile. Brindled grey-brown coat, dark mane and beard, curved horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "slug": "lechwe",
+      "name": "Lechwe",
+      "prompt": "Technical diagram illustration, no text. Single lechwe ram in strict broadside view, side profile. Reddish-brown coat, long lyre horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "slug": "livingstone-eland",
+      "name": "Livingstone Eland",
+      "prompt": "Technical diagram illustration, no text. Single Livingstone eland bull in strict broadside view, side profile. Large body, tan with faint stripes, spiral horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "slug": "red-hartebeest",
+      "name": "Red Hartebeest",
+      "prompt": "Technical diagram illustration, no text. Single red hartebeest bull in strict broadside view, side profile. Reddish-brown coat, elongated face, lyre-shaped horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "slug": "springbok",
+      "name": "Springbok",
+      "prompt": "Technical diagram illustration, no text. Single springbok ram in strict broadside view, side profile. Tan and white coat, straight horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "slug": "warthog",
+      "name": "Warthog",
+      "prompt": "Technical diagram illustration, no text. Single warthog boar in strict broadside view, side profile. Grey body, facial warts, curved tusks. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    }
+  ],
+  "suggestedFileNames": {
+    "greater-kudu": "greater-kudu_shot-placement.png",
+    "impala": "impala_shot-placement.png",
+    "blesbok": "blesbok_shot-placement.png",
+    "bushbuck": "bushbuck_shot-placement.png",
+    "cape-buffalo": "cape-buffalo_shot-placement.png",
+    "dapple-impala": "dapple-impala_shot-placement.png",
+    "gemsbok": "gemsbok_shot-placement.png",
+    "golden-wildebeest": "golden-wildebeest_shot-placement.png",
+    "wildebeest": "wildebeest_shot-placement.png",
+    "lechwe": "lechwe_shot-placement.png",
+    "livingstone-eland": "livingstone-eland_shot-placement.png",
+    "red-hartebeest": "red-hartebeest_shot-placement.png",
+    "springbok": "springbok_shot-placement.png",
+    "warthog": "warthog_shot-placement.png"
+  },
+  "usageNote": "Generate each image at 4:5 aspect ratio (e.g. 800×1000 px). Save to public/images/. Use the same prompt style and one target position so all diagrams look uniform. Red hartebeest already has redhardt_Shotplacement.png; you may replace with this style for consistency."
+}

@@ -52,6 +52,19 @@
     }
   }
 
+  /* Footer infinite scroll (marquee) */
+  @keyframes footer-marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  .animate-footer-marquee {
+    animation: footer-marquee 180s linear infinite;
+  }
+
   /* Glassmorphism (existing – unchanged) */
   .glass-panel {
     background: rgba(255, 255, 255, 0.8);

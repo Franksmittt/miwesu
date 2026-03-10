@@ -1,0 +1,556 @@
+{
+  "_meta": {
+    "purpose": "Detailed AI image generation prompts for every species page placeholder image. Use with DALL·E, Midjourney, or similar. Match vegetation and animal realism.",
+    "integratedImages": [
+      "impala-hunting-stalk.png",
+      "impala-shot-placement.png",
+      "impala-trophy-ram.png",
+      "impala-venison.png",
+      "blesbok-shot-placement.png",
+      "blesbok-venison.png",
+      "blesbok-culinary.png",
+      "blesbok-spoor.png",
+      "blesbok-dung-midden.png",
+      "springbok-shot-placement.png",
+      "springbok-venison.png",
+      "cape-buffalo-shot-placement.png",
+      "cape-buffalo-venison.png",
+      "warthog-hunting-stalk.png",
+      "warthog-shot-placement.png",
+      "warthog-boar-vs-sow.png",
+      "Gemini_Generated_Image_bwocmbwocmbwocmb.png",
+      "greater-kudu-hunting-strategies.png",
+      "greater-kudu-shot-placement.png",
+      "greater-kudu-venison.png"
+    ],
+    "vegetationContext": "MIWESU Game Farm, Makoppa district, Thabazimbi, Limpopo. Arid Sweet Bushveld: reddish-brown soil, dry golden-brown grass, patchy green grass, acacia-like trees (flat-topped, thorny), gnarled dark-bark trees, thorny shrubs, dense bushveld thickets, dry season savanna. Warm natural light. No power lines or man-made objects in frame.",
+    "styleRules": [
+      "Realistic, typical specimens only. Do not request 'largest', 'biggest', 'trophy', 'exceptional', 'magnificent' or show-stopper animals.",
+      "Healthy, normal-condition animals: not emaciated, not sick, not diseased. Not dying or stressed.",
+      "Match Makoppa vegetation and ground: red-brown soil, dry golden grass, acacia thorn trees, bushveld shrubs.",
+      "Warm wildlife photography palette. Shallow depth of field where appropriate. No blood, no gore. Dignified.",
+      "Golden hour or soft overcast preferred for wildlife. Food/venison: natural lighting, appetising but not staged."
+    ],
+    "aspectRatiosByType": {
+      "huntingStalk": "3:2",
+      "shotPlacement": "4:5",
+      "venison": "4:5",
+      "trophy": "3:2",
+      "taxonomy": "3:2",
+      "hornDetail": "3:2",
+      "behavior": "3:2",
+      "feeding": "3:2",
+      "colorPattern": "3:2",
+      "culinary": "4:5",
+      "spoor": "1:1",
+      "dung": "1:1",
+      "comparison": "3:2"
+    }
+  },
+  "prompts": [
+    {
+      "species": "greater-kudu",
+      "section": "Hunting Strategies",
+      "placeholderLabel": "Hunting Stalk Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "greater-kudu-hunting-strategies.png",
+      "prompt": "Greater kudu bull in typical bushveld habitat, spot-and-stalk context. Single adult male kudu with spiral horns and grey-brown striped coat, standing or walking at edge of acacia thicket. Reddish-brown soil, dry golden-brown grass, flat-topped thorn trees and gnarled branches in background. Arid Sweet Bushveld, Limpopo. Warm golden-hour or soft overcast light. Average specimen, natural pose, not trophy-sized. Wildlife photography, shallow depth of field, dignified. No people, no weapons, no blood."
+    },
+    {
+      "species": "greater-kudu",
+      "section": "Shot Placement",
+      "placeholderLabel": "Shot Placement Diagram Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "greater-kudu-shot-placement.png",
+      "prompt": "Technical diagram illustration, no text. Single greater kudu bull in strict broadside view, side profile. Grey-brown body with white vertical stripes, long spiral horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "species": "greater-kudu",
+      "section": "Meat Characteristics",
+      "placeholderLabel": "Kudu Venison Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "greater-kudu-venison.png",
+      "prompt": "Kudu venison (game meat) on a wooden board or plate, raw or lightly prepared. Deep red, lean meat, fine-grained. Natural lighting, appetising but not over-styled. No blood pools. Clean presentation. 4:5 vertical. Food photography, warm tones."
+    },
+    {
+      "species": "impala",
+      "section": "Hunting Strategies",
+      "placeholderLabel": "Hunting Stalk Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "impala-hunting-stalk.png",
+      "prompt": "Impala ram in typical bushveld fringe habitat. Single adult male impala with lyre horns, reddish-brown coat and white underparts, standing or moving through dry grass. Red-brown soil, thorny shrubs, acacia-like trees in soft bokeh. Arid Sweet Bushveld, Makoppa. Warm afternoon light. Average specimen, natural. Wildlife photography, shallow depth of field. No people, no blood."
+    },
+    {
+      "species": "impala",
+      "section": "Shot Placement",
+      "placeholderLabel": "Shot Placement Diagram Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "impala-shot-placement.png",
+      "prompt": "Technical diagram illustration, no text. Single impala ram in strict broadside view, side profile. Reddish-brown coat, white underbelly, lyre-shaped horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "species": "impala",
+      "section": "Trophy / Utilization",
+      "placeholderLabel": "Trophy Impala Ram Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "impala-trophy-ram.png",
+      "prompt": "Single adult male impala ram in bushveld, respectful portrait. Lyre horns, reddish-brown coat, standing in dry golden grass with thorn shrubs and red-brown soil behind. Typical specimen, healthy, dignified. Arid Sweet Bushveld. Warm natural light. No people in frame, no blood, no gore. Wildlife photography, 3:2 landscape."
+    },
+    {
+      "species": "impala",
+      "section": "Meat Characteristics",
+      "placeholderLabel": "Impala Venison Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "impala-venison.png",
+      "prompt": "Impala venison (game meat) on wooden board or plate, lean deep-red meat. Natural lighting, clean presentation. No blood pools. Food photography, warm tones. 4:5 vertical."
+    },
+    {
+      "species": "blesbok",
+      "section": "Shot Placement",
+      "placeholderLabel": "Shot Placement Diagram Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "blesbok-shot-placement.png",
+      "prompt": "Technical diagram illustration, no text. Single blesbok ram in strict broadside view, side profile. Reddish-brown coat, white face blaze, lyre horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "species": "blesbok",
+      "section": "Meat Characteristics",
+      "placeholderLabel": "Blesbok Venison Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "blesbok-venison.png",
+      "prompt": "Blesbok venison on wooden board or plate, lean game meat, deep red. Natural light, clean. Arid Sweet Bushveld context optional (e.g. neutral background). No blood. 4:5 vertical. Food photography."
+    },
+    {
+      "species": "blesbok",
+      "section": "Culinary",
+      "placeholderLabel": "Culinary Preparation Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "blesbok-culinary.png",
+      "prompt": "Prepared blesbok dish, e.g. steak or roast on plate with simple garnish. Cooked game meat, appetising, natural lighting. No blood. Clean presentation. 4:5 vertical. Food photography, warm tones."
+    },
+    {
+      "species": "blesbok",
+      "section": "Field Signs",
+      "placeholderLabel": "Blesbok Spoor (Footprint) Image Placeholder",
+      "aspectRatio": "1:1",
+      "suggestedFileName": "blesbok-spoor.png",
+      "prompt": "Single blesbok hoof print (spoor) in reddish-brown soil or dry ground. Clear footprint impression, typical cloven shape. Makoppa-style soil and substrate. Natural daylight. Close-up, 1:1 square. No human feet or tools in frame."
+    },
+    {
+      "species": "blesbok",
+      "section": "Field Signs",
+      "placeholderLabel": "Dung Midden Image Placeholder",
+      "aspectRatio": "1:1",
+      "suggestedFileName": "blesbok-dung-midden.png",
+      "prompt": "Antelope dung midden (dung pile) on ground in bushveld. Dry reddish-brown soil, dry grass, natural pile of pellet dung. Makoppa vegetation context. Natural light. 1:1 square. Documentary style, not graphic."
+    },
+    {
+      "species": "springbok",
+      "section": "Shot Placement",
+      "placeholderLabel": "Shot Placement Diagram Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "springbok-shot-placement.png",
+      "prompt": "Technical diagram illustration, no text. Single springbok ram in strict broadside view, side profile. Tan and white coat, dark flank stripe, lyre horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "species": "springbok",
+      "section": "Meat Characteristics",
+      "placeholderLabel": "Springbok Venison Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "springbok-venison.png",
+      "prompt": "Springbok venison on wooden board or plate, lean game meat. Natural lighting, clean. No blood. 4:5 vertical. Food photography, warm tones."
+    },
+    {
+      "species": "cape-buffalo",
+      "section": "Shot Placement",
+      "placeholderLabel": "Shot Placement Diagram Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "cape-buffalo-shot-placement.png",
+      "prompt": "Technical diagram illustration, no text. Single Cape buffalo bull in strict broadside view, side profile. Massive dark grey-black body, heavy boss, curved horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "species": "cape-buffalo",
+      "section": "Meat Characteristics",
+      "placeholderLabel": "Cape Buffalo Venison Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "cape-buffalo-venison.png",
+      "prompt": "Cape buffalo meat (game) on wooden board or plate, dark red, lean. Natural lighting, clean presentation. No blood pools. 4:5 vertical. Food photography."
+    },
+    {
+      "species": "warthog",
+      "section": "Hunting Strategies",
+      "placeholderLabel": "Hunting Stalk Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "warthog-hunting-stalk.png",
+      "prompt": "Warthog in typical habitat, spot-and-stalk context. Single adult warthog boar with tusks and facial warts, in dry bushveld near sparse vegetation. Reddish-brown soil, dry grass, thorny shrubs. Arid Sweet Bushveld, Makoppa. Warm light. Average specimen, natural. No people, no blood. 3:2 landscape."
+    },
+    {
+      "species": "warthog",
+      "section": "Shot Placement",
+      "placeholderLabel": "Shot Placement Diagram Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "warthog-shot-placement.png",
+      "prompt": "Technical diagram illustration, no text. Single warthog in strict broadside view, side profile. Grey-brown body, tusks, facial warts. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "species": "warthog",
+      "section": "Comparison",
+      "placeholderLabel": "Boar vs Sow Comparison Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "warthog-boar-vs-sow.png",
+      "prompt": "Two warthogs in same frame for comparison: adult boar (larger, prominent tusks and warts) and adult sow (smaller, less prominent facial features). In dry bushveld, red-brown soil, dry grass and shrubs. Arid Sweet Bushveld. Both healthy, typical specimens. Side-by-side or same habitat. 3:2 landscape. No people, no blood."
+    },
+    {
+      "species": "warthog",
+      "section": "Meat Characteristics",
+      "placeholderLabel": "Warthog Venison Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "warthog-venison.png",
+      "prompt": "Warthog meat (game) on wooden board or plate, dark red, lean. Natural lighting, clean. No blood. 4:5 vertical. Food photography."
+    },
+    {
+      "species": "gemsbok",
+      "section": "Hunting Strategies",
+      "placeholderLabel": "Hunting Stalk Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "gemsbok-hunting-stalk.png",
+      "prompt": "Gemsbok (oryx) in open scrub habitat. Single adult gemsbok with black-and-white face mask and long straight horns, grey-tan coat, in dry grassland. Red-brown soil, dry golden grass, sparse thorn trees. Arid Sweet Bushveld, Limpopo. Warm light. Average specimen. Wildlife photography. No people, no blood. 3:2."
+    },
+    {
+      "species": "gemsbok",
+      "section": "Shot Placement",
+      "placeholderLabel": "Shot Placement Diagram Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "gemsbok-shot-placement.png",
+      "prompt": "Technical diagram illustration, no text. Single gemsbok in strict broadside view, side profile. Grey-tan body, black-and-white face mask, long straight horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "species": "gemsbok",
+      "section": "Comparison",
+      "placeholderLabel": "Bull vs Cow Comparison Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "gemsbok-bull-vs-cow.png",
+      "prompt": "Gemsbok bull and cow in same frame for comparison. Bull larger, heavier horns; cow slightly smaller. Open scrub, dry grass, red-brown soil, sparse trees. Arid Sweet Bushveld. Both typical, healthy. 3:2 landscape. No people, no blood."
+    },
+    {
+      "species": "gemsbok",
+      "section": "Meat Characteristics",
+      "placeholderLabel": "Gemsbok Venison Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "gemsbok-venison.png",
+      "prompt": "Gemsbok venison on wooden board or plate, lean game meat. Natural light, clean. 4:5 vertical. Food photography."
+    },
+    {
+      "species": "wildebeest",
+      "section": "Hunting Strategies",
+      "placeholderLabel": "Hunting Stalk Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "wildebeest-hunting-stalk.png",
+      "prompt": "Blue wildebeest (brindled gnu) in open plains bushveld. Single adult bull with dark mane and beard, typical build. Dry golden-brown grass, patchy green, red-brown soil, distant acacia. Arid Sweet Bushveld, Makoppa. Warm light. Average specimen. No people, no blood. 3:2."
+    },
+    {
+      "species": "wildebeest",
+      "section": "Shot Placement",
+      "placeholderLabel": "Shot Placement Diagram Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "wildebeest-shot-placement.png",
+      "prompt": "Technical diagram illustration, no text. Single blue wildebeest in strict broadside view, side profile. Brindled grey-brown body, dark mane, curved horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "species": "wildebeest",
+      "section": "Comparison",
+      "placeholderLabel": "Bull vs Cow Comparison Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "wildebeest-bull-vs-cow.png",
+      "prompt": "Blue wildebeest bull and cow in same frame. Bull larger, heavier horns and mane; cow slightly smaller. Open plains, dry grass, red-brown soil. Arid Sweet Bushveld. Typical specimens. 3:2. No people, no blood."
+    },
+    {
+      "species": "wildebeest",
+      "section": "Meat Characteristics",
+      "placeholderLabel": "Wildebeest Venison Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "wildebeest-venison.png",
+      "prompt": "Wildebeest venison on wooden board or plate, lean dark red game meat. Natural lighting, clean. 4:5 vertical. Food photography."
+    },
+    {
+      "species": "dapple-impala",
+      "section": "Taxonomy / Identification",
+      "placeholderLabel": "Dapple Impala Color Pattern Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "dapple-impala-color-pattern.png",
+      "prompt": "Dapple impala (piebald colour variant) showing distinctive coat pattern. Single adult ram with white dappling or patches on reddish-brown coat, lyre horns. Bushveld fringe, dry grass, thorn shrubs, red-brown soil. Makoppa. Typical colour variant, not exaggerated. Warm light. 3:2 landscape. No people."
+    },
+    {
+      "species": "dapple-impala",
+      "section": "Behavior",
+      "placeholderLabel": "Dapple Impala Behavior Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "dapple-impala-behavior.png",
+      "prompt": "Dapple impala ram in natural behaviour: standing, grazing or alert at thicket edge. White dappling on coat visible. Dry grass, shrubs, acacia in bokeh. Red-brown soil. Arid Sweet Bushveld. Average specimen. Warm light. 3:2. No people, no blood."
+    },
+    {
+      "species": "dapple-impala",
+      "section": "Hunting Strategies",
+      "placeholderLabel": "Hunting Stalk Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "dapple-impala-hunting-stalk.png",
+      "prompt": "Dapple impala in bushveld habitat, spot-and-stalk context. Single ram with dappled coat and lyre horns. Dry grass, thorn shrubs, red-brown soil. Makoppa. Typical specimen. Warm light. 3:2. No people, no blood."
+    },
+    {
+      "species": "dapple-impala",
+      "section": "Shot Placement",
+      "placeholderLabel": "Shot Placement Diagram Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "dapple-impala-shot-placement.png",
+      "prompt": "Technical diagram illustration, no text. Single dapple impala ram in strict broadside view, side profile. Reddish-brown coat with white dappling, lyre horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "species": "dapple-impala",
+      "section": "Trophy",
+      "placeholderLabel": "Trophy Dapple Impala Ram Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "dapple-impala-trophy-ram.png",
+      "prompt": "Dapple impala ram in bushveld, respectful portrait. Dappled coat, lyre horns. Dry grass, shrubs, red-brown soil. Typical specimen, healthy. Warm light. No people, no blood, no gore. 3:2 landscape."
+    },
+    {
+      "species": "dapple-impala",
+      "section": "Meat Characteristics",
+      "placeholderLabel": "Dapple Impala Venison Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "dapple-impala-venison.png",
+      "prompt": "Dapple impala venison on board or plate, lean game meat. Natural light, clean. 4:5 vertical. Food photography."
+    },
+    {
+      "species": "golden-wildebeest",
+      "section": "Taxonomy / Identification",
+      "placeholderLabel": "Golden Wildebeest Color Pattern Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "golden-wildebeest-color-pattern.png",
+      "prompt": "Golden wildebeest (colour variant) showing golden-copper-honey coat. Single adult bull, typical build, in open plains. Dry golden grass, red-brown soil, distant trees. Arid Sweet Bushveld. Average colour variant. Warm light. 3:2. No people."
+    },
+    {
+      "species": "golden-wildebeest",
+      "section": "Behavior",
+      "placeholderLabel": "Golden Wildebeest Behavior Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "golden-wildebeest-behavior.png",
+      "prompt": "Golden wildebeest bull in natural behaviour in open plains. Golden-copper coat, standing or grazing. Dry grass, red-brown soil. Arid Sweet Bushveld. Typical specimen. Warm light. 3:2. No people, no blood."
+    },
+    {
+      "species": "golden-wildebeest",
+      "section": "Hunting Strategies",
+      "placeholderLabel": "Hunting Stalk Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "golden-wildebeest-hunting-stalk.png",
+      "prompt": "Golden wildebeest in habitat, spot-and-stalk context. Single bull with golden-copper coat. Open plains, dry grass, red-brown soil. Makoppa. Typical specimen. Warm light. 3:2. No people, no blood."
+    },
+    {
+      "species": "golden-wildebeest",
+      "section": "Shot Placement",
+      "placeholderLabel": "Shot Placement Diagram Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "golden-wildebeest-shot-placement.png",
+      "prompt": "Technical diagram illustration, no text. Single golden wildebeest in strict broadside view, side profile. Golden-tan body, curved horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "species": "golden-wildebeest",
+      "section": "Trophy",
+      "placeholderLabel": "Trophy Golden Wildebeest Bull Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "golden-wildebeest-trophy-bull.png",
+      "prompt": "Golden wildebeest bull in bushveld, respectful portrait. Golden-copper coat. Dry grass, red-brown soil. Typical specimen, healthy. Warm light. No people, no blood. 3:2."
+    },
+    {
+      "species": "golden-wildebeest",
+      "section": "Meat Characteristics",
+      "placeholderLabel": "Golden Wildebeest Venison Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "golden-wildebeest-venison.png",
+      "prompt": "Golden wildebeest venison on board or plate, lean game meat. Natural light, clean. 4:5 vertical. Food photography."
+    },
+    {
+      "species": "bushbuck",
+      "section": "Taxonomy",
+      "placeholderLabel": "Bushbuck Taxonomy Comparison Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "bushbuck-taxonomy.png",
+      "prompt": "Bushbuck ram for identification: reddish-brown coat with white spots and stripes, short spiral horns. At thicket edge, dense shrubs, gnarled trees, red-brown soil. Riverine thicket vegetation, Makoppa. Typical specimen. Warm dappled light. 3:2. No people."
+    },
+    {
+      "species": "bushbuck",
+      "section": "Horn Detail",
+      "placeholderLabel": "Bushbuck Horn Detail Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "bushbuck-horn-detail.png",
+      "prompt": "Bushbuck ram showing horn detail, spiral horns visible. Head and shoulder or full body at thicket edge. Red-brown coat, white markings. Dense bush, dry grass, red soil. Typical specimen. Warm light. 3:2. No people."
+    },
+    {
+      "species": "bushbuck",
+      "section": "Behavior",
+      "placeholderLabel": "Bushbuck Behavior Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "bushbuck-behavior.png",
+      "prompt": "Bushbuck ram in natural behaviour: alert or browsing at thicket edge. Spotted coat, spiral horns. Dense shrubs, gnarled trees, red-brown soil. Makoppa riverine thicket. Typical specimen. Warm light. 3:2. No people."
+    },
+    {
+      "species": "bushbuck",
+      "section": "Feeding",
+      "placeholderLabel": "Bushbuck Feeding Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "bushbuck-feeding.png",
+      "prompt": "Bushbuck ram feeding or browsing. Reddish-brown coat with spots, spiral horns. Thicket vegetation, leaves, shrubs, red-brown soil. Makoppa. Typical specimen. Warm light. 3:2. No people."
+    },
+    {
+      "species": "bushbuck",
+      "section": "Hunting Strategies",
+      "placeholderLabel": "Hunting Stalk Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "bushbuck-hunting-stalk.png",
+      "prompt": "Bushbuck in thicket habitat. Single ram with spiral horns and spotted coat at edge of dense bush. Gnarled trees, shrubs, red-brown soil. Makoppa. Typical specimen. Warm light. 3:2. No people, no blood."
+    },
+    {
+      "species": "bushbuck",
+      "section": "Shot Placement",
+      "placeholderLabel": "Shot Placement Diagram Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "bushbuck-shot-placement.png",
+      "prompt": "Technical diagram illustration, no text. Single bushbuck ram in strict broadside view, side profile. Reddish-brown to dark brown coat, white spots and stripes, short spiral horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "species": "bushbuck",
+      "section": "Trophy",
+      "placeholderLabel": "Trophy Bushbuck Ram Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "bushbuck-trophy-ram.png",
+      "prompt": "Bushbuck ram in thicket, respectful portrait. Spotted coat, spiral horns. Dense bush, red-brown soil. Typical specimen, healthy. Warm light. No people, no blood. 3:2."
+    },
+    {
+      "species": "bushbuck",
+      "section": "Meat Characteristics",
+      "placeholderLabel": "Bushbuck Venison Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "bushbuck-venison.png",
+      "prompt": "Bushbuck venison on board or plate, lean game meat. Natural light, clean. 4:5 vertical. Food photography."
+    },
+    {
+      "species": "bushbuck",
+      "section": "Culinary",
+      "placeholderLabel": "Culinary Preparation Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "bushbuck-culinary.png",
+      "prompt": "Prepared bushbuck dish on plate, cooked game meat with simple garnish. Natural lighting, appetising. 4:5 vertical. Food photography."
+    },
+    {
+      "species": "lechwe",
+      "section": "Taxonomy",
+      "placeholderLabel": "Lechwe Taxonomy Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "lechwe-taxonomy.png",
+      "prompt": "Lechwe ram for identification: long lyre horns, reddish-brown coat. At wetland or water edge, reeds or damp ground, bushveld behind. Patchy grass, shrubs. Makoppa wetland edge. Typical specimen. Warm light. 3:2. No people."
+    },
+    {
+      "species": "lechwe",
+      "section": "Horn Detail",
+      "placeholderLabel": "Lechwe Horn Detail Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "lechwe-horn-detail.png",
+      "prompt": "Lechwe ram showing horn detail, long lyre horns. Head and shoulder or full body at water edge. Reddish-brown coat. Reeds, damp soil, bush in background. Typical specimen. Warm light. 3:2. No people."
+    },
+    {
+      "species": "lechwe",
+      "section": "Behavior",
+      "placeholderLabel": "Lechwe Behavior Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "lechwe-behavior.png",
+      "prompt": "Lechwe ram in natural behaviour at wetland edge: standing, wading or grazing. Long lyre horns, reddish coat. Reeds, water, patchy grass, shrubs. Makoppa. Typical specimen. Warm light. 3:2. No people."
+    },
+    {
+      "species": "lechwe",
+      "section": "Hunting Strategies",
+      "placeholderLabel": "Hunting Stalk Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "lechwe-hunting-stalk.png",
+      "prompt": "Lechwe in wetland habitat. Single ram with lyre horns at water edge. Reeds, damp soil, bushveld behind. Makoppa. Typical specimen. Warm light. 3:2. No people, no blood."
+    },
+    {
+      "species": "lechwe",
+      "section": "Shot Placement",
+      "placeholderLabel": "Shot Placement Diagram Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "lechwe-shot-placement.png",
+      "prompt": "Technical diagram illustration, no text. Single lechwe ram in strict broadside view, side profile. Reddish-brown coat, long lyre horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "species": "lechwe",
+      "section": "Trophy",
+      "placeholderLabel": "Trophy Lechwe Ram Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "lechwe-trophy-ram.png",
+      "prompt": "Lechwe ram at wetland edge, respectful portrait. Long lyre horns, reddish coat. Reeds, water, bush. Typical specimen, healthy. Warm light. No people, no blood. 3:2."
+    },
+    {
+      "species": "lechwe",
+      "section": "Meat Characteristics",
+      "placeholderLabel": "Lechwe Venison Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "lechwe-venison.png",
+      "prompt": "Lechwe venison on board or plate, lean game meat. Natural light, clean. 4:5 vertical. Food photography."
+    },
+    {
+      "species": "livingstone-eland",
+      "section": "Taxonomy",
+      "placeholderLabel": "Livingstone Eland Taxonomy Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "livingstone-eland-taxonomy.png",
+      "prompt": "Livingstone eland bull for identification: large antelope, spiral horns, dewlap, sandy-brown coat. Open bushveld, dry grass, acacia and shrubs. Arid Sweet Bushveld, Makoppa. Typical specimen. Warm light. 3:2. No people."
+    },
+    {
+      "species": "livingstone-eland",
+      "section": "Horn Detail",
+      "placeholderLabel": "Livingstone Eland Horn Detail Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "livingstone-eland-horn-detail.png",
+      "prompt": "Livingstone eland bull showing horn detail, spiral horns and dewlap. Sandy-brown coat. Open bushveld, dry ground, trees in bokeh. Typical specimen. Warm light. 3:2. No people."
+    },
+    {
+      "species": "livingstone-eland",
+      "section": "Behavior",
+      "placeholderLabel": "Livingstone Eland Behavior Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "livingstone-eland-behavior.png",
+      "prompt": "Livingstone eland bull in natural behaviour in open bushveld. Spiral horns, dewlap, sandy-brown coat. Dry grass, red-brown soil, acacia. Makoppa. Typical specimen. Warm light. 3:2. No people."
+    },
+    {
+      "species": "livingstone-eland",
+      "section": "Hunting Strategies",
+      "placeholderLabel": "Hunting Stalk Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "livingstone-eland-hunting-stalk.png",
+      "prompt": "Livingstone eland in habitat. Single large bull with spiral horns in open bushveld. Dry grass, red-brown soil, trees and shrubs. Makoppa. Typical specimen. Warm light. 3:2. No people, no blood."
+    },
+    {
+      "species": "livingstone-eland",
+      "section": "Shot Placement",
+      "placeholderLabel": "Shot Placement Diagram Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "livingstone-eland-shot-placement.png",
+      "prompt": "Technical diagram illustration, no text. Single Livingstone eland in strict broadside view, side profile. Large body, spiral horns, dewlap, sandy-brown coat. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
+    },
+    {
+      "species": "livingstone-eland",
+      "section": "Trophy",
+      "placeholderLabel": "Trophy Livingstone Eland Bull Image Placeholder",
+      "aspectRatio": "3:2",
+      "suggestedFileName": "livingstone-eland-trophy-bull.png",
+      "prompt": "Livingstone eland bull in open bushveld, respectful portrait. Spiral horns, dewlap, sandy-brown coat. Dry grass, red-brown soil. Typical specimen, healthy. Warm light. No people, no blood. 3:2."
+    },
+    {
+      "species": "livingstone-eland",
+      "section": "Meat Characteristics",
+      "placeholderLabel": "Livingstone Eland Venison Image Placeholder",
+      "aspectRatio": "4:5",
+      "suggestedFileName": "livingstone-eland-venison.png",
+      "prompt": "Livingstone eland venison on board or plate, lean game meat. Natural light, clean. 4:5 vertical. Food photography."
+    }
+  ]
+}

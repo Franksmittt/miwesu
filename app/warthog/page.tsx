@@ -502,10 +502,14 @@ export default function WarthogPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Hunting Stalk Image Placeholder</span>
-                </div>
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+                <Image
+                  src="/images/warthog-hunting-stalk.png"
+                  alt="Warthog in bushveld habitat, spot-and-stalk context"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
 
@@ -655,10 +659,14 @@ export default function WarthogPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Boar vs Sow Comparison Image Placeholder</span>
-                </div>
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+                <Image
+                  src="/images/warthog-boar-vs-sow.png"
+                  alt="Warthog boar and sow comparison"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
 
@@ -734,10 +742,14 @@ export default function WarthogPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Warthog Venison Image Placeholder</span>
-                </div>
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+                <Image
+                  src="/images/Gemini_Generated_Image_bwocmbwocmbwocmb.png"
+                  alt="Warthog venison, game meat"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
 

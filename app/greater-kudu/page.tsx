@@ -509,10 +509,14 @@ export default function GreaterKuduPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative h-full min-h-[500px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Hunting Stalk Image Placeholder</span>
-                </div>
+              <div className="relative h-full min-h-[500px] overflow-hidden rounded-sm">
+                <Image
+                  src="/images/greater-kudu-hunting-strategies.png"
+                  alt="Greater kudu in bushveld habitat, spot-and-stalk context"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
 
@@ -570,10 +574,14 @@ export default function GreaterKuduPage() {
 
             {/* Shot Placement */}
             <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
-              <div className="relative h-full min-h-[500px]">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Shot Placement Diagram Image Placeholder</span>
-                </div>
+              <div className="relative h-full min-h-[500px] overflow-hidden rounded-sm">
+                <Image
+                  src="/images/greater-kudu-shot-placement.png"
+                  alt="Greater kudu shot placement diagram: broadside vitals"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Shot Placement</h3>
@@ -721,8 +729,14 @@ export default function GreaterKuduPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden bg-gray-800 border border-white/10 flex items-center justify-center">
-                <span className="text-gray-400 text-sm">Kudu Venison Image Placeholder</span>
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+                <Image
+                  src="/images/greater-kudu-venison.png"
+                  alt="Kudu venison, lean game meat"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
 

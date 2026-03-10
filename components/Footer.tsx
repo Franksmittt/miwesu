@@ -49,40 +49,40 @@ export default function Footer() {
             <h4 className="text-[10px] uppercase tracking-[0.25em] text-gold-500 font-bold mb-4 font-sans">
               Stay
             </h4>
-            <ul className="space-y-2 sm:space-y-3 font-sans text-sm">
-              <li><Link href="/residences" className="text-gray-400 hover:text-white transition-colors flex items-center gap-1 group min-h-[44px] py-3 touch-manipulation"><span>Residences</span><ArrowUpRight className="w-3 h-3 opacity-0 -translate-y-0.5 translate-x-0.5 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all flex-shrink-0" /></Link></li>
-              <li><Link href="/residences/homestead" className="text-gray-400 hover:text-white transition-colors min-h-[44px] py-3 flex items-center touch-manipulation block">The Homestead</Link></li>
-              <li><Link href="/residences/stone-villa" className="text-gray-400 hover:text-white transition-colors min-h-[44px] py-3 flex items-center touch-manipulation block">The Stone Villa</Link></li>
-              <li><Link href="/gallery" className="text-gray-400 hover:text-white transition-colors min-h-[44px] py-3 flex items-center touch-manipulation block">Gallery</Link></li>
+            <ul className="space-y-1 font-sans text-sm">
+              <li><Link href="/residences" className="text-gray-400 hover:text-white transition-colors flex items-center gap-1 group py-1.5 touch-manipulation"><span>Residences</span><ArrowUpRight className="w-3 h-3 opacity-0 -translate-y-0.5 translate-x-0.5 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all flex-shrink-0" /></Link></li>
+              <li><Link href="/residences/homestead" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">The Homestead</Link></li>
+              <li><Link href="/residences/stone-villa" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">The Stone Villa</Link></li>
+              <li><Link href="/gallery" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">Gallery</Link></li>
             </ul>
           </div>
           <div>
             <h4 className="text-[10px] uppercase tracking-[0.25em] text-gold-500 font-bold mb-4 font-sans">
               Experience
             </h4>
-            <ul className="space-y-2 sm:space-y-3 font-sans text-sm">
-              <li><Link href="/activities" className="text-gray-400 hover:text-white transition-colors min-h-[44px] py-3 flex items-center touch-manipulation block">Activities</Link></li>
-              <li><Link href="/wildlife" className="text-gray-400 hover:text-white transition-colors min-h-[44px] py-3 flex items-center touch-manipulation block">Wildlife</Link></li>
-              <li><Link href="/conservation" className="text-gray-400 hover:text-white transition-colors min-h-[44px] py-3 flex items-center touch-manipulation block">Conservation</Link></li>
-              <li><Link href="/about" className="text-gray-400 hover:text-white transition-colors min-h-[44px] py-3 flex items-center touch-manipulation block">About</Link></li>
+            <ul className="space-y-1 font-sans text-sm">
+              <li><Link href="/activities" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">Activities</Link></li>
+              <li><Link href="/wildlife" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">Wildlife</Link></li>
+              <li><Link href="/conservation" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">Conservation</Link></li>
+              <li><Link href="/about" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">About</Link></li>
             </ul>
           </div>
           <div>
             <h4 className="text-[10px] uppercase tracking-[0.25em] text-gold-500 font-bold mb-4 font-sans">
               Concierge
             </h4>
-            <ul className="space-y-2 sm:space-y-3 font-sans text-sm">
-              <li><Link href="/rates" className="text-gray-400 hover:text-white transition-colors min-h-[44px] py-3 flex items-center touch-manipulation block">Rates</Link></li>
-              <li><Link href="/availability" className="text-gray-400 hover:text-white transition-colors min-h-[44px] py-3 flex items-center touch-manipulation block">Availability</Link></li>
-              <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors min-h-[44px] py-3 flex items-center touch-manipulation block">Contact</Link></li>
-              <li><Link href="/faq" className="text-gray-400 hover:text-white transition-colors min-h-[44px] py-3 flex items-center touch-manipulation block">FAQ</Link></li>
+            <ul className="space-y-1 font-sans text-sm">
+              <li><Link href="/rates" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">Rates</Link></li>
+              <li><Link href="/availability" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">Availability</Link></li>
+              <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">Contact</Link></li>
+              <li><Link href="/faq" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">FAQ</Link></li>
             </ul>
           </div>
           <div>
             <h4 className="text-[10px] uppercase tracking-[0.25em] text-gold-500 font-bold mb-4 font-sans">
               Reach us
             </h4>
-            <ul className="space-y-2 sm:space-y-3 font-sans text-sm text-gray-400">
+            <ul className="space-y-1 font-sans text-sm text-gray-400">
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-gold-500/80 mt-0.5 flex-shrink-0" />
                 <span>D1432, Makoppa District<br />Thabazimbi, Limpopo</span>

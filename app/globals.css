@@ -101,11 +101,11 @@
       0 4px 24px -4px rgba(0, 0, 0, 0.4);
   }
 
-  /* Smooth reveal animation - transform/opacity only to avoid CLS */
+  /* Smooth reveal animation - transform/opacity only to avoid CLS (Samsung One UI ease) */
   .reveal {
     opacity: 0;
     transform: translateY(40px);
-    transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: opacity 1s cubic-bezier(0.22, 0.25, 0, 1), transform 1s cubic-bezier(0.22, 0.25, 0, 1);
   }
   .reveal.active {
     opacity: 1;
@@ -183,6 +183,34 @@
   .input-booking {
     @apply rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-white placeholder:text-white/40;
     @apply focus:border-gold-500/60 focus:ring-2 focus:ring-gold-500/20 focus:outline-none transition-all;
+  }
+
+  /* Squircle (Samsung-style superellipse): organic continuous curves, ~28px */
+  .squircle {
+    border-radius: 1.75rem;
+  }
+  .squircle-sm {
+    border-radius: 1.25rem;
+  }
+
+  /* Liquid glass rim light: gradient border (gold → deep gray) on hover */
+  .card-rim-light {
+    position: relative;
+    border-radius: 1.75rem;
+    background: linear-gradient(#121212, #121212) padding-box,
+      linear-gradient(135deg, rgba(229, 198, 135, 0.15) 0%, rgba(42, 42, 42, 0.4) 50%, rgba(10, 10, 10, 0.8) 100%) border-box;
+    border: 1px solid transparent;
+    transition: background 0.4s cubic-bezier(0.22, 0.25, 0, 1), border-color 0.4s cubic-bezier(0.22, 0.25, 0, 1);
+  }
+  .card-rim-light:hover {
+    background: linear-gradient(#121212, #121212) padding-box,
+      linear-gradient(135deg, #E5C687 0%, #C5A059 30%, #997B3D 50%, #2a2a2a 75%, #0a0a0a 100%) border-box;
+    border-color: transparent;
+  }
+
+  /* One UI easing: swift acceleration, soft deceleration */
+  .ease-one-ui {
+    transition-timing-function: cubic-bezier(0.22, 0.25, 0, 1);
   }
 
   /* Scrolled Navigation State */

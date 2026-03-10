@@ -4,6 +4,8 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
 
+const ONE_UI_EASE = [0.22, 0.25, 0, 1] as const
+
 const moments = [
   {
     time: '06:00',
@@ -44,38 +46,45 @@ const moments = [
 
 export default function DayInLife() {
   return (
-    <section className="py-16 sm:py-24 lg:py-32 bg-onyx text-white relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative bg-onyx text-white overflow-hidden border-t border-white/5">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 sm:pt-8 sm:pb-20 lg:pt-8 lg:pb-24">
+        {/* Header */}
         <motion.div
-          className="text-center mb-12 sm:mb-20"
+          className="text-center mb-12 sm:mb-16"
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-60px' }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, ease: ONE_UI_EASE }}
         >
-          <span className="text-gold-500 text-[10px] sm:text-xs tracking-[0.4em] uppercase font-bold block mb-4">
+          <span className="text-gold-500 text-[10px] sm:text-xs tracking-[0.35em] uppercase font-bold block mb-4 font-sans">
             A Day in Eden
           </span>
-          <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-white">
+          <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-white tracking-tight">
             From dawn to <span className="text-gradient-gold">starlight</span>
           </h2>
-          <p className="font-sans text-gray-400 mt-4 max-w-xl mx-auto text-sm sm:text-base">
-            One day. Five moments. Hunters, families, couples: everyone finds their rhythm.
+          <p className="font-sans text-gray-400 mt-4 max-w-xl mx-auto text-sm sm:text-base tracking-wide">
+            One day. Five moments.
+            <br />
+            Hunters, families, couples: everyone finds their rhythm.
           </p>
         </motion.div>
 
-        <div className="space-y-0">
+        {/* Alternating rows: image | text, then text | image */}
+        <div className="space-y-8 sm:space-y-12">
           {moments.map((moment, index) => (
             <motion.div
               key={moment.time}
-              className="grid md:grid-cols-2 gap-0 min-h-[50vh] md:min-h-[60vh] border-b border-white/5 last:border-0"
-              initial={{ opacity: 0, y: 40 }}
+              className="flex flex-col md:flex-row md:items-stretch gap-6 md:gap-8"
+              initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: '-100px' }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              viewport={{ once: true, margin: '-40px' }}
+              transition={{ duration: 0.5, ease: ONE_UI_EASE, delay: index * 0.05 }}
             >
+              {/* Image column */}
               <div
-                className={`relative h-64 md:h-full min-h-[280px] ${index % 2 === 1 ? 'md:order-1' : 'md:order-2'}`}
+                className={`relative min-h-[240px] md:min-h-0 md:w-[calc(50%-1rem)] overflow-hidden squircle ${
+                  index % 2 === 1 ? 'md:order-2' : 'md:order-1'
+                }`}
               >
                 <Image
                   src={moment.image}
@@ -84,29 +93,45 @@ export default function DayInLife() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-onyx/80 via-transparent to-transparent md:bg-none md:from-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-onyx/60 via-transparent to-transparent md:from-transparent" />
               </div>
+
+              {/* Text column */}
               <div
-                className={`flex flex-col justify-center p-8 sm:p-10 lg:p-14 ${index % 2 === 1 ? 'md:order-2' : 'md:order-1'}`}
+                className={`flex flex-col justify-center md:w-[calc(50%-1rem)] ${
+                  index % 2 === 1 ? 'md:order-1' : 'md:order-2'
+                }`}
               >
-                <span className="text-gold-500 font-serif text-2xl sm:text-3xl mb-2">{moment.time}</span>
-                <span className="text-gray-500 text-xs uppercase tracking-widest mb-3">{moment.label}</span>
-                <h3 className="font-serif text-2xl sm:text-3xl text-white mb-4">{moment.title}</h3>
-                <p className="font-sans text-gray-400 text-sm sm:text-base leading-relaxed">{moment.description}</p>
+                <div className="squircle p-6 sm:p-8 bg-onyx-light/90 backdrop-blur-sm border border-white/5">
+                  <span className="text-gold-500 font-serif text-xl sm:text-2xl tracking-tight block mb-1">
+                    {moment.time}
+                  </span>
+                  <span className="text-gray-500 text-[10px] sm:text-xs uppercase tracking-[0.25em] font-sans block mb-2">
+                    {moment.label}
+                  </span>
+                  <h3 className="font-serif text-xl sm:text-2xl text-white tracking-tight mb-3">
+                    {moment.title}
+                  </h3>
+                  <p className="font-sans text-gray-400 text-sm leading-relaxed tracking-wide">
+                    {moment.description}
+                  </p>
+                </div>
               </div>
             </motion.div>
           ))}
         </div>
 
+        {/* CTA */}
         <motion.div
           className="text-center mt-12 sm:mt-16"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.5, ease: ONE_UI_EASE }}
         >
           <Link
             href="/book"
-            className="inline-block px-10 py-4 bg-gold-500 text-onyx font-sans text-xs uppercase tracking-widest font-bold hover:bg-gold-400 transition-colors"
+            className="squircle inline-block px-8 py-3.5 bg-gold-500 text-onyx font-sans text-xs uppercase tracking-[0.2em] font-bold hover:bg-gold-400 transition-colors duration-300 ease-one-ui"
           >
             Book your day
           </Link>

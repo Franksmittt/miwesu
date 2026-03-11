@@ -1,11 +1,14 @@
 {
   "_meta": {
-    "purpose": "AI image generation prompts for species page placeholder images still needed. Use with DALL·E, Midjourney, or similar. Match vegetation and animal realism.",
-    "vegetationContext": "MIWESU Game Farm, Makoppa district, Thabazimbi, Limpopo. Arid Sweet Bushveld: reddish-brown soil, dry golden-brown grass, patchy green grass, acacia-like trees (flat-topped, thorny), gnarled dark-bark trees, thorny shrubs, dense bushveld thickets, dry season savanna. Warm natural light. No power lines or man-made objects in frame.",
+    "purpose": "AI image generation prompts for species page placeholder images still needed. Use with DALL·E, Midjourney, or similar. Match vegetation and animal realism. Terrain and vegetation based on public/images/Facebook/IMAGE_INVENTORY.txt.",
+    "vegetationContext": "MIWESU Game Farm, Makoppa district, Thabazimbi, Limpopo. Arid Sweet Bushveld: flat terrain only. Ground: dry reddish-brown soil, dry dusty or sandy earth, dry straw or golden-brown grass, patchy green grass. Trees: acacia-like flat-topped thorn trees, gnarled dark-bark trees, silhouetted trees on flat horizon only, sparse trees, low scrub, thorny shrubs, dense bushveld thickets. Sky: flat horizon, pale blue or golden-hour sky; distant tree line at most. No hills, no mountains, no koppies, no rocky ridges in background. Dry season savanna / open plains / wooded savanna. Warm natural light. No power lines or man-made objects in frame.",
+    "terrainRule": "Background must be flat: flat horizon, distant tree line, or open sky. Never include hills, mountains, koppies, or rocky high ground in the scene.",
+    "negativeTerrain": "No hills, no mountains, no koppies, no ridges, no rocky outcrops, no dramatic elevation. Landscape is flat savanna/bushveld.",
+    "vegetationDepthRule": "Thick vegetation and dense bush; do not show deep open vistas or long views into the background. Background should be dense bush, thicket, shrubs or close vegetation so you cannot see far into the distance. No open horizons or distant tree lines in habitat shots; keep the scene enclosed by bush.",
     "styleRules": [
       "Realistic, typical specimens only. Do not request 'largest', 'biggest', 'trophy', 'exceptional', 'magnificent' or show-stopper animals.",
       "Healthy, normal-condition animals: not emaciated, not sick, not diseased. Not dying or stressed.",
-      "Match Makoppa vegetation and ground: red-brown soil, dry golden grass, acacia thorn trees, bushveld shrubs.",
+      "Match Makoppa vegetation and ground from IMAGE_INVENTORY: red-brown soil, dry golden grass, thick bush, dense thicket. Flat terrain only. Thick vegetation so background does not recede far; no long open views.",
       "Warm wildlife photography palette. Shallow depth of field where appropriate. No blood, no gore. Dignified.",
       "Golden hour or soft overcast preferred for wildlife. Food/venison: natural lighting, appetising but not staged."
     ],
@@ -23,56 +26,17 @@
       "spoor": "1:1",
       "dung": "1:1",
       "comparison": "3:2"
-    }
+    },
+    "usageNote": "For habitat/wildlife prompts, vegetation and terrain match public/images/Facebook/IMAGE_INVENTORY.txt. If your image tool has a negative prompt field, add: hills, mountains, koppies, rocky ridges, dramatic elevation, mountain backdrop."
   },
   "prompts": [
-    {
-      "species": "golden-wildebeest",
-      "section": "Taxonomy / Identification",
-      "placeholderLabel": "Golden Wildebeest Color Pattern Image Placeholder",
-      "aspectRatio": "3:2",
-      "suggestedFileName": "golden-wildebeest-color-pattern.png",
-      "prompt": "Golden wildebeest (colour variant) showing golden-copper-honey coat. Single adult bull, typical build, in open plains. Dry golden grass, red-brown soil, distant trees. Arid Sweet Bushveld. Average colour variant. Warm light. 3:2. No people."
-    },
-    {
-      "species": "golden-wildebeest",
-      "section": "Behavior",
-      "placeholderLabel": "Golden Wildebeest Behavior Image Placeholder",
-      "aspectRatio": "3:2",
-      "suggestedFileName": "golden-wildebeest-behavior.png",
-      "prompt": "Golden wildebeest bull in natural behaviour in open plains. Golden-copper coat, standing or grazing. Dry grass, red-brown soil. Arid Sweet Bushveld. Typical specimen. Warm light. 3:2. No people, no blood."
-    },
     {
       "species": "golden-wildebeest",
       "section": "Hunting Strategies",
       "placeholderLabel": "Hunting Stalk Image Placeholder",
       "aspectRatio": "3:2",
       "suggestedFileName": "golden-wildebeest-hunting-stalk.png",
-      "prompt": "Golden wildebeest in habitat, spot-and-stalk context. Single bull with golden-copper coat. Open plains, dry grass, red-brown soil. Makoppa. Typical specimen. Warm light. 3:2. No people, no blood."
-    },
-    {
-      "species": "golden-wildebeest",
-      "section": "Shot Placement",
-      "placeholderLabel": "Shot Placement Diagram Image Placeholder",
-      "aspectRatio": "4:5",
-      "suggestedFileName": "golden-wildebeest-shot-placement.png",
-      "prompt": "Technical diagram illustration, no text. Single golden wildebeest in strict broadside view, side profile. Golden-tan body, curved horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
-    },
-    {
-      "species": "golden-wildebeest",
-      "section": "Trophy",
-      "placeholderLabel": "Trophy Golden Wildebeest Bull Image Placeholder",
-      "aspectRatio": "3:2",
-      "suggestedFileName": "golden-wildebeest-trophy-bull.png",
-      "prompt": "Golden wildebeest bull in bushveld, respectful portrait. Golden-copper coat. Dry grass, red-brown soil. Typical specimen, healthy. Warm light. No people, no blood. 3:2."
-    },
-    {
-      "species": "golden-wildebeest",
-      "section": "Meat Characteristics",
-      "placeholderLabel": "Golden Wildebeest Venison Image Placeholder",
-      "aspectRatio": "4:5",
-      "suggestedFileName": "golden-wildebeest-venison.png",
-      "prompt": "Golden wildebeest venison on board or plate, lean game meat. Natural light, clean. 4:5 vertical. Food photography."
+      "prompt": "Golden wildebeest in habitat, spot-and-stalk context. Single bull with golden-copper coat. Dry grass, red-brown soil, thick bush and dense vegetation in background so you cannot see far. Makoppa bushveld; no long vista. Typical specimen. Warm light. 3:2. No people, no blood."
     },
     {
       "species": "bushbuck",
@@ -80,7 +44,7 @@
       "placeholderLabel": "Bushbuck Taxonomy Comparison Image Placeholder",
       "aspectRatio": "3:2",
       "suggestedFileName": "bushbuck-taxonomy.png",
-      "prompt": "Bushbuck ram for identification: reddish-brown coat with white spots and stripes, short spiral horns. At thicket edge, dense shrubs, gnarled trees, red-brown soil. Riverine thicket vegetation, Makoppa. Typical specimen. Warm dappled light. 3:2. No people."
+      "prompt": "Bushbuck ram for identification: reddish-brown coat with white spots and stripes, short spiral horns. At thicket edge, dense shrubs and thick bush enclosing the scene, gnarled trees, red-brown soil. Riverine thicket, Makoppa; thick vegetation so background does not recede far, no long view into distance. Typical specimen. Warm dappled light. 3:2. No people."
     },
     {
       "species": "bushbuck",
@@ -88,7 +52,7 @@
       "placeholderLabel": "Bushbuck Horn Detail Image Placeholder",
       "aspectRatio": "3:2",
       "suggestedFileName": "bushbuck-horn-detail.png",
-      "prompt": "Bushbuck ram showing horn detail, spiral horns visible. Head and shoulder or full body at thicket edge. Red-brown coat, white markings. Dense bush, dry grass, red soil. Typical specimen. Warm light. 3:2. No people."
+      "prompt": "Bushbuck ram showing horn detail, spiral horns visible. Head and shoulder or full body at thicket edge. Red-brown coat, white markings. Dense bush and thick vegetation in background so you cannot see far; dry grass, red soil. Typical specimen. Warm light. 3:2. No people."
     },
     {
       "species": "bushbuck",
@@ -96,7 +60,7 @@
       "placeholderLabel": "Bushbuck Behavior Image Placeholder",
       "aspectRatio": "3:2",
       "suggestedFileName": "bushbuck-behavior.png",
-      "prompt": "Bushbuck ram in natural behaviour: alert or browsing at thicket edge. Spotted coat, spiral horns. Dense shrubs, gnarled trees, red-brown soil. Makoppa riverine thicket. Typical specimen. Warm light. 3:2. No people."
+      "prompt": "Bushbuck ram in natural behaviour: alert or browsing at thicket edge. Spotted coat, spiral horns. Dense shrubs, gnarled trees, red-brown soil, thick bush behind so no long view into background. Makoppa riverine thicket. Typical specimen. Warm light. 3:2. No people."
     },
     {
       "species": "bushbuck",
@@ -104,7 +68,7 @@
       "placeholderLabel": "Bushbuck Feeding Image Placeholder",
       "aspectRatio": "3:2",
       "suggestedFileName": "bushbuck-feeding.png",
-      "prompt": "Bushbuck ram feeding or browsing. Reddish-brown coat with spots, spiral horns. Thicket vegetation, leaves, shrubs, red-brown soil. Makoppa. Typical specimen. Warm light. 3:2. No people."
+      "prompt": "Bushbuck ram feeding or browsing. Reddish-brown coat with spots, spiral horns. Thicket vegetation, leaves, dense shrubs, red-brown soil; thick bush in background, no deep vista. Makoppa. Typical specimen. Warm light. 3:2. No people."
     },
     {
       "species": "bushbuck",
@@ -112,7 +76,7 @@
       "placeholderLabel": "Hunting Stalk Image Placeholder",
       "aspectRatio": "3:2",
       "suggestedFileName": "bushbuck-hunting-stalk.png",
-      "prompt": "Bushbuck in thicket habitat. Single ram with spiral horns and spotted coat at edge of dense bush. Gnarled trees, shrubs, red-brown soil. Makoppa. Typical specimen. Warm light. 3:2. No people, no blood."
+      "prompt": "Bushbuck in thicket habitat. Single ram with spiral horns and spotted coat at edge of dense bush. Gnarled trees, shrubs, red-brown soil, flat ground. Makoppa; flat terrain only, no hills, mountains or koppies in background. Typical specimen. Warm light. 3:2. No people, no blood."
     },
     {
       "species": "bushbuck",
@@ -128,7 +92,7 @@
       "placeholderLabel": "Trophy Bushbuck Ram Image Placeholder",
       "aspectRatio": "3:2",
       "suggestedFileName": "bushbuck-trophy-ram.png",
-      "prompt": "Bushbuck ram in thicket, respectful portrait. Spotted coat, spiral horns. Dense bush, red-brown soil. Typical specimen, healthy. Warm light. No people, no blood. 3:2."
+      "prompt": "Bushbuck ram in thicket, respectful portrait. Spotted coat, spiral horns. Dense bush and thick vegetation behind, red-brown soil; no long view into background. Typical specimen, healthy. Warm light. No people, no blood. 3:2."
     },
     {
       "species": "bushbuck",
@@ -152,7 +116,7 @@
       "placeholderLabel": "Lechwe Taxonomy Image Placeholder",
       "aspectRatio": "3:2",
       "suggestedFileName": "lechwe-taxonomy.png",
-      "prompt": "Lechwe ram for identification: long lyre horns, reddish-brown coat. At wetland or water edge, reeds or damp ground, bushveld behind. Patchy grass, shrubs. Makoppa wetland edge. Typical specimen. Warm light. 3:2. No people."
+      "prompt": "Lechwe ram for identification: long lyre horns, reddish-brown coat. At wetland or water edge, reeds or damp ground, dense reeds and thick bush behind so no long view. Patchy grass, shrubs. Makoppa wetland edge. Typical specimen. Warm light. 3:2. No people."
     },
     {
       "species": "lechwe",
@@ -160,7 +124,7 @@
       "placeholderLabel": "Lechwe Horn Detail Image Placeholder",
       "aspectRatio": "3:2",
       "suggestedFileName": "lechwe-horn-detail.png",
-      "prompt": "Lechwe ram showing horn detail, long lyre horns. Head and shoulder or full body at water edge. Reddish-brown coat. Reeds, damp soil, bush in background. Typical specimen. Warm light. 3:2. No people."
+      "prompt": "Lechwe ram showing horn detail, long lyre horns. Head and shoulder or full body at water edge. Reddish-brown coat. Reeds, damp soil, dense reeds and thick bush in background so you cannot see far. Typical specimen. Warm light. 3:2. No people."
     },
     {
       "species": "lechwe",
@@ -168,7 +132,7 @@
       "placeholderLabel": "Lechwe Behavior Image Placeholder",
       "aspectRatio": "3:2",
       "suggestedFileName": "lechwe-behavior.png",
-      "prompt": "Lechwe ram in natural behaviour at wetland edge: standing, wading or grazing. Long lyre horns, reddish coat. Reeds, water, patchy grass, shrubs. Makoppa. Typical specimen. Warm light. 3:2. No people."
+      "prompt": "Lechwe ram in natural behaviour at wetland edge: standing, wading or grazing. Long lyre horns, reddish coat. Reeds, water, patchy grass, shrubs, flat terrain; no hills, mountains or koppies in background. Makoppa. Typical specimen. Warm light. 3:2. No people."
     },
     {
       "species": "lechwe",
@@ -176,7 +140,7 @@
       "placeholderLabel": "Hunting Stalk Image Placeholder",
       "aspectRatio": "3:2",
       "suggestedFileName": "lechwe-hunting-stalk.png",
-      "prompt": "Lechwe in wetland habitat. Single ram with lyre horns at water edge. Reeds, damp soil, bushveld behind. Makoppa. Typical specimen. Warm light. 3:2. No people, no blood."
+      "prompt": "Lechwe in wetland habitat. Single ram with lyre horns at water edge. Reeds, damp soil, dense reeds and thick bush behind so background does not recede far. Makoppa. Typical specimen. Warm light. 3:2. No people, no blood."
     },
     {
       "species": "lechwe",
@@ -192,7 +156,7 @@
       "placeholderLabel": "Trophy Lechwe Ram Image Placeholder",
       "aspectRatio": "3:2",
       "suggestedFileName": "lechwe-trophy-ram.png",
-      "prompt": "Lechwe ram at wetland edge, respectful portrait. Long lyre horns, reddish coat. Reeds, water, bush. Typical specimen, healthy. Warm light. No people, no blood. 3:2."
+      "prompt": "Lechwe ram at wetland edge, respectful portrait. Long lyre horns, reddish coat. Reeds, water, dense reeds and thick bush in background so no long view. Typical specimen, healthy. Warm light. No people, no blood. 3:2."
     },
     {
       "species": "lechwe",
@@ -208,7 +172,7 @@
       "placeholderLabel": "Livingstone Eland Taxonomy Image Placeholder",
       "aspectRatio": "3:2",
       "suggestedFileName": "livingstone-eland-taxonomy.png",
-      "prompt": "Livingstone eland bull for identification: large antelope, spiral horns, dewlap, sandy-brown coat. Open bushveld, dry grass, acacia and shrubs. Arid Sweet Bushveld, Makoppa. Typical specimen. Warm light. 3:2. No people."
+      "prompt": "Livingstone eland bull for identification: large antelope, spiral horns, dewlap, sandy-brown coat. Bushveld with dry grass, acacia and dense shrubs; thick bush in background so you cannot see far, no long vista. Makoppa. Typical specimen. Warm light. 3:2. No people."
     },
     {
       "species": "livingstone-eland",
@@ -216,7 +180,7 @@
       "placeholderLabel": "Livingstone Eland Horn Detail Image Placeholder",
       "aspectRatio": "3:2",
       "suggestedFileName": "livingstone-eland-horn-detail.png",
-      "prompt": "Livingstone eland bull showing horn detail, spiral horns and dewlap. Sandy-brown coat. Open bushveld, dry ground, trees in bokeh. Typical specimen. Warm light. 3:2. No people."
+      "prompt": "Livingstone eland bull showing horn detail, spiral horns and dewlap. Sandy-brown coat. Bushveld, dry ground, trees and dense bush in bokeh so background does not recede far. Typical specimen. Warm light. 3:2. No people."
     },
     {
       "species": "livingstone-eland",
@@ -224,7 +188,7 @@
       "placeholderLabel": "Livingstone Eland Behavior Image Placeholder",
       "aspectRatio": "3:2",
       "suggestedFileName": "livingstone-eland-behavior.png",
-      "prompt": "Livingstone eland bull in natural behaviour in open bushveld. Spiral horns, dewlap, sandy-brown coat. Dry grass, red-brown soil, acacia. Makoppa. Typical specimen. Warm light. 3:2. No people."
+      "prompt": "Livingstone eland bull in natural behaviour in bushveld. Spiral horns, dewlap, sandy-brown coat. Dry grass, red-brown soil, acacia and thick vegetation behind so no long view into background. Makoppa. Typical specimen. Warm light. 3:2. No people."
     },
     {
       "species": "livingstone-eland",
@@ -232,7 +196,7 @@
       "placeholderLabel": "Hunting Stalk Image Placeholder",
       "aspectRatio": "3:2",
       "suggestedFileName": "livingstone-eland-hunting-stalk.png",
-      "prompt": "Livingstone eland in habitat. Single large bull with spiral horns in open bushveld. Dry grass, red-brown soil, trees and shrubs. Makoppa. Typical specimen. Warm light. 3:2. No people, no blood."
+      "prompt": "Livingstone eland in habitat. Single large bull with spiral horns in open bushveld. Dry grass, red-brown soil, trees and shrubs, flat horizon. Makoppa flat bushveld; no hills, mountains or koppies in background. Typical specimen. Warm light. 3:2. No people, no blood."
     },
     {
       "species": "livingstone-eland",
@@ -248,7 +212,7 @@
       "placeholderLabel": "Trophy Livingstone Eland Bull Image Placeholder",
       "aspectRatio": "3:2",
       "suggestedFileName": "livingstone-eland-trophy-bull.png",
-      "prompt": "Livingstone eland bull in open bushveld, respectful portrait. Spiral horns, dewlap, sandy-brown coat. Dry grass, red-brown soil. Typical specimen, healthy. Warm light. No people, no blood. 3:2."
+      "prompt": "Livingstone eland bull in bushveld, respectful portrait. Spiral horns, dewlap, sandy-brown coat. Dry grass, red-brown soil, dense bush in background so no long view. Typical specimen, healthy. Warm light. No people, no blood. 3:2."
     },
     {
       "species": "livingstone-eland",

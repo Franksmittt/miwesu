@@ -36,11 +36,27 @@ model Booking {
   status           BookingStatus @default(PENDING)
   stripeSessionId  String?      @unique
   specialRequests  String?
+  /** Owner-only notes (pricing agreed, payment received, etc.) */
+  internalNotes    String?
   createdAt        DateTime     @default(now())
   updatedAt        DateTime     @updatedAt
+  emailLogs        EmailLog[]
 
   @@index([unitId, checkIn, checkOut])
   @@index([status])
+}
+
+model EmailLog {
+  id        String   @id @default(cuid())
+  bookingId String
+  booking   Booking  @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+  subject   String
+  body      String   @db.Text
+  sentAt    DateTime @default(now())
+  /** outbound = sent by owner to guest */
+  direction String   @default("outbound")
+
+  @@index([bookingId])
 }
 
 enum BookingStatus {

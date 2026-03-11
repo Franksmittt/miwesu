@@ -10,7 +10,6 @@ import {
   Calendar,
   Users,
   Home,
-  CreditCard,
   Check,
   ChevronDown,
   ChevronUp,
@@ -61,9 +60,10 @@ export default function BookPage() {
   const [options, setOptions] = useState<AvailableOption[]>([])
   const [selectedOption, setSelectedOption] = useState<AvailableOption | null>(null)
   const [isDemo, setIsDemo] = useState(false)
-  const [checkoutLoading, setCheckoutLoading] = useState(false)
-  const [checkoutDemo, setCheckoutDemo] = useState<{ bookingId?: string; message?: string } | null>(null)
-  const [checkoutError, setCheckoutError] = useState<string | null>(null)
+  const [submitLoading, setSubmitLoading] = useState(false)
+  const [enquirySuccess, setEnquirySuccess] = useState(false)
+  const [enquiryMessage, setEnquiryMessage] = useState<string | null>(null)
+  const [submitError, setSubmitError] = useState<string | null>(null)
 
   const {
     register,
@@ -134,13 +134,13 @@ export default function BookPage() {
       checkIn: checkIn.toISOString(),
       checkOut: checkOut.toISOString(),
       totalGuests: guests,
-      totalPrice,
       specialRequests: formData.specialRequests || '',
     }
-    setCheckoutError(null)
-    setCheckoutDemo(null)
-    setCheckoutLoading(true)
-    fetch('/api/checkout', {
+    setSubmitError(null)
+    setEnquirySuccess(false)
+    setEnquiryMessage(null)
+    setSubmitLoading(true)
+    fetch('/api/booking-enquiry', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload),
@@ -148,15 +148,18 @@ export default function BookPage() {
       .then((r) => r.json())
       .then((data) => {
         setStep(4)
-        if (data.url) window.location.href = data.url
-        else if (data.demo) setCheckoutDemo(data)
-        else setCheckoutError(data.error || 'Checkout failed')
+        if (data.ok) {
+          setEnquirySuccess(true)
+          setEnquiryMessage(data.message || 'We\'ve received your enquiry. We\'ll check availability and contact you with pricing and next steps.')
+        } else {
+          setSubmitError(data.error || 'Could not submit enquiry')
+        }
       })
       .catch(() => {
         setStep(4)
-        setCheckoutError('Checkout failed')
+        setSubmitError('Could not submit enquiry. Please try again or contact us.')
       })
-      .finally(() => setCheckoutLoading(false))
+      .finally(() => setSubmitLoading(false))
   }
 
   const dateSummary =
@@ -452,10 +455,10 @@ export default function BookPage() {
                   </button>
                   <button
                     type="submit"
-                    disabled={checkoutLoading}
+                    disabled={submitLoading}
                       className="inline-flex items-center gap-2 py-3 px-8 bg-gold-500 text-onyx font-bold uppercase tracking-widest text-sm hover:bg-gold-400 rounded-xl transition-colors disabled:opacity-50"
                   >
-                      {checkoutLoading ? 'Processing…' : <>Proceed to payment <CreditCard className="w-4 h-4" /></>}
+                      {submitLoading ? 'Sending…' : <>Submit enquiry</>}
                   </button>
                 </div>
               </form>
@@ -493,45 +496,42 @@ export default function BookPage() {
           )}
 
             {/* Step 4: Success or error */}
-          {step === 4 && (checkoutDemo || checkoutError) && (
+          {step === 4 && (enquirySuccess || submitError) && (
               <section className="max-w-lg mx-auto">
                 <div
                   className={`rounded-2xl border p-8 text-center ${
-                    checkoutError
+                    submitError
                       ? 'bg-red-500/5 border-red-500/30'
                       : 'bg-gold-500/5 border-gold-500/30'
                   }`}
                 >
-                  {checkoutError ? (
+                  {submitError ? (
                     <>
                       <AlertCircle className="w-12 h-12 text-red-400 mx-auto mb-4" />
                       <h2 className="font-serif text-2xl text-white mb-2">Something went wrong</h2>
-                      <p className="text-gray-300 mb-6">{checkoutError}</p>
+                      <p className="text-gray-300 mb-6">{submitError}</p>
                     </>
                   ) : (
                     <>
                       <div className="w-14 h-14 rounded-full bg-gold-500/20 flex items-center justify-center mx-auto mb-4">
                         <Check className="w-7 h-7 text-gold-400" />
                       </div>
-                      <h2 className="font-serif text-2xl text-white mb-2">Request received</h2>
-                  <p className="text-gray-300 mb-4">
-                        {checkoutDemo?.message ||
-                          'Booking system is in demo mode. Configure DATABASE_URL and Stripe to enable real bookings.'}
-                  </p>
-                      {checkoutDemo?.bookingId && (
-                        <p className="text-sm text-gray-500 mb-4">Reference: {checkoutDemo.bookingId}</p>
-                      )}
-                </>
-              )}
+                      <h2 className="font-serif text-2xl text-white mb-2">Enquiry received</h2>
+                      <p className="text-gray-300 mb-6">
+                        {enquiryMessage || 'We\'ll check availability and contact you with pricing and next steps.'}
+                      </p>
+                      <p className="text-gray-500 text-sm mb-6">No payment is required yet. We will email you to confirm availability and send pricing. Once you pay, we will lock in your dates.</p>
+                    </>
+                  )}
                   <Link
                     href="/book"
                     className="inline-flex items-center gap-2 py-3 px-6 bg-gold-500 text-onyx font-bold uppercase tracking-widest text-sm hover:bg-gold-400 rounded-xl transition-colors"
                   >
                     <ArrowLeft className="w-4 h-4" /> Start over
-              </Link>
+                  </Link>
                 </div>
-            </section>
-          )}
+              </section>
+            )}
           </div>
         </div>
       </main>

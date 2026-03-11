@@ -66,3 +66,54 @@ export async function sendBookingConfirmationEmail(booking: BookingWithUnit): Pr
     html: `<p>New confirmed booking from ${booking.guestName} (${booking.guestEmail}) for ${booking.unit.name}, ${checkIn} – ${checkOut}, ${booking.totalGuests} guests.</p><p>Wayne & Melissa (MIWESU)</p>`,
   })
 }
+
+/** Notify owner of a new booking enquiry (no payment yet). Call after creating a PENDING booking. */
+export async function sendOwnerEnquiryNotification(params: {
+  guestName: string
+  guestEmail: string
+  guestPhone?: string | null
+  unitName: string
+  checkIn: Date
+  checkOut: Date
+  totalGuests: number
+  specialRequests?: string | null
+  adminPortalUrl: string
+}): Promise<void> {
+  if (!resend) return
+
+  const checkIn = new Date(params.checkIn).toLocaleDateString('en-ZA', { dateStyle: 'long' })
+  const checkOut = new Date(params.checkOut).toLocaleDateString('en-ZA', { dateStyle: 'long' })
+  const toList = [adminEmail, ...(process.env.MIWESU_ADMIN_CC || '').split(',').map((e) => e.trim()).filter(Boolean)]
+
+  const html = `
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
+<body style="margin:0; padding:0; font-family: system-ui, sans-serif; background: #fafafa; color: #111;">
+  <div style="max-width: 560px; margin: 0 auto; padding: 32px 24px;">
+    <p style="font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; color: #997B3D; font-weight: 600;">MIWESU Lodge – New enquiry</p>
+    <h1 style="font-size: 24px; margin: 8px 0 24px; color: #050505;">You have a new booking enquiry</h1>
+    <p style="font-size: 16px; line-height: 1.6; color: #333;">Someone has requested dates. Check availability, then contact them with pricing and confirm when paid.</p>
+    <table style="width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 15px;">
+      <tr style="border-bottom: 1px solid #eee;"><td style="padding: 12px 0; color: #666;">Guest</td><td style="padding: 12px 0; text-align: right;">${params.guestName}</td></tr>
+      <tr style="border-bottom: 1px solid #eee;"><td style="padding: 12px 0; color: #666;">Email</td><td style="padding: 12px 0; text-align: right;">${params.guestEmail}</td></tr>
+      ${params.guestPhone ? `<tr style="border-bottom: 1px solid #eee;"><td style="padding: 12px 0; color: #666;">Phone</td><td style="padding: 12px 0; text-align: right;">${params.guestPhone}</td></tr>` : ''}
+      <tr style="border-bottom: 1px solid #eee;"><td style="padding: 12px 0; color: #666;">Accommodation</td><td style="padding: 12px 0; text-align: right;">${params.unitName}</td></tr>
+      <tr style="border-bottom: 1px solid #eee;"><td style="padding: 12px 0; color: #666;">Check-in – Check-out</td><td style="padding: 12px 0; text-align: right;">${checkIn} – ${checkOut}</td></tr>
+      <tr style="border-bottom: 1px solid #eee;"><td style="padding: 12px 0; color: #666;">Guests</td><td style="padding: 12px 0; text-align: right;">${params.totalGuests}</td></tr>
+      ${params.specialRequests ? `<tr style="border-bottom: 1px solid #eee;"><td style="padding: 12px 0; color: #666;">Notes</td><td style="padding: 12px 0; text-align: right;">${params.specialRequests}</td></tr>` : ''}
+    </table>
+    <p style="margin-top: 24px;"><a href="${params.adminPortalUrl}" style="display: inline-block; background: #C5A059; color: #050505; padding: 12px 24px; text-decoration: none; font-weight: 600; border-radius: 8px;">Open admin portal</a></p>
+    <p style="font-size: 14px; color: #999; margin-top: 32px;">MIWESU Game Farm · Makoppa district · Thabazimbi</p>
+  </div>
+</body>
+</html>
+  `.trim()
+
+  await resend.emails.send({
+    from: fromEmail,
+    to: [...new Set(toList)],
+    subject: `New enquiry: ${params.guestName} – ${params.unitName} (${checkIn} – ${checkOut})`,
+    html,
+  })
+}

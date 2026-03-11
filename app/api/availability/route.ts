@@ -60,9 +60,10 @@ export async function GET(request: NextRequest) {
       const homestead = units.find((u) => u.name === HOMESTEAD_NAME)
       const stoneVilla = units.find((u) => u.name === STONE_VILLA_NAME)
 
+      // Only CONFIRMED bookings block availability; PENDING = enquiry, still available for others
       const overlappingBookings = await prisma.booking.findMany({
         where: {
-          status: { in: ['CONFIRMED', 'PENDING'] },
+          status: 'CONFIRMED',
           checkIn: { lt: checkOut },
           checkOut: { gt: checkIn },
         },

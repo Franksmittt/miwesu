@@ -168,17 +168,17 @@
 
 ## 13. Lechwe (`/lechwe`)
 
-| Section | Placeholder label | You need |
-|--------|--------------------|----------|
-| Taxonomy | Lechwe Taxonomy Image Placeholder | Taxonomy / identification |
-| Horn Detail | Lechwe Horn Detail Image Placeholder | Horn detail |
-| Behavior | Lechwe Behavior Image Placeholder | Behavior in habitat |
-| Hunting Strategies | Hunting Stalk Image Placeholder | Hunting stalk / wetland habitat |
-| Shot Placement | Shot Placement Diagram Image Placeholder | Shot placement diagram (4:5, no text) |
-| Trophy | Trophy Lechwe Ram Image Placeholder | Trophy lechwe (no gore) |
-| Meat Characteristics | Lechwe Venison Image Placeholder | Lechwe venison |
+| Section | Placeholder label | Status |
+|--------|--------------------|--------|
+| Taxonomy | Lechwe Taxonomy Image Placeholder | **Done** `lechwe-taxonomy.png` |
+| Horn Detail | Lechwe Horn Detail Image Placeholder | **Done** `lechwe-horn-detail.png` |
+| Behavior | Lechwe Behavior Image Placeholder | **Done** `lechwe-behavior.png` |
+| Hunting Strategies | Hunting Stalk Image Placeholder | **Done** `lechwe-hunting-stalk.png` |
+| Shot Placement | Shot Placement Diagram Image Placeholder | **Done** `lechwe-shot-placement.png` |
+| Trophy | Trophy Lechwe Ram Image Placeholder | **Done** `lechwe-trophy-ram.png` |
+| Meat Characteristics | Lechwe Venison Image Placeholder | **Done** `lechwe-venison.png` |
 
-**Total: 7 images**
+**Total: 0 remaining**
 
 ---
 
@@ -214,9 +214,9 @@
 | Dapple Impala | 0 |
 | Golden Wildebeest | 0 |
 | Bushbuck | 0 |
-| Lechwe | 7 |
+| Lechwe | 0 |
 | Livingstone Eland | 7 |
-| **Total** | **14** |
+| **Total** | **7** |
 
 ---
 

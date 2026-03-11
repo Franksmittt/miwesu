@@ -31,62 +31,6 @@
   },
   "prompts": [
     {
-      "species": "lechwe",
-      "section": "Taxonomy",
-      "placeholderLabel": "Lechwe Taxonomy Image Placeholder",
-      "aspectRatio": "3:2",
-      "suggestedFileName": "lechwe-taxonomy.png",
-      "prompt": "Lechwe ram for identification: long lyre horns, reddish-brown coat. At wetland or water edge, reeds or damp ground, dense reeds and thick bush behind so no long view. Patchy grass, shrubs. Makoppa wetland edge. Typical specimen. Warm light. 3:2. No people."
-    },
-    {
-      "species": "lechwe",
-      "section": "Horn Detail",
-      "placeholderLabel": "Lechwe Horn Detail Image Placeholder",
-      "aspectRatio": "3:2",
-      "suggestedFileName": "lechwe-horn-detail.png",
-      "prompt": "Lechwe ram showing horn detail, long lyre horns. Head and shoulder or full body at water edge. Reddish-brown coat. Reeds, damp soil, dense reeds and thick bush in background so you cannot see far. Typical specimen. Warm light. 3:2. No people."
-    },
-    {
-      "species": "lechwe",
-      "section": "Behavior",
-      "placeholderLabel": "Lechwe Behavior Image Placeholder",
-      "aspectRatio": "3:2",
-      "suggestedFileName": "lechwe-behavior.png",
-      "prompt": "Lechwe ram in natural behaviour at wetland edge: standing, wading or grazing. Long lyre horns, reddish coat. Reeds, water, patchy grass, shrubs, flat terrain; no hills, mountains or koppies in background. Makoppa. Typical specimen. Warm light. 3:2. No people."
-    },
-    {
-      "species": "lechwe",
-      "section": "Hunting Strategies",
-      "placeholderLabel": "Hunting Stalk Image Placeholder",
-      "aspectRatio": "3:2",
-      "suggestedFileName": "lechwe-hunting-stalk.png",
-      "prompt": "Lechwe in wetland habitat. Single ram with lyre horns at water edge. Reeds, damp soil, dense reeds and thick bush behind so background does not recede far. Makoppa. Typical specimen. Warm light. 3:2. No people, no blood."
-    },
-    {
-      "species": "lechwe",
-      "section": "Shot Placement",
-      "placeholderLabel": "Shot Placement Diagram Image Placeholder",
-      "aspectRatio": "4:5",
-      "suggestedFileName": "lechwe-shot-placement.png",
-      "prompt": "Technical diagram illustration, no text. Single lechwe ram in strict broadside view, side profile. Reddish-brown coat, long lyre horns. One small circle or crosshair target on the chest only: one-third of the way up from the belly, just behind the front leg. Clean lines, minimal neutral background. Portrait 4:5 vertical. No words, no labels."
-    },
-    {
-      "species": "lechwe",
-      "section": "Trophy",
-      "placeholderLabel": "Trophy Lechwe Ram Image Placeholder",
-      "aspectRatio": "3:2",
-      "suggestedFileName": "lechwe-trophy-ram.png",
-      "prompt": "Lechwe ram at wetland edge, respectful portrait. Long lyre horns, reddish coat. Reeds, water, dense reeds and thick bush in background so no long view. Typical specimen, healthy. Warm light. No people, no blood. 3:2."
-    },
-    {
-      "species": "lechwe",
-      "section": "Meat Characteristics",
-      "placeholderLabel": "Lechwe Venison Image Placeholder",
-      "aspectRatio": "4:5",
-      "suggestedFileName": "lechwe-venison.png",
-      "prompt": "Lechwe venison on board or plate, lean game meat. Natural light, clean. 4:5 vertical. Food photography."
-    },
-    {
       "species": "livingstone-eland",
       "section": "Taxonomy",
       "placeholderLabel": "Livingstone Eland Taxonomy Image Placeholder",

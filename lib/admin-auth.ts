@@ -27,14 +27,14 @@ export function verifyAdminToken(token: string): boolean {
   return token === expected
 }
 
-/** Set the admin session cookie on the response (call from API route) */
+/** Set the admin session cookie on the response (call from API route). Path=/ so it is sent to /api/admin/* too. */
 export function setAdminSessionCookie(token: string): string {
-  return `${ADMIN_SESSION_COOKIE}=${token}; Path=/admin; HttpOnly; SameSite=Lax; Max-Age=${MAX_AGE}${process.env.NODE_ENV === 'production' ? '; Secure' : ''}`
+  return `${ADMIN_SESSION_COOKIE}=${token}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${MAX_AGE}${process.env.NODE_ENV === 'production' ? '; Secure' : ''}`
 }
 
 /** Clear the admin session cookie */
 export function clearAdminSessionCookie(): string {
-  return `${ADMIN_SESSION_COOKIE}=; Path=/admin; HttpOnly; SameSite=Lax; Max-Age=0${process.env.NODE_ENV === 'production' ? '; Secure' : ''}`
+  return `${ADMIN_SESSION_COOKIE}=; Path=/; HttpOnly; SameSite=Lax; Max-Age=0${process.env.NODE_ENV === 'production' ? '; Secure' : ''}`
 }
 
 /** Read and verify admin session from request cookies (e.g. in API route) */

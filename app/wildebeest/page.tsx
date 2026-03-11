@@ -502,10 +502,14 @@ export default function WildebeestPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Hunting Stalk Image Placeholder</span>
-                </div>
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+                <Image
+                  src="/images/wildebeest-hunting-stalk.png"
+                  alt="Blue wildebeest in habitat, spot-and-stalk"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
 
@@ -563,10 +567,14 @@ export default function WildebeestPage() {
 
             {/* Shot Placement */}
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Shot Placement Diagram Image Placeholder</span>
-                </div>
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+                <Image
+                  src="/images/wildebeest-shot-placement.png"
+                  alt="Blue wildebeest shot placement diagram"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Shot Placement</h3>
@@ -655,10 +663,14 @@ export default function WildebeestPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Bull vs Cow Comparison Image Placeholder</span>
-                </div>
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+                <Image
+                  src="/images/wildebeest-bull-vs-cow.png"
+                  alt="Blue wildebeest bull and cow comparison"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
 
@@ -734,10 +746,14 @@ export default function WildebeestPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Wildebeest Venison Image Placeholder</span>
-                </div>
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+                <Image
+                  src="/images/wildebeest-venison.png"
+                  alt="Wildebeest venison"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
 

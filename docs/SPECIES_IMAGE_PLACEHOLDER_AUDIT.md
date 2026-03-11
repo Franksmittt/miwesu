@@ -94,42 +94,42 @@
 
 ## 8. Gemsbok (`/gemsbok`)
 
-| Section | Placeholder label | You need |
-|--------|--------------------|----------|
-| Hunting Strategies | Hunting Stalk Image Placeholder | Hunting stalk / gemsbok habitat |
-| Shot Placement | Shot Placement Diagram Image Placeholder | Shot placement diagram (4:5, no text) |
-| Comparison | Bull vs Cow Comparison Image Placeholder | Bull vs cow comparison |
-| Meat Characteristics | Gemsbok Venison Image Placeholder | Gemsbok venison |
+| Section | Placeholder label | Status |
+|--------|--------------------|--------|
+| Hunting Strategies | Hunting Stalk Image Placeholder | **Done** `gemsbok-hunting-stalk.png` |
+| Shot Placement | Shot Placement Diagram Image Placeholder | **Done** `gemsbok-shot-placement.png` |
+| Comparison | Bull vs Cow Comparison Image Placeholder | **Done** `gemsbok-bull-vs-cow.png` |
+| Meat Characteristics | Gemsbok Venison Image Placeholder | **Done** `gemsbok-venison.png` |
 
-**Total: 4 images**
+**Total: 0 remaining**
 
 ---
 
 ## 9. Blue Wildebeest (`/wildebeest`)
 
-| Section | Placeholder label | You need |
-|--------|--------------------|----------|
-| Hunting Strategies | Hunting Stalk Image Placeholder | Hunting stalk / wildebeest habitat |
-| Shot Placement | Shot Placement Diagram Image Placeholder | Shot placement diagram (4:5, no text) |
-| Comparison | Bull vs Cow Comparison Image Placeholder | Bull vs cow comparison |
-| Meat Characteristics | Wildebeest Venison Image Placeholder | Wildebeest venison |
+| Section | Placeholder label | Status |
+|--------|--------------------|--------|
+| Hunting Strategies | Hunting Stalk Image Placeholder | **Done** `wildebeest-hunting-stalk.png` |
+| Shot Placement | Shot Placement Diagram Image Placeholder | **Done** `wildebeest-shot-placement.png` |
+| Comparison | Bull vs Cow Comparison Image Placeholder | **Done** `wildebeest-bull-vs-cow.png` |
+| Meat Characteristics | Wildebeest Venison Image Placeholder | **Done** `wildebeest-venison.png` |
 
-**Total: 4 images**
+**Total: 0 remaining**
 
 ---
 
 ## 10. Dapple Impala (`/dapple-impala`)
 
-| Section | Placeholder label | You need |
-|--------|--------------------|----------|
-| Taxonomy / Identification | Dapple Impala Color Pattern Image Placeholder | Color pattern / dapple variant |
-| Behavior | Dapple Impala Behavior Image Placeholder | Behavior in habitat |
-| Hunting Strategies | Hunting Stalk Image Placeholder | Hunting stalk / habitat |
-| Shot Placement | Shot Placement Diagram Image Placeholder | Shot placement diagram (4:5, no text) |
-| Trophy | Trophy Dapple Impala Ram Image Placeholder | Trophy dapple impala (no gore) |
-| Meat Characteristics | Dapple Impala Venison Image Placeholder | Dapple impala venison |
+| Section | Placeholder label | Status |
+|--------|--------------------|--------|
+| Taxonomy / Identification | Dapple Impala Color Pattern Image Placeholder | **Done** `dapple-impala-color-pattern.png` |
+| Behavior | Dapple Impala Behavior Image Placeholder | **Done** `dapple-impala-behavior.png` |
+| Hunting Strategies | Hunting Stalk Image Placeholder | **Done** `dapple-impala-hunting-stalk.png` |
+| Shot Placement | Shot Placement Diagram Image Placeholder | **Done** `dapple-impala-shot-placement.png` |
+| Trophy | Trophy Dapple Impala Ram Image Placeholder | **Done** `dapple-impala-trophy-ram.png` |
+| Meat Characteristics | Dapple Impala Venison Image Placeholder | **Done** `dapple-impala-venison.png` |
 
-**Total: 6 images**
+**Total: 0 remaining**
 
 ---
 
@@ -209,14 +209,14 @@
 | Springbok | 0 |
 | Cape Buffalo | 0 |
 | Warthog | 0 |
-| Gemsbok | 4 |
-| Blue Wildebeest | 4 |
-| Dapple Impala | 6 |
+| Gemsbok | 0 |
+| Blue Wildebeest | 0 |
+| Dapple Impala | 0 |
 | Golden Wildebeest | 6 |
 | Bushbuck | 9 |
 | Lechwe | 7 |
 | Livingstone Eland | 7 |
-| **Total** | **43** |
+| **Total** | **29** |
 
 ---
 

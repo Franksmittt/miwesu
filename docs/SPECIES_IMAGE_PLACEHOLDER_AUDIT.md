@@ -139,12 +139,12 @@
 |--------|--------------------|--------|
 | Taxonomy / Identification | Golden Wildebeest Color Pattern Image Placeholder | **Done** `golden-wildebeest-color-pattern.png` |
 | Behavior | Golden Wildebeest Behavior Image Placeholder | **Done** `golden-wildebeest-behavior.png` |
-| Hunting Strategies | Hunting Stalk Image Placeholder | You need: hunting stalk / habitat |
+| Hunting Strategies | Hunting Stalk Image Placeholder | **Done** `golden-wildebeest-hunting-stalk.png` |
 | Shot Placement | Shot Placement Diagram Image Placeholder | **Done** `golden-wildebeest-shot-placement.png` |
 | Trophy | Trophy Golden Wildebeest Bull Image Placeholder | **Done** `golden-wildebeest-trophy-bull.png` |
 | Meat Characteristics | Golden Wildebeest Venison Image Placeholder | **Done** `golden-wildebeest-venison.png` |
 
-**Total: 1 remaining** (Hunting Stalk)
+**Total: 0 remaining**
 
 ---
 
@@ -212,11 +212,11 @@
 | Gemsbok | 0 |
 | Blue Wildebeest | 0 |
 | Dapple Impala | 0 |
-| Golden Wildebeest | 1 |
-| Bushbuck | 9 |
+| Golden Wildebeest | 0 |
+| Bushbuck | 0 |
 | Lechwe | 7 |
 | Livingstone Eland | 7 |
-| **Total** | **24** |
+| **Total** | **14** |
 
 ---
 

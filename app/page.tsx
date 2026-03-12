@@ -566,7 +566,7 @@ export default function Home() {
       {/* Beyond the Rifle - The Specifics */}
       <section className="py-24 lg:py-32 bg-marble-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-gold-600 text-xs tracking-[0.2em] uppercase font-bold font-sans">
+          <span className="text-gold-700 text-xs tracking-[0.2em] uppercase font-bold font-sans">
             Beyond the Rifle
           </span>
           <h2 className="font-serif text-4xl md:text-6xl text-onyx mt-6 mb-12 sm:mb-20 tracking-tight">
@@ -611,7 +611,7 @@ export default function Home() {
       {/* What Guests Say - Social Proof */}
       <section className="py-16 lg:py-24 bg-marble border-y border-gray-100">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <span className="text-gold-600 text-xs tracking-[0.2em] uppercase font-bold font-sans block text-center mb-6">
+          <span className="text-gold-700 text-xs tracking-[0.2em] uppercase font-bold font-sans block text-center mb-6">
             What Guests Say
           </span>
           <div className="grid md:grid-cols-2 gap-6">
@@ -622,14 +622,14 @@ export default function Home() {
                   <p className="font-sans text-gray-600 leading-relaxed mb-6">
                     &quot;Die gesin het na die naweek gevoel of ons werklik onttrek het. Die biltongjag en die koppie-uitsigte -ons kom weer.&quot;
                   </p>
-                  <p className="text-xs uppercase tracking-widest text-gold-600 font-bold">Family biltong hunt · Gauteng</p>
+                  <p className="text-xs uppercase tracking-widest text-gold-700 font-bold">Family biltong hunt · Gauteng</p>
                 </div>
                 <div className="bg-white p-8 border border-gray-100 shadow-sm rounded-2xl reveal delay-100">
                   <Quote className="w-10 h-10 text-gold-500 mb-4" />
                   <p className="font-sans text-gray-600 leading-relaxed mb-6">
                     &quot;Weekend weg van die stad. Pryse in Rand, duidelik. Die huis is stil en die veld is vol.&quot;
                   </p>
-                  <p className="text-xs uppercase tracking-widest text-gold-600 font-bold">Weekend getaway · SA</p>
+                  <p className="text-xs uppercase tracking-widest text-gold-700 font-bold">Weekend getaway · SA</p>
                 </div>
               </>
             ) : (
@@ -639,14 +639,14 @@ export default function Home() {
                   <p className="font-sans text-gray-600 leading-relaxed mb-6">
                     &quot;Flew JFK to Johannesburg, 2.5 hours to the farm. The kudu we took was exactly what we came for. Logistics and export were handled -no surprises.&quot;
                   </p>
-                  <p className="text-xs uppercase tracking-widest text-gold-600 font-bold">International hunter · USA</p>
+                  <p className="text-xs uppercase tracking-widest text-gold-700 font-bold">International hunter · USA</p>
                 </div>
                 <div className="bg-white p-8 border border-gray-100 shadow-sm rounded-2xl reveal delay-100">
                   <Quote className="w-10 h-10 text-gold-500 mb-4" />
                   <p className="font-sans text-gray-600 leading-relaxed mb-6">
                     &quot;Malaria-free was a big deal for us. The Waterberg bushveld and the lodge -first-class. Already planning our next trip.&quot;
                   </p>
-                  <p className="text-xs uppercase tracking-widest text-gold-600 font-bold">Trophy safari · Florida</p>
+                  <p className="text-xs uppercase tracking-widest text-gold-700 font-bold">Trophy safari · Florida</p>
                 </div>
               </>
             )}

@@ -21,36 +21,31 @@ export function AmbientAudioProvider({ children }: { children: React.ReactNode }
   const [isPlaying, setIsPlaying] = useState(false)
   const audioRef = useRef<HTMLAudioElement | null>(null)
 
+  // Create audio only on first user play (avoids 404 on initial load; no console error at load time)
   const toggle = useCallback(() => {
     setIsPlaying((prev) => {
       const next = !prev
-      if (audioRef.current) {
-        if (next) {
-          audioRef.current.play().catch(() => {})
-        } else {
-          audioRef.current.pause()
+      if (next) {
+        if (!audioRef.current) {
+          const audio = new Audio(AUDIO_SRC)
+          audio.loop = true
+          audio.volume = 0.15
+          audioRef.current = audio
         }
+        audioRef.current?.play().catch(() => setIsPlaying(false))
+      } else {
+        audioRef.current?.pause()
       }
       return next
     })
   }, [])
 
   useEffect(() => {
-    const audio = new Audio(AUDIO_SRC)
-    audio.loop = true
-    audio.volume = 0.15
-    audioRef.current = audio
     return () => {
-      audio.pause()
+      audioRef.current?.pause()
       audioRef.current = null
     }
   }, [])
-
-  useEffect(() => {
-    if (!audioRef.current) return
-    if (isPlaying) audioRef.current.play().catch(() => setIsPlaying(false))
-    else audioRef.current.pause()
-  }, [isPlaying])
 
   return (
     <AmbientContext.Provider value={{ isPlaying, toggle }}>

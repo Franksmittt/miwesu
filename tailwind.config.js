@@ -13,6 +13,7 @@ module.exports = {
           400: '#D4AF37', // Standard Gold
           500: '#C5A059', // Rich Dubai Gold (Matches Logo)
           600: '#997B3D', // Dark Antique Gold
+          700: '#7c6426', // Contrast-safe on marble (WCAG AA 4.5:1)
         },
         onyx: {
           DEFAULT: '#050505', // True Black (Deep Luxury)

@@ -46,9 +46,9 @@ export default function Footer() {
         {/* Links: two rows  - primary then secondary */}
         <div className="py-12 sm:py-14 lg:py-16 grid grid-cols-2 sm:grid-cols-4 gap-8 sm:gap-10 lg:gap-12">
           <div>
-            <h4 className="text-[10px] uppercase tracking-[0.25em] text-gold-500 font-bold mb-4 font-sans">
+            <h2 className="text-[10px] uppercase tracking-[0.25em] text-gold-500 font-bold mb-4 font-sans">
               Stay
-            </h4>
+            </h2>
             <ul className="space-y-1 font-sans text-sm">
               <li><Link href="/residences" className="text-gray-400 hover:text-white transition-colors flex items-center gap-1 group py-1.5 touch-manipulation"><span>Residences</span><ArrowUpRight className="w-3 h-3 opacity-0 -translate-y-0.5 translate-x-0.5 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all flex-shrink-0" /></Link></li>
               <li><Link href="/residences/homestead" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">The Homestead</Link></li>
@@ -57,9 +57,9 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="text-[10px] uppercase tracking-[0.25em] text-gold-500 font-bold mb-4 font-sans">
+            <h2 className="text-[10px] uppercase tracking-[0.25em] text-gold-500 font-bold mb-4 font-sans">
               Experience
-            </h4>
+            </h2>
             <ul className="space-y-1 font-sans text-sm">
               <li><Link href="/activities" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">Activities</Link></li>
               <li><Link href="/wildlife" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">Wildlife</Link></li>
@@ -69,9 +69,9 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="text-[10px] uppercase tracking-[0.25em] text-gold-500 font-bold mb-4 font-sans">
+            <h2 className="text-[10px] uppercase tracking-[0.25em] text-gold-500 font-bold mb-4 font-sans">
               Concierge
-            </h4>
+            </h2>
             <ul className="space-y-1 font-sans text-sm">
               <li><Link href="/rates" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">Rates</Link></li>
               <li><Link href="/availability" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">Availability</Link></li>
@@ -80,9 +80,9 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="text-[10px] uppercase tracking-[0.25em] text-gold-500 font-bold mb-4 font-sans">
+            <h2 className="text-[10px] uppercase tracking-[0.25em] text-gold-500 font-bold mb-4 font-sans">
               Reach us
-            </h4>
+            </h2>
             <ul className="space-y-1 font-sans text-sm text-gray-400">
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-gold-500/80 mt-0.5 flex-shrink-0" />

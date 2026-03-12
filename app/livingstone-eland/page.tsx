@@ -130,10 +130,14 @@ export default function LivingstoneElandPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Livingstone Eland Taxonomy Image Placeholder</span>
-                </div>
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+                <Image
+                  src="/images/livingstone-eland-taxonomy.png"
+                  alt="Livingstone eland taxonomy and identification"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
 
@@ -266,10 +270,14 @@ export default function LivingstoneElandPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Livingstone Eland Horn Detail Image Placeholder</span>
-                </div>
+              <div className="relative h-full min-h-[400px] overflow-hidden rounded-sm">
+                <Image
+                  src="/images/livingstone-eland-horn-detail.png"
+                  alt="Livingstone eland horn detail"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
 
@@ -406,10 +414,14 @@ export default function LivingstoneElandPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Hunting Stalk Image Placeholder</span>
-                </div>
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+                <Image
+                  src="/images/livingstone-eland-hunting-stalk.png"
+                  alt="Livingstone eland in habitat, spot-and-stalk"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
 
@@ -467,10 +479,14 @@ export default function LivingstoneElandPage() {
 
             {/* Shot Placement */}
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Shot Placement Diagram Image Placeholder</span>
-                </div>
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+                <Image
+                  src="/images/Gemini_Generated_Image_8i5xne8i5xne8i5x.png"
+                  alt="Livingstone eland shot placement diagram"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Shot Placement</h3>
@@ -541,10 +557,14 @@ export default function LivingstoneElandPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
-                <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Trophy Livingstone Eland Bull Image Placeholder</span>
-                </div>
+              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+                <Image
+                  src="/images/livingstone-eland-trophy-bull.png"
+                  alt="Livingstone eland bull, trophy evaluation"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
 
@@ -600,10 +620,14 @@ export default function LivingstoneElandPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative h-full min-h-[400px]">
-                <div className="absolute inset-0 bg-gray-200 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Livingstone Eland Venison Image Placeholder</span>
-                </div>
+              <div className="relative h-full min-h-[400px] overflow-hidden rounded-sm">
+                <Image
+                  src="/images/livingstone-eland-venison.png"
+                  alt="Livingstone eland venison"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
           </div>

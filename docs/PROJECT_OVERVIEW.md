@@ -1,189 +1,198 @@
 # MIWESU — Project Overview
 
-Luxury Next.js website for **MIWESU Game Farm / Hunters Lodge**, Thabazimbi, South Africa. The site presents the **Iron Eden** sanctuary in the Makoppa district (Waterberg region): private residences, wildlife, activities, conservation, and booking.
+Luxury Next.js website for **MIWESU Game Farm / Hunters Lodge**, Thabazimbi, South Africa. The site presents the **Iron Eden** sanctuary in the Makoppa district (Waterberg): private residences, 14 wildlife species, activities, conservation, booking, and trust tools.
+
+**Current status (March 2026):** All species page content images are integrated (no placeholders). Homepage: Hero (Ken Burns, cinematic vignette), Private Residences, A Day in Eden, Conservation Harvest, testimonials, Legacy. Design: Onyx/Gold palette, Cinzel + Montserrat, Liquid Glass, Bento Grids on species pages. Prisma is currently stubbed for faster builds; re-enable when database is needed. Stripe, Resend, SAPS 520 PDF, Biltong calculator, and Telemetry dashboard are implemented.
 
 ---
 
 ## 1. Lodge / Farm — Features & Benefits
 
 ### Location & setting
-- **Thabazimbi**, Limpopo; Makoppa district (D1432 road).
+- **Thabazimbi**, Limpopo; Makoppa district (D1432 road). ~40 km from Thabazimbi.
 - **Makoppa Dome** — ancient Swazian granite and gneiss; 2.5 billion years.
-- **Arid Sweet Bushveld** — nutrient-rich grasses, malaria-free; red sandy loam, granite koppies.
-- Exclusive use, privacy, daily housekeeping.
+- **Arid Sweet Bushveld** — nutrient-rich grasses, malaria-free; red sandy loam, flat to gently rolling terrain.
+- Exclusive use of chosen residence; daily housekeeping; fibre internet. Secure perimeter, electric fencing; both houses inside the reserve. Gravel road (D1432); high-clearance vehicle recommended Oct–Mar.
 
-### Accommodation summary
-- **Total sleepers:** 22 across two residences.
-- **The Homestead (Main Lodge House):** 16 sleepers, 4 bedrooms (2 lower × 3, 2 upper × 5), open-plan kitchen/living, first patio, boma & braai, lapa (pool table & darts), braai under the trees, trampoline, jungle gym, swimming pool with slide.
-- **The Stone Villa:** 6 sleepers, 2 bedrooms (master + bunk room), open-plan kitchen/living, master en-suite (shower), second en-suite (bathtub), outdoor braai.
+### Accommodation — bedrooms & capacity
 
-### On-site facilities & benefits
-- **First patio** — thatched roof, octagonal table, Adirondack chairs; glass doors to kitchen/living.
-- **Boma and braai (BBQ)** — circular fire pit, built-in braai, bar table and stools.
-- **Braai under the trees** — boma/braai with grill, paved area, seating; waterhole visible in views.
-- **Lapa** — open-sided thatched structure; pool table, bar, small kitchen/wet bar; links main house and pool.
-- **Swimming pool** — rectangular pool, water slide complex (thatched tower; red/blue and yellow slides), lawn, thatched umbrella.
-- **Trampoline & jungle gym** — in-ground trampoline(s), wooden jungle gym; family play area near pool.
-- **Stone Villa** — own braai, lawn, bushveld setting; near pool.
+| Residence | Sleepers | Bedrooms | Layout |
+|-----------|----------|----------|--------|
+| **The Homestead** (Main Lodge House) | 16 | 4 | Lower level: Lower Room 1 (sleeps 3), Lower Room 2 (sleeps 3), shared bathroom; Kitchen, Living. Upper level: Upper Room 1 (sleeps 5), Upper Room 2 (sleeps 5). |
+| **The Stone Villa** (Near the pool) | 6 | 2 | Master bedroom (en-suite shower); 2nd bedroom with 2 bunk beds (sleeps 4), en-suite with bathtub. Open-plan Kitchen, Living. |
 
-### Activities & experiences (high level)
-- Conservation harvest (ethical, quota-based).
-- Photographic safaris.
-- Celestial safaris (dark skies, astronomy).
-- Mobile wellness (in-villa treatments, e.g. Marula oils).
-- Wildlife viewing (game drives, walking safaris).
-- Trophy export support; wood & thermal products (braai wood).
+**Source of truth:** `lib/residences-data.ts`.
 
-### Conservation & ethos
-- Conservation-led harvest; anti-poaching; community support.
-- Sweetveld focus; sustainable use; “Luxury is silence” — sanctuary positioning.
+### The Homestead — amenities
+- **Indoor:** Full kitchen (chef’s kitchen), living area, first patio (thatched, octagonal table, Adirondack chairs). Lapa: pool table, darts, wet bar.
+- **Outdoor:** Boma and braai (circular fire pit, built-in braai, bar table and stools). Braai under the trees (second braai, waterhole views). Trampoline and jungle gym. Swimming pool with water slide complex (thatched tower; red/blue and yellow slides), lawn, thatched umbrella.
+- **Rooms:** Lower Room 1 & 2 each sleep 3 (en-suite / shared bathroom). Upper Room 1 & 2 each sleep 5.
+
+### The Stone Villa — amenities
+- **Indoor:** Kitchen, living area. Master bedroom (en-suite shower). Second bedroom (2 bunks, sleeps 4; en-suite with bathtub).
+- **Outdoor:** Outdoor braai overlooking the dam. Near main lodge swimming pool. Stargazing deck and telescope (per rates copy). Nespresso; daily housekeeping; full reserve access.
+
+### Shared / on property
+- One main swimming pool with slide (Homestead); Stone Villa is “near the pool.” Reserve access: 4x4 tracks, game viewing, exploration. Ideal for families and groups.
 
 ---
 
-## 2. Wildlife / Animals
+## 2. Activities (brief)
 
-Species are documented with research-backed data (weights, heights, diet, habitat, caliber, Rowland Ward, lifespan). Each species has a dedicated page and is included in the **Compare species** tool where applicable.
+| Activity | Description |
+|----------|-------------|
+| **Conservation Harvest** | Ethical, quota-based hunting with professional trackers. All harvests follow conservation and ethical practice. |
+| **Photographic Safaris** | Guided photographic safaris in the Makoppa district for wildlife enthusiasts and photographers. |
+| **Celestial Safaris** | Dark skies in Thabazimbi; private astronomy sessions. |
+| **Mobile Wellness** | In-villa spa treatments (e.g. indigenous Marula oils). |
+| **Wildlife Viewing** | Guided game drives and walking safaris; diverse wildlife of the reserve. |
 
-### Species list (14 in comparison tool + pages)
-
-| Species            | Slug               | Notes                          |
-|--------------------|--------------------|--------------------------------|
-| Greater Kudu       | `greater-kudu`     | “Grey Ghost”; spiral horns     |
-| Blue Wildebeest    | `wildebeest`       | Grazer; brindled gnu           |
-| Impala             | `impala`           | Lyre horns; plains game        |
-| Gemsbok            | `gemsbok`          | Arid-adapted; rapier horns     |
-| Warthog            | `warthog`          | Four tusks; waterholes         |
-| Blesbok            | `blesbok`          | White blaze; lyre horns        |
-| Bushbuck           | `bushbuck`         | Thicket dweller; spiral horns  |
-| Cape Buffalo       | `cape-buffalo`     | Dangerous game; fused boss     |
-| Dapple Impala      | `dapple-impala`    | Colour variant                 |
-| Golden Wildebeest  | `golden-wildebeest`| Golden/copper variant          |
-| Springbok          | `springbok`       | Pronking; dorsal fold          |
-| Red Hartebeest     | `red-hartebeest`   | “Heart-beast”; lyre horns      |
-| Lechwe             | `lechwe`          | Semi-aquatic; wetlands         |
-| Livingstone Eland  | `livingstone-eland`| Largest antelope               |
-
-**Data source:** `lib/species-comparison-data.ts` (weights, heights, diet, habitat, caliber, Rowland Ward, lifespan, trophy notes). Individual species pages use this and extend with narrative, images, and quick-fact banners. **Compare** page: side-by-side comparison; shareable URLs (`/compare?a=slug&b=slug`).
+Additional themes on site: birding, 4x4 trails, custom experiences. **Page:** `/activities`; data and imagery from `lib/activity-images.ts`.
 
 ---
 
-## 3. Accommodation & Facilities (Data Model)
+## 3. Wildlife / Species
 
-Single source of truth: **`lib/residences-data.ts`**.
+**14 species**, each with a dedicated page and entry in the **Compare** tool (`lib/species-comparison-data.ts`, `lib/species-data.ts`).
 
-### Main Lodge House (The Homestead)
-- **Facilities:** Main lodge house (exterior), Lower Room 1 (sleeps 3), Lower Room 2 (sleeps 3), Lower Room en-suite (bathroom), Kitchen, Living area, First patio, Boma and Braai, Upper Room 1 (sleeps 5), Upper Room 2 (sleeps 5), Lapa (pool table & darts), Braai under the trees, Trampoline & jungle gym, Swimming pool with slide.
-- Each facility has: `id`, `label`, `description`, `imagePath`, optional `fallbackImagePath`, optional `card1Source` (for asset mapping).
+| Species | Slug | Notes |
+|---------|------|--------|
+| Greater Kudu | `greater-kudu` | “Grey Ghost”; spiral horns |
+| Blue Wildebeest | `wildebeest` | Grazer; brindled gnu |
+| Impala | `impala` | Lyre horns; plains game |
+| Gemsbok | `gemsbok` | Arid-adapted; rapier horns |
+| Warthog | `warthog` | Four tusks; waterholes |
+| Blesbok | `blesbok` | White blaze; lyre horns |
+| Bushbuck | `bushbuck` | Thicket dweller; spiral horns |
+| Cape Buffalo | `cape-buffalo` | Dangerous game; fused boss |
+| Dapple Impala | `dapple-impala` | Colour variant |
+| Golden Wildebeest | `golden-wildebeest` | Golden/copper variant |
+| Springbok | `springbok` | Pronking; dorsal fold |
+| Red Hartebeest | `red-hartebeest` | “Heart-beast”; lyre horns |
+| Lechwe | `lechwe` | Semi-aquatic; wetlands |
+| Livingstone Eland | `livingstone-eland` | Largest antelope |
 
-### The Stone Villa
-- **Facilities:** Exterior, Kitchen, Living area, Master bedroom, Master en-suite (shower), 2nd bedroom (2 bunks, sleeps 4), 2nd bedroom en-suite (bathtub), Outdoor braai.
-- Same structure; images include Thabazimbi lodge photography (e.g. N_200, N_158, N_171, W_105).
-
-### Gallery
-- **`galleryAccommodationImages`** — array of `{ src, category: 'Accommodation', title, description }` used on the Gallery page and for accommodation imagery. Many entries use Thabazimbi/processed lodge images.
-
----
-
-## 4. Layout & Styling
-
-### Design system
-- **Palette:** Gold (300–600), Onyx (default, light), Marble (default, dark). Defined in `tailwind.config.js`.
-- **Fonts:** **Cinzel** (serif, headings), **Montserrat** (sans, body); loaded in `app/layout.tsx`.
-- **Hero imagery:** Lodge photos (no generic placeholders). Central reference: `lib/hero-images.ts`. Hero backgrounds use Thabazimbi panoramic braai, braai under trees, Stone Villa exterior, main house living as appropriate per page.
-- **Tailwind:** Custom utilities — `text-gradient-gold`, `glass-panel`, `glass-panel-dark`, `reveal` (scroll animation), `bg-hero-pattern`, `luxury-gradient`, `gold-gradient`, `shadow-luxury`, `shadow-gold-glow`, `widest-xl` letter-spacing.
-
-### Global behaviour
-- **Navigation:** Fixed top; on home and not scrolled: gradient; else solid onyx. Logo center; “Private Access” opens vetting modal. Full-screen menu overlay (Stay, Experience, Practical, Reach us).
-- **Layout:** `Layout` wraps pages with `Navigation` and shared footer/modal. Main content typically `min-h-screen`, sections with consistent padding and max-width (e.g. `max-w-7xl`).
-- **Accessibility:** Focus-visible outline (gold); `prefers-reduced-motion` respected; selection styling; touch targets (e.g. 44px) for menu items.
-- **Responsive:** Breakpoints sm/md/lg; grid layouts; hero heights (e.g. 50vh–60vh); image `sizes` for performance.
-
-### Key UI patterns
-- Serif headings with gold gradient accent (e.g. “Iron **Eden**”).
-- Uppercase tracking labels (e.g. “The Makoppa Sanctuary”).
-- Dark (onyx) sections with gold accents; light (marble) sections for text-heavy content.
-- Cards with border, hover scale/shadow; CTA buttons (gold border, fill on hover).
-- Compare button on species pages (opens modal to pick second species, then navigates to `/compare?a=...&b=...`).
-
-### Immersion & motion (image-driven blueprint)
-- **Slow-Breathe Hero (Ken Burns):** Home, Residences, and Activities heroes use a subtle 18s loop: scale 1→1.08 and translate for a cinematic “breathe” effect. Implemented via Tailwind `animate-ken-burns`; disabled when `prefers-reduced-motion` is set.
-- **Design Your Escape (HoverTakeover):** Homepage section “Who’s Eden?” with six vibe cards (Bachelor Bash, Romantic Escape, Family Eden, The Oasis, Hunter’s Brotherhood, City Escape). Hovering a card cross-fades the section background to that vibe’s Thabazimbi image (Framer Motion). Cards link to /activities, /residences, /wildlife, /about; “Book your stay” CTA below.
-- **A Day in Eden (DayInLife):** Homepage vertical timeline with five moments (06:00 Dawn, 10:00 Morning, 15:00 Afternoon, 19:00 Golden hour, 22:00 Night). Each row: image + time/label/title/description; alternating layout; scroll-triggered reveals (Framer Motion). Uses lodge imagery throughout; “Book your day” CTA at bottom.
-- **ScrollReveal:** Reusable Framer Motion component (`components/ScrollReveal.tsx`) for scroll-triggered opacity + y reveal. Used on home for “Private Residences” and “Conservation Harvest” section headers.
-- **Gallery — Experience by Vibe:** Gallery page includes a “Feel your Eden” block with four vibe groups (The Oasis, After Dark, The Homestead, The Disconnect). Each card: image, title, short description, link to residences/activities. Asymmetric grid with hover scale; Framer Motion on scroll-in.
-- **Framer Motion:** Used for hover takeovers, scroll reveals, and Day in the Life; no video—motion is subtle and respects reduced-motion preferences where applied.
+Each species page: hero image, Quick Facts (SpeciesBentoGrid), Compare button, taxonomy, physical description, behaviour, habitat, hunting strategies, shot placement, rifle/caliber, trophy evaluation, venison/utilisation. All content image placeholders have been replaced with real assets (see `docs/SPECIES_IMAGE_PLACEHOLDER_AUDIT.md` when applicable).
 
 ---
 
-## 5. Pages & Summary
+## 4. All Pages — List & Brief Description
 
 ### Core / marketing
-
-| Route        | Purpose |
-|-------------|---------|
-| **/** (Home) | Hero (Ken Burns lodge image), tagline “Iron Eden”, CTAs. Design Your Escape (vibe hover takeover). Origins (Makoppa Dome, Sweetveld). Residence cards. A Day in Eden (5-moment timeline). Conservation Harvest / species cards. Footer. |
-| **/about**  | Provenance; Makoppa Dome, D1432, Sweetveld; family experience; trophy/estate story. |
-| **/residences** | Hero; “Private Residences”; Homestead and Stone Villa cards with sleepers/bedrooms; facility list; housekeeping note. |
-| **/residences/homestead** | Main lodge: facility grid with image, label, description; fallback images on error. |
-| **/residences/stone-villa** | Stone Villa: same facility-grid pattern. |
-| **/book**   | Booking flow (dates, residence, guest count, etc.); hero strip; link back to Residences. |
-| **/availability** | Check availability; hero; likely date/residence selection. |
-| **/rates**   | Rates for Homestead and Stone Villa; hero (Stone Villa image). |
-| **/contact** | Contact form / concierge; hero (lodge). |
-| **/faq**    | FAQ; hero (main house living). |
+| Route | Description |
+|-------|-------------|
+| **/** (Home) | Hero (Ken Burns, “Iron Eden,” cinematic vignette), eyebrow “The Makoppa Sanctuary,” CTAs (Book Your Stay, Explore Residences). Private Residences cards (Homestead 16 sleepers, Stone Villa 6 sleepers). A Day in Eden (DayInLife: 5 moments). Conservation Harvest / species cards. What Guests Say (cookie-driven US vs SA). Legacy / impact. Footer. |
+| **/about** | Provenance; Makoppa Dome, D1432, Sweetveld; family experience; trophy/estate story; stats (Est. 1984, Sweetveld, Malaria-Free). |
+| **/residences** | Private Residences overview; Homestead and Stone Villa cards (sleepers, bedrooms); facility summary; housekeeping; link to sub-pages and book. |
+| **/residences/homestead** | The Homestead: facility grid (exterior, lower rooms, kitchen, living, first patio, boma, upper rooms, lapa, braai under trees, trampoline/jungle gym, pool) with image and description. |
+| **/residences/stone-villa** | The Stone Villa: facility grid (exterior, kitchen, living, master, en-suites, 2nd bedroom, outdoor braai) with image and description. |
+| **/book** | Multi-step booking: dates (DayPicker), residence + guests (availability), guest details, confirm → Stripe checkout or demo. Haptic on primary actions. |
+| **/availability** | Check availability by dates; residence summary; CTA to /book or contact. |
+| **/rates** | Rates for Homestead and Stone Villa; activity and trophy fees; investment guide. Currency switcher (ZAR/USD). |
+| **/contact** | Contact form (Resend), address, map, directions, intent dropdown. |
+| **/faq** | Accordion FAQ (lib/faq-data.ts); location, vetting, what’s included, best time, contact. JSON-LD FAQPage. |
 
 ### Experience
+| Route | Description |
+|-------|-------------|
+| **/activities** | Five main activities (Conservation Harvest, Photographic Safaris, Celestial Safaris, Mobile Wellness, Wildlife Viewing); expandable sections with imagery; hero. |
+| **/wildlife** | Species grid (cards with image, name, tag, link to species page); featured species; Specialist Species list; Ecological Management; Compare and Rates CTAs. |
+| **/compare** | Side-by-side species comparison; select species A/B; URL params `?a=slug&b=slug`; table (weight, height, diet, habitat, caliber, Rowland Ward, lifespan). CompareButton on each species page. |
+| **/conservation** | “If It Pays, It Stays”; Guardian’s Pledge; impact (meat donated, anti-poaching, families fed); anti-poaching units; community; habitat. |
+| **/gallery** | Filterable gallery (All, Landscape, Wildlife, Accommodation); unified grid with curated + Facebook-sourced images; lightbox; no overlays. |
+| **/partners** | Trusted partners: dipping/shipping, taxidermy, travel insurance; CTAs to trophy-export and contact. |
 
-| Route          | Purpose |
-|----------------|---------|
-| **/activities** | Activities list (Conservation Harvest, Photographic Safaris, Celestial Safaris, Mobile Wellness, Wildlife Viewing); hero; expandable sections with imagery. |
-| **/wildlife**  | Species grid (cards with name, image, link); “Compare species” link; hero. |
-| **/compare**   | Side-by-side species comparison; dropdowns for species A/B; URL params `?a=slug&b=slug`; table of attributes. |
-| **/conservation** | Conservation ethos; anti-poaching; community; hero. |
-| **/gallery**   | Hero; **Experience by Vibe** (Oasis, After Dark, Homestead, Disconnect) with links; then gallery grid by category (All, Landscape, Wildlife, Accommodation); Featured Collections; lightbox. |
-| **/partners**  | Partners / affiliations; hero (activities image). |
+### Practical / products
+| Route | Description |
+|-------|-------------|
+| **/wood** | Miwesu Premium Firewood (Engineered Heat): Sekelbos, Geelhak, Braai Mix; moisture/heat stats; product cards; WoodOrderModal; thermal order CTA. |
+| **/trophy-export** | Trophy export and travel: field prep, dipping/CITES, shipping, timeline; getting to MIWESU (OR Tambo, D1432); link to Partners. |
 
-### Species (dynamic [slug])
+### Blog & locale
+| Route | Description |
+|-------|-------------|
+| **/blog** | Hunter’s Journal index; links to articles. |
+| **/blog/sweetveld-vs-sourveld** | Authority content: Sweetveld vs Sourveld (SEO, HNWI). |
+| **/blog/limpopo-vs-eastern-cape** | Authority content: Limpopo vs Eastern Cape hunting. |
+| **/de** | German locale landing (Jagd in Limpopo); hero, copy, CTA. |
+| **/es** | Spanish locale landing (Caza en Limpopo); hero, copy, CTA. |
 
-| Route (examples) | Purpose |
-|------------------|---------|
-| **/greater-kudu**, **/wildebeest**, **/impala**, **/gemsbok**, **/warthog**, **/blesbok**, **/bushbuck**, **/cape-buffalo**, **/dapple-impala**, **/golden-wildebeest**, **/springbok**, **/red-hartebeest**, **/lechwe**, **/livingstone-eland** | Dedicated species page: hero image, quick-facts banner (weights, height, diet, habitat, etc.), Compare button, narrative sections, imagery (habitat, coat, horns, herd, etc.). Content aligned with research and `species-comparison-data`. |
+### Tools (Radical Trust)
+| Route | Description |
+|-------|-------------|
+| **/tools** | Tools hub: three cards — SAPS 520 Generator, Biltong Yield Calculator, Live Telemetry Dashboard (liquid-glass-dark). |
+| **/tools/saps520** | SAPS 520 form: applicant (name, passport, DOB, address, email, phone), travel (ports, dates, reason), up to 4 firearms. Submit → API generates PDF (pdf-lib). Legal notice: do not sign until SAPS. Haptic on Generate. |
+| **/tools/biltong** | Species dropdown (14 species), wet carcass weight; outputs estimated dry biltong yield (SA processing ~38%). Uses lib/biltong-data.ts. |
+| **/tools/telemetry** | Two panels: Conservation Impact (hectares, anti-poaching hours, community ZAR); Kiln Telemetry (moisture %, temp, batch). Data from /api/telemetry (simulated); refresh. |
 
-### Practical / other
+### Admin
+| Route | Description |
+|-------|-------------|
+| **/admin/bookings** | Admin bookings list (from Prisma when enabled). Protected by NEXT_PUBLIC_ADMIN_BOOKING_SECRET query. |
 
-| Route            | Purpose |
-|------------------|---------|
-| **/faq**         | Frequently asked questions. |
-| **/wood**        | Wood & thermal products (braai wood, etc.); hero (conservation/lodge). |
-| **/trophy-export** | Trophy export information; hero. |
-| **/blog**        | Blog index; hero. |
-| **/blog/limpopo-vs-eastern-cape** | Blog post; hero. |
-| **/blog/sweetveld-vs-sourveld**   | Blog post; hero. |
-| **/de**, **/es** | German and Spanish entry/locale pages; hero. |
-| **/admin/bookings** | Admin view for bookings (if applicable). |
+### Species (14)
+| Route | Description |
+|-------|-------------|
+| **/greater-kudu**, **/wildebeest**, **/impala**, **/gemsbok**, **/warthog**, **/blesbok**, **/bushbuck**, **/cape-buffalo**, **/dapple-impala**, **/golden-wildebeest**, **/springbok**, **/red-hartebeest**, **/lechwe**, **/livingstone-eland** | Dedicated species page: hero, Quick Facts (SpeciesBentoGrid), Compare button, taxonomy, physical, behaviour, habitat, hunting, shot placement, caliber table, trophy evaluation, venison/utilisation. All content images integrated. |
+
+### System
+| Route | Description |
+|-------|-------------|
+| **/sitemap.xml** | Dynamic sitemap (public routes); priority tiers; lastModified. |
+| **/robots.txt** | Env-aware; production allow with disallow for /api/, /admin/; sitemap ref. |
 
 ### API routes (examples)
-- **/api/contact** — contact form submit.
-- **/api/availability** — availability check.
-- **/api/checkout** — booking/checkout (e.g. Stripe).
+- **/api/contact** — contact form (Resend).
+- **/api/availability** — availability check (Prisma or stub).
+- **/api/checkout** — Stripe checkout session.
 - **/api/webhooks/stripe** — Stripe webhooks.
-- **/api/wood-order** — wood product orders.
-- **/api/admin/bookings** — admin bookings.
+- **/api/saps520/pdf** — generate SAPS 520 PDF (pdf-lib).
+- **/api/telemetry** — simulated conservation + kiln data.
+- **/api/wood-order** — wood product order.
+- **/api/admin/bookings** — admin bookings (when Prisma enabled).
 
 ---
 
-## 6. Tech Stack & Repo
+## 5. Layout, Design & Tech
 
-- **Framework:** Next.js 14 (App Router).
-- **Language:** TypeScript.
-- **Styling:** Tailwind CSS; custom theme (colors, fonts, utilities).
-- **UI:** React 18; Lucide React icons; Next.js `Image`.
-- **Data:** `lib/residences-data.ts`, `lib/species-comparison-data.ts`, `lib/hero-images.ts`; Prisma if used for bookings.
-- **Key components:** `Layout`, `Navigation`, `BookingWidget`, `CompareButton`, `HoverTakeover`, `DayInLife`, `ScrollReveal`, `StructuredData` (SEO), `VettingModal`.
-- **Motion:** `framer-motion` for scroll reveals, hover takeovers, and timeline; Tailwind `animate-ken-burns` for hero breathing.
+### Design system
+- **Palette:** Gold (300–600), Onyx, Marble (light/dark). Tailwind; `tailwind.config.js`.
+- **Fonts:** Cinzel (serif, headings), Montserrat (sans, body). `app/layout.tsx`.
+- **Hero imagery:** `lib/hero-images.ts`. Ken Burns on Home, Residences, Activities; species heroes per page.
+- **Utilities:** `text-gradient-gold`, `liquid-glass`, `liquid-glass-dark`, `reveal` (scroll animation), `shadow-luxury`, etc.
 
-For setup, scripts, and dev instructions, see the root **README.md**.
+### Key UI patterns
+- Serif headings with gold gradient (“Iron **Eden**”). Uppercase tracking labels.
+- Dark (onyx) and light (marble) sections; gold accents. Cards: border, hover scale/shadow; CTAs gold.
+- Species: SpeciesBentoGrid (liquid-glass tiles), CompareButton (modal → /compare).
+- Home Hero: radial vignette, thin border frame, Framer Motion stagger (Samsung One UI easing). No Design Your Escape or Provenance section on current home.
+
+### Tech stack
+- **Framework:** Next.js 15 (App Router). **Language:** TypeScript.
+- **Styling:** Tailwind CSS; custom theme.
+- **UI:** React 19; Lucide React; Next.js Image.
+- **Data:** `lib/residences-data.ts`, `lib/species-comparison-data.ts`, `lib/hero-images.ts`, `lib/activity-images.ts`, `lib/facebook-gallery.ts`. Prisma stubbed for build speed; Stripe, Resend, pdf-lib, date-fns in use.
+- **Motion:** Framer Motion (scroll reveals, DayInLife, nav); Tailwind `animate-ken-burns` for hero.
+- **Sensory:** Ambient audio toggle (bushveld soundscape); haptic feedback on primary buttons (Compare, Book, Tools).
+
+### Key components
+- **Layout** — Navigation, VettingModal, main, Footer; skip link.
+- **Navigation** — Fixed; logo; menu overlay (Stay, Experience, Practical, Reach); AmbientAudioToggle; Private Access (VettingModal).
+- **Footer** — Brand, tagline, infinite scroll of Facebook gallery images; Residence/Experience/Concierge links; contact; social.
+- **SpeciesBentoGrid** — Quick-facts grid on species pages.
+- **CompareButton** — Opens modal to pick second species; navigates to /compare.
+- **DayInLife** — “A Day in Eden” timeline (5 moments); alternating image/text; squircle, One UI ease.
+- **StructuredData** — JSON-LD (Organization, LocalBusiness, SpeciesTaxon, Product, FAQPage, Breadcrumb, etc.).
 
 ---
 
-*Last updated to reflect Thabazimbi lodge imagery, hero image replacement, Compare feature, and current pages/data.*
+## 6. SEO & Structured Data
+
+- **Metadata:** Every content page has title, description, canonical, Open Graph, Twitter. Species: hreflang (en-US, x-default).
+- **Sitemap:** Public routes only; priority: home 1.0; rates/activities/wildlife/species high; about, residences, conservation, blog, etc.
+- **Robots:** Env-aware; disallow /api/, /admin/ in production.
+- **JSON-LD:** Organization, LocalBusiness (home); SpeciesTaxonSchema per species; Product (wood); TouristTrip; FAQPage; Breadcrumb where used.
+
+---
+
+*Last updated: March 2026. Reflects current homepage structure, all species images integrated, residences data (16 + 6 sleepers, 4 + 2 bedrooms), activities, full page list, and tech stack (Prisma stubbed).*

@@ -1,6 +1,5 @@
 // MIWESU Lodge Booking System - Prisma Schema
-// Use with PostgreSQL (Supabase, Vercel Postgres, or any Postgres)
-// Set DATABASE_URL in .env
+// CRM + Master Pricelist. PostgreSQL (Supabase, Vercel Postgres, etc.)
 
 generator client {
   provider = "prisma-client-js"
@@ -11,6 +10,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+// --- UNITS (existing: availability & booking) ---
 model Unit {
   id                String    @id @default(cuid())
   name              String    @unique
@@ -22,25 +22,32 @@ model Unit {
   bookings          Booking[]
 }
 
+enum BookingStatus {
+  PENDING
+  QUOTED
+  CONFIRMED
+  CANCELLED
+}
+
 model Booking {
-  id               String       @id @default(cuid())
+  id               String         @id @default(cuid())
   unitId           String
-  unit             Unit         @relation(fields: [unitId], references: [id], onDelete: Restrict)
+  unit             Unit           @relation(fields: [unitId], references: [id], onDelete: Restrict)
   guestName        String
   guestEmail       String
   guestPhone       String?
   checkIn          DateTime
   checkOut         DateTime
   totalGuests      Int
-  totalPrice       Decimal      @db.Decimal(10, 2)
-  status           BookingStatus @default(PENDING)
-  stripeSessionId  String?      @unique
+  totalPrice       Decimal        @db.Decimal(10, 2)
+  status           BookingStatus  @default(PENDING)
+  stripeSessionId  String?        @unique
   specialRequests  String?
-  /** Owner-only notes (pricing agreed, payment received, etc.) */
   internalNotes    String?
-  createdAt        DateTime     @default(now())
-  updatedAt        DateTime     @updatedAt
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
   emailLogs        EmailLog[]
+  quotes           Quote[]
 
   @@index([unitId, checkIn, checkOut])
   @@index([status])
@@ -53,14 +60,58 @@ model EmailLog {
   subject   String
   body      String   @db.Text
   sentAt    DateTime @default(now())
-  /** outbound = sent by owner to guest */
   direction String   @default("outbound")
 
   @@index([bookingId])
 }
 
-enum BookingStatus {
-  PENDING
-  CONFIRMED
-  CANCELLED
+// --- MASTER PRICELIST ENGINE ---
+enum RateCategory {
+  ACCOMMODATION
+  SPECIES
+  ACTIVITY
+  EXTRA
+}
+
+model RateItem {
+  id          String       @id @default(cuid())
+  category    RateCategory
+  name        String
+  description String?
+  priceZAR    Float        @default(0)
+  priceUSD    Float        @default(0)
+  isAvailable Boolean      @default(true)
+  sortOrder   Int          @default(0)
+  updatedAt   DateTime     @updatedAt
+  quoteItems  QuoteItem[]
+
+  @@unique([category, name])
+}
+
+model SystemSettings {
+  id                String   @id @default("global")
+  exchangeRateZarUsd Float   @default(18.5)
+  updatedAt          DateTime @updatedAt
+}
+
+// --- QUOTES (linked to booking, line items from RateItem) ---
+model Quote {
+  id          String     @id @default(cuid())
+  bookingId   String
+  booking     Booking    @relation(fields: [bookingId], references: [id], onDelete: Cascade)
+  currency    String     @default("ZAR")
+  totalAmount Float      @default(0)
+  validUntil  DateTime?
+  createdAt   DateTime   @default(now())
+  items       QuoteItem[]
+}
+
+model QuoteItem {
+  id         String   @id @default(cuid())
+  quoteId    String
+  quote      Quote    @relation(fields: [quoteId], references: [id], onDelete: Cascade)
+  rateItemId String
+  rateItem   RateItem @relation(fields: [rateItemId], references: [id], onDelete: Restrict)
+  quantity   Int      @default(1)
+  unitPrice  Float
 }

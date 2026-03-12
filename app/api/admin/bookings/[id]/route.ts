@@ -98,7 +98,7 @@ export async function PATCH(
       ok: true,
       booking: {
         id,
-        status: status === 'PENDING' || status === 'CONFIRMED' || status === 'CANCELLED' ? status : undefined,
+        status: status === 'PENDING' || status === 'QUOTED' || status === 'CONFIRMED' || status === 'CANCELLED' ? status : undefined,
         internalNotes: typeof internalNotes === 'string' ? internalNotes : undefined,
       },
       demo: true,
@@ -109,7 +109,7 @@ export async function PATCH(
     const body = await request.json()
     const { status, internalNotes } = body
     const data: { status?: string; internalNotes?: string } = {}
-    if (status === 'PENDING' || status === 'CONFIRMED' || status === 'CANCELLED') {
+    if (status === 'PENDING' || status === 'QUOTED' || status === 'CONFIRMED' || status === 'CANCELLED') {
       data.status = status
     }
     if (typeof internalNotes === 'string') {

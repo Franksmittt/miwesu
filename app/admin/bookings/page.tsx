@@ -2,8 +2,8 @@
 
 import { useCallback, useEffect, useState } from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
-import { ArrowLeft, LogOut, Eye } from 'lucide-react'
+import { useSearchParams } from 'next/navigation'
+import { Eye } from 'lucide-react'
 
 type BookingRow = {
   id: string
@@ -21,9 +21,17 @@ export default function AdminBookingsPage() {
   const [bookings, setBookings] = useState<BookingRow[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
-  const [statusFilter, setStatusFilter] = useState<string>('')
+  const searchParams = useSearchParams()
+  const [statusFilter, setStatusFilter] = useState<string>(() => {
+    const s = searchParams.get('status')
+    return s && ['PENDING', 'QUOTED', 'CONFIRMED', 'CANCELLED'].includes(s) ? s : ''
+  })
   const [demo, setDemo] = useState(false)
-  const router = useRouter()
+
+  useEffect(() => {
+    const s = searchParams.get('status')
+    if (s && ['PENDING', 'QUOTED', 'CONFIRMED', 'CANCELLED'].includes(s)) setStatusFilter(s)
+  }, [searchParams])
 
   const loadBookings = useCallback(() => {
     setLoading(true)
@@ -44,33 +52,15 @@ export default function AdminBookingsPage() {
     loadBookings()
   }, [loadBookings])
 
-  const handleLogout = async () => {
-    await fetch('/api/admin/logout', { method: 'POST', credentials: 'include' })
-    router.push('/admin/login')
-    router.refresh()
-  }
-
   return (
-    <main id="main-content" className="min-h-screen bg-onyx text-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
-          <div className="flex items-center gap-4">
-            <Link href="/" className="inline-flex items-center text-gold-400 hover:text-white text-sm uppercase tracking-widest font-bold">
-              <ArrowLeft className="w-4 h-4 mr-2" /> Home
-            </Link>
-            <button
-              type="button"
-              onClick={handleLogout}
-              className="inline-flex items-center gap-2 text-gray-400 hover:text-white text-sm font-medium"
-            >
-              <LogOut className="w-4 h-4" /> Log out
-            </button>
-          </div>
+    <main id="main-content" className="flex-1">
+      <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
+        <div className="mb-8">
+          <h1 className="font-serif text-2xl sm:text-3xl text-white tracking-tight">Bookings</h1>
+          <p className="mt-1 text-sm text-gray-400">Enquiries and confirmed stays. Click a row to view details, email the client, or generate an invoice.</p>
         </div>
-        <h1 className="font-serif text-4xl text-white mb-2">Bookings</h1>
-        <p className="text-gray-400 mb-6">Enquiries and confirmed stays. Click a row to view details, email the client, or generate an invoice.</p>
 
-        <div className="flex flex-wrap items-center gap-4 mb-6">
+        <div className="mb-6 flex flex-wrap items-center gap-4">
           <label className="text-sm text-gray-400">Filter by status</label>
           <select
             value={statusFilter}
@@ -79,6 +69,7 @@ export default function AdminBookingsPage() {
           >
             <option value="">All</option>
             <option value="PENDING">Pending (enquiry)</option>
+            <option value="QUOTED">Quoted</option>
             <option value="CONFIRMED">Confirmed</option>
             <option value="CANCELLED">Cancelled</option>
           </select>
@@ -100,7 +91,7 @@ export default function AdminBookingsPage() {
               Demo data shown so you can see how the portal works. Real enquiries will appear here when guests submit from the website.
             </div>
           )}
-            <div className="overflow-x-auto border border-white/10 rounded-lg mb-12">
+            <div className="mb-10 overflow-x-auto rounded-xl border border-white/10">
               <table className="w-full text-left">
                 <thead>
                   <tr className="border-b border-white/10 bg-onyx-light">
@@ -127,7 +118,7 @@ export default function AdminBookingsPage() {
                       <td className="px-4 py-3 text-gray-300">{b.totalGuests}</td>
                       <td className="px-4 py-3 text-gold-400">{b.totalPrice > 0 ? `ZAR ${b.totalPrice.toLocaleString()}` : '–'}</td>
                       <td className="px-4 py-3">
-                        <span className={`text-xs px-2 py-1 rounded ${b.status === 'CONFIRMED' ? 'bg-green-500/20 text-green-400' : b.status === 'PENDING' ? 'bg-yellow-500/20 text-yellow-400' : 'bg-gray-500/20 text-gray-400'}`}>
+                        <span className={`text-xs px-2 py-1 rounded ${b.status === 'CONFIRMED' ? 'bg-emerald-500/20 text-emerald-400' : b.status === 'QUOTED' ? 'bg-amber-500/20 text-amber-400' : b.status === 'PENDING' ? 'bg-yellow-500/20 text-yellow-400' : 'bg-gray-500/20 text-gray-400'}`}>
                           {b.status}
                         </span>
                       </td>
@@ -145,7 +136,8 @@ export default function AdminBookingsPage() {
               </table>
             </div>
 
-              <h2 className="font-serif text-xl text-white mb-4">Calendar view</h2>
+            <section className="mt-10" aria-label="Calendar view">
+              <h2 className="font-serif text-lg text-white mb-4">Calendar view</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-onyx-light border border-white/10 rounded-lg p-6">
                   <h3 className="text-gold-400 font-serif mb-4">The Homestead</h3>
@@ -174,9 +166,10 @@ export default function AdminBookingsPage() {
                   </div>
                 </div>
               </div>
+            </section>
           </>
         )}
-        </div>
-      </main>
+      </div>
+    </main>
   )
 }

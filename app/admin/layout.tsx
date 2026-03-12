@@ -2,6 +2,7 @@
 
 import { usePathname, useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
+import AdminShell from '@/components/admin/AdminShell'
 
 export default function AdminLayout({
   children,
@@ -32,11 +33,16 @@ export default function AdminLayout({
 
   if (!checked && !isLoginPage) {
     return (
-      <main className="min-h-screen bg-onyx text-white flex items-center justify-center">
+      <div className="min-h-screen bg-onyx text-white flex items-center justify-center">
         <p className="text-gray-400">Checking access…</p>
-      </main>
+      </div>
     )
   }
 
-  return <>{children}</>
+  return (
+    <div className="min-h-screen bg-onyx text-white flex flex-col">
+      {!isLoginPage && <AdminShell />}
+      <div className="flex-1 flex flex-col">{children}</div>
+    </div>
+  )
 }

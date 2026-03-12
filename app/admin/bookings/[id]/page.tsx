@@ -117,7 +117,7 @@ export default function AdminBookingDetailPage() {
 
   if (loading && !booking) {
     return (
-      <main className="min-h-screen bg-onyx text-white flex items-center justify-center">
+      <main className="flex flex-1 items-center justify-center">
         <p className="text-gray-400">Loading…</p>
       </main>
     )
@@ -125,9 +125,9 @@ export default function AdminBookingDetailPage() {
 
   if (error || !booking) {
     return (
-      <main className="min-h-screen bg-onyx text-white p-8">
-        <p className="text-red-400 mb-4">{error || 'Booking not found'}</p>
-        <Link href="/admin/bookings" className="text-gold-400 hover:text-white text-sm">← Back to bookings</Link>
+      <main className="flex-1 px-4 py-8 sm:px-6 lg:px-8">
+        <p className="mb-4 text-red-400">{error || 'Booking not found'}</p>
+        <Link href="/admin/bookings" className="text-sm text-gold-400 hover:text-white">← Back to bookings</Link>
       </main>
     )
   }
@@ -136,11 +136,13 @@ export default function AdminBookingDetailPage() {
   const checkOut = new Date(booking.checkOut).toLocaleDateString('en-ZA', { dateStyle: 'long' })
 
   return (
-    <main className="min-h-screen bg-onyx text-white">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <Link href="/admin/bookings" className="inline-flex items-center gap-2 text-gold-400 hover:text-white text-sm font-medium mb-8">
-          <ArrowLeft className="w-4 h-4" /> Back to bookings
-        </Link>
+    <main id="main-content" className="flex-1">
+      <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-10 lg:px-8">
+        <div className="mb-6">
+          <Link href="/admin/bookings" className="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-white">
+            <ArrowLeft className="h-4 w-4" aria-hidden /> Back to bookings
+          </Link>
+        </div>
 
         {isDemo && (
           <div className="mb-6 rounded-xl bg-gold-500/10 border border-gold-500/30 px-4 py-3 text-gold-300 text-sm">
@@ -168,6 +170,7 @@ export default function AdminBookingDetailPage() {
                     className="rounded-lg border border-white/20 bg-white/5 px-3 py-2 text-white text-sm"
                   >
                     <option value="PENDING">Pending (enquiry)</option>
+                    <option value="QUOTED">Quoted</option>
                     <option value="CONFIRMED">Confirmed</option>
                     <option value="CANCELLED">Cancelled</option>
                   </select>

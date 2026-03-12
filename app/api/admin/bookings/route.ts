@@ -22,7 +22,7 @@ export async function GET(request: NextRequest) {
     const bookings = await prisma.booking.findMany({
       orderBy: { checkIn: 'asc' },
       include: { unit: true },
-      ...(statusFilter && ['PENDING', 'CONFIRMED', 'CANCELLED'].includes(statusFilter)
+      ...(statusFilter && ['PENDING', 'QUOTED', 'CONFIRMED', 'CANCELLED'].includes(statusFilter)
         ? { where: { status: statusFilter } }
         : {}),
     }) as Array<{

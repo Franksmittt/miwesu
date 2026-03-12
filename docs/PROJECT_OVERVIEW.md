@@ -298,6 +298,8 @@ When Prisma is stubbed, admin uses mock bookings and mock rate data; behaviour i
 
 - **docs/PROJECT_OVERVIEW.md** — This file.  
 - **docs/ADMIN_PORTAL_OVERVIEW.md** — Admin/CRM flow, features, routes, mock data.  
+- **docs/BACKEND_AND_EMAILS.md** — Backend overview, booking system, what we use (Prisma, Resend); how emails work, env vars, why emails fail and how to fix (Resend, domain verification).
+- **docs/SETUP_BACKEND_AND_EMAILS.md** — Step-by-step setup: database (Vercel Postgres or other), env vars, Resend API key and domain verification (SPF/DKIM/DMARC), Prisma migrate/seed, Vercel build command, and checklist.  
 - **docs/LIGHTHOUSE.md** — How to run Lighthouse, fixes applied (contrast, heading order, console errors), target scores.  
 - **docs/HERO_IMAGE_AUDIT.md** — Hero image specs per page (dimensions, safe zones, aesthetics).  
 - **docs/SPECIES_IMAGE_PLACEHOLDER_AUDIT.md** — Species content image audit.  

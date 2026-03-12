@@ -1,11 +1,13 @@
+import 'server-only'
 import { cookies } from 'next/headers'
 
 const ADMIN_SESSION_COOKIE = 'admin_session'
 const SESSION_PAYLOAD = 'miwesu-admin'
 const MAX_AGE = 60 * 60 * 24 * 7 // 7 days
 
+/** Secret used for signing session cookie. Prefer SESSION_SECRET (high entropy); fallback to ADMIN_PASSWORD. */
 export function getSecret(): string {
-  const s = process.env.ADMIN_PASSWORD || process.env.NEXT_PUBLIC_ADMIN_BOOKING_SECRET
+  const s = process.env.SESSION_SECRET || process.env.ADMIN_PASSWORD || process.env.NEXT_PUBLIC_ADMIN_BOOKING_SECRET
   if (!s) return ''
   return s
 }

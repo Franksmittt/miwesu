@@ -11,8 +11,9 @@ const breadcrumbItems = [
 ]
 
 export const metadata: Metadata = {
-  title: 'The Homestead | Private Residences',
-  description: 'The Homestead at MIWESU  - 16-sleeper main lodge. Four bedrooms, kitchen, living, first patio, boma and braai, lapa, pool. Exclusive use.',
+  title: '16-Sleeper Luxury Lodge Thabazimbi: Exclusive Use',
+  description: 'The Homestead: 16-sleeper, 4-bedroom main lodge on D1432 Makoppa District. Chef\'s kitchen, Lapa with wet bar, boma, bespoke swimming pool with multi-slide complex. Exclusive use. Malaria-free Limpopo.',
+  keywords: ['16-sleeper lodge Thabazimbi', 'exclusive use', 'The Homestead', 'Makoppa', 'Limpopo', 'luxury self-catering', 'Lapa', 'boma', 'private residence', 'MIWESU'],
   alternates: { canonical: constructCanonicalUrl(path) },
   openGraph: generateOpenGraph(
     'The Homestead | Private Residences',

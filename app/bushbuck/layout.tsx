@@ -15,7 +15,7 @@ const breadcrumbItems = [
 
 export const metadata: Metadata = {
   title: 'Bushbuck Hunting Guide | Tragelaphus sylvaticus',
-  description: 'Comprehensive guide to Bushbuck hunting at MIWESU Game Farm. Learn about the Prince of the Thickets - morphology, behavior, hunting strategies, trophy evaluation, and venison utilization.',
+  description: 'Bushbuck (Tragelaphus sylvaticus) at MIWESU: Prince of the Thickets, dangerous when wounded. Caliber .308 / 7mm-08. Rowland Ward min 15". Makoppa district, Limpopo. Conservation harvest.',
   keywords: [
     'Bushbuck hunting',
     'Tragelaphus sylvaticus',

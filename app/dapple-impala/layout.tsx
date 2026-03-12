@@ -15,7 +15,7 @@ const breadcrumbItems = [
 
 export const metadata: Metadata = {
   title: 'Dapple Impala Hunting Guide | Aepyceros melampus',
-  description: 'Comprehensive guide to Dapple Impala hunting at MIWESU Game Farm. Learn about this unique color variant of the Impala.',
+  description: 'Dapple Impala (Aepyceros melampus variant) at MIWESU: rare color variant, high trophy value. Caliber .243 Win / 6.5 Creedmoor. Rowland Ward min 23 5/8". Makoppa district, Limpopo. Conservation harvest.',
   keywords: ['Dapple Impala hunting', 'Aepyceros melampus', 'color variant', 'trophy hunting', 'MIWESU game farm', 'Makoppa', 'Limpopo'],
   openGraph: generateOpenGraph('Dapple Impala Hunting Guide | Aepyceros melampus', 'Comprehensive guide to Dapple Impala hunting at MIWESU Game Farm.', pageUrl, `${baseUrl}/og-image.jpg`),
   twitter: generateTwitterCard('Dapple Impala Hunting Guide | Aepyceros melampus', 'Comprehensive guide to Dapple Impala hunting at MIWESU Game Farm.', `${baseUrl}/og-image.jpg`),

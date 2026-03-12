@@ -9,9 +9,9 @@ const breadcrumbItems = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Rates & Pricing | Investment Guide',
-  description: 'Rates and pricing for MIWESU GAME FARM, Limpopo. Accommodation, plains game packages, and trophy hunting. The Homestead and Stone Villa. Request our 2026 Conservation Investment Guide. Makoppa district, Thabazimbi.',
-  keywords: ['Miwesu rates', 'accommodation pricing', 'game farm prices', 'luxury accommodation cost', 'South Africa safari rates', 'Limpopo hunting cost', 'plains game packages', 'trophy hunting rates', 'Thabazimbi', 'Makoppa district', 'MIWESU GAME FARM'],
+  title: 'Rates & Pricing Thabazimbi, Limpopo | Investment Guide',
+  description: 'Transparent rates for MIWESU GAME FARM: accommodation (The Homestead, Stone Villa), conservation harvest, species, and experiences. Request our Conservation Investment Guide. Makoppa district, Thabazimbi. Pricing clarity for GSC.',
+  keywords: ['Miwesu rates', 'Thabazimbi pricing', 'accommodation pricing', 'game farm prices', 'Limpopo hunting cost', 'plains game packages', 'conservation harvest rates', 'Makoppa district', 'MIWESU GAME FARM'],
   openGraph: generateOpenGraph(
     'Rates & Pricing | Investment Guide',
     'View transparent pricing for MIWESU GAME FARM accommodations and activities. Request our confidential Investment Guide.',

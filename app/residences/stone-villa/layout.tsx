@@ -11,8 +11,9 @@ const breadcrumbItems = [
 ]
 
 export const metadata: Metadata = {
-  title: 'The Stone Villa | Private Residences',
-  description: 'The Stone Villa at MIWESU  - 6-sleeper near the pool. Master bedroom, second bedroom (2 bunks), two en-suites, kitchen, living, outdoor braai.',
+  title: 'Bespoke Bushveld Living in Limpopo | Stone Villa',
+  description: 'The Stone Villa: exclusive 6-sleeper, 2-bedroom property. Stargazing deck, telescope, outdoor braai. Malaria-free Waterberg. Makoppa district, Thabazimbi.',
+  keywords: ['Stone Villa', '6-sleeper Thabazimbi', 'stargazing', 'bushveld lodge', 'Limpopo', 'Makoppa', 'exclusive use', 'MIWESU'],
   alternates: { canonical: constructCanonicalUrl(path) },
   openGraph: generateOpenGraph(
     'The Stone Villa | Private Residences',

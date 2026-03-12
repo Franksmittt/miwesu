@@ -130,6 +130,7 @@ export default function Navigation() {
             <div>
               <p className="text-gold-500/90 text-[10px] sm:text-xs uppercase tracking-[0.25em] font-sans font-medium mb-4">Practical</p>
               <ul className="space-y-3">
+                <li><Link href="/blog" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Journal</Link></li>
                 <li><Link href="/rates" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Rates</Link></li>
                 <li><Link href="/faq" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">FAQ</Link></li>
                 <li><Link href="/wood" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Wood & Thermal</Link></li>

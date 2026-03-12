@@ -15,7 +15,7 @@ const breadcrumbItems = [
 
 export const metadata: Metadata = {
   title: 'Blesbok Hunting Guide | Damaliscus pygargus phillipsi',
-  description: 'Comprehensive guide to Blesbok hunting at MIWESU Game Farm. Learn about morphology, behavior, hunting strategies, trophy evaluation, and venison utilization of this iconic Highveld antelope. Conservation status, ballistics, and field judging tips included.',
+  description: 'Blesbok (Damaliscus pygargus phillipsi) hunting at MIWESU: white blaze, Highveld plains. Caliber .243 Win /.308. Rowland Ward min 16 1/2". Makoppa district, Limpopo. Conservation harvest.',
   keywords: [
     'Blesbok hunting',
     'Damaliscus pygargus phillipsi',

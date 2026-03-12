@@ -15,7 +15,7 @@ const breadcrumbItems = [
 
 export const metadata: Metadata = {
   title: 'Golden Wildebeest Hunting Guide | Connochaetes taurinus',
-  description: 'Comprehensive guide to Golden Wildebeest hunting at MIWESU Game Farm. Learn about this unique color variant of the Blue Wildebeest.',
+  description: 'Golden Wildebeest (Connochaetes taurinus variant) at MIWESU: golden/copper coat, Limpopo variant. Caliber .300 Win Mag /.375 H&H. Rowland Ward min 28 1/2". Makoppa district, Limpopo. Conservation harvest.',
   keywords: ['Golden Wildebeest hunting', 'Connochaetes taurinus', 'color variant', 'trophy hunting', 'MIWESU game farm', 'Makoppa', 'Limpopo'],
   openGraph: generateOpenGraph('Golden Wildebeest Hunting Guide | Connochaetes taurinus', 'Comprehensive guide to Golden Wildebeest hunting at MIWESU Game Farm.', pageUrl, `${baseUrl}/og-image.jpg`),
   twitter: generateTwitterCard('Golden Wildebeest Hunting Guide | Connochaetes taurinus', 'Comprehensive guide to Golden Wildebeest hunting at MIWESU Game Farm.', `${baseUrl}/og-image.jpg`),

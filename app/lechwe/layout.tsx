@@ -15,7 +15,7 @@ const breadcrumbItems = [
 
 export const metadata: Metadata = {
   title: 'Lechwe Hunting Guide | Kobus leche',
-  description: 'Comprehensive guide to Lechwe hunting at MIWESU Game Farm. Learn about the Water Antelope - morphology, behavior, hunting strategies, and trophy evaluation.',
+  description: 'Lechwe (Kobus leche) at MIWESU: semi-aquatic, wetland specialist. Caliber .308 Win. Rowland Ward min 26". Makoppa district, Limpopo. Conservation harvest.',
   keywords: ['Lechwe hunting', 'Kobus leche', 'water antelope', 'trophy hunting', 'MIWESU game farm', 'Makoppa', 'Limpopo'],
   openGraph: generateOpenGraph('Lechwe Hunting Guide | Kobus leche', 'Comprehensive guide to Lechwe hunting at MIWESU Game Farm.', pageUrl, `${baseUrl}/og-image.jpg`),
   twitter: generateTwitterCard('Lechwe Hunting Guide | Kobus leche', 'Comprehensive guide to Lechwe hunting at MIWESU Game Farm.', `${baseUrl}/og-image.jpg`),

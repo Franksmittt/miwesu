@@ -15,7 +15,7 @@ const breadcrumbItems = [
 
 export const metadata: Metadata = {
   title: 'Gemsbok Hunting Guide | Oryx gazella',
-  description: 'Comprehensive guide to Gemsbok hunting at MIWESU Game Farm. Learn about the Desert Warrior - morphology, behavior, hunting strategies, and trophy evaluation.',
+  description: 'Gemsbok (Oryx gazella) hunting at MIWESU: rapier horns, arid-adapted. Caliber .30-06 /.300 Win Mag. Rowland Ward min 40". Makoppa district, Limpopo. Conservation harvest.',
   keywords: ['Gemsbok hunting', 'Oryx gazella', 'South African antelope', 'desert antelope', 'trophy hunting', 'MIWESU game farm', 'Makoppa', 'Limpopo'],
   openGraph: generateOpenGraph('Gemsbok Hunting Guide | Oryx gazella', 'Comprehensive guide to Gemsbok hunting at MIWESU Game Farm.', pageUrl, `${baseUrl}/og-image.jpg`),
   twitter: generateTwitterCard('Gemsbok Hunting Guide | Oryx gazella', 'Comprehensive guide to Gemsbok hunting at MIWESU Game Farm.', `${baseUrl}/og-image.jpg`),

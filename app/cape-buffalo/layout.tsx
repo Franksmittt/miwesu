@@ -14,9 +14,9 @@ const breadcrumbItems = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Cape Buffalo Hunting Guide | Syncerus caffer',
-  description: 'Comprehensive guide to Cape Buffalo hunting at MIWESU Game Farm. Learn about the Black Death - one of Africa\'s most dangerous Big Five animals.',
-  keywords: ['Cape Buffalo hunting', 'Syncerus caffer', 'Big Five', 'dangerous game', 'buffalo hunting South Africa', 'trophy hunting', 'MIWESU game farm', 'Makoppa', 'Limpopo'],
+  title: 'Cape Buffalo Caliber Guide: .375 H&H Minimum | Syncerus caffer',
+  description: 'Cape Buffalo (Syncerus caffer) at MIWESU: dangerous game, fused boss. Legal minimum .375 H&H Mag, 300-grain monolithic solids. Rowland Ward min 42". Makoppa district, Limpopo.',
+  keywords: ['Cape Buffalo hunting', 'Syncerus caffer', '.375 H&H', 'dangerous game', 'buffalo South Africa', 'Rowland Ward', 'trophy hunting', 'MIWESU', 'Makoppa', 'Limpopo'],
   openGraph: generateOpenGraph(
     'Cape Buffalo Hunting Guide | Syncerus caffer',
     'Comprehensive guide to Cape Buffalo hunting at MIWESU Game Farm.',

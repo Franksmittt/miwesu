@@ -15,8 +15,8 @@ const breadcrumbItems = [
 
 export const metadata: Metadata = {
   title: 'Greater Kudu Hunting Guide | Tragelaphus strepsiceros',
-  description: 'Comprehensive guide to Greater Kudu hunting at MIWESU Game Farm. Learn about the Grey Ghost - morphology, behavior, hunting strategies, and trophy evaluation.',
-  keywords: ['Greater Kudu hunting', 'Tragelaphus strepsiceros', 'Grey Ghost', 'spiral horn antelope', 'trophy hunting', 'MIWESU game farm', 'Makoppa', 'Limpopo'],
+  description: 'Greater Kudu (Tragelaphus strepsiceros) hunting at MIWESU: Grey Ghost, spiral horns. Recommended .300 Win Mag /.30-06. Rowland Ward min 53 7/8". Makoppa district, Limpopo. Conservation harvest.',
+  keywords: ['Greater Kudu hunting', 'Tragelaphus strepsiceros', 'Grey Ghost', 'Rowland Ward', '53 7/8', '.300 Win Mag', 'spiral horn', 'trophy hunting', 'MIWESU', 'Makoppa', 'Limpopo'],
   openGraph: generateOpenGraph('Greater Kudu Hunting Guide | Tragelaphus strepsiceros', 'Comprehensive guide to Greater Kudu hunting at MIWESU Game Farm.', pageUrl, `${baseUrl}/og-image.jpg`),
   twitter: generateTwitterCard('Greater Kudu Hunting Guide | Tragelaphus strepsiceros', 'Comprehensive guide to Greater Kudu hunting at MIWESU Game Farm.', `${baseUrl}/og-image.jpg`),
   alternates: {

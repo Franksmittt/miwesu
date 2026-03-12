@@ -15,7 +15,7 @@ const breadcrumbItems = [
 
 export const metadata: Metadata = {
   title: 'Livingstone Eland Hunting Guide | Taurotragus oryx livingstonei',
-  description: 'Comprehensive guide to Livingstone Eland hunting at MIWESU Game Farm. Learn about the Giant Antelope - morphology, behavior, hunting strategies, and trophy evaluation.',
+  description: 'Livingstone Eland (Taurotragus oryx livingstonii) at MIWESU: largest antelope, massive dewlap. Caliber .338 Win Mag / 9.3x62. Rowland Ward min 35". Makoppa district, Limpopo. Conservation harvest.',
   keywords: ['Livingstone Eland hunting', 'Taurotragus oryx livingstonei', 'giant antelope', 'trophy hunting', 'MIWESU game farm', 'Makoppa', 'Limpopo'],
   openGraph: generateOpenGraph('Livingstone Eland Hunting Guide | Taurotragus oryx livingstonei', 'Comprehensive guide to Livingstone Eland hunting at MIWESU Game Farm.', pageUrl, `${baseUrl}/og-image.jpg`),
   twitter: generateTwitterCard('Livingstone Eland Hunting Guide | Taurotragus oryx livingstonei', 'Comprehensive guide to Livingstone Eland hunting at MIWESU Game Farm.', `${baseUrl}/og-image.jpg`),

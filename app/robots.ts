@@ -17,7 +17,7 @@ export default function robots(): MetadataRoute.Robots {
     }
   }
 
-  // Production: Allow crawling with restrictions
+  // Production: Allow public routes; block API, admin, and private areas
   return {
     rules: [
       {
@@ -26,6 +26,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: [
           '/api/',
           '/admin/',
+          '/guest/',
           '/_next/',
           '/private/',
         ],

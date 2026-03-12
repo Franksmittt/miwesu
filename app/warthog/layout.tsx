@@ -15,7 +15,7 @@ const breadcrumbItems = [
 
 export const metadata: Metadata = {
   title: 'Warthog Hunting Guide | Phacochoerus africanus',
-  description: 'Comprehensive guide to Warthog hunting at MIWESU Game Farm. Learn about the Opportunist - morphology, behavior, hunting strategies, and trophy evaluation.',
+  description: 'Warthog (Phacochoerus africanus) at MIWESU: four tusks, opportunity game. Caliber 7x57mm Mauser /.308. Rowland Ward min 13". Makoppa district, Limpopo. Conservation harvest.',
   keywords: ['Warthog hunting', 'Phacochoerus africanus', 'tusk hunting', 'trophy hunting', 'MIWESU game farm', 'Makoppa', 'Limpopo'],
   openGraph: generateOpenGraph('Warthog Hunting Guide | Phacochoerus africanus', 'Comprehensive guide to Warthog hunting at MIWESU Game Farm.', pageUrl, `${baseUrl}/og-image.jpg`),
   twitter: generateTwitterCard('Warthog Hunting Guide | Phacochoerus africanus', 'Comprehensive guide to Warthog hunting at MIWESU Game Farm.', `${baseUrl}/og-image.jpg`),

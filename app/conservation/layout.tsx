@@ -9,9 +9,9 @@ const breadcrumbItems = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Conservation | Our Legacy',
-  description: 'Learn about MIWESU GAME FARM\'s conservation programs: 24/7 anti-poaching units, community support feeding 300 families monthly, habitat restoration, and ecological research in the Makoppa district, Thabazimbi. "If It Pays, It Stays."',
-  keywords: ['conservation', 'anti-poaching', 'habitat restoration', 'community support', 'ecological research', 'sustainable conservation', 'ethical hunting', 'sustainable use', 'Limpopo conservation', 'Makoppa district', 'Thabazimbi', 'MIWESU GAME FARM'],
+  title: 'Conservation & Guardian\'s Pledge | Ethical Stewardship',
+  description: 'Elite environmental stewardship at MIWESU: annual ecological census dictates harvest availability. 100% of harvested meat donated to feed 300 local families monthly. Guardian\'s Pledge: silence, fair chase, respect. Anti-poaching, habitat restoration. Makoppa, Thabazimbi.',
+  keywords: ['conservation', 'Guardian\'s Pledge', 'ethical hunting', 'fair chase', 'PHASA', 'meat donation', 'anti-poaching', 'ecological census', 'sustainable use', 'Limpopo', 'Makoppa district', 'Thabazimbi', 'MIWESU GAME FARM'],
   openGraph: generateOpenGraph(
     'Conservation | Our Legacy',
     'Learn about MIWESU GAME FARM\'s conservation programs: anti-poaching, community support, and habitat restoration in the Makoppa district.',

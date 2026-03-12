@@ -64,6 +64,7 @@ export default function Footer() {
               <li><Link href="/activities" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">Activities</Link></li>
               <li><Link href="/wildlife" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">Wildlife</Link></li>
               <li><Link href="/conservation" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">Conservation</Link></li>
+              <li><Link href="/blog" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">Journal</Link></li>
               <li><Link href="/about" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">About</Link></li>
             </ul>
           </div>

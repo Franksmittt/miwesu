@@ -9,18 +9,18 @@ const breadcrumbItems = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Activities & Experiences | Miwesu Pursuits',
-  description: 'Discover diverse experiences at MIWESU GAME FARM: conservation harvest, photographic safaris, celestial safaris, mobile wellness, and wildlife viewing. Custom experiences tailored to your interests in the Makoppa district, Thabazimbi.',
-  keywords: ['conservation harvest', 'photographic safari', 'celestial safari', 'wellness', 'wildlife viewing', 'game drives', 'Limpopo safari', 'plains game hunting packages', 'Makoppa district', 'Thabazimbi', 'MIWESU GAME FARM'],
+  title: 'Malaria-Free Celestial Safaris & Conservation Harvest | Waterberg',
+  description: 'Conservation harvesting (rifle and bow), photographic safaris, malaria-free celestial safaris, mobile wellness with Marula oils, wildlife viewing. MIWESU GAME FARM, Makoppa district, Thabazimbi. Waterberg.',
+  keywords: ['conservation harvest', 'photographic safari', 'celestial safari', 'malaria-free', 'Waterberg', 'wellness', 'Marula', 'Limpopo safari', 'Makoppa district', 'Thabazimbi', 'MIWESU GAME FARM'],
   openGraph: generateOpenGraph(
-    'Activities & Experiences | Miwesu Pursuits',
-    'Discover diverse experiences at MIWESU GAME FARM: conservation harvest, photographic safaris, celestial safaris, and more in the Makoppa district.',
+    'Malaria-Free Celestial Safaris & Conservation Harvest | Waterberg',
+    'Conservation harvesting (rifle and bow), photographic safaris, malaria-free celestial safaris, mobile wellness. MIWESU, Makoppa district, Thabazimbi.',
     constructCanonicalUrl('activities'),
     `${baseUrl}/og-image.jpg`
   ),
   twitter: generateTwitterCard(
-    'Activities & Experiences | Miwesu Pursuits',
-    'Discover diverse experiences at MIWESU GAME FARM tailored to your interests in the Makoppa district.',
+    'Malaria-Free Celestial Safaris & Conservation Harvest | Waterberg',
+    'Conservation harvest, photographic and celestial safaris. MIWESU, Makoppa district.',
     `${baseUrl}/og-image.jpg`
   ),
   alternates: {

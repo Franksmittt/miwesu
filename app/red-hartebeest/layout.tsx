@@ -15,7 +15,7 @@ const breadcrumbItems = [
 
 export const metadata: Metadata = {
   title: 'Red Hartebeest Hunting Guide | Alcelaphus buselaphus caama',
-  description: 'Comprehensive guide to Red Hartebeest hunting at MIWESU Game Farm. Learn about the Red Antelope - morphology, behavior, hunting strategies, and trophy evaluation.',
+  description: 'Red Hartebeest (Alcelaphus buselaphus caama) at MIWESU: Heart-beast, elongated face. Caliber .308 /.30-06. Rowland Ward min 23". Makoppa district, Limpopo. Conservation harvest.',
   keywords: ['Red Hartebeest hunting', 'Alcelaphus buselaphus caama', 'antelope hunting', 'trophy hunting', 'MIWESU game farm', 'Makoppa', 'Limpopo'],
   openGraph: generateOpenGraph('Red Hartebeest Hunting Guide | Alcelaphus buselaphus caama', 'Comprehensive guide to Red Hartebeest hunting at MIWESU Game Farm.', pageUrl, `${baseUrl}/og-image.jpg`),
   twitter: generateTwitterCard('Red Hartebeest Hunting Guide | Alcelaphus buselaphus caama', 'Comprehensive guide to Red Hartebeest hunting at MIWESU Game Farm.', `${baseUrl}/og-image.jpg`),

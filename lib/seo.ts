@@ -54,7 +54,7 @@ export function generateOpenGraph(
         alt: title,
       },
     ],
-    locale: 'en_US',
+    locale: 'en_ZA',
     type: 'website' as const,
   }
 }
@@ -105,7 +105,8 @@ export function generateOrganizationSchema() {
       availableLanguage: 'English',
     },
     sameAs: [
-      // Add social media URLs when available
+      'https://safariclub.org',
+      'https://phasa.co.za',
     ],
     areaServed: [
       { '@type': 'State', name: 'Limpopo', containedInPlace: { '@type': 'Country', name: 'South Africa' } },

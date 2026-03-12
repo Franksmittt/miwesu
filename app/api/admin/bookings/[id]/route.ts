@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/prisma'
 import { getAdminSession } from '@/lib/admin-auth'
+import { isMockBookingId, getMockBookingDetail } from '@/lib/admin-mock-bookings'
 
 async function isAuthorized(request: NextRequest): Promise<boolean> {
   const session = await getAdminSession()
@@ -19,6 +20,13 @@ export async function GET(
   }
 
   const { id } = await params
+
+  if (isMockBookingId(id)) {
+    const mock = getMockBookingDetail(id)
+    if (!mock) return NextResponse.json({ ok: false, error: 'Booking not found' }, { status: 404 })
+    return NextResponse.json({ ok: true, booking: mock, demo: true })
+  }
+
   try {
     const booking = await prisma.booking.findUnique({
       where: { id },
@@ -82,6 +90,21 @@ export async function PATCH(
   }
 
   const { id } = await params
+
+  if (isMockBookingId(id)) {
+    const body = await request.json()
+    const { status, internalNotes } = body
+    return NextResponse.json({
+      ok: true,
+      booking: {
+        id,
+        status: status === 'PENDING' || status === 'CONFIRMED' || status === 'CANCELLED' ? status : undefined,
+        internalNotes: typeof internalNotes === 'string' ? internalNotes : undefined,
+      },
+      demo: true,
+    })
+  }
+
   try {
     const body = await request.json()
     const { status, internalNotes } = body

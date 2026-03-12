@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/prisma'
 import { getAdminSession } from '@/lib/admin-auth'
+import { isMockBookingId } from '@/lib/admin-mock-bookings'
 import { Resend } from 'resend'
 
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null
@@ -19,6 +20,10 @@ export async function POST(request: NextRequest) {
         { ok: false, error: 'Missing bookingId, subject, or body' },
         { status: 400 }
       )
+    }
+
+    if (isMockBookingId(bookingId)) {
+      return NextResponse.json({ ok: true, demo: true })
     }
 
     const booking = await prisma.booking.findUnique({

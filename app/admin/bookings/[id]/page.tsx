@@ -29,6 +29,7 @@ export default function AdminBookingDetailPage() {
   const [booking, setBooking] = useState<Booking | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [isDemo, setIsDemo] = useState(false)
   const [status, setStatus] = useState('')
   const [internalNotes, setInternalNotes] = useState('')
   const [savingNotes, setSavingNotes] = useState(false)
@@ -48,6 +49,7 @@ export default function AdminBookingDetailPage() {
           setBooking(data.booking)
           setStatus(data.booking.status)
           setInternalNotes(data.booking.internalNotes || '')
+          setIsDemo(!!data.demo)
         } else setError(data.error || 'Failed to load')
       })
       .catch(() => setError('Failed to load'))
@@ -139,6 +141,12 @@ export default function AdminBookingDetailPage() {
         <Link href="/admin/bookings" className="inline-flex items-center gap-2 text-gold-400 hover:text-white text-sm font-medium mb-8">
           <ArrowLeft className="w-4 h-4" /> Back to bookings
         </Link>
+
+        {isDemo && (
+          <div className="mb-6 rounded-xl bg-gold-500/10 border border-gold-500/30 px-4 py-3 text-gold-300 text-sm">
+            Demo booking. You can try changing status, saving notes, sending an email (no email is sent), and downloading the invoice.
+          </div>
+        )}
 
         <div className="space-y-8">
           <section className="rounded-2xl border border-white/10 bg-onyx-light/50 p-6">

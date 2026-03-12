@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/prisma'
 import { getAdminSession } from '@/lib/admin-auth'
+import { getMockBookingRows } from '@/lib/admin-mock-bookings'
 
 async function isAuthorized(request: NextRequest): Promise<boolean> {
   const session = await getAdminSession()
@@ -15,8 +16,9 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ ok: false, error: 'Unauthorized' }, { status: 401 })
   }
 
+  const statusFilter = request.nextUrl.searchParams.get('status') ?? ''
+
   try {
-    const statusFilter = request.nextUrl.searchParams.get('status') // PENDING | CONFIRMED | CANCELLED
     const bookings = await prisma.booking.findMany({
       orderBy: { checkIn: 'asc' },
       include: { unit: true },
@@ -45,8 +47,11 @@ export async function GET(request: NextRequest) {
       totalPrice: Number(b.totalPrice),
       status: b.status,
     }))
-    return NextResponse.json({ ok: true, bookings: rows })
+    const demo = rows.length === 0
+    const mockRows = demo ? getMockBookingRows(statusFilter || undefined) : []
+    return NextResponse.json({ ok: true, bookings: rows.length ? rows : mockRows, demo: demo && mockRows.length > 0 })
   } catch {
-    return NextResponse.json({ ok: false, bookings: [], error: 'Database not configured' }, { status: 200 })
+    const mockRows = getMockBookingRows(statusFilter || undefined)
+    return NextResponse.json({ ok: true, bookings: mockRows, demo: true })
   }
 }

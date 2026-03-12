@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/prisma'
 import { getAdminSession } from '@/lib/admin-auth'
+import { isMockBookingId, getMockBookingDetail } from '@/lib/admin-mock-bookings'
 import { PDFDocument, StandardFonts, rgb } from 'pdf-lib'
 
 async function isAuthorized(request: NextRequest): Promise<boolean> {
@@ -9,6 +10,25 @@ async function isAuthorized(request: NextRequest): Promise<boolean> {
   const secret = request.nextUrl.searchParams.get('secret')
   const envSecret = process.env.ADMIN_PASSWORD || process.env.NEXT_PUBLIC_ADMIN_BOOKING_SECRET
   return !!(envSecret && secret === envSecret)
+}
+
+function buildInvoicePdf(booking: {
+  id: string
+  guestName: string
+  guestEmail: string
+  guestPhone?: string | null
+  checkIn: string | Date
+  checkOut: string | Date
+  totalGuests: number
+  totalPrice: number
+  unitName?: string
+  specialRequests?: string | null
+}) {
+  const checkIn = new Date(booking.checkIn).toLocaleDateString('en-ZA', { dateStyle: 'long' })
+  const checkOut = new Date(booking.checkOut).toLocaleDateString('en-ZA', { dateStyle: 'long' })
+  const nights = Math.ceil((new Date(booking.checkOut).getTime() - new Date(booking.checkIn).getTime()) / (1000 * 60 * 60 * 24))
+  const unitName = booking.unitName ?? 'Accommodation'
+  return { checkIn, checkOut, nights, unitName }
 }
 
 export async function GET(
@@ -20,14 +40,46 @@ export async function GET(
   }
 
   const { id } = await params
-  try {
-    const booking = await prisma.booking.findUnique({
-      where: { id },
-      include: { unit: true },
-    })
-    if (!booking) {
-      return NextResponse.json({ error: 'Booking not found' }, { status: 404 })
+
+  let booking: {
+    id: string
+    guestName: string
+    guestEmail: string
+    guestPhone?: string | null
+    checkIn: Date | string
+    checkOut: Date | string
+    totalGuests: number
+    totalPrice: number
+    unit?: { name: string }
+    unitName?: string
+    specialRequests?: string | null
+  } | null = null
+
+  if (isMockBookingId(id)) {
+    const mock = getMockBookingDetail(id)
+    if (!mock) return NextResponse.json({ error: 'Booking not found' }, { status: 404 })
+    booking = { ...mock, unit: { name: mock.unitName } }
+  } else {
+    try {
+      const b = await prisma.booking.findUnique({
+        where: { id },
+        include: { unit: true },
+      })
+      booking = b as typeof booking
+    } catch {
+      return NextResponse.json({ error: 'Failed to load booking' }, { status: 500 })
     }
+  }
+
+  if (!booking) {
+    return NextResponse.json({ error: 'Booking not found' }, { status: 404 })
+  }
+
+  try {
+    const { checkIn, checkOut, nights, unitName } = buildInvoicePdf({
+      ...booking,
+      unitName: booking.unit?.name ?? booking.unitName,
+    })
 
     const doc = await PDFDocument.create()
     const font = await doc.embedFont(StandardFonts.Helvetica)
@@ -47,15 +99,11 @@ export async function GET(
     page.drawText('Invoice / Booking confirmation', { x: 50, y, size: 14, font: font, color: rgb(0.3, 0.3, 0.3) })
     y -= 32
 
-    const checkIn = new Date(booking.checkIn).toLocaleDateString('en-ZA', { dateStyle: 'long' })
-    const checkOut = new Date(booking.checkOut).toLocaleDateString('en-ZA', { dateStyle: 'long' })
-    const nights = Math.ceil((booking.checkOut.getTime() - booking.checkIn.getTime()) / (1000 * 60 * 60 * 24))
-
     draw(`Guest: ${booking.guestName}`, 50, 12, true)
     draw(`Email: ${booking.guestEmail}`, 50)
     if (booking.guestPhone) draw(`Phone: ${booking.guestPhone}`, 50)
     y -= 8
-    draw(`Accommodation: ${(booking as { unit: { name: string } }).unit.name}`, 50, 12, true)
+    draw(`Accommodation: ${unitName}`, 50, 12, true)
     draw(`Check-in: ${checkIn}`, 50)
     draw(`Check-out: ${checkOut}`, 50)
     draw(`Nights: ${nights}`, 50)

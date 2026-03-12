@@ -22,6 +22,7 @@ export default function AdminBookingsPage() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [statusFilter, setStatusFilter] = useState<string>('')
+  const [demo, setDemo] = useState(false)
   const router = useRouter()
 
   const loadBookings = useCallback(() => {
@@ -30,8 +31,10 @@ export default function AdminBookingsPage() {
     fetch(`/api/admin/bookings${params}`, { credentials: 'include' })
       .then((r) => r.json())
       .then((data) => {
-        if (data.ok && Array.isArray(data.bookings)) setBookings(data.bookings)
-        else setError(data.error || 'Failed to load')
+        if (data.ok && Array.isArray(data.bookings)) {
+          setBookings(data.bookings)
+          setDemo(!!data.demo)
+        } else setError(data.error || 'Failed to load')
       })
       .catch(() => setError('Failed to load bookings'))
       .finally(() => setLoading(false))
@@ -92,6 +95,11 @@ export default function AdminBookingsPage() {
           </div>
         ) : (
           <>
+          {demo && (
+            <div className="mb-6 flex items-center gap-3 rounded-xl bg-gold-500/10 border border-gold-500/30 px-4 py-3 text-gold-300 text-sm">
+              Demo data shown so you can see how the portal works. Real enquiries will appear here when guests submit from the website.
+            </div>
+          )}
             <div className="overflow-x-auto border border-white/10 rounded-lg mb-12">
               <table className="w-full text-left">
                 <thead>
@@ -166,8 +174,8 @@ export default function AdminBookingsPage() {
                   </div>
                 </div>
               </div>
-            </>
-          )}
+          </>
+        )}
         </div>
       </main>
   )

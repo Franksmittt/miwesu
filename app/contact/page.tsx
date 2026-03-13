@@ -49,7 +49,9 @@ export default function ContactPage() {
       if (!res.ok) {
         setSubmitStatus('error')
         let msg = data?.error || 'Something went wrong. Please try again.'
-        if (data?.debug?.resendMessage) {
+        if (data?.resendError) {
+          msg += ` Reason: ${data.resendError}${data?.resendCode ? ` (${data.resendCode})` : ''}.`
+        } else if (data?.debug?.resendMessage) {
           msg += ` (Resend: ${data.debug.resendMessage}${data.debug.resendCode ? ` [${data.debug.resendCode}]` : ''})`
         }
         setErrorMessage(msg)

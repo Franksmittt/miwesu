@@ -89,12 +89,12 @@ export async function POST(request: NextRequest) {
       const errMsg = typeof error === 'object' && error !== null && 'message' in error ? String((error as { message?: unknown }).message) : String(error)
       const errCode = typeof error === 'object' && error !== null && 'code' in error ? (error as { code?: string }).code : undefined
       console.error('[contact] Resend API error:', errMsg, 'code:', errCode, 'full:', JSON.stringify(error))
-      const isDev = process.env.NODE_ENV === 'development'
       return NextResponse.json(
         {
           success: false,
           error: 'Failed to send message. Please try again or email us directly.',
-          ...(isDev && { debug: { resendMessage: errMsg, resendCode: errCode } }),
+          resendError: errMsg || undefined,
+          resendCode: errCode || undefined,
         },
         { status: 500 }
       )

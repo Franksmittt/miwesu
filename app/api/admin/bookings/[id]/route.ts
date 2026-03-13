@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import type { BookingStatus } from '@prisma/client'
 import { prisma } from '@/lib/prisma'
 import { getAdminSession } from '@/lib/admin-auth'
+import { sendBookingConfirmationEmail } from '@/lib/booking-email'
 import { isMockBookingId, getMockBookingDetail } from '@/lib/admin-mock-bookings'
 
 async function isAuthorized(request: NextRequest): Promise<boolean> {
@@ -120,6 +121,20 @@ export async function PATCH(
       where: { id },
       data,
     })
+    if (data.status === 'CONFIRMED') {
+      const full = await prisma.booking.findUnique({ where: { id }, include: { unit: true } })
+      if (full) {
+        sendBookingConfirmationEmail({
+          guestName: full.guestName,
+          guestEmail: full.guestEmail,
+          checkIn: full.checkIn,
+          checkOut: full.checkOut,
+          totalGuests: full.totalGuests,
+          totalPrice: full.totalPrice,
+          unit: { name: full.unit.name },
+        }).catch(() => {})
+      }
+    }
     return NextResponse.json({ ok: true, booking: { id: booking.id, status: booking.status, internalNotes: booking.internalNotes } })
   } catch {
     return NextResponse.json({ ok: false, error: 'Failed to update booking' }, { status: 500 })

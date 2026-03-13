@@ -1,0 +1,223 @@
+================================================================================
+MIWESU BACKEND – OVERVIEW, FLOW, ENV VARS, LOGINS, SUPABASE & PRISMA
+================================================================================
+(Do not put real passwords or API keys in this file. Store those in .env and
+ in Vercel Environment Variables only.)
+
+================================================================================
+1. WHAT THE BACKEND IS AND WHAT WE WANT IT TO DO
+================================================================================
+
+The backend is a private admin portal for the lodge owners. It:
+
+  • Lets guests submit booking enquiries (no payment yet).
+  • Sends you an email when a new enquiry arrives.
+  • Stores enquiries and related data in a PostgreSQL database (Supabase).
+  • Lets you log in to /admin to see all enquiries, update status, add notes,
+    and send emails to guests from the platform.
+  • When you mark a booking as CONFIRMED, those dates are blocked so the
+    public /book page and the availability API no longer offer them.
+  • Lets you manage rates (accommodation, species, activities, extras) and
+    export a Master Pricelist PDF.
+  • Sends all outgoing email (enquiry alerts, contact form, admin→guest) via
+    Resend; there is no SMTP fallback.
+
+We do NOT process payments on the site yet. Flow is: enquiry → you contact
+guest → they pay offline → you set status to Confirmed → dates locked.
+
+================================================================================
+2. HOW IT WORKS – END-TO-END FLOW
+================================================================================
+
+  GUEST SIDE
+  ----------
+  1. Guest goes to /book.
+  2. Chooses dates, accommodation (Homestead or Stone Villa), number of guests,
+     and enters name, email, phone, notes.
+  3. Clicks "Submit enquiry".
+  4. Frontend calls POST /api/booking-enquiry.
+  5. Backend creates a PENDING booking row in Supabase (if DB is connected).
+  6. Backend sends an email to you (MIWESU_ADMIN_EMAIL and CCs) via Resend:
+      "New booking enquiry from [Name]…" with dates, unit, guest details and
+      link to admin.
+  7. Guest sees: "Enquiry received. We will check availability and contact you…"
+
+  YOUR SIDE (ADMIN)
+  -----------------
+  8. You receive the email. You go to the live site, open /admin.
+  9. You log in with ADMIN_PASSWORD (the only login; no username).
+  10. Session is stored in a signed cookie (HttpOnly, Secure in production).
+  11. You see Dashboard and Bookings. Open the enquiry.
+  12. You can: update status (PENDING → QUOTED → CONFIRMED or CANCELLED), add
+      internal notes, send an email to the guest (pricing, bank details, etc.).
+  13. Each email you send from the booking detail is logged in EmailLog (Supabase).
+  14. When the guest pays, you set status to CONFIRMED. From that moment,
+      GET /api/availability and the /book page treat those dates as blocked.
+
+  AVAILABILITY
+  -------------
+  15. The public site and the booking form call GET /api/availability to get
+      blocked date ranges. Only bookings with status CONFIRMED block dates.
+
+================================================================================
+3. TECHNOLOGY STACK
+================================================================================
+
+  • Next.js 15 (App Router) – API routes and pages.
+  • Prisma – ORM that talks to PostgreSQL. Schema in prisma/schema.prisma.
+  • Supabase – hosted PostgreSQL. We use it as the database; the app does NOT
+    use Supabase Auth or the Supabase JS client. We only use Prisma + the
+    connection strings.
+  • Resend – all outgoing email (API key in env).
+  • Auth – single password (ADMIN_PASSWORD). Optional SESSION_SECRET for
+    signing the admin cookie. Logic in lib/admin-auth.ts (server-only).
+
+================================================================================
+4. VERCEL ENVIRONMENT VARIABLES (ALL WE ADDED / USE)
+================================================================================
+
+Set these in Vercel → Project → Settings → Environment Variables.
+Use the same names and purpose locally in .env (values stay secret; do not
+commit .env). After changing any variable in Vercel, redeploy.
+
+  KEY                         PURPOSE
+  ---                         --------
+  DATABASE_URL                PostgreSQL connection string for the app at
+                              runtime. Supabase: use the pooler URL (port 6543,
+                              with ?pgbouncer=true). Format:
+                              postgresql://postgres.PROJECT_REF:PASSWORD@
+                              aws-1-eu-west-1.pooler.supabase.com:6543/postgres
+                              ?pgbouncer=true
+
+  DIRECT_URL                  PostgreSQL connection for migrations and
+                              prisma generate/db push. Supabase: same pooler
+                              host, port 5432 (transaction mode). Format:
+                              postgresql://postgres.PROJECT_REF:PASSWORD@
+                              aws-1-eu-west-1.pooler.supabase.com:5432/postgres
+                              ?sslmode=require
+
+  ADMIN_PASSWORD              The only password for /admin login. You choose it.
+                              Use a strong password in production.
+
+  SESSION_SECRET              (Optional.) High-entropy secret for signing the
+                              admin session cookie. If set, use this instead of
+                              ADMIN_PASSWORD for signing. Generate with:
+                              openssl rand -base64 32
+
+  RESEND_API_KEY              API key from Resend (resend.com → API Keys).
+                              Required for any email to be sent.
+
+  MIWESU_BOOKING_FROM_EMAIL   "From" address for all outgoing mail. Must be
+                              on a domain you have verified in Resend (e.g.
+                              bookings@miwesu.co.za).
+
+  MIWESU_ADMIN_EMAIL          Where "new booking enquiry" emails are sent
+                              (e.g. info@miwesu.co.za).
+
+  MIWESU_ADMIN_CC             Comma-separated CC for those notifications
+                              (e.g. admin@miwesu.co.za,bookings@miwesu.co.za).
+
+  MIWESU_CONTACT_TO           Where contact form submissions are sent.
+
+  MIWESU_CONTACT_CC           CC for contact form.
+
+  WOOD_ORDER_EMAIL             Used if you have a wood-order form.
+
+  NEXT_PUBLIC_BASE_URL        Base URL for SEO/sitemap (e.g. https://www.miwesu.co.za).
+  NEXT_PUBLIC_APP_URL         Same, for app usage.
+
+================================================================================
+5. LOGINS AND PASSWORDS – WHAT EXISTS
+================================================================================
+
+  • There is only one login: the admin portal at /admin.
+  • No username. You enter one password: the value of ADMIN_PASSWORD.
+  • Login is handled by POST /api/admin/login. On success, the server sets a
+    signed cookie (admin_session). The cookie is verified on each request to
+    /admin and /api/admin/* by getAdminSession() in lib/admin-auth.ts.
+  • The signing key is SESSION_SECRET if set, otherwise ADMIN_PASSWORD. The
+    cookie is HttpOnly, SameSite=Lax, Secure in production, Path=/.
+  • Logout: POST /api/admin/logout clears the cookie.
+  • There are no user accounts in the database. No Supabase Auth. No sign-up.
+
+================================================================================
+6. SUPABASE – WHAT IT IS AND HOW WE USE IT
+================================================================================
+
+  • Supabase is the hosted PostgreSQL database (project: Miwesu_booking,
+    project ref: gtfopwqlnmqjrnyxwvrr, region: aws-1-eu-west-1).
+  • We do NOT use Supabase Auth, Realtime, or the Supabase JS client. We only
+    use Prisma to run SQL via the two connection strings (DATABASE_URL and
+    DIRECT_URL).
+  • The database password is set in Supabase → Project Settings → Database.
+    That same password goes into DATABASE_URL and DIRECT_URL in .env and Vercel.
+  • Direct connection to db.gtfopwqlnmqjrnyxwvrr.supabase.co is optional; from
+    some networks it is unreachable (P1001). We use the pooler for both URLs:
+    port 6543 for the app (DATABASE_URL), port 5432 for migrations (DIRECT_URL).
+  • One-time setup (already done): npx prisma db push (creates/updates tables),
+    npx prisma db seed (inserts units, rate items, system settings).
+  • RLS: Supabase may show "RLS Disabled" for public.Unit and public.Booking.
+    You can run the SQL in prisma/supabase-rls.sql in the Supabase SQL Editor
+    to enable RLS and clear the warning. The app uses the postgres user via
+    Prisma and is not affected by RLS.
+
+================================================================================
+7. PRISMA – SCHEMA AND CLIENT
+================================================================================
+
+  • Schema file: prisma/schema.prisma.
+  • Datasource: provider postgresql, url = env("DATABASE_URL"),
+    directUrl = env("DIRECT_URL").
+  • Main models:
+    - Unit          (Homestead, Stone Villa)
+    - Booking       (guestName, guestEmail, checkIn, checkOut, unitId, status,
+                     totalPrice, specialRequests, internalNotes, etc.)
+    - BookingStatus enum: PENDING, QUOTED, CONFIRMED, CANCELLED
+    - EmailLog      (bookingId, subject, body, sentAt, direction)
+    - RateItem      (category, name, priceZAR, priceUSD, isAvailable, etc.)
+    - RateCategory  enum: ACCOMMODATION, SPECIES, ACTIVITY, EXTRA
+    - SystemSettings (exchangeRateZarUsd)
+    - Quote, QuoteItem (for future quote flow)
+  • Prisma client: lib/prisma.ts exports a singleton (globalThis cache in dev)
+    so serverless does not open too many connections.
+  • Build: Vercel runs "npm run vercel-build" which runs "prisma generate && next
+    build". So the Prisma client is generated on every deploy before the Next
+    build. Same script is available as "build" in package.json.
+
+================================================================================
+8. VERCEL BUILD AND DEPLOY
+================================================================================
+
+  • Build command (in Vercel): npm run vercel-build
+    (runs: prisma generate && next build).
+  • All env vars above must be set in Vercel for the environment that builds
+    (usually Production; add Preview if you use preview deployments).
+  • After changing env vars, redeploy so the new values are used.
+
+================================================================================
+9. QUICK REFERENCE – WHERE THINGS LIVE IN CODE
+================================================================================
+
+  Admin auth (login, cookie, session)     lib/admin-auth.ts
+  Database client                          lib/prisma.ts
+  Booking enquiry API                      app/api/booking-enquiry/route.ts
+  Availability API                         app/api/availability/route.ts
+  Admin login/logout                       app/api/admin/login, logout
+  Admin bookings list                     app/api/admin/bookings/route.ts
+  Admin single booking (get/patch)         app/api/admin/bookings/[id]/route.ts
+  Admin send email to guest                app/api/admin/send-email/route.ts
+  Owner enquiry notification email         lib/booking-email.ts (sendOwnerEnquiryNotification)
+  Contact form email                       app/api/contact/route.ts
+  Prisma schema                            prisma/schema.prisma
+  Seed (units, rates, settings)            prisma/seed.ts
+  Env template (no secrets)                .env.example
+
+================================================================================
+10. DOCS IN THE REPO
+================================================================================
+
+  docs/BACKEND_AND_EMAILS.md     – How emails work, why they fail, code refs
+  docs/SETUP_BACKEND_AND_EMAILS.md – Step-by-step setup (DB, env, Resend, DNS)
+  .env.example                   – List of all env var names and comments
+
+================================================================================

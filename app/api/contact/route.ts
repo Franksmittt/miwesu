@@ -60,6 +60,8 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    // From must always be our verified domain; never the user's email. Reply-To is the submitter.
+    const fromAddress = FROM_EMAIL.trim() || 'bookings@miwesu.co.za'
     const resend = new Resend(resendApiKey)
     const toAddresses = getToAddresses()
 
@@ -75,7 +77,7 @@ export async function POST(request: NextRequest) {
     ].join('')
 
     const { error } = await resend.emails.send({
-      from: `MIWESU Concierge <${FROM_EMAIL}>`,
+      from: `MIWESU Concierge <${fromAddress}>`,
       to: toAddresses,
       replyTo: email,
       subject: `Enquiry: ${intent} – ${name}`,
@@ -83,7 +85,7 @@ export async function POST(request: NextRequest) {
     })
 
     if (error) {
-      console.error('Resend contact error:', error)
+      console.error('[contact] Resend API error:', error.message || error, 'code:', (error as { code?: string }).code, 'full:', JSON.stringify(error))
       return NextResponse.json(
         { success: false, error: 'Failed to send message. Please try again or email us directly.' },
         { status: 500 }
@@ -92,7 +94,8 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({ success: true })
   } catch (e) {
-    console.error('Contact API error:', e)
+    const err = e as Error
+    console.error('[contact] Exception:', err.message, err.stack, 'raw:', e)
     return NextResponse.json(
       { success: false, error: 'Something went wrong. Please try again.' },
       { status: 500 }

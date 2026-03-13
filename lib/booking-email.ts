@@ -1,7 +1,13 @@
 import { Resend } from 'resend'
 
-const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null
-const fromEmail = process.env.MIWESU_BOOKING_FROM_EMAIL || 'bookings@miwesu.co.za'
+function getResendClient(): Resend | null {
+  const key = process.env.RESEND_API_KEY
+  return key ? new Resend(key) : null
+}
+
+function getFromEmail(): string {
+  return (process.env.MIWESU_BOOKING_FROM_EMAIL || 'bookings@miwesu.co.za').trim()
+}
 const adminEmail = process.env.MIWESU_ADMIN_EMAIL || 'info@miwesu.co.za'
 
 export type BookingWithUnit = {
@@ -15,6 +21,8 @@ export type BookingWithUnit = {
 }
 
 export async function sendBookingConfirmationEmail(booking: BookingWithUnit): Promise<void> {
+  const resend = getResendClient()
+  const fromEmail = getFromEmail()
   if (!resend) return
 
   const checkIn = new Date(booking.checkIn).toLocaleDateString('en-ZA', { dateStyle: 'long' })
@@ -50,21 +58,36 @@ export async function sendBookingConfirmationEmail(booking: BookingWithUnit): Pr
 </html>
   `.trim()
 
-  await resend.emails.send({
-    from: fromEmail,
-    to: booking.guestEmail,
-    subject: `Booking confirmed – ${booking.unit.name} – MIWESU Lodge`,
-    html,
-  })
+  try {
+    const { error } = await resend.emails.send({
+      from: `MIWESU Lodge <${fromEmail}>`,
+      to: booking.guestEmail,
+      replyTo: fromEmail,
+      subject: `Booking confirmed – ${booking.unit.name} – MIWESU Lodge`,
+      html,
+    })
+    if (error) {
+      console.error('[booking-email] Confirmation send failed:', error.message || error, 'code:', (error as { code?: string }).code, JSON.stringify(error))
+    }
+  } catch (e) {
+    console.error('[booking-email] Confirmation exception:', (e as Error).message, (e as Error).stack)
+  }
 
   const adminCc = process.env.MIWESU_ADMIN_CC || 'admin@miwesu.co.za,bookings@miwesu.co.za'
   const adminTo = [adminEmail, ...adminCc.split(',').map((e) => e.trim()).filter(Boolean)]
-  await resend.emails.send({
-    from: fromEmail,
-    to: [...new Set(adminTo)],
-    subject: `New booking: ${booking.guestName} – ${booking.unit.name}`,
-    html: `<p>New confirmed booking from ${booking.guestName} (${booking.guestEmail}) for ${booking.unit.name}, ${checkIn} – ${checkOut}, ${booking.totalGuests} guests.</p><p>Wayne & Melissa (MIWESU)</p>`,
-  })
+  try {
+    const { error } = await resend.emails.send({
+      from: `MIWESU Lodge <${fromEmail}>`,
+      to: [...new Set(adminTo)],
+      subject: `New booking: ${booking.guestName} – ${booking.unit.name}`,
+      html: `<p>New confirmed booking from ${booking.guestName} (${booking.guestEmail}) for ${booking.unit.name}, ${checkIn} – ${checkOut}, ${booking.totalGuests} guests.</p><p>Wayne & Melissa (MIWESU)</p>`,
+    })
+    if (error) {
+      console.error('[booking-email] Admin notification send failed:', error.message || error, JSON.stringify(error))
+    }
+  } catch (e) {
+    console.error('[booking-email] Admin notification exception:', (e as Error).message, (e as Error).stack)
+  }
 }
 
 /** Notify owner of a new booking enquiry (no payment yet). Call after creating a PENDING booking. */
@@ -79,6 +102,8 @@ export async function sendOwnerEnquiryNotification(params: {
   specialRequests?: string | null
   adminPortalUrl: string
 }): Promise<void> {
+  const resend = getResendClient()
+  const fromEmail = getFromEmail()
   if (!resend) return
 
   const checkIn = new Date(params.checkIn).toLocaleDateString('en-ZA', { dateStyle: 'long' })
@@ -110,10 +135,18 @@ export async function sendOwnerEnquiryNotification(params: {
 </html>
   `.trim()
 
-  await resend.emails.send({
-    from: fromEmail,
-    to: [...new Set(toList)],
-    subject: `New enquiry: ${params.guestName} – ${params.unitName} (${checkIn} – ${checkOut})`,
-    html,
-  })
+  try {
+    const { error } = await resend.emails.send({
+      from: `MIWESU Lodge <${fromEmail}>`,
+      to: [...new Set(toList)],
+      replyTo: params.guestEmail,
+      subject: `New enquiry: ${params.guestName} – ${params.unitName} (${checkIn} – ${checkOut})`,
+      html,
+    })
+    if (error) {
+      console.error('[booking-email] Owner enquiry notification failed:', error.message || error, 'code:', (error as { code?: string }).code, JSON.stringify(error))
+    }
+  } catch (e) {
+    console.error('[booking-email] Owner enquiry notification exception:', (e as Error).message, (e as Error).stack)
+  }
 }

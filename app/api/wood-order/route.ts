@@ -55,13 +55,14 @@ export async function POST(request: NextRequest) {
     const { name, email, phone, address, productId, productName, quantity, notes } = body as WoodOrderPayload
 
     const resendApiKey = process.env.RESEND_API_KEY
+    const fromEmail = (process.env.MIWESU_BOOKING_FROM_EMAIL || 'bookings@miwesu.co.za').trim()
     if (resendApiKey) {
       const { Resend } = await import('resend')
       const resendClient = new Resend(resendApiKey)
-      const from = process.env.RESEND_FROM_EMAIL || 'Wood Orders <onboarding@resend.dev>'
       const { error } = await resendClient.emails.send({
-        from,
+        from: `MIWESU Wood Orders <${fromEmail}>`,
         to: WOOD_ORDER_EMAIL,
+        replyTo: email,
         subject: `Wood order request: ${productName} × ${quantity} from ${name}`,
         html: [
           '<h2>New thermal wood order request</h2>',
@@ -76,19 +77,20 @@ export async function POST(request: NextRequest) {
         ].join(''),
       })
       if (error) {
-        console.error('Resend error:', error)
+        console.error('[wood-order] Resend API error:', error.message || error, 'code:', (error as { code?: string }).code, 'full:', JSON.stringify(error))
         return NextResponse.json(
           { success: false, error: 'Failed to send order notification' },
           { status: 500, headers }
         )
       }
     } else {
-      console.log('Wood order (no RESEND_API_KEY):', { name, email, phone, address, productId, productName, quantity, notes })
+      console.log('[wood-order] No RESEND_API_KEY:', { name, email, productName, quantity })
     }
 
     return NextResponse.json({ success: true }, { headers })
   } catch (e) {
-    console.error('Wood order API error:', e)
+    const err = e as Error
+    console.error('[wood-order] Exception:', err.message, err.stack, 'raw:', e)
     return NextResponse.json(
       { success: false, error: 'Server error' },
       { status: 500, headers }

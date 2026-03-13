@@ -83,12 +83,56 @@ Records you have (and the one we updated):
 
 ---
 
-## 4. Supabase (Miwesu_booking)
+## 4. Supabase (full reference)
 
-- **Project ref:** gtfopwqlnmqjrnyxwvrr  
-- **Region:** aws-1-eu-west-1  
-- **Database password:** (stored in DATABASE_URL and DIRECT_URL – do not put here.)  
-- **Connection:** Pooler used for both app (6543) and migrations (5432).
+**Project name (in Supabase dashboard):** Miwesu_booking  
+
+**Project ref (ID in URLs):** `gtfopwqlnmqjrnyxwvrr`  
+
+**Dashboard URL:** `https://supabase.com/dashboard/project/gtfopwqlnmqjrnyxwvrr`  
+
+**Region:** `aws-1-eu-west-1` (Ireland)
+
+---
+
+### Database
+
+- **Database password:** Set in Supabase → Project Settings → Database → “Database password”. Use this **only** in `.env` and Vercel (in the connection strings below). Do not put the real password in this file or in git.
+- **User (for connection strings):** `postgres.PROJECT_REF` → e.g. `postgres.gtfopwqlnmqjrnyxwvrr`
+- **Pooler host:** `aws-1-eu-west-1.pooler.supabase.com`
+  - Port **6543** = session mode (use for app runtime, with `?pgbouncer=true`).
+  - Port **5432** = transaction mode (use for Prisma migrations / `db push` / `db seed`).
+- **Direct DB host:** `db.gtfopwqlnmqjrnyxwvrr.supabase.co:5432` — use only if your network can reach it; many environments (e.g. some CI) only allow the pooler.
+
+**Connection string format (replace `[YOUR-PASSWORD]` with your actual DB password; URL-encode special characters, e.g. `@` → `%40`):**
+
+| Env var | Use | Example value (placeholder) |
+|--------|-----|------------------------------|
+| **DATABASE_URL** | App / Prisma at runtime | `postgresql://postgres.gtfopwqlnmqjrnyxwvrr:[YOUR-PASSWORD]@aws-1-eu-west-1.pooler.supabase.com:6543/postgres?pgbouncer=true` |
+| **DIRECT_URL** | Prisma migrate / db push / db seed | `postgresql://postgres.gtfopwqlnmqjrnyxwvrr:[YOUR-PASSWORD]@aws-1-eu-west-1.pooler.supabase.com:5432/postgres?sslmode=require` |
+
+**Where the password lives:** In Supabase dashboard (you set or reset it there). You then paste it into `.env` and Vercel env vars only. This app uses **Prisma** to talk to Postgres (not the Supabase JS client), so only `DATABASE_URL` and `DIRECT_URL` are required.
+
+---
+
+### Supabase API keys (optional for this app)
+
+The app does **not** use the Supabase anon/service key for API access; it uses Prisma + the DB connection above. If you ever need them (e.g. for Supabase Auth or Realtime):
+
+- **Project URL:** `https://gtfopwqlnmqjrnyxwvrr.supabase.co`
+- **Anon (public) key:** Supabase → Project Settings → API → “Project API keys” → anon public. (Starts with `eyJ...`; safe for client-side if you use RLS.)
+- **Service role key:** Same page → service_role. (Full access; server-only, never expose.)
+- **Publishable key (if shown):** e.g. `sb_publishable_...` — only if you use Supabase’s newer client.
+
+Do not paste real keys here; store them in `.env` / Vercel if you add features that need them.
+
+---
+
+### Database objects (Prisma)
+
+- **Schema:** `public`
+- **Tables used:** `Unit`, `Booking`, `RateItem`, `SystemSettings`, `EmailLog` (see `prisma/schema.prisma`).
+- **RLS:** Optional. If you enable RLS on `Unit` / `Booking` in Supabase, it only affects direct PostgREST/anon access; Prisma connects as the DB user and bypasses RLS. See `prisma/supabase-rls.sql` for commands.
 
 ---
 

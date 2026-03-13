@@ -14,9 +14,10 @@ function escapeHtml(s: string): string {
 }
 
 function getToAddresses(): string[] {
-  const to = [CONTACT_TO.trim()]
+  const to = CONTACT_TO.trim()
   const ccList = CONTACT_CC.split(',').map((e) => e.trim()).filter(Boolean)
-  return [...to, ...ccList]
+  const all = [to, ...ccList].filter(Boolean)
+  return [...new Set(all)]
 }
 
 export interface ContactPayload {
@@ -85,9 +86,16 @@ export async function POST(request: NextRequest) {
     })
 
     if (error) {
-      console.error('[contact] Resend API error:', error.message || error, 'code:', (error as { code?: string }).code, 'full:', JSON.stringify(error))
+      const errMsg = typeof error === 'object' && error !== null && 'message' in error ? String((error as { message?: unknown }).message) : String(error)
+      const errCode = typeof error === 'object' && error !== null && 'code' in error ? (error as { code?: string }).code : undefined
+      console.error('[contact] Resend API error:', errMsg, 'code:', errCode, 'full:', JSON.stringify(error))
+      const isDev = process.env.NODE_ENV === 'development'
       return NextResponse.json(
-        { success: false, error: 'Failed to send message. Please try again or email us directly.' },
+        {
+          success: false,
+          error: 'Failed to send message. Please try again or email us directly.',
+          ...(isDev && { debug: { resendMessage: errMsg, resendCode: errCode } }),
+        },
         { status: 500 }
       )
     }

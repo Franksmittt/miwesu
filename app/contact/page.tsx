@@ -48,7 +48,11 @@ export default function ContactPage() {
       const data = await res.json()
       if (!res.ok) {
         setSubmitStatus('error')
-        setErrorMessage(data?.error || 'Something went wrong. Please try again.')
+        let msg = data?.error || 'Something went wrong. Please try again.'
+        if (data?.debug?.resendMessage) {
+          msg += ` (Resend: ${data.debug.resendMessage}${data.debug.resendCode ? ` [${data.debug.resendCode}]` : ''})`
+        }
+        setErrorMessage(msg)
         return
       }
       setSubmitStatus('success')

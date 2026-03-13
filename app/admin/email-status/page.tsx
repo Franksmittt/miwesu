@@ -34,19 +34,22 @@ export default function AdminEmailStatusPage() {
     load()
   }, [load])
 
-  const sendTest = () => {
+  const sendTest = (sandbox: boolean) => {
     setTestSending(true)
     setTestResult(null)
     fetch('/api/admin/email-status', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       credentials: 'include',
-      body: JSON.stringify({ to: testTo || undefined }),
+      body: JSON.stringify({ to: testTo || undefined, sandbox }),
     })
       .then((r) => r.json())
       .then((data) => {
         if (data.ok) {
-          setTestResult({ ok: true, message: `Test email sent to ${data.to}. Check your inbox (and spam).` })
+          const msg = sandbox
+            ? `Sandbox test sent to ${data.to}. If it arrived, API key and code are fine; the issue is domain/DNS or the receiving mailbox.`
+            : `Test email sent to ${data.to}. Check your inbox (and spam).`
+          setTestResult({ ok: true, message: msg })
         } else {
           setTestResult({ ok: false, message: data.error || 'Failed to send' })
         }
@@ -124,13 +127,24 @@ export default function AdminEmailStatusPage() {
               />
               <button
                 type="button"
-                onClick={sendTest}
+                onClick={() => sendTest(false)}
                 disabled={testSending || !status?.resend.apiKeySet}
                 className="inline-flex items-center gap-2 py-2 px-4 bg-gold-500 text-onyx font-medium rounded-lg hover:bg-gold-400 disabled:opacity-50 disabled:pointer-events-none"
               >
-                {testSending ? 'Sending…' : <><Send className="h-4 w-4" /> Send test</>}
+                {testSending ? 'Sending…' : <><Send className="h-4 w-4" /> Send test (your domain)</>}
+              </button>
+              <button
+                type="button"
+                onClick={() => sendTest(true)}
+                disabled={testSending || !status?.resend.apiKeySet}
+                className="inline-flex items-center gap-2 py-2 px-4 bg-white/10 text-white font-medium rounded-lg border border-white/20 hover:bg-white/20 disabled:opacity-50 disabled:pointer-events-none"
+              >
+                {testSending ? 'Sending…' : <>Send sandbox test</>}
               </button>
             </div>
+            <p className="text-gray-500 text-xs mt-2">
+              Sandbox test sends from onboarding@resend.dev. If it arrives, your API key and code are fine; the issue is domain/DNS or the receiving mailbox.
+            </p>
             {testResult && (
               <div className={`mt-3 flex items-center gap-2 text-sm ${testResult.ok ? 'text-green-400' : 'text-red-400'}`}>
                 {testResult.ok ? <CheckCircle className="h-4 w-4" /> : <XCircle className="h-4 w-4" />}

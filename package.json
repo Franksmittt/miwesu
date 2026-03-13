@@ -15,9 +15,6 @@
     "db:seed": "npx tsx prisma/seed.ts",
     "db:studio": "prisma studio"
   },
-  "prisma": {
-    "seed": "npx tsx prisma/seed.ts"
-  },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
     "@react-pdf/renderer": "^4.3.2",

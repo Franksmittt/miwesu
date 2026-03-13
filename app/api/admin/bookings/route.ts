@@ -23,19 +23,9 @@ export async function GET(request: NextRequest) {
       orderBy: { checkIn: 'asc' },
       include: { unit: true },
       ...(statusFilter && ['PENDING', 'QUOTED', 'CONFIRMED', 'CANCELLED'].includes(statusFilter)
-        ? { where: { status: statusFilter } }
+        ? { where: { status: statusFilter as import('@prisma/client').BookingStatus } }
         : {}),
-    }) as Array<{
-      id: string
-      guestName: string
-      guestEmail: string
-      checkIn: Date
-      checkOut: Date
-      unit: { name: string }
-      totalGuests: number
-      totalPrice: unknown
-      status: string
-    }>
+    })
     const rows = bookings.map((b) => ({
       id: b.id,
       guestName: b.guestName,

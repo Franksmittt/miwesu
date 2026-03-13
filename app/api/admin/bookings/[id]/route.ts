@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import type { BookingStatus } from '@prisma/client'
 import { prisma } from '@/lib/prisma'
 import { getAdminSession } from '@/lib/admin-auth'
 import { isMockBookingId, getMockBookingDetail } from '@/lib/admin-mock-bookings'
@@ -108,9 +109,9 @@ export async function PATCH(
   try {
     const body = await request.json()
     const { status, internalNotes } = body
-    const data: { status?: string; internalNotes?: string } = {}
+    const data: { status?: BookingStatus; internalNotes?: string } = {}
     if (status === 'PENDING' || status === 'QUOTED' || status === 'CONFIRMED' || status === 'CANCELLED') {
-      data.status = status
+      data.status = status as BookingStatus
     }
     if (typeof internalNotes === 'string') {
       data.internalNotes = internalNotes

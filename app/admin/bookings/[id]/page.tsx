@@ -167,7 +167,7 @@ export default function AdminBookingDetailPage() {
                     value={status}
                     onChange={(e) => handleStatusChange(e.target.value)}
                     disabled={savingStatus}
-                    className="rounded-lg border border-white/20 bg-white/5 px-3 py-2 text-white text-sm"
+                    className="admin-select rounded-lg border border-white/20 bg-onyx-light px-3 py-2 text-white text-sm appearance-none cursor-pointer min-w-[10rem]"
                   >
                     <option value="PENDING">Pending (enquiry)</option>
                     <option value="QUOTED">Quoted</option>

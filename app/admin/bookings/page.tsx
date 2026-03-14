@@ -65,7 +65,7 @@ export default function AdminBookingsPage() {
           <select
             value={statusFilter}
             onChange={(e) => setStatusFilter(e.target.value)}
-            className="rounded-lg border border-white/20 bg-white/5 px-3 py-2 text-white text-sm"
+            className="admin-select rounded-lg border border-white/20 bg-onyx-light px-3 py-2 text-white text-sm min-w-[10rem]"
           >
             <option value="">All</option>
             <option value="PENDING">Pending (enquiry)</option>

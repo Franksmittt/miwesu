@@ -2,11 +2,12 @@
 
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
-import { LayoutDashboard, ListTodo, DollarSign, Mail, ExternalLink, LogOut } from 'lucide-react'
+import { LayoutDashboard, ListTodo, DollarSign, Mail, ExternalLink, LogOut, Calendar } from 'lucide-react'
 
 const nav = [
   { href: '/admin', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/admin/bookings', label: 'Bookings', icon: ListTodo },
+  { href: '/admin/calendar', label: 'Calendar', icon: Calendar },
   { href: '/admin/rates', label: 'Rates', icon: DollarSign },
   { href: '/admin/email-status', label: 'Email', icon: Mail },
 ] as const

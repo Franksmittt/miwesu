@@ -107,7 +107,7 @@ export default function RatesPage() {
                         Per Night
                       </span>
                       <span className="font-serif text-xl sm:text-2xl text-gold-500">
-                        From R 25,000
+                        On request
                       </span>
                     </div>
                     <div className="flex justify-between items-center border-b border-white/10 pb-3 sm:pb-4 flex-wrap gap-2">
@@ -115,7 +115,7 @@ export default function RatesPage() {
                         Weekly Rate
                       </span>
                       <span className="font-serif text-xl sm:text-2xl text-gold-500">
-                        From R 150,000
+                        On request
                       </span>
                     </div>
                   </div>
@@ -130,7 +130,7 @@ export default function RatesPage() {
                         Per Night
                       </span>
                       <span className="font-serif text-xl sm:text-2xl text-gold-500">
-                        From R 12,000
+                        On request
                       </span>
                     </div>
                     <div className="flex justify-between items-center border-b border-white/10 pb-3 sm:pb-4 flex-wrap gap-2">
@@ -138,7 +138,7 @@ export default function RatesPage() {
                         Weekly Rate
                       </span>
                       <span className="font-serif text-xl sm:text-2xl text-gold-500">
-                        From R 70,000
+                        On request
                       </span>
                     </div>
                   </div>
@@ -169,7 +169,7 @@ export default function RatesPage() {
                     Guided game drives and walking safaris
                   </p>
                   <span className="text-gold-500 font-serif text-lg">
-                    From R 2,500
+                    On request
                   </span>
                 </div>
 
@@ -179,7 +179,7 @@ export default function RatesPage() {
                     Spa treatments, astronomy, and special experiences
                   </p>
                   <span className="text-gold-500 font-serif text-lg">
-                    From R 1,500
+                    On request
                   </span>
                 </div>
               </div>
@@ -273,24 +273,24 @@ export default function RatesPage() {
                   <div className="text-center">
                     <h4 className="font-serif text-xl text-gold-400 mb-4">Greater Kudu</h4>
                     <p className="text-gray-400 text-sm mb-4">The Grey Ghost</p>
-                    <p className="text-white font-serif text-lg">R 12,000 - R 25,000</p>
+                    <p className="text-white font-serif text-lg">On request</p>
                     <p className="text-gray-500 text-xs mt-2">Based on horn length</p>
                   </div>
                   <div className="text-center">
                     <h4 className="font-serif text-xl text-gold-400 mb-4">Blue Wildebeest</h4>
                     <p className="text-gray-400 text-sm mb-4">Tough plains game</p>
-                    <p className="text-white font-serif text-lg">From R 5,500</p>
+                    <p className="text-white font-serif text-lg">On request</p>
                     <p className="text-gray-500 text-xs mt-2">Per trophy</p>
                   </div>
                   <div className="text-center">
                     <h4 className="font-serif text-xl text-gold-400 mb-4">Impala</h4>
                     <p className="text-gray-400 text-sm mb-4">Classic bushveld</p>
-                    <p className="text-white font-serif text-lg">From R 2,500</p>
+                    <p className="text-white font-serif text-lg">On request</p>
                     <p className="text-gray-500 text-xs mt-2">Per trophy</p>
                   </div>
                 </div>
                 <p className="text-center text-gray-400 text-sm mt-8">
-                  Detailed pricing for all species, including Gemsbok, Warthog, Eland, and Red Hartebeest, available in our Investment Guide.
+                  Trophy fees for all species are provided on request. Contact our concierge for the full Investment Guide.
                 </p>
               </div>
             </div>

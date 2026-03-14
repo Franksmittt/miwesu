@@ -38,39 +38,50 @@
 
 ## 2. DNS at Afrihost (for miwesu.co.za)
 
-Records you have (and the one we updated):
+**Current baseline (verified working):** Incoming mail (e.g. Gmail → info@miwesu.co.za) works. Website on Vercel works. This is the safe state before adding Resend.
 
-### Root domain – SPF (updated for Resend)
+### Full current DNS (Afrihost)
 
-- **Record:** TXT  
-- **Host:** miwesu.co.za  
-- **Content:** `v=spf1 include:spf.aserv.co.za include:amazonses.com +a +mx -all`  
-- **Note:** This is the updated value so mail from Resend (Amazon SES) passes SPF for the root.
+| Record | Type | TTL | Content |
+|--------|------|-----|---------|
+| miwesu.co.za | SOA | 7200 | ns.dns1.co.za support.afrihost.com 2026031301 28800 3600 2419200 86400 |
+| miwesu.co.za | NS | 86400 | ns.dns1.co.za |
+| miwesu.co.za | NS | 86400 | ns.dns2.co.za |
+| miwesu.co.za | NS | 86400 | ns.otherdns.com |
+| miwesu.co.za | NS | 86400 | ns.otherdns.net |
+| miwesu.co.za | MX 10 | 7200 | mx7564341105.spe.ucebox.co.za |
+| ftp.miwesu.co.za | A | 7200 | 102.222.124.25 |
+| cpanel.miwesu.co.za | A | 7200 | 102.222.124.25 |
+| webmail.miwesu.co.za | A | 7200 | 102.222.124.25 |
+| mail.miwesu.co.za | A | 7200 | 102.222.124.25 |
+| *.miwesu.co.za | A | 7200 | 102.222.124.25 |
+| miwesu.co.za | A | 7200 | 216.198.79.1 |
+| autoconfig.miwesu.co.za | CNAME | 7200 | envoy.aserv.co.za |
+| autodiscover.miwesu.co.za | CNAME | 7200 | envoy.aserv.co.za |
+| www.miwesu.co.za | CNAME | 28800 | fa516ad2ab9dbec2.vercel-dns-017.com |
+| miwesu.co.za | TXT | 7200 | mailconf=https://envoy.aserv.co.za/mail/config-v1.1.xml |
+| miwesu.co.za | TXT | 7200 | v=spf1 include:spf.aserv.co.za +a +mx -all |
+| _dmarc.miwesu.co.za | TXT | 7200 | v=DMARC1; p=none; fo=0; adkim=s; aspf=s |
+| default._domainkey.miwesu.co.za | TXT | 7200 | v=DKIM1; k=rsa; p=MIIBIjAN... (full value in Afrihost) |
+| _imaps._tcp.miwesu.co.za | SRV 0 | 7200 | 1 993 envoy.aserv.co.za |
+| _autodiscover._tcp.miwesu.co.za | SRV 0 | 7200 | 0 443 envoy.aserv.co.za |
+| _submission._tcp.miwesu.co.za | SRV 0 | 7200 | 1 25 envoy.aserv.co.za |
 
-### Send subdomain – Resend
+### When you add Resend again
 
-- **MX**  
-  - Host: send.miwesu.co.za  
-  - Priority: 10  
-  - Content: feedback-smtp.eu-west-1.amazonses.com  
+Add these **in addition** to the above (do not remove the root MX or change anything else that handles incoming mail):
 
-- **TXT (SPF)**  
-  - Host: send.miwesu.co.za  
-  - Content: v=spf1 include:amazonses.com ~all  
+| Record | Type | Content |
+|--------|------|---------|
+| send.miwesu.co.za | MX 10 | feedback-smtp.eu-west-1.amazonses.com |
+| send.miwesu.co.za | TXT | v=spf1 include:amazonses.com ~all |
+| resend._domainkey.miwesu.co.za | TXT | (full DKIM value from Resend Domains page) |
 
-### DKIM for Resend (root domain)
+Then **edit** the root SPF TXT (the one that currently says `v=spf1 include:spf.aserv.co.za +a +mx -all`) to:
 
-- **TXT**  
-  - Host: resend._domainkey.miwesu.co.za  
-  - Content: p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCVbjZBHrqwZdqEhzEULgeboYqkFFZgMjwAksiJIYfx0n4WV6l5/I9s3+EfFWO/CPNXQA3PBB9kUKf69j5b4z+Mm1KDfzArBLjqrD4xS3y1zuVcEBYrasyzZ6Kf2DZE9zaZJeebtcFkQo294vT1BW1HjYirBNEJqGe+4FyJeQCX3wIDAQAB  
+`v=spf1 include:spf.aserv.co.za include:amazonses.com +a +mx -all`
 
-### Other (unchanged)
-
-- **MX (root):** miwesu.co.za → mx7564341105.spe.ucebox.co.za (priority 10)  
-- **DMARC:** _dmarc.miwesu.co.za → v=DMARC1; p=none; fo=0; adkim=s; aspf=s  
-- **Default DKIM (Aserv):** default._domainkey.miwesu.co.za → (existing value)  
-- **www:** www.miwesu.co.za → CNAME fa516ad2ab9dbec2.vercel-dns-017.com  
-- **A, CNAME, SRV, etc.:** As you had them (ftp, cpanel, webmail, mail, autoconfig, autodiscover, etc.)
+See `docs/RESEND_SETUP_CHECKLIST.md` for the full Resend flow.
 
 ---
 

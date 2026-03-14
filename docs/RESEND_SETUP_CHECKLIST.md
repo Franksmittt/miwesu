@@ -2,6 +2,8 @@
 
 Do these steps **in Resend** and at your **DNS provider** (e.g. Afrihost). No code changes needed.
 
+**Current DNS:** Your Afrihost DNS is in a good state (incoming mail works). The full list is in `docs/ENV_AND_DNS_REFERENCE.md` (section 2). When you add Resend, **add** the Resend records only; do **not** remove or change the root MX (miwesu.co.za → mx7564341105.spe.ucebox.co.za).
+
 ---
 
 ## What to do right now (isolate the bug)

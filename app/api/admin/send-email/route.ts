@@ -54,14 +54,19 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ ok: false, error: 'Failed to send email' }, { status: 500 })
     }
 
-    await prisma.emailLog.create({
-      data: {
-        bookingId,
-        subject,
-        body: emailBody,
-        direction: 'outbound',
-      },
-    })
+    try {
+      await prisma.emailLog.create({
+        data: {
+          bookingId,
+          subject,
+          body: emailBody,
+          direction: 'outbound',
+        },
+      })
+    } catch (logErr) {
+      console.error('[admin send-email] Email sent but log failed:', logErr)
+      // Still return success so the UI does not show "Failed to send" when the email was delivered
+    }
 
     return NextResponse.json({ ok: true })
   } catch (e) {

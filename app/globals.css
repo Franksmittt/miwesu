@@ -33,6 +33,12 @@
   ::selection {
     @apply bg-gold-500 text-white;
   }
+
+  /* Admin: select dropdown options visible (dark theme) */
+  .admin-select option {
+    background: #121212;
+    color: #fff;
+  }
 }
 
 @layer utilities {

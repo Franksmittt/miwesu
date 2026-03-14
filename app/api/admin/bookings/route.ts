@@ -28,6 +28,7 @@ export async function GET(request: NextRequest) {
     })
     const rows = bookings.map((b) => ({
       id: b.id,
+      unitId: b.unitId,
       guestName: b.guestName,
       guestEmail: b.guestEmail,
       checkIn: b.checkIn.toISOString(),

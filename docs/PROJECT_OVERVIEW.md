@@ -1,20 +1,20 @@
 # MIWESU — Project Overview
 
 **A complete summary of the MIWESU Game Farm / Iron Eden website and backend.**  
-Luxury Next.js 15 application for the private sanctuary in the Makoppa district (Thabazimbi, Limpopo): private residences, 14 wildlife species, activities, conservation, booking enquiries, trust tools, and a full admin/CRM backend.
+Luxury Next.js 15 application for the private sanctuary in the Makoppa district (Thabazimbi, Limpopo): private residences, 14 wildlife species, activities, conservation, booking enquiries, trust tools, and a full admin/CRM backend with calendar and manual booking.
 
 ---
 
 ## 1. Project Summary
 
 **What it is**  
-A marketing, booking, and operations site for **MIWESU Game Farm** (“Iron Eden”) in the Makoppa Dome, Thabazimbi. The site presents two private residences (Homestead 16 sleepers, Stone Villa 6 sleepers), 14 huntable species, activities (conservation harvest, photographic safaris, celestial safaris, wellness, wildlife viewing), conservation impact, and practical tools (SAPS 520 PDF, Biltong calculator, Live Telemetry). Guests submit **enquiry-only** bookings (no online payment); owners manage enquiries in a **private admin portal** (dashboard, bookings list/detail, email from platform, invoice PDF, status workflow). A **Rates Manager** lets owners edit accommodation/species/activities/extras and export a **Master Pricelist PDF**. SEO is implemented site-wide (metadata, canonicals, sitemap, robots, JSON-LD). Design: Onyx/Gold palette, Cinzel + Montserrat, Liquid Glass, Bento Grids; sensory UX (optional ambient audio, haptic on primary actions).
+A marketing, booking, and operations site for **MIWESU Game Farm** (“Iron Eden”) in the Makoppa Dome, Thabazimbi. The site presents two private residences (The Homestead 16 sleepers, The Stone Villa 6 sleepers), 14 huntable species, activities (conservation harvest, photographic safaris, celestial safaris, wellness, wildlife viewing), conservation impact, and practical tools (SAPS 520 PDF, Biltong calculator, Live Telemetry). Guests submit **enquiry-only** bookings (no online payment); owners manage enquiries in a **private admin portal** (dashboard, bookings list/detail, **calendar view**, manual “Add booking,” email from platform, invoice PDF, status workflow). A **Rates Manager** lets owners edit accommodation/species/activities/extras and export a **Master Pricelist PDF**. **Pricing is on request only on the public site**; no amounts are shown on the website. SEO is implemented site-wide (metadata, canonicals, sitemap, robots, JSON-LD). Design: Onyx/Gold palette, Cinzel + Montserrat, Liquid Glass, Bento Grids; sensory UX (optional ambient audio, haptic on primary actions).
 
 **Tech**  
-Next.js 15 (App Router), React 19, TypeScript, Tailwind CSS, Framer Motion. Data: `lib/*` (residences, species, activities, blog, gallery); Prisma is stubbed for faster builds and re-enabled when DB is connected. Resend (contact + booking notifications), Stripe (checkout wired, not used for enquiry flow), pdf-lib (SAPS 520, invoice), @react-pdf/renderer (Master Pricelist PDF).
+Next.js 15 (App Router), React 19, TypeScript, Tailwind CSS, Framer Motion. Data: `lib/*` (residences, species, activities, blog, gallery); **Prisma + Supabase** (PostgreSQL) for bookings, units, rates, email log; when DB is empty, admin uses mock data. **Resend** for all email (contact form, booking notifications, admin→guest, confirmation on status→Confirmed). **pdf-lib** (SAPS 520, invoice); **@react-pdf/renderer** (Master Pricelist PDF; uses built-in Helvetica fonts so PDF generates reliably in serverless). Stripe checkout wired but not used in enquiry flow.
 
 **Current status (March 2026)**  
-All species page images integrated. Home: Hero (Ken Burns, vignette), Private Residences, A Day in Eden, Conservation Harvest, testimonials, Legacy. Admin: login, dashboard, bookings (list + detail, filter, email, invoice), Rates Manager (ZAR/USD, inline edit, PDF export). Blog: 15 pillar articles (13 dynamic from `lib/blog-content`, 2 static). Sitemap and robots include all public routes plus blog slugs and species. **Lighthouse / accessibility:** Gold labels on light backgrounds use `text-gold-700` (WCAG AA contrast); footer column titles use `<h2>` for valid heading order; ambient audio loads only on first user play (no 404 on initial load). See `docs/LIGHTHOUSE.md` and `npm run lighthouse` (run after `npm run start`).
+All species page images integrated. Home: Hero (Ken Burns, vignette), Private Residences, A Day in Eden, Conservation Harvest, testimonials, Legacy. **Admin:** login, dashboard, **bookings** (list + detail, filter, status dropdown with visible options, email client, invoice), **Calendar** (month view per unit, manual “Add booking”), **Rates** (ZAR/USD, inline edit, Export Pricelist PDF), **Email** (diagnostics, sandbox test, test from domain). Contact form and booking enquiry emails working via Resend; contact form shows Resend error on page when send fails. Public **rates** page shows “On request” only. Blog: 15 pillar articles. Sitemap and robots include all public routes plus blog slugs and species. Accessibility: gold labels on light backgrounds use `text-gold-700` (WCAG AA); footer column titles use `<h2>`; ambient audio loads only on first user play.
 
 ---
 
@@ -75,7 +75,7 @@ Additional themes: birding, 4x4 trails. **Page:** `/activities`; imagery from `l
 | Lechwe | `lechwe` | Semi-aquatic; wetlands |
 | Livingstone Eland | `livingstone-eland` | Largest antelope |
 
-Each species page: hero, Quick Facts (SpeciesBentoGrid), Compare button, taxonomy, physical description, behaviour, habitat, hunting strategies, shot placement, caliber, trophy evaluation, venison/utilisation. Content images are integrated (see `docs/SPECIES_IMAGE_PLACEHOLDER_AUDIT.md` when relevant).
+Each species page: hero, Quick Facts (SpeciesBentoGrid), Compare button, taxonomy, physical description, behaviour, habitat, hunting strategies, shot placement, caliber, trophy evaluation, venison/utilisation. Content images are integrated.
 
 ---
 
@@ -91,8 +91,8 @@ Each species page: hero, Quick Facts (SpeciesBentoGrid), Compare button, taxonom
 | **/residences/stone-villa** | The Stone Villa: facility grid (exterior, kitchen, living, master, 2nd bedroom, braai) with images and copy. |
 | **/book** | Multi-step booking: dates (DayPicker), residence + guests (availability), guest details, submit **enquiry** (no payment). Haptic on primary actions. |
 | **/availability** | Check availability by dates; residence summary; CTA to /book or contact. |
-| **/rates** | Rates for Homestead and Stone Villa; activities and trophy fees; investment guide. Currency switcher (ZAR/USD). |
-| **/contact** | Contact form (Resend), address, map, directions, intent dropdown. |
+| **/rates** | Accommodation and activity sections; **all prices shown as “On request”** (no amounts on public site). Currency switcher (ZAR/USD). Investment Guide CTA. |
+| **/contact** | Contact form (Resend); address, map, directions, intent dropdown. **From** is verified domain; **Reply-To** is submitter. Resend error shown on page when send fails. |
 | **/faq** | Accordion FAQ (`lib/faq-data.ts`); location, vetting, what’s included, best time, contact. JSON-LD FAQPage. |
 
 ### Experience
@@ -102,7 +102,7 @@ Each species page: hero, Quick Facts (SpeciesBentoGrid), Compare button, taxonom
 | **/wildlife** | Species grid (cards with image, name, tag, link); featured species; Specialist Species list; Ecological Management; Compare and Rates CTAs. |
 | **/compare** | Side-by-side species comparison; select species A/B; URL params `?a=slug&b=slug`; table (weight, height, diet, habitat, caliber, Rowland Ward, lifespan). CompareButton on each species page. |
 | **/conservation** | “If It Pays, It Stays”; Guardian’s Pledge; impact (meat donated, anti-poaching, families fed); anti-poaching; community; habitat. |
-| **/gallery** | Filterable gallery (All, Landscape, Wildlife, Accommodation); unified grid (curated + Facebook images); lightbox; no overlays. |
+| **/gallery** | Filterable gallery (All, Landscape, Wildlife, Accommodation); unified grid (curated + Facebook images); no overlays. |
 | **/partners** | Dipping/shipping, taxidermy, travel insurance; CTAs to trophy-export and contact. |
 
 ### Practical / products
@@ -119,7 +119,7 @@ Each species page: hero, Quick Facts (SpeciesBentoGrid), Compare button, taxonom
 | **/blog/sweetveld-vs-sourveld** | Static: Sweetveld vs Sourveld (SEO, HNWI). |
 | **/blog/limpopo-vs-eastern-cape** | Static: Limpopo vs Eastern Cape hunting. |
 
-**Blog categories:** Conservation, Ballistics, Luxury Living, Logistics. **Pillar slugs (examples):** saps-520-firearm-permit-us-hunters, 300-win-mag-blue-wildebeest-terminal-performance, exclusive-16-sleeper-luxury-lodge-thabazimbi, art-of-authentic-south-african-biltong-making, rowland-ward-trophy-standards-greater-kudu, ethical-shot-placement-cape-buffalo-fused-boss, malaria-free-celestial-safaris-waterberg, conservation-harvest-esg-environmental-stewardship, bespoke-bushveld-living-fiber-optic-internet, golden-vs-blue-wildebeest-african-plains-game, limpopo-hunting-season-2026-weather-tactics, livingstone-eland-harvesting-africas-largest-antelope, stone-villa-experience-intimate-luxury-makoppa, south-africa-vs-usa-hunting-regulations, transparency-conservation-live-telemetry-dashboard, sweetveld-vs-sourveld, limpopo-vs-eastern-cape.
+**Blog categories:** Conservation, Ballistics, Luxury Living, Logistics.
 
 ### Locale
 | Route | Summary |
@@ -139,10 +139,12 @@ Each species page: hero, Quick Facts (SpeciesBentoGrid), Compare button, taxonom
 | Route | Summary |
 |-------|--------|
 | **/admin/login** | Password sign-in (`ADMIN_PASSWORD`); session cookie; redirect to /admin. |
-| **/admin** | Dashboard: summary cards (pending, confirmed, upcoming); quick links to Bookings, Rates, Site; logout. |
-| **/admin/bookings** | Bookings list (enquiries); filter by status (Pending, Quoted, Confirmed, Cancelled); table with guest, dates, residence, status; link to detail. Calendar view section. |
-| **/admin/bookings/[id]** | Single booking: full details, internal notes, status change, **Email client** (compose/send; logged in EmailLog), **Generate invoice PDF**, Create Quote (modal: pull from RateItem, total). Centralized “CRM” record. |
-| **/admin/rates** | Rates Manager: global ZAR/USD toggle; categorized bento (Accommodation, Species, Activities, Extras); inline edit; **Export Pricelist (PDF)** button. Uses `RateItem` (DB or mock). |
+| **/admin** | Dashboard: summary cards (pending, confirmed, upcoming); quick links to Bookings, Calendar, Rates, Email, Site; logout. |
+| **/admin/bookings** | Bookings list; filter by status (Pending, Quoted, Confirmed, Cancelled); table with guest, dates, residence, status; link to detail. |
+| **/admin/bookings/[id]** | Single booking: full details, internal notes, **status dropdown** (visible options), **Email client** (compose/send; logged in EmailLog; success even if log fails), **Generate invoice PDF**, Create Quote (modal: pull from RateItem, total). |
+| **/admin/calendar** | **Calendar:** month view per unit (Homestead, Stone Villa); each day shows if booked and by whom (link to booking detail). **Add booking** button opens modal: unit, check-in/out, guest name/email/phone, guests, price, status; creates booking via API. For phone bookings and visual availability. |
+| **/admin/rates** | Rates Manager: global ZAR/USD toggle; categorized bento (Accommodation, Species, Activities, Extras); inline edit; **Export Pricelist (PDF)** button. Uses `RateItem` (DB or mock). Seed includes mock prices for testing PDF. |
+| **/admin/email-status** | **Email diagnostics:** shows if RESEND_API_KEY and from addresses are set; **Send test (your domain)** and **Send sandbox test** (onboarding@resend.dev) to verify delivery. |
 
 ### Species (14)
 | Route | Summary |
@@ -153,28 +155,31 @@ Each species page: hero, Quick Facts (SpeciesBentoGrid), Compare button, taxonom
 | Route | Summary |
 |-------|--------|
 | **/sitemap.xml** | Dynamic sitemap: static routes + blog slugs + species; priority and changeFrequency per route. |
-| **/robots.txt** | Env-aware; production: allow /, disallow /api/, /admin/, /guest/, /_next/, /private/; sitemap URL. |
+| **/robots.txt** | Env-aware; production: allow /, disallow /api/, /admin/, etc.; sitemap URL. |
 
 ---
 
 ## 5. Backend (Admin Portal & APIs)
 
 ### Purpose
-Private backend for lodge owners: receive booking enquiries, view them in one place, email clients, generate invoices, create quotes from rate items, lock in dates by setting status to Confirmed (which blocks those dates on the site). Acts as a lightweight **CRM** for enquiries and bookings.
+Private backend for lodge owners: receive booking enquiries, view them in one place, **see a calendar of when each unit is booked**, **add manual bookings** (e.g. phone enquiries), email clients, generate invoices, create quotes from rate items, lock in dates by setting status to Confirmed (which blocks those dates on the site). Acts as a lightweight **CRM** for enquiries and bookings.
 
 ### Flow
 1. **Guest:** /book → dates, residence, guests, details → **Submit enquiry** (no payment).  
-2. **System:** Creates PENDING booking; sends owner email (“You have a new booking enquiry…”); optional Resend.  
-3. **Owner:** Logs in at /admin → Dashboard (counts, upcoming) → Bookings list (filter Pending/Quoted/Confirmed/Cancelled) → opens booking detail.  
-4. **Per booking:** View details and notes; **Send email** to guest (stored in EmailLog); **Create Quote** (modal: select rate items, quantity, total); **Generate invoice PDF**; set **Status** to Quoted or Confirmed (Confirmed blocks dates in /api/availability).  
-5. **Rates:** /admin/rates — edit accommodation, species, activities, extras (ZAR/USD); **Export Pricelist PDF** (branded brochure from RateItem data).
+2. **System:** Creates PENDING booking; sends owner email (“You have a new booking enquiry…”); Resend.  
+3. **Owner:** Logs in at /admin → Dashboard → **Bookings** (list + filter) or **Calendar** (month view per unit). Can **Add booking** manually (e.g. someone phoned).  
+4. **Per booking:** View details and notes; **Send email** to guest (stored in EmailLog; API returns success when Resend delivers even if log fails); **Create Quote** (modal); **Generate invoice PDF**; set **Status** to Quoted or **Confirmed** (Confirmed blocks dates and sends guest confirmation email).  
+5. **Rates:** /admin/rates — edit accommodation, species, activities, extras (ZAR/USD); **Export Pricelist PDF** (branded, built-in fonts for serverless).  
+6. **Email:** /admin/email-status — check config, send test or sandbox test.
 
 ### Admin routes
-- **/admin/login** — Password auth; cookie-based session; redirect to /admin.  
+- **/admin/login** — Password auth; cookie-based session.  
 - **/admin** — Dashboard (summary cards, quick links).  
 - **/admin/bookings** — List all enquiries/bookings; status filter.  
 - **/admin/bookings/[id]** — One booking: details, notes, status, email client, invoice, Create Quote.  
-- **/admin/rates** — Rates Manager UI; inline edit; Export Pricelist PDF.
+- **/admin/calendar** — Month view per unit; Add booking modal (manual create).  
+- **/admin/rates** — Rates Manager; inline edit; Export Pricelist PDF.  
+- **/admin/email-status** — Email config and test sends.
 
 ### Admin APIs
 | Method | Route | Purpose |
@@ -182,27 +187,26 @@ Private backend for lodge owners: receive booking enquiries, view them in one pl
 | POST | /api/admin/login | Validate password; set session cookie. |
 | POST | /api/admin/logout | Clear session cookie. |
 | GET | /api/admin/me | Check session; 401 if not authenticated. |
-| GET | /api/admin/bookings | List bookings; optional status filter; mock data when no DB. |
-| GET / PATCH | /api/admin/bookings/[id] | Load or update one booking (status, internal notes). |
+| GET | /api/admin/units | List units (id, name, maxGuests) for calendar and forms. |
+| GET | /api/admin/bookings | List bookings (with unitId); optional status filter; mock when no DB. |
+| POST | /api/admin/bookings/create | Create booking manually (unitId, guest, dates, guests, price, status). |
+| GET / PATCH | /api/admin/bookings/[id] | Load or update one booking (status, internal notes). On PATCH to CONFIRMED, sends guest confirmation email. |
 | GET | /api/admin/bookings/[id]/invoice | Generate and return invoice PDF (pdf-lib). |
-| POST | /api/admin/send-email | Send email to guest; log in EmailLog (if Prisma). |
+| POST | /api/admin/send-email | Send email to guest; log in EmailLog (non-fatal if log fails). |
 | GET | /api/admin/rates | List RateItem by category; system settings (e.g. exchange rate). |
 | PATCH | /api/admin/rates/[id] | Update one rate item (priceZAR, priceUSD, etc.). |
 | GET / PATCH | /api/admin/settings | System settings (e.g. global ZAR/USD exchange rate). |
-| GET | /api/admin/pricelist-pdf | Generate Master Pricelist PDF (@react-pdf/renderer); branded Onyx/Gold. |
+| GET | /api/admin/pricelist-pdf | Generate Master Pricelist PDF (@react-pdf/renderer; Helvetica fonts). |
 
-### Data (when Prisma enabled)
-- **Booking:** guest details, dates, residence, guests, status (PENDING, QUOTED, CONFIRMED, CANCELLED), totalPrice, internalNotes; relation to Quote.  
-- **Quote / QuoteItem:** linked to Booking; items from RateItem; totalAmount, currency, validUntil.  
-- **EmailLog:** per booking; sent emails from portal.  
-- **RateItem:** category (ACCOMMODATION, SPECIES, ACTIVITY, EXTRA), name, description, priceZAR, priceUSD, isAvailable, sortOrder.  
-- **SystemSettings:** e.g. exchangeRateZarUsd.  
+### Data (Prisma + Supabase)
+- **Unit** — name, maxGuests, description, basePricePerNight.  
+- **Booking** — guest details, dates, unitId, totalGuests, status (PENDING, QUOTED, CONFIRMED, CANCELLED), totalPrice, internalNotes; relation to Unit, EmailLog, Quote.  
+- **EmailLog** — bookingId, subject, body, sentAt, direction.  
+- **RateItem** — category (ACCOMMODATION, SPECIES, ACTIVITY, EXTRA), name, description, priceZAR, priceUSD, isAvailable, sortOrder. Seed has mock prices for accommodation, 14 species, activities, extra.  
+- **Quote / QuoteItem** — linked to Booking; items from RateItem.  
+- **SystemSettings** — e.g. exchangeRateZarUsd.  
 
-When Prisma is stubbed, admin uses mock bookings and mock rate data; behaviour is unchanged except persistence.
-
-### Mock data
-- **Bookings:** Demo rows (e.g. Sarah van der Berg, James & Emma Thompson) so the portal can be demonstrated without real enquiries.  
-- **Rates:** Default rate items from `lib/rates-data.ts` when DB is unavailable.
+When DB is empty or Prisma fails, admin uses mock bookings and default rate items from `lib/rates-data.ts` and `lib/admin-mock-bookings.ts`.
 
 ---
 
@@ -210,14 +214,14 @@ When Prisma is stubbed, admin uses mock bookings and mock rate data; behaviour i
 
 | Method | Route | Purpose |
 |--------|-------|--------|
-| POST | /api/contact | Contact form submission (Resend). |
-| GET | /api/availability | Check availability (blocked dates from CONFIRMED bookings only). |
+| POST | /api/contact | Contact form (Resend). From = verified domain; Reply-To = submitter. Returns resendError in JSON on failure. |
+| GET | /api/availability | Blocked dates from CONFIRMED bookings only. |
 | POST | /api/booking-enquiry | Create PENDING booking; send owner notification email. |
 | POST | /api/checkout | Stripe checkout session (wired; not used in enquiry flow). |
 | POST | /api/webhooks/stripe | Stripe webhooks. |
 | POST | /api/saps520/pdf | Generate SAPS 520 PDF (pdf-lib) from form data. |
 | GET | /api/telemetry | Simulated conservation + kiln telemetry data. |
-| POST | /api/wood-order | Wood product order submission. |
+| POST | /api/wood-order | Wood product order submission (Resend). |
 
 ---
 
@@ -227,86 +231,84 @@ When Prisma is stubbed, admin uses mock bookings and mock rate data; behaviour i
 - **Title:** default “IRON EDEN | The Makoppa Sanctuary & Game Reserve”; template “%s | Miwesu Conservation Harvest”.  
 - **Description:** 2.5-billion-year-old sanctuary, Thabazimbi, bespoke luxury, ethical conservation, malaria-free bushveld, D1432 Makoppa.  
 - **Keywords:** MIWESU, Iron Eden, Makoppa, Thabazimbi, conservation harvest, luxury hunting lodge, malaria-free safari, plains game, Sweetveld, Waterberg, etc.  
-- **Open Graph:** title, description, url, image (og-image.jpg), siteName, locale **en_ZA**.  
-- **Twitter:** summary_large_image, title, description, image.  
+- **Open Graph / Twitter:** title, description, url, image (og-image.jpg), siteName, locale **en_ZA**.  
 - **Robots:** index, follow; googleBot directives.
 
 ### Per-page SEO
-- **Every content page:** layout exports (or `generateMetadata` for dynamic) `title`, `description`, `keywords`, `openGraph`, `twitter`, `alternates.canonical` (via `constructCanonicalUrl`).  
-- **Species:** scientific names, caliber, Rowland Ward minimums in descriptions where relevant.  
-- **Blog:** dynamic metadata from `getBlogPostBySlug` in `app/blog/[slug]/layout.tsx`.
-
-### Canonicals & URLs
-- **lib/seo.ts:** `constructCanonicalUrl(path)` — no trailing slash (except root).  
-- **Base URL:** `NEXT_PUBLIC_BASE_URL` or https://www.miwesu.com.
+- Every content page: `title`, `description`, `keywords`, `openGraph`, `twitter`, `alternates.canonical` (via `constructCanonicalUrl` in `lib/seo.ts`).  
+- Species: scientific names, caliber, Rowland Ward in descriptions.  
+- Blog: dynamic metadata from `getBlogPostBySlug` in `app/blog/[slug]/layout.tsx`.
 
 ### Sitemap (`app/sitemap.ts`)
-- **Static routes:** home (priority 1.0, daily), rates/availability (daily), wildlife/residences/species (weekly/high priority), about/activities/conservation/gallery/wood/book/faq/contact/tools/compare/blog (monthly), locale de/es (monthly, lower priority).  
-- **Species:** one URL per slug; weekly; priority 0.85.  
-- **Blog:** one URL per slug from `getBlogSlugs()`; monthly; priority 0.7.
+- Static routes (home, rates, availability, wildlife, residences, species, about, activities, conservation, gallery, wood, book, faq, contact, tools, compare, blog); locale de/es.  
+- Species: one URL per slug; blog: one per slug from `getBlogSlugs()`.
 
 ### Robots (`app/robots.ts`)
-- **Production:** allow /; disallow /api/, /admin/, /guest/, /_next/, /private/; sitemap URL.  
-- **Non-production:** disallow / for all crawlers.
+- Production: allow /; disallow /api/, /admin/, /guest/, /_next/, /private/; sitemap URL.  
+- Non-production: disallow / for all crawlers.
 
 ### JSON-LD (lib/seo.ts, StructuredData, layouts)
-- **Organization:** name, url, logo, description, address, contactPoint, sameAs (e.g. safariclub.org, phasa.co.za), areaServed.  
-- **LocalBusiness (LodgingBusiness):** name, image, description, address, geo, telephone, email, priceRange, numberOfRooms, openingHours, amenityFeature.  
-- **SpeciesTaxonSchema:** per species page (scientific name, etc.).  
-- **Product:** wood products.  
-- **TouristTrip:** trip-related.  
-- **FAQPage:** /faq.  
-- **Breadcrumb:** where used (e.g. blog, tools, book).
+- Organization, LocalBusiness (LodgingBusiness), SpeciesTaxonSchema per species, Product (wood), TouristTrip, FAQPage (/faq), Breadcrumb where used.
 
 ---
 
 ## 8. Layout, Design & Tech
 
-### Design system
-- **Palette:** Gold (300–600), Onyx, Marble (light/dark). Tailwind; `tailwind.config.js`.  
-- **Fonts:** Cinzel (serif, headings), Montserrat (sans, body).  
-- **Hero imagery:** `lib/hero-images.ts`. Ken Burns on Home; species heroes per page.  
-- **Utilities:** `text-gradient-gold`, `liquid-glass`, `liquid-glass-dark`, `reveal`, `shadow-luxury`, etc.
+### Design system — colours
+- **Onyx** — `#050505` (true black); **onyx-light** — `#121212` (cards, admin).  
+- **Gold** — 300 `#E5C687`, 400 `#D4AF37`, 500 `#C5A059`, 600 `#997B3D`, 700 `#7c6426` (contrast-safe on light).  
+- **Marble** — `#FAFAFA` (background); **marble-dark** — `#F4F4F4`.  
+- **Tailwind:** `tailwind.config.js`; themeColor in layout `#050505`.
 
-### Key UI patterns
-- Serif headings with gold gradient (“Iron **Eden**”). Uppercase tracking labels.  
-- Dark (onyx) and light (marble) sections; gold accents. Cards: border, hover scale/shadow; CTAs gold.  
-- Species: SpeciesBentoGrid (liquid-glass tiles), CompareButton (modal → /compare).  
-- Home Hero: radial vignette, thin border frame, Framer Motion stagger (Samsung One UI easing).
+### Design system — typography
+- **Cinzel** (serif) — headings, brand; `var(--font-cinzel)`.  
+- **Montserrat** (sans) — body, labels; `var(--font-montserrat)`.  
+- Loaded via `next/font/google` in `app/layout.tsx`.
 
-### Tech stack
-- **Framework:** Next.js 15 (App Router). **Language:** TypeScript.  
-- **Styling:** Tailwind CSS; custom theme.  
-- **UI:** React 19; Lucide React; Next.js Image.  
-- **Data:** `lib/residences-data.ts`, `lib/species-data.ts`, `lib/species-comparison-data.ts`, `lib/hero-images.ts`, `lib/activity-images.ts`, `lib/facebook-gallery.ts`, `lib/blog-posts.ts`, `lib/blog-content.ts`, `lib/rates-data.ts`. Prisma stubbed for build speed.  
-- **Motion:** Framer Motion (scroll reveals, DayInLife, nav); Tailwind `animate-ken-burns` for hero.  
-- **Sensory:** Ambient audio toggle (bushveld soundscape); haptic feedback on primary buttons.
+### Design system — UI patterns
+- **Hero:** Ken Burns animation (`animate-ken-burns`); radial vignette; thin border frame on desktop.  
+- **Liquid glass:** `.liquid-glass`, `.liquid-glass-dark` (backdrop-filter, borders).  
+- **Bento grids:** SpeciesBentoGrid (species pages); blog index; admin rates.  
+- **Gold gradient text:** `.text-gradient-gold` on “Eden” and key headlines.  
+- **CTAs:** Gold buttons; ghost/secondary with underline or arrow.  
+- **Squircle / ease:** Rounded corners (e.g. `rounded-2xl`); Framer Motion ease `cubic-bezier(0.22, 0.25, 0, 1)` (Samsung One UI) on Home sections.  
+- **Admin:** Dark theme (onyx); status and filter dropdowns use `.admin-select` and `option` styles in `globals.css` for visible text.
 
 ### Key components
 - **Layout** — Navigation, VettingModal, main, Footer; skip link.  
 - **Navigation** — Fixed; logo; menu overlay (Stay, Experience, Practical, Journal, Reach); AmbientAudioToggle; Private Access (VettingModal).  
-- **Footer** — Brand, tagline, infinite scroll of Facebook gallery images; column titles as `<h2>` (Stay, Experience, Concierge, Reach us); Residence/Experience/Concierge/Journal links; contact; social.  
+- **Footer** — Top section: cols 1–2 brand + tagline (“MIWESU”, “Est. 1984 · The Makoppa Sanctuary”, paragraph); cols 3–6 **infinite scroll** of Facebook gallery images (`animate-footer-marquee`). Below: column links (Stay, Experience, Concierge, Reach us) as `<h2>`; contact; social.  
 - **SpeciesBentoGrid** — Quick-facts grid on species pages.  
 - **CompareButton** — Modal to pick second species; navigates to /compare.  
 - **DayInLife** — “A Day in Eden” timeline (5 moments); alternating image/text; squircle, One UI ease.  
-- **StructuredData** — JSON-LD injection (Organization, LocalBusiness, SpeciesTaxon, Product, FAQPage, Breadcrumb, etc.).  
-- **AdminShell** — Sticky admin top bar: Dashboard, Bookings, Rates, Site (external), Log out.
+- **StructuredData** — JSON-LD (Organization, LocalBusiness, SpeciesTaxon, Product, FAQPage, Breadcrumb).  
+- **AdminShell** — Sticky admin header: Dashboard, Bookings, **Calendar**, Rates, **Email**, Site (external), Log out.
+
+### Tech stack
+- **Framework:** Next.js 15 (App Router). **Language:** TypeScript.  
+- **Styling:** Tailwind CSS; custom theme (gold, onyx, marble).  
+- **UI:** React 19; Lucide React; Next.js Image; Framer Motion.  
+- **Data:** `lib/residences-data.ts`, `lib/species-data.ts`, `lib/species-comparison-data.ts`, `lib/hero-images.ts`, `lib/activity-images.ts`, `lib/facebook-gallery.ts`, `lib/blog-posts.ts`, `lib/blog-content.ts`, `lib/rates-data.ts`. **Backend:** Prisma + Supabase (PostgreSQL); `prisma/seed.ts` (units, rate items with mock prices, system settings).  
+- **Email:** Resend (contact, booking notifications, admin→guest, confirmation on CONFIRMED).  
+- **PDF:** pdf-lib (SAPS 520, invoice); @react-pdf/renderer (Master Pricelist; Helvetica only for serverless).  
+- **Sensory:** Ambient audio toggle (bushveld); haptic on primary buttons.
 
 ---
 
-## 9. Documentation
+## 9. Documentation (current)
 
 - **docs/PROJECT_OVERVIEW.md** — This file.  
 - **docs/ADMIN_PORTAL_OVERVIEW.md** — Admin/CRM flow, features, routes, mock data.  
-- **docs/BACKEND_AND_EMAILS.md** — Backend overview, booking system, what we use (Prisma, Resend); how emails work, env vars, why emails fail and how to fix (Resend, domain verification).
-- **docs/SETUP_BACKEND_AND_EMAILS.md** — Step-by-step setup: database (Vercel Postgres or other), env vars, Resend API key and domain verification (SPF/DKIM/DMARC), Prisma migrate/seed, Vercel build command, and checklist.  
-- **docs/LIGHTHOUSE.md** — How to run Lighthouse, fixes applied (contrast, heading order, console errors), target scores.  
-- **docs/HERO_IMAGE_AUDIT.md** — Hero image specs per page (dimensions, safe zones, aesthetics).  
-- **docs/SPECIES_IMAGE_PLACEHOLDER_AUDIT.md** — Species content image audit.  
-- **docs/SPECIES_PLACEHOLDER_IMAGE_PROMPTS.json** — Remaining image prompts (when applicable).  
-- **docs/HOME_AND_DESIGN_GUIDE.md** — Home and design notes.  
-- **prisma/README_BOOKING.md**, **prisma/SUPABASE_CONNECT.md** — DB and deployment notes.
+- **docs/BACKEND_AND_EMAILS.md** — Backend overview; how emails work; Resend, domain verification, troubleshooting.  
+- **docs/SETUP_BACKEND_AND_EMAILS.md** — Step-by-step: database, env vars, Resend API key and domain verification, Prisma migrate/seed, Vercel build.  
+- **docs/RESEND_SETUP_CHECKLIST.md** — Resend + DNS checklist; sandbox test; “When you add Resend again.”  
+- **docs/ENV_AND_DNS_REFERENCE.md** — Env var names and purpose; current Afrihost DNS (baseline); “When you add Resend again.”  
+- **docs/CONTACT_FORM_EMAIL_TROUBLESHOOTING.md** — Contact form “Failed to send”; common Resend errors and fixes.  
+- **docs/DNS_ROLLBACK_PRE_RESEND.md** — How to roll back DNS to pre-Resend state (incoming mail only).  
+- **docs/AFRIHOST_INCOMING_MAIL_CHECKLIST.md** — Incoming mail (Gmail → info@) not arriving; MX and mailbox checks.  
+- **docs/HOME_AND_DESIGN_GUIDE.md** — Home page sections and design notes.  
+- **prisma/README_BOOKING.md**, **prisma/SUPABASE_CONNECT.md** — DB and deployment notes (when present).
 
 ---
 
-*Last updated: March 2026. Reflects full site (all pages, backend, SEO, blog, tools), Prisma stubbed, enquiry-only booking flow, Rates Manager with Master Pricelist PDF, and Lighthouse/accessibility fixes (gold-700 contrast, footer heading order, ambient audio lazy load).*
+*Last updated: March 2026. Reflects full site (all pages, backend, SEO, blog, tools), Prisma + Supabase, enquiry-only booking, Calendar + manual booking, Rates Manager with Master Pricelist PDF (built-in fonts), Email diagnostics page, public rates “On request” only, and current docs list.*

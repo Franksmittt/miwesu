@@ -10,9 +10,6 @@ import { getCurrency, getIntent } from '@/lib/cookies'
 import { lodgeSummary, mainLodgeHouse, secondHouse } from '@/lib/residences-data'
 import { heroImages } from '@/lib/hero-images'
 import {
-  Thermometer,
-  Wind,
-  Clock,
   ChefHat,
   Wifi,
   Flame,
@@ -25,6 +22,7 @@ import {
   Heart,
   Activity,
   Quote,
+  Wind,
 } from 'lucide-react'
 import BookingWidget from '@/components/BookingWidget'
 import DayInLife from '@/components/DayInLife'
@@ -72,121 +70,93 @@ export default function Home() {
       <LocalBusinessSchema />
       <main id="main-content">
 
-      {/* Hero: Monolith + Cinematic (Apple / Samsung) */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-onyx">
-        {/* Ken Burns background */}
-        <div className="absolute inset-0 z-0 overflow-hidden">
-          <div className="absolute w-[120%] h-[120%] -left-[10%] -top-[10%] animate-ken-burns">
-            <Image
-              src={heroImages.home}
-              alt="MIWESU Hunters Lodge - Braai and patio under thatch with waterhole and bushveld"
-              fill
-              sizes="100vw"
-              className="object-cover opacity-50"
-              priority
-            />
-          </div>
+      {/* Hero: Pure Cinematic - full bleed image, radial overlay (dark edges, clear center), liquid glass CTAs */}
+      <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-onyx">
+        {/* Background image: cover, center 40% so subject pops */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={heroImages.home}
+            alt="MIWESU – The Makoppa Sanctuary"
+            fill
+            sizes="100vw"
+            className="object-cover object-[center_40%]"
+            priority
+          />
         </div>
 
-        {/* Desktop frame: under vignette so it fades into shadows */}
+        {/* Radial overlay: dark edges, clearer center so the subject pops */}
         <div
-          className="absolute inset-8 md:inset-12 border border-white/5 z-[1] pointer-events-none hidden md:block"
-          aria-hidden
-        />
-
-        {/* Radial vignette: OLED void – Onyx at edges, transparent center */}
-        <div
-          className="absolute inset-0 z-[2] pointer-events-none"
+          className="absolute inset-0 z-[1] pointer-events-none"
           style={{
-            background: 'radial-gradient(ellipse 80% 80% at 50% 50%, transparent 0%, transparent 25%, rgba(5,5,5,0.5) 55%, #050505 100%)',
+            background: 'radial-gradient(circle at center, rgba(5,5,5,0.15) 0%, rgba(5,5,5,0.85) 100%)',
           }}
           aria-hidden
         />
 
-        {/* Content: staggered entrance (One UI ease) */}
+        {/* Content: pushed down to frame subject, max 800px; less on mobile */}
         <motion.div
-          className="relative z-20 text-center px-4 sm:px-6 max-w-6xl mx-auto flex flex-col items-center"
+          className="relative z-10 text-center px-5 max-w-[800px] mx-auto flex flex-col items-center mt-[5vh] md:mt-[15vh]"
           initial="hidden"
           animate="visible"
           variants={{
-            visible: { transition: { staggerChildren: 0.12, delayChildren: 0.15 } },
+            visible: { transition: { staggerChildren: 0.1, delayChildren: 0.1 } },
             hidden: {},
           }}
         >
-          {/* Eyebrow */}
           <motion.span
-            className="font-sans text-xs sm:text-sm uppercase tracking-[0.4em] text-white/70 mb-4 sm:mb-6 block"
+            className="font-sans text-[0.8rem] uppercase tracking-[0.3em] text-gold-300 mb-6 block"
             variants={{
-              hidden: { opacity: 0, y: 16 },
-              visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 0.25, 0, 1] } },
+              hidden: { opacity: 0, y: 12 },
+              visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.22, 0.25, 0, 1] } },
             }}
           >
-            THE MAKOPPA SANCTUARY
+            The Makoppa Sanctuary
           </motion.span>
 
-          {/* Monolithic headline */}
           <motion.h1
-            className="font-serif text-6xl sm:text-7xl md:text-8xl lg:text-9xl leading-none tracking-tighter mb-4 sm:mb-6 px-2"
-            variants={{
-              hidden: { opacity: 0, y: 24 },
-              visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.22, 0.25, 0, 1] } },
-            }}
-          >
-            IRON <span className="text-gradient-gold">EDEN.</span>
-          </motion.h1>
-
-          {/* Syntactic sub-headline */}
-          <motion.p
-            className="font-sans text-lg md:text-xl text-white/80 font-normal max-w-xl mx-auto mb-10 sm:mb-12 leading-relaxed"
-            variants={{
-              hidden: { opacity: 0, y: 16 },
-              visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 0.25, 0, 1] } },
-            }}
-          >
-            A peerless sanctuary of silence. Forged over 2.5 billion years.
-          </motion.p>
-
-          {/* CTAs: primary + secondary */}
-          <motion.div
-            className="flex flex-col sm:flex-row gap-6 items-center justify-center"
+            className="font-serif text-[3.2rem] md:text-[5rem] font-normal text-marble tracking-[0.08em] mb-4 leading-none"
+            style={{ textShadow: '0 4px 20px rgba(0,0,0,0.4)' }}
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 0.25, 0, 1] } },
             }}
           >
+            IRON EDEN
+          </motion.h1>
+
+          <motion.p
+            className="font-sans text-[1.1rem] font-light text-[#eaeaea] max-w-xl mx-auto mb-14 leading-[1.8]"
+            style={{ textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}
+            variants={{
+              hidden: { opacity: 0, y: 12 },
+              visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.22, 0.25, 0, 1] } },
+            }}
+          >
+            Discover a 2.5-billion-year-old landscape. Bespoke luxury, ethical conservation, and the raw beauty of the Sweetveld.
+          </motion.p>
+
+          {/* Liquid glass CTAs */}
+          <motion.div
+            className="flex flex-col sm:flex-row gap-6 sm:gap-8 justify-center w-full sm:w-auto max-w-[300px] sm:max-w-none mx-auto"
+            variants={{
+              hidden: { opacity: 0, y: 16 },
+              visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.22, 0.25, 0, 1] } },
+            }}
+          >
             <Link
               href="/book"
-              className="group relative px-8 sm:px-10 py-4 rounded-2xl bg-[#C5A059] text-onyx font-sans text-sm font-bold uppercase tracking-[0.2em] transition-all duration-300 ease-[cubic-bezier(0.22,0.25,0,1)] hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(197,160,89,0.4)]"
+              className="px-10 py-4 bg-white/[0.03] backdrop-blur-md border border-white/20 text-marble font-sans text-[0.85rem] font-medium uppercase tracking-[0.15em] text-center transition-all duration-400 hover:bg-white/10 hover:border-gold-300 hover:text-white"
             >
               Book Your Stay
             </Link>
             <Link
-              href="/residences"
-              className="font-sans text-sm font-medium text-white border-b border-white/50 pb-0.5 transition-all duration-300 ease-[cubic-bezier(0.22,0.25,0,1)] hover:border-white hover:text-gold-400 inline-flex items-center gap-1.5"
+              href="/wildlife"
+              className="px-10 py-4 bg-white/[0.03] backdrop-blur-md border border-white/20 text-marble font-sans text-[0.85rem] font-medium uppercase tracking-[0.15em] text-center transition-all duration-400 hover:bg-white/10 hover:border-gold-300 hover:text-white"
             >
-              Explore Residences
-              <span className="inline-block translate-y-[-1px]">↗</span>
+              Discover Wildlife
             </Link>
           </motion.div>
         </motion.div>
-
-        {/* Bottom Info Bar */}
-        <div className="absolute bottom-0 w-full border-t border-white/5 bg-onyx/90 backdrop-blur-md py-6 hidden md:block z-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between text-white/50 text-[10px] uppercase tracking-[0.2em] font-sans">
-            <div className="flex items-center">
-              <Thermometer className="inline w-3 h-3 mr-2 mb-0.5 text-gold-600" />{' '}
-              28°C / Clear Sky
-            </div>
-            <div className="flex items-center">
-              <Wind className="inline w-3 h-3 mr-2 mb-0.5 text-gold-600" /> Wind: NW
-              5km/h
-            </div>
-            <div className="flex items-center">
-              <Clock className="inline w-3 h-3 mr-2 mb-0.5 text-gold-600" /> Sunset:
-              18:42
-            </div>
-          </div>
-        </div>
       </section>
 
       {/* Private Residences - The Product */}

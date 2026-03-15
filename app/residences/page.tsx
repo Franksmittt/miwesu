@@ -1,430 +1,343 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import {
   ChefHat,
   Flame,
-  Shield,
-  ArrowRight,
-  Car,
-  MapPin,
   Layout as LayoutIcon,
   TreePine,
   Activity,
   Waves,
+  ArrowRight,
 } from 'lucide-react'
-import {
-  mainLodgeHouse,
-  secondHouse,
-  lodgeSummary,
-  type ResidenceFacility,
-} from '@/lib/residences-data'
+import { heroImages } from '@/lib/hero-images'
+import { lodgeSummary, mainLodgeHouse, secondHouse } from '@/lib/residences-data'
 
-/** Renders Image with fallback if primary src fails (e.g. file not yet copied) */
-function FacilityImage({
-  facility,
-  sizes,
-  className,
-  priority,
-}: {
-  facility: ResidenceFacility
-  sizes: string
-  className?: string
-  priority?: boolean
-}) {
-  const [src, setSrc] = useState(facility.imagePath)
-  useEffect(() => {
-    setSrc(facility.imagePath)
-  }, [facility.imagePath])
-  return (
-    <Image
-      src={src}
-      alt={facility.label}
-      fill
-      sizes={sizes}
-      className={className}
-      priority={priority}
-      onError={() => {
-        if (facility.fallbackImagePath && src === facility.imagePath) {
-          setSrc(facility.fallbackImagePath)
-        }
-      }}
-    />
-  )
-}
+/** Species card images (same as wildlife page) for the 14 Species sliding bento */
+const SPECIES_CARD_IMAGES = [
+  '/images/greater-kudu_card.png',
+  '/images/blue-wildebeest_card.png',
+  '/images/impala_card.png',
+  '/images/gemsbok_card.png',
+  '/images/warthog_card.png',
+  '/images/blesbok_card.png',
+  '/images/bushbuck_card.png',
+  '/images/cape-buffalo_card.png',
+  '/images/dapple-impala_card.png',
+  '/images/golden-wildebeest_card.png',
+  '/images/springbok_card.png',
+  '/images/red-hartebeest_card.png',
+  '/images/Lechwe_card.png',
+  '/images/livingstone-eland_card.png',
+]
 
 export default function ResidencesPage() {
+  const [speciesSlideIndex, setSpeciesSlideIndex] = useState(0)
+  const [speciesFade, setSpeciesFade] = useState(true)
+
   useEffect(() => {
-    const reveal = () => {
-      const reveals = document.querySelectorAll('.reveal')
-      for (let i = 0; i < reveals.length; i++) {
-        const windowHeight = window.innerHeight
-        const elementTop = reveals[i].getBoundingClientRect().top
-        const elementVisible = 100
-        if (elementTop < windowHeight - elementVisible) {
-          reveals[i].classList.add('active')
-        }
-      }
-    }
-    window.addEventListener('scroll', reveal)
-    reveal()
-    return () => window.removeEventListener('scroll', reveal)
+    const interval = setInterval(() => {
+      setSpeciesFade(false)
+      setTimeout(() => {
+        setSpeciesSlideIndex((i) => (i + 1) % SPECIES_CARD_IMAGES.length)
+        setSpeciesFade(true)
+      }, 500)
+    }, 4500)
+    return () => clearInterval(interval)
   }, [])
 
   return (
     <Layout>
-      <main id="main-content" className="min-h-screen bg-marble">
-        {/* Hero: image only, then text box below */}
-        <section className="bg-onyx">
-          <div className="relative h-[50vh] sm:h-[60vh] min-h-[300px] overflow-hidden">
-            <div className="absolute inset-0 overflow-hidden">
-              <div className="absolute w-[120%] h-[120%] -left-[10%] -top-[10%] animate-ken-burns">
-                <Image
-                  src="/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg"
-                  alt="Private residences at MIWESU - Braai under the trees, savanna and water; lodge life at Thabazimbi"
-                  fill
-                  sizes="100vw"
-                  className="object-cover"
-                  priority
-                />
+      <main id="main-content" className="min-h-screen bg-onyx text-marble pb-[10vh]">
+        {/* 1. Hero – breadcrumb and title (no background image) */}
+        <section className="w-full flex flex-col justify-center items-center text-center py-16 md:py-24 bg-onyx">
+          <div className="max-w-[1000px] px-4 md:px-[4vw]">
+            <div className="inline-flex gap-4 text-[#86868b] text-sm font-semibold tracking-[0.2em] uppercase mb-8 border border-white/10 py-2 px-6 rounded-full">
+              Sanctuary <span className="text-marble">/</span> Residences
+            </div>
+            <h1 className="font-serif text-6xl md:text-[6vw] font-extrabold leading-none tracking-tight mb-6">
+              THE COLLECTION
+            </h1>
+            <p className="text-[1.3rem] text-[#d1d1d1] leading-relaxed max-w-[800px] mx-auto">
+              Discover absolute isolation. Unyielding luxury designed to exist seamlessly within the 2.5-billion-year-old Makoppa Dome.
+            </p>
+          </div>
+        </section>
+
+        {/* 2 & 3. Flagship cards side by side on desktop */}
+        <div className="w-[96vw] max-w-[1400px] mx-auto mb-[4vh] grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
+          {/* The Homestead */}
+          <section className="h-[70vh] lg:min-h-[75vh] rounded-[40px] overflow-hidden border border-white/[0.08] relative group">
+            <Image
+              src="/images/residences-homestead-main.jpg"
+              alt="The Homestead at MIWESU"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover transition-transform duration-[0.8s] ease-out group-hover:scale-[1.03]"
+              priority
+            />
+            {/* Vignette: narrow dark top & bottom so more image shows in the middle */}
+            <div
+              className="absolute inset-0 z-[1] pointer-events-none"
+              style={{
+                background: 'linear-gradient(180deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.88) 16%, rgba(0,0,0,0.2) 38%, rgba(0,0,0,0.12) 62%, rgba(0,0,0,0.88) 84%, rgba(0,0,0,0.94) 100%)',
+              }}
+            />
+            <div className="absolute inset-0 z-10 flex flex-col justify-between p-3 md:p-4 lg:p-5">
+              <div className="[text-shadow:0_1px_3px_rgba(0,0,0,0.8),0_2px_12px_rgba(0,0,0,0.5)]">
+                <span className="text-gold-400 text-xs lg:text-sm font-semibold tracking-[0.2em] uppercase mb-1 lg:mb-1.5 block">
+                  Monumental Scale
+                </span>
+                <h2 className="font-serif text-[5.5vw] sm:text-[4.5vw] lg:text-[2.75rem] xl:text-[3.25rem] font-extrabold leading-[0.95] tracking-tight mb-1 lg:mb-2 text-white">
+                  THE HOMESTEAD
+                </h2>
+                <p className="text-xs lg:text-sm xl:text-base text-white/95 max-w-full leading-snug">
+                  Designed for absolute immersion in the Sweetveld. Featuring expansive entertainment areas, a traditional boma, and seamless integration with the surrounding wildlife.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-3 lg:gap-4 border-t border-white/20 pt-4 items-center [text-shadow:0_1px_2px_rgba(0,0,0,0.8)]">
+                <div className="flex flex-col">
+                  <span className="font-serif text-lg lg:text-xl font-bold mb-0.5 text-white">{mainLodgeHouse.sleepers}</span>
+                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-semibold">Sleepers</span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-serif text-lg lg:text-xl font-bold mb-0.5 text-white">{lodgeSummary.mainHouse.bedrooms}</span>
+                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-semibold">Bedrooms</span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-serif text-lg lg:text-xl font-bold mb-0.5 text-white">Boma</span>
+                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-semibold">Fire Pit</span>
+                </div>
+                <Link
+                  href="/residences/homestead"
+                  className="ml-auto mt-2 lg:mt-0 bg-marble text-onyx px-5 lg:px-6 py-2.5 rounded-full font-semibold uppercase tracking-widest text-xs no-underline hover:bg-gold-400 hover:-translate-y-0.5 transition-all duration-300"
+                >
+                  Explore <ArrowRight className="inline w-3.5 h-3.5 lg:w-4 lg:h-4 ml-1 -translate-y-px" />
+                </Link>
               </div>
             </div>
+          </section>
+
+          {/* The Stone Villa */}
+          <section className="h-[70vh] lg:min-h-[75vh] rounded-[40px] overflow-hidden border border-white/[0.08] relative group">
+            <Image
+              src="/images/residences-second-house-main.jpg"
+              alt="The Stone Villa at MIWESU"
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover transition-transform duration-[0.8s] ease-out group-hover:scale-[1.03]"
+            />
+            {/* Vignette: narrow dark top & bottom so more image shows in the middle */}
+            <div
+              className="absolute inset-0 z-[1] pointer-events-none"
+              style={{
+                background: 'linear-gradient(180deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.88) 16%, rgba(0,0,0,0.2) 38%, rgba(0,0,0,0.12) 62%, rgba(0,0,0,0.88) 84%, rgba(0,0,0,0.94) 100%)',
+              }}
+            />
+            <div className="absolute inset-0 z-10 flex flex-col justify-between p-3 md:p-4 lg:p-5">
+              <div className="[text-shadow:0_1px_3px_rgba(0,0,0,0.8),0_2px_12px_rgba(0,0,0,0.5)]">
+                <span className="text-gold-400 text-xs lg:text-sm font-semibold tracking-[0.2em] uppercase mb-1 lg:mb-1.5 block">
+                  Intimate Seclusion
+                </span>
+                <h2 className="font-serif text-[5.5vw] sm:text-[4.5vw] lg:text-[2.75rem] xl:text-[3.25rem] font-extrabold leading-[0.95] tracking-tight mb-1 lg:mb-2 text-white">
+                  THE STONE VILLA
+                </h2>
+                <p className="text-xs lg:text-sm xl:text-base text-white/95 max-w-full leading-snug">
+                  Carved from the earth. Elevated to provide sweeping views of the ancient canopy, offering a stargazing master deck and immediate access to the wild.
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-3 lg:gap-4 border-t border-white/20 pt-4 items-center [text-shadow:0_1px_2px_rgba(0,0,0,0.8)]">
+                <div className="flex flex-col">
+                  <span className="font-serif text-lg lg:text-xl font-bold mb-0.5 text-white">{secondHouse.sleepers}</span>
+                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-semibold">Sleepers</span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-serif text-lg lg:text-xl font-bold mb-0.5 text-white">2</span>
+                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-semibold">En-Suites</span>
+                </div>
+                <div className="flex flex-col">
+                  <span className="font-serif text-lg lg:text-xl font-bold mb-0.5 text-white">Deck</span>
+                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-semibold">Stargazing</span>
+                </div>
+                <Link
+                  href="/residences/stone-villa"
+                  className="ml-auto mt-2 lg:mt-0 bg-marble text-onyx px-5 lg:px-6 py-2.5 rounded-full font-semibold uppercase tracking-widest text-xs no-underline hover:bg-gold-400 hover:-translate-y-0.5 transition-all duration-300"
+                >
+                  Explore <ArrowRight className="inline w-3.5 h-3.5 lg:w-4 lg:h-4 ml-1 -translate-y-px" />
+                </Link>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        {/* 4. Bespoke Amenities – 6 boxes, rounded edges */}
+        <section className="w-[96vw] max-w-6xl mx-auto my-[10vh]">
+          <div className="text-center mb-16">
+            <span className="text-gold-400 text-sm font-semibold tracking-[0.2em] uppercase mb-4 block">
+              Uncompromising Standards
+            </span>
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-white">
+              Bespoke Amenities
+            </h2>
           </div>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-onyx-light border border-white/5 p-6 sm:p-10 -mt-0 relative z-10">
-              <span className="text-gold-400 text-[10px] sm:text-xs tracking-[0.4em] uppercase font-bold block mb-2">
-                The Collection
-              </span>
-              <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white leading-tight">
-                Private <span className="text-gradient-gold">Residences</span>
-              </h1>
-              <p className="text-gray-400 mt-4 text-sm sm:text-base max-w-2xl">
-                Exclusive use. The Homestead (16 sleepers) and The Stone Villa (6 sleepers). Bespoke living, daily housekeeping, absolute privacy.
-              </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-onyx-light border border-white/[0.05] rounded-[32px] p-8 md:p-10 text-center transition-all duration-300 hover:bg-[#1a1a1c] hover:border-gold-500/20">
+              <ChefHat className="w-10 h-10 text-gold-500 mx-auto mb-4" aria-hidden />
+              <h3 className="font-serif text-lg text-white mb-2">Kitchen</h3>
+              <p className="text-[#a1a1a6] text-sm leading-relaxed">Full kitchen in main lodge and The Stone Villa.</p>
+            </div>
+            <div className="bg-onyx-light border border-white/[0.05] rounded-[32px] p-8 md:p-10 text-center transition-all duration-300 hover:bg-[#1a1a1c] hover:border-gold-500/20">
+              <Flame className="w-10 h-10 text-gold-500 mx-auto mb-4" aria-hidden />
+              <h3 className="font-serif text-lg text-white mb-2">Boma & Braai</h3>
+              <p className="text-[#a1a1a6] text-sm leading-relaxed">Boma and braai at main lodge; braai under the trees; outdoor braai at The Stone Villa.</p>
+            </div>
+            <div className="bg-onyx-light border border-white/[0.05] rounded-[32px] p-8 md:p-10 text-center transition-all duration-300 hover:bg-[#1a1a1c] hover:border-gold-500/20">
+              <LayoutIcon className="w-10 h-10 text-gold-500 mx-auto mb-4" aria-hidden />
+              <h3 className="font-serif text-lg text-white mb-2">Lapa</h3>
+              <p className="text-[#a1a1a6] text-sm leading-relaxed">Pool table and darts at main lodge lapa.</p>
+            </div>
+            <div className="bg-onyx-light border border-white/[0.05] rounded-[32px] p-8 md:p-10 text-center transition-all duration-300 hover:bg-[#1a1a1c] hover:border-gold-500/20">
+              <TreePine className="w-10 h-10 text-gold-500 mx-auto mb-4" aria-hidden />
+              <h3 className="font-serif text-lg text-white mb-2">Braai under the trees</h3>
+              <p className="text-[#a1a1a6] text-sm leading-relaxed">Additional braai area at main lodge.</p>
+            </div>
+            <div className="bg-onyx-light border border-white/[0.05] rounded-[32px] p-8 md:p-10 text-center transition-all duration-300 hover:bg-[#1a1a1c] hover:border-gold-500/20">
+              <Activity className="w-10 h-10 text-gold-500 mx-auto mb-4" aria-hidden />
+              <h3 className="font-serif text-lg text-white mb-2">Trampoline & Jungle Gym</h3>
+              <p className="text-[#a1a1a6] text-sm leading-relaxed">Family-friendly at main lodge.</p>
+            </div>
+            <div className="bg-onyx-light border border-white/[0.05] rounded-[32px] p-8 md:p-10 text-center transition-all duration-300 hover:bg-[#1a1a1c] hover:border-gold-500/20">
+              <Waves className="w-10 h-10 text-gold-500 mx-auto mb-4" aria-hidden />
+              <h3 className="font-serif text-lg text-white mb-2">Swimming pool with slide</h3>
+              <p className="text-[#a1a1a6] text-sm leading-relaxed">At main lodge; The Stone Villa is near the pool.</p>
             </div>
           </div>
         </section>
 
-        {/* Residences Grid */}
-        <section className="py-16 sm:py-24 lg:py-32 bg-onyx text-white relative overflow-hidden">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gold-500/5 rounded-full blur-[100px]"></div>
-
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="text-center mb-12 sm:mb-20 reveal">
-              <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold">
-                Exclusive Use
-              </span>
-              <h2 className="font-serif text-5xl md:text-7xl text-white mt-6">
-                Your Private Sanctuary
-              </h2>
-              <div className="h-1 w-20 bg-gold-gradient mx-auto mt-8"></div>
-            </div>
-
-            {/* Lodge at a glance  - from data */}
-            <div className="mb-16 reveal">
-              <p className="text-gray-400 text-sm sm:text-base max-w-3xl mx-auto text-center">
-                <span className="text-white font-medium">{mainLodgeHouse.title}:</span> {lodgeSummary.mainHouse.bedrooms} bedrooms ({lodgeSummary.mainHouse.lowerRooms} lower, {lodgeSummary.mainHouse.upperRooms} upper), {lodgeSummary.mainHouse.sleepers} sleepers · Kitchen, living, first patio, boma & braai, lapa, pool, trampoline & jungle gym, braai under trees.
-                <br />
-                <span className="text-white font-medium">The Stone Villa:</span> {lodgeSummary.secondHouse.bedrooms} bedrooms, {lodgeSummary.secondHouse.sleepers} sleepers · Kitchen, living, master & bunk room, 2 en-suites, outdoor braai.
-                <span className="block mt-2 text-gold-400/90">Total: {lodgeSummary.totalSleepers} sleepers across two residences.</span>
-              </p>
-              <div className="mt-8">
-                <Link
-                  href="/book"
-                  className="inline-flex items-center px-8 py-3 bg-gold-500 text-onyx font-bold uppercase tracking-widest text-sm hover:bg-gold-400 transition-colors"
-                >
-                  Book your stay <ArrowRight className="w-4 h-4 ml-2" />
-                </Link>
-              </div>
-            </div>
-
-            <div className="grid lg:grid-cols-2 gap-8 md:gap-12 mb-12 sm:mb-20">
-              {/* Main Lodge House */}
-              <div className="group relative bg-onyx-light border border-white/5 hover:border-gold-500/50 transition-all duration-500 overflow-hidden reveal">
-                <div className="h-72 sm:h-96 overflow-hidden relative">
-                  <Image
-                    src="/images/residences-homestead-main.jpg"
-                    alt="Main Lodge House at MIWESU Game Farm"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover transition-transform duration-1000 group-hover:scale-110"
-                  />
-                </div>
-                <div className="p-6 sm:p-10 relative">
-                  <h3 className="font-serif text-2xl sm:text-3xl text-white mb-3 sm:mb-4">{mainLodgeHouse.title}</h3>
-                  <p className="text-gray-400 text-sm sm:text-base font-sans leading-relaxed mb-4 sm:mb-6">
-                    The heart of the property. {lodgeSummary.mainHouse.description}
-                  </p>
-                  <ul className="text-gray-400 text-xs sm:text-sm space-y-1.5 mb-6 sm:mb-8">
-                    <li>Lower Room 1 & 2 (sleep 3 each) · Kitchen · Living Area</li>
-                    <li>Upper Room 1 & 2 (sleep 5 each)</li>
-                    <li>First patio · Boma and Braai (BBQ) · Lapa (pool table & darts)</li>
-                    <li>Braai under the trees · Trampoline & Jungle Gym</li>
-                    <li>Swimming pool with slide</li>
-                  </ul>
-                  <div className="flex flex-wrap gap-3">
-                    <Link
-                      href="/residences/homestead"
-                      className="inline-flex items-center px-8 py-3 border border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-onyx transition-all text-xs uppercase tracking-widest font-bold"
-                    >
-                      View The Homestead <ArrowRight className="w-4 h-4 ml-2" />
-                    </Link>
-                    <Link
-                      href="/contact"
-                      className="inline-flex items-center px-6 py-3 text-gray-400 hover:text-white text-xs uppercase tracking-widest"
-                    >
-                      Inquire
-                    </Link>
-                  </div>
-                </div>
-              </div>
-
-              {/* The Stone Villa (Near the pool) */}
-              <div className="group relative bg-onyx-light border border-white/5 hover:border-gold-500/50 transition-all duration-500 overflow-hidden reveal delay-100">
-                <div className="h-72 sm:h-96 overflow-hidden relative">
-                  <Image
-                    src="/images/residences-second-house-main.jpg"
-                    alt="The Stone Villa near the pool at MIWESU Game Farm"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover transition-transform duration-1000 group-hover:scale-110"
-                  />
-                </div>
-                <div className="p-6 sm:p-10 relative">
-                  <h3 className="font-serif text-2xl sm:text-3xl text-white mb-2 sm:mb-3">The Stone Villa</h3>
-                  <p className="text-gold-400/90 text-xs italic mb-3">{secondHouse.subtitle}</p>
-                  <p className="text-gray-400 text-sm sm:text-base font-sans leading-relaxed mb-4 sm:mb-6">
-                    {lodgeSummary.secondHouse.description}
-                  </p>
-                  <ul className="text-gray-400 text-xs sm:text-sm space-y-1.5 mb-6 sm:mb-8">
-                    <li>Kitchen · Living Area</li>
-                    <li>Master Bedroom · En-suite (shower)</li>
-                    <li>Second bedroom (2 bunk beds, sleeps 4) · En-suite (bathtub)</li>
-                    <li>Outdoor Braai</li>
-                  </ul>
-                  <div className="flex flex-wrap gap-3">
-                    <Link
-                      href="/residences/stone-villa"
-                      className="inline-flex items-center px-8 py-3 border border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-onyx transition-all text-xs uppercase tracking-widest font-bold"
-                    >
-                      View The Stone Villa <ArrowRight className="w-4 h-4 ml-2" />
-                    </Link>
-                    <Link
-                      href="/contact"
-                      className="inline-flex items-center px-6 py-3 text-gray-400 hover:text-white text-xs uppercase tracking-widest"
-                    >
-                      Inquire
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Main Lodge House  - Facilities */}
-            <div className="space-y-20 mb-20">
-              <div className="reveal">
-                <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-3 block">
-                  Main Lodge House
-                </span>
-                <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white mb-6">
-                  Facilities & Layout
-                </h3>
-                <p className="text-gray-300 text-base sm:text-lg leading-loose mb-10 max-w-3xl">
-                  The main lodge has four bedrooms (two lower rooms sleeping 3 each, two upper rooms sleeping 5 each), open-plan kitchen and living area, first patio, boma and braai, lapa with pool table and darts, braai under the trees, trampoline and jungle gym, and swimming pool with slide.
-                </p>
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-                  {mainLodgeHouse.facilities.map((facility) => (
-                    <div key={facility.id} className="bg-onyx-light border border-white/5 overflow-hidden reveal group">
-                      <div className="relative h-[220px] sm:h-[260px] overflow-hidden">
-                        <FacilityImage
-                          facility={facility}
-                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                          className="object-cover transition-transform duration-700 group-hover:scale-105"
-                        />
-                      </div>
-                      <div className="p-4 sm:p-5 border-t border-white/5">
-                        <span className="font-serif text-white text-sm sm:text-base">{facility.label}</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* The Stone Villa  - Facilities */}
-              <div className="reveal delay-100">
-                <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-3 block">
-                  The Stone Villa
-                </span>
-                <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white mb-2">
-                  Near the Pool
-                </h3>
-                <p className="text-gray-400 text-sm italic mb-6">Sleeps {secondHouse.sleepers} · 2 bedrooms, 2 en-suites</p>
-                <p className="text-gray-300 text-base sm:text-lg leading-loose mb-10 max-w-3xl">
-                  {lodgeSummary.secondHouse.description}
-                </p>
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-                  {secondHouse.facilities.map((facility) => (
-                    <div key={facility.id} className="bg-onyx-light border border-white/5 overflow-hidden reveal group">
-                      <div className="relative h-[220px] sm:h-[260px] overflow-hidden">
-                        <FacilityImage
-                          facility={facility}
-                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                          className="object-cover transition-transform duration-700 group-hover:scale-105"
-                        />
-                      </div>
-                      <div className="p-4 sm:p-5 border-t border-white/5">
-                        <span className="font-serif text-white text-sm sm:text-base">{facility.label}</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Amenities overview */}
-            <div className="mb-20 reveal delay-200">
-              <div className="text-center mb-12">
-                <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
-                  On the Property
-                </span>
-                <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
-                  Main Lodge & The Stone Villa
-                </h2>
-                <p className="text-gray-300 text-lg max-w-3xl mx-auto leading-loose">
-                  Main lodge: four bedrooms ({lodgeSummary.mainHouse.sleepers} sleepers), kitchen, living area, first patio, boma and braai, lapa with pool table and darts, braai under the trees, trampoline, jungle gym and swimming pool with slide. The Stone Villa (near the pool): sleeps {lodgeSummary.secondHouse.sleepers}, kitchen, living, master and second bedroom (2 bunk beds), two en-suites, outdoor braai.
-                </p>
-              </div>
-              <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
-                <div className="bg-onyx-light border border-white/5 p-6 text-center">
-                  <ChefHat className="w-10 h-10 text-gold-500 mx-auto mb-3" />
-                  <h4 className="font-serif text-lg text-white mb-2">Kitchen</h4>
-                  <p className="text-gray-400 text-sm leading-relaxed">Full kitchen in main lodge and The Stone Villa.</p>
-                </div>
-                <div className="bg-onyx-light border border-white/5 p-6 text-center">
-                  <Flame className="w-10 h-10 text-gold-500 mx-auto mb-3" />
-                  <h4 className="font-serif text-lg text-white mb-2">Boma & Braai</h4>
-                  <p className="text-gray-400 text-sm leading-relaxed">Boma and braai at main lodge; braai under the trees; outdoor braai at The Stone Villa.</p>
-                </div>
-                <div className="bg-onyx-light border border-white/5 p-6 text-center">
-                  <LayoutIcon className="w-10 h-10 text-gold-500 mx-auto mb-3" />
-                  <h4 className="font-serif text-lg text-white mb-2">Lapa</h4>
-                  <p className="text-gray-400 text-sm leading-relaxed">Pool table and darts at main lodge lapa.</p>
-                </div>
-                <div className="bg-onyx-light border border-white/5 p-6 text-center">
-                  <TreePine className="w-10 h-10 text-gold-500 mx-auto mb-3" />
-                  <h4 className="font-serif text-lg text-white mb-2">Braai under the trees</h4>
-                  <p className="text-gray-400 text-sm leading-relaxed">Additional braai area at main lodge.</p>
-                </div>
-                <div className="bg-onyx-light border border-white/5 p-6 text-center">
-                  <Activity className="w-10 h-10 text-gold-500 mx-auto mb-3" />
-                  <h4 className="font-serif text-lg text-white mb-2">Trampoline & Jungle Gym</h4>
-                  <p className="text-gray-400 text-sm leading-relaxed">Family-friendly at main lodge.</p>
-                </div>
-                <div className="bg-onyx-light border border-white/5 p-6 text-center">
-                  <Waves className="w-10 h-10 text-gold-500 mx-auto mb-3" />
-                  <h4 className="font-serif text-lg text-white mb-2">Swimming pool with slide</h4>
-                  <p className="text-gray-400 text-sm leading-relaxed">At main lodge; The Stone Villa is near the pool.</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Daily Housekeeping */}
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-12 sm:mb-20 reveal delay-300">
-              <div className="relative h-[280px] sm:h-[360px] md:h-[500px] min-h-[240px]">
+        {/* 5. Bento – Beyond the Walls */}
+        <section className="w-[96vw] max-w-6xl mx-auto mt-[5vh] mb-[10vh]">
+          <div className="text-center mb-12">
+            <span className="text-gold-400 text-sm font-semibold tracking-[0.2em] uppercase mb-4 block">
+              The Ecosystem
+            </span>
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-white">
+              Beyond the Walls
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 auto-rows-[minmax(280px,350px)] md:grid-rows-[350px_350px_350px]">
+            <Link
+              href="/wildlife"
+              className="relative rounded-[40px] overflow-hidden border border-white/[0.08] flex flex-col justify-end p-8 md:p-10 group min-h-[280px] md:col-span-2 md:row-span-2"
+            >
+              {/* Sliding species card images (crossfade every ~4.5s) */}
+              <div
+                className="absolute inset-0 transition-opacity duration-500 ease-out"
+                style={{ opacity: speciesFade ? 1 : 0 }}
+              >
                 <Image
-                  src="/images/residences-housekeeping.jpg"
-                  alt="Daily housekeeping service at Miwesu"
+                  src={SPECIES_CARD_IMAGES[speciesSlideIndex]}
+                  alt="Wildlife at MIWESU"
                   fill
-                  sizes="(max-width: 768px) 100vw, 800px"
-                  className="object-cover shadow-luxury"
+                  className="object-cover transition-transform duration-[0.8s] ease-out group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 66vw"
                 />
               </div>
-              <div>
-                <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-4 block">
-                  Invisible Service
-                </span>
-                <h3 className="font-serif text-4xl md:text-5xl text-white mb-6">
-                  Daily Housekeeping
-                </h3>
-                <p className="text-gray-300 text-lg leading-loose mb-6">
-                  Our housekeeping operates invisibly, ensuring your residence remains pristine without intrusion. Beds are made, dishes cleaned, and spaces refreshed while you're out exploring the reserve or tracking game.
-                </p>
-                <p className="text-gray-300 text-lg leading-loose">
-                  We understand that privacy is paramount. Our team respects your space and operates on a schedule that works around your activities, ensuring you can focus on what matters: the experience.
+              <div className="absolute inset-0 z-[1]" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.92) 28%, rgba(0,0,0,0.5) 50%, transparent 75%)' }} />
+              <div className="relative z-10 [text-shadow:0_1px_4px_rgba(0,0,0,0.8),0_2px_12px_rgba(0,0,0,0.6)]">
+                <h3 className="font-serif text-3xl md:text-4xl lg:text-5xl text-gold-400 mb-3 font-bold">14 Species</h3>
+                <p className="text-white/95 text-lg md:text-xl max-w-[500px] leading-relaxed">
+                  Encounter unmatched biodiversity. From majestic herds to elusive quarry, the sanctuary is alive right outside your door.
                 </p>
               </div>
-            </div>
+            </Link>
+            <Link
+              href="/residences"
+              className="relative rounded-[40px] overflow-hidden border border-white/[0.08] flex flex-col justify-end p-6 md:p-8 group min-h-[240px] md:col-span-1 md:row-span-2"
+            >
+              <Image
+                src={heroImages.residences}
+                alt="Private reserve"
+                fill
+                className="object-cover transition-transform duration-[0.8s] ease-out group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+              <div className="absolute inset-0 z-[1]" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.92) 28%, rgba(0,0,0,0.5) 50%, transparent 75%)' }} />
+              <div className="relative z-10 [text-shadow:0_1px_4px_rgba(0,0,0,0.8),0_2px_12px_rgba(0,0,0,0.6)]">
+                <h3 className="font-serif text-2xl md:text-3xl text-gold-400 mb-2 font-bold">Radical Privacy</h3>
+                <p className="text-white/95 text-base md:text-lg leading-relaxed">
+                  No other vehicles. No cross-traffic. Just your private group and the Sweetveld.
+                </p>
+              </div>
+            </Link>
+            <Link
+              href="/conservation"
+              className="relative rounded-[40px] overflow-hidden border border-white/[0.08] flex flex-col justify-end p-6 md:p-8 group min-h-[240px] md:col-span-1 md:row-span-1"
+            >
+              <Image
+                src={heroImages.conservation}
+                alt="Conservation at MIWESU"
+                fill
+                className="object-cover transition-transform duration-[0.8s] ease-out group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+              <div className="absolute inset-0 z-[1]" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.92) 28%, rgba(0,0,0,0.5) 50%, transparent 75%)' }} />
+              <div className="relative z-10 [text-shadow:0_1px_4px_rgba(0,0,0,0.8),0_2px_12px_rgba(0,0,0,0.6)]">
+                <h3 className="font-serif text-2xl md:text-3xl text-gold-400 mb-2 font-bold">Ethical Harvest</h3>
+                <p className="text-white/95 text-base md:text-lg leading-relaxed">Rooted in respect for the land and meticulous conservation.</p>
+              </div>
+            </Link>
+            <Link
+              href="/about"
+              className="relative rounded-[40px] overflow-hidden border border-white/[0.08] flex flex-col justify-end p-6 md:p-8 group min-h-[240px] md:col-span-2 md:row-span-1"
+            >
+              <Image
+                src={heroImages.residences}
+                alt="Makoppa Dome"
+                fill
+                className="object-cover transition-transform duration-[0.8s] ease-out group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, 66vw"
+              />
+              <div className="absolute inset-0 z-[1]" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.92) 28%, rgba(0,0,0,0.5) 50%, transparent 75%)' }} />
+              <div className="relative z-10 [text-shadow:0_1px_4px_rgba(0,0,0,0.8),0_2px_12px_rgba(0,0,0,0.6)]">
+                <h3 className="font-serif text-2xl md:text-3xl text-gold-400 mb-2 font-bold">The Ancient Dome</h3>
+                <p className="text-white/95 text-base md:text-lg leading-relaxed">
+                  A geological masterpiece 2.5 billion years in the making. Terrain that commands respect and offers unparalleled tracking.
+                </p>
+              </div>
+            </Link>
+          </div>
+        </section>
 
-            {/* Location & Access */}
-            <div className="bg-gradient-to-br from-gold-500/10 to-gold-500/5 border border-gold-500/20 p-6 sm:p-10 md:p-16 mb-12 sm:mb-20 reveal delay-400">
-              <div className="max-w-4xl mx-auto">
-                <div className="flex items-center gap-4 mb-8">
-                  <MapPin className="w-8 h-8 text-gold-500" />
-                  <h3 className="font-serif text-3xl md:text-4xl text-white">
-                    Location & Access
-                  </h3>
-                </div>
-                <p className="text-gray-300 text-lg leading-loose mb-6">
-                  Both residences are located within the secure boundaries of MIWESU GAME FARM, approximately 40 kilometers from Thabazimbi town on the D1432 district road. The journey itself is part of the experience -a transition from the modern world into the heart of the Makoppa district.
-                </p>
-                <p className="text-gray-300 text-lg leading-loose mb-8">
-                  <span className="text-gold-400 font-medium">Vehicle Requirements:</span> High-clearance vehicles are recommended, especially during the summer rainy season (October–March). The D1432 is a gravel road that can become challenging after heavy rains.
-                </p>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="flex items-start gap-3">
-                    <Car className="w-6 h-6 text-gold-500 mt-1 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-serif text-white mb-2">4x4 Tracks</h4>
-                      <p className="text-gray-400 text-sm">
-                        Extensive network of farm tracks for game viewing and exploration.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Shield className="w-6 h-6 text-gold-500 mt-1 flex-shrink-0" />
-                    <div>
-                      <h4 className="font-serif text-white mb-2">Secure Perimeter</h4>
-                      <p className="text-gray-400 text-sm">
-                        Electric fencing and secure boundaries ensure safety for families.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Call to Action */}
-            <div className="bg-gold-500 p-6 sm:p-10 md:p-20 reveal delay-500">
-              <div className="max-w-4xl mx-auto text-center">
-                <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
-                  Experience Absolute Privacy
-                </h2>
-                <p className="text-onyx/90 font-sans text-lg leading-loose mb-8">
-                  Both residences offer exclusive use, ensuring complete privacy and autonomy during your stay. Whether you're planning a family hunting safari or a corporate retreat, we provide the perfect base for your Makoppa adventure.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link
-                    href="/contact"
-                    className="inline-block bg-onyx text-white px-10 py-4 uppercase tracking-widest text-xs font-bold hover:bg-white hover:text-onyx transition-all"
-                  >
-                    Request Availability
-                  </Link>
-                  <Link
-                    href="/rates"
-                    className="inline-block border-2 border-onyx text-onyx px-10 py-4 uppercase tracking-widest text-xs font-bold hover:bg-onyx hover:text-white transition-all"
-                  >
-                    View Rates
-                  </Link>
-                </div>
-              </div>
-            </div>
+        {/* 6. CTA – Experience Absolute Privacy (kept as requested) */}
+        <section className="w-[96vw] max-w-6xl mx-auto mt-[10vh] rounded-[40px] overflow-hidden border border-gold-500/15 bg-gradient-to-br from-[#0a0a0a] to-onyx p-8 md:p-[6vw] text-center">
+          <span className="text-gold-400 text-base md:text-lg font-semibold tracking-[0.2em] uppercase mb-6 block">
+            Begin Your Journey
+          </span>
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 bg-gradient-to-r from-gold-300 to-gold-400 bg-clip-text text-transparent">
+            Experience Absolute Privacy
+          </h2>
+          <p className="text-white/95 text-xl md:text-2xl max-w-[640px] mx-auto mb-10 leading-relaxed">
+            Both residences offer exclusive use, ensuring complete privacy and autonomy during your stay. Whether you&apos;re planning a family hunting safari or a corporate retreat, we provide the perfect base for your Makoppa adventure.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/contact"
+              className="inline-block bg-gold-400 text-onyx px-10 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-marble hover:scale-[1.02] transition-all duration-300 no-underline"
+            >
+              Request Availability
+            </Link>
+            <Link
+              href="/rates"
+              className="inline-block border-2 border-gold-400 text-gold-400 px-10 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-gold-400 hover:text-onyx transition-all duration-300 no-underline"
+            >
+              View Rates
+            </Link>
           </div>
         </section>
       </main>
     </Layout>
   )
 }
-

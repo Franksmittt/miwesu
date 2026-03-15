@@ -1,0 +1,178 @@
+RESIDENCES PAGE — COMPLETE EXPLANATION
+=======================================
+URL: http://localhost:3000/residences (or /residences on the live site)
+
+This document describes the Residences page in full: what it looks like, what it contains, how it is structured, and what each part is for. It is written so that someone who cannot see the screen can understand the whole page.
+
+---
+1. PURPOSE OF THE PAGE
+---
+
+The Residences page is the main accommodation hub for MIWESU Game Farm. It presents the two private residences (The Homestead and The Stone Villa), their facilities, amenities, and how to book or inquire. The page aims to convey exclusive use, bespoke living, daily housekeeping, and absolute privacy.
+
+---
+2. OVERALL LAYOUT AND WRAPPER
+---
+
+The page sits inside the site-wide Layout. That means:
+- At the top: the main site navigation (logo, menu: Stay, Experience, Practical, Journal, Reach, etc.).
+- The main content fills the centre of the screen.
+- At the bottom: the site footer (brand, tagline, infinite scroll of images, links to Stay, Experience, Concierge, Reach us, contact, social).
+
+The page content itself has a light marble/off-white background for the outer wrapper, with a large dark (onyx) section in the middle that holds most of the content.
+
+---
+3. HERO SECTION (TOP OF PAGE)
+---
+
+- A large hero image occupies the top half (about 50% of viewport height on mobile, 60% on larger screens). The image shows private residences at MIWESU: braai under the trees, savanna and water, lodge life at Thabazimbi. The image uses a subtle Ken Burns effect (slow zoom/pan).
+- Directly below the image, overlapping slightly into the dark area, is a dark card (onyx-style background) with:
+  - A small gold uppercase label: "The Collection".
+  - The main heading: "Private Residences" (the word "Residences" is in a gold gradient).
+  - A short paragraph: "Exclusive use. The Homestead (16 sleepers) and The Stone Villa (6 sleepers). Bespoke living, daily housekeeping, absolute privacy."
+
+This hero sets the tone: two residences, exclusive use, high-end and private.
+
+---
+4. MAIN CONTENT SECTION — "YOUR PRIVATE SANCTUARY"
+---
+
+The rest of the page is one long scrollable section on a dark (onyx) background with gold accents.
+
+4.1 Section heading
+- Small gold uppercase label: "Exclusive Use".
+- Large serif heading: "Your Private Sanctuary".
+- A short gold horizontal line (decorative divider) under the heading.
+
+4.2 Lodge at a glance (summary paragraph)
+- A centred paragraph that summarises both residences in one place:
+  - Main Lodge House (The Homestead): 4 bedrooms (2 lower, 2 upper), 16 sleepers; kitchen, living, first patio, boma and braai, lapa, pool, trampoline and jungle gym, braai under the trees.
+  - The Stone Villa: 2 bedrooms, 6 sleepers; kitchen, living, master and bunk room, 2 en-suites, outdoor braai.
+  - A gold-highlighted line: "Total: 22 sleepers across two residences."
+- Below that, a primary call-to-action button: "Book your stay" with an arrow icon. It links to the booking page (/book).
+
+4.3 Two residence cards (side by side on desktop, stacked on mobile)
+
+Card 1 — The Homestead (Main Lodge House)
+- A large image: main lodge house at MIWESU Game Farm (hover: image zooms slightly).
+- Title: "Main Lodge House".
+- Short description: the heart of the property, four bedrooms on two levels, kitchen, living, patio, boma, lapa, braai, trampoline, pool, etc.
+- Bullet list: Lower Room 1 & 2 (sleep 3 each), Kitchen, Living; Upper Room 1 & 2 (sleep 5 each); first patio, boma and braai, lapa; braai under the trees, trampoline and jungle gym; swimming pool with slide.
+- Two links: "View The Homestead" (outline gold button, goes to /residences/homestead) and "Inquire" (text link, goes to /contact).
+
+Card 2 — The Stone Villa
+- A large image: The Stone Villa near the pool at MIWESU Game Farm (hover: image zooms slightly).
+- Title: "The Stone Villa".
+- Subtitle in gold italic: "Near the pool · Sleeps 6".
+- Short description: open-plan kitchen and living, master bedroom with en-suite shower, second bedroom with two bunk beds (sleeps 4) and en-suite with bathtub, outdoor braai.
+- Bullet list: Kitchen, Living; Master Bedroom with en-suite (shower); Second bedroom (2 bunk beds, sleeps 4) with en-suite (bathtub); Outdoor Braai.
+- Two links: "View The Stone Villa" (outline gold button, goes to /residences/stone-villa) and "Inquire" (text link, goes to /contact).
+
+---
+5. FACILITIES & LAYOUT — MAIN LODGE HOUSE
+---
+
+- Small gold label: "Main Lodge House".
+- Heading: "Facilities & Layout".
+- A paragraph describing the main lodge: four bedrooms (two lower sleeping 3 each, two upper sleeping 5 each), open-plan kitchen and living, first patio, boma and braai, lapa with pool table and darts, braai under the trees, trampoline, jungle gym, swimming pool with slide.
+
+Then a grid of facility cards (on small screens 1 column, then 2, then 3 columns). Each card has:
+- A photo (with hover zoom).
+- A label underneath.
+
+The facilities shown are (in data order): Main Lodge House (exterior), Lower Room 1 (sleeps 3), Lower Room 2 (sleeps 3), Lower Room En-suite (bathroom), Kitchen, Living Area, First patio, Boma and Braai (BBQ), Upper Room 1 (sleeps 5), Upper Room 2 (sleeps 5), Lapa (pool table & darts), Braai under the trees, Trampoline & Jungle Gym, Swimming pool with slide.
+
+---
+6. FACILITIES — THE STONE VILLA ("NEAR THE POOL")
+---
+
+- Small gold label: "The Stone Villa".
+- Heading: "Near the Pool".
+- Subtext: "Sleeps 6 · 2 bedrooms, 2 en-suites".
+- The same description as in the card: open-plan kitchen and living, master with en-suite shower, second bedroom with two bunks (sleeps 4) and en-suite with bathtub, outdoor braai.
+
+Then a grid of facility cards for The Stone Villa. Each has a photo and a label. The facilities shown are: The Stone Villa (exterior), Kitchen, Living Area, Master Bedroom, Master En-suite (shower), 2nd Bedroom (2 bunks, sleeps 4), and any further Stone Villa facilities defined in the data (e.g. outdoor braai if present as a card).
+
+---
+7. AMENITIES OVERVIEW — "ON THE PROPERTY"
+---
+
+- Small gold label: "On the Property".
+- Heading: "Main Lodge & The Stone Villa".
+- A paragraph that again summarises both: main lodge (four bedrooms, 16 sleepers, kitchen, living, patio, boma, lapa, braai under trees, trampoline, jungle gym, pool with slide); The Stone Villa (6 sleepers, kitchen, living, master and second bedroom with bunks, two en-suites, outdoor braai).
+
+Then a grid of six amenity tiles (2 columns on small screens, 3 on medium). Each tile has an icon, a title, and a short description:
+
+1. Kitchen — Full kitchen in main lodge and The Stone Villa.
+2. Boma & Braai — Boma and braai at main lodge; braai under the trees; outdoor braai at The Stone Villa.
+3. Lapa — Pool table and darts at main lodge lapa.
+4. Braai under the trees — Additional braai area at main lodge.
+5. Trampoline & Jungle Gym — Family-friendly at main lodge.
+6. Swimming pool with slide — At main lodge; The Stone Villa is near the pool.
+
+---
+8. DAILY HOUSEKEEPING ("INVISIBLE SERVICE")
+---
+
+A two-column block (image left, text right on desktop; stacked on mobile):
+- Left: A photo of daily housekeeping service at MIWESU.
+- Right:
+  - Small gold label: "Invisible Service".
+  - Heading: "Daily Housekeeping".
+  - Two paragraphs explaining that housekeeping works invisibly (beds made, dishes cleaned, spaces refreshed while guests are out), and that the team respects privacy and works around the guest's schedule.
+
+---
+9. LOCATION & ACCESS
+---
+
+A highlighted block (gold-tinted background, gold border) containing:
+- A map-pin icon and heading: "Location & Access".
+- Paragraph: Both residences are inside MIWESU Game Farm, about 40 km from Thabazimbi on the D1432 district road; the drive is described as part of the experience.
+- Paragraph on vehicle requirements: high-clearance recommended, especially October–March; D1432 is gravel and can be challenging after rain.
+- Two short items with icons:
+  - 4x4 Tracks — Extensive farm tracks for game viewing and exploration.
+  - Secure Perimeter — Electric fencing and secure boundaries for safety.
+
+---
+10. BOTTOM CALL-TO-ACTION BANNER
+---
+
+A solid gold (full-width) band with dark text:
+- Heading: "Experience Absolute Privacy".
+- Paragraph: Both residences offer exclusive use, complete privacy and autonomy; suitable for family hunting safaris or corporate retreats as a base for the Makoppa adventure.
+- Two buttons:
+  - "Request Availability" (solid dark/onyx, links to /contact).
+  - "View Rates" (outline dark, links to /rates).
+
+---
+11. COMPONENTS AND FEATURES (TECHNICAL)
+---
+
+- Layout: The page uses the global Layout component (navigation + main + footer).
+- Images: Next.js Image component; the hero and facility images use priority or lazy loading as appropriate. Facility images have a fallback if the primary image fails to load (FacilityImage helper).
+- Reveal on scroll: Sections use a "reveal" class so that as you scroll, they animate into view (simple scroll-triggered visibility).
+- Links: All "View The Homestead", "View The Stone Villa", "Book your stay", "Inquire", "Request Availability", and "View Rates" are proper links to the routes listed above.
+- Responsive behaviour: Grids collapse to one or two columns on small screens; the two main residence cards stack vertically on mobile; the housekeeping and location blocks stack on small screens.
+- Styling: Dark (onyx) background for the main content area, gold for accents and labels, white/gray for text; serif (Cinzel) for headings, sans (Montserrat) for body; borders and hover states (e.g. card border turns gold on hover, images scale on hover).
+
+---
+12. BENEFITS FOR THE USER
+---
+
+- Clear overview of both residences and total capacity (22 sleepers) in one place.
+- Quick comparison: Homestead (16, full lodge with pool/lapa/trampoline) vs Stone Villa (6, near the pool, more compact).
+- Multiple paths to action: Book your stay, View Homestead, View Stone Villa, Inquire, Request Availability, View Rates.
+- Detailed facilities: photo grids for each residence so users can see rooms and areas before booking.
+- Amenities at a glance: kitchen, braai, lapa, pool, trampoline, etc., in one grid.
+- Trust and service: daily housekeeping and "invisible service" messaging.
+- Practical info: location, access, vehicle requirements, security.
+- Strong closing CTA: absolute privacy and two clear buttons (contact and rates).
+
+---
+13. PAGE SUMMARY IN ONE PARAGRAPH
+---
+
+The Residences page opens with a hero image and a "Private Residences" headline, then a dark main section that introduces "Your Private Sanctuary" and summarises both lodges (Homestead 16 sleepers, Stone Villa 6 sleepers). Two large cards present each residence with image, description, bullet points, and links to their dedicated pages and to contact. Below that, photo grids show every facility for the Main Lodge House and for The Stone Villa, followed by an "On the Property" amenity grid (kitchen, braai, lapa, pool, trampoline, etc.). A daily housekeeping section explains "invisible service," and a location block covers access and vehicle requirements. The page ends with a gold CTA banner inviting users to request availability or view rates, reinforcing exclusive use and absolute privacy.
+
+---
+End of document. Page route: /residences. Last described from app/residences/page.tsx and lib/residences-data.ts.

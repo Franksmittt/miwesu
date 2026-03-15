@@ -17,13 +17,13 @@ async function getRates(): Promise<RateItemPDF[]> {
   try {
     const items = await prisma.rateItem.findMany({
       orderBy: [{ category: 'asc' }, { sortOrder: 'asc' }],
-    }) as Array<{ id: string; name: string; category: string; priceZAR: number; priceUSD: number }>
+    })
     return items.map((r) => ({
       id: r.id,
       name: r.name,
       category: r.category as RateItemPDF['category'],
-      priceZAR: r.priceZAR,
-      priceUSD: r.priceUSD,
+      priceZAR: Number(r.priceZAR) || 0,
+      priceUSD: Number(r.priceUSD) || 0,
     }))
   } catch {
     return getDefaultRateItems().map((r) => ({
@@ -58,7 +58,9 @@ export async function GET() {
       },
     })
   } catch (e) {
-    console.error('[pricelist-pdf]', e)
-    return NextResponse.json({ error: 'Failed to generate PDF' }, { status: 500 })
+    const err = e as Error
+    console.error('[pricelist-pdf]', err?.message ?? err, err?.stack)
+    const message = process.env.NODE_ENV === 'development' ? (err?.message ?? String(e)) : 'Failed to generate PDF'
+    return NextResponse.json({ error: message }, { status: 500 })
   }
 }

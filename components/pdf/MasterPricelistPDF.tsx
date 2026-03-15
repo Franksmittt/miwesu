@@ -5,25 +5,18 @@ import {
   Text,
   View,
   StyleSheet,
-  Font,
 } from '@react-pdf/renderer'
 
-Font.register({
-  family: 'Cinzel',
-  src: 'https://fonts.gstatic.com/s/cinzel/v19/8vIJ7ww63mVu7gtR-kwKxNvkbA.ttf',
-})
-
-Font.register({
-  family: 'Montserrat',
-  src: 'https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNF3Lw.ttf',
-})
+// Use built-in PDF fonts only so generation works in serverless (no network font fetch).
+const fontTitle = 'Helvetica-Bold'
+const fontBody = 'Helvetica'
 
 const styles = StyleSheet.create({
   page: {
     backgroundColor: '#0A0A0A',
     color: '#E0E0E0',
     padding: 40,
-    fontFamily: 'Montserrat',
+    fontFamily: fontBody,
   },
   headerContainer: {
     marginBottom: 30,
@@ -35,7 +28,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',
   },
   brandTitle: {
-    fontFamily: 'Cinzel',
+    fontFamily: fontTitle,
     fontSize: 28,
     color: '#D4AF37',
     letterSpacing: 2,
@@ -53,7 +46,7 @@ const styles = StyleSheet.create({
     color: '#D4AF37',
   },
   sectionTitle: {
-    fontFamily: 'Cinzel',
+    fontFamily: fontTitle,
     fontSize: 18,
     color: '#F3E5AB',
     marginTop: 20,
@@ -77,7 +70,7 @@ const styles = StyleSheet.create({
     borderColor: '#2A2A2A',
   },
   itemName: {
-    fontFamily: 'Cinzel',
+    fontFamily: fontTitle,
     fontSize: 14,
     color: '#FFFFFF',
     marginBottom: 8,

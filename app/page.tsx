@@ -84,11 +84,11 @@ export default function Home() {
           />
         </div>
 
-        {/* Radial overlay: dark edges, clearer center so the subject pops */}
+        {/* Radial overlay: dark edges, darker center band behind text for readability */}
         <div
           className="absolute inset-0 z-[1] pointer-events-none"
           style={{
-            background: 'radial-gradient(circle at center, rgba(5,5,5,0.15) 0%, rgba(5,5,5,0.85) 100%)',
+            background: 'radial-gradient(ellipse 80% 70% at 50% 45%, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.6) 50%, rgba(5,5,5,0.88) 100%)',
           }}
           aria-hidden
         />
@@ -104,7 +104,8 @@ export default function Home() {
           }}
         >
           <motion.span
-            className="font-sans text-[0.8rem] uppercase tracking-[0.3em] text-gold-300 mb-6 block"
+            className="font-sans text-[0.85rem] md:text-[0.9rem] uppercase tracking-[0.3em] text-gold-400 font-bold mb-6 block"
+            style={{ textShadow: '0 1px 2px rgba(0,0,0,0.8), 0 2px 8px rgba(0,0,0,0.6)' }}
             variants={{
               hidden: { opacity: 0, y: 12 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.22, 0.25, 0, 1] } },
@@ -114,8 +115,8 @@ export default function Home() {
           </motion.span>
 
           <motion.h1
-            className="font-serif text-[3.2rem] md:text-[5rem] font-normal text-marble tracking-[0.08em] mb-4 leading-none"
-            style={{ textShadow: '0 4px 20px rgba(0,0,0,0.4)' }}
+            className="font-serif text-[3.2rem] md:text-[5rem] font-normal text-white tracking-[0.08em] mb-4 leading-none"
+            style={{ textShadow: '0 2px 4px rgba(0,0,0,0.8), 0 4px 16px rgba(0,0,0,0.6), 0 0 40px rgba(0,0,0,0.4)' }}
             variants={{
               hidden: { opacity: 0, y: 20 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 0.25, 0, 1] } },
@@ -125,8 +126,8 @@ export default function Home() {
           </motion.h1>
 
           <motion.p
-            className="font-sans text-[1.1rem] font-light text-[#eaeaea] max-w-xl mx-auto mb-14 leading-[1.8]"
-            style={{ textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}
+            className="font-sans text-[1.15rem] md:text-[1.2rem] font-light text-white max-w-xl mx-auto mb-14 leading-[1.8]"
+            style={{ textShadow: '0 1px 3px rgba(0,0,0,0.9), 0 2px 12px rgba(0,0,0,0.7)' }}
             variants={{
               hidden: { opacity: 0, y: 12 },
               visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.22, 0.25, 0, 1] } },

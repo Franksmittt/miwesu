@@ -173,7 +173,7 @@ export default function ContactPage() {
                       onChange={(e) =>
                         setFormData({ ...formData, intent: e.target.value })
                       }
-                      className="w-full bg-gray-50 border-0 border-b border-gray-200 text-onyx p-4 focus:border-gold-500 focus:ring-0 outline-none font-serif focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-0"
+                      className="w-full bg-white border-2 border-gray-400 text-onyx p-4 rounded-lg outline-none font-serif focus:border-gold-500 focus:ring-2 focus:ring-gold-500/30 focus-visible:outline-none"
                       required
                     >
                       <option value="">Select an option</option>
@@ -197,7 +197,7 @@ export default function ContactPage() {
                         onChange={(e) =>
                           setFormData({ ...formData, name: e.target.value })
                         }
-                        className="w-full bg-gray-50 border-0 border-b border-gray-200 text-onyx p-4 focus:border-gold-500 outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-0"
+                        className="w-full bg-white border-2 border-gray-400 text-onyx p-4 rounded-lg outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/30 focus-visible:outline-none"
                         required
                       />
                     </div>
@@ -212,7 +212,7 @@ export default function ContactPage() {
                         onChange={(e) =>
                           setFormData({ ...formData, phone: e.target.value })
                         }
-                        className="w-full bg-gray-50 border-0 border-b border-gray-200 text-onyx p-4 focus:border-gold-500 outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-0"
+                        className="w-full bg-white border-2 border-gray-400 text-onyx p-4 rounded-lg outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/30 focus-visible:outline-none"
                         required
                       />
                     </div>
@@ -229,7 +229,7 @@ export default function ContactPage() {
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })
                       }
-                      className="w-full bg-gray-50 border-0 border-b border-gray-200 text-onyx p-4 focus:border-gold-500 outline-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-0"
+                      className="w-full bg-white border-2 border-gray-400 text-onyx p-4 rounded-lg outline-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/30 focus-visible:outline-none"
                       required
                     />
                   </div>
@@ -245,7 +245,7 @@ export default function ContactPage() {
                         setFormData({ ...formData, message: e.target.value })
                       }
                       rows={6}
-                      className="w-full bg-gray-50 border-0 border-b border-gray-200 text-onyx p-4 focus:border-gold-500 outline-none resize-none focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-0"
+                      className="w-full bg-white border-2 border-gray-400 text-onyx p-4 rounded-lg outline-none resize-none focus:border-gold-500 focus:ring-2 focus:ring-gold-500/30 focus-visible:outline-none"
                       required
                     ></textarea>
                   </div>
@@ -294,24 +294,24 @@ export default function ContactPage() {
 
             {/* Additional Information */}
             <div className="mt-12 sm:mt-20 grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-12 sm:mb-20">
-              <div className="bg-white p-6 sm:p-8 border border-gray-100 reveal delay-200">
-                <Clock className="w-8 h-8 sm:w-10 sm:h-10 text-gold-500 mb-3 sm:mb-4" />
-                <h3 className="font-serif text-lg sm:text-xl text-onyx mb-2 sm:mb-3">Response Time</h3>
-                <p className="font-sans text-gray-600 text-sm leading-relaxed">
+              <div className="bg-onyx p-6 sm:p-8 border-2 border-gold-500/30 rounded-xl text-white reveal delay-200">
+                <Clock className="w-8 h-8 sm:w-10 sm:h-10 text-gold-400 mb-3 sm:mb-4" />
+                <h3 className="font-serif text-lg sm:text-xl text-white mb-2 sm:mb-3">Response Time</h3>
+                <p className="font-sans text-gray-300 text-sm leading-relaxed">
                   Our concierge team typically responds within 24-48 hours. For urgent inquiries, please call directly.
                 </p>
               </div>
-              <div className="bg-white p-6 sm:p-8 border border-gray-100 reveal delay-300">
-                <Car className="w-8 h-8 sm:w-10 sm:h-10 text-gold-500 mb-3 sm:mb-4" />
-                <h3 className="font-serif text-lg sm:text-xl text-onyx mb-2 sm:mb-3">Transportation</h3>
-                <p className="font-sans text-gray-600 text-sm leading-relaxed">
+              <div className="bg-onyx p-6 sm:p-8 border-2 border-gold-500/30 rounded-xl text-white reveal delay-300">
+                <Car className="w-8 h-8 sm:w-10 sm:h-10 text-gold-400 mb-3 sm:mb-4" />
+                <h3 className="font-serif text-lg sm:text-xl text-white mb-2 sm:mb-3">Transportation</h3>
+                <p className="font-sans text-gray-300 text-sm leading-relaxed">
                   We can arrange airport transfers from OR Tambo International Airport (approximately 2.5 hours). High-clearance vehicles recommended for the D1432.
                 </p>
               </div>
-              <div className="bg-white p-6 sm:p-8 border border-gray-100 reveal delay-400 sm:col-span-2 md:col-span-1">
-                <MapPin className="w-8 h-8 sm:w-10 sm:h-10 text-gold-500 mb-3 sm:mb-4" />
-                <h3 className="font-serif text-lg sm:text-xl text-onyx mb-2 sm:mb-3">Location</h3>
-                <p className="font-sans text-gray-600 text-sm leading-relaxed">
+              <div className="bg-onyx p-6 sm:p-8 border-2 border-gold-500/30 rounded-xl text-white reveal delay-400 sm:col-span-2 md:col-span-1">
+                <MapPin className="w-8 h-8 sm:w-10 sm:h-10 text-gold-400 mb-3 sm:mb-4" />
+                <h3 className="font-serif text-lg sm:text-xl text-white mb-2 sm:mb-3">Location</h3>
+                <p className="font-sans text-gray-300 text-sm leading-relaxed">
                   D1432 Road, Makoppa District. Approximately 40km from Thabazimbi town. GPS: -24.4523956, 27.0450853
                 </p>
               </div>

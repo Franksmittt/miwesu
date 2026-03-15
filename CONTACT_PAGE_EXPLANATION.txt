@@ -1,0 +1,178 @@
+CONTACT US PAGE — COMPLETE EXPLANATION
+========================================
+URL: http://localhost:3000/contact (or /contact on the live site)
+
+This document describes the Contact Us page in full: what it looks like, what it contains, how it is structured, and what each part is for. It is written so that someone who cannot see the screen can understand the whole page.
+
+---
+1. PURPOSE OF THE PAGE
+---
+
+The Contact Us page is the main inquiry and concierge hub for MIWESU Game Farm. It lets visitors send a message to the concierge team (inquiries, bookings, special requests), see how to reach the farm by email and phone, and find practical information such as response times, transportation, and location. The page also explains that all prospective guests are vetted to maintain conservation standards and privacy.
+
+---
+2. OVERALL LAYOUT AND WRAPPER
+---
+
+The page sits inside the site-wide Layout. That means:
+- At the top: the main site navigation (logo, menu: Stay, Experience, Practical, Journal, Reach, etc.).
+- The main content fills the centre of the screen on a light marble/off-white background.
+- At the bottom: the site footer (brand, tagline, infinite scroll of images, links to Stay, Experience, Concierge, Reach us, contact, social).
+
+The page has one hero section at the top, then one long scrollable section (marble background) containing the contact information, the form, info boxes, map, directions, and a final call-to-action.
+
+---
+3. HERO SECTION (TOP OF PAGE)
+---
+
+- A large hero image occupies the top portion (about 50% of viewport height on mobile, 60% on larger screens). The image is a panoramic scene (Makoppa/Thabazimbi area) with reduced opacity and a dark gradient overlay so text sits clearly on top.
+- Centred over the image:
+  - A small gold uppercase label: "Get In Touch".
+  - The main heading: "Contact Us" (the word "Us" is in a gold gradient).
+- This hero sets the tone: get in touch with the concierge.
+
+---
+4. MAIN CONTACT SECTION — TWO COLUMNS (DESKTOP)
+---
+
+Below the hero, the main content is in a wide container. On desktop it is a two-column grid: left column is "Concierge Services" (contact details), right column is the inquiry form. On smaller screens the two columns stack vertically.
+
+4.1 Left column — Concierge Services
+
+- Heading: "Concierge Services" (large serif, dark/onyx).
+- A paragraph explaining that the concierge team assists with inquiries, bookings, and special requests; that guests are vetted for conservation and privacy; that the property is on the D1432 in the Makoppa district, about 40 km from Thabazimbi; and that high-clearance vehicles are recommended, especially October–March.
+
+Then three contact blocks, each with an icon and text:
+
+- Location (map-pin icon)
+  - Heading: "Location".
+  - Address: D1432 Road, Makoppa District; Thabazimbi, Limpopo 0380; South Africa.
+  - Subtext: Approximately 40km from Thabazimbi town; GPS: -24.4523956, 27.0450853.
+
+- Email (mail icon)
+  - Heading: "Email".
+  - Link: info@miwesu.co.za (clickable mailto link).
+
+- Phone (phone icon)
+  - Heading: "Phone".
+  - Link: +27 72 717 2572 (Business WhatsApp) — opens WhatsApp.
+  - Link: +27 73 030 9679 — click-to-call.
+  - Subtext: 24/7 Access • Wood orders welcome via WhatsApp.
+
+4.2 Right column — Inquiry form
+
+The form includes:
+
+- Primary Intent (required)
+  - Label: "Primary Intent".
+  - A dropdown (select) with options: "Select an option", "Ethical Hunting (Meat/Trophy)", "Conservation Experience (Green Hunt)", "Observer / Photographic Retreat", "Corporate / Syndicate Inquiry", "Accommodation Only".
+  - Styled as a white box with a visible gray border and rounded corners; focus state shows a gold border and ring.
+
+- Name (required)
+  - Text input, same box style.
+
+- Phone (required)
+  - Telephone input, same box style.
+  - Name and Phone are in a two-column row on desktop.
+
+- Email (required)
+  - Email input, same box style.
+
+- Message (required)
+  - Multi-line text area (about 6 lines), same box style.
+
+- Guardian's Pledge (required)
+  - A checkbox with the text: "I agree to the 'Guardian's Pledge' and understand that noisy behavior or disrespect for wildlife will result in immediate eviction."
+  - The checkbox must be checked to submit.
+
+- Submit button
+  - Full-width button: "Submit Inquiry" (or "Sending…" while submitting). Dark background (onyx), white text, gold hover. Includes a send icon.
+
+- Below the button
+  - Text: "Or email directly: info@miwesu.co.za" (the email is a link with subject pre-filled for enquiries from the site).
+
+- After submit
+  - On success: a green message: "Thank you, Wayne and Melissa will be in touch shortly."
+  - On error: a red message showing the error (e.g. network error or Resend API message). The form does not clear so the user can correct and try again.
+
+Form behaviour: Submitting sends the data to the site’s contact API; the concierge receives the enquiry by email. All fields are required; the checkbox is required for the Guardian's Pledge.
+
+---
+5. ADDITIONAL INFORMATION — THREE DARK BOXES
+---
+
+Below the contact/form grid are three info boxes in a row (on desktop; on smaller screens they stack or go two then one). Each box has a dark (onyx) background, light text, a gold-tinted border, rounded corners, and an icon at the top.
+
+- Response Time (clock icon)
+  - Heading: "Response Time".
+  - Text: Our concierge team typically responds within 24-48 hours. For urgent inquiries, please call directly.
+
+- Transportation (car icon)
+  - Heading: "Transportation".
+  - Text: We can arrange airport transfers from OR Tambo International Airport (approximately 2.5 hours). High-clearance vehicles recommended for the D1432.
+
+- Location (map-pin icon)
+  - Heading: "Location".
+  - Text: D1432 Road, Makoppa District. Approximately 40km from Thabazimbi town. GPS: -24.4523956, 27.0450853.
+
+These boxes use the same onyx-and-gold styling for consistency and emphasis.
+
+---
+6. MAP SECTION — "FIND US"
+---
+
+- Centred heading: "Find Us".
+- A large embedded map area (Google Maps iframe) showing the general area of the farm (height about 24rem). The map is in a light gray rounded container.
+- Below the map, two side-by-side panels (stack on mobile):
+
+  - Directions from Thabazimbi
+    - Numbered list: from Thabazimbi town center head northwest on D1432; continue about 40 km; farm gate marked with MIWESU signage; GPS -24.4523956, 27.0450853.
+
+  - Important Notes
+    - Bullet list: D1432 is gravel, high-clearance recommended; conditions can be challenging in rainy season (October–March); stock up in Thabazimbi; allow about 45 minutes from Thabazimbi; nearest major airport OR Tambo (2.5 hours drive).
+
+---
+7. BOTTOM CALL-TO-ACTION BANNER
+---
+
+A highlighted band (gold-tinted gradient background, gold border) with:
+- Heading: "Ready to Experience Miwesu?"
+- Paragraph: Submit your inquiry and the concierge will guide you through the vetting process and help plan your Makoppa experience.
+- Two buttons:
+  - "View Rates" (solid dark/onyx, links to /rates).
+  - "Learn More" (outline dark, links to /about).
+
+---
+8. COMPONENTS AND FEATURES (TECHNICAL)
+---
+
+- Layout: The page uses the global Layout component (navigation + main + footer).
+- Hero: Next.js Image component with a panoramic image; gradient overlay for text contrast.
+- Reveal on scroll: Sections use a "reveal" class so that as you scroll, they animate into view (scroll-triggered visibility).
+- Form: Client-side state (name, email, phone, intent, message); submit sends POST to /api/contact; success/error state and message displayed; form clears on success.
+- Form inputs: White background, 2px gray border, rounded corners; focus state uses gold border and ring for visibility and accessibility.
+- Contact links: Email is mailto; phone numbers are tel: and WhatsApp links.
+- Responsive behaviour: Two-column layout becomes single column on small screens; the three info boxes reflow (e.g. 2+1 or stack); map and directions/notes stack on mobile.
+- Styling: Marble background for main section; onyx and gold for hero, info boxes, and CTAs; serif (Cinzel) for headings, sans for body; gold for accents and focus states.
+
+---
+9. BENEFITS FOR THE USER
+---
+
+- One place to reach the concierge: form plus email and phone.
+- Clear primary-intent options so the team can prioritize (hunting, photographic, corporate, accommodation only, etc.).
+- Guardian's Pledge sets expectations for behaviour and reinforces conservation.
+- Response time and transportation spelled out (24–48 hours, OR Tambo transfers, D1432 advice).
+- Location and directions in text and map form.
+- Visible, well-bordered form fields and dark info boxes for quick scanning.
+- Alternative path: "Or email directly" for users who prefer not to use the form.
+- Clear next steps: View Rates and Learn More from the bottom CTA.
+
+---
+10. PAGE SUMMARY IN ONE PARAGRAPH
+---
+
+The Contact Us page opens with a hero image and "Contact Us" headline, then a two-column section: left column has "Concierge Services" with location (D1432, Makoppa, Thabazimbi, GPS), email (info@miwesu.co.za), and phone (WhatsApp and direct number); right column has an inquiry form with Primary Intent dropdown, Name, Phone, Email, Message, and the Guardian's Pledge checkbox, plus a Submit button and "Or email directly" link. Below that, three dark (onyx) info boxes cover Response Time (24–48 hours), Transportation (OR Tambo, D1432), and Location (address and GPS). A "Find Us" section includes an embedded map and two panels (Directions from Thabazimbi and Important Notes). The page ends with a gold-tinted CTA band inviting users to submit an inquiry and offering links to View Rates and Learn More.
+
+---
+End of document. Page route: /contact. Source: app/contact/page.tsx.

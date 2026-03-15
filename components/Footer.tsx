@@ -29,7 +29,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-4 overflow-hidden order-1 md:order-2 min-h-[140px] md:min-h-[200px]">
             <div className="flex w-max h-full animate-footer-marquee">
               {footerImages.map((item, i) => (
-                <div key={i} className="relative flex-shrink-0 w-[140px] h-[140px] md:w-[200px] md:h-[200px] rounded-sm overflow-hidden border border-white/10 ml-2 md:ml-4 first:ml-0">
+                <div key={i} className="relative flex-shrink-0 w-[140px] h-[140px] md:w-[200px] md:h-[200px] rounded-xl overflow-hidden border border-white/10 ml-2 md:ml-4 first:ml-0">
                   <Image
                     src={item.src}
                     alt={item.title ?? 'MIWESU'}

@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard } from '@/lib/seo'
 import { BreadcrumbSchema } from '@/components/StructuredData'
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.com'
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.co.za'
 const path = 'book'
 const breadcrumbItems = [
   { name: 'Home', url: baseUrl + '/' },
@@ -11,11 +11,11 @@ const breadcrumbItems = [
 
 export const metadata: Metadata = {
   title: 'Book Your Stay | Enquiry & Availability',
-  description: 'Submit your stay enquiry for MIWESU Game Farm, Thabazimbi. Check availability for The Homestead and The Stone Villa. Conservation harvest and luxury safari bookings. Malaria-free Limpopo.',
+  description: "Submit your stay enquiry for MIWESU Game Farm, Thabazimbi. Check availability for Hunter's House and Rooibok Kraal. Conservation harvest and luxury safari bookings. Malaria-free Limpopo.",
   keywords: ['book Miwesu', 'hunting lodge booking', 'Thabazimbi accommodation', 'game farm stay enquiry', 'conservation harvest booking', 'Makoppa', 'Limpopo', 'availability'],
   openGraph: generateOpenGraph(
     'Book Your Stay | MIWESU Game Farm',
-    'Submit your stay enquiry. Check availability for The Homestead and The Stone Villa. Conservation harvest and luxury safari in malaria-free Limpopo.',
+    "Submit your stay enquiry. Check availability for Hunter's House and Rooibok Kraal. Conservation harvest and luxury safari in malaria-free Limpopo.",
     constructCanonicalUrl(path),
     `${baseUrl}/og-image.jpg`
   ),

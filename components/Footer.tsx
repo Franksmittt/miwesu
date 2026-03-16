@@ -51,8 +51,8 @@ export default function Footer() {
             </h2>
             <ul className="space-y-1 font-sans text-sm">
               <li><Link href="/residences" className="text-gray-400 hover:text-white transition-colors flex items-center gap-1 group py-1.5 touch-manipulation"><span>Residences</span><ArrowUpRight className="w-3 h-3 opacity-0 -translate-y-0.5 translate-x-0.5 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all flex-shrink-0" /></Link></li>
-              <li><Link href="/residences/homestead" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">The Homestead</Link></li>
-              <li><Link href="/residences/stone-villa" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">The Stone Villa</Link></li>
+              <li><Link href="/residences/homestead" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">Hunter&apos;s House</Link></li>
+              <li><Link href="/residences/stone-villa" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">Rooibok Kraal</Link></li>
               <li><Link href="/gallery" className="text-gray-400 hover:text-white transition-colors py-1.5 flex items-center touch-manipulation block">Gallery</Link></li>
             </ul>
           </div>

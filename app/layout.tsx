@@ -22,7 +22,7 @@ const montserrat = Montserrat({
   variable: '--font-montserrat',
 })
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.com'
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.co.za'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -87,6 +87,12 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: constructCanonicalUrl(''),
+    languages: {
+      'en-GB': constructCanonicalUrl(''),
+      'de': constructCanonicalUrl('de'),
+      'es': constructCanonicalUrl('es'),
+      'x-default': constructCanonicalUrl(''),
+    },
   },
   icons: {
     icon: [
@@ -99,8 +105,9 @@ export const metadata: Metadata = {
     ],
   },
   verification: {
-    // Add Google Search Console verification when available
-    // google: 'verification-code',
+    // Google Search Console: add your verification meta value here when you have it.
+    // In GSC: Property → Settings → Verification → copy the content value from the meta tag.
+    // google: 'your-verification-code-here',
   },
 }
 

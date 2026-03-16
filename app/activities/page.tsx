@@ -194,7 +194,7 @@ export default function ActivitiesPage() {
                   </div>
                   <div className="relative h-[300px]">
                     <Image
-                      src="/images/conservation-harvest-kudu.jpg"
+                      src={activityImages.conservationHarvestKudu}
                       alt="Kudu bull in peak condition"
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
@@ -298,7 +298,7 @@ export default function ActivitiesPage() {
                         The Darkest Skies
                       </h3>
                       <p className="text-gray-300 text-lg leading-loose mb-6">
-                        Thabazimbi offers some of the darkest skies in the southern hemisphere. Far from light pollution, the Makoppa district provides an unparalleled stargazing experience. The Stone Villa includes a telescope for private astronomy sessions.
+                        Thabazimbi offers some of the darkest skies in the southern hemisphere. Far from light pollution, the Makoppa district provides an unparalleled stargazing experience. Rooibok Kraal includes a telescope for private astronomy sessions.
                       </p>
                       <p className="text-gray-300 text-lg leading-loose mb-8">
                         From the Milky Way arching overhead to the Southern Cross guiding the way, the night sky at Miwesu is a spectacle that rivals any daytime safari. Private astronomy sessions can be arranged, perfect for couples or families seeking a unique experience.
@@ -368,7 +368,7 @@ export default function ActivitiesPage() {
               <div className="grid md:grid-cols-2 gap-12 items-center mb-20 reveal delay-400">
                 <div className="relative h-[500px]">
                   <Image
-                    src="/images/4x4-trails-main.jpg"
+                    src={activityImages.fourByFourMain}
                     alt="4x4 tracks through the Makoppa district"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"

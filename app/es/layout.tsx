@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard } from '@/lib/seo'
 import { BreadcrumbSchema } from '@/components/StructuredData'
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.com'
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.co.za'
 const breadcrumbItems = [
   { name: 'Home', url: baseUrl + '/' },
   { name: 'Caza en Limpopo', url: constructCanonicalUrl('es') },
@@ -18,7 +18,14 @@ export const metadata: Metadata = {
     constructCanonicalUrl('es'),
     `${baseUrl}/og-image.jpg`
   ),
-  alternates: { canonical: constructCanonicalUrl('es') },
+  alternates: {
+    canonical: constructCanonicalUrl('es'),
+    languages: {
+      'es': constructCanonicalUrl('es'),
+      'en-GB': baseUrl + '/',
+      'x-default': baseUrl + '/',
+    },
+  },
 }
 
 export default function EsLayout({ children }: { children: React.ReactNode }) {

@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard, generateTouristTripSchema } from '@/lib/seo'
 import { TouristTripSchema, BreadcrumbSchema } from '@/components/StructuredData'
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.com'
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.co.za'
 const breadcrumbItems = [
   { name: 'Home', url: baseUrl + '/' },
   { name: 'Activities & Experiences', url: constructCanonicalUrl('activities') },

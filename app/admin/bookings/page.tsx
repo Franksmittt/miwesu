@@ -140,27 +140,27 @@ export default function AdminBookingsPage() {
               <h2 className="font-serif text-lg text-white mb-4">Calendar view</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-onyx-light border border-white/10 rounded-lg p-6">
-                  <h3 className="text-gold-400 font-serif mb-4">The Homestead</h3>
+                  <h3 className="text-gold-400 font-serif mb-4">Hunter&apos;s House</h3>
                   <div className="space-y-2">
-                    {bookings.filter((b) => b.unitName === 'The Homestead').map((b) => (
+                    {bookings.filter((b) => b.unitName === "Hunter's House").map((b) => (
                       <div key={b.id} className="text-sm text-gray-300">
                         {new Date(b.checkIn).toLocaleDateString()} – {new Date(b.checkOut).toLocaleDateString()} · {b.guestName}
                       </div>
                     ))}
-                    {bookings.filter((b) => b.unitName === 'The Homestead').length === 0 && (
+                    {bookings.filter((b) => b.unitName === "Hunter's House").length === 0 && (
                       <p className="text-gray-500 text-sm">No bookings</p>
                     )}
                   </div>
                 </div>
                 <div className="bg-onyx-light border border-white/10 rounded-lg p-6">
-                  <h3 className="text-gold-400 font-serif mb-4">The Stone Villa</h3>
+                  <h3 className="text-gold-400 font-serif mb-4">Rooibok Kraal</h3>
                   <div className="space-y-2">
-                    {bookings.filter((b) => b.unitName === 'The Stone Villa').map((b) => (
+                    {bookings.filter((b) => b.unitName === 'Rooibok Kraal').map((b) => (
                       <div key={b.id} className="text-sm text-gray-300">
                         {new Date(b.checkIn).toLocaleDateString()} – {new Date(b.checkOut).toLocaleDateString()} · {b.guestName}
                       </div>
                     ))}
-                    {bookings.filter((b) => b.unitName === 'The Stone Villa').length === 0 && (
+                    {bookings.filter((b) => b.unitName === 'Rooibok Kraal').length === 0 && (
                       <p className="text-gray-500 text-sm">No bookings</p>
                     )}
                   </div>

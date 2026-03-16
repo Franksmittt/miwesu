@@ -3,7 +3,7 @@ import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard } from '@
 import { FAQPageSchema, BreadcrumbSchema } from '@/components/StructuredData'
 import { FAQ_ITEMS } from '@/lib/faq-data'
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.com'
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.co.za'
 const breadcrumbItems = [
   { name: 'Home', url: baseUrl + '/' },
   { name: 'FAQ', url: constructCanonicalUrl('faq') },

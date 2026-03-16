@@ -8,6 +8,7 @@ import { DollarSign, Calendar, Users, ArrowRight, Download, Home, Target, Camera
 import { getCurrency, getIntent } from '@/lib/cookies'
 import CurrencySwitcher from '@/components/CurrencySwitcher'
 import { lodgeSummary } from '@/lib/residences-data'
+import { TERMS_SECTIONS } from '@/lib/terms-data'
 
 export default function RatesPage() {
   const [currency, setCurrency] = useState<'ZAR' | 'USD'>('USD')
@@ -99,30 +100,30 @@ export default function RatesPage() {
               </h3>
               <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
                 <div className="bg-onyx-light border border-white/5 p-6 sm:p-8">
-                  <h4 className="font-serif text-xl sm:text-2xl text-white mb-3 sm:mb-4">The Homestead</h4>
-                  <p className="text-gray-400 mb-4 sm:mb-6 text-sm sm:text-base">{lodgeSummary.mainHouse.sleepers}-sleeper exclusive use</p>
+                  <h4 className="font-serif text-xl sm:text-2xl text-white mb-3 sm:mb-4">Hunter&apos;s House</h4>
+                  <p className="text-gray-400 mb-4 sm:mb-6 text-sm sm:text-base">{lodgeSummary.mainHouse.sleepers}-sleeper exclusive use • Min 3 nights</p>
                   <div className="space-y-3 sm:space-y-4">
                     <div className="flex justify-between items-center border-b border-white/10 pb-3 sm:pb-4 flex-wrap gap-2">
                       <span className="text-gray-400 uppercase text-xs tracking-widest">
-                        Per Night
+                        Per person per night
                       </span>
                       <span className="font-serif text-xl sm:text-2xl text-gold-500">
-                        On request
+                        R850
                       </span>
                     </div>
                     <div className="flex justify-between items-center border-b border-white/10 pb-3 sm:pb-4 flex-wrap gap-2">
                       <span className="text-gray-400 uppercase text-xs tracking-widest">
-                        Weekly Rate
+                        Vehicle (bakkie) fee
                       </span>
                       <span className="font-serif text-xl sm:text-2xl text-gold-500">
-                        On request
+                        R750
                       </span>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-onyx-light border border-white/5 p-6 sm:p-8">
-                  <h4 className="font-serif text-xl sm:text-2xl text-white mb-3 sm:mb-4">The Stone Villa</h4>
+                  <h4 className="font-serif text-xl sm:text-2xl text-white mb-3 sm:mb-4">Rooibok Kraal</h4>
                   <p className="text-gray-400 mb-4 sm:mb-6 text-sm sm:text-base">{lodgeSummary.secondHouse.sleepers}-sleeper exclusive use</p>
                   <div className="space-y-3 sm:space-y-4">
                     <div className="flex justify-between items-center border-b border-white/10 pb-3 sm:pb-4 flex-wrap gap-2">
@@ -192,13 +193,13 @@ export default function RatesPage() {
                 <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
                   <div>
                     <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-4 block">
-                      The Homestead
+                      Hunter&apos;s House
                     </span>
                     <h3 className="font-serif text-4xl md:text-5xl text-white mb-6">
                       Exclusive Use Pricing
                     </h3>
                     <p className="text-gray-300 text-lg leading-loose mb-6">
-                      The Homestead offers complete privacy and autonomy for groups of up to 16 guests. Rates include exclusive use of the entire residence, daily housekeeping, all utilities, fiber optic internet, and full access to the reserve.
+                      Hunter&apos;s House offers complete privacy and autonomy for groups of 4–16 guests. R850 per person per night; minimum 3 nights. Children 0–3 free, 4–10 at 50%, 10+ full price. Vehicle (bakkie) fee R750. Rates include exclusive use, daily housekeeping, utilities, fibre internet, and full reserve access.
                     </p>
                     <p className="text-gray-300 text-lg leading-loose mb-8">
                       Weekly rates offer significant savings for extended stays. Minimum stay requirements may apply during peak seasons. All rates are quoted in South African Rand (ZAR) and are subject to change.
@@ -217,7 +218,7 @@ export default function RatesPage() {
                   <div className="relative h-[500px]">
                     <Image
                       src="/images/rates-homestead.jpg"
-                      alt="The Homestead luxury accommodation"
+                      alt="Hunter's House luxury accommodation"
                       fill
                       className="object-cover shadow-luxury"
                     />
@@ -229,20 +230,20 @@ export default function RatesPage() {
                 <div className="relative h-[500px] order-2 md:order-1">
                   <Image
                     src="/images/rates-stone-villa.jpg"
-                    alt="The Stone Villa intimate accommodation"
+                    alt="Rooibok Kraal intimate accommodation"
                     fill
                     className="object-cover shadow-luxury"
                   />
                 </div>
                 <div className="order-1 md:order-2">
-                  <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-4 block">
-                    The Stone Villa
+                    <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-4 block">
+                    Rooibok Kraal
                   </span>
                   <h3 className="font-serif text-4xl md:text-5xl text-white mb-6">
                     Intimate Sanctuary
                   </h3>
                   <p className="text-gray-300 text-lg leading-loose mb-6">
-                    Perfect for couples or small families, The Stone Villa offers the same exclusive use experience in a more intimate setting. Rates include all amenities, daily housekeeping, and full reserve access.
+                    Perfect for couples or small families, Rooibok Kraal offers the same exclusive use experience in a more intimate setting. Rates on request. Includes all amenities, daily housekeeping, and full reserve access.
                   </p>
                   <p className="text-gray-300 text-lg leading-loose mb-8">
                     The plunge pool, stargazing deck, and telescope make this an ideal choice for those seeking a romantic or contemplative retreat in the Makoppa district.
@@ -292,6 +293,29 @@ export default function RatesPage() {
                 <p className="text-center text-gray-400 text-sm mt-8">
                   Trophy fees for all species are provided on request. Contact our concierge for the full Investment Guide.
                 </p>
+              </div>
+            </div>
+
+            {/* Terms & Conditions */}
+            <div id="terms" className="mb-20 reveal delay-600 scroll-mt-24">
+              <h3 className="font-serif text-3xl text-white mb-8 flex items-center">
+                <Star className="w-8 h-8 text-gold-500 mr-4" />
+                Terms &amp; Conditions
+              </h3>
+              <div className="space-y-8">
+                {TERMS_SECTIONS.map((section) => (
+                  <div key={section.title} className="bg-onyx-light border border-white/5 p-6 sm:p-8">
+                    <h4 className="font-serif text-xl text-gold-400 mb-4">{section.title}</h4>
+                    <ul className="space-y-2 text-gray-300 text-sm sm:text-base">
+                      {section.items.map((item, i) => (
+                        <li key={i} className="flex gap-2">
+                          <span className="text-gold-500 shrink-0">•</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
               </div>
             </div>
 

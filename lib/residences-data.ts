@@ -25,11 +25,11 @@ export type ResidenceGroup = {
   facilities: ResidenceFacility[]
 }
 
-/** Main Lodge House (Homestead)  - 16 sleepers, 4 bedrooms, shared spaces + outdoor */
+/** Hunter's House (main lodge)  - 16 sleepers, 4 bedrooms, shared spaces + outdoor */
 export const mainLodgeHouse: ResidenceGroup = {
   id: 'main-lodge',
-  title: 'Main Lodge House',
-  subtitle: 'The Homestead',
+  title: 'Hunter\'s House',
+  subtitle: 'Hunter\'s House',
   sleepers: 16,
   facilities: [
     {
@@ -144,16 +144,16 @@ export const mainLodgeHouse: ResidenceGroup = {
   ],
 }
 
-/** The Stone Villa  - near the pool, 6 sleepers, 2 bedrooms */
+/** Rooibok Kraal  - near the pool, 6 sleepers, 2 bedrooms */
 export const secondHouse: ResidenceGroup = {
   id: 'second-house',
-  title: 'The Stone Villa',
+  title: 'Rooibok Kraal',
   subtitle: 'Near the pool · Sleeps 6',
   sleepers: 6,
   facilities: [
     {
       id: 'second-house-exterior',
-      label: 'The Stone Villa',
+      label: 'Rooibok Kraal',
       description: 'Thatched roof, tan stucco, sliding glass doors. Braai to the left of house. Lawn, bushveld.',
       imagePath: '/images/_filename_Thabazimbi_N_200jpeg_Nano_Banana_Pro_84885.jpg',
       fallbackImagePath: '/images/residences-second-house-main.jpg',
@@ -250,42 +250,42 @@ export const galleryAccommodationImages: Array<{
     src: '/images/residences-homestead-main.jpg',
     category: 'Accommodation',
     title: 'Main Lodge House',
-    description: 'The Homestead  - 16 sleepers, four bedrooms, kitchen, living, first patio, boma, lapa, pool and braai.',
+    description: 'Hunter\'s House  - 16 sleepers, four bedrooms, kitchen, living, first patio, boma, lapa, pool and braai.',
   },
   {
     src: '/images/residences-second-house-main.jpg',
     category: 'Accommodation',
-    title: 'The Stone Villa',
+    title: 'Rooibok Kraal',
     description: 'Near the pool  - 6 sleepers, kitchen, living, master and bunk room, two en-suites, outdoor braai.',
   },
   {
     src: '/images/_filename_Thabazimbi_N_200jpeg_Nano_Banana_Pro_84885.jpg',
     category: 'Accommodation',
-    title: 'The Stone Villa (exterior)',
+    title: 'Rooibok Kraal (exterior)',
     description: 'Thatched roof, tan walls, sliding glass doors; lawn and brick pathway; bushveld setting.',
   },
   {
     src: '/images/_filename_Thabazimbi_N_150jpeg_Nano_Banana_Pro_22262.jpg',
     category: 'Accommodation',
-    title: 'The Stone Villa at dusk',
+    title: 'Rooibok Kraal at dusk',
     description: 'Exterior at twilight with warm interior and pathway lighting; thatched roof, lawn and fence.',
   },
   {
     src: '/images/_filename_Thabazimbi_W_110jpg__Nano_Banana_Pro_89562.jpg',
     category: 'Accommodation',
-    title: 'The Stone Villa – lawn & patio',
+    title: 'Rooibok Kraal – lawn & patio',
     description: 'Family-friendly exterior; thatched roof, sliding doors, brick patio and lawn; bushveld beyond.',
   },
   {
     src: '/images/_filename_Thabazimbi_W_111jpg__Nano_Banana_Pro_22777.jpg',
     category: 'Accommodation',
-    title: 'The Stone Villa – morning patio',
-    description: 'Brick patio in front of Stone Villa; thatched roof, sliding door; outdoor living in the bushveld.',
+    title: 'Rooibok Kraal – morning patio',
+    description: 'Brick patio in front of Rooibok Kraal; thatched roof, sliding door; outdoor living in the bushveld.',
   },
   {
     src: '/images/_filename_Thabazimbi_W_110jpg__Nano_Banana_Pro_77108.jpg',
     category: 'Accommodation',
-    title: 'The Stone Villa – evening',
+    title: 'Rooibok Kraal – evening',
     description: 'Night outside the villa: lantern-lit lawn, starry sky; warm interior visible through glass doors.',
   },
   {
@@ -477,50 +477,50 @@ export const galleryAccommodationImages: Array<{
   {
     src: '/images/residences-second-house-kitchen.jpg',
     category: 'Accommodation',
-    title: 'The Stone Villa Kitchen',
+    title: 'The Rooibok Kraal Kitchen',
     description: 'Open-plan to living area.',
   },
   {
     src: '/images/_filename_Thabazimbi_N_158jpeg_Nano_Banana_Pro_84550.jpg',
     category: 'Accommodation',
-    title: 'The Stone Villa Kitchen',
+    title: 'The Rooibok Kraal Kitchen',
     description: 'U-shaped kitchen, breakfast bar and stools; light wood cabinets, dark granite; buffalo art, rooster decor.',
   },
   {
     src: '/images/_filename_Thabazimbi_N_162jpeg_Nano_Banana_Pro_88825.jpg',
     category: 'Accommodation',
-    title: 'The Stone Villa Kitchen (peninsula)',
-    description: 'Stone Villa kitchen – peninsula, appliances, sink area; light wood and dark countertops.',
+    title: 'The Rooibok Kraal Kitchen (peninsula)',
+    description: 'Rooibok Kraal kitchen – peninsula, appliances, sink area; light wood and dark countertops.',
   },
   {
     src: '/images/_filename_Thabazimbi_N_164jpeg_Nano_Banana_Pro_50956.jpg',
     category: 'Accommodation',
-    title: 'The Stone Villa Kitchen & bedroom',
+    title: 'The Rooibok Kraal Kitchen & bedroom',
     description: 'Kitchenette/bar with buffalo art; glimpse into bedroom with dark headboard; open-plan layout.',
   },
   {
     src: '/images/residences-second-house-living.jpg',
     category: 'Accommodation',
-    title: 'The Stone Villa Living',
+    title: 'The Rooibok Kraal Living',
     description: 'Living area with doors to master and second bedroom.',
   },
   {
     src: '/images/_filename_Thabazimbi_N_171jpeg_Nano_Banana_Pro_19305.jpg',
     category: 'Accommodation',
-    title: 'The Stone Villa Living',
-    description: 'Open-plan living with leather recliners, kitchen area; Stone Villa.',
+    title: 'The Rooibok Kraal Living',
+    description: 'Open-plan living with leather recliners, kitchen area; Rooibok Kraal.',
   },
   {
     src: '/images/_filename_Thabazimbi_N_166jpeg_Nano_Banana_Pro_08274.jpg',
     category: 'Accommodation',
-    title: 'The Stone Villa Living',
+    title: 'The Rooibok Kraal Living',
     description: 'Living/suite area with bed, TV and leather recliner; warm earthy tones.',
   },
   {
     src: '/images/_filename_Thabazimbi_N_174jpeg_Nano_Banana_Pro_17489.jpg',
     category: 'Accommodation',
-    title: 'The Stone Villa Living',
-    description: 'Entertainment area with smart TV, buffalo art and giraffe sculpture; Stone Villa.',
+    title: 'The Rooibok Kraal Living',
+    description: 'Entertainment area with smart TV, buffalo art and giraffe sculpture; Rooibok Kraal.',
   },
   {
     src: '/images/residences-second-house-master-bedroom.jpg',
@@ -532,25 +532,25 @@ export const galleryAccommodationImages: Array<{
     src: '/images/_filename_Thabazimbi_W_105jpg__Nano_Banana_Pro_96888.jpg',
     category: 'Accommodation',
     title: 'Master Bedroom',
-    description: 'Stone Villa master  - wooden bed, cow artwork, wardrobe; en-suite visible.',
+    description: 'Rooibok Kraal master  - wooden bed, cow artwork, wardrobe; en-suite visible.',
   },
   {
     src: '/images/_filename_Thabazimbi_W_103jpg__Nano_Banana_Pro_85162.jpg',
     category: 'Accommodation',
     title: 'Master Bedroom',
-    description: 'Stone Villa master  - queen bed, rustic headboard, nightstands and cow-at-sunset art.',
+    description: 'Rooibok Kraal master  - queen bed, rustic headboard, nightstands and cow-at-sunset art.',
   },
   {
     src: '/images/_filename_Thabazimbi_W_103jpg__Nano_Banana_Pro_87934.jpg',
     category: 'Accommodation',
     title: 'Master Bedroom',
-    description: 'Stone Villa master  - bed, headboard and artwork.',
+    description: 'Rooibok Kraal master  - bed, headboard and artwork.',
   },
   {
     src: '/images/_filename_Thabazimbi_W_101jpg__Nano_Banana_Pro_04906.jpg',
     category: 'Accommodation',
     title: 'Master Bedroom',
-    description: 'Stone Villa master  - dresser with mirror, bed and African decor.',
+    description: 'Rooibok Kraal master  - dresser with mirror, bed and African decor.',
   },
   {
     src: '/images/residences-second-house-ensuite.jpg',

@@ -17,8 +17,8 @@ export async function GET() {
     return NextResponse.json({
       ok: true,
       units: [
-        { id: 'mock-1', name: 'The Homestead', maxGuests: 16 },
-        { id: 'mock-2', name: 'The Stone Villa', maxGuests: 8 },
+        { id: 'mock-1', name: "Hunter's House", maxGuests: 16 },
+        { id: 'mock-2', name: 'Rooibok Kraal', maxGuests: 8 },
       ],
     })
   }

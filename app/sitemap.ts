@@ -4,7 +4,7 @@ import { SPECIES_SLUGS } from '@/lib/species-data'
 import { getBlogSlugs } from '@/lib/blog-posts'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.com'
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.co.za'
 
   const staticRoutes: Array<{ path: string; changeFrequency: 'daily' | 'weekly' | 'monthly'; priority: number }> = [
     { path: '', changeFrequency: 'daily', priority: 1.0 },

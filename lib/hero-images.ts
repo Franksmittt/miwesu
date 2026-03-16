@@ -9,7 +9,7 @@ export const heroImages = {
   residences: '/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg',
   /** Activities, partners: outdoor lodge life, braai under trees */
   activities: '/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg',
-  /** Rates: Stone Villa exterior */
+  /** Rates: Rooibok Kraal exterior */
   rates: '/images/_filename_Thabazimbi_N_200jpeg_Nano_Banana_Pro_84885.jpg',
   /** Wildlife, blog (limpopo): lodge in nature, panoramic patio */
   wildlife: '/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg',

@@ -56,7 +56,7 @@ export const FAQ_ITEMS: Array<{ question: string; answer: string }> = [
   {
     question: 'How much does a hunting safari in Limpopo cost?',
     answer:
-      'Hunting safari costs in Limpopo vary by package length, species, and accommodation. At MIWESU GAME FARM we offer transparent accommodation rates for The Homestead and The Stone Villa, plus activity and conservation harvest pricing. Our confidential 2026 Conservation Investment Guide details all rates. Contact our concierge for a tailored quote. We are in the Makoppa district, Thabazimbi, Limpopo.',
+      'Hunting safari costs in Limpopo vary by package length, species, and accommodation. At MIWESU GAME FARM we offer transparent accommodation rates for Hunter\'s House and Rooibok Kraal, plus activity and conservation harvest pricing. Our confidential 2026 Conservation Investment Guide details all rates. Contact our concierge for a tailored quote. We are in the Makoppa district, Thabazimbi, Limpopo.',
   },
   {
     question: 'When is the best time to hunt plains game in South Africa?',

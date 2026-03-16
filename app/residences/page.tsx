@@ -69,11 +69,11 @@ export default function ResidencesPage() {
 
         {/* 2 & 3. Flagship cards side by side on desktop */}
         <div className="w-[96vw] max-w-[1400px] mx-auto mb-[4vh] grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
-          {/* The Homestead */}
+          {/* Hunter's House */}
           <section className="h-[70vh] lg:min-h-[75vh] rounded-[40px] overflow-hidden border border-white/[0.08] relative group">
             <Image
               src="/images/residences-homestead-main.jpg"
-              alt="The Homestead at MIWESU"
+              alt="Hunter's House at MIWESU"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover transition-transform duration-[0.8s] ease-out group-hover:scale-[1.03]"
@@ -121,11 +121,11 @@ export default function ResidencesPage() {
             </div>
           </section>
 
-          {/* The Stone Villa */}
+          {/* Rooibok Kraal */}
           <section className="h-[70vh] lg:min-h-[75vh] rounded-[40px] overflow-hidden border border-white/[0.08] relative group">
             <Image
               src="/images/residences-second-house-main.jpg"
-              alt="The Stone Villa at MIWESU"
+              alt="Rooibok Kraal at MIWESU"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover transition-transform duration-[0.8s] ease-out group-hover:scale-[1.03]"
@@ -187,12 +187,12 @@ export default function ResidencesPage() {
             <div className="bg-onyx-light border border-white/[0.05] rounded-[32px] p-8 md:p-10 text-center transition-all duration-300 hover:bg-[#1a1a1c] hover:border-gold-500/20">
               <ChefHat className="w-10 h-10 text-gold-500 mx-auto mb-4" aria-hidden />
               <h3 className="font-serif text-lg text-white mb-2">Kitchen</h3>
-              <p className="text-[#a1a1a6] text-sm leading-relaxed">Full kitchen in main lodge and The Stone Villa.</p>
+              <p className="text-[#a1a1a6] text-sm leading-relaxed">Full kitchen in main lodge and Rooibok Kraal.</p>
             </div>
             <div className="bg-onyx-light border border-white/[0.05] rounded-[32px] p-8 md:p-10 text-center transition-all duration-300 hover:bg-[#1a1a1c] hover:border-gold-500/20">
               <Flame className="w-10 h-10 text-gold-500 mx-auto mb-4" aria-hidden />
               <h3 className="font-serif text-lg text-white mb-2">Boma & Braai</h3>
-              <p className="text-[#a1a1a6] text-sm leading-relaxed">Boma and braai at main lodge; braai under the trees; outdoor braai at The Stone Villa.</p>
+              <p className="text-[#a1a1a6] text-sm leading-relaxed">Boma and braai at main lodge; braai under the trees; outdoor braai at Rooibok Kraal.</p>
             </div>
             <div className="bg-onyx-light border border-white/[0.05] rounded-[32px] p-8 md:p-10 text-center transition-all duration-300 hover:bg-[#1a1a1c] hover:border-gold-500/20">
               <LayoutIcon className="w-10 h-10 text-gold-500 mx-auto mb-4" aria-hidden />
@@ -212,7 +212,7 @@ export default function ResidencesPage() {
             <div className="bg-onyx-light border border-white/[0.05] rounded-[32px] p-8 md:p-10 text-center transition-all duration-300 hover:bg-[#1a1a1c] hover:border-gold-500/20">
               <Waves className="w-10 h-10 text-gold-500 mx-auto mb-4" aria-hidden />
               <h3 className="font-serif text-lg text-white mb-2">Swimming pool with slide</h3>
-              <p className="text-[#a1a1a6] text-sm leading-relaxed">At main lodge; The Stone Villa is near the pool.</p>
+              <p className="text-[#a1a1a6] text-sm leading-relaxed">At main lodge; Rooibok Kraal is near the pool.</p>
             </div>
           </div>
         </section>

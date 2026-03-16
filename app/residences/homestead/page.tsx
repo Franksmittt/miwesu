@@ -60,7 +60,7 @@ export default function HomesteadPage() {
             <div className="relative h-[50vh] min-h-[320px] overflow-hidden">
               <Image
                 src="/images/residences-homestead-main.jpg"
-                alt="The Homestead at MIWESU Game Farm"
+                alt="Hunter's House at MIWESU Game Farm"
                 fill
                 sizes="100vw"
                 className="object-cover"
@@ -75,7 +75,7 @@ export default function HomesteadPage() {
                 <ArrowLeft className="w-4 h-4 mr-2" /> All Residences
               </Link>
               <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white mb-2">
-                The Homestead
+                Hunter&apos;s House
               </h1>
               <p className="text-gold-500 text-sm font-serif mb-6">
                 Main lodge · {lodgeSummary.mainHouse.sleepers} sleepers · {lodgeSummary.mainHouse.bedrooms} bedrooms

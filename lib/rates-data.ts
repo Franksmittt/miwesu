@@ -44,7 +44,7 @@ export function getDefaultRateItems(): RateItemRecord[] {
     {
       id: 'acc-homestead',
       category: 'ACCOMMODATION',
-      name: 'The Homestead',
+      name: "Hunter's House",
       description: 'Sleeps 16, per night',
       priceZAR: 0,
       priceUSD: 0,
@@ -54,7 +54,7 @@ export function getDefaultRateItems(): RateItemRecord[] {
     {
       id: 'acc-stone-villa',
       category: 'ACCOMMODATION',
-      name: 'The Stone Villa',
+      name: 'Rooibok Kraal',
       description: 'Sleeps 6, per night',
       priceZAR: 0,
       priceUSD: 0,

@@ -2,12 +2,12 @@ import { Metadata } from 'next'
 import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard } from '@/lib/seo'
 import { BreadcrumbSchema } from '@/components/StructuredData'
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.com'
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.co.za'
 const path = 'residences/homestead'
 const breadcrumbItems = [
   { name: 'Home', url: baseUrl + '/' },
   { name: 'Private Residences', url: constructCanonicalUrl('residences') },
-  { name: 'The Homestead', url: constructCanonicalUrl(path) },
+  { name: "Hunter's House", url: constructCanonicalUrl(path) },
 ]
 
 export const metadata: Metadata = {
@@ -16,13 +16,13 @@ export const metadata: Metadata = {
   keywords: ['16-sleeper lodge Thabazimbi', 'exclusive use', 'The Homestead', 'Makoppa', 'Limpopo', 'luxury self-catering', 'Lapa', 'boma', 'private residence', 'MIWESU'],
   alternates: { canonical: constructCanonicalUrl(path) },
   openGraph: generateOpenGraph(
-    'The Homestead | Private Residences',
+    "Hunter's House | Private Residences",
     '16-sleeper main lodge. Exclusive use. Kitchen, living, boma, lapa, pool.',
     constructCanonicalUrl(path),
     `${baseUrl}/images/residences-homestead-main.jpg`
   ),
   twitter: generateTwitterCard(
-    'The Homestead | Private Residences',
+    "Hunter's House | Private Residences",
     '16-sleeper main lodge. Exclusive use.',
     `${baseUrl}/images/residences-homestead-main.jpg`
   ),

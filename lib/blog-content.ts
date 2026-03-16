@@ -49,11 +49,11 @@ const content: Record<string, BlogSection[]> = {
     {
       h2: 'From Alberton and Gauteng to the Makoppa Dome',
       paragraphs: [
-        'Thabazimbi is roughly two to three hours from Johannesburg, making it an ideal weekend or corporate retreat destination. The malaria-free Makoppa Dome offers safety and exclusivity. MIWESU\'s Homestead is a 16-sleeper, exclusive-use lodge on D1432 in the Makoppa district. No shared facilities, no day visitors: your group has the run of the property. Conservation harvest, wildlife viewing, or pure relaxation; the choice is yours.',
+        'Thabazimbi is roughly two to three hours from Johannesburg, making it an ideal weekend or corporate retreat destination. The malaria-free Makoppa Dome offers safety and exclusivity. MIWESU\'s Hunter\'s House is a 16-sleeper, exclusive-use lodge on D1432 in the Makoppa district. No shared facilities, no day visitors: your group has the run of the property. Conservation harvest, wildlife viewing, or pure relaxation; the choice is yours.',
       ],
     },
     {
-      h2: 'The Homestead: architecture and amenities',
+      h2: "Hunter's House: architecture and amenities",
       paragraphs: [
         'The main lodge features four bedrooms, a chef\'s kitchen, and open living areas. The Lapa with wet bar is the social hub; the private boma is where evenings turn into stories. The bespoke swimming pool with multi-slide complex caters to families and groups. Fiber optic internet is available for those who need to stay connected. This is bespoke bushveld living at scale: 16 sleepers, one group, absolute privacy.',
       ],
@@ -61,7 +61,7 @@ const content: Record<string, BlogSection[]> = {
     {
       h2: 'Booking and availability',
       paragraphs: [
-        'Exclusive use means the calendar is yours once confirmed. Check availability for your dates and submit an enquiry. Our concierge will confirm rates and logistics. The Homestead is the choice for corporate safari retreats, large families, and hunting syndicates from Gauteng and beyond. Guardian\'s Pledge and Conservation Harvest principles apply to every stay.',
+        'Exclusive use means the calendar is yours once confirmed. Check availability for your dates and submit an enquiry. Our concierge will confirm rates and logistics. Hunter\'s House is the choice for corporate safari retreats, large families, and hunting syndicates from Gauteng and beyond. Guardian\'s Pledge and Conservation Harvest principles apply to every stay.',
       ],
     },
   ],
@@ -135,7 +135,7 @@ const content: Record<string, BlogSection[]> = {
     {
       h2: 'Dark-sky tourism and wellness in 2026',
       paragraphs: [
-        'Dark-sky tourism is growing. At MIWESU, private astronomy sessions are available at the sanctuary. The Stone Villa has a bespoke stargazing deck and telescope. After a day of wildlife viewing or conservation activities, guests can spend the evening under the African sky. It is luxury observation in a malaria-free, low-light-pollution environment.',
+        'Dark-sky tourism is growing. At MIWESU, private astronomy sessions are available at the sanctuary. Rooibok Kraal has a bespoke stargazing deck and telescope. After a day of wildlife viewing or conservation activities, guests can spend the evening under the African sky. It is luxury observation in a malaria-free, low-light-pollution environment.',
       ],
     },
     {
@@ -169,13 +169,13 @@ const content: Record<string, BlogSection[]> = {
     {
       h2: 'Ancient geology, modern connectivity',
       paragraphs: [
-        'The Makoppa Dome sits on 2.5-billion-year-old Swazian granite and gneiss. Yet The Homestead and The Stone Villa offer fiber optic internet. For corporate retreats and extended stays, seamless connectivity is non-negotiable. At MIWESU you can work from the bushveld without sacrificing bandwidth. It is bespoke bushveld living with state-of-the-art infrastructure.',
+        'The Makoppa Dome sits on 2.5-billion-year-old Swazian granite and gneiss. Yet Hunter\'s House and Rooibok Kraal offer fiber optic internet. For corporate retreats and extended stays, seamless connectivity is non-negotiable. At MIWESU you can work from the bushveld without sacrificing bandwidth. It is bespoke bushveld living with state-of-the-art infrastructure.',
       ],
     },
     {
       h2: 'Work-from-anywhere at both residences',
       paragraphs: [
-        'Both the 16-sleeper Homestead and the 6-sleeper Stone Villa are equipped for remote work. Video calls, large file transfers, and streaming are supported. After screen time, Mobile Wellness sessions using indigenous Marula oils offer balance. The contrast between deep-time geology and sub-second latency is deliberate: we cater to those who refuse to choose between wilderness and productivity.',
+        'Both the 16-sleeper Hunter\'s House and the 6-sleeper Rooibok Kraal are equipped for remote work. Video calls, large file transfers, and streaming are supported. After screen time, Mobile Wellness sessions using indigenous Marula oils offer balance. The contrast between deep-time geology and sub-second latency is deliberate: we cater to those who refuse to choose between wilderness and productivity.',
       ],
     },
     {
@@ -249,19 +249,19 @@ const content: Record<string, BlogSection[]> = {
     {
       h2: 'The 6-sleeper boutique lodge',
       paragraphs: [
-        'The Stone Villa is MIWESU\'s intimate option: two bedrooms, six sleepers, full exclusivity. Master en-suite, second bedroom with bunks, open-plan kitchen and living, and a Nespresso machine for morning coffee. It is luxury boutique game lodge living in the Limpopo bushveld, Thabazimbi.',
+        'Rooibok Kraal is MIWESU\'s intimate option: two bedrooms, six sleepers, full exclusivity. Master en-suite, second bedroom with bunks, open-plan kitchen and living, and a Nespresso machine for morning coffee. It is luxury boutique game lodge living in the Limpopo bushveld, Thabazimbi.',
       ],
     },
     {
       h2: 'Outdoor braai and Miwesu Premium Firewood',
       paragraphs: [
-        'The outdoor braai overlooks the dam. We supply Miwesu Premium Firewood (Sekelbos, Geelhak, Braai Mix) for an authentic bushveld braai. The sensory experience—smoke, stars, silence—is central to the Stone Villa. Full access to the reserve\'s 4x4 tracks and activities is included; privacy at the villa is absolute.',
+        'The outdoor braai overlooks the dam. We supply Miwesu Premium Firewood (Sekelbos, Geelhak, Braai Mix) for an authentic bushveld braai. The sensory experience—smoke, stars, silence—is central to Rooibok Kraal. Full access to the reserve\'s 4x4 tracks and activities is included; privacy at Rooibok Kraal is absolute.',
       ],
     },
     {
       h2: 'Exclusive romantic and small-family getaways',
       paragraphs: [
-        'Ideal for couples, small families, or a small group seeking a 6-sleeper private safari villa. The stargazing deck and telescope add a celestial dimension. For availability and direct booking, use our enquiry form. The Stone Villa experience is intimate luxury in the Makoppa Dome.',
+        'Ideal for couples, small families, or a small group seeking a 6-sleeper private safari villa. The stargazing deck and telescope add a celestial dimension. For availability and direct booking, use our enquiry form. The Rooibok Kraal experience is intimate luxury in the Makoppa Dome.',
       ],
     },
   ],

@@ -1,9 +1,11 @@
 /**
- * Booking system constants and mock data when DB is not configured.
+ * Booking system constants. Display names: Hunter's House, Rooibok Kraal.
  */
 
-export const HOMESTEAD_NAME = 'The Homestead'
-export const STONE_VILLA_NAME = 'The Stone Villa'
+import { HUNTERS_HOUSE_NAME, ROOIBOK_KRAAL_NAME } from './booking-pricing'
+
+export const HOMESTEAD_NAME = HUNTERS_HOUSE_NAME
+export const STONE_VILLA_NAME = ROOIBOK_KRAAL_NAME
 export const HOMESTEAD_MAX = 16
 export const STONE_VILLA_MAX = 6
 export const TOTAL_LODGE_MAX = 22
@@ -11,16 +13,16 @@ export const TOTAL_LODGE_MAX = 22
 export const MOCK_UNITS = [
   {
     id: 'mock-homestead',
-    name: HOMESTEAD_NAME,
+    name: HUNTERS_HOUSE_NAME,
     maxGuests: HOMESTEAD_MAX,
-    description: 'Main lodge. Four bedrooms, kitchen, living, boma, lapa, pool with slide.',
-    basePricePerNight: { toNumber: () => 0 },
+    description: "Hunter's House. Main lodge. Four bedrooms, kitchen, living, boma, lapa, pool with slide.",
+    basePricePerNight: { toNumber: () => 850 },
   },
   {
     id: 'mock-stone-villa',
-    name: STONE_VILLA_NAME,
+    name: ROOIBOK_KRAAL_NAME,
     maxGuests: STONE_VILLA_MAX,
-    description: 'Near the pool. Two bedrooms, kitchen, living, outdoor braai.',
+    description: 'Rooibok Kraal. Near the pool. Two bedrooms, kitchen, living, outdoor braai.',
     basePricePerNight: { toNumber: () => 0 },
   },
 ] as const
@@ -31,5 +33,5 @@ export type AvailableOption = {
   maxGuests: number
   description: string | null
   basePricePerNight: number
-  unitIds: string[] // for "Entire Lodge" this is [homesteadId, stoneVillaId]
+  unitIds: string[]
 }

@@ -81,7 +81,7 @@ export async function GET(request: NextRequest) {
         if (bothAvailable && homestead && stoneVilla) {
           options.push({
             id: 'entire-lodge',
-            name: 'Entire Lodge (Homestead + Stone Villa)',
+            name: "Entire Lodge (Hunter's House + Rooibok Kraal)",
             maxGuests: TOTAL_LODGE_MAX,
             description: 'Exclusive use of both residences for 17–22 guests.',
             basePricePerNight: Number(homestead.basePricePerNight) + Number(stoneVilla.basePricePerNight),
@@ -112,7 +112,7 @@ export async function GET(request: NextRequest) {
         if (bothAvailable && guests > STONE_VILLA_MAX && homestead && stoneVilla) {
           options.push({
             id: 'entire-lodge',
-            name: 'Entire Lodge (Homestead + Stone Villa)',
+            name: "Entire Lodge (Hunter's House + Rooibok Kraal)",
             maxGuests: TOTAL_LODGE_MAX,
             description: 'Exclusive use of both residences.',
             basePricePerNight: Number(homestead.basePricePerNight) + Number(stoneVilla.basePricePerNight),
@@ -126,7 +126,7 @@ export async function GET(request: NextRequest) {
         options = [
           {
             id: 'entire-lodge',
-            name: 'Entire Lodge (Homestead + Stone Villa)',
+            name: "Entire Lodge (Hunter's House + Rooibok Kraal)",
             maxGuests: TOTAL_LODGE_MAX,
             description: 'Exclusive use of both residences for 17–22 guests.',
             basePricePerNight: 0,
@@ -145,7 +145,7 @@ export async function GET(request: NextRequest) {
         if (guests > STONE_VILLA_MAX) {
           options.push({
             id: 'entire-lodge',
-            name: 'Entire Lodge (Homestead + Stone Villa)',
+            name: "Entire Lodge (Hunter's House + Rooibok Kraal)",
             maxGuests: TOTAL_LODGE_MAX,
             description: 'Exclusive use of both residences.',
             basePricePerNight: 0,

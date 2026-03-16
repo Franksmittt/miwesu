@@ -118,7 +118,7 @@ export default function FAQPage() {
                   <div>
                     <h3 className="font-serif text-2xl text-onyx mb-4">What's Included</h3>
                     <p className="font-sans text-gray-600 leading-loose mb-4">
-                      Accommodation rates include exclusive use of the residence, daily housekeeping, all utilities, fiber optic internet (at The Homestead), and full access to the reserve for game viewing and exploration.
+                      Accommodation rates include exclusive use of the residence, daily housekeeping, all utilities, fiber optic internet (at Hunter&apos;s House), and full access to the reserve for game viewing and exploration.
                     </p>
                     <p className="font-sans text-gray-600 leading-loose mb-4">
                       <strong>Not Included:</strong> Meals (self-catering), activities, conservation harvest fees, alcoholic beverages, and transportation to/from the reserve.

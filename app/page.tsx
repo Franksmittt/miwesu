@@ -179,7 +179,7 @@ export default function Home() {
           </ScrollReveal>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Residence Card 1 - The Homestead */}
+            {/* Residence Card 1 - Hunter's House */}
             <Link
               href="/residences/homestead"
               className="group relative bg-onyx-light border border-white/5 hover:border-gold-500/50 transition-all duration-500 ease-[cubic-bezier(0.22,0.25,0,1)] overflow-hidden rounded-2xl reveal block"
@@ -187,7 +187,7 @@ export default function Home() {
               <div className="h-64 sm:h-80 overflow-hidden relative rounded-t-2xl">
                 <Image
                   src="/images/residences-homestead-main.jpg"
-                  alt="The Homestead - Main lodge 16-sleeper private residence at Miwesu Game Reserve"
+                  alt="Hunter's House - Main lodge 16-sleeper private residence at Miwesu Game Reserve"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,0.25,0,1)] group-hover:scale-110"
@@ -198,7 +198,7 @@ export default function Home() {
                   I
                 </div>
                 <h3 className="font-serif text-xl sm:text-2xl text-white mb-3 sm:mb-4">
-                  {mainLodgeHouse.subtitle || 'The Homestead'}
+                  {mainLodgeHouse.subtitle || "Hunter's House"}
                 </h3>
                 <p className="text-gray-400 text-sm font-sans leading-relaxed mb-6 sm:mb-8">
                   The pinnacle of exclusive use. Main lodge  - {lodgeSummary.mainHouse.sleepers} sleepers, four bedrooms, kitchen, living, boma, lapa, pool and braai.
@@ -220,7 +220,7 @@ export default function Home() {
               </div>
             </Link>
 
-            {/* Residence Card 2 - The Stone Villa */}
+            {/* Residence Card 2 - Rooibok Kraal */}
             <Link
               href="/residences/stone-villa"
               className="group relative bg-onyx-light border border-white/5 hover:border-gold-500/50 transition-all duration-500 ease-[cubic-bezier(0.22,0.25,0,1)] overflow-hidden rounded-2xl reveal delay-100 block"
@@ -228,7 +228,7 @@ export default function Home() {
               <div className="h-64 sm:h-80 overflow-hidden relative rounded-t-2xl">
                 <Image
                   src="/images/residences-second-house-main.jpg"
-                  alt="The Stone Villa - 6-sleeper luxury accommodation near the pool at Miwesu"
+                  alt="Rooibok Kraal - 6-sleeper luxury accommodation near the pool at Miwesu"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,0.25,0,1)] group-hover:scale-110"
@@ -239,7 +239,7 @@ export default function Home() {
                   II
                 </div>
                 <h3 className="font-serif text-xl sm:text-2xl text-white mb-3 sm:mb-4">
-                  The Stone Villa
+                  Rooibok Kraal
                 </h3>
                 <p className="text-gray-400 text-sm font-sans leading-relaxed mb-6 sm:mb-8">
                   {secondHouse.subtitle}. Master bedroom and second bedroom (2 bunk beds), two en-suites, kitchen, living, outdoor braai.

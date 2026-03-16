@@ -32,7 +32,7 @@ const MOCK_LIST: MockBookingRow[] = [
     guestEmail: 'sarah.vdb@example.com',
     checkIn: new Date(Date.now() + 14 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10),
     checkOut: new Date(Date.now() + 17 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10),
-    unitName: 'The Homestead',
+    unitName: "Hunter's House",
     totalGuests: 8,
     totalPrice: 0,
     status: 'PENDING',
@@ -43,7 +43,7 @@ const MOCK_LIST: MockBookingRow[] = [
     guestEmail: 'james.t@example.co.za',
     checkIn: new Date(Date.now() + 28 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10),
     checkOut: new Date(Date.now() + 31 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10),
-    unitName: 'The Stone Villa',
+    unitName: 'Rooibok Kraal',
     totalGuests: 4,
     totalPrice: 0,
     status: 'CONFIRMED',
@@ -54,7 +54,7 @@ const MOCK_LIST: MockBookingRow[] = [
     guestEmail: 'pieter.k@example.com',
     checkIn: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10),
     checkOut: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10),
-    unitName: 'The Homestead',
+    unitName: "Hunter's House",
     totalGuests: 12,
     totalPrice: 0,
     status: 'CONFIRMED',
@@ -73,7 +73,7 @@ const MOCK_DETAILS: Record<string, MockBookingDetail> = {
     emailLogs: [
       {
         id: 'mock-email-1',
-        subject: 'MIWESU booking enquiry – The Homestead',
+        subject: "MIWESU booking enquiry – Hunter's House",
         body: 'Hi Sarah,\n\nThank you for your enquiry. We have availability for your dates. Please find our rates and payment details attached. Let us know if you have any questions.\n\nBest,\nWayne & Melissa',
         sentAt: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString(),
         direction: 'outbound',
@@ -91,14 +91,14 @@ const MOCK_DETAILS: Record<string, MockBookingDetail> = {
     emailLogs: [
       {
         id: 'mock-email-2b',
-        subject: 'Booking confirmed – The Stone Villa',
+        subject: 'Booking confirmed – Rooibok Kraal',
         body: 'Dear James & Emma,\n\nYour stay is confirmed. We look forward to welcoming you.\n\nMIWESU Game Farm',
         sentAt: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000).toISOString(),
         direction: 'outbound',
       },
       {
         id: 'mock-email-2a',
-        subject: 'Re: Stone Villa availability',
+        subject: 'Re: Rooibok Kraal availability',
         body: 'Hi,\n\nPlease find our invoice attached. Bank details are in the PDF.\n\nThanks,\nWayne & Melissa',
         sentAt: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000).toISOString(),
         direction: 'outbound',

@@ -31,7 +31,7 @@ export default function AvailabilityPage() {
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg"
-              alt="MIWESU Game Farm residences availability - The Homestead and Stone Villa Makoppa Thabazimbi"
+              alt="MIWESU Game Farm residences availability - Hunter's House and Rooibok Kraal Makoppa Thabazimbi"
               fill
               sizes="100vw"
               className="object-cover opacity-50"
@@ -60,7 +60,7 @@ export default function AvailabilityPage() {
                 Live Availability View
               </h2>
               <p className="text-gray-600 leading-relaxed mb-8">
-                We are implementing a direct availability view so you can see open dates for The Homestead and The Stone Villa at a glance. In the meantime, our concierge will respond quickly with available dates and next steps. All stays are subject to our vetting process.
+                We are implementing a direct availability view so you can see open dates for Hunter&apos;s House and Rooibok Kraal at a glance. In the meantime, our concierge will respond quickly with available dates and next steps. All stays are subject to our vetting process.
               </p>
               <Link
                 href="/contact"
@@ -73,12 +73,12 @@ export default function AvailabilityPage() {
             <div className="reveal grid sm:grid-cols-2 gap-6">
               <div className="p-6 border border-gray-100 bg-white">
                 <Home className="w-10 h-10 text-gold-500 mb-4" />
-                <h3 className="font-serif text-xl text-onyx mb-2">The Homestead</h3>
+                <h3 className="font-serif text-xl text-onyx mb-2">Hunter&apos;s House</h3>
                 <p className="text-gray-600 text-sm">10-sleeper. Exclusive use. Ideal for groups and families.</p>
               </div>
               <div className="p-6 border border-gray-100 bg-white">
                 <Users className="w-10 h-10 text-gold-500 mb-4" />
-                <h3 className="font-serif text-xl text-onyx mb-2">The Stone Villa</h3>
+                <h3 className="font-serif text-xl text-onyx mb-2">Rooibok Kraal</h3>
                 <p className="text-gray-600 text-sm">4-sleeper. Exclusive use. Intimate bushveld escape.</p>
               </div>
             </div>

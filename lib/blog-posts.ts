@@ -36,7 +36,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'exclusive-16-sleeper-luxury-lodge-thabazimbi',
     title: 'Exclusive 16-Sleeper Luxury Lodge Escapes in Thabazimbi',
-    excerpt: 'The Homestead: chef\'s kitchen, Lapa with wet bar, private boma, multi-slide pool. Malaria-free Makoppa Dome. Weekend hunting trips from Alberton to Limpopo.',
+    excerpt: "Hunter's House: chef's kitchen, Lapa with wet bar, private boma, multi-slide pool. Malaria-free Makoppa Dome. Weekend hunting trips from Alberton to Limpopo.",
     category: 'Luxury Living',
     date: '2026-03-03',
     heroImage: '/images/residences-homestead-main.jpg',
@@ -68,7 +68,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'malaria-free-celestial-safaris-waterberg',
     title: 'Malaria-Free Celestial Safaris in the Waterberg',
-    excerpt: 'Dark-sky tourism and wellness in the malaria-free Makoppa Dome. The Stone Villa stargazing deck and telescope. Safe, multi-generational travel.',
+    excerpt: 'Dark-sky tourism and wellness in the malaria-free Makoppa Dome. Rooibok Kraal stargazing deck and telescope. Safe, multi-generational travel.',
     category: 'Luxury Living',
     date: '2026-03-07',
     heroImage: '/images/residences-second-house-main.jpg',
@@ -84,7 +84,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'bespoke-bushveld-living-fiber-optic-internet',
     title: 'Bespoke Bushveld Living: Remote Work with Fiber Optic Internet',
-    excerpt: 'State-of-the-art connectivity at The Homestead and Stone Villa. Work-from-anywhere in the 2.5-billion-year-old Makoppa Dome. Marula wellness.',
+    excerpt: "State-of-the-art connectivity at Hunter's House and Rooibok Kraal. Work-from-anywhere in the 2.5-billion-year-old Makoppa Dome. Marula wellness.",
     category: 'Luxury Living',
     date: '2026-03-09',
     heroImage: '/og-image.jpg',
@@ -115,7 +115,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   },
   {
     slug: 'stone-villa-experience-intimate-luxury-makoppa',
-    title: 'The Stone Villa Experience: Intimate Luxury in the Makoppa Dome',
+    title: 'Rooibok Kraal Experience: Intimate Luxury in the Makoppa Dome',
     excerpt: '2-bedroom, 6-sleeper boutique lodge. Master en-suite, Nespresso, outdoor braai with Miwesu Premium Firewood. Exclusive romantic safari getaway. Thabazimbi.',
     category: 'Luxury Living',
     date: '2026-03-13',

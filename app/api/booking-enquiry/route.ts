@@ -20,6 +20,8 @@ export async function POST(request: NextRequest) {
       checkIn,
       checkOut,
       totalGuests,
+      totalPrice,
+      priceBreakdown,
       specialRequests,
     } = body
 
@@ -58,6 +60,10 @@ export async function POST(request: NextRequest) {
         )
       }
 
+      const totalPriceNum = typeof totalPrice === 'number' && totalPrice >= 0 ? totalPrice : 0
+      const internalNotesPart = priceBreakdown && Array.isArray(priceBreakdown)
+        ? `Price breakdown:\n${(priceBreakdown as Array<{ line?: string; amount?: number }>).map((b) => `${b.line ?? ''} R${b.amount ?? 0}`).join('\n')}`
+        : null
       const booking = await prisma.booking.create({
         data: {
           unitId: unitIdToUse,
@@ -67,9 +73,10 @@ export async function POST(request: NextRequest) {
           checkIn: checkInDate,
           checkOut: checkOutDate,
           totalGuests: parseInt(String(totalGuests), 10),
-          totalPrice: 0,
+          totalPrice: totalPriceNum,
           status: 'PENDING',
           specialRequests: specialRequests ? String(specialRequests) : null,
+          internalNotes: internalNotesPart,
         },
       })
       bookingId = booking.id

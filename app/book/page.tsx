@@ -22,6 +22,11 @@ import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { hapticConfirm } from '@/lib/haptic'
+import {
+  HUNTERS_HOUSE_NAME,
+  MIN_NIGHTS,
+  calcAccommodationTotal,
+} from '@/lib/booking-pricing'
 
 const guestSchema = z.object({
   firstName: z.string().min(1, 'First name required'),
@@ -53,7 +58,11 @@ export default function BookPage() {
   const [step, setStep] = useState(1)
   const [checkIn, setCheckIn] = useState<Date | undefined>()
   const [checkOut, setCheckOut] = useState<Date | undefined>()
-  const [guests, setGuests] = useState(2)
+  const [adults, setAdults] = useState(4)
+  const [children0to3, setChildren0to3] = useState(0)
+  const [children4to10, setChildren4to10] = useState(0)
+  const [vehicleFee, setVehicleFee] = useState(false)
+  const guests = adults + children0to3 + children4to10
   const [range, setRange] = useState<{ from?: Date; to?: Date }>({})
   const [availabilityLoading, setAvailabilityLoading] = useState(false)
   const [availabilityError, setAvailabilityError] = useState<string | null>(null)
@@ -89,6 +98,15 @@ export default function BookPage() {
       setAvailabilityError('Please select check-in and check-out dates.')
       return
     }
+    const nightsCount = Math.ceil((to.getTime() - from.getTime()) / (1000 * 60 * 60 * 24))
+    if (nightsCount < MIN_NIGHTS) {
+      setAvailabilityError(`Minimum stay is ${MIN_NIGHTS} nights.`)
+      return
+    }
+    if (guests < 4) {
+      setAvailabilityError("Hunter's House requires at least 4 people. For fewer guests, choose Rooibok Kraal.")
+      return
+    }
     setAvailabilityError(null)
     setAvailabilityLoading(true)
     try {
@@ -119,7 +137,12 @@ export default function BookPage() {
   }
 
   const nights = checkIn && checkOut ? Math.ceil((checkOut.getTime() - checkIn.getTime()) / (1000 * 60 * 60 * 24)) : 0
-  const totalPrice = selectedOption ? selectedOption.basePricePerNight * nights : 0
+  const isHuntersHouse = selectedOption?.name === HUNTERS_HOUSE_NAME
+  const { totalZAR: calculatedTotal, breakdown: priceBreakdown } =
+    selectedOption && isHuntersHouse && nights >= MIN_NIGHTS
+      ? calcAccommodationTotal(adults, children0to3, children4to10, nights, vehicleFee)
+      : { totalZAR: 0, breakdown: [] as { line: string; amount: number }[] }
+  const totalPrice = isHuntersHouse ? calculatedTotal : (selectedOption?.basePricePerNight ?? 0) * nights || 0
 
   const onGuestSubmit = (formData: GuestFormData) => {
     if (!selectedOption || !checkIn || !checkOut) return
@@ -134,6 +157,8 @@ export default function BookPage() {
       checkIn: checkIn.toISOString(),
       checkOut: checkOut.toISOString(),
       totalGuests: guests,
+      totalPrice: isHuntersHouse ? calculatedTotal : 0,
+      priceBreakdown: isHuntersHouse ? priceBreakdown : undefined,
       specialRequests: formData.specialRequests || '',
     }
     setSubmitError(null)
@@ -193,7 +218,7 @@ export default function BookPage() {
               Book your stay
             </h1>
             <p className="text-gray-400 font-sans text-base sm:text-lg max-w-xl">
-              Exclusive use. The Homestead (16) or The Stone Villa (6). Entire lodge for 17–22 guests.
+              Exclusive use. Hunter&apos;s House (16) or Rooibok Kraal (6). Entire lodge for 17–22 guests.
             </p>
           </div>
         </section>
@@ -267,7 +292,7 @@ export default function BookPage() {
                     <Calendar className="w-6 h-6 text-gold-500" />
                     Select your dates
                   </h2>
-                  <p className="text-gray-400 text-sm mb-6">Choose check-in and check-out. Minimum one night.</p>
+                  <p className="text-gray-400 text-sm mb-6">Choose check-in and check-out. Minimum {MIN_NIGHTS} nights.</p>
                   <DayPicker
                     mode="range"
                     selected={{ from: range.from, to: range.to }}
@@ -282,29 +307,38 @@ export default function BookPage() {
                       <Users className="w-6 h-6 text-gold-500" />
                       Guests
                     </h2>
-                    <p className="text-gray-400 text-sm mb-6">How many will be staying?</p>
-                    <div className="flex items-center gap-4">
-                      <button
-                        type="button"
-                        onClick={() => setGuests((g) => Math.max(1, g - 1))}
-                        className="h-12 w-12 rounded-xl border border-white/20 bg-white/5 hover:bg-gold-500/20 hover:border-gold-500/50 flex items-center justify-center text-white transition-colors disabled:opacity-40 disabled:pointer-events-none"
-                        disabled={guests <= 1}
-                        aria-label="Fewer guests"
-                      >
-                        <ChevronDown className="w-5 h-5 rotate-180" />
-                      </button>
-                      <span className="font-serif text-3xl text-white w-16 text-center">{guests}</span>
-                      <button
-                        type="button"
-                        onClick={() => setGuests((g) => Math.min(22, g + 1))}
-                        className="h-12 w-12 rounded-xl border border-white/20 bg-white/5 hover:bg-gold-500/20 hover:border-gold-500/50 flex items-center justify-center text-white transition-colors disabled:opacity-40 disabled:pointer-events-none"
-                        disabled={guests >= 22}
-                        aria-label="More guests"
-                      >
-                        <ChevronUp className="w-5 h-5" />
-                      </button>
-              </div>
-                    <p className="text-white/50 text-xs mt-3">Up to 22 for entire lodge</p>
+                    <p className="text-gray-400 text-sm mb-4">Adults (10+ years) and children. Hunter&apos;s House: min 4 people. Children 0–3 free; 4–10 years 50%.</p>
+                    <div className="space-y-4">
+                      <div className="flex items-center justify-between">
+                        <label className="text-sm text-gray-300">Adults</label>
+                        <div className="flex items-center gap-2">
+                          <button type="button" onClick={() => setAdults((a) => Math.max(1, a - 1))} className="h-10 w-10 rounded-lg border border-white/20 bg-white/5 hover:bg-gold-500/20 flex items-center justify-center text-white disabled:opacity-40" disabled={adults <= 1} aria-label="Fewer adults"><ChevronDown className="w-4 h-4 rotate-180" /></button>
+                          <span className="font-serif text-xl text-white w-10 text-center">{adults}</span>
+                          <button type="button" onClick={() => setAdults((a) => Math.min(22, a + 1))} className="h-10 w-10 rounded-lg border border-white/20 bg-white/5 hover:bg-gold-500/20 flex items-center justify-center text-white disabled:opacity-40" disabled={adults >= 22} aria-label="More adults"><ChevronUp className="w-4 h-4" /></button>
+                        </div>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <label className="text-sm text-gray-300">Children 0–3 (free)</label>
+                        <div className="flex items-center gap-2">
+                          <button type="button" onClick={() => setChildren0to3((c) => Math.max(0, c - 1))} className="h-10 w-10 rounded-lg border border-white/20 bg-white/5 hover:bg-gold-500/20 flex items-center justify-center text-white disabled:opacity-40" disabled={children0to3 <= 0} aria-label="Fewer"><ChevronDown className="w-4 h-4 rotate-180" /></button>
+                          <span className="font-serif text-xl text-white w-10 text-center">{children0to3}</span>
+                          <button type="button" onClick={() => setChildren0to3((c) => Math.min(10, c + 1))} className="h-10 w-10 rounded-lg border border-white/20 bg-white/5 hover:bg-gold-500/20 flex items-center justify-center text-white disabled:opacity-40" aria-label="More"><ChevronUp className="w-4 h-4" /></button>
+                        </div>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <label className="text-sm text-gray-300">Children 4–10 (50%)</label>
+                        <div className="flex items-center gap-2">
+                          <button type="button" onClick={() => setChildren4to10((c) => Math.max(0, c - 1))} className="h-10 w-10 rounded-lg border border-white/20 bg-white/5 hover:bg-gold-500/20 flex items-center justify-center text-white disabled:opacity-40" disabled={children4to10 <= 0} aria-label="Fewer"><ChevronDown className="w-4 h-4 rotate-180" /></button>
+                          <span className="font-serif text-xl text-white w-10 text-center">{children4to10}</span>
+                          <button type="button" onClick={() => setChildren4to10((c) => Math.min(10, c + 1))} className="h-10 w-10 rounded-lg border border-white/20 bg-white/5 hover:bg-gold-500/20 flex items-center justify-center text-white disabled:opacity-40" aria-label="More"><ChevronUp className="w-4 h-4" /></button>
+                        </div>
+                      </div>
+                      <div className="flex items-center justify-between pt-2 border-t border-white/10">
+                        <label className="text-sm text-gray-300">Vehicle (bakkie) fee R750</label>
+                        <button type="button" onClick={() => setVehicleFee((v) => !v)} className={`rounded-lg px-4 py-2 text-sm font-medium transition-colors ${vehicleFee ? 'bg-gold-500 text-onyx' : 'bg-white/10 text-white'}`}>{vehicleFee ? 'Yes' : 'No'}</button>
+                      </div>
+                    </div>
+                    <p className="text-white/50 text-xs mt-3">Total: {guests} guest{guests !== 1 ? 's' : ''}. Min 4 for Hunter&apos;s House. Up to 22 for entire lodge.</p>
                     {availabilityError && (
                       <div className="mt-4 flex items-start gap-2 rounded-lg bg-red-500/10 border border-red-500/30 px-4 py-3 text-red-300 text-sm">
                         <AlertCircle className="w-4 h-4 shrink-0 mt-0.5" />
@@ -445,7 +479,14 @@ export default function BookPage() {
                       placeholder="Dietary needs, accessibility, late arrival…"
                     />
                 </div>
-                  <div className="flex flex-wrap gap-4 pt-4">
+                  <p className="text-gray-400 text-sm">
+                  By submitting you agree to our{' '}
+                  <Link href="/rates#terms" className="text-gold-400 hover:text-gold-300 underline">
+                    terms &amp; conditions
+                  </Link>
+                  {' '}(min 3 nights, children policy, vehicle fee).
+                </p>
+                <div className="flex flex-wrap gap-4 pt-4">
                   <button
                     type="button"
                     onClick={() => setStep(2)}
@@ -481,9 +522,25 @@ export default function BookPage() {
                       </div>
                       <div className="flex justify-between">
                         <span className="text-gray-400">Guests</span>
-                        <span className="text-white">{guests}</span>
+                        <span className="text-white">{adults} adult{adults !== 1 ? 's' : ''}{children0to3 + children4to10 > 0 ? `, ${children0to3} child 0–3, ${children4to10} child 4–10` : ''}</span>
                       </div>
+                      {vehicleFee && (
+                        <div className="flex justify-between">
+                          <span className="text-gray-400">Vehicle fee</span>
+                          <span className="text-white">R750</span>
+                        </div>
+                      )}
                     </div>
+                    {isHuntersHouse && priceBreakdown.length > 0 && (
+                      <div className="mt-4 pt-3 border-t border-white/10 space-y-1 text-xs text-gray-400">
+                        {priceBreakdown.map((b, i) => (
+                          <div key={i} className="flex justify-between">
+                            <span>{b.line}</span>
+                            <span className="text-white">R{b.amount.toLocaleString()}</span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
                     <div className="mt-6 pt-4 border-t border-white/10 flex justify-between items-baseline">
                       <span className="text-gray-400 font-medium">Total</span>
                       <span className="font-serif text-xl text-gold-400">

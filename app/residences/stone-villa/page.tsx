@@ -60,7 +60,7 @@ export default function StoneVillaPage() {
             <div className="relative h-[50vh] min-h-[320px] overflow-hidden">
               <Image
                 src="/images/residences-second-house-main.jpg"
-                alt="The Stone Villa at MIWESU Game Farm"
+                alt="Rooibok Kraal at MIWESU Game Farm"
                 fill
                 sizes="100vw"
                 className="object-cover"
@@ -75,7 +75,7 @@ export default function StoneVillaPage() {
                 <ArrowLeft className="w-4 h-4 mr-2" /> All Residences
               </Link>
               <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white mb-2">
-                The Stone Villa
+                Rooibok Kraal
               </h1>
               <p className="text-gold-500 text-sm font-serif mb-6">
                 {secondHouse.subtitle} · {lodgeSummary.secondHouse.bedrooms} bedrooms

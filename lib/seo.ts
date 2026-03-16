@@ -5,7 +5,7 @@
 
 import { lodgeSummary } from '@/lib/residences-data'
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.com'
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.co.za'
 
 /**
  * Constructs a canonical URL with consistent trailing slash handling
@@ -366,6 +366,44 @@ export function generateBreadcrumbSchema(
       name: item.name,
       item: item.url,
     })),
+  }
+}
+
+/**
+ * Article/BlogPosting schema for blog posts (rich results, E-E-A-T).
+ */
+export function generateArticleSchema(params: {
+  headline: string
+  description: string
+  url: string
+  datePublished: string
+  dateModified?: string
+  image?: string
+}) {
+  const { headline, description, url, datePublished, dateModified, image } = params
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline,
+    description,
+    url,
+    datePublished,
+    ...(dateModified && { dateModified }),
+    ...(image && { image: image.startsWith('http') ? image : `${baseUrl}${image.startsWith('/') ? '' : '/'}${image}` }),
+    author: {
+      '@type': 'Organization',
+      name: 'MIWESU GAME FARM',
+      url: baseUrl,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'MIWESU GAME FARM',
+      url: baseUrl,
+      logo: {
+        '@type': 'ImageObject',
+        url: `${baseUrl}/logo.png`,
+      },
+    },
   }
 }
 

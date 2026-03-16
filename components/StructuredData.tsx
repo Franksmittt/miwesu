@@ -6,6 +6,7 @@ import {
   generateTouristTripSchema,
   generateFAQPageSchema,
   generateBreadcrumbSchema,
+  generateArticleSchema,
   type SpeciesSchemaParams,
 } from '@/lib/seo'
 
@@ -99,6 +100,40 @@ export function BreadcrumbSchema({
       type="application/ld+json"
       dangerouslySetInnerHTML={{
         __html: JSON.stringify(generateBreadcrumbSchema(items)),
+      }}
+    />
+  )
+}
+
+export function ArticleSchema({
+  headline,
+  description,
+  url,
+  datePublished,
+  dateModified,
+  image,
+}: {
+  headline: string
+  description: string
+  url: string
+  datePublished: string
+  dateModified?: string
+  image?: string
+}) {
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(
+          generateArticleSchema({
+            headline,
+            description,
+            url,
+            datePublished,
+            dateModified,
+            image,
+          })
+        ),
       }}
     />
   )

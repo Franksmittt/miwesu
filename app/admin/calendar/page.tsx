@@ -307,7 +307,7 @@ export default function AdminCalendarPage() {
             {units.length === 0 && (
               <div className="rounded-2xl border border-white/10 bg-onyx-light/50 p-8 text-center text-gray-400">
                 No units found. Run <code className="text-gray-300">db:seed</code> to add The
-                Homestead and The Stone Villa.
+                Hunter's House and Rooibok Kraal.
               </div>
             )}
           </>

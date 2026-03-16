@@ -3,7 +3,7 @@ import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard } from '@
 import { SpeciesTaxonSchema, BreadcrumbSchema } from '@/components/StructuredData'
 import { SPECIES_BY_SLUG } from '@/lib/species-data'
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.com'
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.co.za'
 const slug = 'impala'
 const species = SPECIES_BY_SLUG[slug]
 const pageUrl = constructCanonicalUrl(slug)

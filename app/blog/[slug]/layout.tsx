@@ -1,10 +1,10 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard } from '@/lib/seo'
-import { BreadcrumbSchema } from '@/components/StructuredData'
+import { BreadcrumbSchema, ArticleSchema } from '@/components/StructuredData'
 import { getBlogPostBySlug } from '@/lib/blog-posts'
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.com'
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.co.za'
 
 type Props = { params: Promise<{ slug: string }> }
 
@@ -45,9 +45,17 @@ export default async function BlogSlugLayout({ children, params }: { children: R
     { name: "Hunter's Journal", url: constructCanonicalUrl('blog') },
     { name: post.title, url: constructCanonicalUrl(path) },
   ]
+  const canonical = constructCanonicalUrl(path)
   return (
     <>
       <BreadcrumbSchema items={breadcrumbItems} />
+      <ArticleSchema
+        headline={post.title}
+        description={post.excerpt}
+        url={canonical}
+        datePublished={post.date}
+        image={post.heroImage}
+      />
       {children}
     </>
   )

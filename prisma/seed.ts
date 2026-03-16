@@ -56,34 +56,50 @@ async function main() {
   const SPECIES = [
     'Greater Kudu',
     'Impala',
+    'Dapple Impala',
     'Blesbok',
+    'White Blesbok',
     'Springbok',
     'Blue Wildebeest',
-    'Red Hartebeest',
-    'Bushbuck',
-    'Lechwe',
-    'Gemsbok',
-    'Warthog',
-    'Cape Buffalo',
-    'Dapple Impala',
     'Golden Wildebeest',
     'Livingstone Eland',
+    'Nyala',
+    'Zebra',
+    'Waterbuck',
+    'Warthog',
+    'Bush Pig',
+    'Red Hartebeest',
+    'Gemsbok',
+    'Sable',
+    'Roan',
+    'Ostrich',
+    'Bushbuck',
+    'Lechwe',
+    'Cape Buffalo',
   ]
   const SPECIES_PRICES_ZAR: Record<string, number> = {
     'Greater Kudu': 0, // N/A
     Impala: 6000,
+    'Dapple Impala': 25000, // Black Impala
     Blesbok: 5500,
+    'White Blesbok': 10000,
     Springbok: 0,
     'Blue Wildebeest': 7500,
-    'Red Hartebeest': 16000,
-    Bushbuck: 0,
-    Lechwe: 0,
-    Gemsbok: 25000,
-    Warthog: 1500,
-    'Cape Buffalo': 0,
-    'Dapple Impala': 25000, // Black Impala
     'Golden Wildebeest': 25000,
     'Livingstone Eland': 0, // N/A
+    Nyala: 20000,
+    Zebra: 9500,
+    Waterbuck: 30000,
+    Warthog: 1500,
+    'Bush Pig': 5500,
+    'Red Hartebeest': 16000,
+    Gemsbok: 25000,
+    Sable: 0, // per inch
+    Roan: 0, // N/A
+    Ostrich: 9500,
+    Bushbuck: 0,
+    Lechwe: 0,
+    'Cape Buffalo': 0,
   }
   for (let i = 0; i < SPECIES.length; i++) {
     const name = SPECIES[i]

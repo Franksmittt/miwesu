@@ -17,10 +17,36 @@ export interface RateItemRecord {
 }
 
 const SPECIES = [
-  'Greater Kudu', 'Impala', 'Blesbok', 'Springbok', 'Blue Wildebeest', 'Red Hartebeest',
-  'Bushbuck', 'Lechwe', 'Gemsbok', 'Warthog', 'Cape Buffalo', 'Dapple Impala',
-  'Golden Wildebeest', 'Livingstone Eland',
+  'Greater Kudu', 'Impala', 'Dapple Impala', 'Blesbok', 'White Blesbok', 'Springbok',
+  'Blue Wildebeest', 'Golden Wildebeest', 'Livingstone Eland', 'Nyala', 'Zebra',
+  'Waterbuck', 'Warthog', 'Bush Pig', 'Red Hartebeest', 'Gemsbok', 'Sable', 'Roan',
+  'Ostrich', 'Bushbuck', 'Lechwe', 'Cape Buffalo',
 ]
+
+const SPECIES_PRICES_ZAR: Record<string, number> = {
+  'Greater Kudu': 0,
+  Impala: 6000,
+  'Dapple Impala': 25000,
+  Blesbok: 5500,
+  'White Blesbok': 10000,
+  Springbok: 0,
+  'Blue Wildebeest': 7500,
+  'Golden Wildebeest': 25000,
+  'Livingstone Eland': 0,
+  Nyala: 20000,
+  Zebra: 9500,
+  Waterbuck: 30000,
+  Warthog: 1500,
+  'Bush Pig': 5500,
+  'Red Hartebeest': 16000,
+  Gemsbok: 25000,
+  Sable: 0,
+  Roan: 0,
+  Ostrich: 9500,
+  Bushbuck: 0,
+  Lechwe: 0,
+  'Cape Buffalo': 0,
+}
 
 export const DEFAULT_EXCHANGE_RATE = 18.5
 
@@ -28,13 +54,14 @@ export function getDefaultRateItems(): RateItemRecord[] {
   const items: RateItemRecord[] = []
 
   SPECIES.forEach((name, i) => {
+    const priceZAR = SPECIES_PRICES_ZAR[name] ?? 0
     items.push({
       id: `species-${name.replace(/\s+/g, '-').toLowerCase()}`,
       category: 'SPECIES',
       name,
-      description: 'Trophy fee',
-      priceZAR: 0,
-      priceUSD: 0,
+      description: 'Trophy fee (subject to availability)',
+      priceZAR,
+      priceUSD: Math.round(priceZAR / 18.5),
       isAvailable: true,
       sortOrder: i,
     })
@@ -42,20 +69,20 @@ export function getDefaultRateItems(): RateItemRecord[] {
 
   items.push(
     {
-      id: 'acc-homestead',
+      id: 'acc-hunters-house',
       category: 'ACCOMMODATION',
       name: "Hunter's House",
-      description: 'Sleeps 16, per night',
-      priceZAR: 0,
-      priceUSD: 0,
+      description: 'Per person per night. Min 4, max 16. Min 3 nights.',
+      priceZAR: 850,
+      priceUSD: 46,
       isAvailable: true,
       sortOrder: 0,
     },
     {
-      id: 'acc-stone-villa',
+      id: 'acc-rooibok-kraal',
       category: 'ACCOMMODATION',
       name: 'Rooibok Kraal',
-      description: 'Sleeps 6, per night',
+      description: 'Sleeps 6. Rates on request.',
       priceZAR: 0,
       priceUSD: 0,
       isAvailable: true,
@@ -65,7 +92,7 @@ export function getDefaultRateItems(): RateItemRecord[] {
       id: 'activity-conservation',
       category: 'ACTIVITY',
       name: 'Conservation Harvest',
-      description: 'Experience fee',
+      description: 'Trophy fees per species. Wounded full price. Missed/dust/warning shots R250.',
       priceZAR: 0,
       priceUSD: 0,
       isAvailable: true,
@@ -76,20 +103,30 @@ export function getDefaultRateItems(): RateItemRecord[] {
       category: 'ACTIVITY',
       name: 'Photographic Safari',
       description: 'Per person',
-      priceZAR: 0,
-      priceUSD: 0,
+      priceZAR: 2500,
+      priceUSD: 135,
       isAvailable: true,
       sortOrder: 1,
+    },
+    {
+      id: 'extra-vehicle-fee',
+      category: 'EXTRA',
+      name: 'Vehicle (bakkie) fee',
+      description: 'Per booking',
+      priceZAR: 750,
+      priceUSD: 41,
+      isAvailable: true,
+      sortOrder: 0,
     },
     {
       id: 'extra-firewood',
       category: 'EXTRA',
       name: 'MIWESU Premium Firewood',
-      description: 'Per batch',
-      priceZAR: 0,
-      priceUSD: 0,
+      description: 'Per batch (Sekelbos, Geelhak, Braai Mix)',
+      priceZAR: 450,
+      priceUSD: 24,
       isAvailable: true,
-      sortOrder: 0,
+      sortOrder: 1,
     }
   )
 

@@ -1,20 +1,38 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { signAdminToken, setAdminSessionCookie, getSecret } from '@/lib/admin-auth'
 
+/** Password used for login form. SESSION_SECRET is only for cookie signing, not the typed password. */
+function getLoginPassword(): string {
+  return (
+    process.env.ADMIN_PASSWORD ||
+    process.env.NEXT_PUBLIC_ADMIN_BOOKING_SECRET ||
+    process.env.SESSION_SECRET ||
+    ''
+  )
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
     const password = typeof body.password === 'string' ? body.password : ''
-    const secret = getSecret()
+    const loginPassword = getLoginPassword()
+    const signingSecret = getSecret()
 
-    if (!secret) {
+    if (!loginPassword) {
       return NextResponse.json(
         { ok: false, error: 'Admin login not configured. Set ADMIN_PASSWORD in .env.' },
         { status: 503 }
       )
     }
 
-    if (password !== secret) {
+    if (!signingSecret) {
+      return NextResponse.json(
+        { ok: false, error: 'Session signing not configured. Set ADMIN_PASSWORD or SESSION_SECRET.' },
+        { status: 503 }
+      )
+    }
+
+    if (password !== loginPassword) {
       return NextResponse.json({ ok: false, error: 'Invalid password' }, { status: 401 })
     }
 

@@ -215,9 +215,9 @@ export default function RatesPage() {
                       </div>
                     </div>
                   </div>
-                  <div className="relative h-[500px]">
+                  <div className="relative h-[500px] rounded-2xl overflow-hidden">
                     <Image
-                      src="/images/rates-homestead.jpg"
+                      src="/images/residences-homestead-main.jpg"
                       alt="Hunter's House luxury accommodation"
                       fill
                       className="object-cover shadow-luxury"
@@ -227,9 +227,9 @@ export default function RatesPage() {
               </div>
 
               <div className="grid md:grid-cols-2 gap-12 items-center mb-20 reveal delay-400">
-                <div className="relative h-[500px] order-2 md:order-1">
+                <div className="relative h-[500px] order-2 md:order-1 rounded-2xl overflow-hidden">
                   <Image
-                    src="/images/rates-stone-villa.jpg"
+                    src="/images/residences-second-house-main.jpg"
                     alt="Rooibok Kraal intimate accommodation"
                     fill
                     className="object-cover shadow-luxury"

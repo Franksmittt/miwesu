@@ -16,10 +16,10 @@ type RateItem = {
 }
 
 const CATEGORY_LABELS: Record<string, string> = {
-  ACCOMMODATION: 'Residences',
-  SPECIES: 'Species',
+  ACCOMMODATION: 'Accommodation',
+  SPECIES: 'Species (Conservation Harvest)',
   ACTIVITY: 'Experiences',
-  EXTRA: 'Extras',
+  EXTRA: 'Extras (Wood, vehicle, etc.)',
 }
 
 export default function AdminRatesPage() {
@@ -31,6 +31,8 @@ export default function AdminRatesPage() {
   const [editingId, setEditingId] = useState<string | null>(null)
   const [editValue, setEditValue] = useState('')
   const [saving, setSaving] = useState(false)
+  const [exportLoading, setExportLoading] = useState(false)
+  const [exportError, setExportError] = useState<string | null>(null)
 
   const loadRates = useCallback(() => {
     setLoading(true)
@@ -76,14 +78,15 @@ export default function AdminRatesPage() {
         body: JSON.stringify(payload),
       })
       const data = await res.json()
-      if (data.ok && data.rate) {
+      if (data.ok) {
+        const num = Number.isNaN(parseFloat(editValue)) ? 0 : parseFloat(editValue)
         setRates((prev) =>
           prev.map((x) =>
             x.id === editingId
               ? {
                   ...x,
-                  priceZAR: data.rate.priceZAR ?? x.priceZAR,
-                  priceUSD: data.rate.priceUSD ?? x.priceUSD,
+                  priceZAR: data.rate?.priceZAR ?? (currency === 'ZAR' ? num : x.priceZAR),
+                  priceUSD: data.rate?.priceUSD ?? (currency === 'USD' ? num : x.priceUSD),
                 }
               : x
           )
@@ -104,6 +107,35 @@ export default function AdminRatesPage() {
 
   const formatPrice = (v: number) =>
     currency === 'ZAR' ? `R ${v.toLocaleString()}` : `$ ${v.toLocaleString()}`
+
+  const handleExportPdf = async () => {
+    setExportError(null)
+    setExportLoading(true)
+    try {
+      const res = await fetch('/api/admin/pricelist-pdf', { credentials: 'include' })
+      if (res.status === 401) {
+        setExportError('Please log in to export the pricelist.')
+        return
+      }
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}))
+        setExportError(data?.error || `Export failed (${res.status})`)
+        return
+      }
+      const blob = await res.blob()
+      const url = URL.createObjectURL(blob)
+      const a = document.createElement('a')
+      a.href = url
+      a.download = 'miwesu-pricelist.pdf'
+      a.click()
+      URL.revokeObjectURL(url)
+      hapticConfirm()
+    } catch (e) {
+      setExportError(e instanceof Error ? e.message : 'Export failed')
+    } finally {
+      setExportLoading(false)
+    }
+  }
 
   return (
     <main id="main-content" className="flex-1">
@@ -130,17 +162,21 @@ export default function AdminRatesPage() {
                 USD ($)
               </button>
             </div>
-            <a
-              href="/api/admin/pricelist-pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => hapticConfirm()}
-              className="inline-flex items-center gap-2 py-3 px-5 bg-gold-500 text-onyx font-semibold rounded-xl text-sm hover:bg-gold-400 transition-colors"
+            <button
+              type="button"
+              onClick={handleExportPdf}
+              disabled={exportLoading}
+              className="inline-flex items-center gap-2 py-3 px-5 bg-gold-500 text-onyx font-semibold rounded-xl text-sm hover:bg-gold-400 transition-colors disabled:opacity-60"
             >
-              <FileDown className="w-4 h-4" /> Export Pricelist (PDF)
-            </a>
+              <FileDown className="w-4 h-4" /> {exportLoading ? 'Exporting…' : 'Export Pricelist (PDF)'}
+            </button>
           </div>
         </div>
+        {exportError && (
+          <div className="mb-6 rounded-xl bg-red-500/10 border border-red-500/30 px-4 py-3 text-red-300 text-sm">
+            {exportError}
+          </div>
+        )}
 
         {demo && (
           <div className="mb-6 rounded-xl bg-gold-500/10 border border-gold-500/30 px-4 py-3 text-gold-300 text-sm">
@@ -153,15 +189,16 @@ export default function AdminRatesPage() {
         ) : (
           <div className="space-y-10">
             {['ACCOMMODATION', 'SPECIES', 'ACTIVITY', 'EXTRA'].map((cat) => {
-              const items = byCategory[cat]
-              if (!items?.length) return null
+              const items = byCategory[cat] ?? []
               return (
                 <section key={cat} className="rounded-2xl border border-white/10 bg-onyx-light/30 overflow-hidden">
                   <h2 className="font-serif text-lg text-gold-400 px-6 py-4 border-b border-white/10">
                     {CATEGORY_LABELS[cat] ?? cat}
                   </h2>
                   <div className="p-4 sm:p-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                    {items.map((r) => (
+                    {items.length === 0 ? (
+                      <p className="text-gray-500 text-sm col-span-full">No rates in this category. Run database seed to populate.</p>
+                    ) : items.map((r) => (
                       <div
                         key={r.id}
                         className="rounded-xl border border-white/5 bg-black/20 p-4 flex flex-col justify-between"

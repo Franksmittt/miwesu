@@ -94,23 +94,29 @@ async function main() {
     'Bush Pig': 5500,
     'Red Hartebeest': 16000,
     Gemsbok: 25000,
-    Sable: 0, // per inch
+    Sable: 0, // R2,000 per inch
     Roan: 0, // N/A
     Ostrich: 9500,
     Bushbuck: 0,
     Lechwe: 0,
     'Cape Buffalo': 0,
   }
+  const SPECIES_DESCRIPTIONS: Record<string, string> = {
+    'Blue Wildebeest': 'Over 27" R15,000',
+    Nyala: 'Over 26" R30,000',
+    Sable: 'R2,000 per inch',
+  }
   for (let i = 0; i < SPECIES.length; i++) {
     const name = SPECIES[i]
     const priceZAR = SPECIES_PRICES_ZAR[name] ?? 0
+    const desc = SPECIES_DESCRIPTIONS[name] ?? 'Trophy fee (subject to availability)'
     await prisma.rateItem.upsert({
       where: { category_name: { category: 'SPECIES', name } },
-      update: { sortOrder: i, priceZAR, priceUSD: Math.round(priceZAR / 18.5) },
+      update: { sortOrder: i, priceZAR, priceUSD: Math.round(priceZAR / 18.5), description: desc },
       create: {
         category: 'SPECIES',
         name,
-        description: 'Trophy fee (subject to availability)',
+        description: desc,
         priceZAR,
         priceUSD: Math.round(priceZAR / 18.5),
         isAvailable: true,
@@ -197,21 +203,38 @@ async function main() {
       sortOrder: 0,
     },
   })
-  await prisma.rateItem.upsert({
-    where: { category_name: { category: 'EXTRA', name: 'MIWESU Premium Firewood' } },
-    update: { priceZAR: 450, priceUSD: 24 },
-    create: {
-      category: 'EXTRA',
-      name: 'MIWESU Premium Firewood',
-      description: 'Per batch',
-      priceZAR: 450,
-      priceUSD: 24,
-      isAvailable: true,
-      sortOrder: 1,
-    },
-  })
 
-  console.log('Seeded units (Hunter\'s House, Rooibok Kraal), SystemSettings, RateItems (accommodation, species, activities, extras)')
+  await prisma.rateItem.deleteMany({ where: { category: 'EXTRA', name: 'MIWESU Premium Firewood' } })
+
+  const WOOD_PRODUCTS: Array<{ name: string; priceZAR: number; description: string }> = [
+    { name: 'Premium Sekelbos 10kg', priceZAR: 25, description: 'MOQ 50 bags' },
+    { name: 'Premium Sekelbos 20kg', priceZAR: 50, description: 'MOQ 40 bags' },
+    { name: 'Premium Sekelbos 30kg', priceZAR: 70, description: 'MOQ 20 bags' },
+    { name: 'Geelhaak Hardwood 10kg', priceZAR: 25, description: 'MOQ 50 bags' },
+    { name: 'Geelhaak Hardwood 20kg', priceZAR: 50, description: 'MOQ 40 bags' },
+    { name: 'Geelhaak Hardwood 30kg', priceZAR: 70, description: 'MOQ 20 bags' },
+    { name: 'The Ultimate Braai Mix 10kg', priceZAR: 25, description: 'MOQ 50 bags' },
+    { name: 'The Ultimate Braai Mix 20kg', priceZAR: 50, description: 'MOQ 40 bags' },
+    { name: 'The Ultimate Braai Mix 30kg', priceZAR: 70, description: 'MOQ 20 bags' },
+  ]
+  for (let i = 0; i < WOOD_PRODUCTS.length; i++) {
+    const { name, priceZAR, description } = WOOD_PRODUCTS[i]
+    await prisma.rateItem.upsert({
+      where: { category_name: { category: 'EXTRA', name } },
+      update: { priceZAR, priceUSD: Math.round(priceZAR / 18.5), description, sortOrder: 1 + i },
+      create: {
+        category: 'EXTRA',
+        name,
+        description,
+        priceZAR,
+        priceUSD: Math.round(priceZAR / 18.5),
+        isAvailable: true,
+        sortOrder: 1 + i,
+      },
+    })
+  }
+
+  console.log('Seeded units, SystemSettings, RateItems (accommodation, species, activities, extras including wood)')
 }
 
 main()

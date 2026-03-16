@@ -48,6 +48,12 @@ const SPECIES_PRICES_ZAR: Record<string, number> = {
   'Cape Buffalo': 0,
 }
 
+const SPECIES_DESCRIPTIONS: Record<string, string> = {
+  'Blue Wildebeest': 'Over 27" R15,000',
+  Nyala: 'Over 26" R30,000',
+  Sable: 'R2,000 per inch',
+}
+
 export const DEFAULT_EXCHANGE_RATE = 18.5
 
 export function getDefaultRateItems(): RateItemRecord[] {
@@ -55,11 +61,12 @@ export function getDefaultRateItems(): RateItemRecord[] {
 
   SPECIES.forEach((name, i) => {
     const priceZAR = SPECIES_PRICES_ZAR[name] ?? 0
+    const desc = SPECIES_DESCRIPTIONS[name] ?? 'Trophy fee (subject to availability)'
     items.push({
       id: `species-${name.replace(/\s+/g, '-').toLowerCase()}`,
       category: 'SPECIES',
       name,
-      description: 'Trophy fee (subject to availability)',
+      description: desc,
       priceZAR,
       priceUSD: Math.round(priceZAR / 18.5),
       isAvailable: true,
@@ -118,16 +125,15 @@ export function getDefaultRateItems(): RateItemRecord[] {
       isAvailable: true,
       sortOrder: 0,
     },
-    {
-      id: 'extra-firewood',
-      category: 'EXTRA',
-      name: 'MIWESU Premium Firewood',
-      description: 'Per batch (Sekelbos, Geelhak, Braai Mix)',
-      priceZAR: 450,
-      priceUSD: 24,
-      isAvailable: true,
-      sortOrder: 1,
-    }
+    { id: 'extra-sekelbos-10', category: 'EXTRA', name: 'Premium Sekelbos 10kg', description: 'MOQ 50 bags', priceZAR: 25, priceUSD: 1, isAvailable: true, sortOrder: 1 },
+    { id: 'extra-sekelbos-20', category: 'EXTRA', name: 'Premium Sekelbos 20kg', description: 'MOQ 40 bags', priceZAR: 50, priceUSD: 3, isAvailable: true, sortOrder: 2 },
+    { id: 'extra-sekelbos-30', category: 'EXTRA', name: 'Premium Sekelbos 30kg', description: 'MOQ 20 bags', priceZAR: 70, priceUSD: 4, isAvailable: true, sortOrder: 3 },
+    { id: 'extra-geelhaak-10', category: 'EXTRA', name: 'Geelhaak Hardwood 10kg', description: 'MOQ 50 bags', priceZAR: 25, priceUSD: 1, isAvailable: true, sortOrder: 4 },
+    { id: 'extra-geelhaak-20', category: 'EXTRA', name: 'Geelhaak Hardwood 20kg', description: 'MOQ 40 bags', priceZAR: 50, priceUSD: 3, isAvailable: true, sortOrder: 5 },
+    { id: 'extra-geelhaak-30', category: 'EXTRA', name: 'Geelhaak Hardwood 30kg', description: 'MOQ 20 bags', priceZAR: 70, priceUSD: 4, isAvailable: true, sortOrder: 6 },
+    { id: 'extra-braaimix-10', category: 'EXTRA', name: 'The Ultimate Braai Mix 10kg', description: 'MOQ 50 bags', priceZAR: 25, priceUSD: 1, isAvailable: true, sortOrder: 7 },
+    { id: 'extra-braaimix-20', category: 'EXTRA', name: 'The Ultimate Braai Mix 20kg', description: 'MOQ 40 bags', priceZAR: 50, priceUSD: 3, isAvailable: true, sortOrder: 8 },
+    { id: 'extra-braaimix-30', category: 'EXTRA', name: 'The Ultimate Braai Mix 30kg', description: 'MOQ 20 bags', priceZAR: 70, priceUSD: 4, isAvailable: true, sortOrder: 9 },
   )
 
   return items.sort((a, b) => a.sortOrder - b.sortOrder)

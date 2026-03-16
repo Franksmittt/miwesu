@@ -8,6 +8,7 @@ import React from 'react'
 type RateItemPDF = {
   id: string
   name: string
+  description?: string | null
   category: 'ACCOMMODATION' | 'SPECIES' | 'ACTIVITY' | 'EXTRA'
   priceZAR: number
   priceUSD: number
@@ -21,6 +22,7 @@ async function getRates(): Promise<RateItemPDF[]> {
     return items.map((r) => ({
       id: r.id,
       name: r.name,
+      description: r.description ?? undefined,
       category: r.category as RateItemPDF['category'],
       priceZAR: Number(r.priceZAR) || 0,
       priceUSD: Number(r.priceUSD) || 0,
@@ -29,6 +31,7 @@ async function getRates(): Promise<RateItemPDF[]> {
     return getDefaultRateItems().map((r) => ({
       id: r.id,
       name: r.name,
+      description: r.description ?? undefined,
       category: r.category,
       priceZAR: r.priceZAR,
       priceUSD: r.priceUSD,

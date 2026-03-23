@@ -668,7 +668,7 @@ export default function GreaterKuduPage() {
               </div>
               <div className="relative h-full min-h-[500px]">
                 <Image
-                  src="/images/about-trophy-kudu.jpg"
+                  src="/images/kudu-bull-portrait-01.png"
                   alt="Trophy Kudu bull"
                   fill
                   sizes="(max-width: 768px) 100vw, 800px"

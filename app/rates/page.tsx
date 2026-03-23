@@ -60,10 +60,10 @@ export default function RatesPage() {
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
           <div className="relative z-20 text-center px-4 sm:px-6">
-            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
+            <span className="type-eyebrow-hero mb-4 sm:mb-6 block">
               {intent === 'biltong' ? 'Jag & Biltong pryse' : 'Investment Guide'}
             </span>
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
+            <h1 className="type-h1-hero mb-4 sm:mb-6 px-4">
               Rates & <span className="text-gradient-gold">Pricing</span>
             </h1>
             <p className="text-white/70 text-sm mt-2">
@@ -195,7 +195,7 @@ export default function RatesPage() {
                     <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-4 block">
                       Hunter&apos;s House
                     </span>
-                    <h3 className="font-serif text-4xl md:text-5xl text-white mb-6">
+                    <h3 className="type-h2-section-dark mb-6">
                       Exclusive Use Pricing
                     </h3>
                     <p className="text-gray-300 text-lg leading-loose mb-6">
@@ -239,7 +239,7 @@ export default function RatesPage() {
                     <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-4 block">
                     Rooibok Kraal
                   </span>
-                  <h3 className="font-serif text-4xl md:text-5xl text-white mb-6">
+                  <h3 className="type-h2-section-dark mb-6">
                     Intimate Sanctuary
                   </h3>
                   <p className="text-gray-300 text-lg leading-loose mb-6">
@@ -322,7 +322,7 @@ export default function RatesPage() {
             {/* CTA Section */}
             <div className="bg-gold-500 p-12 md:p-16 text-center reveal delay-600">
               <DollarSign className="w-16 h-16 text-onyx mx-auto mb-6" />
-              <h3 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h3 className="type-h2-section mb-6">
                 Detailed Investment Guide
               </h3>
               <p className="text-onyx/90 font-sans text-lg leading-relaxed mb-8 max-w-3xl mx-auto">
@@ -344,7 +344,7 @@ export default function RatesPage() {
             <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-8">
               Custom Packages Available
             </h2>
-            <p className="font-sans text-gray-600 text-lg leading-loose mb-10">
+            <p className="type-lead mb-10">
               Our concierge team can create bespoke packages tailored to your needs. Contact us for personalized quotes and availability.
             </p>
             <Link

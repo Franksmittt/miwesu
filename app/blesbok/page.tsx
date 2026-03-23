@@ -43,13 +43,13 @@ export default function BlesbokPage() {
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
           <div className="relative z-20 text-center px-4 sm:px-6">
-            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
+            <span className="type-eyebrow-hero mb-4 sm:mb-6 block">
               The Keystone Species
             </span>
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
+            <h1 className="type-h1-hero mb-4 sm:mb-6 px-4">
               <span className="text-gradient-gold">Blesbok</span>
             </h1>
-            <p className="text-white/80 text-sm sm:text-base md:text-lg max-w-2xl mx-auto italic font-serif">
+            <p className="type-species-latin">
               Damaliscus pygargus phillipsi
             </p>
           </div>
@@ -74,19 +74,19 @@ export default function BlesbokPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
-                <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
+                <span className="type-eyebrow mb-6 block">
                   Introduction
                 </span>
-                <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+                <h2 className="type-h2-section mb-6">
                   The Keystone of the South African Highveld
                 </h2>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   In the vast and varied tapestry of Southern African wildlife, few species occupy a position of such ecological and economic centrality as the Blesbok. Endemic to the interior plateau of South Africa, this medium-sized antelope is a quintessential symbol of the Highveld grasslands.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Historically, this species traversed the treeless plains in herds numbering in the hundreds of thousands, a "brown tide" that shaped the vegetation dynamics of the interior. Today, following a dramatic recovery from the brink of extinction in the late 19th century, the Blesbok stands as the bread-and-butter species of the South African game industry.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose">
+                <p className="type-lead">
                   The Blesbok represents a unique intersection of conservation success, commercial utility, and sporting challenge -a testament to the resilience of nature and the efficacy of value-based conservation.
                 </p>
               </div>
@@ -110,7 +110,7 @@ export default function BlesbokPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Classification & History
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Taxonomy and Evolutionary Distinctiveness
               </h2>
             </div>
@@ -175,7 +175,7 @@ export default function BlesbokPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Physical Characteristics
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Morphology and Physiological Adaptations
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
@@ -240,10 +240,10 @@ export default function BlesbokPage() {
               </div>
               <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Coat Coloration and Markings</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The coat of the Blesbok is a study in camouflage and signaling. The dorsal hair is a reddish-brown, which can appear quite dark, almost purple-black, in older rams, especially when viewed in low light.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   A characteristic "saddle" of lighter, fawn-colored hair sits across the shoulders and back, creating a two-tone effect that is visible from a distance. The rump is also a lighter yellowish-brown, but crucially, it lacks the prominent, bright white square rump patch that distinguishes the Bontebok.
                 </p>
                 <div className="bg-gold-500/10 border-l-4 border-gold-500 p-6 mt-6">
@@ -259,10 +259,10 @@ export default function BlesbokPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Unlike Impala or Kudu where only males carry horns, both Blesbok rams and ewes are horned. This evolutionary trait suggests that females may need weapons to defend feeding territories or calves in the open plains where hiding is difficult.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The horns are "lyrate" (lyre-shaped), growing outwards and backwards before hooking slightly forwards and inwards at the tips. The horns are heavily annulated (ringed) for the bottom two-thirds of their length, with smooth, pointed tips.
                 </p>
                 <div className="bg-onyx text-white p-6 mt-6">
@@ -311,7 +311,7 @@ export default function BlesbokPage() {
             {/* Color Variants */}
             <div className="bg-gradient-to-br from-gold-500/10 to-gold-500/5 border border-gold-500/20 p-8 md:p-12 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Color Variants: The Product of Selective Breeding</h3>
-              <p className="font-sans text-gray-600 text-lg leading-loose mb-8">
+              <p className="type-lead mb-8">
                 In the modern game ranching era, the Blesbok has become a canvas for genetic selection. Recessive genes, which would occur naturally but rarely, have been isolated and amplified by breeders to create distinct color morphs.
               </p>
               <div className="grid md:grid-cols-2 gap-6">
@@ -351,7 +351,7 @@ export default function BlesbokPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Behavioral Ecology
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Ethology and Social Organization
               </h2>
             </div>
@@ -440,7 +440,7 @@ export default function BlesbokPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Habitat & Diet
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Ecological Footprint
               </h2>
             </div>
@@ -448,7 +448,7 @@ export default function BlesbokPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Grazing Preferences</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Blesbok are selective bulk grazers, with a strong preference for short, sweet grasses (Themeda triandra, Cynodon dactylon, Eragrostis species). They favor open grassland plains (Highveld) and are particularly attracted to areas that have been recently burned or mowed, where the new growth is fresh and high in protein.
                 </p>
                 <div className="bg-gold-500/10 border-l-4 border-gold-500 p-6 mt-6">
@@ -481,10 +481,10 @@ export default function BlesbokPage() {
               </div>
               <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Water Requirements</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Unlike the Gemsbok or Springbok which can extract moisture from roots and tubers, the Blesbok must drink surface water regularly, typically once a day. This dependency means they rarely wander more than a few kilometers from a water source.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   On hunting farms, this makes waterholes a focal point for their daily movement, particularly in the late morning or early afternoon. During the dry season when water dependency peaks, waterholes become prime ambush locations.
                 </p>
                 <div className="bg-onyx text-white p-6 mt-6">
@@ -505,7 +505,7 @@ export default function BlesbokPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 The Hunt
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Strategies, Gear, and Ballistics
               </h2>
               <p className="text-gray-300 text-lg max-w-3xl mx-auto">
@@ -654,7 +654,7 @@ export default function BlesbokPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Trophy Evaluation
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Field Judging and Trophy Evaluation
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
@@ -665,7 +665,7 @@ export default function BlesbokPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Distinguishing Rams vs. Ewes</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-6">
+                <p className="type-lead mb-6">
                   Shooting a female by mistake is a cardinal sin in trophy hunting.
                 </p>
                 <div className="bg-white border border-gray-200 shadow-sm">
@@ -767,7 +767,7 @@ export default function BlesbokPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 The Harvest
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Venison, Butchery, and Utilization
               </h2>
               <p className="text-gray-300 text-lg max-w-3xl mx-auto">
@@ -873,7 +873,7 @@ export default function BlesbokPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Tracking & Signs
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Reading the Veld
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
@@ -884,7 +884,7 @@ export default function BlesbokPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Spoor (Footprints)</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Blesbok hooves are heart-shaped but elongated, typical of the Alcelaphine tribe.
                 </p>
                 <div className="bg-white border border-gray-200 p-6 mt-6">
@@ -921,7 +921,7 @@ export default function BlesbokPage() {
               </div>
               <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Dung (Scat) and Middens</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Blesbok dung appears as small, black pellets, often clustered together. When fresh, they are shiny and moist.
                 </p>
                 <div className="bg-gold-500/10 border-l-4 border-gold-500 p-6 mt-6">
@@ -951,7 +951,7 @@ export default function BlesbokPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Conclusion
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 A Testament to Conservation Success
               </h2>
             </div>
@@ -990,7 +990,7 @@ export default function BlesbokPage() {
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="reveal">
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Experience the Blesbok at MIWESU
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto mb-8">

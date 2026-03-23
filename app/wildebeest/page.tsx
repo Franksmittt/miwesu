@@ -43,13 +43,13 @@ export default function WildebeestPage() {
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
           <div className="relative z-20 text-center px-4 sm:px-6">
-            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
+            <span className="type-eyebrow-hero mb-4 sm:mb-6 block">
               The Tough One
             </span>
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
+            <h1 className="type-h1-hero mb-4 sm:mb-6 px-4">
               <span className="text-gradient-gold">Blue Wildebeest</span>
             </h1>
-            <p className="text-white/80 text-sm sm:text-base md:text-lg max-w-2xl mx-auto italic font-serif">
+            <p className="type-species-latin">
               Connochaetes taurinus
             </p>
           </div>
@@ -74,19 +74,19 @@ export default function WildebeestPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
-                <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
+                <span className="type-eyebrow mb-6 block">
                   Introduction
                 </span>
-                <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+                <h2 className="type-h2-section mb-6">
                   The Tough One of the Plains
                 </h2>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The Blue Wildebeest, also known as the Brindled Gnu, is one of Africa's most iconic and resilient antelope species. Known as "The Tough One" for its remarkable tenacity and ability to survive in harsh conditions, this large antelope is a cornerstone of the African plains ecosystem.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The Blue Wildebeest thrives in open plains and grasslands, where it forms large herds that migrate in search of fresh grazing. Their distinctive appearance -with a massive head, shaggy mane, and curved horns -makes them instantly recognizable on the African savanna.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose">
+                <p className="type-lead">
                   In the Makoppa district, our Sweetveld grasslands provide ideal habitat for Blue Wildebeest. The nutrient-rich grasses sustain them in peak condition year-round, resulting in exceptional trophy quality and superior meat production.
                 </p>
               </div>
@@ -109,7 +109,7 @@ export default function WildebeestPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Classification & History
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Taxonomy and Evolutionary Distinctiveness
               </h2>
             </div>
@@ -173,7 +173,7 @@ export default function WildebeestPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Physical Characteristics
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Morphology and Physiological Adaptations
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
@@ -237,10 +237,10 @@ export default function WildebeestPage() {
               </div>
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Coat Coloration and Markings</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The Blue Wildebeest's coat is a distinctive bluish-grey to dark grey, with darker vertical stripes running along the flanks. The name "Blue" refers to this bluish-grey coloration, which can appear almost black in certain lighting conditions.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   A prominent black mane runs from the forehead down the neck and along the back, creating a striking contrast with the body color. The face is typically darker than the body, and both males and females have a beard of long, dark hair under the chin.
                 </p>
                 <div className="bg-gold-500/10 border-l-4 border-gold-500 p-6 mt-6">
@@ -256,10 +256,10 @@ export default function WildebeestPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Both bulls and cows carry horns, which is unusual among antelope. The horns are broad at the base and curve outward, then upward, and finally inward, creating a distinctive shape that resembles a handlebar mustache or the letter "S".
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The horns are heavily ridged (annulated) along their length, with smooth, sharp tips. In bulls, the horns are typically thicker and more massive, while cows' horns are more slender but can be equally long.
                 </p>
                 <div className="bg-onyx text-white p-6 mt-6">
@@ -313,7 +313,7 @@ export default function WildebeestPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Behavioral Ecology
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Ethology and Social Organization
               </h2>
             </div>
@@ -401,7 +401,7 @@ export default function WildebeestPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Habitat & Diet
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Ecological Footprint
               </h2>
             </div>
@@ -409,7 +409,7 @@ export default function WildebeestPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Grazing Preferences</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Blue Wildebeest are bulk grazers, feeding primarily on short, sweet grasses. They prefer Themeda triandra (red grass), Cynodon dactylon (couch grass), and other palatable grass species. They favor areas with fresh growth, often moving to recently burned or mowed areas where new grass is sprouting.
                 </p>
                 <div className="bg-gold-500/10 border-l-4 border-gold-500 p-6 mt-6">
@@ -440,10 +440,10 @@ export default function WildebeestPage() {
               </div>
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Water Requirements</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Wildebeest are water-dependent and must drink daily when water is available. This dependency makes waterholes focal points for their daily movement patterns, especially during the dry season.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   On hunting farms, waterholes become prime locations for hunting, as Wildebeest visit them regularly and predictably. During the dry season, when water dependency peaks, waterholes offer excellent ambush opportunities.
                 </p>
                 <div className="bg-onyx text-white p-6 mt-6">
@@ -464,7 +464,7 @@ export default function WildebeestPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 The Hunt
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Strategies, Gear, and Ballistics
               </h2>
               <p className="text-gray-300 text-lg max-w-3xl mx-auto">
@@ -613,7 +613,7 @@ export default function WildebeestPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Trophy Evaluation
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Field Judging and Trophy Evaluation
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
@@ -624,7 +624,7 @@ export default function WildebeestPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Distinguishing Bulls vs. Cows</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-6">
+                <p className="type-lead mb-6">
                   Shooting a cow by mistake is a serious error in trophy hunting. Careful observation is required.
                 </p>
                 <div className="bg-white border border-gray-200 shadow-sm">
@@ -725,7 +725,7 @@ export default function WildebeestPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 The Harvest
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Venison, Butchery, and Utilization
               </h2>
               <p className="text-gray-300 text-lg max-w-3xl mx-auto">
@@ -796,7 +796,7 @@ export default function WildebeestPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Conclusion
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 The Tough One of the Plains
               </h2>
             </div>
@@ -835,7 +835,7 @@ export default function WildebeestPage() {
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="reveal">
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Experience the Blue Wildebeest at MIWESU
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto mb-8">

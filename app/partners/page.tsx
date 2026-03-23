@@ -43,7 +43,7 @@ export default function PartnersPage() {
             <span className="text-gold-400 text-[10px] sm:text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
               The Full Journey
             </span>
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 leading-none">
+            <h1 className="type-h1-hero mb-4">
               Trusted <span className="text-gradient-gold">Partners</span>
             </h1>
             <p className="text-white/80 text-sm sm:text-base max-w-xl mx-auto">

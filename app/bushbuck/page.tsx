@@ -43,13 +43,13 @@ export default function BushbuckPage() {
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
           <div className="relative z-20 text-center px-4 sm:px-6">
-            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
+            <span className="type-eyebrow-hero mb-4 sm:mb-6 block">
               The Prince of the Thickets
             </span>
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
+            <h1 className="type-h1-hero mb-4 sm:mb-6 px-4">
               <span className="text-gradient-gold">Bushbuck</span>
             </h1>
-            <p className="text-white/80 text-sm sm:text-base md:text-lg max-w-2xl mx-auto italic font-serif">
+            <p className="type-species-latin">
               Tragelaphus sylvaticus
             </p>
           </div>
@@ -74,19 +74,19 @@ export default function BushbuckPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
-                <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
+                <span className="type-eyebrow mb-6 block">
                   Introduction
                 </span>
-                <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+                <h2 className="type-h2-section mb-6">
                   The Prince of the Thickets
                 </h2>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The Bushbuck is one of Africa's most enigmatic and challenging antelope species. Known as "The Prince of the Thickets" for its preference for dense riverine cover and its elusive nature, this medium-sized antelope offers a hunting challenge disproportionate to its size.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Despite its relatively small stature compared to its spiral-horned cousins like the Greater Kudu, the Bushbuck compensates with remarkable tenacity, adaptability, and a reputation for aggression when cornered that rivals the continent's "Big Five."
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose">
+                <p className="type-lead">
                   In the Makoppa district, Bushbuck thrive in the dense riverine thickets and forest edges. Their preference for cover makes them challenging to hunt, but their exceptional venison quality and the thrill of the pursuit make them a highly sought-after trophy.
                 </p>
               </div>
@@ -109,7 +109,7 @@ export default function BushbuckPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Classification & History
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Taxonomy and Evolutionary Distinctiveness
               </h2>
             </div>
@@ -174,7 +174,7 @@ export default function BushbuckPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Physical Characteristics
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Morphology and Physiological Adaptations
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
@@ -238,10 +238,10 @@ export default function BushbuckPage() {
               </div>
               <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Coat Coloration and Markings</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The Bushbuck's coat is a masterpiece of disruptive coloration, designed to break up the animal's outline against the dappled light of the forest floor. White spots and stripes are geometrically arranged on the ears, chin, tail, legs, and flanks.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The most striking feature is the extreme sexual dimorphism in color. Females retain a reddish hue throughout their lives, while males darken significantly with age, transitioning from chestnut to dark brown, sepia, or almost jet black in mature rams.
                 </p>
                 <div className="bg-gold-500/10 border-l-4 border-gold-500 p-6 mt-6">
@@ -257,10 +257,10 @@ export default function BushbuckPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Only rams carry horns, which are distinct from the wide spirals of the Kudu. Bushbuck horns are relatively straight but feature a strong spiral keel that twists around the core. They grow backward, roughly parallel to the neck, preventing snagging on vines and branches when running through thick bush.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Horn development: Horn buds appear at 6-10 months, straight spikes ("penkop") at 12 months, the spiral keel becomes evident at 2 years, and the first full twist is completed at 3+ years.
                 </p>
                 <div className="bg-onyx text-white p-6 mt-6">
@@ -315,7 +315,7 @@ export default function BushbuckPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Behavioral Ecology
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Ethology and Social Organization
               </h2>
             </div>
@@ -404,7 +404,7 @@ export default function BushbuckPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Habitat & Diet
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Ecological Footprint
               </h2>
             </div>
@@ -412,7 +412,7 @@ export default function BushbuckPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">The Edge Effect</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The Bushbuck is an "ecotone" specialist. It thrives at the interface between two habitats: dense cover (for safety/rest) and open clearing (for high-quality forage). They are rarely found far from dense vegetation -riverine forest, montane forest, coastal dune bush, or dense Acacia thickets.
                 </p>
                 <div className="bg-gold-500/10 border-l-4 border-gold-500 p-6 mt-6">
@@ -444,10 +444,10 @@ export default function BushbuckPage() {
               </div>
               <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Selective Browsing</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Bushbuck are selective browsers (concentrate selectors). They feed primarily on high-quality browse: leaves, buds, flowers, and fruits of dicotyledonous plants. They are highly selective, choosing the most nutritious parts of the plant to maximize energy intake per bite.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Unlike pure browsers, Bushbuck will graze on fresh, green grass, but this rarely constitutes more than 10-20% of their diet. They are also known to dig for roots and tubers during the dry season and consume fungi and mushrooms.
                 </p>
                 <div className="bg-onyx text-white p-6 mt-6">
@@ -468,7 +468,7 @@ export default function BushbuckPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 The Hunt
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Strategies, Gear, and Ballistics
               </h2>
               <p className="text-gray-300 text-lg max-w-3xl mx-auto">
@@ -632,7 +632,7 @@ export default function BushbuckPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Trophy Evaluation
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Field Judging and Trophy Evaluation
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
@@ -643,7 +643,7 @@ export default function BushbuckPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">The "Ear Rule"</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-6">
+                <p className="type-lead mb-6">
                   The most reliable field estimation method involves comparing the horn length to the ear length.
                 </p>
                 <div className="bg-white border border-gray-200 shadow-sm">
@@ -722,7 +722,7 @@ export default function BushbuckPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 The Harvest
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Venison, Butchery, and Utilization
               </h2>
               <p className="text-gray-300 text-lg max-w-3xl mx-auto">
@@ -825,7 +825,7 @@ export default function BushbuckPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Conclusion
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 The Prince of the Thickets
               </h2>
             </div>
@@ -864,7 +864,7 @@ export default function BushbuckPage() {
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="reveal">
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Experience the Bushbuck at MIWESU
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto mb-8">

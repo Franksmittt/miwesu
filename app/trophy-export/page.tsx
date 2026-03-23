@@ -44,7 +44,7 @@ export default function TrophyExportPage() {
             <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] uppercase font-bold mb-4 block">
               Logistics & Peace of Mind
             </span>
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 leading-none">
+            <h1 className="type-h1-hero mb-4">
               Trophy Export & <span className="text-gradient-gold">Travel</span>
             </h1>
             <p className="text-white/80 text-sm sm:text-base max-w-2xl mx-auto mt-4">

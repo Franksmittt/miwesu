@@ -43,13 +43,13 @@ export default function CapeBuffaloPage() {
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
           <div className="relative z-20 text-center px-4 sm:px-6">
-            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
+            <span className="type-eyebrow-hero mb-4 sm:mb-6 block">
               The Black Death
             </span>
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
+            <h1 className="type-h1-hero mb-4 sm:mb-6 px-4">
               <span className="text-gradient-gold">Cape Buffalo</span>
             </h1>
-            <p className="text-white/80 text-sm sm:text-base md:text-lg max-w-2xl mx-auto italic font-serif">
+            <p className="type-species-latin">
               Syncerus caffer
             </p>
           </div>
@@ -89,19 +89,19 @@ export default function CapeBuffaloPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
-                <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
+                <span className="type-eyebrow mb-6 block">
                   Introduction
                 </span>
-                <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+                <h2 className="type-h2-section mb-6">
                   The Black Death
                 </h2>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The Cape Buffalo is one of Africa's most formidable and respected animals. Known as "The Black Death" for its dark coat and reputation as one of the continent's most dangerous game animals, this massive bovine is a member of the "Big Five" and represents the ultimate African hunting challenge.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   With its massive build, formidable horns, and legendary tenacity, the Cape Buffalo has earned a reputation for being one of the most dangerous animals to hunt. They are responsible for more hunter fatalities in Africa than any other species, making them a quarry that demands the utmost respect, preparation, and skill.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose">
+                <p className="type-lead">
                   In the Makoppa district, Cape Buffalo thrive in the dense bushveld areas where they can find both grazing opportunities and thick cover. Their presence adds an element of danger and excitement to the reserve, even for those not actively hunting them.
                 </p>
               </div>
@@ -124,7 +124,7 @@ export default function CapeBuffaloPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Classification & History
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Taxonomy and Evolutionary Distinctiveness
               </h2>
             </div>
@@ -188,7 +188,7 @@ export default function CapeBuffaloPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Physical Characteristics
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Morphology and Physiological Adaptations
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
@@ -252,10 +252,10 @@ export default function CapeBuffaloPage() {
               </div>
               <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Coat Coloration and Markings</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The Cape Buffalo's coat is typically dark brown to black, giving rise to the nickname "Black Death." The color can vary from almost black in mature bulls to lighter brown in younger animals and cows.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The hair is sparse and coarse, with older bulls often appearing almost hairless. The skin is thick and tough, providing protection from thorns, insects, and the elements. The sparse hair allows for better heat dissipation in the African sun.
                 </p>
                 <div className="bg-gold-500/10 border-l-4 border-gold-500 p-6 mt-6">
@@ -271,10 +271,10 @@ export default function CapeBuffaloPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Both bulls and cows carry horns, though bulls' horns are typically larger and more massive. The horns grow outward and downward from the sides of the head, then curve upward and inward, creating the distinctive "boss" where they meet on the forehead in mature bulls.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The boss is a solid mass of bone that develops as the animal matures. It serves as protection during head-to-head combat and is a key indicator of a mature bull. The horns themselves are used for defense, combat, and digging.
                 </p>
                 <div className="bg-onyx text-white p-6 mt-6">
@@ -328,7 +328,7 @@ export default function CapeBuffaloPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Behavioral Ecology
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Ethology and Social Organization
               </h2>
             </div>
@@ -416,7 +416,7 @@ export default function CapeBuffaloPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Habitat & Diet
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Ecological Footprint
               </h2>
             </div>
@@ -424,7 +424,7 @@ export default function CapeBuffaloPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Grazing Preferences</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Cape Buffalo are bulk grazers, feeding primarily on grasses. They prefer fresh, green growth and will move to areas with recent rain or new growth. Their grazing helps maintain grassland health by preventing grass from becoming too tall and unpalatable.
                 </p>
                 <div className="bg-gold-500/10 border-l-4 border-gold-500 p-6 mt-6">
@@ -455,10 +455,10 @@ export default function CapeBuffaloPage() {
               </div>
               <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Habitat Requirements</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Cape Buffalo prefer areas with dense bushveld, grasslands, and access to water. They require thick cover for security and open areas for grazing. The combination of these habitats provides food, water, and protection from predators.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The Makoppa district's dense bushveld provides ideal habitat, offering both grazing opportunities and thick cover. Cape Buffalo are commonly found near water sources, where they wallow to cool off and protect themselves from insects.
                 </p>
                 <div className="bg-onyx text-white p-6 mt-6">
@@ -479,7 +479,7 @@ export default function CapeBuffaloPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 The Hunt
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Strategies, Gear, and Ballistics
               </h2>
               <p className="text-gray-300 text-lg max-w-3xl mx-auto">
@@ -647,7 +647,7 @@ export default function CapeBuffaloPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Trophy Evaluation
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Field Judging and Trophy Evaluation
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
@@ -658,7 +658,7 @@ export default function CapeBuffaloPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Distinguishing Bulls vs. Cows</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-6">
+                <p className="type-lead mb-6">
                   Shooting a cow by mistake is a serious error in trophy hunting. Careful observation is required, especially at distance.
                 </p>
                 <div className="bg-white border border-gray-200 shadow-sm">
@@ -764,7 +764,7 @@ export default function CapeBuffaloPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 The Harvest
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Venison, Butchery, and Utilization
               </h2>
               <p className="text-gray-300 text-lg max-w-3xl mx-auto">
@@ -835,7 +835,7 @@ export default function CapeBuffaloPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Conclusion
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 The Black Death
               </h2>
             </div>
@@ -874,7 +874,7 @@ export default function CapeBuffaloPage() {
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="reveal">
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Experience the Cape Buffalo at MIWESU
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto mb-8">

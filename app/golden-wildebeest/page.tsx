@@ -43,13 +43,13 @@ export default function GoldenWildebeestPage() {
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
           <div className="relative z-20 text-center px-4 sm:px-6">
-            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
+            <span className="type-eyebrow-hero mb-4 sm:mb-6 block">
               The Golden Variant
             </span>
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
+            <h1 className="type-h1-hero mb-4 sm:mb-6 px-4">
               <span className="text-gradient-gold">Golden Wildebeest</span>
             </h1>
-            <p className="text-white/80 text-sm sm:text-base md:text-lg max-w-2xl mx-auto italic font-serif">
+            <p className="type-species-latin">
               Connochaetes taurinus
             </p>
           </div>
@@ -74,19 +74,19 @@ export default function GoldenWildebeestPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
-                <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
+                <span className="type-eyebrow mb-6 block">
                   Introduction
                 </span>
-                <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+                <h2 className="type-h2-section mb-6">
                   The Golden Variant
                 </h2>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The Golden Wildebeest is a rare, naturally occurring genetic colour variant of the Blue Wildebeest (Connochaetes taurinus), not a separate species or a hybrid with Black Wildebeest. DNA studies have confirmed it carries no Black Wildebeest genetics. The colour is caused by a recessive gene; both parents must carry the allele for the golden phenotype to appear. Distinguished by its striking golden, copper, or honey coat (and matching mane, beard, and tail rather than black), it is one of the most sought-after colour variants in African hunting.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   While sharing all the physical characteristics, behavior, and habitat preferences of the standard Blue Wildebeest, the Golden Wildebeest's distinctive coloration makes it a rare and highly valuable addition to any collection. The golden hue can range from pale blonde to rich golden tones, creating a dramatic contrast with the typical blue-gray coloration.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose">
+                <p className="type-lead">
                   In the Makoppa district, Golden Wildebeest occur naturally within Blue Wildebeest populations, though they are relatively rare. Their unique appearance and rarity make them a special trophy for hunters seeking something beyond the ordinary.
                 </p>
               </div>
@@ -109,7 +109,7 @@ export default function GoldenWildebeestPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 The Color Variant
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Understanding the Golden Coloration
               </h2>
             </div>
@@ -174,7 +174,7 @@ export default function GoldenWildebeestPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Biology & Characteristics
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Physical Characteristics
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
@@ -238,10 +238,10 @@ export default function GoldenWildebeestPage() {
               </div>
               <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Both bulls and cows carry horns, though bulls' horns are typically larger and more massive. The horns grow outward and then curve upward and inward, creating a distinctive shape. Horn development and characteristics are identical to standard Blue Wildebeest.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Trophy quality is determined by width (spread), mass, and symmetry. A mature bull will have horns with a spread of 28 inches or more, with exceptional specimens exceeding 35 inches. The Rowland Ward minimum is 28 1/2 inches (width).
                 </p>
                 <div className="bg-gold-500/10 border-l-4 border-gold-500 p-6 mt-6">
@@ -262,7 +262,7 @@ export default function GoldenWildebeestPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Behavioral Ecology
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Behavior and Habitat
               </h2>
               <p className="text-gray-300 text-lg max-w-3xl mx-auto">
@@ -327,7 +327,7 @@ export default function GoldenWildebeestPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 The Hunt
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Strategies, Gear, and Ballistics
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
@@ -379,7 +379,7 @@ export default function GoldenWildebeestPage() {
             {/* Rifle Selection */}
             <div className="bg-white border border-gray-200 shadow-luxury p-8 md:p-12 mb-16 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-8">Rifle and Caliber Selection</h3>
-              <p className="font-sans text-gray-600 text-lg leading-loose mb-8">
+              <p className="type-lead mb-8">
                 Golden Wildebeest are identical in size and toughness to standard Blue Wildebeest, so the same caliber recommendations apply. Medium to heavy calibers are recommended due to the animal's size and tenacity.
               </p>
               <div className="overflow-x-auto">
@@ -441,7 +441,7 @@ export default function GoldenWildebeestPage() {
               </div>
               <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Shot Placement</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-6">
+                <p className="type-lead mb-6">
                   Proper shot placement is essential for clean kills and to preserve the unique hide for taxidermy. Since Golden Wildebeest are often mounted as full mounts to showcase the golden coloration, careful shot placement is important.
                 </p>
                 <div className="space-y-6">
@@ -476,7 +476,7 @@ export default function GoldenWildebeestPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Trophy Evaluation
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Field Judging and Trophy Evaluation
               </h2>
               <p className="text-gray-300 text-lg max-w-3xl mx-auto">
@@ -564,7 +564,7 @@ export default function GoldenWildebeestPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 The Harvest
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Venison, Butchery, and Utilization
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
@@ -575,7 +575,7 @@ export default function GoldenWildebeestPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Meat Characteristics</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Golden Wildebeest venison is lean, dark red, and flavorful. The meat has a rich, gamey flavor that is often compared to beef but with a distinctive wild game character. It is highly regarded and versatile in the kitchen.
                 </p>
                 <div className="bg-gold-500/10 border-l-4 border-gold-500 p-6 mt-6">
@@ -605,7 +605,7 @@ export default function GoldenWildebeestPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Conclusion
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 The Golden Variant
               </h2>
             </div>
@@ -644,7 +644,7 @@ export default function GoldenWildebeestPage() {
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="reveal">
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Experience the Golden Wildebeest at MIWESU
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto mb-8">

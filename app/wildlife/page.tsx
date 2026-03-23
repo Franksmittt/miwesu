@@ -198,10 +198,10 @@ export default function WildlifePage() {
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
           <div className="relative z-20 text-center px-4 sm:px-6">
-            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
+            <span className="type-eyebrow-hero mb-4 sm:mb-6 block">
               The Portfolio
             </span>
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
+            <h1 className="type-h1-hero mb-4 sm:mb-6 px-4">
               Conservation <span className="text-gradient-gold">Harvest</span>
             </h1>
           </div>
@@ -432,7 +432,7 @@ export default function WildlifePage() {
                       <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-4 block">
                         The Silent Watchers
                       </span>
-                      <h3 className="font-serif text-4xl md:text-5xl text-white mb-6">
+                      <h3 className="type-h2-section-dark mb-6">
                         Predators of the Makoppa
                       </h3>
                       <p className="text-gray-300 text-lg leading-loose mb-6">
@@ -467,16 +467,16 @@ export default function WildlifePage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row md:items-stretch gap-16 mb-20 reveal">
               <div className="md:w-[calc(50%-2rem)]">
-                <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
+                <span className="type-eyebrow mb-6 block">
                   Sustainable Management
                 </span>
                 <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-8">
                   Ecological Management
                 </h2>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-6">
+                <p className="type-lead mb-6">
                   We do not sell animals; we manage an ecosystem. Our annual ecological census determines which species are available for harvest, ensuring sustainable population management and maintaining the delicate balance of the ecosystem.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-8">
+                <p className="type-lead mb-8">
                   All harvests are conducted ethically, with respect for the animal and the environment. Venison is processed professionally in line with regulations.
                 </p>
                 <div className="grid grid-cols-2 gap-6">
@@ -508,10 +508,10 @@ export default function WildlifePage() {
                 <h3 className="font-serif text-3xl md:text-4xl text-onyx mb-6">
                   The Sweetveld Advantage
                 </h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-8">
+                <p className="type-lead mb-8">
                   The Arid Sweet Bushveld of the Makoppa district sustains game in peak condition year-round. Unlike sourveld areas where grasses lose nutritional value in winter, our sweetveld remains nutritious even when dry and yellow.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose">
+                <p className="type-lead">
                   This means animals hunted here are in superior physical condition -with higher body mass, better trophy quality, and exceptional meat quality. The Sweetveld advantage is real, and it shows in every harvest.
                 </p>
               </div>

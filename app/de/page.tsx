@@ -37,7 +37,7 @@ export default function DePage() {
             <span className="text-gold-400 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
               Limpopo · Malaria-frei
             </span>
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-6 leading-none">
+            <h1 className="type-h1-hero mb-6">
               Jagd in <span className="text-gradient-gold">Limpopo</span>
             </h1>
             <p className="text-white/80 text-base sm:text-lg max-w-2xl mx-auto mb-10">

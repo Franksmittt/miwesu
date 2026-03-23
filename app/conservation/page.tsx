@@ -41,7 +41,7 @@ export default function ConservationPage() {
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
           <div className="relative z-20 text-center px-4 sm:px-6">
-            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
+            <span className="type-eyebrow-hero mb-4 sm:mb-6 block">
               Our Legacy
             </span>
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
@@ -146,7 +146,7 @@ export default function ConservationPage() {
                     <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-4 block">
                       24/7 Protection
                     </span>
-                    <h3 className="font-serif text-4xl md:text-5xl text-white mb-6">
+                    <h3 className="type-h2-section-dark mb-6">
                       Anti-Poaching Units
                     </h3>
                     <p className="text-gray-300 text-lg leading-loose mb-6">
@@ -169,7 +169,7 @@ export default function ConservationPage() {
                   <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-4 block">
                     Community Impact
                   </span>
-                  <h3 className="font-serif text-4xl md:text-5xl text-white mb-6">
+                  <h3 className="type-h2-section-dark mb-6">
                     Community &amp; local economy
                   </h3>
                   <p className="text-gray-300 text-lg leading-loose mb-6">
@@ -261,7 +261,7 @@ export default function ConservationPage() {
         <section className="py-16 sm:py-24 lg:py-32 bg-marble-dark">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-20 reveal">
-              <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
+              <span className="type-eyebrow mb-6 block">
                 The Impact
               </span>
               <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-8">
@@ -304,7 +304,7 @@ export default function ConservationPage() {
               <h3 className="font-serif text-3xl md:text-4xl text-onyx mb-6">
                 Be Part of the Solution
               </h3>
-              <p className="font-sans text-gray-600 text-lg leading-loose mb-8 max-w-2xl mx-auto">
+              <p className="type-lead mb-8 max-w-2xl mx-auto">
                 Your visit directly supports conservation. Every stay, every activity, every harvest contributes to protecting the Makoppa ecosystem and supporting local communities.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

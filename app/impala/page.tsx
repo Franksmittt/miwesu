@@ -43,13 +43,13 @@ export default function ImpalaPage() {
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
           <div className="relative z-20 text-center px-4 sm:px-6">
-            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
+            <span className="type-eyebrow-hero mb-4 sm:mb-6 block">
               The Athlete of the Bushveld
             </span>
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
+            <h1 className="type-h1-hero mb-4 sm:mb-6 px-4">
               <span className="text-gradient-gold">Impala</span>
             </h1>
-            <p className="text-white/80 text-sm sm:text-base md:text-lg max-w-2xl mx-auto italic font-serif">
+            <p className="type-species-latin">
               Aepyceros melampus
             </p>
           </div>
@@ -74,19 +74,19 @@ export default function ImpalaPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
               <div className="flex flex-col">
-                <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
+                <span className="type-eyebrow mb-6 block">
                   Introduction
                 </span>
-                <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+                <h2 className="type-h2-section mb-6">
                   The Athlete of the Bushveld
                 </h2>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The Impala is one of Africa's most graceful and athletic antelope species. Known as "The Athlete of the Bushveld" for its remarkable leaping ability and speed, this medium-sized antelope is a cornerstone of the African safari experience.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   With its elegant build, distinctive black markings, and spectacular jumping displays, the Impala is instantly recognizable. Their ability to leap up to 3 meters high and 10 meters in length makes them one of the most agile antelope on the continent.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose">
+                <p className="type-lead">
                   In the Makoppa district, Impala thrive in the bushveld fringe areas where they can take advantage of both grazing and browsing opportunities. Their adaptability and high reproductive rate make them an important species for sustainable utilization.
                 </p>
               </div>
@@ -110,7 +110,7 @@ export default function ImpalaPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Classification & History
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Taxonomy and Evolutionary Distinctiveness
               </h2>
             </div>
@@ -175,7 +175,7 @@ export default function ImpalaPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Physical Characteristics
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Morphology and Physiological Adaptations
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
@@ -240,10 +240,10 @@ export default function ImpalaPage() {
               </div>
               <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Coat Coloration and Markings</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The Impala's coat is a beautiful reddish-brown to tan color, with a lighter underside. The most distinctive feature is the black markings: a vertical stripe on each hind leg (the "M" marking), black patches on the forehead, and black tips on the ears.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   A black stripe runs along the midline of the tail, and there are black markings on the front legs. These markings are thought to serve as visual signals for communication and may help break up the animal's outline in dappled light.
                 </p>
                 <div className="bg-gold-500/10 border-l-4 border-gold-500 p-6 mt-6">
@@ -259,10 +259,10 @@ export default function ImpalaPage() {
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Only rams carry horns, which are lyre-shaped (lyrate) and heavily ridged. The horns grow outward and backward, then curve forward at the tips, creating the distinctive lyre shape.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The horns are heavily annulated (ringed) along their length, with smooth, sharp tips. Horns begin growing at around 4-5 months of age and continue throughout the ram's life, though growth slows with age.
                 </p>
                 <div className="bg-onyx text-white p-6 mt-6">
@@ -317,7 +317,7 @@ export default function ImpalaPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Behavioral Ecology
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Ethology and Social Organization
               </h2>
             </div>
@@ -406,7 +406,7 @@ export default function ImpalaPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Habitat & Diet
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Ecological Footprint
               </h2>
             </div>
@@ -414,7 +414,7 @@ export default function ImpalaPage() {
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Mixed Feeding Strategy</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Impala are unique among antelope in their ability to both graze and browse effectively. They feed on grasses, leaves, fruits, and flowers, adapting their diet to seasonal availability. This flexibility allows them to thrive in a variety of habitats.
                 </p>
                 <div className="bg-gold-500/10 border-l-4 border-gold-500 p-6 mt-6">
@@ -447,10 +447,10 @@ export default function ImpalaPage() {
               </div>
               <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Habitat Requirements</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Impala prefer areas with a mix of grassland and woodland, known as "bushveld fringe." They require access to both open areas for grazing and dense cover for security. This mixed habitat provides food, water, and protection from predators.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The Makoppa district's bushveld fringe provides ideal habitat, offering both grazing opportunities in open areas and browsing in woodland edges. Waterholes are important focal points, especially during the dry season.
                 </p>
                 <div className="bg-onyx text-white p-6 mt-6">
@@ -471,7 +471,7 @@ export default function ImpalaPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 The Hunt
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Strategies, Gear, and Ballistics
               </h2>
               <p className="text-gray-300 text-lg max-w-3xl mx-auto">
@@ -620,7 +620,7 @@ export default function ImpalaPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Trophy Evaluation
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Field Judging and Trophy Evaluation
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
@@ -631,7 +631,7 @@ export default function ImpalaPage() {
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Trophy Characteristics</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-6">
+                <p className="type-lead mb-6">
                   A trophy Impala ram is defined by horn length, symmetry, and overall mass.
                 </p>
                 <div className="bg-white border border-gray-200 shadow-sm">
@@ -708,7 +708,7 @@ export default function ImpalaPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 The Harvest
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Venison, Butchery, and Utilization
               </h2>
               <p className="text-gray-300 text-lg max-w-3xl mx-auto">
@@ -779,7 +779,7 @@ export default function ImpalaPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Conclusion
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 The Athlete of the Bushveld
               </h2>
             </div>
@@ -818,7 +818,7 @@ export default function ImpalaPage() {
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="reveal">
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Experience the Impala at MIWESU
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto mb-8">

@@ -169,10 +169,10 @@ export default function Home() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <ScrollReveal className="text-center mb-12 sm:mb-20">
-            <span className="text-gold-500 text-xs tracking-[0.2em] uppercase font-bold font-sans">
+            <span className="type-eyebrow block">
               The Collection
             </span>
-            <h2 className="font-serif text-5xl md:text-7xl text-white mt-6 tracking-tight">
+            <h2 className="type-h2-home mt-6">
               Private Residences
             </h2>
             <div className="h-1 w-20 bg-gold-gradient mx-auto mt-8"></div>
@@ -537,10 +537,10 @@ export default function Home() {
       {/* Beyond the Rifle - The Specifics */}
       <section className="py-24 lg:py-32 bg-marble-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-gold-700 text-xs tracking-[0.2em] uppercase font-bold font-sans">
+          <span className="type-eyebrow text-gold-700 block">
             Beyond the Rifle
           </span>
-          <h2 className="font-serif text-4xl md:text-6xl text-onyx mt-6 mb-12 sm:mb-20 tracking-tight">
+          <h2 className="type-h2-marble-lg mt-6 mb-12 sm:mb-20">
             The Observer's Journey
           </h2>
 
@@ -616,16 +616,16 @@ export default function Home() {
 
             {/* Copy - editorial column */}
             <div className="lg:col-span-7 reveal delay-100 flex flex-col">
-              <p className="font-sans text-gold-500 text-[10px] sm:text-xs tracking-[0.35em] uppercase font-bold mb-5">
+              <p className="type-overline mb-5">
                 The experience
               </p>
-              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[2.75rem] text-white tracking-tight leading-[1.12] mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Evenings at the boma, mornings on the koppies
               </h2>
-              <p className="font-sans text-gray-400 text-base sm:text-lg leading-relaxed mb-4 max-w-2xl">
+              <p className="type-lead-onyx mb-4 max-w-2xl">
                 MIWESU is for the people you bring: first-timers beside old hands, kids laughing by the pool, and the slow stories after dark when the bush goes quiet. The Sweetveld has its own rhythm: dust, rain on tin, firelight, and the kind of thrill you only get when you are really out there.
               </p>
-              <p className="font-sans text-gray-500 text-sm sm:text-base leading-relaxed mb-10 max-w-2xl border-l-2 border-gold-500/40 pl-5">
+              <p className="type-body-sm text-gray-500 mb-10 max-w-2xl border-l-2 border-gold-500/40 pl-5">
                 Hunting here is done properly, with quotas, ethics, and professional processing. What you remember is the feel of the place: the animals, the air, and the night closing in around the fire.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">

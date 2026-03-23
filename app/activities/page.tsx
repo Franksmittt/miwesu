@@ -93,10 +93,10 @@ export default function ActivitiesPage() {
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
           <div className="relative z-20 text-center px-4 sm:px-6">
-            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
+            <span className="type-eyebrow-hero mb-4 sm:mb-6 block">
               The Experience
             </span>
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
+            <h1 className="type-h1-hero mb-4 sm:mb-6 px-4">
               Our <span className="text-gradient-gold">Pursuits</span>
             </h1>
           </div>
@@ -219,7 +219,7 @@ export default function ActivitiesPage() {
                     <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-4 block">
                       Photographic Safaris
                     </span>
-                    <h3 className="font-serif text-4xl md:text-5xl text-white mb-6">
+                    <h3 className="type-h2-section-dark mb-6">
                       Capture the Makoppa
                     </h3>
                     <p className="text-gray-300 text-lg leading-loose mb-6">
@@ -293,7 +293,7 @@ export default function ActivitiesPage() {
                       <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-4 block">
                         Celestial Safaris
                       </span>
-                      <h3 className="font-serif text-4xl md:text-5xl text-white mb-6">
+                      <h3 className="type-h2-section-dark mb-6">
                         The Darkest Skies
                       </h3>
                       <p className="text-gray-300 text-lg leading-loose mb-6">
@@ -317,7 +317,7 @@ export default function ActivitiesPage() {
                   <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                     Birding
                   </span>
-                  <h3 className="font-serif text-4xl md:text-5xl text-white mb-6">
+                  <h3 className="type-h2-section-dark mb-6">
                     A Birder's Paradise
                   </h3>
                   <p className="text-gray-300 text-lg max-w-2xl mx-auto leading-loose">
@@ -378,7 +378,7 @@ export default function ActivitiesPage() {
                   <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-4 block">
                     4x4 Trails
                   </span>
-                  <h3 className="font-serif text-4xl md:text-5xl text-white mb-6">
+                  <h3 className="type-h2-section-dark mb-6">
                     Explore the Terrain
                   </h3>
                   <p className="text-gray-300 text-lg leading-loose mb-6">
@@ -400,7 +400,7 @@ export default function ActivitiesPage() {
                   <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-4 block">
                     Walking Safaris
                   </span>
-                  <h3 className="font-serif text-4xl md:text-5xl text-white mb-6">
+                  <h3 className="type-h2-section-dark mb-6">
                     On Foot Through the Bushveld
                   </h3>
                   <p className="text-gray-300 text-lg leading-loose mb-6">
@@ -449,7 +449,7 @@ export default function ActivitiesPage() {
             <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-8">
               Custom Experiences
             </h2>
-            <p className="font-sans text-gray-600 text-lg leading-loose mb-10">
+            <p className="type-lead mb-10">
               Every stay at Miwesu can be tailored to your preferences. Our concierge team will work with you to create a bespoke itinerary that matches your interests -whether you're a hunter, photographer, birder, or simply seeking tranquility in the Makoppa.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

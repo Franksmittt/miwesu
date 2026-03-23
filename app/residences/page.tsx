@@ -55,20 +55,18 @@ export default function ResidencesPage() {
         {/* 1. Hero – breadcrumb and title (no background image) */}
         <section className="w-full flex flex-col justify-center items-center text-center py-16 md:py-24 bg-onyx">
           <div className="max-w-[1000px] px-4 md:px-[4vw]">
-            <div className="inline-flex gap-4 text-[#86868b] text-sm font-semibold tracking-[0.2em] uppercase mb-8 border border-white/10 py-2 px-6 rounded-full">
+            <div className="inline-flex gap-4 text-[#86868b] text-sm font-medium tracking-[0.2em] uppercase mb-8 border border-white/10 py-2 px-6 rounded-full">
               Sanctuary <span className="text-marble">/</span> Residences
             </div>
-            <h1 className="font-serif text-6xl md:text-[6vw] font-extrabold leading-none tracking-tight mb-6">
-              THE COLLECTION
-            </h1>
-            <p className="text-[1.3rem] text-[#d1d1d1] leading-relaxed max-w-[800px] mx-auto">
+            <h1 className="sr-only">Residences at MIWESU</h1>
+            <p className="font-sans text-[1.05rem] sm:text-[1.15rem] font-light text-[#d1d1d1] leading-relaxed max-w-[800px] mx-auto">
               Discover absolute isolation. Unyielding luxury designed to exist seamlessly within the 2.5-billion-year-old Makoppa Dome.
             </p>
           </div>
         </section>
 
-        {/* 2 & 3. Flagship cards side by side on desktop */}
-        <div className="w-[96vw] max-w-[1400px] mx-auto mb-[4vh] grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
+        {/* 2 & 3. Flagship cards – same max width as Bespoke Amenities (max-w-6xl) */}
+        <div className="w-[96vw] max-w-6xl mx-auto mb-[4vh] grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
           {/* Hunter's House */}
           <section className="h-[70vh] lg:min-h-[75vh] rounded-[40px] overflow-hidden border border-white/[0.08] relative group">
             <Image
@@ -88,32 +86,32 @@ export default function ResidencesPage() {
             />
             <div className="absolute inset-0 z-10 flex flex-col justify-between p-3 md:p-4 lg:p-5">
               <div className="[text-shadow:0_1px_3px_rgba(0,0,0,0.8),0_2px_12px_rgba(0,0,0,0.5)]">
-                <span className="text-gold-400 text-xs lg:text-sm font-semibold tracking-[0.2em] uppercase mb-1 lg:mb-1.5 block">
+                <span className="text-gold-400 text-xs lg:text-sm font-bold tracking-[0.2em] uppercase mb-1 lg:mb-1.5 block">
                   Monumental Scale
                 </span>
-                <h2 className="font-serif text-[5.5vw] sm:text-[4.5vw] lg:text-[2.75rem] xl:text-[3.25rem] font-extrabold leading-[0.95] tracking-tight mb-1 lg:mb-2 text-white">
+                <h2 className="font-serif text-[5.5vw] sm:text-[4.5vw] lg:text-[2.75rem] xl:text-[3.25rem] font-normal leading-[0.95] tracking-tight mb-1 lg:mb-2 text-white">
                   THE HOMESTEAD
                 </h2>
-                <p className="text-xs lg:text-sm xl:text-base text-white/95 max-w-full leading-snug">
+                <p className="font-sans text-xs lg:text-sm xl:text-base font-light text-white/95 max-w-full leading-relaxed">
                   Designed for absolute immersion in the Sweetveld. Featuring expansive entertainment areas, a traditional boma, and seamless integration with the surrounding wildlife.
                 </p>
               </div>
               <div className="flex flex-wrap gap-3 lg:gap-4 border-t border-white/20 pt-4 items-center [text-shadow:0_1px_2px_rgba(0,0,0,0.8)]">
                 <div className="flex flex-col">
-                  <span className="font-serif text-lg lg:text-xl font-bold mb-0.5 text-white">{mainLodgeHouse.sleepers}</span>
-                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-semibold">Sleepers</span>
+                  <span className="font-serif text-lg lg:text-xl font-normal mb-0.5 text-white">{mainLodgeHouse.sleepers}</span>
+                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-medium">Sleepers</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-serif text-lg lg:text-xl font-bold mb-0.5 text-white">{lodgeSummary.mainHouse.bedrooms}</span>
-                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-semibold">Bedrooms</span>
+                  <span className="font-serif text-lg lg:text-xl font-normal mb-0.5 text-white">{lodgeSummary.mainHouse.bedrooms}</span>
+                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-medium">Bedrooms</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-serif text-lg lg:text-xl font-bold mb-0.5 text-white">Boma</span>
-                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-semibold">Fire Pit</span>
+                  <span className="font-serif text-lg lg:text-xl font-normal mb-0.5 text-white">Boma</span>
+                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-medium">Fire Pit</span>
                 </div>
                 <Link
                   href="/residences/homestead"
-                  className="ml-auto mt-2 lg:mt-0 bg-marble text-onyx px-5 lg:px-6 py-2.5 rounded-full font-semibold uppercase tracking-widest text-xs no-underline hover:bg-gold-400 hover:-translate-y-0.5 transition-all duration-300"
+                  className="ml-auto mt-2 lg:mt-0 bg-marble text-onyx px-5 lg:px-6 py-2.5 rounded-full font-medium uppercase tracking-widest text-xs no-underline hover:bg-gold-400 hover:-translate-y-0.5 transition-all duration-300"
                 >
                   Explore <ArrowRight className="inline w-3.5 h-3.5 lg:w-4 lg:h-4 ml-1 -translate-y-px" />
                 </Link>
@@ -139,32 +137,32 @@ export default function ResidencesPage() {
             />
             <div className="absolute inset-0 z-10 flex flex-col justify-between p-3 md:p-4 lg:p-5">
               <div className="[text-shadow:0_1px_3px_rgba(0,0,0,0.8),0_2px_12px_rgba(0,0,0,0.5)]">
-                <span className="text-gold-400 text-xs lg:text-sm font-semibold tracking-[0.2em] uppercase mb-1 lg:mb-1.5 block">
+                <span className="text-gold-400 text-xs lg:text-sm font-bold tracking-[0.2em] uppercase mb-1 lg:mb-1.5 block">
                   Intimate Seclusion
                 </span>
-                <h2 className="font-serif text-[5.5vw] sm:text-[4.5vw] lg:text-[2.75rem] xl:text-[3.25rem] font-extrabold leading-[0.95] tracking-tight mb-1 lg:mb-2 text-white">
+                <h2 className="font-serif text-[5.5vw] sm:text-[4.5vw] lg:text-[2.75rem] xl:text-[3.25rem] font-normal leading-[0.95] tracking-tight mb-1 lg:mb-2 text-white">
                   THE STONE VILLA
                 </h2>
-                <p className="text-xs lg:text-sm xl:text-base text-white/95 max-w-full leading-snug">
+                <p className="font-sans text-xs lg:text-sm xl:text-base font-light text-white/95 max-w-full leading-relaxed">
                   Carved from the earth. Elevated to provide sweeping views of the ancient canopy, offering a stargazing master deck and immediate access to the wild.
                 </p>
               </div>
               <div className="flex flex-wrap gap-3 lg:gap-4 border-t border-white/20 pt-4 items-center [text-shadow:0_1px_2px_rgba(0,0,0,0.8)]">
                 <div className="flex flex-col">
-                  <span className="font-serif text-lg lg:text-xl font-bold mb-0.5 text-white">{secondHouse.sleepers}</span>
-                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-semibold">Sleepers</span>
+                  <span className="font-serif text-lg lg:text-xl font-normal mb-0.5 text-white">{secondHouse.sleepers}</span>
+                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-medium">Sleepers</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-serif text-lg lg:text-xl font-bold mb-0.5 text-white">2</span>
-                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-semibold">En-Suites</span>
+                  <span className="font-serif text-lg lg:text-xl font-normal mb-0.5 text-white">2</span>
+                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-medium">En-Suites</span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="font-serif text-lg lg:text-xl font-bold mb-0.5 text-white">Deck</span>
-                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-semibold">Stargazing</span>
+                  <span className="font-serif text-lg lg:text-xl font-normal mb-0.5 text-white">Deck</span>
+                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-medium">Stargazing</span>
                 </div>
                 <Link
                   href="/residences/stone-villa"
-                  className="ml-auto mt-2 lg:mt-0 bg-marble text-onyx px-5 lg:px-6 py-2.5 rounded-full font-semibold uppercase tracking-widest text-xs no-underline hover:bg-gold-400 hover:-translate-y-0.5 transition-all duration-300"
+                  className="ml-auto mt-2 lg:mt-0 bg-marble text-onyx px-5 lg:px-6 py-2.5 rounded-full font-medium uppercase tracking-widest text-xs no-underline hover:bg-gold-400 hover:-translate-y-0.5 transition-all duration-300"
                 >
                   Explore <ArrowRight className="inline w-3.5 h-3.5 lg:w-4 lg:h-4 ml-1 -translate-y-px" />
                 </Link>
@@ -176,43 +174,43 @@ export default function ResidencesPage() {
         {/* 4. Bespoke Amenities – 6 boxes, rounded edges */}
         <section className="w-[96vw] max-w-6xl mx-auto my-[10vh]">
           <div className="text-center mb-16">
-            <span className="text-gold-400 text-sm font-semibold tracking-[0.2em] uppercase mb-4 block">
+            <span className="text-gold-500 text-xs tracking-[0.2em] uppercase font-bold font-sans mb-4 block">
               Uncompromising Standards
             </span>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-white">
+            <h2 className="font-serif text-4xl md:text-5xl font-normal text-white tracking-tight">
               Bespoke Amenities
             </h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="bg-onyx-light border border-white/[0.05] rounded-[32px] p-8 md:p-10 text-center transition-all duration-300 hover:bg-[#1a1a1c] hover:border-gold-500/20">
               <ChefHat className="w-10 h-10 text-gold-500 mx-auto mb-4" aria-hidden />
-              <h3 className="font-serif text-lg text-white mb-2">Kitchen</h3>
-              <p className="text-[#a1a1a6] text-sm leading-relaxed">Full kitchen in main lodge and Rooibok Kraal.</p>
+              <h3 className="font-serif text-lg font-normal text-white mb-2">Kitchen</h3>
+              <p className="text-[#a1a1a6] text-sm font-light leading-relaxed">Full kitchen in main lodge and Rooibok Kraal.</p>
             </div>
             <div className="bg-onyx-light border border-white/[0.05] rounded-[32px] p-8 md:p-10 text-center transition-all duration-300 hover:bg-[#1a1a1c] hover:border-gold-500/20">
               <Flame className="w-10 h-10 text-gold-500 mx-auto mb-4" aria-hidden />
-              <h3 className="font-serif text-lg text-white mb-2">Boma & Braai</h3>
-              <p className="text-[#a1a1a6] text-sm leading-relaxed">Boma and braai at main lodge; braai under the trees; outdoor braai at Rooibok Kraal.</p>
+              <h3 className="font-serif text-lg font-normal text-white mb-2">Boma & Braai</h3>
+              <p className="text-[#a1a1a6] text-sm font-light leading-relaxed">Boma and braai at main lodge; braai under the trees; outdoor braai at Rooibok Kraal.</p>
             </div>
             <div className="bg-onyx-light border border-white/[0.05] rounded-[32px] p-8 md:p-10 text-center transition-all duration-300 hover:bg-[#1a1a1c] hover:border-gold-500/20">
               <LayoutIcon className="w-10 h-10 text-gold-500 mx-auto mb-4" aria-hidden />
-              <h3 className="font-serif text-lg text-white mb-2">Lapa</h3>
-              <p className="text-[#a1a1a6] text-sm leading-relaxed">Pool table and darts at main lodge lapa.</p>
+              <h3 className="font-serif text-lg font-normal text-white mb-2">Lapa</h3>
+              <p className="text-[#a1a1a6] text-sm font-light leading-relaxed">Pool table and darts at main lodge lapa.</p>
             </div>
             <div className="bg-onyx-light border border-white/[0.05] rounded-[32px] p-8 md:p-10 text-center transition-all duration-300 hover:bg-[#1a1a1c] hover:border-gold-500/20">
               <TreePine className="w-10 h-10 text-gold-500 mx-auto mb-4" aria-hidden />
-              <h3 className="font-serif text-lg text-white mb-2">Braai under the trees</h3>
-              <p className="text-[#a1a1a6] text-sm leading-relaxed">Additional braai area at main lodge.</p>
+              <h3 className="font-serif text-lg font-normal text-white mb-2">Braai under the trees</h3>
+              <p className="text-[#a1a1a6] text-sm font-light leading-relaxed">Additional braai area at main lodge.</p>
             </div>
             <div className="bg-onyx-light border border-white/[0.05] rounded-[32px] p-8 md:p-10 text-center transition-all duration-300 hover:bg-[#1a1a1c] hover:border-gold-500/20">
               <Activity className="w-10 h-10 text-gold-500 mx-auto mb-4" aria-hidden />
-              <h3 className="font-serif text-lg text-white mb-2">Trampoline & Jungle Gym</h3>
-              <p className="text-[#a1a1a6] text-sm leading-relaxed">Family-friendly at main lodge.</p>
+              <h3 className="font-serif text-lg font-normal text-white mb-2">Trampoline & Jungle Gym</h3>
+              <p className="text-[#a1a1a6] text-sm font-light leading-relaxed">Family-friendly at main lodge.</p>
             </div>
             <div className="bg-onyx-light border border-white/[0.05] rounded-[32px] p-8 md:p-10 text-center transition-all duration-300 hover:bg-[#1a1a1c] hover:border-gold-500/20">
               <Waves className="w-10 h-10 text-gold-500 mx-auto mb-4" aria-hidden />
-              <h3 className="font-serif text-lg text-white mb-2">Swimming pool with slide</h3>
-              <p className="text-[#a1a1a6] text-sm leading-relaxed">At main lodge; Rooibok Kraal is near the pool.</p>
+              <h3 className="font-serif text-lg font-normal text-white mb-2">Swimming pool with slide</h3>
+              <p className="text-[#a1a1a6] text-sm font-light leading-relaxed">At main lodge; Rooibok Kraal is near the pool.</p>
             </div>
           </div>
         </section>
@@ -220,10 +218,10 @@ export default function ResidencesPage() {
         {/* 5. Bento – Beyond the Walls */}
         <section className="w-[96vw] max-w-6xl mx-auto mt-[5vh] mb-[10vh]">
           <div className="text-center mb-12">
-            <span className="text-gold-400 text-sm font-semibold tracking-[0.2em] uppercase mb-4 block">
+            <span className="text-gold-500 text-xs tracking-[0.2em] uppercase font-bold font-sans mb-4 block">
               The Ecosystem
             </span>
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-white">
+            <h2 className="font-serif text-4xl md:text-5xl font-normal text-white tracking-tight">
               Beyond the Walls
             </h2>
           </div>
@@ -247,8 +245,10 @@ export default function ResidencesPage() {
               </div>
               <div className="absolute inset-0 z-[1]" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.92) 28%, rgba(0,0,0,0.5) 50%, transparent 75%)' }} />
               <div className="relative z-10 [text-shadow:0_1px_4px_rgba(0,0,0,0.8),0_2px_12px_rgba(0,0,0,0.6)]">
-                <h3 className="font-serif text-3xl md:text-4xl lg:text-5xl text-gold-400 mb-3 font-bold">14 Species</h3>
-                <p className="text-white/95 text-lg md:text-xl max-w-[500px] leading-relaxed">
+                <h3 className="font-serif text-2xl md:text-3xl text-gold-400 mb-2 font-normal tracking-tight">
+                  14 Species
+                </h3>
+                <p className="font-sans text-white/95 text-base md:text-lg font-light leading-relaxed">
                   Encounter unmatched biodiversity. From majestic herds to elusive quarry, the sanctuary is alive right outside your door.
                 </p>
               </div>
@@ -258,16 +258,18 @@ export default function ResidencesPage() {
               className="relative rounded-[40px] overflow-hidden border border-white/[0.08] flex flex-col justify-end p-6 md:p-8 group min-h-[240px] md:col-span-1 md:row-span-2"
             >
               <Image
-                src={heroImages.residences}
-                alt="Private reserve"
+                src={heroImages.residencesBentoPrivacy}
+                alt="Rooibok Kraal — private residence and Sweetveld at MIWESU"
                 fill
                 className="object-cover transition-transform duration-[0.8s] ease-out group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
               <div className="absolute inset-0 z-[1]" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.92) 28%, rgba(0,0,0,0.5) 50%, transparent 75%)' }} />
               <div className="relative z-10 [text-shadow:0_1px_4px_rgba(0,0,0,0.8),0_2px_12px_rgba(0,0,0,0.6)]">
-                <h3 className="font-serif text-2xl md:text-3xl text-gold-400 mb-2 font-bold">Radical Privacy</h3>
-                <p className="text-white/95 text-base md:text-lg leading-relaxed">
+                <h3 className="font-serif text-2xl md:text-3xl text-gold-400 mb-2 font-normal tracking-tight">
+                  Radical Privacy
+                </h3>
+                <p className="font-sans text-white/95 text-base md:text-lg font-light leading-relaxed">
                   No other vehicles. No cross-traffic. Just your private group and the Sweetveld.
                 </p>
               </div>
@@ -277,16 +279,20 @@ export default function ResidencesPage() {
               className="relative rounded-[40px] overflow-hidden border border-white/[0.08] flex flex-col justify-end p-6 md:p-8 group min-h-[240px] md:col-span-1 md:row-span-1"
             >
               <Image
-                src={heroImages.conservation}
-                alt="Conservation at MIWESU"
+                src={heroImages.residencesBentoHarvest}
+                alt="Ethical conservation harvest — tracking game in the Sweetveld at MIWESU"
                 fill
                 className="object-cover transition-transform duration-[0.8s] ease-out group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
               <div className="absolute inset-0 z-[1]" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.92) 28%, rgba(0,0,0,0.5) 50%, transparent 75%)' }} />
               <div className="relative z-10 [text-shadow:0_1px_4px_rgba(0,0,0,0.8),0_2px_12px_rgba(0,0,0,0.6)]">
-                <h3 className="font-serif text-2xl md:text-3xl text-gold-400 mb-2 font-bold">Ethical Harvest</h3>
-                <p className="text-white/95 text-base md:text-lg leading-relaxed">Rooted in respect for the land and meticulous conservation.</p>
+                <h3 className="font-serif text-2xl md:text-3xl text-gold-400 mb-2 font-normal tracking-tight">
+                  Ethical Harvest
+                </h3>
+                <p className="font-sans text-white/95 text-base md:text-lg font-light leading-relaxed">
+                  Rooted in respect for the land and meticulous conservation.
+                </p>
               </div>
             </Link>
             <Link
@@ -294,16 +300,18 @@ export default function ResidencesPage() {
               className="relative rounded-[40px] overflow-hidden border border-white/[0.08] flex flex-col justify-end p-6 md:p-8 group min-h-[240px] md:col-span-2 md:row-span-1"
             >
               <Image
-                src={heroImages.residences}
-                alt="Makoppa Dome"
+                src={heroImages.residencesBentoDome}
+                alt="Makoppa region bushveld and lodge — ancient dome terrain"
                 fill
                 className="object-cover transition-transform duration-[0.8s] ease-out group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 66vw"
               />
               <div className="absolute inset-0 z-[1]" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.92) 28%, rgba(0,0,0,0.5) 50%, transparent 75%)' }} />
               <div className="relative z-10 [text-shadow:0_1px_4px_rgba(0,0,0,0.8),0_2px_12px_rgba(0,0,0,0.6)]">
-                <h3 className="font-serif text-2xl md:text-3xl text-gold-400 mb-2 font-bold">The Ancient Dome</h3>
-                <p className="text-white/95 text-base md:text-lg leading-relaxed">
+                <h3 className="font-serif text-2xl md:text-3xl text-gold-400 mb-2 font-normal tracking-tight">
+                  The Ancient Dome
+                </h3>
+                <p className="font-sans text-white/95 text-base md:text-lg font-light leading-relaxed">
                   A geological masterpiece 2.5 billion years in the making. Terrain that commands respect and offers unparalleled tracking.
                 </p>
               </div>
@@ -313,25 +321,25 @@ export default function ResidencesPage() {
 
         {/* 6. CTA – Experience Absolute Privacy (kept as requested) */}
         <section className="w-[96vw] max-w-6xl mx-auto mt-[10vh] rounded-[40px] overflow-hidden border border-gold-500/15 bg-gradient-to-br from-[#0a0a0a] to-onyx p-8 md:p-[6vw] text-center">
-          <span className="text-gold-400 text-base md:text-lg font-semibold tracking-[0.2em] uppercase mb-6 block">
+          <span className="text-gold-500 text-xs md:text-sm font-bold tracking-[0.25em] uppercase mb-6 block">
             Begin Your Journey
           </span>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 bg-gradient-to-r from-gold-300 to-gold-400 bg-clip-text text-transparent">
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-normal mb-6 tracking-tight bg-gradient-to-r from-gold-300 to-gold-400 bg-clip-text text-transparent">
             Experience Absolute Privacy
           </h2>
-          <p className="text-white/95 text-xl md:text-2xl max-w-[640px] mx-auto mb-10 leading-relaxed">
+          <p className="font-sans text-white/90 text-base md:text-lg font-light max-w-[640px] mx-auto mb-10 leading-relaxed">
             Both residences offer exclusive use, ensuring complete privacy and autonomy during your stay. Whether you&apos;re planning a family hunting safari or a corporate retreat, we provide the perfect base for your Makoppa adventure.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-block bg-gold-400 text-onyx px-10 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-marble hover:scale-[1.02] transition-all duration-300 no-underline"
+              className="inline-block bg-gold-400 text-onyx px-10 py-4 rounded-full font-medium uppercase tracking-widest text-sm hover:bg-marble hover:scale-[1.02] transition-all duration-300 no-underline"
             >
               Request Availability
             </Link>
             <Link
               href="/rates"
-              className="inline-block border-2 border-gold-400 text-gold-400 px-10 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:bg-gold-400 hover:text-onyx transition-all duration-300 no-underline"
+              className="inline-block border-2 border-gold-400 text-gold-400 px-10 py-4 rounded-full font-medium uppercase tracking-widest text-sm hover:bg-gold-400 hover:text-onyx transition-all duration-300 no-underline"
             >
               View Rates
             </Link>

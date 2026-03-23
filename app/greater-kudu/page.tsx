@@ -43,13 +43,13 @@ export default function GreaterKuduPage() {
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
           <div className="relative z-20 text-center px-4 sm:px-6">
-            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
+            <span className="type-eyebrow-hero mb-4 sm:mb-6 block">
               The Grey Ghost
             </span>
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
+            <h1 className="type-h1-hero mb-4 sm:mb-6 px-4">
               <span className="text-gradient-gold">Greater Kudu</span>
             </h1>
-            <p className="text-white/80 text-sm sm:text-base md:text-lg max-w-2xl mx-auto italic font-serif">
+            <p className="type-species-latin">
               Tragelaphus strepsiceros
             </p>
           </div>
@@ -74,19 +74,19 @@ export default function GreaterKuduPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
               <div className="flex flex-col">
-                <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
+                <span className="type-eyebrow mb-6 block">
                   Introduction
                 </span>
-                <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+                <h2 className="type-h2-section mb-6">
                   The Grey Ghost of the Bushveld
                 </h2>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The Greater Kudu stands as one of Africa's most iconic and sought-after antelope species. Known as the "Grey Ghost" for its elusive nature and ability to vanish into thick bushveld, this magnificent spiral-horned antelope represents the pinnacle of African trophy hunting.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The Makoppa area is famous for its heavy-horned Kudu bulls which thrive in the thick Acacia thickets. These magnificent animals are intelligent, cautious, and a true test of the hunter's skill, patience, and fieldcraft.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose">
+                <p className="type-lead">
                   Our Sweetveld sustains Kudu in peak condition year-round, resulting in exceptional trophy quality. The thick mountain thickets provide perfect habitat, and our annual census ensures sustainable management of this iconic species.
                 </p>
               </div>
@@ -110,7 +110,7 @@ export default function GreaterKuduPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Classification & History
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Taxonomy and Evolutionary Distinctiveness
               </h2>
             </div>
@@ -175,7 +175,7 @@ export default function GreaterKuduPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Physical Characteristics
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Morphology and Physiological Adaptations
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
@@ -240,10 +240,10 @@ export default function GreaterKuduPage() {
               </div>
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Coat Coloration and Markings</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The Greater Kudu's coat is a masterpiece of camouflage. The base color ranges from greyish-brown to reddish-brown, with older bulls often appearing darker, almost charcoal-grey. This coloration blends perfectly with the dappled shadows of thick bushveld.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Distinctive white vertical stripes (typically 6-10) run along the flanks, breaking up the animal's outline and providing excellent camouflage in dense vegetation. A white chevron marks the forehead, and a white throat patch is present.
                 </p>
                 <div className="bg-gold-500/10 border-l-4 border-gold-500 p-6 mt-6">
@@ -259,10 +259,10 @@ export default function GreaterKuduPage() {
             <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The spiral horns of the Greater Kudu are among the most impressive in the animal kingdom. Only males carry horns, which begin growing at around 6–12 months of age and continue throughout the bull's life (first full spiral by about two years; full two-and-a-half twists by roughly six years).
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The horns form a tight spiral, typically completing two to two-and-a-half full twists (exceptional specimens may approach three). They grow outward, upward, and then curve inward, with the tips often pointing forward. The horns are heavily ridged (annulated) along their length, with smooth, sharp tips.
                 </p>
                 <div className="bg-onyx text-white p-6 mt-6">
@@ -317,7 +317,7 @@ export default function GreaterKuduPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Behavioral Ecology
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Ethology and Social Organization
               </h2>
             </div>
@@ -406,7 +406,7 @@ export default function GreaterKuduPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Habitat & Diet
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Ecological Footprint
               </h2>
             </div>
@@ -414,7 +414,7 @@ export default function GreaterKuduPage() {
             <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Browsing Preferences</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Kudu are selective browsers, feeding on over 100 different plant species. They prefer the leaves, shoots, and fruits of trees and shrubs, particularly Acacia species, Combretum, and various bushveld trees.
                 </p>
                 <div className="bg-gold-500/10 border-l-4 border-gold-500 p-6 mt-6">
@@ -447,10 +447,10 @@ export default function GreaterKuduPage() {
               </div>
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Habitat Requirements</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Kudu require a combination of dense cover for security and more open areas for feeding. The ideal habitat includes riverine thickets, flat to gently undulating bushveld (such as in Limpopo), and areas where dense vegetation provides escape cover.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The Makoppa district's Acacia thickets provide perfect daytime cover, while the adjacent Sweetveld grasslands offer excellent feeding opportunities during dawn and dusk.
                 </p>
                 <div className="bg-onyx text-white p-6 mt-6">
@@ -471,7 +471,7 @@ export default function GreaterKuduPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 The Hunt
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Strategies, Gear, and Ballistics
               </h2>
               <p className="text-gray-300 text-lg max-w-3xl mx-auto">
@@ -620,7 +620,7 @@ export default function GreaterKuduPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Trophy Evaluation
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Field Judging and Trophy Evaluation
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
@@ -631,7 +631,7 @@ export default function GreaterKuduPage() {
             <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Trophy Characteristics</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-6">
+                <p className="type-lead mb-6">
                   A trophy Kudu bull is defined by horn length, spiral quality, and overall mass.
                 </p>
                 <div className="bg-white border border-gray-200 shadow-sm">
@@ -708,7 +708,7 @@ export default function GreaterKuduPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 The Harvest
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Venison, Butchery, and Utilization
               </h2>
               <p className="text-gray-300 text-lg max-w-3xl mx-auto">
@@ -779,7 +779,7 @@ export default function GreaterKuduPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Conclusion
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 The Ultimate African Trophy
               </h2>
             </div>
@@ -818,7 +818,7 @@ export default function GreaterKuduPage() {
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="reveal">
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Experience the Greater Kudu at MIWESU
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto mb-8">

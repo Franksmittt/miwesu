@@ -43,13 +43,13 @@ export default function GemsbokPage() {
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
           <div className="relative z-20 text-center px-4 sm:px-6">
-            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
+            <span className="type-eyebrow-hero mb-4 sm:mb-6 block">
               The Desert Warrior
             </span>
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
+            <h1 className="type-h1-hero mb-4 sm:mb-6 px-4">
               <span className="text-gradient-gold">Gemsbok</span>
             </h1>
-            <p className="text-white/80 text-sm sm:text-base md:text-lg max-w-2xl mx-auto italic font-serif">
+            <p className="type-species-latin">
               Oryx gazella
             </p>
           </div>
@@ -74,19 +74,19 @@ export default function GemsbokPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
-                <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-6 block">
+                <span className="type-eyebrow mb-6 block">
                   Introduction
                 </span>
-                <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+                <h2 className="type-h2-section mb-6">
                   The Desert Warrior
                 </h2>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The Gemsbok, also known as the South African Oryx, is one of Africa's most striking and resilient antelope species. Known as "The Desert Warrior" for its ability to thrive in harsh, arid environments, this large antelope is a symbol of adaptation and survival.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   With its striking black-and-white facial "warpaint," long, nearly straight rapier-like horns, and heavy-fronted build, the Gemsbok is instantly recognizable. They can survive for long periods without surface water by extracting moisture from diet and dew; when water is available, such as at Limpopo reserve waterholes, they drink readily.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose">
+                <p className="type-lead">
                   Gemsbok have been successfully introduced to the Limpopo bushveld and thrive on well-managed reserves like MIWESU. In the Makoppa district, the mix of open grassland, Mopane and Acacia scrub, and flat to gently undulating terrain provides ideal habitat, sustaining them in peak condition and resulting in exceptional trophy quality.
                 </p>
               </div>
@@ -110,7 +110,7 @@ export default function GemsbokPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Classification & History
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Taxonomy and Evolutionary Distinctiveness
               </h2>
             </div>
@@ -175,7 +175,7 @@ export default function GemsbokPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Physical Characteristics
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Morphology and Physiological Adaptations
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
@@ -240,10 +240,10 @@ export default function GemsbokPage() {
               </div>
               <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Coat Coloration and Markings</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The Gemsbok's coat is a dense, short, matte fawn-grey or pale sandy-tan with a pure white underbelly. The face is stark white with a high-contrast black "warpaint": an inverted triangular patch on the forehead and bridge of the nose, broad black stripes from the horn bases over the eyes down the cheeks to the jaw, and a black stripe from chin down the throat to the chest.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   A thick black horizontal band runs along the lower flanks, separating the fawn body from the white belly. The legs are white with prominent black patches just above the knees and hocks; a narrow black dorsal stripe runs along the spine. The tail is long and brush-like, with coarse black hair. These markings provide disruptive camouflage and are displayed during dominance displays.
                 </p>
                 <div className="bg-gold-500/10 border-l-4 border-gold-500 p-6 mt-6">
@@ -259,10 +259,10 @@ export default function GemsbokPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Both sexes carry long, nearly straight horns that extend backward in a rapier-like line. The horns are hollow keratin over a bony core; the lower two-thirds are heavily annulated (horizontal rings) that act as shock absorbers during combat, while the upper third is smooth and tapers to a needle-sharp tip.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Bulls have thicker, shorter horns (83–96 cm) for clashing with rivals; cows have longer, thinner horns (96–120 cm), often more desirable as trophies. The ridged bases often trap dust and soil, giving them a dark, textured appearance.
                 </p>
                 <div className="bg-onyx text-white p-6 mt-6">
@@ -317,7 +317,7 @@ export default function GemsbokPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Behavioral Ecology
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Ethology and Social Organization
               </h2>
             </div>
@@ -406,7 +406,7 @@ export default function GemsbokPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Habitat & Diet
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Ecological Footprint
               </h2>
             </div>
@@ -414,7 +414,7 @@ export default function GemsbokPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Mixed Feeding Strategy</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Gemsbok are unique in their ability to both graze and browse effectively, and to extract moisture from roots and tubers. They feed on grasses, leaves, fruits, and roots, adapting their diet to seasonal availability. This flexibility allows them to thrive in harsh, arid environments.
                 </p>
                 <div className="bg-gold-500/10 border-l-4 border-gold-500 p-6 mt-6">
@@ -447,10 +447,10 @@ export default function GemsbokPage() {
               </div>
               <div className="md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Habitat Requirements</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   Gemsbok prefer open scrub, grasslands, and desert fringes. They favor areas with a mix of vegetation types, allowing them to both graze and browse. The transition zone between grassland and desert is particularly favored.
                 </p>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-4">
+                <p className="type-lead mb-4">
                   The Makoppa district's Arid Sweet Bushveld provides ideal habitat, offering both grazing and browsing opportunities. The open scrub areas provide excellent visibility for detecting predators, while the transition zones offer diverse food sources.
                 </p>
                 <div className="bg-onyx text-white p-6 mt-6">
@@ -471,7 +471,7 @@ export default function GemsbokPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 The Hunt
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Strategies, Gear, and Ballistics
               </h2>
               <p className="text-gray-300 text-lg max-w-3xl mx-auto">
@@ -620,7 +620,7 @@ export default function GemsbokPage() {
               <span className="text-gold-600 font-bold text-xs tracking-[0.3em] uppercase mb-4 block">
                 Trophy Evaluation
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Field Judging and Trophy Evaluation
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
@@ -631,7 +631,7 @@ export default function GemsbokPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Distinguishing Bulls vs. Cows</h3>
-                <p className="font-sans text-gray-600 text-lg leading-loose mb-6">
+                <p className="type-lead mb-6">
                   Shooting a cow by mistake is a serious error in trophy hunting. Careful observation is required.
                 </p>
                 <div className="bg-white border border-gray-200 shadow-sm">
@@ -732,7 +732,7 @@ export default function GemsbokPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 The Harvest
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 Venison, Butchery, and Utilization
               </h2>
               <p className="text-gray-300 text-lg max-w-3xl mx-auto">
@@ -803,7 +803,7 @@ export default function GemsbokPage() {
               <span className="text-gold-500 text-xs tracking-[0.4em] uppercase font-bold mb-4 block">
                 Conclusion
               </span>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6">
+              <h2 className="type-h2-section-dark mb-6">
                 The Desert Warrior
               </h2>
             </div>
@@ -842,7 +842,7 @@ export default function GemsbokPage() {
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="reveal">
-              <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-6">
+              <h2 className="type-h2-section mb-6">
                 Experience the Gemsbok at MIWESU
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto mb-8">

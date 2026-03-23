@@ -34,10 +34,101 @@
     @apply bg-gold-500 text-white;
   }
 
-  /* Admin: select dropdown options visible (dark theme) */
+  /*
+   * Site-wide typography: see @layer components .type-* classes and lib/typography.ts
+   */
+
   .admin-select option {
     background: #121212;
     color: #fff;
+  }
+}
+
+@layer components {
+  /* Eyebrows - label above section titles */
+  .type-eyebrow {
+    @apply font-sans text-xs tracking-[0.2em] uppercase font-bold text-gold-600;
+  }
+  .type-eyebrow-dark {
+    @apply font-sans text-xs sm:text-sm tracking-[0.35em] uppercase font-bold text-gold-400;
+  }
+  .type-eyebrow-hero {
+    @apply font-sans text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold text-gold-400;
+  }
+  /* Gold micro-label on dark (e.g. "The experience") */
+  .type-overline {
+    @apply font-sans text-[10px] sm:text-xs tracking-[0.35em] uppercase font-bold text-gold-500;
+  }
+
+  /* Display - page hero titles (dark band, centered) */
+  .type-h1-hero {
+    @apply font-serif font-normal tracking-tight text-white text-center leading-none;
+    @apply text-4xl sm:text-5xl md:text-7xl lg:text-8xl;
+  }
+
+  /* Section titles — marble / light sections */
+  .type-h2-section {
+    @apply font-serif font-normal tracking-tight text-onyx;
+    @apply text-3xl sm:text-4xl md:text-5xl;
+  }
+  .type-h2-section-dark {
+    @apply font-serif font-normal tracking-tight text-white;
+    @apply text-3xl sm:text-4xl md:text-5xl;
+  }
+
+  /* Home / landing: larger white section titles */
+  .type-h2-home {
+    @apply font-serif font-normal tracking-tight text-white;
+    @apply text-5xl md:text-7xl;
+  }
+  .type-h2-home-sub {
+    @apply font-serif font-normal tracking-tight text-white;
+    @apply text-5xl md:text-6xl;
+  }
+  .type-h2-hero-section {
+    @apply font-serif font-normal tracking-tight text-white;
+    @apply text-4xl sm:text-5xl md:text-6xl;
+  }
+  /* Marble section title, slightly larger than type-h2-section */
+  .type-h2-marble-lg {
+    @apply font-serif font-normal tracking-tight text-onyx;
+    @apply text-4xl md:text-6xl;
+  }
+
+  .type-h3 {
+    @apply font-serif font-normal text-onyx text-xl sm:text-2xl md:text-3xl;
+  }
+  .type-h3-dark {
+    @apply font-serif font-normal text-white text-xl sm:text-2xl md:text-3xl;
+  }
+
+  /* Body — default paragraph scale (matches home / about) */
+  .type-lead {
+    @apply font-sans text-base sm:text-lg font-light leading-relaxed text-gray-600;
+  }
+  .type-lead-dark {
+    @apply font-sans text-base sm:text-lg font-light leading-relaxed text-gray-300;
+  }
+  /* Body on dark sections (slightly muted) */
+  .type-lead-onyx {
+    @apply font-sans text-base sm:text-lg font-light leading-relaxed text-gray-400;
+  }
+  .type-body {
+    @apply font-sans text-base font-light leading-relaxed text-gray-600;
+  }
+  .type-body-dark {
+    @apply font-sans text-base font-light leading-relaxed text-gray-400;
+  }
+  .type-body-sm {
+    @apply font-sans text-sm font-light leading-relaxed text-gray-600;
+  }
+  .type-caption {
+    @apply font-sans text-xs uppercase tracking-widest text-gray-500;
+  }
+
+  /* Species hero - scientific name under title */
+  .type-species-latin {
+    @apply font-serif text-white/80 text-sm sm:text-base md:text-lg max-w-2xl mx-auto italic;
   }
 }
 

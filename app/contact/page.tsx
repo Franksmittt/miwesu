@@ -82,10 +82,10 @@ export default function ContactPage() {
             <div className="absolute inset-0 bg-gradient-to-t from-onyx via-onyx/40 to-transparent"></div>
           </div>
           <div className="relative z-20 text-center px-4 sm:px-6">
-            <span className="text-gold-400 text-[10px] sm:text-xs md:text-sm tracking-[0.4em] sm:tracking-[0.5em] uppercase font-bold mb-4 sm:mb-6 block">
+            <span className="type-eyebrow-hero mb-4 sm:mb-6 block">
               Get In Touch
             </span>
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 leading-none px-4">
+            <h1 className="type-h1-hero mb-4 sm:mb-6 px-4">
               Contact <span className="text-gradient-gold">Us</span>
             </h1>
           </div>
@@ -362,7 +362,7 @@ export default function ContactPage() {
               <h2 className="font-serif text-3xl md:text-4xl text-onyx mb-6">
                 Ready to Experience Miwesu?
               </h2>
-              <p className="font-sans text-gray-600 text-lg leading-loose mb-8 max-w-2xl mx-auto">
+              <p className="type-lead mb-8 max-w-2xl mx-auto">
                 Submit your inquiry and our concierge team will guide you through the vetting process and help plan your perfect Makoppa experience.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

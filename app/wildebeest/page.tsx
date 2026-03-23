@@ -345,7 +345,7 @@ export default function WildebeestPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
-                  src="/images/5wildebeest-herd-bushveld-01.png"
+                  src="/images/3wildebeest-cow-bushveld-01.png"
                   alt="Blue Wildebeest herd in bushveld"
                   fill
                   className="object-cover shadow-luxury"

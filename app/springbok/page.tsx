@@ -92,7 +92,7 @@ export default function SpringbokPage() {
               </div>
               <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
-                  src="/images/2springbok-ram-standing-01.png"
+                  src="/images/1springbok-ram-portrait-01.png"
                   alt="Springbok ram in open plains"
                   fill
                   className="object-cover shadow-luxury"
@@ -345,7 +345,7 @@ export default function SpringbokPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
-                  src="/images/5springbok-herd-bushveld-01.png"
+                  src="/images/3springbok-ewe-bushveld-01.png"
                   alt="Springbok herd in grassland"
                   fill
                   className="object-cover"
@@ -420,7 +420,7 @@ export default function SpringbokPage() {
               </div>
               <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
-                  src="/images/6springbok-ram-standing-02.png"
+                  src="/images/4springbok-ram-portrait-02.png"
                   alt="Springbok in habitat for spot and stalk"
                   fill
                   className="object-cover"
@@ -605,7 +605,7 @@ export default function SpringbokPage() {
                 Venison, Butchery, and Utilization
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
-                Springbok venison is lean, flavorful, and highly regarded. The meat is fine-grained and has a mild, sweet flavor. All meat from MIWESU harvests is donated to local communities.
+                Springbok venison is lean, flavorful, and highly regarded. The meat is fine-grained and has a mild, sweet flavor. Venison is handled professionally in line with food-safety and regulatory requirements.
               </p>
             </div>
 

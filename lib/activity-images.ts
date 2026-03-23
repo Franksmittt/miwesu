@@ -13,7 +13,8 @@ export const activityImages = {
   conservationHarvestCard: `${FB}/469596637_122145814640331002_3373304811628708345_n.jpg`,
   photographicSafariCard: `${FB}/469463473_122145814766331002_6875660384412212554_n.jpg`,
   celestialSafariCard: '/images/_filename_Thabazimbi_N_150jpeg_Nano_Banana_Pro_22262.jpg',
-  mobileWellnessCard: '/images/residences-main-lodge-pool.jpg',
+  /** Boma, braai, shared evenings — friends & family (replaces former mobile wellness slot) */
+  gatheringsFamilyCard: '/images/residences-main-lodge-boma-braai.jpg',
   wildlifeViewingCard: `${FB}/469680087_122145814082331002_8757379879919305611_n.jpg`,
 
   /** Conservation Harvest section */

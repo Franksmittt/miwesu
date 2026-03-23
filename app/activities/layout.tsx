@@ -10,11 +10,11 @@ const breadcrumbItems = [
 
 export const metadata: Metadata = {
   title: 'Malaria-Free Celestial Safaris & Conservation Harvest | Waterberg',
-  description: 'Conservation harvesting (rifle and bow), photographic safaris, malaria-free celestial safaris, mobile wellness with Marula oils, wildlife viewing. MIWESU GAME FARM, Makoppa district, Thabazimbi. Waterberg.',
-  keywords: ['conservation harvest', 'photographic safari', 'celestial safari', 'malaria-free', 'Waterberg', 'wellness', 'Marula', 'Limpopo safari', 'Makoppa district', 'Thabazimbi', 'MIWESU GAME FARM'],
+  description: 'Conservation harvesting (rifle and bow), photographic safaris, malaria-free celestial safaris, friends-and-family exclusive-use stays, wildlife viewing. MIWESU GAME FARM, Makoppa district, Thabazimbi. Waterberg.',
+  keywords: ['conservation harvest', 'photographic safari', 'celestial safari', 'malaria-free', 'Waterberg', 'friends and family', 'Limpopo safari', 'Makoppa district', 'Thabazimbi', 'MIWESU GAME FARM'],
   openGraph: generateOpenGraph(
     'Malaria-Free Celestial Safaris & Conservation Harvest | Waterberg',
-    'Conservation harvesting (rifle and bow), photographic safaris, malaria-free celestial safaris, mobile wellness. MIWESU, Makoppa district, Thabazimbi.',
+    'Conservation harvesting (rifle and bow), photographic safaris, malaria-free celestial safaris, wildlife viewing. MIWESU, Makoppa district, Thabazimbi.',
     constructCanonicalUrl('activities'),
     `${baseUrl}/og-image.jpg`
   ),

@@ -34,7 +34,7 @@ const samplePackageSchema = generateProductSchema({
   sku: 'HUNT-GOLD-001',
   price: 5500,
   priceCurrency: 'USD',
-  imageUrl: `${baseUrl}/images/home-species-wildebeest.jpg`,
+  imageUrl: `${baseUrl}/images/4wildebeest-bull-portrait-02.png`,
   availability: 'InStock',
   validFrom: '2026-01-01',
 })

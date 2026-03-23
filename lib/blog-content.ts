@@ -69,7 +69,7 @@ const content: Record<string, BlogSection[]> = {
     {
       h2: 'The cultural heritage of the South African biltong hunt',
       paragraphs: [
-        'Biltong is inseparable from South African hunting culture. At MIWESU, the conservation harvest yields venison that can be processed into biltong using traditional methods. The Arid Sweet Bushveld climate of the Makoppa district, Thabazimbi, is well suited to air-drying. We support sustainable use and the Guardian\'s Pledge: every animal is respected, and 100% of harvested meat is utilised, including donation to local communities.',
+        'Biltong is inseparable from South African hunting culture. At MIWESU, the conservation harvest yields venison that can be processed into biltong using traditional methods. The Arid Sweet Bushveld climate of the Makoppa district, Thabazimbi, is well suited to air-drying. We support sustainable use and the Guardian\'s Pledge: every animal is respected, and harvested meat is processed professionally in line with food-safety and regulatory requirements.',
       ],
     },
     {
@@ -159,9 +159,9 @@ const content: Record<string, BlogSection[]> = {
       ],
     },
     {
-      h2: 'ESG impact: meat donation and anti-poaching',
+      h2: 'ESG impact: ethical harvest and anti-poaching',
       paragraphs: [
-        '100% of harvested meat is processed and utilised. A significant portion is donated to feed hundreds of local families monthly, addressing protein security in the region. Guest revenue funds 24/7 anti-poaching and habitat work. Our Live Telemetry Dashboard exposes real-time metrics: hectares protected, community investment, and operational transparency. This is how the Iron Eden demonstrates trust and stewardship.',
+        'Harvested meat is processed and utilised in our professional facility in line with regulations. Guest revenue funds 24/7 anti-poaching and habitat work. Our Live Telemetry Dashboard exposes real-time metrics: hectares protected, community investment, and operational transparency. This is how the Iron Eden demonstrates trust and stewardship.',
       ],
     },
   ],
@@ -175,7 +175,7 @@ const content: Record<string, BlogSection[]> = {
     {
       h2: 'Work-from-anywhere at both residences',
       paragraphs: [
-        'Both the 16-sleeper Hunter\'s House and the 6-sleeper Rooibok Kraal are equipped for remote work. Video calls, large file transfers, and streaming are supported. After screen time, Mobile Wellness sessions using indigenous Marula oils offer balance. The contrast between deep-time geology and sub-second latency is deliberate: we cater to those who refuse to choose between wilderness and productivity.',
+        'Both the 16-sleeper Hunter\'s House and the 6-sleeper Rooibok Kraal are equipped for remote work. Video calls, large file transfers, and streaming are supported. When you close the laptop, the Makoppa is waiting—boma evenings, starlight, and the rhythm of the bushveld. The contrast between deep-time geology and sub-second latency is deliberate: we cater to those who refuse to choose between wilderness and productivity.',
       ],
     },
     {

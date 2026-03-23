@@ -603,7 +603,7 @@ export default function LivingstoneElandPage() {
                 Venison, Butchery, and Utilization
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
-                Livingstone Eland venison is lean, flavorful, and highly regarded. The meat is dark red and has a rich, gamey flavor. All meat from MIWESU harvests is donated to local communities.
+                Livingstone Eland venison is lean, flavorful, and highly regarded. The meat is dark red and has a rich, gamey flavor. Venison is handled professionally in line with food-safety and regulatory requirements.
               </p>
             </div>
 

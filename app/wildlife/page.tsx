@@ -331,7 +331,7 @@ export default function WildlifePage() {
               <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-20 reveal delay-100">
                 <div className="relative h-[300px] sm:h-[400px]">
                   <Image
-                    src="/images/wildlife-species-gallery-1.jpg"
+                    src="/images/kudu-bull-portrait-01.png"
                     alt="Blue Wildebeest in Sweetveld"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -344,7 +344,7 @@ export default function WildlifePage() {
                 </div>
                 <div className="relative h-[400px]">
                   <Image
-                    src="/images/wildlife-species-gallery-2.jpg"
+                    src="/images/4wildebeest-bull-portrait-02.png"
                     alt="Impala - The athlete of the bushveld"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -357,7 +357,7 @@ export default function WildlifePage() {
                 </div>
                 <div className="relative h-[400px]">
                   <Image
-                    src="/images/wildlife-species-gallery-3.jpg"
+                    src="/images/impala-ram-portrait-01.png"
                     alt="Gemsbok in Arid Sweet Bushveld"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -415,7 +415,7 @@ export default function WildlifePage() {
                 </div>
                 <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                   <Image
-                    src="/images/wildlife-warthog.jpg"
+                    src="/images/1warthog-boar-portrait-01.png"
                     alt="Warthog at waterhole"
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -448,7 +448,7 @@ export default function WildlifePage() {
                     </div>
                     <div className="relative h-[500px]">
                       <Image
-                        src="/images/wildlife-predators.jpg"
+                        src="/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg"
                         alt="Leopard track in the Makoppa"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
@@ -477,7 +477,7 @@ export default function WildlifePage() {
                   We do not sell animals; we manage an ecosystem. Our annual ecological census determines which species are available for harvest, ensuring sustainable population management and maintaining the delicate balance of the ecosystem.
                 </p>
                 <p className="font-sans text-gray-600 text-lg leading-loose mb-8">
-                  All harvests are conducted ethically, with respect for the animal and the environment. The meat from every harvest is donated to local communities -feeding 300 families monthly -ensuring nothing goes to waste.
+                  All harvests are conducted ethically, with respect for the animal and the environment. Venison is processed professionally in line with regulations.
                 </p>
                 <div className="grid grid-cols-2 gap-6">
                   <div className="border-l-2 border-gold-500 pl-4">
@@ -486,13 +486,13 @@ export default function WildlifePage() {
                   </div>
                   <div className="border-l-2 border-gold-500 pl-4">
                     <span className="block font-serif text-3xl text-gold-600 mb-2">100%</span>
-                    <span className="text-xs uppercase tracking-widest text-gray-500">Meat Donated</span>
+                    <span className="text-xs uppercase tracking-widest text-gray-500">Ethical harvest</span>
                   </div>
                 </div>
               </div>
               <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-2rem)] overflow-hidden">
                 <Image
-                  src="/images/wildlife-ecological-management.jpg"
+                  src="/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg"
                   alt="Ecological management and conservation"
                   fill
                   sizes="(max-width: 768px) 100vw, 800px"

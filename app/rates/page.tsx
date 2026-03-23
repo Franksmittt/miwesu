@@ -267,7 +267,7 @@ export default function RatesPage() {
                   <Target className="w-12 h-12 text-gold-500 mx-auto mb-6" />
                   <h3 className="font-serif text-3xl text-white mb-6">Conservation Harvest Fees</h3>
                   <p className="text-gray-300 text-lg max-w-3xl mx-auto leading-loose">
-                    Trophy fees vary by species, trophy quality, and season. Our annual ecological census determines availability. All fees include professional tracking, field preparation, and meat processing. 100% of meat is donated to local communities.
+                    Trophy fees vary by species, trophy quality, and season. Our annual ecological census determines availability. All fees include professional tracking, field preparation, and meat processing.
                   </p>
                 </div>
                 <div className="grid md:grid-cols-3 gap-8">

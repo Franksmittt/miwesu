@@ -66,13 +66,13 @@ export default function ConservationPage() {
                   Economic Sustainability
                 </h2>
                 <p className="text-gray-400 text-base sm:text-lg leading-loose mb-6 sm:mb-10 font-light">
-                  The reality of African conservation is economic. Your visit directly funds our Anti-Poaching Units and habitat restoration. The meat from your harvest feeds 300 local families monthly.
+                  The reality of African conservation is economic. Your visit directly funds our Anti-Poaching Units and habitat restoration. Venison from harvests is handled professionally in line with food-safety and regulatory requirements.
                 </p>
                 <div className="grid grid-cols-2 gap-6 sm:gap-12">
                   <div>
                     <span className="block text-4xl sm:text-6xl font-serif text-gold-500">100%</span>
                     <span className="uppercase text-[10px] tracking-widest text-white mt-2 block">
-                      Meat Donated
+                      Ethical harvest
                     </span>
                   </div>
                   <div>
@@ -108,16 +108,16 @@ export default function ConservationPage() {
               </div>
               <div className="text-center reveal delay-100">
                 <Users className="w-10 h-10 sm:w-12 sm:h-12 text-gold-500 mx-auto mb-3 sm:mb-4" />
-                <span className="block font-serif text-3xl sm:text-4xl text-white mb-2">300</span>
+                <span className="block font-serif text-3xl sm:text-4xl text-white mb-2">Local</span>
                 <span className="text-[10px] uppercase tracking-widest text-gray-400">
-                  Families Fed
+                  Economy &amp; jobs
                 </span>
               </div>
               <div className="text-center reveal delay-200">
                 <Heart className="w-10 h-10 sm:w-12 sm:h-12 text-gold-500 mx-auto mb-3 sm:mb-4" />
                 <span className="block font-serif text-3xl sm:text-4xl text-white mb-2">100%</span>
                 <span className="text-[10px] uppercase tracking-widest text-gray-400">
-                  Meat Donated
+                  Professional processing
                 </span>
               </div>
               <div className="text-center reveal delay-300">
@@ -136,7 +136,7 @@ export default function ConservationPage() {
                 <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
                   <div className="relative h-[500px]">
                     <Image
-                      src="/images/conservation-anti-poaching.jpg"
+                      src="/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg"
                       alt="Anti-poaching unit patrol"
                       fill
                       className="object-cover shadow-luxury"
@@ -170,29 +170,29 @@ export default function ConservationPage() {
                     Community Impact
                   </span>
                   <h3 className="font-serif text-4xl md:text-5xl text-white mb-6">
-                    Feeding 300 Families Monthly
+                    Community &amp; local economy
                   </h3>
                   <p className="text-gray-300 text-lg leading-loose mb-6">
-                    All meat from harvests is donated to 300 local families monthly. This creates a direct link between conservation and community welfare, ensuring local support for our efforts and demonstrating that conservation can benefit everyone.
+                    Responsible tourism and ethical hunting create employment, support local suppliers, and keep revenue in the Makoppa district. Conservation works when it strengthens the communities around the reserve.
                   </p>
                   <p className="text-gray-300 text-lg leading-loose mb-8">
-                    The "If It Pays, It Stays" philosophy extends beyond the reserve boundaries. By feeding local families, we create a sustainable model where conservation directly supports the community, ensuring long-term success.
+                    The &quot;If It Pays, It Stays&quot; philosophy extends beyond the reserve boundaries: guest visits fund protection and habitat work while supporting a sustainable local economy tied to stewardship of the land.
                   </p>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="border-l-2 border-gold-500 pl-4">
-                      <span className="block font-serif text-3xl text-gold-400 mb-1">300</span>
-                      <span className="text-xs uppercase tracking-widest text-gray-400">Families Fed</span>
+                      <span className="block font-serif text-3xl text-gold-400 mb-1">24/7</span>
+                      <span className="text-xs uppercase tracking-widest text-gray-400">Protection</span>
                     </div>
                     <div className="border-l-2 border-gold-500 pl-4">
                       <span className="block font-serif text-3xl text-gold-400 mb-1">100%</span>
-                      <span className="text-xs uppercase tracking-widest text-gray-400">Meat Donated</span>
+                      <span className="text-xs uppercase tracking-widest text-gray-400">Ethical standards</span>
                     </div>
                   </div>
                 </div>
                 <div className="relative h-[500px]">
                   <Image
-                    src="/images/conservation-community-support.jpg"
-                    alt="Community support and meat donation"
+                    src="/images/residences-main-lodge-boma-braai.jpg"
+                    alt="Lodge and community gathering at MIWESU"
                     fill
                     className="object-cover shadow-luxury"
                   />
@@ -234,9 +234,9 @@ export default function ConservationPage() {
                     </p>
                   </div>
                   <div>
-                    <h4 className="font-serif text-xl text-gold-500 mb-4">Community Support</h4>
+                    <h4 className="font-serif text-xl text-gold-500 mb-4">Community &amp; local economy</h4>
                     <p className="text-gray-400 font-sans leading-relaxed">
-                      All meat from harvests is donated to 300 local families monthly. This creates a direct link between conservation and community welfare, ensuring local support for our efforts.
+                      Tourism and ethical hunting support local employment and suppliers. Conservation investment flows into the Makoppa district alongside professional processing of venison in line with regulations.
                     </p>
                   </div>
                   <div>
@@ -268,7 +268,7 @@ export default function ConservationPage() {
                 Conservation Through Utilization
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto leading-loose">
-                The reality of African conservation is economic. Your visit directly funds our Anti-Poaching Units and habitat restoration. The meat from your harvest feeds 300 local families monthly.
+                The reality of African conservation is economic. Your visit directly funds our Anti-Poaching Units and habitat restoration. Venison is processed professionally; our focus is ethical harvest, protection, and long-term stewardship.
               </p>
             </div>
 
@@ -283,18 +283,18 @@ export default function ConservationPage() {
               </div>
               <div className="bg-white p-10 text-center reveal delay-100">
                 <Users className="w-16 h-16 text-gold-500 mx-auto mb-6" />
-                <span className="block font-serif text-5xl text-onyx mb-4">300</span>
-                <h3 className="font-serif text-2xl text-onyx mb-4">Families Fed</h3>
+                <span className="block font-serif text-5xl text-onyx mb-4">Local</span>
+                <h3 className="font-serif text-2xl text-onyx mb-4">Economy</h3>
                 <p className="font-sans text-gray-600 leading-relaxed">
-                  Monthly meat donations ensure local communities benefit directly from conservation efforts.
+                  Guest visits support employment and suppliers in the Makoppa district, linking conservation to a sustainable local economy.
                 </p>
               </div>
               <div className="bg-white p-10 text-center reveal delay-200">
                 <Heart className="w-16 h-16 text-gold-500 mx-auto mb-6" />
                 <span className="block font-serif text-5xl text-onyx mb-4">100%</span>
-                <h3 className="font-serif text-2xl text-onyx mb-4">Meat Donated</h3>
+                <h3 className="font-serif text-2xl text-onyx mb-4">Ethical harvest</h3>
                 <p className="font-sans text-gray-600 leading-relaxed">
-                  Every harvest contributes to community welfare -nothing goes to waste.
+                  Harvests follow fair-chase and quota principles; venison is handled in our professional facility in line with food-safety requirements.
                 </p>
               </div>
             </div>

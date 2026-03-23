@@ -347,7 +347,7 @@ export default function LechwePage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="relative h-full min-h-[400px] overflow-hidden rounded-sm">
                 <Image
-                  src="/images/lechwe-behavior.png"
+                  src="/images/lechwe-taxonomy.png"
                   alt="Lechwe behaviour at wetland edge"
                   fill
                   className="object-cover object-center"
@@ -420,7 +420,7 @@ export default function LechwePage() {
               </div>
               <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
                 <Image
-                  src="/images/lechwe-hunting-stalk.png"
+                  src="/images/lechwe-taxonomy.png"
                   alt="Lechwe in wetland habitat, spot-and-stalk"
                   fill
                   className="object-cover object-center"
@@ -607,7 +607,7 @@ export default function LechwePage() {
                 Venison, Butchery, and Utilization
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
-                Lechwe venison is lean, flavorful, and highly regarded. The meat is fine-grained and has a mild, sweet flavor. All meat from MIWESU harvests is donated to local communities.
+                Lechwe venison is lean, flavorful, and highly regarded. The meat is fine-grained and has a mild, sweet flavor. Venison is handled professionally in line with food-safety and regulatory requirements.
               </p>
             </div>
 

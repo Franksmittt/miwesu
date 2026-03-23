@@ -570,7 +570,7 @@ export default function DappleImpalaPage() {
                 Venison, Butchery, and Utilization
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
-                Dapple Impala venison is identical in quality and characteristics to standard Impala. The meat is lean, flavorful, and highly regarded. All meat from MIWESU harvests is donated to local communities.
+                Dapple Impala venison is identical in quality and characteristics to standard Impala. The meat is lean, flavorful, and highly regarded. Venison is handled professionally in line with food-safety and regulatory requirements.
               </p>
             </div>
 

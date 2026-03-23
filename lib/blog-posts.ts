@@ -76,7 +76,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'conservation-harvest-esg-environmental-stewardship',
     title: 'The Conservation Harvest: ESG Impact and Environmental Stewardship',
-    excerpt: 'How scientific census and carrying capacities dictate harvest. 100% of meat to 300 local families monthly. Anti-poaching. Ethical hunting vs conservation harvesting.',
+    excerpt: 'How scientific census and carrying capacities dictate harvest. Anti-poaching. Ethical hunting vs conservation harvesting.',
     category: 'Conservation',
     date: '2026-03-08',
     heroImage: '/og-image.jpg',
@@ -84,7 +84,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
   {
     slug: 'bespoke-bushveld-living-fiber-optic-internet',
     title: 'Bespoke Bushveld Living: Remote Work with Fiber Optic Internet',
-    excerpt: "State-of-the-art connectivity at Hunter's House and Rooibok Kraal. Work-from-anywhere in the 2.5-billion-year-old Makoppa Dome. Marula wellness.",
+    excerpt: "State-of-the-art connectivity at Hunter's House and Rooibok Kraal. Work-from-anywhere in the 2.5-billion-year-old Makoppa Dome—then step out into starlight and the boma.",
     category: 'Luxury Living',
     date: '2026-03-09',
     heroImage: '/og-image.jpg',
@@ -143,7 +143,7 @@ export const BLOG_POSTS: BlogPostMeta[] = [
     excerpt: 'How Sweetveld grasses in the Makoppa district sustain game in peak condition. Nutrient density, trophy quality, and the Arid Sweet Bushveld.',
     category: 'Conservation',
     date: '2025-11-01',
-    heroImage: '/images/about-sweetveld-kudu.jpg',
+    heroImage: '/images/kudu-bull-portrait-01.png',
   },
   {
     slug: 'limpopo-vs-eastern-cape',

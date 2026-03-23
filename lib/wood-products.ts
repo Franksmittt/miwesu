@@ -36,7 +36,7 @@ export const WOOD_PRODUCTS: WoodProduct[] = [
     moq: 50,
     unitLabel: 'bag',
     description: 'Hardwood mix in 12kg bags. Versatile and consistent burn.',
-    image: '/images/home-origins-soil.jpg',
+    image: '/images/_filename_wood-macro-grainjpg__Nano_Banana_Pro_31490.jpg',
     imageAlt: 'Braai mix 12kg bags - MIWESU thermal wood',
   },
   {
@@ -48,7 +48,7 @@ export const WOOD_PRODUCTS: WoodProduct[] = [
     moq: 20,
     unitLabel: 'bag',
     description: 'Yellow bark, red heart. Aromatic density for the serious braai.',
-    image: '/images/about-dust-road.jpg',
+    image: '/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg',
     imageAlt: 'Sekelbos 30kg bags - MIWESU thermal wood',
   },
   {
@@ -60,7 +60,7 @@ export const WOOD_PRODUCTS: WoodProduct[] = [
     moq: 20,
     unitLabel: 'bag',
     description: 'Engineering-grade hardwood mix. Long burn, Gauteng delivery.',
-    image: '/images/residences-homestead-boma.jpg',
+    image: '/images/residences-main-lodge-boma-braai.jpg',
     imageAlt: 'Braai mix 30kg bags - MIWESU thermal wood',
   },
 ]

@@ -438,7 +438,7 @@ export default function GreaterKuduPage() {
             <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
               <div className="relative h-full min-h-[400px]">
                 <Image
-                  src="/images/conservation-harvest-kudu.jpg"
+                  src="/images/kudu-bull-portrait-01.png"
                   alt="Kudu in thicket habitat"
                   fill
                   sizes="(max-width: 768px) 100vw, 800px"

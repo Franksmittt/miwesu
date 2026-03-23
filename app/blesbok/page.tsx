@@ -383,7 +383,7 @@ export default function BlesbokPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
-                  src="/images/5blesbok-herd-bushveld-01.png"
+                  src="/images/3blesbok-ewe-bushveld-01.png"
                   alt="Blesbok herd in bushveld"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -460,7 +460,7 @@ export default function BlesbokPage() {
               </div>
               <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
-                  src="/images/6blesbok-ram-standing-02.png"
+                  src="/images/4blesbok-ram-portrait-02.png"
                   alt="Blesbok ram in grassland"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -472,7 +472,7 @@ export default function BlesbokPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
-                  src="/images/6blesbok-ram-standing-02.png"
+                  src="/images/4blesbok-ram-portrait-02.png"
                   alt="Blesbok at waterhole or grassland"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"

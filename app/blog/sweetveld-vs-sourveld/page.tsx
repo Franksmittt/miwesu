@@ -25,7 +25,7 @@ export default function SweetveldVsSourveldPage() {
         <section className="bg-marble">
           <div className="relative w-full aspect-video sm:aspect-[21/9] max-h-[50vh] overflow-hidden">
             <Image
-              src="/images/about-sweetveld-kudu.jpg"
+              src="/images/kudu-bull-portrait-01.png"
               alt="Kudu in Sweetveld habitat - Makoppa district nutrient-rich grasses"
               fill
               className="object-cover"

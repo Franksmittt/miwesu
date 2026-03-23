@@ -92,7 +92,7 @@ export default function WarthogPage() {
               </div>
               <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
-                  src="/images/2warthog-boar-standing-01.png"
+                  src="/images/1warthog-boar-portrait-01.png"
                   alt="Warthog boar in bushveld"
                   fill
                   className="object-cover shadow-luxury"
@@ -229,7 +229,7 @@ export default function WarthogPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
                 <Image
-                  src="/images/home-species-warthog.jpg"
+                  src="/images/warthog_card.png"
                   alt="Warthog coat coloration and markings"
                   fill
                   className="object-cover shadow-luxury"
@@ -271,7 +271,7 @@ export default function WarthogPage() {
               </div>
               <div className="relative h-full min-h-[400px]">
                 <Image
-                  src="/images/4warthog-boar-portrait-02.png"
+                  src="/images/1warthog-boar-portrait-01.png"
                   alt="Warthog boar tusk detail and head structure"
                   fill
                   className="object-cover shadow-luxury"
@@ -345,7 +345,7 @@ export default function WarthogPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
                 <Image
-                  src="/images/5warthog-family-bushveld-01.png"
+                  src="/images/3warthog-sow-bushveld-01.png"
                   alt="Warthog family in bushveld"
                   fill
                   className="object-cover shadow-luxury"

@@ -8,7 +8,7 @@
 ## Current Issues
 
 1. **Duplicate / wrong reuse:** Hero and "Meat processing facility" both used the same image (`Thabazimbi_N_198`). Conservation Harvest card and main section use the same image (`Thabazimbi_N_171`).
-2. **Missing files:** Page hardcodes `/images/conservation-harvest-kudu.jpg` and `/images/4x4-trails-main.jpg` – these files do not exist.
+2. **Missing files:** Page hardcodes `/images/kudu-bull-portrait-01.png` and `/images/4x4-trails-main.jpg` – these files do not exist.
 3. **Generic naming:** Many slots use `_filename_Thabazimbi_N_XXX` with no clear semantic match to the section (e.g. "celestial" vs "stargazing", "birding" vs habitat).
 
 ---
@@ -21,7 +21,7 @@
 | **Top cards** | Conservation Harvest | Hunting, trackers, ethical harvest | Facebook "Rifle in wooden hunting blind; diagonal sunlight" – anticipation, bushveld. |
 | | Photographic Safaris | Wildlife/landscape for photographers | Facebook "Waterhole at sunset; reflections" or "Zebras drinking at waterhole". |
 | | Celestial Safaris | Dark skies, stargazing | Keep Thabazimbi_N_150 if it is night sky; else keep as placeholder until a real night-sky photo exists. |
-| | Mobile Wellness | Lodge, relaxation, pool/spa | Keep `residences-main-lodge-pool.jpg` (fits “relaxation without leaving your sanctuary”). |
+| | Friends & family | Boma, shared evenings, exclusive-use groups | `residences-main-lodge-boma-braai.jpg` or Facebook braai / gathering shots. |
 | | Wildlife Viewing | Game drives, wildlife | Facebook "Herd of African buffalo; safari vehicle observing" or "Zebras drinking at waterhole". |
 | **Conservation Harvest** | Main | Ethical hunting in Sweetveld | Same as card: "Rifle in wooden hunting blind" or "Two rifles from vehicle; sunset over savanna". |
 | | Tracker | Professional tracker in bushveld | Facebook "Rifle in wooden hunting blind" or keep current tracker image if it shows a person/tracker. |
@@ -59,4 +59,4 @@
 ## Implementation
 
 - **`lib/activity-images.ts`** – Point each key to the best-suited path (Facebook or existing `/images/...`).
-- **`app/activities/page.tsx`** – Replace hardcoded `/images/conservation-harvest-kudu.jpg` with `activityImages.conservationHarvestKudu`. Replace `/images/4x4-trails-main.jpg` with `activityImages.fourByFourMain` (and ensure `fourByFourMain` points to a real 4x4/terrain image).
+- **`app/activities/page.tsx`** – Replace hardcoded `/images/kudu-bull-portrait-01.png` with `activityImages.conservationHarvestKudu`. Replace `/images/4x4-trails-main.jpg` with `activityImages.fourByFourMain` (and ensure `fourByFourMain` points to a real 4x4/terrain image).

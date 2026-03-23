@@ -244,7 +244,7 @@ export default function CapeBuffaloPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
-                  src="/images/home-species-wildebeest.jpg"
+                  src="/images/4wildebeest-bull-portrait-02.png"
                   alt="Cape Buffalo coat coloration"
                   fill
                   className="object-cover shadow-luxury"
@@ -768,7 +768,7 @@ export default function CapeBuffaloPage() {
                 Venison, Butchery, and Utilization
               </h2>
               <p className="text-gray-300 text-lg max-w-3xl mx-auto">
-                Cape Buffalo meat is highly regarded and commercially significant. The meat is lean, flavorful, and nutritious, making it a valuable resource. All meat from MIWESU harvests is donated to local communities.
+                Cape Buffalo meat is highly regarded and commercially significant. The meat is lean, flavorful, and nutritious, making it a valuable resource. Venison is handled professionally in line with food-safety and regulatory requirements.
               </p>
             </div>
 

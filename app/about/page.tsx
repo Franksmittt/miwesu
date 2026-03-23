@@ -56,7 +56,7 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start mb-12 sm:mb-20">
               <div className="reveal">
                 <Image
-                  src="/images/about-makoppa-dome.jpg"
+                  src="/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg"
                   alt="Makoppa Dome - Ancient granite and gneiss formations in the Thabazimbi district"
                   width={800}
                   height={600}
@@ -138,7 +138,7 @@ export default function AboutPage() {
               </div>
               <div className="reveal delay-100">
                 <Image
-                  src="/images/about-dust-road.jpg"
+                  src="/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg"
                   alt="Dust road through the Makoppa district bushveld"
                   width={800}
                   height={600}
@@ -178,7 +178,7 @@ export default function AboutPage() {
                   </div>
                   <div className="relative">
                     <Image
-                      src="/images/about-sweetveld-kudu.jpg"
+                      src="/images/kudu-bull-portrait-01.png"
                       alt="Kudu bull in the Sweetveld - peak condition"
                       width={800}
                       height={600}
@@ -291,13 +291,13 @@ export default function AboutPage() {
                   We believe that the future of African wildlife lies in making conservation economically viable. Every guest who visits Miwesu directly contributes to our anti-poaching efforts, habitat restoration, and community support programs.
                 </p>
                 <p className="font-sans text-gray-300 text-lg leading-loose mb-12">
-                  The meat from every harvest feeds 300 local families monthly. Our 24/7 anti-poaching units protect not just our reserve, but the entire ecosystem. This is conservation that pays for itself -ensuring that the Iron Mountain remains a sanctuary for generations to come.
+                  Venison from harvests is handled professionally in line with food-safety and regulatory requirements. Our 24/7 anti-poaching units protect not just our reserve, but the entire ecosystem. This is conservation that pays for itself—ensuring that the Iron Mountain remains a sanctuary for generations to come.
                 </p>
                 <div className="grid md:grid-cols-3 gap-8">
                   <div className="text-center">
                     <Heart className="w-12 h-12 text-gold-500 mx-auto mb-4" />
-                    <span className="block font-serif text-3xl text-white mb-2">300</span>
-                    <span className="text-xs uppercase tracking-widest text-gray-400">Families Fed Monthly</span>
+                    <span className="block font-serif text-3xl text-white mb-2">Ethical</span>
+                    <span className="text-xs uppercase tracking-widest text-gray-400">Harvest standards</span>
                   </div>
                   <div className="text-center">
                     <Shield className="w-12 h-12 text-gold-500 mx-auto mb-4" />
@@ -307,7 +307,7 @@ export default function AboutPage() {
                   <div className="text-center">
                     <Target className="w-12 h-12 text-gold-500 mx-auto mb-4" />
                     <span className="block font-serif text-3xl text-white mb-2">100%</span>
-                    <span className="text-xs uppercase tracking-widest text-gray-400">Meat Donated</span>
+                    <span className="text-xs uppercase tracking-widest text-gray-400">Professional processing</span>
                   </div>
                 </div>
               </div>

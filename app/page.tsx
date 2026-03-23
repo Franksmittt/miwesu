@@ -19,10 +19,10 @@ import {
   Coffee,
   Gem,
   Download,
-  Heart,
   Activity,
-  Quote,
   Wind,
+  Users,
+  Camera,
 } from 'lucide-react'
 import BookingWidget from '@/components/BookingWidget'
 import DayInLife from '@/components/DayInLife'
@@ -76,7 +76,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <Image
             src={heroImages.home}
-            alt="MIWESU – The Makoppa Sanctuary"
+            alt="MIWESU, The Makoppa Sanctuary"
             fill
             sizes="100vw"
             className="object-cover object-[center_40%]"
@@ -360,7 +360,7 @@ export default function Home() {
             >
               <div className="h-64 overflow-hidden relative">
                 <Image
-                  src="/images/home-species-wildebeest.jpg"
+                  src="/images/4wildebeest-bull-portrait-02.png"
                   alt="Blue Wildebeest (Connochaetes taurinus) - Tough plains game species"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -479,7 +479,7 @@ export default function Home() {
             >
               <div className="h-64 overflow-hidden relative">
                 <Image
-                  src="/images/home-species-warthog.jpg"
+                  src="/images/warthog_card.png"
                   alt="Warthog (Phacochoerus africanus) - Opportunistic game species at waterholes"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -544,136 +544,104 @@ export default function Home() {
             The Observer's Journey
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-6 shadow-luxury">
+          <div className="grid md:grid-cols-3 gap-6 shadow-luxury text-left">
             <Link
               href="/activities"
-              className="group relative p-8 sm:p-12 rounded-2xl bg-white border border-gray-100 hover:bg-onyx transition-all duration-500 ease-[cubic-bezier(0.22,0.25,0,1)] cursor-pointer block"
+              className="group relative p-8 sm:p-10 rounded-2xl bg-white border border-gray-100 hover:bg-onyx transition-all duration-500 ease-[cubic-bezier(0.22,0.25,0,1)] cursor-pointer block"
             >
               <div className="mb-6 sm:mb-8">
                 <Star className="w-8 h-8 sm:w-10 sm:h-10 text-gold-500 mx-auto" />
               </div>
-              <h3 className="font-serif text-xl sm:text-2xl text-onyx group-hover:text-white transition-colors mb-3 sm:mb-4">
+              <h3 className="font-serif text-xl sm:text-2xl text-onyx group-hover:text-white transition-colors mb-3 sm:mb-4 text-center">
                 Celestial Safaris
               </h3>
-              <p className="font-sans text-sm text-gray-500 group-hover:text-gray-400 transition-colors leading-relaxed">
+              <p className="font-sans text-sm text-gray-500 group-hover:text-gray-400 transition-colors leading-relaxed text-center">
                 Thabazimbi offers some of the darkest skies in the southern
                 hemisphere. Private astronomy sessions available.
               </p>
             </Link>
             <Link
               href="/activities"
-              className="group relative p-8 sm:p-12 rounded-2xl bg-white border border-gray-100 hover:bg-onyx transition-all duration-500 ease-[cubic-bezier(0.22,0.25,0,1)] cursor-pointer block"
+              className="group relative p-8 sm:p-10 rounded-2xl bg-white border border-gray-100 hover:bg-onyx transition-all duration-500 ease-[cubic-bezier(0.22,0.25,0,1)] cursor-pointer block"
             >
               <div className="mb-6 sm:mb-8">
-                <Heart className="w-8 h-8 sm:w-10 sm:h-10 text-gold-500 mx-auto" />
+                <Users className="w-8 h-8 sm:w-10 sm:h-10 text-gold-500 mx-auto" />
               </div>
-              <h3 className="font-serif text-xl sm:text-2xl text-onyx group-hover:text-white transition-colors mb-3 sm:mb-4">
-                Mobile Wellness
+              <h3 className="font-serif text-xl sm:text-2xl text-onyx group-hover:text-white transition-colors mb-3 sm:mb-4 text-center">
+                Friends &amp; family
               </h3>
-              <p className="font-sans text-sm text-gray-500 group-hover:text-gray-400 transition-colors leading-relaxed">
-                In-villa spa treatments using indigenous Marula oils. Relaxation
-                without leaving your sanctuary.
+              <p className="font-sans text-sm text-gray-500 group-hover:text-gray-400 transition-colors leading-relaxed text-center">
+                Exclusive-use stays where everyone shares the rhythm, from first hunts beside seasoned hands to long tables at the boma and evenings that pull the whole group in.
+              </p>
+            </Link>
+            <Link
+              href="/activities"
+              className="group relative p-8 sm:p-10 rounded-2xl bg-white border border-gray-100 hover:bg-onyx transition-all duration-500 ease-[cubic-bezier(0.22,0.25,0,1)] cursor-pointer block"
+            >
+              <div className="mb-6 sm:mb-8">
+                <Camera className="w-8 h-8 sm:w-10 sm:h-10 text-gold-500 mx-auto" />
+              </div>
+              <h3 className="font-serif text-xl sm:text-2xl text-onyx group-hover:text-white transition-colors mb-3 sm:mb-4 text-center">
+                Photographic safaris
+              </h3>
+              <p className="font-sans text-sm text-gray-500 group-hover:text-gray-400 transition-colors leading-relaxed text-center">
+                For observers and shutterbugs: guided drives and light walks to capture the Waterberg: wildlife, light, and landscape without the pressure of a rifle.
               </p>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* What Guests Say - Social Proof */}
-      <section className="py-16 lg:py-24 bg-marble border-y border-gray-100">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <span className="text-gold-700 text-xs tracking-[0.2em] uppercase font-bold font-sans block text-center mb-6">
-            What Guests Say
-          </span>
-          <div className="grid md:grid-cols-2 gap-6">
-            {intent === 'biltong' ? (
-              <>
-                <div className="bg-white p-8 border border-gray-100 shadow-sm rounded-2xl reveal">
-                  <Quote className="w-10 h-10 text-gold-500 mb-4" />
-                  <p className="font-sans text-gray-600 leading-relaxed mb-6">
-                    &quot;Die gesin het na die naweek gevoel of ons werklik onttrek het. Die biltongjag en die koppie-uitsigte -ons kom weer.&quot;
-                  </p>
-                  <p className="text-xs uppercase tracking-widest text-gold-700 font-bold">Family biltong hunt · Gauteng</p>
-                </div>
-                <div className="bg-white p-8 border border-gray-100 shadow-sm rounded-2xl reveal delay-100">
-                  <Quote className="w-10 h-10 text-gold-500 mb-4" />
-                  <p className="font-sans text-gray-600 leading-relaxed mb-6">
-                    &quot;Weekend weg van die stad. Pryse in Rand, duidelik. Die huis is stil en die veld is vol.&quot;
-                  </p>
-                  <p className="text-xs uppercase tracking-widest text-gold-700 font-bold">Weekend getaway · SA</p>
-                </div>
-              </>
-            ) : (
-              <>
-                <div className="bg-white p-8 border border-gray-100 shadow-sm rounded-2xl reveal">
-                  <Quote className="w-10 h-10 text-gold-500 mb-4" />
-                  <p className="font-sans text-gray-600 leading-relaxed mb-6">
-                    &quot;Flew JFK to Johannesburg, 2.5 hours to the farm. The kudu we took was exactly what we came for. Logistics and export were handled -no surprises.&quot;
-                  </p>
-                  <p className="text-xs uppercase tracking-widest text-gold-700 font-bold">International hunter · USA</p>
-                </div>
-                <div className="bg-white p-8 border border-gray-100 shadow-sm rounded-2xl reveal delay-100">
-                  <Quote className="w-10 h-10 text-gold-500 mb-4" />
-                  <p className="font-sans text-gray-600 leading-relaxed mb-6">
-                    &quot;Malaria-free was a big deal for us. The Waterberg bushveld and the lodge -first-class. Already planning our next trip.&quot;
-                  </p>
-                  <p className="text-xs uppercase tracking-widest text-gold-700 font-bold">Trophy safari · Florida</p>
-                </div>
-              </>
-            )}
-          </div>
-        </div>
-      </section>
-
-      {/* Legacy / Impact - The Final CTA */}
+      {/* Experience - split layout, no pledge block */}
       <section
         id="conservation"
-        className="py-24 lg:py-32 bg-onyx relative overflow-hidden"
+        className="relative overflow-hidden bg-[#0c0c0c] py-20 lg:py-28"
       >
-        <div className="absolute inset-0 bg-hero-pattern opacity-10 bg-fixed"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-onyx via-onyx/90 to-transparent"></div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
-          <div className="md:w-1/2 mb-8 md:mb-0 reveal">
-            <div className="inline-block bg-gold-500 text-onyx px-4 py-1 text-[10px] font-bold uppercase tracking-widest mb-4 sm:mb-6">
-              Conservation First
-            </div>
-            <h2 className="font-serif text-3xl sm:text-5xl md:text-7xl mb-6 sm:mb-8 text-white tracking-tight">
-              If It Pays,
-              <br />
-              It Stays.
-            </h2>
-            <p className="text-gray-400 text-base sm:text-lg leading-loose mb-6 sm:mb-10 font-light max-w-lg">
-              The reality of African conservation is economic. Your visit directly
-              funds our Anti-Poaching Units and habitat restoration. The meat from
-              your harvest feeds 300 local families monthly.
-            </p>
-            <div className="grid grid-cols-2 gap-6 sm:gap-12">
-              <div>
-                <span className="block text-4xl sm:text-6xl font-serif text-gold-500">100%</span>
-                <span className="uppercase text-[10px] tracking-widest text-white mt-2 block">
-                  Meat Donated
-                </span>
-              </div>
-              <div>
-                <span className="block text-4xl sm:text-6xl font-serif text-gold-500">24/7</span>
-                <span className="uppercase text-[10px] tracking-widest text-white mt-2 block">
-                  Anti-Poaching
-                </span>
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_70%_20%,rgba(212,175,55,0.06),transparent_55%)]" aria-hidden />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 lg:items-stretch">
+            {/* Image - matches text column height on large screens */}
+            <div className="lg:col-span-5 reveal flex flex-col lg:h-full min-h-0">
+              <div className="relative w-full flex-1 min-h-[280px] sm:min-h-[320px] aspect-[4/3] sm:aspect-[16/10] lg:aspect-auto lg:min-h-0 lg:flex-1 rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                <Image
+                  src={heroImages.conservation}
+                  alt="Boma, braai and bushveld at MIWESU, shared evenings in the Makoppa"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 42vw"
+                  className="object-cover object-center"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/20" aria-hidden />
               </div>
             </div>
-          </div>
 
-          <div className="md:w-1/3 relative reveal delay-100 w-full md:w-auto">
-            <div className="glass-panel-dark p-8 sm:p-12 border border-gold-500/30 rounded-2xl">
-              <Quote className="w-8 h-8 text-gold-500 mb-6" />
-              <p className="text-white font-serif text-2xl mb-8 leading-normal">
-                "I acknowledge that Miwesu is a sanctuary of silence. I respect the
-                ethics of the fair chase and the peace of the Iron Mountain."
+            {/* Copy - editorial column */}
+            <div className="lg:col-span-7 reveal delay-100 flex flex-col">
+              <p className="font-sans text-gold-500 text-[10px] sm:text-xs tracking-[0.35em] uppercase font-bold mb-5">
+                The experience
               </p>
-              <p className="text-[10px] uppercase tracking-widest text-gray-400">
-                 - The Guardian's Pledge
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-[2.75rem] text-white tracking-tight leading-[1.12] mb-6">
+                Evenings at the boma, mornings on the koppies
+              </h2>
+              <p className="font-sans text-gray-400 text-base sm:text-lg leading-relaxed mb-4 max-w-2xl">
+                MIWESU is for the people you bring: first-timers beside old hands, kids laughing by the pool, and the slow stories after dark when the bush goes quiet. The Sweetveld has its own rhythm: dust, rain on tin, firelight, and the kind of thrill you only get when you are really out there.
               </p>
+              <p className="font-sans text-gray-500 text-sm sm:text-base leading-relaxed mb-10 max-w-2xl border-l-2 border-gold-500/40 pl-5">
+                Hunting here is done properly, with quotas, ethics, and professional processing. What you remember is the feel of the place: the animals, the air, and the night closing in around the fire.
+              </p>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+                <Link
+                  href="/book"
+                  className="inline-flex justify-center items-center px-8 py-3.5 bg-gold-500 text-onyx font-sans text-xs uppercase tracking-[0.2em] font-bold rounded-xl hover:bg-gold-400 transition-colors"
+                >
+                  Book Your Stay
+                </Link>
+                <Link
+                  href="/activities"
+                  className="inline-flex justify-center items-center px-8 py-3.5 border border-white/20 text-white font-sans text-xs uppercase tracking-[0.2em] font-bold rounded-xl hover:border-gold-500/60 hover:text-gold-300 transition-colors"
+                >
+                  Explore activities
+                </Link>
+              </div>
             </div>
           </div>
         </div>

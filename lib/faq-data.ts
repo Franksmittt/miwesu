@@ -16,12 +16,12 @@ export const FAQ_ITEMS: Array<{ question: string; answer: string }> = [
   {
     question: 'How does the conservation harvest work?',
     answer:
-      'We manage an ecosystem, not a hunting operation. Species availability is determined by our annual ecological census to ensure sustainable population management. All harvests follow strict ethical guidelines, and 100% of the meat is donated to local communities. Trophy fees vary by species and are detailed in our Investment Guide.',
+      'We manage an ecosystem, not a hunting operation. Species availability is determined by our annual ecological census to ensure sustainable population management. All harvests follow strict ethical guidelines and professional processing standards. Trophy fees vary by species and are detailed in our Investment Guide.',
   },
   {
     question: 'What activities are available for non-hunters?',
     answer:
-      'We offer photographic safaris, guided game drives, walking safaris, celestial safaris (astronomy), and mobile wellness treatments. The reserve is perfect for observers, photographers, and those seeking a luxury wilderness experience.',
+      'We offer photographic safaris, guided game drives, walking safaris, and celestial safaris (astronomy). The reserve is perfect for observers, photographers, families, and those seeking a luxury wilderness experience together.',
   },
   {
     question: 'Is Miwesu malaria-free?',

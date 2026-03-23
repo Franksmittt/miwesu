@@ -8,8 +8,6 @@ import { activityImages } from '@/lib/activity-images'
 import {
   Target,
   Star,
-  Heart,
-  Activity,
   Camera,
   Binoculars,
   Mountain,
@@ -62,10 +60,11 @@ export default function ActivitiesPage() {
       image: activityImages.celestialSafariCard,
     },
     {
-      icon: Heart,
-      title: 'Mobile Wellness',
-      description: 'In-villa spa treatments using indigenous Marula oils. Relaxation without leaving your sanctuary.',
-      image: activityImages.mobileWellnessCard,
+      icon: Users,
+      title: 'Friends & family',
+      description:
+        'Exclusive-use stays where generations meet: first hunts beside seasoned hands, kids on the trampoline, long tables at the boma, and evenings that belong to everyone.',
+      image: activityImages.gatheringsFamilyCard,
     },
     {
       icon: Binoculars,
@@ -166,12 +165,12 @@ export default function ActivitiesPage() {
                       Our conservation harvest program is guided by professional trackers who understand the Makoppa ecosystem intimately. Every hunt follows strict conservation quotas and ethical practices, ensuring sustainable utilization of the resource.
                     </p>
                     <p className="text-gray-300 text-base sm:text-lg leading-loose mb-6 sm:mb-8">
-                      The Sweetveld advantage means animals are in peak condition year-round, resulting in superior trophy quality and exceptional meat. All harvests are processed in our professional slaughter facility, and 100% of the meat is donated to local families -feeding 300 families monthly.
+                      The Sweetveld advantage means animals are in peak condition year-round, resulting in superior trophy quality and exceptional meat. All harvests are processed in our professional slaughter facility in line with food-safety and regulatory requirements.
                     </p>
                     <div className="grid grid-cols-2 gap-4">
                       <div className="border-l-2 border-gold-500 pl-4">
                         <span className="block font-serif text-2xl text-gold-400 mb-1">100%</span>
-                        <span className="text-xs uppercase tracking-widest text-gray-400">Meat Donated</span>
+                        <span className="text-xs uppercase tracking-widest text-gray-400">Ethical harvest</span>
                       </div>
                       <div className="border-l-2 border-gold-500 pl-4">
                         <span className="block font-serif text-2xl text-gold-400 mb-1">Ethical</span>
@@ -426,16 +425,16 @@ export default function ActivitiesPage() {
                 </div>
               </div>
 
-              {/* Mobile Wellness */}
+              {/* Friends & family — shared experience */}
               <div className="grid md:grid-cols-1 gap-12 mb-20">
                 <div className="bg-onyx-light border border-white/5 p-10 reveal delay-600">
-                  <Heart className="w-12 h-12 text-gold-500 mb-6" />
-                  <h3 className="font-serif text-3xl text-white mb-4">Mobile Wellness</h3>
+                  <Users className="w-12 h-12 text-gold-500 mb-6" />
+                  <h3 className="font-serif text-3xl text-white mb-4">Friends &amp; family</h3>
                   <p className="text-gray-300 text-lg leading-loose mb-6">
-                    In-villa spa treatments using indigenous Marula oils. Relaxation without leaving your sanctuary. After a day in the bush, unwind with a massage or spa treatment in the comfort of your residence.
+                    MIWESU is built for groups: syndicates, extended families, and couples who want the bushveld together—not on separate schedules. Share the smell of rain on dust, the crackle of the boma, and stories that outlast the fire.
                   </p>
                   <p className="text-gray-300 text-lg leading-loose">
-                    Our mobile wellness service brings the spa to you, using locally sourced ingredients and traditional techniques to help you fully relax and rejuvenate.
+                    Observers and photographers are as welcome as hunters. Everyone finds a place in the rhythm of the day—from dawn coffee to starlight on the patio.
                   </p>
                 </div>
               </div>

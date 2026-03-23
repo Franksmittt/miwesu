@@ -47,7 +47,7 @@ Indoor: kitchen, living, master en-suite, second bedroom (bunks, en-suite). Outd
 | Conservation Harvest | Quota-based ethical hunting with professional trackers. |
 | Photographic Safaris | Guided wildlife photography in the Makoppa. |
 | Celestial Safaris | Dark-sky astronomy sessions. |
-| Mobile Wellness | In-villa treatments (e.g. Marula oils). |
+| Friends & family / shared stays | Exclusive-use groups, boma evenings, multi-gen rhythm. |
 | Wildlife Viewing | Game drives and walking safaris. |
 
 Additional themes: birding, 4x4 trails. **Page:** `/activities`; imagery from `lib/activity-images.ts`.
@@ -98,10 +98,10 @@ Each species page: hero, Quick Facts (SpeciesBentoGrid), Compare button, taxonom
 ### Experience
 | Route | Summary |
 |-------|--------|
-| **/activities** | Five activities (Conservation Harvest, Photographic Safaris, Celestial Safaris, Mobile Wellness, Wildlife Viewing); expandable sections with imagery; hero. |
+| **/activities** | Activities include Conservation Harvest, Photographic Safaris, Celestial Safaris, Friends & family, Wildlife Viewing; expandable sections with imagery; hero. |
 | **/wildlife** | Species grid (cards with image, name, tag, link); featured species; Specialist Species list; Ecological Management; Compare and Rates CTAs. |
 | **/compare** | Side-by-side species comparison; select species A/B; URL params `?a=slug&b=slug`; table (weight, height, diet, habitat, caliber, Rowland Ward, lifespan). CompareButton on each species page. |
-| **/conservation** | “If It Pays, It Stays”; Guardian’s Pledge; impact (meat donated, anti-poaching, families fed); anti-poaching; community; habitat. |
+| **/conservation** | “If It Pays, It Stays”; Guardian’s Pledge; impact (ethical harvest, anti-poaching, local economy); anti-poaching; community; habitat. |
 | **/gallery** | Filterable gallery (All, Landscape, Wildlife, Accommodation); unified grid (curated + Facebook images); no overlays. |
 | **/partners** | Dipping/shipping, taxidermy, travel insurance; CTAs to trophy-export and contact. |
 

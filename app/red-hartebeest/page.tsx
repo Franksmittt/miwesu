@@ -229,7 +229,7 @@ export default function RedHartebeestPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
-                  src="/images/4red-hartebeest-bull-portrait-02.png"
+                  src="/images/1red-hartebeest-bull-portrait-01.png"
                   alt="Red Hartebeest coat coloration"
                   fill
                   className="object-cover shadow-luxury"
@@ -271,7 +271,7 @@ export default function RedHartebeestPage() {
               </div>
               <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
-                src="/images/4red-hartebeest-bull-portrait-02.png"
+                src="/images/1red-hartebeest-bull-portrait-01.png"
                 alt="Red Hartebeest horn configuration"
                 fill
                 className="object-cover shadow-luxury"
@@ -345,7 +345,7 @@ export default function RedHartebeestPage() {
             <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
               <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
-                  src="/images/5red-hartebeest-herd-bushveld-01.png"
+                  src="/images/3red-hartebeest-cow-bushveld-01.png"
                   alt="Red Hartebeest herd in grassland"
                   fill
                   className="object-cover"
@@ -417,7 +417,7 @@ export default function RedHartebeestPage() {
               </div>
               <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
                 <Image
-                  src="/images/6red-hartebeest-bull-standing-02.png"
+                  src="/images/2red-hartebeest-bull-standing-01.png"
                   alt="Red Hartebeest in habitat for spot and stalk"
                   fill
                   className="object-cover"
@@ -602,7 +602,7 @@ export default function RedHartebeestPage() {
                 Venison, Butchery, and Utilization
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto">
-                Red Hartebeest venison is lean, flavorful, and highly regarded. The meat is dark red and has a rich, gamey flavor. All meat from MIWESU harvests is donated to local communities.
+                Red Hartebeest venison is lean, flavorful, and highly regarded. The meat is dark red and has a rich, gamey flavor. Venison is handled professionally in line with food-safety and regulatory requirements.
               </p>
             </div>
 

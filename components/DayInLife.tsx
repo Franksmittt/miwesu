@@ -13,6 +13,7 @@ const moments = [
     title: 'Sunrise over the koppies',
     image: '/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg',
     description: 'First light on the Makoppa. Silence. Coffee on the patio.',
+    imageClassName: 'object-cover object-center',
   },
   {
     time: '10:00',
@@ -20,6 +21,7 @@ const moments = [
     title: 'Safari or trampoline',
     image: '/images/_filename_Thabazimbi_N_140jpg__Nano_Banana_Pro_44533.jpg',
     description: 'Game drive or family play by the pool.',
+    imageClassName: 'object-cover object-center',
   },
   {
     time: '15:00',
@@ -27,6 +29,7 @@ const moments = [
     title: 'Pool and lawn',
     image: '/images/_filename_Gemini_Generated_Ima_Nano_Banana_Pro_63120.jpg',
     description: 'Swim, slide, thatched shade. The Oasis.',
+    imageClassName: 'object-cover object-center',
   },
   {
     time: '19:00',
@@ -34,6 +37,9 @@ const moments = [
     title: 'Boma braai',
     image: '/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg',
     description: 'Fire under the trees. Waterhole in the distance.',
+    /** Wider shots: anchor on lower third so boma, fire & waterhole stay in frame */
+    imageClassName:
+      'object-cover object-[center_58%] sm:object-[center_55%] md:object-[center_52%]',
   },
   {
     time: '22:00',
@@ -41,6 +47,9 @@ const moments = [
     title: 'Starry skies',
     image: '/images/_filename_Thabazimbi_W_110jpg__Nano_Banana_Pro_77108.jpg',
     description: 'Celestial safari or quiet on the patio. Iron Eden at rest.',
+    /** Night / dusk: bias upward so sky & horizon read; avoids chopping the glow */
+    imageClassName:
+      'object-cover object-[center_35%] sm:object-[center_38%] md:object-[center_40%]',
   },
 ]
 
@@ -82,7 +91,7 @@ export default function DayInLife() {
             >
               {/* Image column */}
               <div
-                className={`relative min-h-[240px] md:min-h-0 md:w-[calc(50%-1rem)] overflow-hidden squircle ${
+                className={`relative w-full aspect-[4/3] sm:aspect-[16/10] md:aspect-[5/3] md:min-h-0 md:w-[calc(50%-1rem)] overflow-hidden squircle ${
                   index % 2 === 1 ? 'md:order-2' : 'md:order-1'
                 }`}
               >
@@ -91,7 +100,7 @@ export default function DayInLife() {
                   alt={moment.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
+                  className={moment.imageClassName}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-onyx/60 via-transparent to-transparent md:from-transparent" />
               </div>
@@ -133,7 +142,7 @@ export default function DayInLife() {
             href="/book"
             className="squircle inline-block px-8 py-3.5 bg-gold-500 text-onyx font-sans text-xs uppercase tracking-[0.2em] font-bold hover:bg-gold-400 transition-colors duration-300 ease-one-ui"
           >
-            Book your day
+            Book Your Stay
           </Link>
         </motion.div>
       </div>

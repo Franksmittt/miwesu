@@ -39,13 +39,13 @@ const facebookAsGallery = authenticGalleryItems.map(
 const landscapeAndWildlifeImages = [
   { src: '/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg', category: 'Landscape' as const, title: 'Lodge patio and braai', description: 'Braai under thatch with waterhole and bushveld' },
   { src: '/images/kudu-bull-portrait-01.png', category: 'Wildlife' as const, title: 'Greater Kudu', description: 'The Grey Ghost of the thickets' },
-  { src: '/images/home-species-wildebeest.jpg', category: 'Wildlife' as const, title: 'Blue Wildebeest', description: 'Thriving on sweet grazing lawns' },
+  { src: '/images/4wildebeest-bull-portrait-02.png', category: 'Wildlife' as const, title: 'Blue Wildebeest', description: 'Thriving on sweet grazing lawns' },
   { src: '/images/impala-ram-portrait-01.png', category: 'Wildlife' as const, title: 'Impala', description: 'The athlete of the bushveld' },
   { src: '/images/gemsbok-portrait-01.png', category: 'Wildlife' as const, title: 'Gemsbok', description: 'Kalahari transition zone specialist' },
-  { src: '/images/home-species-warthog.jpg', category: 'Wildlife' as const, title: 'Warthog', description: 'Character and charm at waterholes' },
-  { src: '/images/home-origins-main.jpg', category: 'Landscape' as const, title: 'Leadwood Forest', description: 'Ancient trees of the Makoppa' },
-  { src: '/images/home-origins-soil.jpg', category: 'Landscape' as const, title: 'Arid Sweet Bushveld', description: 'The nutrient-rich heartland' },
-  { src: '/images/about-dust-road.jpg', category: 'Landscape' as const, title: 'D1432 Road', description: 'The journey to Miwesu' },
+  { src: '/images/warthog_card.png', category: 'Wildlife' as const, title: 'Warthog', description: 'Character and charm at waterholes' },
+  { src: '/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg', category: 'Landscape' as const, title: 'Leadwood Forest', description: 'Ancient trees of the Makoppa' },
+  { src: '/images/_filename_wood-macro-grainjpg__Nano_Banana_Pro_31490.jpg', category: 'Landscape' as const, title: 'Arid Sweet Bushveld', description: 'The nutrient-rich heartland' },
+  { src: '/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg', category: 'Landscape' as const, title: 'D1432 Road', description: 'The journey to Miwesu' },
   { src: '/images/kudu-bull-standing-01.png', category: 'Wildlife' as const, title: 'Kudu Bull', description: 'Peak condition in Sweetveld' },
 ]
 
@@ -168,7 +168,7 @@ export default function GalleryPage() {
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
                   <div className="relative h-[300px] sm:h-[400px] group cursor-pointer">
                     <Image
-                      src="/images/gallery-wildlife-collection.jpg"
+                      src="/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg"
                       alt="Wildlife Collection"
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
@@ -183,7 +183,7 @@ export default function GalleryPage() {
                   </div>
                   <div className="relative h-[400px] group cursor-pointer">
                     <Image
-                      src="/images/gallery-landscape-collection.jpg"
+                      src="/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg"
                       alt="Landscape Collection"
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
@@ -198,7 +198,7 @@ export default function GalleryPage() {
                   </div>
                   <div className="relative h-[400px] group cursor-pointer">
                     <Image
-                      src="/images/gallery-accommodation-collection.jpg"
+                      src="/images/residences-homestead-main.jpg"
                       alt="Accommodation Collection"
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"

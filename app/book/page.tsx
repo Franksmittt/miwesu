@@ -27,6 +27,11 @@ import {
   MIN_NIGHTS,
   calcAccommodationTotal,
 } from '@/lib/booking-pricing'
+import { heroImages } from '@/lib/hero-images'
+
+/** Prefer email — matches contact page */
+const ENQUIRY_MAILTO =
+  'mailto:info@miwesu.co.za?subject=Booking%20enquiry%20-%20MIWESU%20Game%20Farm'
 
 const guestSchema = z.object({
   firstName: z.string().min(1, 'First name required'),
@@ -101,10 +106,6 @@ export default function BookPage() {
     const nightsCount = Math.ceil((to.getTime() - from.getTime()) / (1000 * 60 * 60 * 24))
     if (nightsCount < MIN_NIGHTS) {
       setAvailabilityError(`Minimum stay is ${MIN_NIGHTS} nights.`)
-      return
-    }
-    if (guests < 4) {
-      setAvailabilityError("Hunter's House requires at least 4 people. For fewer guests, choose Rooibok Kraal.")
       return
     }
     setAvailabilityError(null)
@@ -199,26 +200,40 @@ export default function BookPage() {
         <section className="relative border-b border-white/10">
           <div className="absolute inset-0 z-0 opacity-30">
             <Image
-              src="/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg"
-              alt=""
+              src={heroImages.home}
+              alt="MIWESU Game Farm — bushveld lodge and patio at Thabazimbi"
               fill
               sizes="100vw"
               className="object-cover"
+              priority
             />
           </div>
           <div className="absolute inset-0 z-0 bg-gradient-to-b from-onyx/60 to-onyx" />
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
           <Link
             href="/residences"
-              className="inline-flex items-center text-gold-400/90 hover:text-white text-xs sm:text-sm uppercase tracking-[0.2em] font-medium mb-6 transition-colors"
+            className="type-eyebrow-dark hover:text-white mb-6 inline-flex items-center transition-colors"
           >
-            <ArrowLeft className="w-4 h-4 mr-2" /> Residences
+            <ArrowLeft className="w-4 h-4 mr-2 shrink-0" aria-hidden /> Residences
           </Link>
-            <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl text-white mb-3 tracking-tight">
+            <h1 className="type-h2-hero-section mb-3 text-left">
               Book your stay
             </h1>
-            <p className="text-gray-400 font-sans text-base sm:text-lg max-w-xl">
-              Exclusive use. Hunter&apos;s House (16) or Rooibok Kraal (6). Entire lodge for 17–22 guests.
+            <p className="type-lead-onyx max-w-xl">
+              Exclusive use. Rooibok Kraal (up to 6), Hunter&apos;s House (up to 16), or the entire lodge for 17–22 guests.
+            </p>
+            <p className="mt-4 text-sm text-white/50 font-sans font-light max-w-xl">
+              Prefer to enquire by email?{' '}
+              <a
+                href={ENQUIRY_MAILTO}
+                className="text-gold-400 hover:text-gold-300 underline underline-offset-2"
+              >
+                info@miwesu.co.za
+              </a>
+              {' · '}
+              <Link href="/contact" className="text-gold-400 hover:text-gold-300 underline underline-offset-2">
+                Contact form
+              </Link>
             </p>
           </div>
         </section>
@@ -236,6 +251,7 @@ export default function BookPage() {
                     <button
                       type="button"
                       onClick={() => step > s.num && setStep(s.num)}
+                      aria-current={isActive ? 'step' : undefined}
                       className={`
                         flex items-center gap-2 py-2 px-2 rounded-lg transition-colors min-w-0
                         ${isActive ? 'text-gold-400' : isPast ? 'text-white/80 hover:text-white' : 'text-white/40'}
@@ -288,11 +304,11 @@ export default function BookPage() {
           {step === 1 && (
               <section className="grid lg:grid-cols-[1fr,320px] gap-8 lg:gap-12">
                 <div className="rounded-2xl border border-white/10 bg-onyx-light/50 p-6 sm:p-8">
-                  <h2 className="font-serif text-2xl text-white mb-1 flex items-center gap-2">
-                    <Calendar className="w-6 h-6 text-gold-500" />
+                  <h2 className="type-h3-dark mb-1 flex items-center gap-2">
+                    <Calendar className="w-6 h-6 text-gold-500 shrink-0" aria-hidden />
                     Select your dates
                   </h2>
-                  <p className="text-gray-400 text-sm mb-6">Choose check-in and check-out. Minimum {MIN_NIGHTS} nights.</p>
+                  <p className="type-body-dark text-sm mb-6">Choose check-in and check-out. Minimum {MIN_NIGHTS} nights.</p>
                   <DayPicker
                     mode="range"
                     selected={{ from: range.from, to: range.to }}
@@ -303,11 +319,14 @@ export default function BookPage() {
                 </div>
                 <div className="lg:pt-0">
                   <div className="rounded-2xl border border-white/10 bg-onyx-light/50 p-6 sm:p-8 sticky top-[180px]">
-                    <h2 className="font-serif text-2xl text-white mb-1 flex items-center gap-2">
-                      <Users className="w-6 h-6 text-gold-500" />
+                    <h2 className="type-h3-dark mb-1 flex items-center gap-2">
+                      <Users className="w-6 h-6 text-gold-500 shrink-0" aria-hidden />
                       Guests
                     </h2>
-                    <p className="text-gray-400 text-sm mb-4">Adults (10+ years) and children. Hunter&apos;s House: min 4 people. Children 0–3 free; 4–10 years 50%.</p>
+                    <p className="type-body-dark text-sm mb-4">
+                      Adults (10+ years) and children. Rooibok Kraal suits smaller groups (up to 6); Hunter&apos;s House up to 16;
+                      entire lodge for larger parties when available. Children 0–3 free; 4–10 years 50%.
+                    </p>
                     <div className="space-y-4">
                       <div className="flex items-center justify-between">
                         <label className="text-sm text-gray-300">Adults</label>
@@ -338,7 +357,10 @@ export default function BookPage() {
                         <button type="button" onClick={() => setVehicleFee((v) => !v)} className={`rounded-lg px-4 py-2 text-sm font-medium transition-colors ${vehicleFee ? 'bg-gold-500 text-onyx' : 'bg-white/10 text-white'}`}>{vehicleFee ? 'Yes' : 'No'}</button>
                       </div>
                     </div>
-                    <p className="text-white/50 text-xs mt-3">Total: {guests} guest{guests !== 1 ? 's' : ''}. Min 4 for Hunter&apos;s House. Up to 22 for entire lodge.</p>
+                    <p className="text-white/50 text-xs mt-3">
+                      Total: {guests} guest{guests !== 1 ? 's' : ''}. We&apos;ll show options that fit your group size (up to 22 for
+                      full lodge).
+                    </p>
                     {availabilityError && (
                       <div className="mt-4 flex items-start gap-2 rounded-lg bg-red-500/10 border border-red-500/30 px-4 py-3 text-red-300 text-sm">
                         <AlertCircle className="w-4 h-4 shrink-0 mt-0.5" />
@@ -371,8 +393,8 @@ export default function BookPage() {
                   Demo mode: database not connected. All options shown as available.
                   </div>
               )}
-                <h2 className="font-serif text-2xl sm:text-3xl text-white mb-2">Choose your accommodation</h2>
-                <p className="text-gray-400 mb-8">Select one option for your dates.</p>
+                <h2 className="type-h2-section-dark mb-2">Choose your accommodation</h2>
+                <p className="type-lead-onyx mb-8">Select one option for your dates.</p>
                 <div className="grid sm:grid-cols-2 gap-6">
                 {options.map((opt) => (
                   <button
@@ -422,9 +444,13 @@ export default function BookPage() {
             {/* Step 3: Guest details + summary */}
           {step === 3 && selectedOption && (
               <section className="grid lg:grid-cols-[1fr,340px] gap-8 lg:gap-12">
-              <form onSubmit={handleSubmit(onGuestSubmit)} className="space-y-6">
-                  <h2 className="font-serif text-2xl sm:text-3xl text-white mb-2">Your details</h2>
-                  <p className="text-gray-400 mb-6">We’ll use this for confirmation and contact.</p>
+              <form
+                onSubmit={handleSubmit(onGuestSubmit)}
+                className="space-y-6"
+                aria-busy={submitLoading}
+              >
+                  <h2 className="type-h2-section-dark mb-2">Your details</h2>
+                  <p className="type-lead-onyx mb-6">We&apos;ll use this for confirmation and contact.</p>
                 <div className="grid sm:grid-cols-2 gap-4">
                     <div>
                       <label className="block text-sm font-medium text-gray-300 mb-2">First name</label>
@@ -479,12 +505,16 @@ export default function BookPage() {
                       placeholder="Dietary needs, accessibility, late arrival…"
                     />
                 </div>
-                  <p className="text-gray-400 text-sm">
+                  <p className="type-body-dark text-sm">
                   By submitting you agree to our{' '}
                   <Link href="/rates#terms" className="text-gold-400 hover:text-gold-300 underline">
                     terms &amp; conditions
                   </Link>
-                  {' '}(min 3 nights, children policy, vehicle fee).
+                  {' '}(min 3 nights, children policy, vehicle fee). Or email{' '}
+                  <a href={ENQUIRY_MAILTO} className="text-gold-400 hover:text-gold-300 underline">
+                    info@miwesu.co.za
+                  </a>
+                  .
                 </p>
                 <div className="flex flex-wrap gap-4 pt-4">
                   <button
@@ -506,7 +536,7 @@ export default function BookPage() {
                 {/* Sticky summary card */}
                 <div className="lg:pt-0">
                   <div className="rounded-2xl border border-white/10 bg-onyx-light/50 p-6 sticky top-[180px]">
-                    <h3 className="font-serif text-lg text-white mb-4">Booking summary</h3>
+                    <h3 className="type-h3-dark mb-4">Booking summary</h3>
                     <div className="space-y-3 text-sm">
                       <div className="flex justify-between">
                         <span className="text-gray-400">Accommodation</span>
@@ -565,19 +595,32 @@ export default function BookPage() {
                   {submitError ? (
                     <>
                       <AlertCircle className="w-12 h-12 text-red-400 mx-auto mb-4" />
-                      <h2 className="font-serif text-2xl text-white mb-2">Something went wrong</h2>
-                      <p className="text-gray-300 mb-6">{submitError}</p>
+                      <h2 className="type-h3-dark mb-2">Something went wrong</h2>
+                      <p className="type-lead-onyx mb-4">{submitError}</p>
+                      <p className="text-gray-500 text-sm mb-6">
+                        You can try again or reach us at{' '}
+                        <a href={ENQUIRY_MAILTO} className="text-gold-400 hover:text-gold-300 underline">
+                          info@miwesu.co.za
+                        </a>
+                        .
+                      </p>
                     </>
                   ) : (
                     <>
                       <div className="w-14 h-14 rounded-full bg-gold-500/20 flex items-center justify-center mx-auto mb-4">
                         <Check className="w-7 h-7 text-gold-400" />
                       </div>
-                      <h2 className="font-serif text-2xl text-white mb-2">Enquiry received</h2>
-                      <p className="text-gray-300 mb-6">
-                        {enquiryMessage || 'We\'ll check availability and contact you with pricing and next steps.'}
+                      <h2 className="type-h3-dark mb-2">Enquiry received</h2>
+                      <p className="type-lead-onyx mb-4">
+                        {enquiryMessage || "We'll check availability and contact you with pricing and next steps."}
                       </p>
-                      <p className="text-gray-500 text-sm mb-6">No payment is required yet. We will email you to confirm availability and send pricing. Once you pay, we will lock in your dates.</p>
+                      <p className="text-gray-400 text-sm mb-4">
+                        We usually reply within <strong className="text-white/90 font-medium">1–2 business days</strong>.
+                      </p>
+                      <p className="text-gray-500 text-sm mb-6">
+                        No payment is required yet. We will email you to confirm availability and send pricing. Once you pay, we
+                        will lock in your dates.
+                      </p>
                     </>
                   )}
                   <Link

@@ -32,8 +32,10 @@ export const activityImages = {
   /** Celestial Safaris (night sky – keep existing if correct; no FB night-sky) */
   celestialSafariMain: '/images/_filename_Thabazimbi_N_158jpeg_Nano_Banana_Pro_84550.jpg',
 
-  /** Birding (habitat / bushveld) */
+  /** Birding — detailed section (habitat / bushveld) */
   birdingMain: `${FB}/558423669_122183668376347210_8611791526221429398_n.jpg`,
+  /** Birding — top grid card (distinct from section hero for variety) */
+  birdingCard: `${FB}/469407140_122145814454331002_6316558962875209734_n.jpg`,
 
   /** 4x4 Trails (vehicle / terrain) */
   fourByFourMain: `${FB}/484079097_122160764474331002_4368997146950012698_n.jpg`,

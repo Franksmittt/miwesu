@@ -23,6 +23,7 @@
 | | Celestial Safaris | Dark skies, stargazing | Keep Thabazimbi_N_150 if it is night sky; else keep as placeholder until a real night-sky photo exists. |
 | | Friends & family | Boma, shared evenings, exclusive-use groups | `residences-main-lodge-boma-braai.jpg` or Facebook braai / gathering shots. |
 | | Wildlife Viewing | Game drives, wildlife | Facebook "Herd of African buffalo; safari vehicle observing" or "Zebras drinking at waterhole". |
+| | Birding (top card only) | Habitat / koppies — distinct from section hero | `birdingCard` → Facebook koppies / landscape (`469407140_...`); section uses `birdingMain` (sunset habitat). |
 | **Conservation Harvest** | Main | Ethical hunting in Sweetveld | Same as card: "Rifle in wooden hunting blind" or "Two rifles from vehicle; sunset over savanna". |
 | | Tracker | Professional tracker in bushveld | Facebook "Rifle in wooden hunting blind" or keep current tracker image if it shows a person/tracker. |
 | | Kudu (gallery) | Kudu bull in peak condition | **Fix:** Use existing `kudu-bull-portrait-02.png` or Facebook "Male kudu in bushveld; spiralled horns". |

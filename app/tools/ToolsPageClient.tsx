@@ -6,10 +6,24 @@ import { FileText, Scale, ArrowRight } from 'lucide-react'
 
 const tools = [
   {
-    title: 'SAPS 520 Generator', description: 'Prepare your temporary firearm import application for South Africa. Enter your details and firearms to generate a formatted PDF ready for submission.', href: '/tools/saps-520', icon: FileText, label: 'Firearm logistics', }, {
-    title: 'Biltong Yield Calculator', description: 'Estimate wet carcass weight and dry biltong yield by species. Built for the local SA market with standard processing variables.', href: '/tools/biltong-calculator', icon: Scale, label: 'Meat yield', }, ]
+    title: 'SAPS 520 Generator',
+    description:
+      'Prepare your temporary firearm import application for South Africa. Enter your details and firearms to generate a formatted PDF ready for submission.',
+    href: '/tools/saps-520',
+    icon: FileText,
+    label: 'Firearm logistics',
+  },
+  {
+    title: 'Biltong Yield Calculator',
+    description:
+      'Estimate wet carcass weight and dry biltong yield by species. Built for the local SA market with standard processing variables.',
+    href: '/tools/biltong-calculator',
+    icon: Scale,
+    label: 'Meat yield',
+  },
+]
 
-export default function ToolsPage() {
+export default function ToolsPageClient() {
   return (
     <Layout>
       <main id="main-content" className="min-h-screen bg-marble">

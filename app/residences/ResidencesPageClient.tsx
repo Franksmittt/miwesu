@@ -11,10 +11,23 @@ import { ResidenceFlagshipCard } from '@/components/residences/ResidenceFlagship
 
 /** Species card images (same as wildlife page) for the 14 Species sliding bento */
 const SPECIES_CARD_IMAGES = [
-  '/images/greater-kudu_card.png', '/images/blue-wildebeest_card.png', '/images/impala_card.png', '/images/gemsbok_card.png', '/images/warthog_card.png', '/images/blesbok_card.png', '/images/bushbuck_card.png', '/images/cape-buffalo_card.png', '/images/dapple-impala_card.png', '/images/golden-wildebeest_card.png', '/images/springbok_card.png', '/images/red-hartebeest_card.png', '/images/Lechwe_card.png', '/images/livingstone-eland_card.png',
+  '/images/greater-kudu_card.png',
+  '/images/blue-wildebeest_card.png',
+  '/images/impala_card.png',
+  '/images/gemsbok_card.png',
+  '/images/warthog_card.png',
+  '/images/blesbok_card.png',
+  '/images/bushbuck_card.png',
+  '/images/cape-buffalo_card.png',
+  '/images/dapple-impala_card.png',
+  '/images/golden-wildebeest_card.png',
+  '/images/springbok_card.png',
+  '/images/red-hartebeest_card.png',
+  '/images/Lechwe_card.png',
+  '/images/livingstone-eland_card.png',
 ]
 
-export default function ResidencesPage() {
+export default function ResidencesPageClient() {
   const [speciesSlideIndex, setSpeciesSlideIndex] = useState(0)
   const [speciesFade, setSpeciesFade] = useState(true)
 
@@ -40,7 +53,8 @@ export default function ResidencesPage() {
             </div>
             <h1 className="sr-only">Residences at MIWESU</h1>
             <p className="font-sans text-[1.05rem] sm:text-[1.15rem] font-light text-[#d1d1d1] leading-relaxed max-w-[800px] mx-auto">
-              Discover absolute isolation. Unyielding luxury designed to exist seamlessly within the 2.5-billion-year-old Makoppa Dome.
+              Discover absolute isolation. Unyielding luxury designed to exist seamlessly within the 2.5-billion-year-old
+              Makoppa Dome.
             </p>
           </div>
         </section>
@@ -57,7 +71,10 @@ export default function ResidencesPage() {
             description="Designed for absolute immersion in the Sweetveld. Featuring expansive entertainment areas, a traditional boma, and seamless integration with the surrounding wildlife."
             exploreHref="/residences/homestead"
             stats={[
-              { value: mainLodgeHouse.sleepers, label: 'Sleepers' }, { value: lodgeSummary.mainHouse.bedrooms, label: 'Bedrooms' }, { value: 'Boma', label: 'Fire Pit' }, ]}
+              { value: mainLodgeHouse.sleepers, label: 'Sleepers' },
+              { value: lodgeSummary.mainHouse.bedrooms, label: 'Bedrooms' },
+              { value: 'Boma', label: 'Fire Pit' },
+            ]}
           />
           <ResidenceFlagshipCard
             titleHeading="h2"
@@ -68,7 +85,10 @@ export default function ResidencesPage() {
             description="Carved from the earth. Elevated to provide sweeping views of the ancient canopy, offering a stargazing master deck and immediate access to the wild."
             exploreHref="/residences/stone-villa"
             stats={[
-              { value: secondHouse.sleepers, label: 'Sleepers' }, { value: 2, label: 'En-Suites' }, { value: 'Deck', label: 'Stargazing' }, ]}
+              { value: secondHouse.sleepers, label: 'Sleepers' },
+              { value: 2, label: 'En-Suites' },
+              { value: 'Deck', label: 'Stargazing' },
+            ]}
           />
         </div>
 
@@ -86,12 +106,16 @@ export default function ResidencesPage() {
             <div className="bg-onyx-light border border-white/[0.05] rounded-[32px] p-8 md:p-10 text-center transition-all duration-300 hover:bg-[#1a1a1c] hover:border-gold-500/20">
               <ChefHat className="w-10 h-10 text-gold-500 mx-auto mb-4" aria-hidden />
               <h3 className="font-serif text-lg font-normal text-white mb-2">Kitchen</h3>
-              <p className="text-[#a1a1a6] text-sm font-light leading-relaxed">Full kitchen in main lodge and Rooibok Kraal.</p>
+              <p className="text-[#a1a1a6] text-sm font-light leading-relaxed">
+                Full kitchen in main lodge and Rooibok Kraal.
+              </p>
             </div>
             <div className="bg-onyx-light border border-white/[0.05] rounded-[32px] p-8 md:p-10 text-center transition-all duration-300 hover:bg-[#1a1a1c] hover:border-gold-500/20">
               <Flame className="w-10 h-10 text-gold-500 mx-auto mb-4" aria-hidden />
               <h3 className="font-serif text-lg font-normal text-white mb-2">Boma & Braai</h3>
-              <p className="text-[#a1a1a6] text-sm font-light leading-relaxed">Boma and braai at main lodge; braai under the trees; outdoor braai at Rooibok Kraal.</p>
+              <p className="text-[#a1a1a6] text-sm font-light leading-relaxed">
+                Boma and braai at main lodge; braai under the trees; outdoor braai at Rooibok Kraal.
+              </p>
             </div>
             <div className="bg-onyx-light border border-white/[0.05] rounded-[32px] p-8 md:p-10 text-center transition-all duration-300 hover:bg-[#1a1a1c] hover:border-gold-500/20">
               <LayoutIcon className="w-10 h-10 text-gold-500 mx-auto mb-4" aria-hidden />
@@ -111,7 +135,9 @@ export default function ResidencesPage() {
             <div className="bg-onyx-light border border-white/[0.05] rounded-[32px] p-8 md:p-10 text-center transition-all duration-300 hover:bg-[#1a1a1c] hover:border-gold-500/20">
               <Waves className="w-10 h-10 text-gold-500 mx-auto mb-4" aria-hidden />
               <h3 className="font-serif text-lg font-normal text-white mb-2">Swimming pool with slide</h3>
-              <p className="text-[#a1a1a6] text-sm font-light leading-relaxed">At main lodge; Rooibok Kraal is near the pool.</p>
+              <p className="text-[#a1a1a6] text-sm font-light leading-relaxed">
+                At main lodge; Rooibok Kraal is near the pool.
+              </p>
             </div>
           </div>
         </section>
@@ -131,7 +157,6 @@ export default function ResidencesPage() {
               href="/wildlife"
               className="relative rounded-[40px] overflow-hidden border border-white/[0.08] flex flex-col justify-end p-8 md:p-10 group min-h-[280px] md:col-span-2 md:row-span-2"
             >
-              {/* Sliding species card images (crossfade every ~4.5s) */}
               <div
                 className="absolute inset-0 transition-opacity duration-500 ease-out"
                 style={{ opacity: speciesFade ? 1 : 0 }}
@@ -144,13 +169,20 @@ export default function ResidencesPage() {
                   sizes="(max-width: 768px) 100vw, 66vw"
                 />
               </div>
-              <div className="absolute inset-0 z-[1]" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.92) 28%, rgba(0,0,0,0.5) 50%, transparent 75%)' }} />
+              <div
+                className="absolute inset-0 z-[1]"
+                style={{
+                  background:
+                    'linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.92) 28%, rgba(0,0,0,0.5) 50%, transparent 75%)',
+                }}
+              />
               <div className="relative z-10 [text-shadow:0_1px_4px_rgba(0,0,0,0.8),0_2px_12px_rgba(0,0,0,0.6)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-gold-400 mb-2 font-normal tracking-tight">
                   14 Species
                 </h3>
                 <p className="font-sans text-white/95 text-base md:text-lg font-light leading-relaxed">
-                  Encounter unmatched biodiversity. From majestic herds to elusive quarry, the sanctuary is alive right outside your door.
+                  Encounter unmatched biodiversity. From majestic herds to elusive quarry, the sanctuary is alive right
+                  outside your door.
                 </p>
               </div>
             </Link>
@@ -165,7 +197,13 @@ export default function ResidencesPage() {
                 className="object-cover transition-transform duration-[0.8s] ease-out group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
-              <div className="absolute inset-0 z-[1]" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.92) 28%, rgba(0,0,0,0.5) 50%, transparent 75%)' }} />
+              <div
+                className="absolute inset-0 z-[1]"
+                style={{
+                  background:
+                    'linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.92) 28%, rgba(0,0,0,0.5) 50%, transparent 75%)',
+                }}
+              />
               <div className="relative z-10 [text-shadow:0_1px_4px_rgba(0,0,0,0.8),0_2px_12px_rgba(0,0,0,0.6)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-gold-400 mb-2 font-normal tracking-tight">
                   Radical Privacy
@@ -186,7 +224,13 @@ export default function ResidencesPage() {
                 className="object-cover transition-transform duration-[0.8s] ease-out group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
-              <div className="absolute inset-0 z-[1]" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.92) 28%, rgba(0,0,0,0.5) 50%, transparent 75%)' }} />
+              <div
+                className="absolute inset-0 z-[1]"
+                style={{
+                  background:
+                    'linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.92) 28%, rgba(0,0,0,0.5) 50%, transparent 75%)',
+                }}
+              />
               <div className="relative z-10 [text-shadow:0_1px_4px_rgba(0,0,0,0.8),0_2px_12px_rgba(0,0,0,0.6)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-gold-400 mb-2 font-normal tracking-tight">
                   Ethical Harvest
@@ -207,20 +251,27 @@ export default function ResidencesPage() {
                 className="object-cover transition-transform duration-[0.8s] ease-out group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 66vw"
               />
-              <div className="absolute inset-0 z-[1]" style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.92) 28%, rgba(0,0,0,0.5) 50%, transparent 75%)' }} />
+              <div
+                className="absolute inset-0 z-[1]"
+                style={{
+                  background:
+                    'linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.92) 28%, rgba(0,0,0,0.5) 50%, transparent 75%)',
+                }}
+              />
               <div className="relative z-10 [text-shadow:0_1px_4px_rgba(0,0,0,0.8),0_2px_12px_rgba(0,0,0,0.6)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-gold-400 mb-2 font-normal tracking-tight">
                   The Ancient Dome
                 </h3>
                 <p className="font-sans text-white/95 text-base md:text-lg font-light leading-relaxed">
-                  A geological masterpiece 2.5 billion years in the making. Terrain that commands respect and offers unparalleled tracking.
+                  A geological masterpiece 2.5 billion years in the making. Terrain that commands respect and offers
+                  unparalleled tracking.
                 </p>
               </div>
             </Link>
           </div>
         </section>
 
-        {/* 6. CTA – Experience Absolute Privacy (kept as requested) */}
+        {/* 6. CTA */}
         <section className="w-[96vw] max-w-6xl mx-auto mt-[10vh] rounded-[40px] overflow-hidden border border-gold-500/15 bg-gradient-to-br from-[#0a0a0a] to-onyx p-8 md:p-[6vw] text-center">
           <span className="text-gold-500 text-xs md:text-sm font-bold tracking-[0.25em] uppercase mb-6 block">
             Begin Your Journey
@@ -229,7 +280,8 @@ export default function ResidencesPage() {
             Experience Absolute Privacy
           </h2>
           <p className="font-sans text-white/90 text-base md:text-lg font-light max-w-[640px] mx-auto mb-10 leading-relaxed">
-            Both residences offer exclusive use, ensuring complete privacy and autonomy during your stay. Whether you&apos;re planning a family hunting safari or a corporate retreat, we provide the perfect base for your Makoppa adventure.
+            Both residences offer exclusive use, ensuring complete privacy and autonomy during your stay. Whether you&apos;re
+            planning a family hunting safari or a corporate retreat, we provide the perfect base for your Makoppa adventure.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard } from '@/lib/seo'
+import { speciesOgAbsolute } from '@/lib/open-graph'
 import { SpeciesTaxonSchema, BreadcrumbSchema } from '@/components/StructuredData'
 import { SPECIES_BY_SLUG } from '@/lib/species-data'
 
@@ -7,6 +8,7 @@ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.co.za'
 const slug = 'bushbuck'
 const species = SPECIES_BY_SLUG[slug]
 const pageUrl = constructCanonicalUrl(slug)
+const ogImage = speciesOgAbsolute(baseUrl, slug)
 const breadcrumbItems = [
   { name: 'Home', url: baseUrl + '/' },
   { name: 'Wildlife & Species', url: constructCanonicalUrl('wildlife') },
@@ -36,16 +38,19 @@ export const metadata: Metadata = {
     'Rowland Ward',
     'SCI scoring',
   ],
-  openGraph: generateOpenGraph(
-    'Bushbuck Hunting Guide | Tragelaphus sylvaticus',
-    'Comprehensive guide to Bushbuck hunting at MIWESU Game Farm. Learn about the Prince of the Thickets - morphology, behavior, hunting strategies, trophy evaluation, and venison utilization.',
-    pageUrl,
-    `${baseUrl}/og-image.jpg`
-  ),
+  openGraph: {
+    ...generateOpenGraph(
+      'Bushbuck Hunting Guide | Tragelaphus sylvaticus',
+      'Comprehensive guide to Bushbuck hunting at MIWESU Game Farm. Learn about the Prince of the Thickets - morphology, behavior, hunting strategies, trophy evaluation, and venison utilization.',
+      pageUrl,
+      ogImage
+    ),
+    locale: 'en_ZA',
+  },
   twitter: generateTwitterCard(
     'Bushbuck Hunting Guide | Tragelaphus sylvaticus',
     'Comprehensive guide to Bushbuck hunting at MIWESU Game Farm. Learn about the Prince of the Thickets - morphology, behavior, hunting strategies, trophy evaluation, and venison utilization.',
-    `${baseUrl}/og-image.jpg`
+    ogImage
   ),
   alternates: { canonical: pageUrl, languages: { 'en-US': pageUrl, 'x-default': pageUrl } },
 }

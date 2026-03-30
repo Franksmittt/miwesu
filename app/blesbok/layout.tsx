@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard } from '@/lib/seo'
+import { speciesOgAbsolute } from '@/lib/open-graph'
 import { SpeciesTaxonSchema, BreadcrumbSchema } from '@/components/StructuredData'
 import { SPECIES_BY_SLUG } from '@/lib/species-data'
 
@@ -7,6 +8,7 @@ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.co.za'
 const slug = 'blesbok'
 const species = SPECIES_BY_SLUG[slug]
 const pageUrl = constructCanonicalUrl(slug)
+const ogImage = speciesOgAbsolute(baseUrl, slug)
 const breadcrumbItems = [
   { name: 'Home', url: baseUrl + '/' },
   { name: 'Wildlife & Species', url: constructCanonicalUrl('wildlife') },
@@ -37,16 +39,19 @@ export const metadata: Metadata = {
     'Rowland Ward',
     'SCI scoring',
   ],
-  openGraph: generateOpenGraph(
-    'Blesbok Hunting Guide | Damaliscus pygargus phillipsi',
-    'Comprehensive guide to Blesbok hunting at MIWESU Game Farm. Learn about morphology, behavior, hunting strategies, trophy evaluation, and venison utilization.',
-    pageUrl,
-    `${baseUrl}/og-image.jpg`
-  ),
+  openGraph: {
+    ...generateOpenGraph(
+      'Blesbok Hunting Guide | Damaliscus pygargus phillipsi',
+      'Comprehensive guide to Blesbok hunting at MIWESU Game Farm. Learn about morphology, behavior, hunting strategies, trophy evaluation, and venison utilization.',
+      pageUrl,
+      ogImage
+    ),
+    locale: 'en_ZA',
+  },
   twitter: generateTwitterCard(
     'Blesbok Hunting Guide | Damaliscus pygargus phillipsi',
     'Comprehensive guide to Blesbok hunting at MIWESU Game Farm. Learn about morphology, behavior, hunting strategies, trophy evaluation, and venison utilization.',
-    `${baseUrl}/og-image.jpg`
+    ogImage
   ),
   alternates: { canonical: pageUrl, languages: { 'en-US': pageUrl, 'x-default': pageUrl } },
 }

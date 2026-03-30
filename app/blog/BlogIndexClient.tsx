@@ -4,10 +4,10 @@ import { useMemo, useState } from 'react'
 import Image from 'next/image'
 import Layout from '@/components/Layout'
 import Link from 'next/link'
-import { BookOpen, ArrowRight } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 import { BLOG_POSTS, BLOG_CATEGORIES, type BlogCategory } from '@/lib/blog-posts'
 
-export default function BlogPage() {
+export default function BlogIndexClient() {
   const [filter, setFilter] = useState<BlogCategory | 'All'>('All')
   const filtered = useMemo(() => {
     if (filter === 'All') return BLOG_POSTS
@@ -47,6 +47,7 @@ export default function BlogPage() {
             <div className="flex flex-wrap items-center gap-3 mb-10">
               <span className="text-gray-500 text-sm font-sans">Filter:</span>
               <button
+                type="button"
                 onClick={() => setFilter('All')}
                 className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
                   filter === 'All' ? 'bg-onyx text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
@@ -57,6 +58,7 @@ export default function BlogPage() {
               {BLOG_CATEGORIES.map((cat) => (
                 <button
                   key={cat}
+                  type="button"
                   onClick={() => setFilter(cat)}
                   className={`px-4 py-2 rounded-xl text-sm font-medium transition-colors ${
                     filter === cat ? 'bg-onyx text-white' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'

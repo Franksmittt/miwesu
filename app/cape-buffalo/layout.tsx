@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard } from '@/lib/seo'
+import { speciesOgAbsolute } from '@/lib/open-graph'
 import { SpeciesTaxonSchema, BreadcrumbSchema } from '@/components/StructuredData'
 import { SPECIES_BY_SLUG } from '@/lib/species-data'
 
@@ -7,6 +8,7 @@ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.co.za'
 const slug = 'cape-buffalo'
 const species = SPECIES_BY_SLUG[slug]
 const pageUrl = constructCanonicalUrl(slug)
+const ogImage = speciesOgAbsolute(baseUrl, slug)
 const breadcrumbItems = [
   { name: 'Home', url: baseUrl + '/' },
   { name: 'Wildlife & Species', url: constructCanonicalUrl('wildlife') },
@@ -17,16 +19,19 @@ export const metadata: Metadata = {
   title: 'Cape Buffalo Caliber Guide: .375 H&H Minimum | Syncerus caffer',
   description: 'Cape Buffalo (Syncerus caffer) at MIWESU: dangerous game, fused boss. Legal minimum .375 H&H Mag, 300-grain monolithic solids. Rowland Ward min 42". Makoppa district, Limpopo.',
   keywords: ['Cape Buffalo hunting', 'Syncerus caffer', '.375 H&H', 'dangerous game', 'buffalo South Africa', 'Rowland Ward', 'trophy hunting', 'MIWESU', 'Makoppa', 'Limpopo'],
-  openGraph: generateOpenGraph(
-    'Cape Buffalo Hunting Guide | Syncerus caffer',
-    'Comprehensive guide to Cape Buffalo hunting at MIWESU Game Farm.',
-    pageUrl,
-    `${baseUrl}/og-image.jpg`
-  ),
+  openGraph: {
+    ...generateOpenGraph(
+      'Cape Buffalo Hunting Guide | Syncerus caffer',
+      'Comprehensive guide to Cape Buffalo hunting at MIWESU Game Farm.',
+      pageUrl,
+      ogImage
+    ),
+    locale: 'en_ZA',
+  },
   twitter: generateTwitterCard(
     'Cape Buffalo Hunting Guide | Syncerus caffer',
     'Comprehensive guide to Cape Buffalo hunting at MIWESU Game Farm.',
-    `${baseUrl}/og-image.jpg`
+    ogImage
   ),
   alternates: { canonical: pageUrl, languages: { 'en-US': pageUrl, 'x-default': pageUrl } },
 }

@@ -42,7 +42,7 @@ export default function VettingModal() {
             </label>
             <select aria-labelledby="vetting-intent-label" className="w-full bg-gray-50 border-0 border-b border-gray-200 text-onyx p-4 min-h-[48px] focus:border-gold-500 focus:ring-0 outline-none font-serif focus-visible:ring-2 focus-visible:ring-gold-500 focus-visible:ring-offset-0">
               <option>Ethical Hunting (Meat/Trophy)</option>
-              <option>Conservation Experience (Green Hunt)</option>
+              <option>Non-hunting visit / observer</option>
               <option>Observer / Photographic Retreat</option>
               <option>Corporate / Syndicate Inquiry</option>
             </select>

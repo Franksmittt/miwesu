@@ -1,0 +1,203 @@
+================================================================================
+MIWESU — HOME PAGE (/) DOCUMENTATION
+================================================================================
+Last aligned with repo: March 2026. Describes visible UI and structural output on
+the marketing home page: chrome (header, footer, mobile bar), main sections,
+copy, and head JSON-LD (not shown on screen).
+
+Head — JSON-LD (invisible)
+- OrganizationSchema, WebSiteSchema, LocalBusinessSchema (as before).
+- HomePageFaqGraphSchema: @graph with WebPage (#webpage) and nested FAQPage
+  (#faqpage, isPartOf webpage). mainEntity = Question/Answer pairs from
+  lib/home-faq-data.ts (same text as the on-page FAQ accordion).
+
+Design system (summary)
+- Palette: onyx (#050505), gold accents, marble / marble-dark for light bands.
+- Fonts: Cinzel (serif), Montserrat (sans).
+- Motifs: liquid-glass panels, white/low-opacity borders, Hardware Noir hero.
+
+Page shell (ConditionalSiteChrome)
+- Skip link: “Skip to main content” → #main-content.
+- Main: pt-14 pb-24 mobile; lg:pt-16 lg:pb-0 (fixed header / bottom bar).
+- VettingModal: “Private access” (desktop header or mobile sheet) opens it.
+
+================================================================================
+1. HEADER (fixed top, z-50, text-white)
+================================================================================
+
+1A — DESKTOP (lg+)
+- Bar: bg-onyx/95, backdrop-blur, border-b white/15, inset highlight, h-16.
+- Row (max-w-7xl): [Brand left] [Mega nav centered, flex-1] [Actions right].
+
+Brand: “MIWESU” + “Iron Eden” → /
+
+Primary nav (hover mega, ~200ms close delay):
+  The Residences | The Hunt | The Experience | Conservation | Firewood
+- Panels: liquid-glass card, link columns + category image (lib/site-mega-nav.ts).
+
+Actions: AmbientAudioToggle | “Private access” (vetting) | “Enquire” → /book
+
+1B — MOBILE (< lg)
+- h-14 strip: [Menu hamburger] [MIWESU + Iron Eden] [Ambient toggle].
+- Menu opens mobile site sheet (see section 3).
+
+================================================================================
+2. MOBILE BOTTOM BAR (fixed bottom; hidden lg+)
+================================================================================
+- Home → / | Enquire → /book | WhatsApp → wa.me/27730309679 | Menu (toggles sheet).
+- min-h-11 targets; safe-area bottom padding.
+
+================================================================================
+3. MOBILE SITE MENU SHEET
+================================================================================
+- Backdrop; bottom sheet; MIWESU + X; MOBILE_SITEMAP_SECTIONS (Residences, Hunt,
+  Experience, Tools & trust, Firewood); “Private access”; Escape / body lock.
+
+================================================================================
+4. MAIN CONTENT — HOME (main#main-content)
+================================================================================
+Render order in app/page.tsx:
+
+------------------------------------------------------------------------------
+4.1 — HomeHero (client component)
+------------------------------------------------------------------------------
+- min-h ≈ 100svh − 4rem; bg onyx.
+- Background stack:
+  • Next/Image: heroImages.home =
+    /images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg
+    object-cover object-[center_42%]; priority; fades out when video is active.
+  • <video> muted loop playsInline poster=same image; source /video/hero-cinematic.mp4
+    On loaded data → show video; on error → image only. If MP4 missing, image
+    remains visible. See public/video/README.md.
+- Overlay z-[2]: linear + radial gradients (dark + subtle iron/reddish earth tint).
+- Foreground z-10: centred, max-w-4xl.
+
+Copy (exact)
+- Eyebrow: “Thabazimbi · Waterberg · Malaria-free”
+- H1: “Guardians of the Iron Mountain.”
+- Line 2 (large sans-serif treatment, white/95): “Where Conservation Meets Legacy.”
+- Lead: “A 2.5-billion-year-old private sanctuary. Ethical harvests. Absolute silence.”
+
+CTAs
+- “Enquire now” → /book (gold button, dark text).
+- “Conservation investment guide” → /contact (frosted outline).
+
+------------------------------------------------------------------------------
+4.2 — HomeTrustBanner (hero bridge)
+------------------------------------------------------------------------------
+- Under hero: deep onyx gradient, gold radial + top hairline, border-b white/10;
+  py-16–24; max-w-7xl inner.
+- Eyebrow: “Below the skyline”
+- H2 + lead (readable body, ~base/lg): working farm / not a stage set; MIWESU
+  positioning (exclusive-use, fourteen species, discipline).
+- CTAs: “Plan your stay” → /book (gold fill); underlined text links → /conservation,
+  /wildlife.
+- Three pillar cards (title serif lg, body sm+): Private Waterberg land; Enquiry-first
+  stays; Ethical conservation harvest.
+
+------------------------------------------------------------------------------
+4.3 — HomeResidencesBento
+------------------------------------------------------------------------------
+- bg-marble; intro “Exclusive use” / “The residences” / two-sanctuary lead.
+- Two ResidenceFlagshipCard (grid 1 → 2 cols lg; full width of max-w-7xl band):
+  THE HOMESTEAD (Monumental Scale, 16/4/Boma, Explore → /residences/homestead)
+  THE STONE VILLA (Intimate Seclusion, 6/2/Deck, Explore → /residences/stone-villa)
+- Enquiry-first panel: copy + “Start an enquiry” / “Compare residences”.
+
+------------------------------------------------------------------------------
+4.4 — HomeConservationHarvest
+------------------------------------------------------------------------------
+- bg-onyx, white text; “Hunting & conservation” / “The conservation harvest”;
+  Guardian’s Pledge copy; cold room / slaughter room; buttons → /wildlife,
+  /conservation; “Plains game on quota” + 14 species names (lib/species-data order).
+
+------------------------------------------------------------------------------
+4.5 — HomeBushveldLeisure
+------------------------------------------------------------------------------
+- bg-marble-dark; “Beyond the hunt” / “Bushveld leisure” + shared lead.
+- Five tiles (verified on-farm framing only):
+
+1. Quiet wildlife viewing — birding/viewing; copy notes no “safari theatre.”
+2. 4×4 trails — farm tracks when arranged with stay.
+3. Photographic safaris — slower pace when rifle in safe.
+4. Stargazing at the Stone Villa — deck + telescope.
+5. Family gatherings at the Homestead — pool, slide, trampoline, jungle gym,
+   boma, lapa, multi-gen groups.
+
+- Footer link: “Full activities overview” → /activities
+
+------------------------------------------------------------------------------
+4.6 — HomeFirewoodBlock
+------------------------------------------------------------------------------
+- Gradient #0a0a0c → onyx; border-t white/10; centred max-w-7xl (same as Bushveld leisure).
+- Eyebrow “Miwesu Premium Firewood”; H2 “Geelhak · Sekelbos · Braai mix”; lead
+  on kiln-ready hardwoods.
+- liquid-glass-dark card (illustrative, not live telemetry):
+  • Label: “Engineered heat — illustrative batch readout”
+  • Current batch moisture: < 12%
+  • Status: Kiln verified
+- Pills: Geelhak, Sekelbos, Braai mix
+- CTA: “Wood & thermal” → /wood
+
+------------------------------------------------------------------------------
+4.7 — HomeFAQ
+------------------------------------------------------------------------------
+- bg-marble, border-t onyx/10; max-w-3xl; aria-labelledby home-faq-heading.
+- Eyebrow: “Planning your visit”
+- H2: “Common questions”
+- Lead: “Straight answers on ethics, logistics, and how we work — no invented
+  dashboards or vanity metrics.”
+- Native <details>/<summary> accordion; + rotates on open (group-open); borders
+  between items.
+
+FAQ items (full text also in JSON-LD — lib/home-faq-data.ts)
+1. What is the ethical caliber for Cape Buffalo in Thabazimbi?
+   → SA minimum for dangerous game (.375 H&H class); PH/regulations; concierge;
+     not legal/PH advice.
+2. Do you handle SAPS 520 firearm permits?
+   → Free PDF tool on site; submission/approval is with SAPS; MIWESU does not
+     issue permits.
+3. Is MIWESU malaria-free?
+   → Waterberg widely low/none vs many lowveld areas; confirm with travel clinic.
+4. How do I book an exclusive-use stay?
+   → Enquiry-first, no public checkout; book or contact flow.
+5. What plains game species are available?
+   → Fourteen species, rifle/bow, quota, Guardian’s Pledge; wildlife hub / compare.
+
+================================================================================
+5. FOOTER (SiteMarketingFooter)
+================================================================================
+- onyx, border-t white/10; MIWESU + Iron Eden · Makoppa; grey blurb; Explore
+  links (Residences, Hunting (14 species), Activities, Firewood, Contact);
+  address D1432; info@miwesu.co.za; +27 73 030 9679; WhatsApp.
+- © [year] MIWESU Game Farm.
+
+================================================================================
+6. BEHAVIOUR & BREAKPOINTS
+================================================================================
+- lg: desktop header; no mobile bottom bar or top hamburger strip in desktop layout.
+- Hero: client hydration for video state; image always present as fallback.
+- Priority images: hero poster path + first residence card.
+
+================================================================================
+7. SOURCE FILES (maintainers)
+================================================================================
+- app/page.tsx — section order + all homepage JSON-LD including HomePageFaqGraphSchema
+- components/home/HomeHero.tsx (client — video + image)
+- components/home/HomeTrustBanner.tsx
+- components/home/HomeResidencesBento.tsx
+- components/home/HomeConservationHarvest.tsx
+- components/home/HomeBushveldLeisure.tsx
+- components/home/HomeFirewoodBlock.tsx
+- components/home/HomeFAQ.tsx
+- lib/home-faq-data.ts — FAQ copy (shared with schema)
+- lib/seo.ts — generateHomePageFaqJsonLd
+- components/StructuredData.tsx — HomePageFaqGraphSchema
+- components/residences/ResidenceFlagshipCard.tsx
+- components/site/SiteHeader.tsx, SiteHeaderDesktop.tsx, SiteHeaderMobileStrip.tsx
+- components/site/MobileBottomBar.tsx, MobileSiteMenuProvider.tsx
+- components/site/SiteMarketingFooter.tsx, ConditionalSiteChrome.tsx
+- lib/site-mega-nav.ts, lib/hero-images.ts, lib/residences-data.ts, lib/species-data.ts
+- public/video/README.md — optional hero-cinematic.mp4
+
+End of document.

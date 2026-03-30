@@ -6,16 +6,7 @@ import Link from 'next/link'
 import Layout from '@/components/Layout'
 import { activityImages } from '@/lib/activity-images'
 import {
-  Target,
-  Star,
-  Camera,
-  Binoculars,
-  Mountain,
-  ArrowRight,
-  Car,
-  Bird,
-  Footprints,
-  Users,
+  Target, Star, Camera, Binoculars, Mountain, ArrowRight, Car, Bird, Footprints, Users,
 } from 'lucide-react'
 
 export default function ActivitiesPage() {
@@ -38,45 +29,14 @@ export default function ActivitiesPage() {
 
   const activities = [
     {
-      icon: Target,
-      title: 'Conservation Harvest',
-      description: 'Ethical hunting experiences guided by our professional trackers. All harvests follow strict conservation quotas and ethical practices.',
-      image: activityImages.conservationHarvestCard,
-    },
-    {
-      icon: Camera,
-      title: 'Photographic Safaris',
-      description: 'Capture the beauty of the Makoppa district with guided photographic safaris. Perfect for wildlife enthusiasts and photographers.',
-      image: activityImages.photographicSafariCard,
-    },
-    {
-      icon: Star,
-      title: 'Celestial Safaris',
-      description: 'Thabazimbi offers some of the darkest skies in the southern hemisphere. Private astronomy sessions available.',
-      image: activityImages.celestialSafariCard,
-    },
-    {
-      icon: Users,
-      title: 'Friends & family',
-      description:
-        'Exclusive-use stays where generations meet: first hunts beside seasoned hands, kids on the trampoline, long tables at the boma, and evenings that belong to everyone.',
-      image: activityImages.gatheringsFamilyCard,
-    },
-    {
-      icon: Binoculars,
-      title: 'Wildlife Viewing',
-      description: 'Guided game drives and walking safaris to observe the diverse wildlife of the Iron Mountain.',
-      image: activityImages.wildlifeViewingCard,
-    },
-    {
-      icon: Bird,
-      title: 'Birding',
-      description:
-        'A transition zone between moist Bushveld and arid Kalahari — raptors, bee-eaters, hornbills, and regional specials. Neighboring farms record 140–200+ species.',
-      image: activityImages.birdingCard,
-      sectionId: 'birding-section',
-    },
-  ]
+      icon: Target, title: 'Conservation Harvest', description: 'Ethical hunting experiences guided by our professional trackers. All harvests follow strict conservation quotas and ethical practices.', image: activityImages.conservationHarvestCard, }, {
+      icon: Camera, title: 'Photographic Safaris', description: 'Capture the beauty of the Makoppa district with guided photographic safaris. Perfect for wildlife enthusiasts and photographers.', image: activityImages.photographicSafariCard, }, {
+      icon: Star, title: 'Celestial Safaris', description: 'Thabazimbi offers some of the darkest skies in the southern hemisphere. Private astronomy sessions available.', image: activityImages.celestialSafariCard, }, {
+      icon: Users, title: 'Friends & family', description:
+        'Exclusive-use stays where generations meet: first hunts beside seasoned hands, kids on the trampoline, long tables at the boma, and evenings that belong to everyone.', image: activityImages.gatheringsFamilyCard, }, {
+      icon: Binoculars, title: 'Wildlife Viewing', description: 'Guided game drives and walking safaris to observe the diverse wildlife of the Iron Mountain.', image: activityImages.wildlifeViewingCard, }, {
+      icon: Bird, title: 'Birding', description:
+        'A transition zone between moist Bushveld and arid Kalahari, raptors, bee-eaters, hornbills, and regional specials. Neighboring farms record 140–200+ species.', image: activityImages.birdingCard, sectionId: 'birding-section', }, ]
 
   return (
     <Layout>
@@ -296,7 +256,7 @@ export default function ActivitiesPage() {
                 </div>
               </div>
 
-              {/* Celestial Safaris — same content width as sections above/below (no extra horizontal inset) */}
+              {/* Celestial Safaris, same content width as sections above/below (no extra horizontal inset) */}
               <div className="reveal delay-200 mb-20">
                 <div className="rounded-2xl bg-gradient-to-br from-onyx to-onyx/90 py-10 md:py-14">
                   <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -437,16 +397,16 @@ export default function ActivitiesPage() {
                 </div>
               </div>
 
-              {/* Friends & family — shared experience */}
+              {/* Friends & family, shared experience */}
               <div className="grid md:grid-cols-1 gap-12 mb-20">
                 <div className="bg-onyx-light border border-white/5 rounded-2xl p-10 reveal delay-600">
                   <Users className="w-12 h-12 text-gold-500 mb-6" aria-hidden />
                   <h3 className="type-h2-section-dark mb-4">Friends &amp; family</h3>
                   <p className="type-lead-onyx mb-6">
-                    MIWESU is built for groups: syndicates, extended families, and couples who want the bushveld together—not on separate schedules. Share the smell of rain on dust, the crackle of the boma, and stories that outlast the fire.
+                    MIWESU is built for groups: syndicates, extended families, and couples who want the bushveld together, not on separate schedules. Share the smell of rain on dust, the crackle of the boma, and stories that outlast the fire.
                   </p>
                   <p className="type-lead-onyx">
-                    Observers and photographers are as welcome as hunters. Everyone finds a place in the rhythm of the day—from dawn coffee to starlight on the patio.
+                    Observers and photographers are as welcome as hunters. Everyone finds a place in the rhythm of the day, from dawn coffee to starlight on the patio.
                   </p>
                 </div>
               </div>
@@ -460,7 +420,7 @@ export default function ActivitiesPage() {
             <Mountain className="w-16 h-16 text-gold-500 mx-auto mb-8" aria-hidden />
             <h2 className="type-h2-section mb-8">Custom Experiences</h2>
             <p className="type-lead mb-10 max-w-2xl mx-auto">
-              Every stay at Miwesu can be tailored to your preferences. Our concierge team will work with you to create a bespoke itinerary that matches your interests—whether you&apos;re a hunter, photographer, birder, or simply seeking tranquility in the Makoppa.
+              Every stay at Miwesu can be tailored to your preferences. Our concierge team will work with you to create a bespoke itinerary that matches your interests, whether you&apos;re a hunter, photographer, birder, or simply seeking tranquility in the Makoppa.
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center">
               <Link

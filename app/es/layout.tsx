@@ -1,8 +1,10 @@
 import { Metadata } from 'next'
-import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard } from '@/lib/seo'
-import { BreadcrumbSchema } from '@/components/StructuredData'
+import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard, generateWebPageSchema } from '@/lib/seo'
+import { marketingOgAbsolute } from '@/lib/open-graph'
+import { BreadcrumbSchema, WebPageSchema } from '@/components/StructuredData'
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.co.za'
+const ogImage = marketingOgAbsolute(baseUrl, 'root')
 const breadcrumbItems = [
   { name: 'Home', url: baseUrl + '/' },
   { name: 'Caza en Limpopo', url: constructCanonicalUrl('es') },
@@ -16,7 +18,12 @@ export const metadata: Metadata = {
     'Caza en Limpopo | MIWESU GAME FARM',
     'Lodge de caza de lujo en Limpopo. Caza trofeo, sin malaria. Makoppa, Thabazimbi.',
     constructCanonicalUrl('es'),
-    `${baseUrl}/og-image.jpg`
+    ogImage
+  ),
+  twitter: generateTwitterCard(
+    'Caza en Limpopo | MIWESU GAME FARM',
+    'Lodge de caza de lujo en Limpopo. Caza trofeo, sin malaria. Makoppa, Thabazimbi.',
+    ogImage
   ),
   alternates: {
     canonical: constructCanonicalUrl('es'),
@@ -28,10 +35,19 @@ export const metadata: Metadata = {
   },
 }
 
+const esWebPage = generateWebPageSchema({
+  name: 'Caza en Limpopo | MIWESU GAME FARM',
+  description:
+    'Página en español: safaris de plains game, alojamiento de lujo y exportación de trofeos desde MIWESU, Makoppa, Sudáfrica.',
+  url: constructCanonicalUrl('es'),
+  inLanguage: 'es',
+})
+
 export default function EsLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
       <BreadcrumbSchema items={breadcrumbItems} />
+      <WebPageSchema schema={esWebPage} />
       {children}
     </>
   )

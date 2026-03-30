@@ -32,7 +32,7 @@ export default function ConservationPage() {
           <div className="absolute inset-0 z-0">
             <Image
               src="/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg"
-              alt="MIWESU Game Farm conservation - anti-poaching, community support, habitat restoration Makoppa district"
+              alt="MIWESU Game Farm, bushveld stewardship, Makoppa district"
               fill
               sizes="100vw"
               className="object-cover opacity-50"
@@ -97,13 +97,13 @@ export default function ConservationPage() {
               </div>
             </div>
 
-            {/* Impact Stats */}
+            {/* Stewardship pillars (qualitative, no fake metrics) */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 mb-12 sm:mb-20">
               <div className="text-center reveal">
                 <Shield className="w-10 h-10 sm:w-12 sm:h-12 text-gold-500 mx-auto mb-3 sm:mb-4" />
-                <span className="block font-serif text-3xl sm:text-4xl text-white mb-2">24/7</span>
+                <span className="block font-serif text-3xl sm:text-4xl text-white mb-2">Reserve</span>
                 <span className="text-[10px] uppercase tracking-widest text-gray-400">
-                  Protection
+                  Security &amp; patrols
                 </span>
               </div>
               <div className="text-center reveal delay-100">
@@ -137,27 +137,27 @@ export default function ConservationPage() {
                   <div className="relative h-[500px]">
                     <Image
                       src="/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg"
-                      alt="Anti-poaching unit patrol"
+                      alt="MIWESU bushveld, field operations context"
                       fill
                       className="object-cover shadow-luxury"
                     />
                   </div>
                   <div>
                     <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-4 block">
-                      24/7 Protection
+                      Field security
                     </span>
                     <h3 className="type-h2-section-dark mb-6">
-                      Anti-Poaching Units
+                      Anti-poaching &amp; reserve security
                     </h3>
                     <p className="text-gray-300 text-lg leading-loose mb-6">
-                      Our 24/7 anti-poaching teams patrol the reserve continuously, protecting not just our wildlife but the entire ecosystem. These dedicated units operate around the clock, using advanced tracking and monitoring systems.
+                      Anti-poaching and security work are part of responsible private-reserve management. We do not publish live operational metrics, patrol-hour totals, or “real impact monitors” on this website.
                     </p>
                     <p className="text-gray-300 text-lg leading-loose mb-8">
-                      Every guest contribution directly funds these critical operations. Your visit ensures that the Makoppa district remains a safe haven for wildlife, free from the threat of poaching. This is conservation that pays for itself.
+                      Sustainable use helps fund the cost of running the farm, including protection and habitat stewardship, in line with South African practice. Serious enquiries receive substantive answers in direct conversation, not dashboard fiction.
                     </p>
                     <div className="flex items-center gap-4 text-gold-400 font-sans text-sm uppercase tracking-widest">
                       <Shield className="w-5 h-5" />
-                      <span>Continuous Protection</span>
+                      <span>Reserve discipline</span>
                     </div>
                   </div>
                 </div>
@@ -167,7 +167,7 @@ export default function ConservationPage() {
               <div className="grid md:grid-cols-2 gap-12 items-center mb-20 reveal delay-300">
                 <div>
                   <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-4 block">
-                    Community Impact
+                    Local economy
                   </span>
                   <h3 className="type-h2-section-dark mb-6">
                     Community &amp; local economy
@@ -180,8 +180,8 @@ export default function ConservationPage() {
                   </p>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="border-l-2 border-gold-500 pl-4">
-                      <span className="block font-serif text-3xl text-gold-400 mb-1">24/7</span>
-                      <span className="text-xs uppercase tracking-widest text-gray-400">Protection</span>
+                      <span className="block font-serif text-3xl text-gold-400 mb-1">Local</span>
+                      <span className="text-xs uppercase tracking-widest text-gray-400">Suppliers &amp; jobs</span>
                     </div>
                     <div className="border-l-2 border-gold-500 pl-4">
                       <span className="block font-serif text-3xl text-gold-400 mb-1">100%</span>
@@ -228,9 +228,9 @@ export default function ConservationPage() {
                 <h3 className="font-serif text-3xl text-white mb-12 text-center">Our Conservation Programs</h3>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
-                    <h4 className="font-serif text-xl text-gold-500 mb-4">Anti-Poaching Units</h4>
+                    <h4 className="font-serif text-xl text-gold-500 mb-4">Reserve security</h4>
                     <p className="text-gray-400 font-sans leading-relaxed">
-                      Our 24/7 anti-poaching teams patrol the reserve, protecting not just our wildlife but the entire ecosystem. Every guest contribution directly funds these critical operations.
+                      Anti-poaching and patrol capacity are part of running a closed reserve. We avoid invented statistics; operational detail is for vetted guests and partners in direct dialogue.
                     </p>
                   </div>
                   <div>
@@ -257,28 +257,28 @@ export default function ConservationPage() {
           </div>
         </section>
 
-        {/* Impact Section */}
+        {/* Stewardship closing */}
         <section className="py-16 sm:py-24 lg:py-32 bg-marble-dark">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-20 reveal">
               <span className="type-eyebrow mb-6 block">
-                The Impact
+                Stewardship
               </span>
               <h2 className="font-serif text-4xl md:text-5xl text-onyx mb-8">
                 Conservation Through Utilization
               </h2>
               <p className="font-sans text-gray-600 text-lg max-w-3xl mx-auto leading-loose">
-                The reality of African conservation is economic. Your visit directly funds our Anti-Poaching Units and habitat restoration. Venison is processed professionally; our focus is ethical harvest, protection, and long-term stewardship.
+                The reality of African conservation is economic. Sustainable use supports reserve operations, including security and habitat work. Venison is processed professionally; our focus is ethical harvest and long-term stewardship, without marketing dashboards or made-up family-feeding claims.
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 mb-20">
               <div className="bg-white p-10 text-center reveal">
                 <Shield className="w-16 h-16 text-gold-500 mx-auto mb-6" />
-                <span className="block font-serif text-5xl text-onyx mb-4">24/7</span>
-                <h3 className="font-serif text-2xl text-onyx mb-4">Anti-Poaching</h3>
+                <span className="block font-serif text-5xl text-onyx mb-4">Field</span>
+                <h3 className="font-serif text-2xl text-onyx mb-4">Security</h3>
                 <p className="font-sans text-gray-600 leading-relaxed">
-                  Continuous protection of the reserve and surrounding ecosystem through dedicated patrol units.
+                  Patrols and access control are part of running a private reserve, described honestly, not as a live “impact monitor.”
                 </p>
               </div>
               <div className="bg-white p-10 text-center reveal delay-100">

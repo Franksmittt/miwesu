@@ -38,7 +38,7 @@ const facebookAsGallery = authenticGalleryItems.map(
 
 const landscapeAndWildlifeImages = [
   { src: '/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg', category: 'Landscape' as const, title: 'Lodge patio and braai', description: 'Braai under thatch with waterhole and bushveld' },
-  { src: '/images/kudu-bull-portrait-01.png', category: 'Wildlife' as const, title: 'Greater Kudu', description: 'The Grey Ghost of the thickets' },
+  { src: '/images/greater-kudu_card.png', category: 'Wildlife' as const, title: 'Greater Kudu', description: 'The Grey Ghost of the thickets' },
   { src: '/images/4wildebeest-bull-portrait-02.png', category: 'Wildlife' as const, title: 'Blue Wildebeest', description: 'Thriving on sweet grazing lawns' },
   { src: '/images/impala-ram-portrait-01.png', category: 'Wildlife' as const, title: 'Impala', description: 'The athlete of the bushveld' },
   { src: '/images/gemsbok-portrait-01.png', category: 'Wildlife' as const, title: 'Gemsbok', description: 'Kalahari transition zone specialist' },

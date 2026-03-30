@@ -1,5 +1,3 @@
-'use client'
-
 import { ReactNode } from 'react'
 
 export type BentoCell = {
@@ -44,11 +42,10 @@ export default function SpeciesBentoGrid({
         role="region"
         aria-label="Species quick facts"
       >
-        {cells.map((cell, i) => (
+        {cells.map((cell, index) => (
           <div
-            key={i}
-            className={`${spanClass[cell.span ?? 'sm']} ${glassClass} rounded-lg p-4 sm:p-5 md:p-6 border border-white/10 reveal`}
-            style={{ animationDelay: `${i * 50}ms` }}
+            key={`${cell.label}-${index}`}
+            className={`${spanClass[cell.span ?? 'sm']} ${glassClass} rounded-lg p-4 sm:p-5 md:p-6 border border-white/10`}
           >
             <div className={textValue}>
               {typeof cell.value === 'string' ? cell.value : cell.value}

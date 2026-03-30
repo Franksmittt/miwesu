@@ -1,0 +1,215 @@
+================================================================================
+MIWESU GAME FARM (IRON EDEN) — WHAT WE OFFER
+================================================================================
+Reference document derived from site copy and lib/* data (March 2026).
+For live public wording, use the website; for admin pricing, use the Rates
+Manager / Prisma RateItem data. Lodge rates on the public site are generally
+shown as "on request" — detailed figures are in the confidential Conservation
+Investment Guide and quotes from concierge.
+
+================================================================================
+LOCATION & SETTING
+================================================================================
+
+  Address (public):  D1432 Road, Makoppa District, Thabazimbi, Limpopo 0380,
+                     South Africa
+  Region:            Waterberg; malaria-free
+  Distance:          ~40 km from Thabazimbi town
+  Airport (typical): OR Tambo (Johannesburg) ~2.5 hours drive
+  GPS (from FAQ):    -24.4523956, 27.0450853
+  Road note:         High-clearance vehicle recommended on D1432, especially
+                     Oct–Mar (rainy season)
+
+  Contact:
+    Email:   info@miwesu.co.za
+    Phone:   +27 73 030 9679
+
+================================================================================
+ACCOMMODATION — CAPACITY & ROOMS
+================================================================================
+
+Two private residences (exclusive use of the one you book). Combined maximum
+sleeping capacity across both houses (if ever let together) is 22 guests; normal
+bookings are ONE house at a time.
+
+────────────────────────────────────────────────────────────────────────────
+A) HUNTER'S HOUSE (main lodge / "The Homestead")
+────────────────────────────────────────────────────────────────────────────
+  Total sleepers:     16
+  Bedrooms:           4 (two levels)
+
+  Layout (from lodge data):
+    • Lower level — Lower Room 1: sleeps 3 (singles), en-suite
+    • Lower level — Lower Room 2: sleeps 3 (singles), en-suite (shared bathroom
+      concept for lower floor as documented in facility copy)
+    • Upper level — Upper Room 1: sleeps 5 (singles)
+    • Upper level — Upper Room 2: sleeps 5 (singles)
+
+  Shared / indoor:
+    • Open-plan kitchen, dining, living (thatched; glass to first patio)
+    • First patio (thatched, outdoor seating)
+    • Boma + built-in braai
+    • Lapa: pool table, darts, wet bar — links to pool area
+    • Braai under the trees (waterhole views in some angles)
+
+  Outdoor / family:
+    • Swimming pool with multi-slide complex
+    • Trampoline & jungle gym
+    • Lawn, thatched shade
+
+  Included (typical — confirm with concierge):
+    • Exclusive use of the house, daily housekeeping, utilities, fibre internet,
+      access to the reserve (per FAQ copy)
+
+────────────────────────────────────────────────────────────────────────────
+B) ROOIBOK KRAAL ("Stone Villa" route — near the main pool)
+────────────────────────────────────────────────────────────────────────────
+  Total sleepers:     6
+  Bedrooms:           2
+
+  Layout:
+    • Master bedroom: one main bed, en-suite with shower (no tub in master bath)
+    • Second bedroom: two bunk beds (sleeps 4), own en-suite with bathtub
+    • Open-plan kitchen + living
+    • Outdoor braai
+
+  Notes:
+    • Site copy references stargazing deck / telescope / Nespresso in marketing
+      — align guest comms with current on-site amenities when booking.
+
+================================================================================
+PRICING (LODGE, HARVEST, ACTIVITIES)
+================================================================================
+
+  Public website:
+    • Accommodation and activity dollar/ZAR figures are generally presented as
+      "On request" on /rates (no public price list on the marketing site).
+    • Guests request the confidential "Conservation Investment Guide" (e.g. 2026)
+      and tailored quotes.
+
+  What affects price (from FAQ / product logic):
+    • Length of stay, season, which residence
+    • Conservation harvest / trophy fees by species (quota & census-driven)
+    • Activities (photographic safari, celestial, etc.) as add-ons
+    • Meals may be additional to base accommodation (per FAQ)
+
+  Admin / owner:
+    • Master pricelist and per-category rates live in the database (Prisma
+      RateItem: accommodation, species, activity, extras) and export to PDF.
+
+================================================================================
+WILDLIFE — 14 MANAGED SPECIES (CONSERVATION HARVEST PORTFOLIO)
+================================================================================
+Each species has a dedicated page on the site (/[slug]) plus compare tool.
+
+  1. Greater Kudu           (greater-kudu)
+  2. Blue Wildebeest        (wildebeest)
+  3. Golden Wildebeest      (golden-wildebeest)
+  4. Impala                 (impala)
+  5. Dapple Impala          (dapple-impala)
+  6. Gemsbok                (gemsbok)
+  7. Warthog                (warthog)
+  8. Blesbok                (blesbok)
+  9. Bushbuck               (bushbuck)
+ 10. Cape Buffalo           (cape-buffalo)   [dangerous game — special rules]
+ 11. Lechwe                 (lechwe)
+ 12. Livingstone Eland      (livingstone-eland)
+ 13. Red Hartebeest        (red-hartebeest)
+ 14. Springbok             (springbok)
+
+  Management note:
+    Availability of species for harvest is driven by annual ecological census
+    and sustainable quotas — not all animals available at all times.
+
+================================================================================
+ACTIVITIES & EXPERIENCES (MARKETING CATEGORIES)
+================================================================================
+
+  • Conservation harvest     Ethical, quota-based hunting with professional
+                             trackers; rifle/bow themes as presented on site.
+
+  • Photographic safaris     Guided wildlife photography, bushveld & waterholes.
+
+  • Celestial safaris        Dark-sky / astronomy experiences (malaria-free
+                             nights).
+
+  • Friends & family /       Exclusive-use groups, boma evenings, shared stays.
+    gatherings
+
+  • Wildlife viewing         Game drives and walking safaris.
+
+  • Birding                  Dedicated bushveld birding content on activities.
+
+  • 4x4 trails               Vehicle / terrain experience (imagery & copy on
+                             activities page).
+
+  Non-hunters:
+    Photographic safaris, drives, walks, celestial experiences — families and
+    observers welcome (Guardian's Pledge applies to all guests).
+
+================================================================================
+CONSERVATION & HOUSE RULES (SUMMARY)
+================================================================================
+
+  • "If it pays, it stays" — sustainable use funding conservation.
+  • Guardian's Pledge: sanctuary of silence, fair chase, respect; violations
+    can mean eviction.
+  • Vetting: prospective guests screened for fit with conservation ethos.
+  • Anti-poaching, community, habitat themes on /conservation.
+
+================================================================================
+PRACTICAL SERVICES & PRODUCTS
+================================================================================
+
+  Trophy export & travel (/trophy-export)
+    Field prep, dipping, CITES, shipping context; links to partners.
+
+  Trusted partners (/partners)
+    Taxidermy, dipping/shipping agents, travel insurance — logistics chain.
+
+  Wood & thermal (/wood) — MIWESU Premium Firewood (ZAR, enquiry order)
+    Product catalogue (from lib/wood-products.ts):
+      • Geelhak        12 kg bag   R25   MOQ 50 bags
+      • Braai Mix      12 kg bag   R25   MOQ 50 bags
+      • Sekelbos       30 kg bag   R75   MOQ 20 bags
+      • Braai Mix      30 kg bag   R75   MOQ 20 bags
+    Marketing claims: e.g. high peak temperature, verified moisture, no
+    chemical additives; Gauteng delivery narrative — confirm operational detail
+    when selling.
+
+  Tools (free utilities for hunters)
+    • SAPS 520 temporary firearm import PDF helper (/tools/saps-520)
+    • Biltong yield calculator — 14 species (/tools/biltong-calculator)
+
+================================================================================
+CONTENT & EDUCATION
+================================================================================
+
+  • Hunter's Journal (/blog) — articles on ballistics, logistics, conservation,
+    lodge life, Limpopo vs Eastern Cape, Sweetveld vs Sourveld, etc.
+    (Full slugs in lib/blog-posts.ts.)
+
+  • Species comparison (/compare) — side-by-side stats; URL ?a=&b= slugs.
+
+  • Gallery — landscapes, lodge, wildlife (curated + Facebook-sourced).
+
+================================================================================
+STAYS — POLICY SNIPPETS (FROM FAQ; VERIFY WITH CONCIERGE)
+================================================================================
+
+  • Minimum stay: often ~3 nights recommended; peak may require longer.
+  • Children: welcome; same conduct expectations.
+  • Malaria: not required in this Waterberg location.
+  • What's included: exclusive house, housekeeping, utilities, fibre, reserve
+    access; meals / harvest / activities typically additional.
+
+================================================================================
+LOCALE / LANGUAGES ON SITE
+================================================================================
+
+  Primary: English (full site)
+  Short landers: /de (German), /es (Spanish) with links into English routes.
+
+================================================================================
+END — UPDATE WHEN RATES OR INVENTORY CHANGE
+================================================================================

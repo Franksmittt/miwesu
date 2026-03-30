@@ -1,0 +1,130 @@
+================================================================================
+MIWESU / IRON EDEN — PROJECT OVERVIEW (SNAPSHOT)
+================================================================================
+Generated as a root-level snapshot. Last aligned with repo state: March 2026.
+For the longest-form narrative (every page, lodge copy, admin detail), see:
+  docs/PROJECT_OVERVIEW.md
+
+================================================================================
+1. WHAT THIS PROJECT IS
+================================================================================
+
+A production-oriented marketing + operations web application for MIWESU GAME
+FARM ("Iron Eden"): a private luxury sanctuary in the Makoppa district near
+Thabazimbi, Limpopo, South Africa (Waterberg, malaria-free bushveld).
+
+Public site:
+  - Two exclusive-use residences (Homestead ~16 sleepers, Rooibok Kraal / Stone
+    Villa ~6 sleepers), activities, conservation story, 14 species guides,
+    gallery, blog ("Hunter's Journal"), tools (SAPS 520, biltong calculator),
+    wood products, partners, trophy export guidance.
+  - Booking is enquiry-first (no public checkout for lodge stays); public rates
+    are presented as "on request" where configured.
+
+Admin / backend:
+  - Password-gated admin: bookings CRM, calendar, rates manager, pricelist PDF,
+    email diagnostics. Prisma + PostgreSQL (e.g. Supabase). Resend for outbound
+    mail. Invoice PDF and SAPS 520 PDF generation. Stripe present in codebase
+    but not the primary lodge enquiry flow.
+
+Locale:
+  - Primary English site; dedicated landing routes /de and /es for international
+    reach with hreflang from root metadata.
+
+================================================================================
+2. TECH STACK (AS OF NOW)
+================================================================================
+
+Core:
+  - Next.js 15.x (App Router)
+  - React 19.x
+  - TypeScript (strict)
+  - Tailwind CSS 3.x
+  - Framer Motion (motion UX)
+  - Lucide React (icons)
+
+Data & backend:
+  - Prisma 6 + @prisma/client → PostgreSQL (DATABASE_URL / DIRECT_URL)
+  - Resend (transactional email)
+  - pdf-lib, @react-pdf/renderer (PDFs)
+  - Zod + react-hook-form (forms/validation)
+  - Stripe dependency (optional / legacy checkout paths)
+
+Not in package.json today (named in .cursor rules for future consistency):
+  - TanStack Query, Zustand, XState — adopt when adding non-trivial client
+    server-cache or global UI state per master rules.
+
+================================================================================
+3. REPOSITORY LAYOUT (HIGH LEVEL)
+================================================================================
+
+app/               Next.js App Router routes (marketing, blog, species, tools,
+                   admin, API route handlers, sitemap.ts, robots.ts)
+components/      Shared UI, Layout, StructuredData (JSON-LD), modals, widgets
+lib/               Domain data (species, residences, blog, SEO helpers, images),
+                   wood products, FAQ, comparison data, etc.
+prisma/            Schema, migrations, seed, booking/rates documentation
+public/            Static assets, images, audio, favicons
+docs/              Extended documentation (PROJECT_OVERVIEW.md, audits, etc.)
+scripts/           Utilities (e.g. image path fixes)
+
+Configuration:
+  - .cursorrules              Cursor AI + project conventions (SEO, RSC, UX)
+  - .cursor/rules/master.mdc  Always-on UX/CWV/state architecture rules
+  - .env.example              Env template (BASE_URL, DB, Resend, admin, GSC, etc.)
+
+================================================================================
+4. WHERE THE PRODUCT STANDS (MATURITY)
+================================================================================
+
+Strengths:
+  - Broad marketing surface: home, about, residences (+ sub-pages), wildlife
+    hub, 14 dedicated species URLs, compare tool, conservation, gallery, blog
+    (dynamic slugs + two static pillar articles), FAQ, contact, book flow,
+    availability, rates (on-request presentation), wood, trophy-export,
+    partners, tools subtree.
+  - Admin workflow for owners: bookings list/detail, status workflow, calendar,
+    manual booking creation, rates editing, pricelist export, email logging.
+  - SEO investment: metadata per segment, canonicals, Open Graph / Twitter
+    images centralised (lib/open-graph.ts), sitemap covering static routes,
+    blog slugs, species; robots.txt blocks admin/API appropriately in production.
+  - Structured data: Organization, WebSite, LodgingBusiness (home), species
+    WebPage entities, FAQPage, Article on blog routes, Product samples on rates,
+    TouristTrip on activities, wood Product graph, gallery ItemList, WebPage
+    JSON-LD on many marketing layouts, dynamic compare WebPage + metadata for
+    ?a=&b= pairs.
+  - Google Search Console verification supported via
+    NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION when set.
+
+Operational notes:
+  - Requires valid DATABASE_URL (and Resend keys) for full admin/email flows;
+    empty DB may fall back to mock patterns in places (see code/docs).
+  - Image assets: many paths are curated under public/images; blog/species use
+    real card and lodge photography where mapped.
+
+================================================================================
+5. BUILD & QUALITY
+================================================================================
+
+Commands:
+  npm run dev      — local development
+  npm run build    — prisma generate + next build (used for Vercel)
+  npm run lint     — Next.js ESLint
+  npm run lighthouse — optional CWV/SEO audit script (local URL)
+
+The codebase is intended to ship: TypeScript checking runs on build; keep
+environment variables set in Vercel (or host) for production.
+
+================================================================================
+6. DOCUMENTATION & GOVERNANCE
+================================================================================
+
+  docs/PROJECT_OVERVIEW.md  — Full narrative (pages, admin, data models).
+  PROJECT_OVERVIEW.txt      — This file: quick root snapshot only.
+  .cursorrules + .cursor/rules/master.mdc — Enforce RSC-first SEO patterns,
+    8-point grid / CWV-minded UI rules, and state architecture guidance for
+    future changes.
+
+================================================================================
+END
+================================================================================

@@ -1,30 +1,75 @@
-# .cursorrules - Next.js Hunting Safari SEO Architect
+# .cursorrules — MIWESU / Next.js + Principal UX & CWV
 
 ## Role
-You are a Senior Full-Stack Engineer and SEO Architect specializing in Next.js (App Router), React, and the African Safari / hunting industry. You prioritize Core Web Vitals, Semantic HTML, Schema.org, and Type-Safe code.
+You are a **Principal UX/UI Architect** and **Elite Full-Stack Next.js Engineer**. Standards are uncompromising: **Core Web Vitals**, **maximum SEO/GEO visibility**, **elite user psychology**, and **production-ready** code.
 
-## Tech Stack
-- Framework: Next.js 14+ (App Router)
-- Language: TypeScript (Strict)
-- Styling: Tailwind CSS
-- Deployment: Vercel (Edge-capable)
+## Tech stack
+- Framework: Next.js 15+ (App Router)
+- Language: TypeScript (strict)
+- Styling: Tailwind CSS (+ design tokens / CSS variables where specified)
+- Deployment: Vercel (edge-capable)
 
-## Architecture Rules
-1. **Server Components First**: All components must be Server Components by default. Only add `'use client'` when interactivity (hooks, event listeners) is strictly required.
-2. **Image Optimization**: Always use `<Image />` from `next/image`. Enforce descriptive, keyword-rich alt text (e.g. "Mature Greater Kudu bull in Limpopo bushveld with 55-inch horns"). Use `priority` for LCP/hero images.
-3. **Semantic SEO**:
-   - Use `<article>`, `<section>`, `<h1>`–`<h6>` correctly. No tag soup.
-   - Inject Schema.org JSON-LD via components in `components/StructuredData.tsx` and helpers in `lib/seo.ts`.
-4. **Metadata**: Every page must have unique metadata (title, description, keywords, openGraph, twitter, alternates.canonical). Species pages must include `alternates.languages` (en-US, x-default) for hreflang.
-5. **Species & Schema**: Species pages use `SPECIES_BY_SLUG` from `lib/species-data.ts` and `SpeciesTaxonSchema` for WebPage + mainEntity (Taxon/Thing) with sameAs to Wikidata/Wikipedia. Product schema for packages; TouristTrip for itineraries; FAQPage for FAQ content.
-6. **Middleware**: GeoIP middleware sets cookies `miwesu_currency` (ZAR|USD), `miwesu_locale` (af-ZA|en-US), `miwesu_intent` (biltong|trophy). Bots are not cookie-set. Vary: Accept-Language is set.
+---
 
-## Coding Style
-- Functional components and clear file structure.
-- DRY: shared SEO helpers in `lib/seo.ts`, species data in `lib/species-data.ts`, FAQ content in `lib/faq-data.ts`.
-- Prefer existing patterns (e.g. layout metadata, StructuredData components) when adding pages.
+## Global UX / UI architecture (enforce on all new UI)
+
+### 8-point grid
+- Spacing MUST follow **8px steps**: 8, 16, 24, 32, 40, 48… Use Tailwind spacing that maps to these (e.g. `2, 4, 6, 8, 10, 12…`).
+- **Forbidden:** arbitrary values like `p-[13px]`, `gap-[19px]` without a documented exception in the same change.
+
+### Internal ≤ external
+- **Padding inside** a component MUST **not exceed** the **external margin** to its neighbors (same visual hierarchy level).
+
+### Layout
+- Split layouts: **CSS Grid** with **`fr`** (e.g. `grid-cols-1 lg:grid-cols-2` or `minmax(0,1fr)`) for equilibrium — avoid magic fixed widths for primary columns.
+
+### Shadows
+- **No pure black shadows.** Use **layered, semi-transparent** shadows **tinted** to the background/surface. Lower elevation for cards; higher for modals — never `rgb(0,0,0)` at full opacity.
+
+---
+
+## Typography & contrast
+
+- **Fluid type:** use **`clamp()`** with **rem + vw** for scalable headings/hero type; respect zoom/reflow (WCAG).
+- **Line height** anchored to the **8pt rhythm** (e.g. small body sizes pair with line-heights that land on grid-aligned vertical rhythm).
+- **Contrast:** follow **APCA-minded** pairing; avoid fatiguing combos (bright orange on white, weak grey on black). Use **WCAG 2.2** as minimum when APCA tooling is unavailable.
+
+---
+
+## Core Web Vitals & media (CLS = 0)
+
+- Targets: **LCP < 2.5s**, **INP < 200ms**, **CLS = 0**.
+- **All media:** `max-width: 100%`, `height: auto`, `display: block` where applicable; Next `<Image>` must have dimensions or `fill` in a **sized** parent.
+- **Reserve space:** **`aspect-ratio`** on image/video containers + **`object-fit: cover`** (or `contain` with justification) — **no layout shift** on load.
+- Prefer **AVIF/WebP** via `next/image`; **`loading="lazy"`** below fold; **`priority`** only for LCP.
+
+---
+
+## State & resilience
+
+- **Server state:** TanStack Query **or** RSC + `fetch` / Server Actions — one clear pattern per feature.
+- **Client state:** Zustand or XState for non-trivial UI state; avoid unmaintainable `useState` pyramids.
+- **Third-party widgets:** wrap in **Error Boundaries** + graceful degradation.
+- **Motion:** ~**200ms** **`ease-in-out`** for micro-interactions; **skeletons** instead of **full-page spinners** where content loads.
+
+---
+
+## Next.js / MIWESU architecture (preserve)
+
+1. **Server Components first** — `'use client'` only when hooks/events/browser APIs require it.
+2. **Images:** always `next/image`; descriptive, keyword-rich **alt**; `priority` for LCP heroes.
+3. **Semantic SEO:** correct `<article>`, `<section>`, heading order; Schema.org via `components/StructuredData.tsx` + `lib/seo.ts`.
+4. **Metadata:** unique title, description, keywords, openGraph, twitter, `alternates.canonical`; species pages use hreflang where defined.
+5. **Species & schema:** `SPECIES_BY_SLUG`, `SpeciesTaxonSchema`, Product / TouristTrip / FAQPage as applicable.
+6. **Middleware:** respect existing geo/locale cookies and bot behavior.
+
+## Coding style
+- Functional components; DRY helpers in `lib/*`; match existing file patterns.
 
 ## Prohibited
-- Do not use `useEffect` for data fetching; use Server Components or Server Actions.
-- Do not publish pages with generic or duplicate metadata.
-- Do not omit alt text on images or schema on species/rates/activities/FAQ where defined.
+- `useEffect` for **data fetching** (use RSC / Server Actions / TanStack Query).
+- Generic or duplicate metadata; missing alt text; omitting required schema.
+- Arbitrary spacing off the 8px grid; pure-black shadows; unbounded media without aspect-ratio.
+
+## Authoritative detail
+For expanded rules and examples, see **`.cursor/rules/master.mdc`** (always applied to TS/TSX/JS/CSS).

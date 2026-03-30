@@ -62,6 +62,50 @@ export default function EsPage() {
             </p>
           </div>
         </section>
+
+        <section className="py-16 md:py-24 bg-marble border-t border-gray-200">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 font-sans text-onyx space-y-6 text-base leading-relaxed">
+            <h2 className="font-serif text-2xl md:text-3xl text-onyx">¿Por qué cazar en MIWESU?</h2>
+            <p>
+              MIWESU GAME FARM está en el <strong>distrito de Makoppa</strong>, cerca de Thabazimbi, en
+              el <strong>Waterberg</strong> de Limpopo, <strong>zona libre de malaria</strong>. Combinamos
+              residencias de lujo de uso exclusivo, <strong>Arid Sweet Bushveld</strong> y una cartera de{' '}
+              <strong>14 especies</strong> de caza mayor, desde kudú y búfalo hasta impala, ñu y eland.
+            </p>
+            <p>
+              Encuentre guías en inglés sobre{' '}
+              <Link href="/trophy-export" className="text-gold-600 hover:underline font-medium">
+                exportación de trofeos
+              </Link>, {' '}
+              <Link href="/rates" className="text-gold-600 hover:underline font-medium">
+                tarifas
+              </Link>, {' '}
+              <Link href="/wildlife" className="text-gold-600 hover:underline font-medium">
+                fauna
+              </Link>{' '}
+              y{' '}
+              <Link href="/residences" className="text-gold-600 hover:underline font-medium">
+                alojamiento
+              </Link>
+              . Solicite fechas en{' '}
+              <Link href="/book" className="text-gold-600 hover:underline font-medium">
+                reservas
+              </Link>{' '}
+              o{' '}
+              <Link href="/contact" className="text-gold-600 hover:underline font-medium">
+                contacto
+              </Link>
+              .
+            </p>
+            <p className="text-sm text-gray-600">
+              Sitio principal en inglés:{' '}
+              <Link href="/" className="text-gold-600 hover:underline">
+                English home
+              </Link>
+              .
+            </p>
+          </div>
+        </section>
       </main>
     </Layout>
   )

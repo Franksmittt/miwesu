@@ -5,16 +5,7 @@ import Layout from '@/components/Layout'
 import Link from 'next/link'
 import Image from 'next/image'
 import {
-  ArrowLeft,
-  ArrowRight,
-  Calendar,
-  Users,
-  Home,
-  Check,
-  ChevronDown,
-  ChevronUp,
-  Sparkles,
-  AlertCircle,
+  ArrowLeft, ArrowRight, Calendar, Users, Home, Check, ChevronDown, ChevronUp, Sparkles, AlertCircle,
 } from 'lucide-react'
 import { DayPicker } from 'react-day-picker'
 import 'react-day-picker/dist/style.css'
@@ -23,22 +14,16 @@ import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { hapticConfirm } from '@/lib/haptic'
 import {
-  HUNTERS_HOUSE_NAME,
-  MIN_NIGHTS,
-  calcAccommodationTotal,
+  HUNTERS_HOUSE_NAME, MIN_NIGHTS, calcAccommodationTotal,
 } from '@/lib/booking-pricing'
 import { heroImages } from '@/lib/hero-images'
 
-/** Prefer email — matches contact page */
+/** Prefer email, matches contact page */
 const ENQUIRY_MAILTO =
   'mailto:info@miwesu.co.za?subject=Booking%20enquiry%20-%20MIWESU%20Game%20Farm'
 
 const guestSchema = z.object({
-  firstName: z.string().min(1, 'First name required'),
-  lastName: z.string().min(1, 'Last name required'),
-  email: z.string().email('Valid email required'),
-  phone: z.string().optional(),
-  specialRequests: z.string().optional(),
+  firstName: z.string().min(1, 'First name required'), lastName: z.string().min(1, 'Last name required'), email: z.string().email('Valid email required'), phone: z.string().optional(), specialRequests: z.string().optional(),
 })
 
 type GuestFormData = z.infer<typeof guestSchema>
@@ -53,10 +38,7 @@ type AvailableOption = {
 }
 
 const STEPS = [
-  { num: 1, label: 'When', short: 'Dates' },
-  { num: 2, label: 'Where', short: 'Accommodation' },
-  { num: 3, label: 'Your details', short: 'Details' },
-  { num: 4, label: 'Confirm', short: 'Confirm' },
+  { num: 1, label: 'When', short: 'Dates' }, { num: 2, label: 'Where', short: 'Accommodation' }, { num: 3, label: 'Your details', short: 'Details' }, { num: 4, label: 'Confirm', short: 'Confirm' },
 ] as const
 
 export default function BookPage() {
@@ -80,12 +62,8 @@ export default function BookPage() {
   const [submitError, setSubmitError] = useState<string | null>(null)
 
   const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<GuestFormData>({
-    resolver: zodResolver(guestSchema),
-  })
+    register, handleSubmit, formState: { errors }, } = useForm<GuestFormData>({
+    resolver: zodResolver(guestSchema), })
 
   // Reveal animation for step content
   useEffect(() => {
@@ -112,10 +90,7 @@ export default function BookPage() {
     setAvailabilityLoading(true)
     try {
       const params = new URLSearchParams({
-        checkIn: from.toISOString().slice(0, 10),
-        checkOut: to.toISOString().slice(0, 10),
-        guests: String(guests),
-      })
+        checkIn: from.toISOString().slice(0, 10), checkOut: to.toISOString().slice(0, 10), guests: String(guests), })
       const res = await fetch(`/api/availability?${params}`)
       const data = await res.json()
       if (!data.ok) {
@@ -149,28 +124,13 @@ export default function BookPage() {
     if (!selectedOption || !checkIn || !checkOut) return
     hapticConfirm()
     const payload = {
-      unitId: selectedOption.unitIds[0],
-      unitIds: selectedOption.unitIds,
-      optionName: selectedOption.name,
-      guestName: `${formData.firstName} ${formData.lastName}`,
-      guestEmail: formData.email,
-      guestPhone: formData.phone || '',
-      checkIn: checkIn.toISOString(),
-      checkOut: checkOut.toISOString(),
-      totalGuests: guests,
-      totalPrice: isHuntersHouse ? calculatedTotal : 0,
-      priceBreakdown: isHuntersHouse ? priceBreakdown : undefined,
-      specialRequests: formData.specialRequests || '',
-    }
+      unitId: selectedOption.unitIds[0], unitIds: selectedOption.unitIds, optionName: selectedOption.name, guestName: `${formData.firstName} ${formData.lastName}`, guestEmail: formData.email, guestPhone: formData.phone || '', checkIn: checkIn.toISOString(), checkOut: checkOut.toISOString(), totalGuests: guests, totalPrice: isHuntersHouse ? calculatedTotal : 0, priceBreakdown: isHuntersHouse ? priceBreakdown : undefined, specialRequests: formData.specialRequests || '', }
     setSubmitError(null)
     setEnquirySuccess(false)
     setEnquiryMessage(null)
     setSubmitLoading(true)
     fetch('/api/booking-enquiry', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
-    })
+      method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload), })
       .then((r) => r.json())
       .then((data) => {
         setStep(4)
@@ -201,7 +161,7 @@ export default function BookPage() {
           <div className="absolute inset-0 z-0 opacity-30">
             <Image
               src={heroImages.home}
-              alt="MIWESU Game Farm — bushveld lodge and patio at Thabazimbi"
+              alt="MIWESU Game Farm, bushveld lodge and patio at Thabazimbi"
               fill
               sizes="100vw"
               className="object-cover"
@@ -384,7 +344,7 @@ export default function BookPage() {
             </section>
           )}
 
-            {/* ——— Step 2: Choose accommodation ——— */}
+            {/*, Step 2: Choose accommodation, */}
           {step === 2 && (
               <section>
               {isDemo && (

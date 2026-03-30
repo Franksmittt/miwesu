@@ -2,11 +2,18 @@ import {
   generateOrganizationSchema,
   generateLocalBusinessSchema,
   generateSpeciesTaxonSchema,
+  generateWebSiteSchema,
   generateProductSchema,
   generateTouristTripSchema,
   generateFAQPageSchema,
+  generateHomePageFaqJsonLd,
   generateBreadcrumbSchema,
   generateArticleSchema,
+  generateCompareWebPageSchema,
+  generateWoodProductsGraph,
+  generateGalleryItemListSchema,
+  generateWebPageSchema,
+  generateSpeciesPowerPageJsonLd,
   type SpeciesSchemaParams,
 } from '@/lib/seo'
 
@@ -32,21 +39,44 @@ export function LocalBusinessSchema() {
   )
 }
 
+export function WebSiteSchema() {
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(generateWebSiteSchema()),
+      }}
+    />
+  )
+}
+
 export function SpeciesTaxonSchema({
   params,
   pageUrl,
+  primaryImage,
 }: {
   params: SpeciesSchemaParams
   pageUrl: string
+  primaryImage?: string
 }) {
   return (
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
-        __html: JSON.stringify(generateSpeciesTaxonSchema(params, pageUrl)),
+        __html: JSON.stringify(
+          generateSpeciesTaxonSchema(params, pageUrl, primaryImage ? { primaryImage } : undefined)
+        ),
       }}
     />
   )
+}
+
+export function SpeciesPowerPageSchema({
+  graph,
+}: {
+  graph: ReturnType<typeof generateSpeciesPowerPageJsonLd>
+}) {
+  return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }} />
 }
 
 export function ProductSchema({
@@ -85,6 +115,22 @@ export function FAQPageSchema({
       type="application/ld+json"
       dangerouslySetInnerHTML={{
         __html: JSON.stringify(generateFAQPageSchema(faqs)),
+      }}
+    />
+  )
+}
+
+/** Home only: WebPage + nested FAQPage @graph */
+export function HomePageFaqGraphSchema({
+  faqs,
+}: {
+  faqs: Array<{ question: string; answer: string }>
+}) {
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify(generateHomePageFaqJsonLd(faqs)),
       }}
     />
   )
@@ -136,6 +182,46 @@ export function ArticleSchema({
         ),
       }}
     />
+  )
+}
+
+export function CompareWebPageSchema({
+  schema,
+}: {
+  schema: ReturnType<typeof generateCompareWebPageSchema>
+}) {
+  return (
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+  )
+}
+
+export function WoodProductsGraphSchema({
+  schema,
+}: {
+  schema: ReturnType<typeof generateWoodProductsGraph>
+}) {
+  return (
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+  )
+}
+
+export function GalleryItemListSchema({
+  schema,
+}: {
+  schema: ReturnType<typeof generateGalleryItemListSchema>
+}) {
+  return (
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+  )
+}
+
+export function WebPageSchema({
+  schema,
+}: {
+  schema: ReturnType<typeof generateWebPageSchema>
+}) {
+  return (
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
   )
 }
 

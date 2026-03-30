@@ -23,8 +23,36 @@ export default async function BlogSlugPage({ params }: Props) {
   if (!post || !sections) notFound()
 
   const heroSrc = post.heroImage?.startsWith('/') ? post.heroImage : `/og-image.jpg`
-  const ctaLink = slug.includes('saps-520') ? '/tools/saps520' : slug.includes('biltong') ? '/tools/biltong' : slug.includes('telemetry') ? '/tools/telemetry' : slug.includes('golden-vs-blue') ? '/compare' : slug.includes('16-sleeper') || slug.includes('stone-villa') ? '/book' : slug.includes('conservation-harvest') ? '/conservation' : slug.includes('limpopo-hunting-season') ? '/availability' : '/contact'
-  const ctaLabel = slug.includes('saps-520') ? 'Generate SAPS 520 PDF' : slug.includes('biltong') ? 'Biltong Yield Calculator' : slug.includes('telemetry') ? 'View Live Dashboard' : slug.includes('golden-vs-blue') ? 'Compare Species' : slug.includes('16-sleeper') || slug.includes('stone-villa') ? 'Check availability' : slug.includes('conservation-harvest') ? 'Conservation impact' : slug.includes('limpopo-hunting-season') ? 'View availability' : 'Contact concierge'
+  const ctaLink = slug.includes('saps-520')
+    ? '/tools/saps-520'
+    : slug.includes('biltong')
+      ? '/tools/biltong-calculator'
+      : slug.includes('telemetry')
+        ? '/wood'
+        : slug.includes('golden-vs-blue')
+          ? '/compare'
+          : slug.includes('16-sleeper') || slug.includes('stone-villa')
+            ? '/book'
+            : slug.includes('conservation-harvest')
+              ? '/conservation'
+              : slug.includes('limpopo-hunting-season')
+                ? '/availability'
+                : '/contact'
+  const ctaLabel = slug.includes('saps-520')
+    ? 'Generate SAPS 520 PDF'
+    : slug.includes('biltong')
+      ? 'Biltong Yield Calculator'
+      : slug.includes('telemetry')
+        ? 'Engineered heat & firewood'
+        : slug.includes('golden-vs-blue')
+          ? 'Compare Species'
+          : slug.includes('16-sleeper') || slug.includes('stone-villa')
+            ? 'Check availability'
+            : slug.includes('conservation-harvest')
+              ? 'Conservation impact'
+              : slug.includes('limpopo-hunting-season')
+                ? 'View availability'
+                : 'Contact concierge'
 
   return (
     <Layout>

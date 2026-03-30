@@ -2,7 +2,9 @@ import type { Metadata, Viewport } from 'next'
 import { Cinzel, Montserrat } from 'next/font/google'
 import './globals.css'
 import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard } from '@/lib/seo'
+import { marketingOgAbsolute } from '@/lib/open-graph'
 import { AmbientAudioProvider } from '@/components/AmbientAudio'
+import { ConditionalSiteChrome } from '@/components/site/ConditionalSiteChrome'
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -23,12 +25,14 @@ const montserrat = Montserrat({
 })
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.co.za'
+const defaultOgImage = marketingOgAbsolute(baseUrl, 'root')
+const googleVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
     default: 'IRON EDEN | The Makoppa Sanctuary & Game Reserve',
-    template: '%s | Miwesu Conservation Harvest',
+    template: '%s | MIWESU',
   },
   description: 'A 2.5-billion-year-old private sanctuary of silence in Thabazimbi. Bespoke luxury living, ethical conservation harvesting, and malaria-free bushveld safaris. D1432 Makoppa District, Limpopo.',
   keywords: [
@@ -65,14 +69,14 @@ export const metadata: Metadata = {
       'IRON EDEN | The Makoppa Sanctuary & Game Reserve',
       'A 2.5-billion-year-old private sanctuary of silence in Thabazimbi. Bespoke luxury living, ethical conservation harvesting, and malaria-free bushveld safaris.',
       constructCanonicalUrl(''),
-      `${baseUrl}/og-image.jpg`
+      defaultOgImage
     ),
     locale: 'en_ZA',
   },
   twitter: generateTwitterCard(
     'IRON EDEN | The Makoppa Sanctuary & Game Reserve',
     'A 2.5-billion-year-old private sanctuary of silence in Thabazimbi. Bespoke luxury living, ethical conservation harvesting, malaria-free safaris.',
-    `${baseUrl}/og-image.jpg`
+    defaultOgImage
   ),
   robots: {
     index: true,
@@ -105,9 +109,7 @@ export const metadata: Metadata = {
     ],
   },
   verification: {
-    // Google Search Console: add your verification meta value here when you have it.
-    // In GSC: Property → Settings → Verification → copy the content value from the meta tag.
-    // google: 'your-verification-code-here',
+    ...(googleVerification ? { google: googleVerification } : {}),
   },
 }
 
@@ -119,7 +121,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth overflow-x-hidden">
       <body className={`${cinzel.variable} ${montserrat.variable} min-w-0`}>
-        <AmbientAudioProvider>{children}</AmbientAudioProvider>
+        <AmbientAudioProvider>
+          <ConditionalSiteChrome>{children}</ConditionalSiteChrome>
+        </AmbientAudioProvider>
       </body>
     </html>
   )

@@ -1,0 +1,180 @@
+﻿Technical Analysis of Anatomical Shot Placement and Visual Standardisation for Southern African Game Species
+The pursuit of ethical harvesting in the diverse biomes of Southern Africa necessitates a level of anatomical precision that transcends standard hunting practices found on other continents. The physiological configuration of African plains game and dangerous game is the result of millions of years of evolutionary adaptation to high-predation environments, leading to a "low and forward" vital organ structure.1 This report provides a comprehensive technical guide for 14 specific species, establishing a rigorous protocol for shot placement that integrates skeletal landmarks, internal organ positioning, and terminal ballistic requirements. Furthermore, this document outlines the criteria for a uniform visual series of shot placement guides, designed to be used in professional field applications where clarity, standardisation, and anatomical accuracy are paramount.
+The Biomechanical Paradigm of African Ungulate Anatomy
+A fundamental challenge for hunters transitioning to the African context is the significant deviation in vital organ positioning compared to North American or European species such as whitetail deer or elk.1 In most Holarctic species, the lungs occupy a large portion of the upper chest cavity, allowing for a relatively high and centered point of aim. Conversely, African antelope and the Cape Buffalo possess hearts that sit lower in the brisket, with lungs that are more compressed toward the forward section of the thoracic cavity.2
+The primary target area, frequently termed the "Engine Room," is defined by the intersection of the heart, the major pulmonary vessels, and the double lung lobes.2 Disrupting this system requires an understanding of the "Universal Vitals Location," which for a broadside animal is generally found in the lower third of the body mass, directly on or slightly behind the vertical line created by the back edge of the front leg.2 Failure to account for this low-forward bias often results in striking the "No-Man’s Land," an area above the lungs and below the spine where a projectile passes through non-vital muscle tissue and dorsal spinal projections, leading to non-fatal wounding and the potential loss of the animal.2
+
+
+Anatomical Zone
+	Vertical Positioning
+	Horizontal Positioning
+	Physiological Impact
+	Heart
+	Lower 1/3 of chest
+	Directly above the elbow
+	Immediate drop in blood pressure 8
+	Lungs
+	Mid to Lower 1/3
+	Behind the shoulder crease
+	Rapid respiratory collapse 5
+	Spine (Thoracic)
+	1/3 down from backline
+	Above the shoulder blade
+	Instant central nervous system failure 7
+	No-Man's Land
+	Upper 1/3 below spine
+	Above the lungs
+	Non-fatal muscle/bone injury 2
+	Technical Shot Placement by Species
+Greater Kudu (Tragelaphus strepsiceros)
+The Greater Kudu, often referred to as the "Grey Ghost" due to its ability to vanish into the bushveld, presents a deep-chested profile that can be deceptively large.4 Anatomically, the heart is situated exceptionally low in the chest cavity, resting just above the sternum.8 For a broadside kudu, the perfect shot placement is one-third up the body, following the vertical line of the back edge of the front leg.4
+The Kudu's skeletal structure includes long dorsal spines on the thoracic vertebrae, which create a prominent shoulder hump.4 This hump consists primarily of connective tissue and bone that does not house vital organs. Consequently, a hunter who aims at the center of the body mass will almost invariably strike too high, missing the vitals entirely.4 When the animal is quartering away, the point of aim must shift toward the off-side shoulder, ensuring the projectile's path bisects the heart-lung triangle.4
+Cape Buffalo (Syncerus caffer)
+As a member of the "Big Five," the Cape Buffalo requires the most rigorous shot placement due to its massive bone density and aggressive temperament.1 The buffalo's heart is located extremely low—in the bottom one-fifth to one-third of the chest—and is protected by a heavy humerus and a dense rib cage.2 On a broadside presentation, the target is tight to the front leg, aiming one-third up from the brisket.9
+The "high heart" shot is preferred over the brain or neck shot for the initial engagement, as the brain is a small, mobile target and the neck muscle is too thick to ensure a spine-severing hit with a single projectile.9 In a frontal situation, the target is the center of the brisket, where the neck joins the body.9 This requires a heavy, solid-construction bullet to penetrate the sternum and reach the heart or the major vessels.2 The velocity and mass of the projectile must be sufficient to overcome the kinetic resistance of the buffalo's 1-inch thick hide and heavy rib structure.9
+Blue Wildebeest (Connochaetes taurinus) and Golden Wildebeest
+The Blue Wildebeest and its color variant, the Golden Wildebeest, are renowned for their physiological resilience.14 Both animals share the same skeletal landmarks and internal organ configuration.15 The primary challenge in hunting wildebeest is the steep sloping back and the high shoulder hump, which often leads to a "high-back" miss.15
+The ideal shot for a broadside wildebeest is one-third of the way up the shoulder, using the back edge of the front leg as the horizontal reference.15 This placement disrupts the "high heart" and both lungs.15 Because wildebeest are highly social, they often stand in dense groups; the hunter must be cautious to ensure that the projectile does not pass through the target and wound another animal standing in the "off-side" shadow.18 A wounded wildebeest can absorb a staggering amount of hydrostatic shock and may run for several hundred yards if the heart is not directly impacted.15
+Gemsbok (Oryx gazella)
+The Gemsbok is a robust, heavy-bodied antelope of the arid regions, possessing thick skin and dense musculature.21 Similar to the wildebeest, the Gemsbok has a deceptive shoulder hump that frequently causes hunters to shoot high.12 The vitals are located low and forward in the chest cavity.21
+For a broadside Gemsbok, the correct point of aim is one-third up the shoulder, directly above the front leg.21 It is critical to ignore the hump and the long horns when judging the animal's midline.21 The Gemsbok's anatomy includes a particularly thick layer of hide over the neck and shoulder, designed to protect the animal during territorial bouts.22 This necessitates the use of high-quality, controlled-expansion bullets to ensure the projectile reaches the thoracic cavity after passing through the initial barriers of skin and bone.22
+Livingstone Eland (Taurotragus orybus)
+The Livingstone Eland is the largest antelope in the region, with mature bulls reaching weights that exceed 2,000 pounds.23 Despite its size, the eland’s vitals remain concentrated in the lower third of the chest.2 The broadside target is the center mass of the lower third, placed on or just behind the vertical line of the front leg.2
+Because of the eland's massive depth, the bullet must travel through a substantial amount of tissue before reaching the opposite lung.23 If the animal is quartering away, the hunter should aim for the off-side front shoulder to maximize the path through the vitals.24 The eland's heart is roughly the size of a human head, but it is situated low, near the brisket.2 Using an appropriate caliber, such as a.300 Win Mag or.375 H&H with heavy bullets (200-300 grains), is necessary to achieve the required penetration.5
+Red Hartebeest (Alcelaphus buselaphus caama)
+The Red Hartebeest is a high-backed, sloping antelope with an elongated face and a reputation for being exceptionally fast.25 Its vital organs are tucked low and forward, similar to the wildebeest.2 The broadside aim point is the lower third of the body, approximately four to six inches behind the front leg line.2
+Hartebeest are physically resilient and can cover vast distances even when mortally wounded.25 Therefore, the "high heart" shot is often preferred to anchor the animal by breaking the shoulder structure or causing rapid blood loss.2 Quartering shots are generally discouraged on this species because the digestive tract (rumen) is quite large and can easily be struck if the angle is not perfectly calculated, leading to a long and difficult tracking process.25
+Impala (Aepyceros melampus) and Dapple Impala
+The Impala is a medium-sized, highly agile antelope.26 The "Dapple" Impala is a color variation and does not differ anatomically from the common impala.20 Impala are frequently used as the baseline for plains game shot placement due to their abundance.20
+The broadside target for an impala is the center of the body mass in the lower half of the chest, directly behind the foreleg.2 While a lung shot behind the shoulder is fatal, many Professional Hunters suggest a center-shoulder shot to prevent the animal from leaping into thick cover, where it may be difficult to find.20 The impala’s heart is small—roughly the size of an orange—meaning precision is mandatory.29 In large herds, the "sentinel" behavior of impala means the hunter must be ready for a quick, accurate shot as soon as the animal stands broadside.20
+Blesbok (Damaliscus pygargus phillipsi)
+Blesbok are plains-dwelling antelope that are anatomically similar to the hartebeest but smaller in stature.30 They have a high-backed, sloping profile and are often found in open areas where wind can affect shot accuracy.30
+The perfect broadside shot is one-third of the way up the shoulder, in line with the front leg.30 This shot ensures impact with the high heart and the lower lung lobes.31 Blesbok have a characteristic habit of shaking their heads up and down when alert; the hunter must be patient and wait for the animal to be stationary to avoid a high hit.31 A frontal shot is viable on a blesbok, targeting the base of the throat where it meets the brisket.31
+Springbok (Antidorcas marsupialis)
+The Springbok is the smallest of the primary species in this study, known for its "pronking" leaps.27 Despite its delicate appearance, it is a hardy animal.32 Because the Springbok is often hunted at longer ranges in open plains, the margin for error in shot placement is magnified.32
+The broadside shot placement is simple: aim at the center of the shoulder, approximately one-third of the way up the body.32 This placement provides the largest possible target area within the vitals.32 Because the animal is small, a high-velocity, flat-shooting caliber is usually employed to minimize the effects of windage and bullet drop over distance.32
+Lechwe (Kobus leche)
+The Red Lechwe is a wetland-specialist antelope with a thick coat and powerful musculature for swimming and wading.35 Its vital organs are located in the lower third of the body, just behind the front shoulder.35
+When hunting lechwe, the hunter must account for the fact that the animal is frequently partially submerged.37 This can obscure the brisket line, making it difficult to judge the "one-third" height.35 The best practice is to wait for the animal to move onto dry land or a shallow bank to confirm the anatomical landmarks.35 A broadside shot that bisects both lungs is the most ethical choice, as a wounded lechwe that escapes into deep water or thick reeds is extremely difficult to retrieve.35
+Bushbuck (Tragelaphus scriptus)
+The Bushbuck is a medium-sized antelope that inhabits dense riverine thickets.39 They are notoriously aggressive when wounded and can be dangerous to follow into thick cover.39 Their heart and lungs are positioned low in the chest, behind the front shoulder.11
+For a broadside bushbuck, the ideal shot is tucked low behind the shoulder crease.11 Because bushbuck are usually encountered at close range in low light, a shot that breaks the shoulder (center-shoulder) is often the safest bet to ensure the animal is anchored immediately.39 The hunter must be cautious of the bushbuck's "sneaking" gait, which can cause the animal's angle to change rapidly as it moves through the undergrowth.39
+Warthog (Phacochoerus africanus)
+The Warthog possesses a compact, low-profile anatomy that requires a very low shot.2 The heart is situated exceptionally low in the chest cavity, and the lungs are tucked tightly forward.2 On a broadside warthog, the hunter should aim for the lower half of the chest, directly behind the foreleg.2
+The warthog’s thick skull and dense neck muscles make head and neck shots high-risk.2 Furthermore, when a warthog is feeding, it often kneels on its front carpal joints, which shifts the internal organ positioning relative to the ground.2 The hunter must wait for the animal to stand in a neutral posture to ensure the projectile travels on a level path through the thoracic cavity.2
+
+
+Species Group
+	Primary Anatomy Landmark
+	Bullet Selection Logic
+	Large Antelope
+	1/3 up, behind leg
+	Controlled expansion for deep penetration 4
+	Dangerous Game
+	1/5 to 1/3 up, tight to leg
+	Solid/Monolithic for heavy bone 2
+	Small/Medium Game
+	1/2 up, behind shoulder
+	Rapid energy transfer for shock 29
+	Sloping/High-Back
+	1/3 up, ignore hump
+	Avoiding "No-Man's Land" high hit 2
+	Principles of Uniform Visual Standardisation
+To satisfy the operational requirements for this project, the visual guides for each species must adhere to a strict set of design parameters. The objective is to create a series of images that are intuitively consistent, allowing the viewer to immediately identify the target zone regardless of the animal being depicted.
+Uniform Style and Aesthetic
+The series must employ a "Ghost View" illustration style, where the external appearance of the animal is transparent enough to reveal the underlying skeletal and organ systems.40 This technique allows the hunter to associate external markers—such as the "crease" of the shoulder or the line of the brisket—with the internal placement of the heart and lungs.2
+The style must be realistic and uniform across all 14 species. This means that the level of detail in the Greater Kudu illustration must match that of the Springbok or Warthog. We cannot permit stylistic deviations (e.g., some looking like sketches while others are hyper-realistic). A consistent color palette should be used for the internal organs (e.g., red for the heart, pink for the lungs) and the skeletal structure (e.g., cream/white for the bones) to ensure rapid cognitive recognition.40
+Target Marker Standardisation
+The "perfect shot" location on each animal must be indicated by a uniform target marker. To ensure consistency, the marker should be a standardized bullseye—for example, a high-contrast circular target with concentric rings (e.g., a white outer ring and a black inner dot).43 This marker must look identical on every species, regardless of the target animal's size or color. This standardisation prevents the confusion that arises when different colors or symbols are used for different species.12
+Image Constraints and Ratio
+Every visual asset must be produced in a Vertical 4:5 ratio. This ratio is optimized for modern mobile viewing and professional field guide printing, providing a portrait orientation that accommodates the full height of long-legged species like the Kudu or Eland without wasting horizontal space.
+Furthermore, the images must contain no text. There should be no labels, species names, or descriptive callouts within the image frame. The illustration should be self-explanatory, relying purely on the anatomical ghost view and the standardized target marker to convey the information. This creates a clean, professional, and universal tool that can be understood across language barriers.43
+Terminal Ballistics and the Mechanics of Incapacitation
+The effectiveness of shot placement is inextricably linked to the terminal performance of the projectile. In the African context, "hydrostatic shock" is often secondary to the requirement for "straight-line penetration" and "cavitation".2
+Energy Transfer vs. Penetration Depth
+For larger species like the Livingstone Eland or Cape Buffalo, the projectile must maintain its structural integrity while passing through heavy bone and thick hide.9 The energy of the bullet, measured in Joules (  ), must be sufficient to drive the bullet through the entire thoracic cavity to ensure a "double-lung" hit.7 If a bullet fragments prematurely upon impact with a kudu's shoulder blade, it may fail to reach the vitals, resulting in a superficial wound.2
+The Role of Sectional Density
+Sectional density (  ) is a critical factor for African game. A high sectional density allows a bullet to resist deflection when striking the heavy ribs of a Wildebeest or Gemsbok.16 Controlled-expansion bullets, such as those with bonded cores or monolithic copper construction, are the standard for Southern African hunting because they retain nearly 100% of their mass, ensuring the straight-line penetration required for a clean kill.2
+
+
+Species Group
+	Optimal Bullet Construction
+	Key Ballistic Metric
+	Dangerous Game
+	Monolithic Solids / Bonded Soft Points
+	High Sectional Density 9
+	Large Plains Game
+	Premium Bonded Core
+	Deep Terminal Penetration 2
+	Medium Plains Game
+	Controlled Expansion
+	Energy Transfer/Shock 20
+	Small Game
+	Cup and Core / Rapid Expansion
+	Minimum Meat Damage 32
+	Advanced Shot Angle Geometry
+Because animals in the field are rarely perfectly perpendicular, the hunter must master the geometry of the "Off-Side Shoulder".2 The target marker on the broadside guides must be understood as the entry point for a projectile that should ideally exit through the opposite front leg.2
+The Quartering-Away Shot
+This is often considered the most effective alternative to the broadside shot.2 By aiming for the far-side shoulder, the bullet travels diagonally through the lung lobes and heart.5 This angle is particularly advantageous for larger animals like the Kudu or Eland because it allows the bullet to enter the soft tissue behind the ribs and reach the heart without having to break the near-side shoulder first.8
+The Quartering-Toward Shot
+This is a higher-risk angle that demands high-velocity projectiles.2 The aim point is the point of the near-side shoulder, with the intention of the bullet passing into the chest cavity.2 This shot often strikes the heavy humerus, necessitating a bullet that can withstand high-impact stress without veering off course.1
+The Frontal Shot
+On large animals like the Buffalo or Wildebeest, the frontal shot is a stopping shot.2 The target is the center of the brisket, slightly above the point where the legs meet.9 The hunter must be certain that the animal is facing directly toward them; even a five-degree tilt can cause the bullet to miss the heart and enter the shoulder or the gut.9
+Physiological Resilience and Environmental Factors
+A critical second-order insight involves the "Adrenaline Cycle" of African game. Many species, particularly the Blue Wildebeest and Cape Buffalo, have a physiological capacity to function for several minutes even after a fatal shot to the lungs.9
+Tracking and Recovery Implications
+The "Double Lung" shot is the gold standard because it causes the thoracic cavity to depressurize, leading to rapid unconsciousness.6 However, in thick bush conditions, an animal that runs even 100 yards can be lost if there is no exit wound to provide a blood trail.2 This is why Professional Hunters often prioritize a shot that breaks at least one shoulder, anchoring the animal in place while the vitals fail.11
+Temperature and Meat Recovery
+In the high-temperature environments of Southern Africa, a misplaced shot that results in a gut hit or a long tracking job leads to "bone sour," where the meat begins to spoil from the inside out due to high body heat and the slow death of the animal.2 Ethical shot placement is thus not only a moral imperative but a practical requirement for the sustainable use of the resource.2
+Conclusion: The Synthesis of Precision and Ethics
+The technical data provided for these 14 species establishes a rigorous framework for ethical harvesting and visual education. By standardizing the "Perfect Shot" placement through the low-and-forward paradigm and implementing a uniform visual series—characterized by a 4:5 vertical ratio, a ghost-view anatomical style, and a standardized target marker—we provide the hunter and the professional with a tool of unparalleled clarity.
+The primary findings of this research emphasize that:
+1. Anatomy is Specific: While general rules exist, the deceptive humps of the Wildebeest, Kudu, and Gemsbok require species-specific knowledge to avoid "No-Man's Land".2
+2. Target Uniformity is Essential: A single, consistent marker across all species reduces cognitive load and ensures that the hunter focuses on the anatomical landmark rather than the icon itself.43
+3. Visual Clarity Prevails: By removing text and utilizing a standardized ratio, the guides become universal anatomical maps, suitable for a wide range of professional applications in the Southern African field.43
+Through the integration of terminal ballistics, skeletal landmarks, and standardized visual design, this project ensures that the pursuit of African game remains grounded in the highest standards of accuracy, efficiency, and respect for the quarry.
+Works cited
+1. Shot Placement Guide | Hunting Game in Africa, accessed March 9, 2026, https://gamehuntingsafaris.com/shot-placement-guide-for-hunting-game-in-africa
+2. Ethical shot placement: African game vitals & Anatomy Guide, accessed March 9, 2026, https://huntinginafricasafaris.com/south-african-hunting-outfitters-professional-hunters/shot-placement-african-game/
+3. Shot Placement Guide - Umlilo Safaris, accessed March 9, 2026, https://www.umlilosafaris.co.za/assets/Shot%20Placement%20Guide%202-0_Smaller.pdf
+4. Kudu Shot Placement when Hunting Plains Game in Africa, accessed March 9, 2026, https://gamehuntingsafaris.com/blog/kudu-shot-placement-when-hunting-plains-game-in-africa
+5. Perfect shot placement on African Plains Game - Blackhorn Safaris, accessed March 9, 2026, https://blackhornsafaris.com/https-blackhornsafaris-com-mastering-shot-placement/
+6. Chest Cavity: The Main Vital Area - Bowhunter Ed, accessed March 9, 2026, https://www.bowhunter-ed.com/national/studyGuide/Chest-Cavity-The-Main-Vital-Area/301099_185507/
+7. In Their Tracks - RifleShooter, accessed March 9, 2026, https://www.rifleshootermag.com/editorial/shooting_tips_tracks_091907/83539
+8. Shot Placement on a Kudu Hunt in South Africa - Blackhorn Safaris, accessed March 9, 2026, https://blackhornsafaris.com/shot-placement-for-a-kudu-hunt-in-south-africa/
+9. Shot Placement on Cape Buffalo | Game Hunting Safaris, accessed March 9, 2026, https://gamehuntingsafaris.com/shot-placement-cape-buffalo
+10. Shot Placement on Alaskan Game, Alaska Department of Fish and Game, accessed March 9, 2026, https://www.adfg.alaska.gov/index.cfm?adfg=hunting.shot
+11. How to Determine the Best Deer Shot Placement - Huntwise, accessed March 9, 2026, https://huntwise.com/field-guide/deer/best-deer-shot-placement-tips-for-a-clean-shot
+12. Shot placements - Pete Safaris, accessed March 9, 2026, https://www.petesafaris.com/shotplacements/
+13. Buffalo Shot Placement - AHG - African Hunting Gazette, accessed March 9, 2026, https://africanhuntinggazette.com/buffalo-shot-placement/
+14. Trophy Blue Wildebeest Hunting In South Africa, accessed March 9, 2026, https://biggamehuntingadventures.com/trophy-blue-wildebeest-hunting-south-africa/
+15. Blue Wildebeest Hunting - Wildebeest Hunts Tips & Techniques - Bowker Hunting, accessed March 9, 2026, https://bowkerafricanhunts.com/plains-game/blue-wildebeest-hunting
+16. Golden Wildebeest - Pete Safaris, accessed March 9, 2026, https://www.petesafaris.com/golden-wildebeest/
+17. Hunting Golden Wildebeest in South Africa - Somerby Safaris, accessed March 9, 2026, https://somerbysafaris.com/species/hunting-golden-wildebeest/
+18. Blue Wildebeest Hunting in South Africa with Tinashe Outfitters, accessed March 9, 2026, https://tinashegroup.co.za/p49/africa-hunting/blue-wildebeest-hunting-in-south-africa.html
+19. Hunting Catalogue - Blue Wildebeest - Tundavala Hunting Safaris, accessed March 9, 2026, https://tundavala.com/hunting-catalogue-blue-wildebeest/
+20. Hunting Impala in South Africa - Somerby Safaris, accessed March 9, 2026, https://somerbysafaris.com/species/hunting-impala-in-south-africa/
+21. All You need Know About Gemsbok Hunts - Bowker Hunting, accessed March 9, 2026, https://bowkerafricanhunts.com/plains-game/gemsbok-hunting
+22. Gemsbok & Gemsbok Hunting: A Challenging Hunt in Africa | Game Hunting Safaris, accessed March 9, 2026, https://gamehuntingsafaris.com/blog/gemsbok-gemsbok-hunting-a-challenging-hunt-in-africa
+23. Shot Placement & Rifle rec - Red Sands Safaris, accessed March 9, 2026, https://redsandsafaris.com/files/RS1.pdf
+24. Eland Hunting & Hunts - Blackhorn Safaris, accessed March 9, 2026, https://blackhornsafaris.com/eland-hunting/
+25. Hunting Catalogue - Red Hartebeest - Tundavala Hunting Safaris, accessed March 9, 2026, https://tundavala.com/hunting-catalogue-red-hartebeest/
+26. Impala information - Safaris, accessed March 9, 2026, https://www.rustdewintersafaris.com/impala-information
+27. Impalas: Facts, Habitat, Diet, Threats & Conservation | IFAW, accessed March 9, 2026, https://www.ifaw.org/animals/impalas
+28. Impala | African Wildlife Foundation, accessed March 9, 2026, https://www.awf.org/wildlife-conservation/impala
+29. All About the Impala | Sports Afield, accessed March 9, 2026, https://sportsafield.com/2024/all-about-the-impala/
+30. Trophy Blesbok Hunting In South Africa, accessed March 9, 2026, https://biggamehuntingadventures.com/trophy-blesbok-hunting-south-africa/
+31. Hunting Catalogue - Blesbuck - Tundavala Hunting Safaris, accessed March 9, 2026, https://tundavala.com/hunting-catalogue-blesbuck/
+32. Trophy Springbok Hunting In South Africa, accessed March 9, 2026, https://biggamehuntingadventures.com/trophy-springbok-hunting-in-south-africa/
+33. Springbok Shot Placement - Shakari Connection, accessed March 9, 2026, https://www.shakariconnection.com/springbok-shot-placement.html
+34. The Ultimate Guide to Springbok Hunting | Game Hunting Safaris, accessed March 9, 2026, https://gamehuntingsafaris.com/blog/the-ultimate-guide-to-springbok-hunting
+35. Red Lechwe Hunting in South Africa with Tinashe Outfitters, accessed March 9, 2026, https://tinashegroup.co.za/p63/africa-hunting/red-lechwe-hunting-in-south-africa.html
+36. Red lechwe hunting in South Africa: Calibers, 2026 Prices & Safaris, accessed March 9, 2026, https://huntinginafricasafaris.com/african-hunting-safaris/hunting-south-africa/african-game-animals-list-trophy-hunting-africa/red-lechwe-hunting-south-africa/
+37. Hunting Lechwe in Africa - Huntershill Safaris, accessed March 9, 2026, https://huntershillsafaris.co.za/2025/12/03/hunting-lechwe-in-africa/
+38. Hunting Red Lechwe in Southern Africa, accessed March 9, 2026, https://selectworldwidehuntingsafaris.com/p52/hunting-red-lechwe-in-southern-africa/
+39. The Best Deer Shot Placement from Any Angle - mtntough, accessed March 9, 2026, https://mtntough.com/blogs/mtntough-blog/deer-shot-placement
+40. A Complete Revision of the Shot Placement for African Big Game - Robertson, Kevin: 9781571574305 - AbeBooks, accessed March 9, 2026, https://www.abebooks.com/9781571574305/Perfect-Shot-Complete-Revision-Placement-1571574301/plp
+41. Cape buffalo in South Africa - The Hole Story, accessed March 9, 2026, https://blog.hornady.com/cape-buffalo-in-south-africa-ae98e4a35500
+42. THE PERFECT SHOT: SHOT PLACEMENT FOR AFRICAN BIG GAME. By Kevin Robertson., accessed March 9, 2026, https://www.anglebooks.com/the-perfect-shot-shot-placement-for-african-big-game-by-kevin-robertson.html
+43. Hunting Targets royalty-free images - Shutterstock, accessed March 9, 2026, https://www.shutterstock.com/search/hunting-targets
+44. 14100+ Hunting Target Stock Illustrations, Royalty-Free Vector Graphics & Clip Art - iStock, accessed March 9, 2026, https://www.istockphoto.com/illustrations/hunting-target

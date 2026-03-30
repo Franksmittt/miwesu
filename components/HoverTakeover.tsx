@@ -12,41 +12,12 @@ const ONE_UI_EASE = [0.22, 0.25, 0, 1] as const
 
 const vibes = [
   {
-    label: 'Bachelor Bash',
-    tagline: 'Lapa, braai & pool. Epic groups.',
-    image: '/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg',
-    href: '/activities',
-  },
-  {
-    label: 'Romantic Escape',
-    tagline: 'Sunset boma, starry skies.',
-    image: '/images/_filename_Thabazimbi_W_110jpg__Nano_Banana_Pro_77108.jpg',
-    href: '/activities',
-  },
-  {
-    label: 'Family Eden',
-    tagline: 'Pool, trampoline, jungle gym.',
-    image: '/images/_filename_Thabazimbi_N_140jpg__Nano_Banana_Pro_44533.jpg',
-    href: '/residences',
-  },
-  {
-    label: 'The Oasis',
-    tagline: 'Pool, lawn, thatched shade.',
-    image: '/images/_filename_Gemini_Generated_Ima_Nano_Banana_Pro_63120.jpg',
-    href: '/residences',
-  },
-  {
-    label: "Hunter's Brotherhood",
-    tagline: 'Trophy, braai, lodge life.',
-    image: '/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg',
-    href: '/wildlife',
-  },
-  {
-    label: 'City Escape',
-    tagline: 'Unplug. Silence. Bushveld.',
-    image: heroImages.home,
-    href: '/about',
-  },
+    label: 'Bachelor Bash', tagline: 'Lapa, braai & pool. Epic groups.', image: '/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg', href: '/activities', }, {
+    label: 'Romantic Escape', tagline: 'Sunset boma, starry skies.', image: '/images/_filename_Thabazimbi_W_110jpg__Nano_Banana_Pro_77108.jpg', href: '/activities', }, {
+    label: 'Family Eden', tagline: 'Pool, trampoline, jungle gym.', image: '/images/_filename_Thabazimbi_N_140jpg__Nano_Banana_Pro_44533.jpg', href: '/residences', }, {
+    label: 'The Oasis', tagline: 'Pool, lawn, thatched shade.', image: '/images/_filename_Gemini_Generated_Ima_Nano_Banana_Pro_63120.jpg', href: '/residences', }, {
+    label: "Hunter's Brotherhood", tagline: 'Trophy, braai, lodge life.', image: '/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg', href: '/wildlife', }, {
+    label: 'City Escape', tagline: 'Unplug. Silence. Bushveld.', image: heroImages.home, href: '/about', },
 ]
 
 export default function HoverTakeover() {
@@ -83,7 +54,7 @@ export default function HoverTakeover() {
       </motion.div>
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-onyx/40 via-onyx/50 to-onyx" />
 
-      {/* Viewing Area: top 1/3 — headline, generous whitespace */}
+      {/* Viewing Area: top 1/3, headline, generous whitespace */}
       <div className="relative z-10 flex min-h-[33.333vh] flex-col justify-end pb-8 sm:pb-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
           <span className="text-gold-500 text-[10px] sm:text-xs tracking-[0.35em] uppercase font-bold block mb-4 font-sans">
@@ -100,7 +71,7 @@ export default function HoverTakeover() {
         </div>
       </div>
 
-      {/* Interaction Area: bottom 2/3 — Bento grid, 24px gutters */}
+      {/* Interaction Area: bottom 2/3, Bento grid, 24px gutters */}
       <div className="relative z-10 flex flex-1 items-start justify-center px-4 sm:px-6 lg:px-8 pb-16 sm:pb-24">
         <div className="w-full max-w-7xl">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -128,9 +99,7 @@ export default function HoverTakeover() {
 }
 
 function VibeCard({
-  vibe,
-  onHoverStart,
-  onHoverEnd,
+  vibe, onHoverStart, onHoverEnd,
 }: {
   vibe: (typeof vibes)[0]
   onHoverStart: () => void

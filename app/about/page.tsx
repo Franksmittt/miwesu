@@ -194,7 +194,7 @@ export default function AboutPage() {
               <div className="lg:col-span-6 flex flex-col lg:h-full min-h-0 reveal delay-100 order-1 lg:order-2">
                 <div className="relative w-full flex-1 min-h-[280px] aspect-[4/3] lg:aspect-auto lg:min-h-0 lg:flex-1 rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
                   <Image
-                    src="/images/kudu-bull-portrait-01.png"
+                    src="/images/greater-kudu_card.png"
                     alt="Kudu bull in the Sweetveld at MIWESU"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
@@ -262,7 +262,7 @@ export default function AboutPage() {
                   >
                     <div className="h-56 sm:h-64 overflow-hidden relative">
                       <Image
-                        src="/images/kudu-bull-portrait-01.png"
+                        src="/images/greater-kudu_card.png"
                         alt="Greater Kudu (Tragelaphus strepsiceros) - Iconic antelope species at Miwesu"
                         fill
                         sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"

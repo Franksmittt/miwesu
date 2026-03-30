@@ -1,9 +1,11 @@
 import { Metadata } from 'next'
-import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard } from '@/lib/seo'
-import { FAQPageSchema, BreadcrumbSchema } from '@/components/StructuredData'
+import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard, generateWebPageSchema } from '@/lib/seo'
+import { marketingOgAbsolute } from '@/lib/open-graph'
+import { FAQPageSchema, BreadcrumbSchema, WebPageSchema } from '@/components/StructuredData'
 import { FAQ_ITEMS } from '@/lib/faq-data'
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.co.za'
+const ogImage = marketingOgAbsolute(baseUrl, 'faq')
 const breadcrumbItems = [
   { name: 'Home', url: baseUrl + '/' },
   { name: 'FAQ', url: constructCanonicalUrl('faq') },
@@ -17,17 +19,24 @@ export const metadata: Metadata = {
     'FAQ | Frequently Asked Questions',
     'Find answers to frequently asked questions about MIWESU GAME FARM in the Makoppa district, Thabazimbi.',
     constructCanonicalUrl('faq'),
-    `${baseUrl}/og-image.jpg`
+    ogImage
   ),
   twitter: generateTwitterCard(
     'FAQ | Frequently Asked Questions',
     'Find answers to frequently asked questions about MIWESU GAME FARM.',
-    `${baseUrl}/og-image.jpg`
+    ogImage
   ),
   alternates: {
     canonical: constructCanonicalUrl('faq'),
   },
 }
+
+const faqWebPage = generateWebPageSchema({
+  name: 'FAQ | MIWESU GAME FARM',
+  description:
+    'Vetting, malaria-free Waterberg, residences, conservation harvest, and travel FAQs for MIWESU in Makoppa, Thabazimbi, Limpopo.',
+  url: constructCanonicalUrl('faq'),
+})
 
 export default function FAQLayout({
   children,
@@ -37,6 +46,7 @@ export default function FAQLayout({
   return (
     <>
       <BreadcrumbSchema items={breadcrumbItems} />
+      <WebPageSchema schema={faqWebPage} />
       <FAQPageSchema faqs={FAQ_ITEMS} />
       {children}
     </>

@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
-import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard } from '@/lib/seo'
-import { BreadcrumbSchema } from '@/components/StructuredData'
+import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard, generateWebPageSchema } from '@/lib/seo'
+import { BreadcrumbSchema, WebPageSchema } from '@/components/StructuredData'
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.co.za'
 const path = 'residences/stone-villa'
@@ -28,6 +28,13 @@ export const metadata: Metadata = {
   ),
 }
 
+const stoneVillaWebPage = generateWebPageSchema({
+  name: 'Rooibok Kraal | 6-sleeper boutique lodge MIWESU',
+  description:
+    'Intimate Waterberg residence near the pool: two en-suites, outdoor braai, stargazing deck. Exclusive use, Makoppa, Thabazimbi, Limpopo.',
+  url: constructCanonicalUrl(path),
+})
+
 export default function StoneVillaLayout({
   children,
 }: {
@@ -36,6 +43,7 @@ export default function StoneVillaLayout({
   return (
     <>
       <BreadcrumbSchema items={breadcrumbItems} />
+      <WebPageSchema schema={stoneVillaWebPage} />
       {children}
     </>
   )

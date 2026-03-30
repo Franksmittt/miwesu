@@ -1,8 +1,16 @@
 import { Metadata } from 'next'
-import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard, generateTouristTripSchema } from '@/lib/seo'
-import { TouristTripSchema, BreadcrumbSchema } from '@/components/StructuredData'
+import {
+  constructCanonicalUrl,
+  generateOpenGraph,
+  generateTwitterCard,
+  generateTouristTripSchema,
+  generateWebPageSchema,
+} from '@/lib/seo'
+import { marketingOgAbsolute } from '@/lib/open-graph'
+import { TouristTripSchema, BreadcrumbSchema, WebPageSchema } from '@/components/StructuredData'
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.co.za'
+const ogImage = marketingOgAbsolute(baseUrl, 'activities')
 const breadcrumbItems = [
   { name: 'Home', url: baseUrl + '/' },
   { name: 'Activities & Experiences', url: constructCanonicalUrl('activities') },
@@ -16,17 +24,24 @@ export const metadata: Metadata = {
     'Malaria-Free Celestial Safaris & Conservation Harvest | Waterberg',
     'Conservation harvesting (rifle and bow), photographic safaris, malaria-free celestial safaris, wildlife viewing. MIWESU, Makoppa district, Thabazimbi.',
     constructCanonicalUrl('activities'),
-    `${baseUrl}/og-image.jpg`
+    ogImage
   ),
   twitter: generateTwitterCard(
     'Malaria-Free Celestial Safaris & Conservation Harvest | Waterberg',
     'Conservation harvest, photographic and celestial safaris. MIWESU, Makoppa district.',
-    `${baseUrl}/og-image.jpg`
+    ogImage
   ),
   alternates: {
     canonical: constructCanonicalUrl('activities'),
   },
 }
+
+const activitiesWebPage = generateWebPageSchema({
+  name: 'Activities & experiences | MIWESU Waterberg',
+  description:
+    'Conservation harvest, photographic safari, celestial stargazing, and exclusive-use stays in malaria-free Makoppa, Thabazimbi, Limpopo.',
+  url: constructCanonicalUrl('activities'),
+})
 
 const sampleSafariItinerarySchema = generateTouristTripSchema({
   name: '10-Day Conservation Harvest Safari - Makoppa',
@@ -47,6 +62,7 @@ export default function ActivitiesLayout({
   return (
     <>
       <BreadcrumbSchema items={breadcrumbItems} />
+      <WebPageSchema schema={activitiesWebPage} />
       <TouristTripSchema schema={sampleSafariItinerarySchema} />
       {children}
     </>

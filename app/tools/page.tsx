@@ -2,31 +2,12 @@
 
 import Layout from '@/components/Layout'
 import Link from 'next/link'
-import { FileText, Scale, Activity, ArrowRight } from 'lucide-react'
+import { FileText, Scale, ArrowRight } from 'lucide-react'
 
 const tools = [
   {
-    title: 'SAPS 520 Generator',
-    description: 'Prepare your temporary firearm import application for South Africa. Enter your details and firearms to generate a formatted PDF ready for submission.',
-    href: '/tools/saps520',
-    icon: FileText,
-    label: 'Firearm logistics',
-  },
-  {
-    title: 'Biltong Yield Calculator',
-    description: 'Estimate wet carcass weight and dry biltong yield by species. Built for the local SA market with standard processing variables.',
-    href: '/tools/biltong',
-    icon: Scale,
-    label: 'Meat yield',
-  },
-  {
-    title: 'Live Telemetry Dashboard',
-    description: 'Conservation impact metrics and kiln moisture data: live-style dashboards for the Iron Eden and Engineered Heat.',
-    href: '/tools/telemetry',
-    icon: Activity,
-    label: 'Impact & moisture',
-  },
-]
+    title: 'SAPS 520 Generator', description: 'Prepare your temporary firearm import application for South Africa. Enter your details and firearms to generate a formatted PDF ready for submission.', href: '/tools/saps-520', icon: FileText, label: 'Firearm logistics', }, {
+    title: 'Biltong Yield Calculator', description: 'Estimate wet carcass weight and dry biltong yield by species. Built for the local SA market with standard processing variables.', href: '/tools/biltong-calculator', icon: Scale, label: 'Meat yield', }, ]
 
 export default function ToolsPage() {
   return (
@@ -41,14 +22,14 @@ export default function ToolsPage() {
               Tools
             </h1>
             <p className="font-sans text-gray-400 text-lg max-w-2xl mx-auto">
-              SAPS 520 preparation, biltong yield estimates, and live telemetry: everything you need to plan and verify.
+              SAPS 520 preparation and biltong yield estimates, practical utilities for planning your hunt and logistics.
             </p>
           </div>
         </section>
 
         <section className="py-16 md:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid gap-8 md:grid-cols-2 md:max-w-5xl md:mx-auto">
               {tools.map((tool) => {
                 const Icon = tool.icon
                 return (

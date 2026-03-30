@@ -8,7 +8,7 @@ Luxury Next.js 15 application for the private sanctuary in the Makoppa district 
 ## 1. Project Summary
 
 **What it is**  
-A marketing, booking, and operations site for **MIWESU Game Farm** (“Iron Eden”) in the Makoppa Dome, Thabazimbi. The site presents two private residences (The Homestead 16 sleepers, The Stone Villa 6 sleepers), 14 huntable species, activities (conservation harvest, photographic safaris, celestial safaris, wellness, wildlife viewing), conservation impact, and practical tools (SAPS 520 PDF, Biltong calculator, Live Telemetry). Guests submit **enquiry-only** bookings (no online payment); owners manage enquiries in a **private admin portal** (dashboard, bookings list/detail, **calendar view**, manual “Add booking,” email from platform, invoice PDF, status workflow). A **Rates Manager** lets owners edit accommodation/species/activities/extras and export a **Master Pricelist PDF**. **Pricing is on request only on the public site**; no amounts are shown on the website. SEO is implemented site-wide (metadata, canonicals, sitemap, robots, JSON-LD). Design: Onyx/Gold palette, Cinzel + Montserrat, Liquid Glass, Bento Grids; sensory UX (optional ambient audio, haptic on primary actions).
+A marketing, booking, and operations site for **MIWESU Game Farm** (“Iron Eden”) in the Makoppa Dome, Thabazimbi. The site presents two private residences (The Homestead 16 sleepers, The Stone Villa 6 sleepers), 14 huntable species, activities (conservation harvest, photographic safaris, celestial safaris, wellness, wildlife viewing), conservation impact, and practical tools (SAPS 520 PDF, Biltong calculator). Guests submit **enquiry-only** bookings (no online payment); owners manage enquiries in a **private admin portal** (dashboard, bookings list/detail, **calendar view**, manual “Add booking,” email from platform, invoice PDF, status workflow). A **Rates Manager** lets owners edit accommodation/species/activities/extras and export a **Master Pricelist PDF**. **Pricing is on request only on the public site**; no amounts are shown on the website. SEO is implemented site-wide (metadata, canonicals, sitemap, robots, JSON-LD). Design: Onyx/Gold palette, Cinzel + Montserrat, Liquid Glass, Bento Grids; sensory UX (optional ambient audio, haptic on primary actions).
 
 **Tech**  
 Next.js 15 (App Router), React 19, TypeScript, Tailwind CSS, Framer Motion. Data: `lib/*` (residences, species, activities, blog, gallery); **Prisma + Supabase** (PostgreSQL) for bookings, units, rates, email log; when DB is empty, admin uses mock data. **Resend** for all email (contact form, booking notifications, admin→guest, confirmation on status→Confirmed). **pdf-lib** (SAPS 520, invoice); **@react-pdf/renderer** (Master Pricelist PDF; uses built-in Helvetica fonts so PDF generates reliably in serverless). Stripe checkout wired but not used in enquiry flow.
@@ -130,10 +130,9 @@ Each species page: hero, Quick Facts (SpeciesBentoGrid), Compare button, taxonom
 ### Tools (Radical Trust)
 | Route | Summary |
 |-------|--------|
-| **/tools** | Tools hub: SAPS 520 Generator, Biltong Yield Calculator, Live Telemetry Dashboard (liquid-glass-dark cards). |
-| **/tools/saps520** | SAPS 520 form: applicant (name, passport, DOB, address, email, phone), travel (ports, dates, reason), up to 4 firearms. Submit → API generates PDF (pdf-lib). Legal notice: do not sign until SAPS. Haptic on Generate. |
-| **/tools/biltong** | Species dropdown (14), wet carcass weight; estimated dry biltong yield (SA ~38%). Uses `lib/biltong-data.ts`. |
-| **/tools/telemetry** | Two panels: Conservation Impact (hectares, anti-poaching hours, community ZAR); Kiln Telemetry (moisture %, temp, batch). Data from `/api/telemetry` (simulated); refresh. |
+| **/tools** | Tools hub: SAPS 520 Generator and Biltong Yield Calculator (liquid-glass-dark cards). |
+| **/tools/saps-520** | SAPS 520 form: applicant (name, passport, DOB, address, email, phone), travel (ports, dates, reason), up to 4 firearms. Submit → API generates PDF (pdf-lib). Legal notice: do not sign until SAPS. Haptic on Generate. |
+| **/tools/biltong-calculator** | Species dropdown (14), wet carcass weight; estimated dry biltong yield (SA ~38%). Uses `lib/biltong-data.ts`. |
 
 ### Admin (backend)
 | Route | Summary |
@@ -220,7 +219,6 @@ When DB is empty or Prisma fails, admin uses mock bookings and default rate item
 | POST | /api/checkout | Stripe checkout session (wired; not used in enquiry flow). |
 | POST | /api/webhooks/stripe | Stripe webhooks. |
 | POST | /api/saps520/pdf | Generate SAPS 520 PDF (pdf-lib) from form data. |
-| GET | /api/telemetry | Simulated conservation + kiln telemetry data. |
 | POST | /api/wood-order | Wood product order submission (Resend). |
 
 ---

@@ -62,6 +62,47 @@ export default function DePage() {
             </p>
           </div>
         </section>
+
+        <section className="py-16 md:py-24 bg-marble border-t border-gray-200">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 font-sans text-onyx space-y-6 text-base leading-relaxed">
+            <h2 className="font-serif text-2xl md:text-3xl text-onyx">Warum MIWESU im Waterberg?</h2>
+            <p>
+              MIWESU GAME FARM liegt im <strong>Makoppa-Bezirk</strong> bei Thabazimbi, im malariafreien{' '}
+              <strong>Waterberg</strong> (Limpopo). Hier treffen Arid Sweet Bushveld, exklusive
+              Privatresidenzen und eine verwaltete Population von{' '}
+              <strong>14 Huftierarten</strong> zusammen, von Großer Kudu und Kapbüffel bis Impala, Springbock und Lechwe.
+            </p>
+            <p>
+              Internationale Jäger profitieren von klarer Kommunikation zu{' '}
+              <Link href="/trophy-export" className="text-gold-600 hover:underline font-medium">
+                Trophäen-Export
+              </Link>, {' '}
+              <Link href="/rates" className="text-gold-600 hover:underline font-medium">
+                Preisen
+              </Link>{' '}
+              und{' '}
+              <Link href="/wildlife" className="text-gold-600 hover:underline font-medium">
+                Artenprofilen
+              </Link>
+              . Für Unterkunft und Verfügbarkeit:{' '}
+              <Link href="/residences" className="text-gold-600 hover:underline font-medium">
+                Residenzen
+              </Link>{' '}
+              und{' '}
+              <Link href="/book" className="text-gold-600 hover:underline font-medium">
+                Buchungsanfrage
+              </Link>
+              .
+            </p>
+            <p className="text-sm text-gray-600">
+              Vollständige Informationen in Englisch auf der{' '}
+              <Link href="/" className="text-gold-600 hover:underline">
+                Startseite (English)
+              </Link>
+              .
+            </p>
+          </div>
+        </section>
       </main>
     </Layout>
   )

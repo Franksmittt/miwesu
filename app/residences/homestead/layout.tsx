@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
-import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard } from '@/lib/seo'
-import { BreadcrumbSchema } from '@/components/StructuredData'
+import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard, generateWebPageSchema } from '@/lib/seo'
+import { BreadcrumbSchema, WebPageSchema } from '@/components/StructuredData'
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.co.za'
 const path = 'residences/homestead'
@@ -28,6 +28,13 @@ export const metadata: Metadata = {
   ),
 }
 
+const homesteadWebPage = generateWebPageSchema({
+  name: "Hunter's House | 16-sleeper luxury lodge MIWESU",
+  description:
+    'Exclusive-use main lodge on D1432: chef\'s kitchen, lapa, boma, multi-slide pool. Makoppa district, Thabazimbi, malaria-free Limpopo.',
+  url: constructCanonicalUrl(path),
+})
+
 export default function HomesteadLayout({
   children,
 }: {
@@ -36,6 +43,7 @@ export default function HomesteadLayout({
   return (
     <>
       <BreadcrumbSchema items={breadcrumbItems} />
+      <WebPageSchema schema={homesteadWebPage} />
       {children}
     </>
   )

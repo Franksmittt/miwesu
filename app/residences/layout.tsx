@@ -1,8 +1,10 @@
 import { Metadata } from 'next'
-import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard } from '@/lib/seo'
-import { BreadcrumbSchema } from '@/components/StructuredData'
+import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard, generateWebPageSchema } from '@/lib/seo'
+import { marketingOgAbsolute } from '@/lib/open-graph'
+import { BreadcrumbSchema, WebPageSchema } from '@/components/StructuredData'
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.co.za'
+const ogImage = marketingOgAbsolute(baseUrl, 'residences')
 const breadcrumbItems = [
   { name: 'Home', url: baseUrl + '/' },
   { name: 'Private Residences', url: constructCanonicalUrl('residences') },
@@ -16,17 +18,24 @@ export const metadata: Metadata = {
     'Private Residences | Luxury Accommodation',
     "Experience exclusive luxury at MIWESU GAME FARM. Choose from Hunter's House or Rooibok Kraal. Bespoke living with absolute privacy in the Makoppa district.",
     constructCanonicalUrl('residences'),
-    `${baseUrl}/og-image.jpg`
+    ogImage
   ),
   twitter: generateTwitterCard(
     'Private Residences | Luxury Accommodation',
     'Experience exclusive luxury at MIWESU GAME FARM with bespoke living and absolute privacy in the Makoppa district.',
-    `${baseUrl}/og-image.jpg`
+    ogImage
   ),
   alternates: {
     canonical: constructCanonicalUrl('residences'),
   },
 }
+
+const residencesWebPage = generateWebPageSchema({
+  name: 'Private residences | MIWESU luxury lodge accommodation',
+  description:
+    "Hunter's House and Rooibok Kraal: exclusive-use luxury on D1432, Makoppa district, Thabazimbi, malaria-free Waterberg.",
+  url: constructCanonicalUrl('residences'),
+})
 
 export default function ResidencesLayout({
   children,
@@ -36,6 +45,7 @@ export default function ResidencesLayout({
   return (
     <>
       <BreadcrumbSchema items={breadcrumbItems} />
+      <WebPageSchema schema={residencesWebPage} />
       {children}
     </>
   )

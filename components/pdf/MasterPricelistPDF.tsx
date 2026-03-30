@@ -1,10 +1,6 @@
 import React from 'react'
 import {
-  Document,
-  Page,
-  Text,
-  View,
-  StyleSheet,
+  Document, Page, Text, View, StyleSheet,
 } from '@react-pdf/renderer'
 
 // A4 = 210mm x 297mm (595.28 x 841.89 points)
@@ -16,116 +12,23 @@ const fontBody = 'Helvetica'
 
 const styles = StyleSheet.create({
   page: {
-    backgroundColor: '#0A0A0A',
-    color: '#E0E0E0',
-    padding: PADDING,
-    fontFamily: fontBody,
-  },
-  headerContainer: {
-    marginBottom: 16,
-    borderBottomWidth: 1,
-    borderBottomColor: '#D4AF37',
-    paddingBottom: 12,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'flex-end',
-  },
-  brandTitle: {
-    fontFamily: fontTitle,
-    fontSize: 22,
-    color: '#D4AF37',
-    letterSpacing: 2,
-    textTransform: 'uppercase',
-  },
-  subtitle: {
-    fontSize: 8,
-    color: '#A0A0A0',
-    marginTop: 2,
-    letterSpacing: 1,
-    textTransform: 'uppercase',
-  },
-  dateText: {
-    fontSize: 8,
-    color: '#D4AF37',
-  },
-  sectionTitle: {
-    fontFamily: fontTitle,
-    fontSize: 12,
-    color: '#F3E5AB',
-    marginTop: 12,
-    marginBottom: 6,
-    borderBottomWidth: 0.5,
-    borderBottomColor: '#333333',
-    paddingBottom: 4,
-  },
-  gridContainer: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'space-between',
-  },
-  bentoCard: {
-    width: '48%',
-    minHeight: CARD_HEIGHT,
-    backgroundColor: '#141414',
-    padding: 8,
-    marginBottom: 6,
-    borderRadius: 4,
-    borderWidth: 1,
-    borderColor: '#2A2A2A',
-  },
-  itemName: {
-    fontFamily: fontTitle,
-    fontSize: 10,
-    color: '#FFFFFF',
-    marginBottom: 2,
-  },
-  itemDesc: {
-    fontSize: 7,
-    color: '#888888',
-    marginBottom: 2,
-  },
-  priceRow: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginTop: 2,
-  },
-  priceLabel: {
-    fontSize: 7,
-    color: '#888888',
-  },
-  priceValueZAR: {
-    fontSize: 9,
-    fontWeight: 600,
-    color: '#E0E0E0',
-  },
-  priceValueUSD: {
-    fontSize: 9,
-    fontWeight: 600,
-    color: '#D4AF37',
-  },
-  footer: {
-    position: 'absolute',
-    bottom: PADDING,
-    left: PADDING,
-    right: PADDING,
-    textAlign: 'center',
-    fontSize: 7,
-    color: '#666666',
-    borderTopWidth: 1,
-    borderTopColor: '#2A2A2A',
-    paddingTop: 6,
-  },
-  continuedHeader: {
-    marginBottom: 8,
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-  continuedText: {
-    fontSize: 8,
-    color: '#A0A0A0',
-    textTransform: 'uppercase',
-  },
+    backgroundColor: '#0A0A0A', color: '#E0E0E0', padding: PADDING, fontFamily: fontBody, }, headerContainer: {
+    marginBottom: 16, borderBottomWidth: 1, borderBottomColor: '#D4AF37', paddingBottom: 12, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end', }, brandTitle: {
+    fontFamily: fontTitle, fontSize: 22, color: '#D4AF37', letterSpacing: 2, textTransform: 'uppercase', }, subtitle: {
+    fontSize: 8, color: '#A0A0A0', marginTop: 2, letterSpacing: 1, textTransform: 'uppercase', }, dateText: {
+    fontSize: 8, color: '#D4AF37', }, sectionTitle: {
+    fontFamily: fontTitle, fontSize: 12, color: '#F3E5AB', marginTop: 12, marginBottom: 6, borderBottomWidth: 0.5, borderBottomColor: '#333333', paddingBottom: 4, }, gridContainer: {
+    flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', }, bentoCard: {
+    width: '48%', minHeight: CARD_HEIGHT, backgroundColor: '#141414', padding: 8, marginBottom: 6, borderRadius: 4, borderWidth: 1, borderColor: '#2A2A2A', }, itemName: {
+    fontFamily: fontTitle, fontSize: 10, color: '#FFFFFF', marginBottom: 2, }, itemDesc: {
+    fontSize: 7, color: '#888888', marginBottom: 2, }, priceRow: {
+    flexDirection: 'row', justifyContent: 'space-between', marginTop: 2, }, priceLabel: {
+    fontSize: 7, color: '#888888', }, priceValueZAR: {
+    fontSize: 9, fontWeight: 600, color: '#E0E0E0', }, priceValueUSD: {
+    fontSize: 9, fontWeight: 600, color: '#D4AF37', }, footer: {
+    position: 'absolute', bottom: PADDING, left: PADDING, right: PADDING, textAlign: 'center', fontSize: 7, color: '#666666', borderTopWidth: 1, borderTopColor: '#2A2A2A', paddingTop: 6, }, continuedHeader: {
+    marginBottom: 8, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', }, continuedText: {
+    fontSize: 8, color: '#A0A0A0', textTransform: 'uppercase', },
 })
 
 export type RateItemPDF = {
@@ -168,7 +71,7 @@ export function MasterPricelistPDF({ items, generatedAt }: MasterPricelistPDFPro
       <View style={styles.priceRow}>
         <Text style={styles.priceLabel}>USD</Text>
         <Text style={styles.priceValueUSD}>
-          {item.priceUSD > 0 ? `$ ${item.priceUSD.toLocaleString()}` : '—'}
+          {item.priceUSD > 0 ? `$ ${item.priceUSD.toLocaleString()}` : '–'}
         </Text>
       </View>
     </View>

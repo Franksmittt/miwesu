@@ -1,8 +1,10 @@
 import { Metadata } from 'next'
-import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard } from '@/lib/seo'
-import { BreadcrumbSchema } from '@/components/StructuredData'
+import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard, generateWebPageSchema } from '@/lib/seo'
+import { marketingOgAbsolute } from '@/lib/open-graph'
+import { BreadcrumbSchema, WebPageSchema } from '@/components/StructuredData'
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.co.za'
+const ogImage = marketingOgAbsolute(baseUrl, 'blog')
 const breadcrumbItems = [
   { name: 'Home', url: baseUrl + '/' },
   { name: "Hunter's Journal", url: constructCanonicalUrl('blog') },
@@ -16,17 +18,24 @@ export const metadata: Metadata = {
     "Hunter's Journal | MIWESU Game Farm",
     "Authority content for international hunters. Trophy export, Sweetveld, Limpopo hunting.",
     constructCanonicalUrl('blog'),
-    `${baseUrl}/og-image.jpg`
+    ogImage
   ),
   twitter: generateTwitterCard(
     "Hunter's Journal | MIWESU Game Farm",
     "Authority content for international hunters.",
-    `${baseUrl}/og-image.jpg`
+    ogImage
   ),
   alternates: {
     canonical: constructCanonicalUrl('blog'),
   },
 }
+
+const blogIndexWebPage = generateWebPageSchema({
+  name: "Hunter's Journal | MIWESU authority content",
+  description:
+    'Ballistics, logistics, conservation harvest, Limpopo hunting, and trophy export articles for international hunters. Makoppa district, Thabazimbi.',
+  url: constructCanonicalUrl('blog'),
+})
 
 export default function BlogLayout({
   children,
@@ -36,6 +45,7 @@ export default function BlogLayout({
   return (
     <>
       <BreadcrumbSchema items={breadcrumbItems} />
+      <WebPageSchema schema={blogIndexWebPage} />
       {children}
     </>
   )

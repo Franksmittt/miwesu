@@ -2,6 +2,12 @@
 const nextConfig = {
   reactStrictMode: true,
   trailingSlash: false, // No trailing slashes (default Next.js behavior)
+  async redirects() {
+    return [
+      { source: '/tools/biltong', destination: '/tools/biltong-calculator', permanent: true },
+      { source: '/tools/saps520', destination: '/tools/saps-520', permanent: true },
+    ]
+  },
   images: {
     domains: ['images.unsplash.com'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],

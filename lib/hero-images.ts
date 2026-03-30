@@ -4,29 +4,17 @@
  */
 export const heroImages = {
   /** Homepage, about, blog, wildlife, gallery: wide lodge patio with braai and waterhole */
-  home: '/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg',
-  /** Residences, availability: braai under trees, savanna and water */
-  residences: '/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg',
-  /** Activities, partners: outdoor lodge life, braai under trees */
-  activities: '/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg',
-  /** Rates: Rooibok Kraal exterior */
-  rates: '/images/_filename_Thabazimbi_N_200jpeg_Nano_Banana_Pro_84885.jpg',
-  /** Wildlife, blog (limpopo): lodge in nature, panoramic patio */
-  wildlife: '/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg',
-  /** Conservation, wood: braai under trees, bushveld */
-  conservation: '/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg',
-  /** Contact: panoramic braai area */
-  contact: '/images/_filename_Panoramicjpg_style_A_Nano_Banana_Pro_56938.jpg',
-  /** FAQ: main house living area with thatched roof */
-  faq: '/images/_filename_Thabazimbi_N_38jpg_s_Nano_Banana_Pro_03494.jpg',
-  /** Gallery page hero */
-  gallery: '/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg',
-
-  // —— /residences “Beyond the Walls” bento (each tile uses a distinct photo)
-  /** Radical Privacy: Rooibok Kraal exterior — seclusion, exclusive use */
-  residencesBentoPrivacy: '/images/residences-second-house-main.jpg',
-  /** Ethical Harvest: bush tracking / conservation harvest (same asset as Activities conservation section) */
-  residencesBentoHarvest: '/images/_filename_Thabazimbi_N_166jpeg_Nano_Banana_Pro_08274.jpg',
-  /** The Ancient Dome: wide bushveld & lodge vista (same mood as About “the land”) */
+  home: '/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg', /** Residences, availability: braai under trees, savanna and water */
+  residences: '/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg', /** Activities, partners: outdoor lodge life, braai under trees */
+  activities: '/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg', /** Rates: Rooibok Kraal exterior */
+  rates: '/images/_filename_Thabazimbi_N_200jpeg_Nano_Banana_Pro_84885.jpg', /** Wildlife, blog (limpopo): lodge in nature, panoramic patio */
+  wildlife: '/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg', /** Conservation, wood: braai under trees, bushveld */
+  conservation: '/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg', /** Contact: panoramic braai area */
+  contact: '/images/_filename_Panoramicjpg_style_A_Nano_Banana_Pro_56938.jpg', /** FAQ: main house living area with thatched roof */
+  faq: '/images/_filename_Thabazimbi_N_38jpg_s_Nano_Banana_Pro_03494.jpg', /** Gallery page hero */
+  gallery: '/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg', //, /residences “Beyond the Walls” bento (each tile uses a distinct photo)
+  /** Radical Privacy: Rooibok Kraal exterior, seclusion, exclusive use */
+  residencesBentoPrivacy: '/images/residences-second-house-main.jpg', /** Ethical Harvest: bush tracking / conservation harvest (same asset as Activities conservation section) */
+  residencesBentoHarvest: '/images/_filename_Thabazimbi_N_166jpeg_Nano_Banana_Pro_08274.jpg', /** The Ancient Dome: wide bushveld & lodge vista (same mood as About “the land”) */
   residencesBentoDome: '/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg',
 } as const

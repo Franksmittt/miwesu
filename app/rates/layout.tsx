@@ -1,8 +1,16 @@
 import { Metadata } from 'next'
-import { constructCanonicalUrl, generateOpenGraph, generateTwitterCard, generateProductSchema } from '@/lib/seo'
-import { ProductSchema, BreadcrumbSchema } from '@/components/StructuredData'
+import {
+  constructCanonicalUrl,
+  generateOpenGraph,
+  generateTwitterCard,
+  generateProductSchema,
+  generateWebPageSchema,
+} from '@/lib/seo'
+import { marketingOgAbsolute } from '@/lib/open-graph'
+import { ProductSchema, BreadcrumbSchema, WebPageSchema } from '@/components/StructuredData'
 
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.miwesu.co.za'
+const ogImage = marketingOgAbsolute(baseUrl, 'rates')
 const breadcrumbItems = [
   { name: 'Home', url: baseUrl + '/' },
   { name: 'Rates & Pricing', url: constructCanonicalUrl('rates') },
@@ -16,17 +24,24 @@ export const metadata: Metadata = {
     'Rates & Pricing | Investment Guide',
     'View transparent pricing for MIWESU GAME FARM accommodations and activities. Request our confidential Investment Guide.',
     constructCanonicalUrl('rates'),
-    `${baseUrl}/og-image.jpg`
+    ogImage
   ),
   twitter: generateTwitterCard(
     'Rates & Pricing | Investment Guide',
     'View transparent pricing for MIWESU GAME FARM accommodations and activities.',
-    `${baseUrl}/og-image.jpg`
+    ogImage
   ),
   alternates: {
     canonical: constructCanonicalUrl('rates'),
   },
 }
+
+const ratesWebPage = generateWebPageSchema({
+  name: 'Rates & pricing | MIWESU GAME FARM',
+  description:
+    'Transparent accommodation and conservation harvest pricing for Thabazimbi, Makoppa district, Limpopo. Request the Conservation Investment Guide.',
+  url: constructCanonicalUrl('rates'),
+})
 
 const samplePackageSchema = generateProductSchema({
   name: '7-Day Plains Game & Golden Wildebeest Safari',
@@ -47,6 +62,7 @@ export default function RatesLayout({
   return (
     <>
       <BreadcrumbSchema items={breadcrumbItems} />
+      <WebPageSchema schema={ratesWebPage} />
       <ProductSchema schema={samplePackageSchema} />
       {children}
     </>

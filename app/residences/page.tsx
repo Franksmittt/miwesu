@@ -4,34 +4,14 @@ import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Layout from '@/components/Layout'
 import Link from 'next/link'
-import {
-  ChefHat,
-  Flame,
-  Layout as LayoutIcon,
-  TreePine,
-  Activity,
-  Waves,
-  ArrowRight,
-} from 'lucide-react'
+import { ChefHat, Flame, Layout as LayoutIcon, TreePine, Activity, Waves } from 'lucide-react'
 import { heroImages } from '@/lib/hero-images'
 import { lodgeSummary, mainLodgeHouse, secondHouse } from '@/lib/residences-data'
+import { ResidenceFlagshipCard } from '@/components/residences/ResidenceFlagshipCard'
 
 /** Species card images (same as wildlife page) for the 14 Species sliding bento */
 const SPECIES_CARD_IMAGES = [
-  '/images/greater-kudu_card.png',
-  '/images/blue-wildebeest_card.png',
-  '/images/impala_card.png',
-  '/images/gemsbok_card.png',
-  '/images/warthog_card.png',
-  '/images/blesbok_card.png',
-  '/images/bushbuck_card.png',
-  '/images/cape-buffalo_card.png',
-  '/images/dapple-impala_card.png',
-  '/images/golden-wildebeest_card.png',
-  '/images/springbok_card.png',
-  '/images/red-hartebeest_card.png',
-  '/images/Lechwe_card.png',
-  '/images/livingstone-eland_card.png',
+  '/images/greater-kudu_card.png', '/images/blue-wildebeest_card.png', '/images/impala_card.png', '/images/gemsbok_card.png', '/images/warthog_card.png', '/images/blesbok_card.png', '/images/bushbuck_card.png', '/images/cape-buffalo_card.png', '/images/dapple-impala_card.png', '/images/golden-wildebeest_card.png', '/images/springbok_card.png', '/images/red-hartebeest_card.png', '/images/Lechwe_card.png', '/images/livingstone-eland_card.png',
 ]
 
 export default function ResidencesPage() {
@@ -65,110 +45,31 @@ export default function ResidencesPage() {
           </div>
         </section>
 
-        {/* 2 & 3. Flagship cards – same max width as Bespoke Amenities (max-w-6xl) */}
-        <div className="w-[96vw] max-w-6xl mx-auto mb-[4vh] grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
-          {/* Hunter's House */}
-          <section className="h-[70vh] lg:min-h-[75vh] rounded-[40px] overflow-hidden border border-white/[0.08] relative group">
-            <Image
-              src="/images/residences-homestead-main.jpg"
-              alt="Hunter's House at MIWESU"
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover transition-transform duration-[0.8s] ease-out group-hover:scale-[1.03]"
-              priority
-            />
-            {/* Vignette: narrow dark top & bottom so more image shows in the middle */}
-            <div
-              className="absolute inset-0 z-[1] pointer-events-none"
-              style={{
-                background: 'linear-gradient(180deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.88) 16%, rgba(0,0,0,0.2) 38%, rgba(0,0,0,0.12) 62%, rgba(0,0,0,0.88) 84%, rgba(0,0,0,0.94) 100%)',
-              }}
-            />
-            <div className="absolute inset-0 z-10 flex flex-col justify-between p-3 md:p-4 lg:p-5">
-              <div className="[text-shadow:0_1px_3px_rgba(0,0,0,0.8),0_2px_12px_rgba(0,0,0,0.5)]">
-                <span className="text-gold-400 text-xs lg:text-sm font-bold tracking-[0.2em] uppercase mb-1 lg:mb-1.5 block">
-                  Monumental Scale
-                </span>
-                <h2 className="font-serif text-[5.5vw] sm:text-[4.5vw] lg:text-[2.75rem] xl:text-[3.25rem] font-normal leading-[0.95] tracking-tight mb-1 lg:mb-2 text-white">
-                  THE HOMESTEAD
-                </h2>
-                <p className="font-sans text-xs lg:text-sm xl:text-base font-light text-white/95 max-w-full leading-relaxed">
-                  Designed for absolute immersion in the Sweetveld. Featuring expansive entertainment areas, a traditional boma, and seamless integration with the surrounding wildlife.
-                </p>
-              </div>
-              <div className="flex flex-wrap gap-3 lg:gap-4 border-t border-white/20 pt-4 items-center [text-shadow:0_1px_2px_rgba(0,0,0,0.8)]">
-                <div className="flex flex-col">
-                  <span className="font-serif text-lg lg:text-xl font-normal mb-0.5 text-white">{mainLodgeHouse.sleepers}</span>
-                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-medium">Sleepers</span>
-                </div>
-                <div className="flex flex-col">
-                  <span className="font-serif text-lg lg:text-xl font-normal mb-0.5 text-white">{lodgeSummary.mainHouse.bedrooms}</span>
-                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-medium">Bedrooms</span>
-                </div>
-                <div className="flex flex-col">
-                  <span className="font-serif text-lg lg:text-xl font-normal mb-0.5 text-white">Boma</span>
-                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-medium">Fire Pit</span>
-                </div>
-                <Link
-                  href="/residences/homestead"
-                  className="ml-auto mt-2 lg:mt-0 bg-marble text-onyx px-5 lg:px-6 py-2.5 rounded-full font-medium uppercase tracking-widest text-xs no-underline hover:bg-gold-400 hover:-translate-y-0.5 transition-all duration-300"
-                >
-                  Explore <ArrowRight className="inline w-3.5 h-3.5 lg:w-4 lg:h-4 ml-1 -translate-y-px" />
-                </Link>
-              </div>
-            </div>
-          </section>
-
-          {/* Rooibok Kraal */}
-          <section className="h-[70vh] lg:min-h-[75vh] rounded-[40px] overflow-hidden border border-white/[0.08] relative group">
-            <Image
-              src="/images/residences-second-house-main.jpg"
-              alt="Rooibok Kraal at MIWESU"
-              fill
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover transition-transform duration-[0.8s] ease-out group-hover:scale-[1.03]"
-            />
-            {/* Vignette: narrow dark top & bottom so more image shows in the middle */}
-            <div
-              className="absolute inset-0 z-[1] pointer-events-none"
-              style={{
-                background: 'linear-gradient(180deg, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.88) 16%, rgba(0,0,0,0.2) 38%, rgba(0,0,0,0.12) 62%, rgba(0,0,0,0.88) 84%, rgba(0,0,0,0.94) 100%)',
-              }}
-            />
-            <div className="absolute inset-0 z-10 flex flex-col justify-between p-3 md:p-4 lg:p-5">
-              <div className="[text-shadow:0_1px_3px_rgba(0,0,0,0.8),0_2px_12px_rgba(0,0,0,0.5)]">
-                <span className="text-gold-400 text-xs lg:text-sm font-bold tracking-[0.2em] uppercase mb-1 lg:mb-1.5 block">
-                  Intimate Seclusion
-                </span>
-                <h2 className="font-serif text-[5.5vw] sm:text-[4.5vw] lg:text-[2.75rem] xl:text-[3.25rem] font-normal leading-[0.95] tracking-tight mb-1 lg:mb-2 text-white">
-                  THE STONE VILLA
-                </h2>
-                <p className="font-sans text-xs lg:text-sm xl:text-base font-light text-white/95 max-w-full leading-relaxed">
-                  Carved from the earth. Elevated to provide sweeping views of the ancient canopy, offering a stargazing master deck and immediate access to the wild.
-                </p>
-              </div>
-              <div className="flex flex-wrap gap-3 lg:gap-4 border-t border-white/20 pt-4 items-center [text-shadow:0_1px_2px_rgba(0,0,0,0.8)]">
-                <div className="flex flex-col">
-                  <span className="font-serif text-lg lg:text-xl font-normal mb-0.5 text-white">{secondHouse.sleepers}</span>
-                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-medium">Sleepers</span>
-                </div>
-                <div className="flex flex-col">
-                  <span className="font-serif text-lg lg:text-xl font-normal mb-0.5 text-white">2</span>
-                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-medium">En-Suites</span>
-                </div>
-                <div className="flex flex-col">
-                  <span className="font-serif text-lg lg:text-xl font-normal mb-0.5 text-white">Deck</span>
-                  <span className="text-[9px] lg:text-[10px] uppercase tracking-widest text-white/80 font-medium">Stargazing</span>
-                </div>
-                <Link
-                  href="/residences/stone-villa"
-                  className="ml-auto mt-2 lg:mt-0 bg-marble text-onyx px-5 lg:px-6 py-2.5 rounded-full font-medium uppercase tracking-widest text-xs no-underline hover:bg-gold-400 hover:-translate-y-0.5 transition-all duration-300"
-                >
-                  Explore <ArrowRight className="inline w-3.5 h-3.5 lg:w-4 lg:h-4 ml-1 -translate-y-px" />
-                </Link>
-              </div>
-            </div>
-          </section>
+        {/* 2 & 3. Flagship cards, shared component with home (max-w-6xl) */}
+        <div className="mx-auto mb-[4vh] grid w-[96vw] max-w-6xl grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-6">
+          <ResidenceFlagshipCard
+            titleHeading="h2"
+            priority
+            imageSrc="/images/residences-homestead-main.jpg"
+            imageAlt="Hunter's House at MIWESU"
+            eyebrow="Monumental Scale"
+            title="THE HOMESTEAD"
+            description="Designed for absolute immersion in the Sweetveld. Featuring expansive entertainment areas, a traditional boma, and seamless integration with the surrounding wildlife."
+            exploreHref="/residences/homestead"
+            stats={[
+              { value: mainLodgeHouse.sleepers, label: 'Sleepers' }, { value: lodgeSummary.mainHouse.bedrooms, label: 'Bedrooms' }, { value: 'Boma', label: 'Fire Pit' }, ]}
+          />
+          <ResidenceFlagshipCard
+            titleHeading="h2"
+            imageSrc="/images/residences-second-house-main.jpg"
+            imageAlt="Rooibok Kraal at MIWESU"
+            eyebrow="Intimate Seclusion"
+            title="THE STONE VILLA"
+            description="Carved from the earth. Elevated to provide sweeping views of the ancient canopy, offering a stargazing master deck and immediate access to the wild."
+            exploreHref="/residences/stone-villa"
+            stats={[
+              { value: secondHouse.sleepers, label: 'Sleepers' }, { value: 2, label: 'En-Suites' }, { value: 'Deck', label: 'Stargazing' }, ]}
+          />
         </div>
 
         {/* 4. Bespoke Amenities – 6 boxes, rounded edges */}
@@ -259,7 +160,7 @@ export default function ResidencesPage() {
             >
               <Image
                 src={heroImages.residencesBentoPrivacy}
-                alt="Rooibok Kraal — private residence and Sweetveld at MIWESU"
+                alt="Rooibok Kraal, private residence and Sweetveld at MIWESU"
                 fill
                 className="object-cover transition-transform duration-[0.8s] ease-out group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 33vw"
@@ -280,7 +181,7 @@ export default function ResidencesPage() {
             >
               <Image
                 src={heroImages.residencesBentoHarvest}
-                alt="Ethical conservation harvest — tracking game in the Sweetveld at MIWESU"
+                alt="Ethical conservation harvest, tracking game in the Sweetveld at MIWESU"
                 fill
                 className="object-cover transition-transform duration-[0.8s] ease-out group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 33vw"
@@ -301,7 +202,7 @@ export default function ResidencesPage() {
             >
               <Image
                 src={heroImages.residencesBentoDome}
-                alt="Makoppa region bushveld and lodge — ancient dome terrain"
+                alt="Makoppa region bushveld and lodge, ancient dome terrain"
                 fill
                 className="object-cover transition-transform duration-[0.8s] ease-out group-hover:scale-105"
                 sizes="(max-width: 768px) 100vw, 66vw"

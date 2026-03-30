@@ -34,7 +34,7 @@ export const speciesComparisonData: SpeciesComparison[] = [
     name: 'Greater Kudu',
     scientific: 'Tragelaphus strepsiceros',
     slug: 'greater-kudu',
-    image: '/images/kudu-bull-portrait-01.png',
+    image: '/images/greater-kudu_card.png',
     weightMale: '190 – 315 kg',
     weightFemale: '120 – 210 kg',
     shoulderHeightMale: '130 – 160 cm',
@@ -130,7 +130,7 @@ export const speciesComparisonData: SpeciesComparison[] = [
     name: 'Bushbuck',
     scientific: 'Tragelaphus sylvaticus',
     slug: 'bushbuck',
-    image: '/images/kudu-bull-portrait-01.png',
+    image: '/images/greater-kudu_card.png',
     weightMale: '45 – 80 kg',
     weightFemale: '25 – 60 kg',
     shoulderHeightMale: '70 – 90 cm',
@@ -242,7 +242,7 @@ export const speciesComparisonData: SpeciesComparison[] = [
     name: 'Livingstone Eland',
     scientific: 'Taurotragus oryx livingstonei',
     slug: 'livingstone-eland',
-    image: '/images/kudu-bull-portrait-01.png',
+    image: '/images/greater-kudu_card.png',
     weightMale: '400 – 942 kg',
     weightFemale: '300 – 600 kg',
     shoulderHeightMale: '150 – 175 cm',
@@ -255,3 +255,26 @@ export const speciesComparisonData: SpeciesComparison[] = [
     trophyNote: 'Largest antelope; spiral horns',
   },
 ]
+
+export function getSpeciesComparisonBySlug(slug: string): SpeciesComparison | undefined {
+  return speciesComparisonData.find((s) => s.slug === slug)
+}
+
+/** Valid slugs for ?a= & ?b= on /compare; ensures two distinct species. */
+export function resolveCompareSlugs(
+  rawA?: string | null,
+  rawB?: string | null
+): { slugA: string; slugB: string; speciesA: SpeciesComparison; speciesB: SpeciesComparison } {
+  const find = (slug: string) => speciesComparisonData.find((s) => s.slug === slug)
+  const defaultA = speciesComparisonData[0]
+  const defaultB = speciesComparisonData[1]
+  let slugA = rawA && find(rawA) ? rawA : defaultA.slug
+  let slugB = rawB && find(rawB) ? rawB : defaultB.slug
+  if (slugA === slugB) {
+    const alt = speciesComparisonData.find((s) => s.slug !== slugA)
+    slugB = alt?.slug ?? defaultB.slug
+  }
+  const speciesA = find(slugA)!
+  const speciesB = find(slugB)!
+  return { slugA, slugB, speciesA, speciesB }
+}

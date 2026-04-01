@@ -176,13 +176,20 @@ async function main() {
       sortOrder: 0,
     },
   })
+  await prisma.rateItem.updateMany({
+    where: { category: 'ACTIVITY', name: 'Photographic Safari' },
+    data: {
+      name: 'Game drives & walking safaris',
+      description: 'Per person when itemised; often arranged with stay',
+    },
+  })
   await prisma.rateItem.upsert({
-    where: { category_name: { category: 'ACTIVITY', name: 'Photographic Safari' } },
+    where: { category_name: { category: 'ACTIVITY', name: 'Game drives & walking safaris' } },
     update: { priceZAR: 2500, priceUSD: 135 },
     create: {
       category: 'ACTIVITY',
-      name: 'Photographic Safari',
-      description: 'Per person',
+      name: 'Game drives & walking safaris',
+      description: 'Per person when itemised; often arranged with stay',
       priceZAR: 2500,
       priceUSD: 135,
       isAvailable: true,

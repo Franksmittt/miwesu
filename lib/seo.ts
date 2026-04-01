@@ -89,7 +89,7 @@ export function generateLocalBusinessSchema() {
         '@type': 'LocationFeatureSpecification', name: 'Boma / Fire Pit', value: true, }, {
         '@type': 'LocationFeatureSpecification', name: 'Self-Catering Kitchen', value: true, }, {
         '@type': 'LocationFeatureSpecification', name: 'WiFi (Lodge Only)', value: true, }, {
-        '@type': 'LocationFeatureSpecification', name: '4x4 Tracks', value: true, }, {
+        '@type': 'LocationFeatureSpecification', name: 'Guided bush walks', value: true, }, {
         '@type': 'LocationFeatureSpecification', name: 'Malaria-Free', value: true, }, {
         '@type': 'LocationFeatureSpecification', name: 'Private Residences', value: true, }, {
         '@type': 'LocationFeatureSpecification', name: 'Conservation Activities', value: true, }, {

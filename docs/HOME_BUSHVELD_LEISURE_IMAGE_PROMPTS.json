@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "section": "Home page — Beyond the hunt / Bushveld leisure",
+    "purpose": "Image-generation prompts for six cards. Tuned for photorealism and MIWESU-specific truth, not generic safari stock.",
+    "farm_anchor": "Private game farm MIWESU (MIWESU Game Farm), Makoppa district, Thabazimbi, Limpopo, South Africa. Waterberg; malaria-free. Biome: Arid Sweet Bushveld with sweetveld/bushveld mosaic — granite-derived soils, red-brown and grey earth, scattered acacia and broadleaf thicket, dry-season gold grass, not rainforest and not East African savanna clichés.",
+    "visual_rules": [
+      "Documentary travel photography or editorial lodge photography; natural colour science; visible grain optional; no oversaturated HDR, no plastic skin, no AI gloss sheen on foliage.",
+      "No text, watermarks, logos, or fake signage unless prompt specifies MIWESU branding.",
+      "Vehicles: South African context — dusty farm tracks, GP/LP plates plausible; Toyota Land Cruiser / Hilux / safari rig believable for Waterberg.",
+      "Wildlife: species plausible for Limpopo bushveld (kudu, impala, zebra, buffalo, giraffe, etc.); never crowds of tourists, no staged 'safari theatre' vehicles encircling animals.",
+      "Architecture: thatched Cape/Dutch-influenced lodge roofs (thick grass thatch), rough stone or tan plaster on second residence; wooden decks, outdoor braai, boma ring — match South African bush lodge, not East African tented camp unless specified."
+    ],
+    "recommended_workflow": [
+      "Prefer img2img or reference-image conditioning using the listed on-repo_reference paths (real MIWESU or on-farm Facebook exports). Strength 0.25–0.45 to preserve identity of place.",
+      "Aspect ratio 4:3 or 3:2 to match HomeBushveldLeisure cards (aspect-[4/3]).",
+      "Resolution: at least 1536px on long edge for web hero-quality; export WebP/JPEG for /public/images."
+    ],
+    "global_negative_prompt": "cartoon, anime, illustration, 3d render, cgi, oversaturated, hdr halos, plastic, deformed hands, extra limbs, watermark, stock photo cliché, Maasai warriors, Serengeti endless plain, Kenyan safari minibus crowd, elephant herd in mist fake, giraffe neck too long, floating objects, text, logo, low resolution, blurry, duplicate animals"
+  },
+  "prompts": [
+    {
+      "id": "quiet-wildlife-viewing",
+      "card_title": "Quiet wildlife viewing",
+      "site_body_summary": "Wildlife viewing and birding across sweetveld and bushveld; binoculars; no packaged safari theatre.",
+      "on_repo_reference_optional": "/images/Facebook/469680087_122145814082331002_8757379879919305611_n.jpg",
+      "positive_prompt": "Photorealistic documentary photograph on a private South African game farm in Limpopo Waterberg near Thabazimbi. Open Arid Sweet Bushveld: knee-high dry gold grass, scattered acacia thorn trees with fine green canopy, patches of scrub and bare red-brown soil. A small herd of Cape buffalo or mixed plains game (plausible distance) in soft morning light; one or two guests in neutral safari clothing stand beside a stopped open safari vehicle (no crowds), one person raising binoculars toward the animals. Quiet, patient mood; dust-haze horizon; long lens compression optional. Natural colour, slight heat shimmer, realistic shadows. No staged performance, no encirclement of animals, no tourist buses.",
+      "negative_prompt_extension": "crowded vehicles, minibus, people pointing rifles, blood, chase, chase scene, artificial posing, fashion models, glam safari outfits, sunset fake orange filter, Serengeti kopjes, elephant parade",
+      "lighting": "golden morning or soft late afternoon; avoid harsh midday unless heat haze intentional",
+      "camera_suggestion": "full-frame DSLR aesthetic, 70–200mm telephoto at f/4–f/5.6, ISO 200–400"
+    },
+    {
+      "id": "guided-game-drives",
+      "card_title": "Guided game drives",
+      "site_body_summary": "Game viewing from safari vehicles on farm roads with the professional team; waterholes and sweetveld.",
+      "on_repo_reference_optional": "/images/Facebook/470241375_122143086752347210_5184197355552834177_n.jpg",
+      "positive_prompt": "Photorealistic documentary image at a private Waterberg game farm near Thabazimbi: one or two open safari vehicles (Toyota Land Cruiser style) parked on red-brown earth near thatched Homestead roofs; guests in neutral clothing with binoculars; middle distance shows sweetveld, scattered acacias, optional plains game at natural spacing. Mid-morning or late afternoon; dust-softened light; sense of guided viewing with the team, not a convoy of tour buses. Limpopo bushveld only.",
+      "negative_prompt_extension": "crowded minibus safari, staged animal encirclement, rifle prominently displayed, East African savanna cliché, oversaturated HDR",
+      "lighting": "golden side light or soft haze; natural colour",
+      "camera_suggestion": "35mm environmental at f/8 or mild telephoto 70mm for compression"
+    },
+    {
+      "id": "walking-safaris-home-card",
+      "card_title": "Walking safaris",
+      "site_body_summary": "Guided walks on foot when arranged; tracks, trees, family-friendly educational pace.",
+      "on_repo_reference_optional": "/images/Facebook/469490837_122145814052331002_8566440733817305386_n.jpg",
+      "positive_prompt": "Realistic photograph: small guided walking line (guide + two guests max) on a sandy two-track through Arid Sweet Bushveld — knee-high dry grass, thorn scrub, granite stones, big pale sky. Guests wear neutral safari clothing and closed shoes; one person gestures toward spoor or a tree while others look. No rifles in frame unless distant and contextual. Mood: slow, educational, private farm walk — not military patrol, not jogging trail.",
+      "negative_prompt_extension": "large tour group, weapons brandished, rainforest, snow, paved path, urban park",
+      "lighting": "soft morning or late afternoon; readable texture on ground and vegetation",
+      "camera_suggestion": "35–50mm at f/5.6 for subject + habitat context"
+    },
+    {
+      "id": "boma-lapa-braai-evenings",
+      "card_title": "Boma, lapa & braai evenings",
+      "site_body_summary": "Outdoor braai, boma fire, lapa — social heart of the Homestead after the day in the veld.",
+      "on_repo_reference_optional": "/images/Facebook/470232310_122143086212347210_4304746111846107219_n.jpg",
+      "positive_prompt": "Photorealistic late-afternoon or blue-hour scene at a South African private bush lodge Homestead: swimming pool edge with turquoise water, thatched lapa or boma ring with stone seating, outdoor braai area with smoke wisps, warm LED string or fire glow starting. Optional small group at the fire (natural poses, casual clothing). Thick grass thatch roofs, rough stone or plaster walls, red earth yard. Conveys shared meal and coals — not commercial restaurant, not resort buffet.",
+      "negative_prompt_extension": "water park, Disney scale, crowds, neon club lighting, ocean, snow, fake oversaturated pool",
+      "lighting": "warm fire spill + residual daylight; believable shadow falloff",
+      "camera_suggestion": "24–35mm wide environmental at f/5.6–f/8"
+    },
+    {
+      "id": "family-gatherings-homestead",
+      "card_title": "Family gatherings at the Homestead",
+      "site_body_summary": "Pool, multi-slide, trampoline, jungle gym; boma, lapa; multi-generational space.",
+      "on_repo_reference_optional": "/images/Facebook/469667746_122145814688331002_813435496857912015_n.jpg",
+      "positive_prompt": "Realistic daylight photograph of a private bush lodge recreation yard in Limpopo: rectangular swimming pool with turquoise water; wooden tower with authentic thick grass thatch roof; three water slides — one long yellow spiral tube slide and two straight parallel slides with red and blue segments — entering the pool. Red-brown earth and sparse acacia-type trees around the fenced pool deck; large thatched lapa umbrella on lawn or dirt nearby; distant hint of thatched main lodge roofline. Optional small family group at pool edge (casual swimwear, natural poses). South African private game farm, not water park. Slight dust, bright sun, real-world wear on wood and tiles.",
+      "negative_prompt_extension": "Disney castle, water park crowds, inflatable park, lifeguard tower, ocean, palm resort, fake saturated pool water, CGI slides",
+      "lighting": "high sun Waterberg; hard shadows under thatch",
+      "camera_suggestion": "24–35mm environmental wide shot at f/8 for depth"
+    },
+    {
+      "id": "birding-habitat",
+      "card_title": "Birding & habitat",
+      "site_body_summary": "Between moist Bushveld and arid Kalahari edges; raptors, bee-eaters, hornbills; quiet habitat.",
+      "on_repo_reference_optional": "/images/Facebook/469407140_122145814454331002_6316558962875209734_n.jpg",
+      "positive_prompt": "Photorealistic bushveld habitat plate suited for birding in Limpopo transition zone: layered scene with dry gold grass foreground, mixed thorn scrub and small broadleaf shrubs, one or two acacia canopies with fine leaves, distant low granite koppie or ridge soft in haze. Optional single bird in frame — Southern yellow-billed hornbill on a branch, or lilac-breasted roller on perch, or raptor on dead snag — species must be plausible for region. No human. Quiet midday or soft morning light; natural colour; depth of field isolating bird slightly. Conveys 'real habitat' not zoo backdrop.",
+      "negative_prompt_extension": "jungle vine, parrot macaw, toucan, snow, English garden, blossom overload, hummingbird (Americas), fake bokeh orbs",
+      "lighting": "diffused morning or slightly backlit for feather detail",
+      "camera_suggestion": "400–600mm telephoto wildlife style at f/5.6 if bird featured; otherwise wide habitat shot 100mm"
+    }
+  ]
+}

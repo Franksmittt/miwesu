@@ -13,7 +13,10 @@
     "db:push": "prisma db push",
     "db:migrate": "prisma migrate dev",
     "db:seed": "npx tsx prisma/seed.ts",
-    "db:studio": "prisma studio"
+    "db:studio": "prisma studio",
+    "facebook-guide": "node scripts/generate-facebook-images-guide.mjs",
+    "facebook-captions-openai": "node scripts/enrich-facebook-captions-openai.mjs",
+    "facebook-captions-google": "node scripts/enrich-facebook-captions-google.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",

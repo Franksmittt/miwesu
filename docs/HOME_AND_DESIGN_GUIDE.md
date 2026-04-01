@@ -73,7 +73,7 @@ A vertical “day in the life” timeline: five moments from 06:00 to 22:00. Eac
 | 10:00 | Morning     | Safari or trampoline     | Game drive or family play by the pool. |
 | 15:00 | Afternoon   | Pool and lawn            | Swim, slide, thatched shade. The Oasis. |
 | 19:00 | Golden hour | Boma braai               | Fire under the trees. Waterhole in the distance. |
-| 22:00 | Night       | Starry skies             | Celestial safari or quiet on the patio. Iron Eden at rest. |
+| 22:00 | Night       | Starry skies             | Quiet on the deck or patio under the Milky Way. Iron Eden at rest. |
 
 ### Style details
 - **Rows:** Minimum height ~50–60vh on desktop; bottom border between rows (`border-white/5`).

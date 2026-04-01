@@ -17,18 +17,31 @@ const breadcrumbItems = [
 ]
 
 export const metadata: Metadata = {
-  title: 'Malaria-Free Celestial Safaris & Conservation Harvest | Waterberg',
-  description: 'Conservation harvesting (rifle and bow), photographic safaris, malaria-free celestial safaris, friends-and-family exclusive-use stays, wildlife viewing. MIWESU GAME FARM, Makoppa district, Thabazimbi. Waterberg.',
-  keywords: ['conservation harvest', 'photographic safari', 'celestial safari', 'malaria-free', 'Waterberg', 'friends and family', 'Limpopo safari', 'Makoppa district', 'Thabazimbi', 'MIWESU GAME FARM'],
+  title: 'Conservation Harvest, Game Drives & Walking Safaris | MIWESU Waterberg',
+  description:
+    'Conservation harvesting (rifle and bow), guided game drives, walking safaris, birding, and friends-and-family exclusive-use stays. Malaria-free MIWESU GAME FARM, Makoppa district, Thabazimbi, Waterberg.',
+  keywords: [
+    'conservation harvest',
+    'guided game drives',
+    'walking safari',
+    'birding',
+    'malaria-free',
+    'Waterberg',
+    'friends and family',
+    'Limpopo safari',
+    'Makoppa district',
+    'Thabazimbi',
+    'MIWESU GAME FARM',
+  ],
   openGraph: generateOpenGraph(
-    'Malaria-Free Celestial Safaris & Conservation Harvest | Waterberg',
-    'Conservation harvesting (rifle and bow), photographic safaris, malaria-free celestial safaris, wildlife viewing. MIWESU, Makoppa district, Thabazimbi.',
+    'Conservation Harvest, Game Drives & Walking Safaris | MIWESU Waterberg',
+    'Conservation harvest, guided game drives, walking safaris, and wildlife viewing. MIWESU, Makoppa district, Thabazimbi.',
     constructCanonicalUrl('activities'),
     ogImage
   ),
   twitter: generateTwitterCard(
-    'Malaria-Free Celestial Safaris & Conservation Harvest | Waterberg',
-    'Conservation harvest, photographic and celestial safaris. MIWESU, Makoppa district.',
+    'Conservation Harvest, Game Drives & Walking Safaris | MIWESU Waterberg',
+    'Conservation harvest, game drives, and walking safaris. MIWESU, Makoppa district.',
     ogImage
   ),
   alternates: {
@@ -39,7 +52,7 @@ export const metadata: Metadata = {
 const activitiesWebPage = generateWebPageSchema({
   name: 'Activities & experiences | MIWESU Waterberg',
   description:
-    'Conservation harvest, photographic safari, celestial stargazing, and exclusive-use stays in malaria-free Makoppa, Thabazimbi, Limpopo.',
+    'Conservation harvest, guided game drives, walking safaris, birding, and exclusive-use stays in malaria-free Makoppa, Thabazimbi, Limpopo.',
   url: constructCanonicalUrl('activities'),
 })
 
@@ -49,7 +62,7 @@ const sampleSafariItinerarySchema = generateTouristTripSchema({
   itinerary: [
     'Day 1: Arrival at OR Tambo, transfer to MIWESU Game Farm, Makoppa district.',
     'Day 2: Rifle sighting and orientation. Reserve briefing and conservation overview.',
-    'Day 3–9: Conservation harvest (plains game and optional species). Photographic safaris, wellness, and activities as desired.',
+    'Day 3–9: Conservation harvest (plains game and optional species). Game drives, walking time, boma evenings, and other activities as arranged.',
     'Day 10: Departure. Transfer to OR Tambo or onward travel.',
   ],
 })

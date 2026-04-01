@@ -46,7 +46,7 @@ const moments = [
     label: 'Night',
     title: 'Starry skies',
     image: '/images/_filename_Thabazimbi_W_110jpg__Nano_Banana_Pro_77108.jpg',
-    description: 'Celestial safari or quiet on the patio. Iron Eden at rest.',
+    description: 'Quiet on the deck or patio under the Milky Way. Iron Eden at rest.',
     /** Night / dusk: bias upward so sky & horizon read; avoids chopping the glow */
     imageClassName:
       'object-cover object-[center_35%] sm:object-[center_38%] md:object-[center_40%]',

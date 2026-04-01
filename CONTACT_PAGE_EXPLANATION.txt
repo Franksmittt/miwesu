@@ -65,7 +65,7 @@ The form includes:
 
 - Primary Intent (required)
   - Label: "Primary Intent".
-  - A dropdown (select) with options: "Select an option", "Ethical Hunting (Meat/Trophy)", "Non-hunting visit / observer", "Observer / Photographic Retreat", "Corporate / Syndicate Inquiry", "Accommodation Only".
+  - A dropdown (select) with options: "Select an option", "Ethical Hunting (Meat/Trophy)", "Non-hunting visit / observer", "Observer / wildlife viewing", "Corporate / Syndicate Inquiry", "Accommodation Only".
   - Styled as a white box with a visible gray border and rounded corners; focus state shows a gold border and ring.
 
 - Name (required)

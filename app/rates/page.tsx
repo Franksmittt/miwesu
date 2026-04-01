@@ -165,9 +165,9 @@ export default function RatesPage() {
                 </div>
 
                 <div className="bg-onyx-light border border-white/5 p-8">
-                  <h4 className="font-serif text-xl text-white mb-4">Photographic Safaris</h4>
+                  <h4 className="font-serif text-xl text-white mb-4">Game drives &amp; walking</h4>
                   <p className="text-gray-400 text-sm mb-6">
-                    Guided game drives and walking safaris
+                    Guided game viewing from vehicles and on-foot time with your team, arranged as part of your stay
                   </p>
                   <span className="text-gold-500 font-serif text-lg">
                     On request
@@ -175,9 +175,9 @@ export default function RatesPage() {
                 </div>
 
                 <div className="bg-onyx-light border border-white/5 p-8">
-                  <h4 className="font-serif text-xl text-white mb-4">Wellness & Activities</h4>
+                  <h4 className="font-serif text-xl text-white mb-4">Wellness &amp; activities</h4>
                   <p className="text-gray-400 text-sm mb-6">
-                    Spa treatments, astronomy, and special experiences
+                    Spa treatments and other special experiences when arranged with the concierge
                   </p>
                   <span className="text-gold-500 font-serif text-lg">
                     On request
@@ -246,7 +246,7 @@ export default function RatesPage() {
                     Perfect for couples or small families, Rooibok Kraal offers the same exclusive use experience in a more intimate setting. Rates on request. Includes all amenities, daily housekeeping, and full reserve access.
                   </p>
                   <p className="text-gray-300 text-lg leading-loose mb-8">
-                    The plunge pool, stargazing deck, and telescope make this an ideal choice for those seeking a romantic or contemplative retreat in the Makoppa district.
+                    The plunge pool, outdoor deck, and dam-side setting make this an ideal choice for those seeking a romantic or contemplative retreat in the Makoppa district.
                   </p>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="border-l-2 border-gold-500 pl-4">

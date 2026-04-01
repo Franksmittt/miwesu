@@ -1,0 +1,735 @@
+================================================================================
+MIWESU — FACEBOOK FOLDER: EACH FILE, WHAT YOU SEE
+================================================================================
+Generated: 2026-04-01 (run: npm run facebook-guide)
+
+Every file under public/images/Facebook/ is listed A–Z by filename.
+
+  • 32 — captions from lib/facebook-gallery.ts (site gallery) + setting line.
+  • 9 — extra captions from data/facebook-folder-captions.json.
+  • 199 — still need JSON entries or: npm run facebook-captions-openai
+
+================================================================================
+
+FILE: 469381409_122145814070331002_8712320735235530857_n.jpg
+  What you see: Three giraffes in savanna. Habitat: bushveld around the animals — grass, scrub, trees, soil, waterhole edge, or (trail camera) night-time ground cover; lodge roofs can appear behind game near the buildings.
+
+FILE: 469407140_122145814454331002_6316558962875209734_n.jpg
+  What you see: Sunrise/sunset landscape; golden-brown grass. Vegetation and setting: open bushveld / savanna — grass (often golden or dry brown), scattered trees and shrubs, big sky; sometimes water, tracks, or vehicle foreground.
+
+FILE: 469445759_122145814202331002_8412168224364807253_n.jpg
+  What you see: Three giraffes; thatched lodge in background. Habitat: bushveld around the animals — grass, scrub, trees, soil, waterhole edge, or (trail camera) night-time ground cover; lodge roofs can appear behind game near the buildings.
+
+FILE: 469455360_122145814196331002_6494043164055931447_n.jpg
+  What you see: High-angle view of the lodge pool area: square pool with light tile surround, yellow spiral slide and paired red/blue straight slides from a wooden tower, thatched sun umbrella on dry reddish soil, scattered green trees, reed fence and a small water pan beyond. Bright sun, arid bushveld-style grounds.
+
+FILE: 469457478_122145814040331002_2489191046502491077_n.jpg
+  What you see: Livingstone eland in bushveld. Habitat: bushveld around the animals — grass, scrub, trees, soil, waterhole edge, or (trail camera) night-time ground cover; lodge roofs can appear behind game near the buildings.
+
+FILE: 469463473_122145814766331002_6875660384412212554_n.jpg
+  What you see: Waterhole at sunset; reflections. Vegetation and setting: open bushveld / savanna — grass (often golden or dry brown), scattered trees and shrubs, big sky; sometimes water, tracks, or vehicle foreground.
+
+FILE: 469479410_122145815444331002_564503303072674888_n.jpg
+  What you see: From a safari vehicle at dusk: bolt-action rifle with scope (and suppressor) on a padded rail; mesh below. Bushveld trees and scrub in silhouette, intense orange-yellow band on the horizon under deep blue sky; utility pole left of centre.
+
+FILE: 469490837_122145814052331002_8566440733817305386_n.jpg
+  What you see: Eland and kudu on dirt road; dawn pastel sky. Vegetation and setting: open bushveld / savanna — grass (often golden or dry brown), scattered trees and shrubs, big sky; sometimes water, tracks, or vehicle foreground.
+
+FILE: 469491536_122145815870331002_4652356662516606489_n.jpg
+  What you see: Waterbuck in bushveld; eye contact. Habitat: bushveld around the animals — grass, scrub, trees, soil, waterhole edge, or (trail camera) night-time ground cover; lodge roofs can appear behind game near the buildings.
+
+FILE: 469512882_122145814166331002_9118324371808560871_n.jpg
+  What you see: Bonfire in circular fire pit at twilight. Setting: lodge infrastructure — thatch, timber, glass, tiles, lawn or paving; pool, braai, boma fire, bedrooms, bathrooms, or signage as applicable.
+
+FILE: 469532320_122145814490331002_7985891999098174169_n.jpg
+  What you see: Harvested warthog secured on the tailgate of a camouflage-pattern UTV with ratchet strap; hay/forage beside it. Dry yellow grass, green shrubs, gravelly track, clear daylight — typical bushveld edge.
+
+FILE: 469533014_122145814544331002_8459832458244607167_n.jpg
+  What you see: Aerial lodge courtyard; thatched roofs; fire pit. Setting: lodge infrastructure — thatch, timber, glass, tiles, lawn or paving; pool, braai, boma fire, bedrooms, bathrooms, or signage as applicable.
+
+FILE: 469594294_122145814646331002_1327138597259678528_n.jpg
+  What you see: Sunset at waterhole; silhouetted person. Vegetation and setting: open bushveld / savanna — grass (often golden or dry brown), scattered trees and shrubs, big sky; sometimes water, tracks, or vehicle foreground.
+
+FILE: 469596637_122145814640331002_3373304811628708345_n.jpg
+  What you see: Rifle in wooden hunting blind; diagonal sunlight. Vegetation and setting: open bushveld / savanna — grass (often golden or dry brown), scattered trees and shrubs, big sky; sometimes water, tracks, or vehicle foreground.
+
+FILE: 469596797_122145814100331002_1928553730993259219_n.jpg
+  What you see: Large common eland in a fenced or camp area: tan coat, heavy build, spiral horns, dewlap. Blue tripod feeder with grain on the ground; pile of green fodder nearby. Dappled shade from leafy trees on dusty soil — game-farm feeding scene.
+
+FILE: 469647598_122145814430331002_4012458471998157908_n.jpg
+  What you see: Zebras drinking at waterhole. Habitat: bushveld around the animals — grass, scrub, trees, soil, waterhole edge, or (trail camera) night-time ground cover; lodge roofs can appear behind game near the buildings.
+
+FILE: 469667746_122145814688331002_813435496857912015_n.jpg
+  What you see: Ground-level pool and slides: turquoise water, red/blue twin slides and long yellow winding slide from a thatched-roof tower; a few people on the platform. Dry earth and sparse acacia-type trees around the deck; clear sky (timestamp overlay June 2024).
+
+FILE: 469669050_122145814616331002_1206589178112452535_n.jpg
+  What you see: Sable antelope in dry golden grass. Habitat: bushveld around the animals — grass, scrub, trees, soil, waterhole edge, or (trail camera) night-time ground cover; lodge roofs can appear behind game near the buildings.
+
+FILE: 469680087_122145814082331002_8757379879919305611_n.jpg
+  What you see: Herd of African buffalo; safari vehicle observing. Habitat: bushveld around the animals — grass, scrub, trees, soil, waterhole edge, or (trail camera) night-time ground cover; lodge roofs can appear behind game near the buildings.
+
+FILE: 470211555_122143103336347210_5460938098123234397_n.jpg
+  What you see: MIWESU GAME FARM sign; thatched lodge background. Setting: lodge infrastructure — thatch, timber, glass, tiles, lawn or paving; pool, braai, boma fire, bedrooms, bathrooms, or signage as applicable.
+
+FILE: 470220017_122143103264347210_6043160336605715581_n.jpg
+  What you see: Group of guests in traditional dress with a harvested ostrich on dark, dry soil; modified tan Land Cruiser with high rack to the left. Sparse acacia-type trees, very dry ground, bright blue sky — open bushveld.
+
+FILE: 470220106_122143086734347210_1249837495105770082_n.jpg
+  What you see: Modern bathroom; glass shower; tan tiles. Setting: lodge infrastructure — thatch, timber, glass, tiles, lawn or paving; pool, braai, boma fire, bedrooms, bathrooms, or signage as applicable.
+
+FILE: 470221548_122143103096347210_8821956924502804925_n.jpg
+  What you see: Three guests in traditional dress with a harvested impala on dry grey-brown earth. Background: thorn scrub, tall dry grass, scattered green trees under a clear blue sky — midday bushveld.
+
+FILE: 470222889_122143086758347210_9003776941533006308_n.jpg
+  What you see: Lodge loft bedroom; thatched roof; wooden beams. Setting: lodge infrastructure — thatch, timber, glass, tiles, lawn or paving; pool, braai, boma fire, bedrooms, bathrooms, or signage as applicable.
+
+FILE: 470226547_122143086818347210_7234893372372112740_n.jpg
+  What you see: Lodge kitchen/bar; thatched roof visible outside. Setting: lodge infrastructure — thatch, timber, glass, tiles, lawn or paving; pool, braai, boma fire, bedrooms, bathrooms, or signage as applicable.
+
+FILE: 470230820_122143102970347210_1765159402126541597_n.jpg
+  What you see: Single guest kneeling behind a harvested impala; scoped rifle with suppressor. Dry dusty soil, yellow grass, thorn bush and leafy trees, cloudless blue sky — trophy-style field photo.
+
+FILE: 470231082_122143086686347210_1558658503042148283_n.jpg
+  What you see: Loft dormitory under a steep thatched roof with exposed beams: five single beds, cream bedding with olive runners, rustic plank headboards, grey plaster wall, small antelope picture, triangular window, wood partition and loft railing — Hunter's House upper-room feel.
+
+FILE: 470231097_122143086206347210_3001238137859640984_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 470231114_122143086812347210_3615903714830674966_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 470232310_122143086212347210_4304746111846107219_n.jpg
+  What you see: Outdoor kitchen and braai; pool; thatched bomas. Setting: lodge infrastructure — thatch, timber, glass, tiles, lawn or paving; pool, braai, boma fire, bedrooms, bathrooms, or signage as applicable.
+
+FILE: 470233517_122143086188347210_5519937489259998324_n.jpg
+  What you see: Sunset from vehicle; rifles in foreground; orange horizon. Vegetation and setting: open bushveld / savanna — grass (often golden or dry brown), scattered trees and shrubs, big sky; sometimes water, tracks, or vehicle foreground.
+
+FILE: 470233907_122143086794347210_4485948789214185794_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 470238421_122143086020347210_7173101257783613827_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 470241375_122143086752347210_5184197355552834177_n.jpg
+  What you see: Lodge exterior; thatched roof; safari vehicles. Setting: lodge infrastructure — thatch, timber, glass, tiles, lawn or paving; pool, braai, boma fire, bedrooms, bathrooms, or signage as applicable.
+
+FILE: 470477343_122143103216347210_4138969466420702082_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 470482327_122143086800347210_3994468382264793064_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 470483823_122143086218347210_6837732970990020874_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 470487267_122143086824347210_4147306014421753820_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 470506549_122143086842347210_296911507832188146_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 470563096_122143103396347210_3939003235394339233_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 470573175_122143086698347210_9203560642264468074_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 470582530_122143086650347210_8898752542763513792_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 470593725_122143102964347210_9038318886157538463_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472117483_122145523610347210_3667350344737093931_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472132556_122145546932347210_3640614808142766224_n.jpg
+  What you see: Male kudu grazing in dry bushveld. Habitat: bushveld around the animals — grass, scrub, trees, soil, waterhole edge, or (trail camera) night-time ground cover; lodge roofs can appear behind game near the buildings.
+
+FILE: 472137719_122145528746347210_6921982382380281731_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472138549_122145528488347210_8421020734894525806_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472159214_122145530018347210_1265789144619139391_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472182076_122145528452347210_454518280580782321_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472193610_122145528782347210_6421148567716270212_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472216733_122145546848347210_5195023693190184692_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472231420_122145528392347210_4982729072681554300_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472231855_122145546914347210_7976001808364365211_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472238152_122145529958347210_3647112134609938184_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472239700_122145523454347210_5298227541206384290_n.jpg
+  What you see: Trail cam; warthogs foraging at night. Habitat: bushveld around the animals — grass, scrub, trees, soil, waterhole edge, or (trail camera) night-time ground cover; lodge roofs can appear behind game near the buildings.
+
+FILE: 472248999_122145523220347210_1741194442788154600_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472256222_122145546740347210_4346412361437146471_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472256224_122145528608347210_8710100229363943857_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472256313_122145523592347210_4388686269729379437_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472258620_122145546434347210_8679175734971812062_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472262531_122145661076347210_163137874737893197_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472265073_122145530264347210_1718494347227806047_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472268053_122145523562347210_5276683119696636740_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472272394_122145661124347210_8489019215452910791_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472275137_122145529976347210_4514583420021651036_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472280935_122145546524347210_4393666419911566418_n.jpg
+  What you see: Full-body giraffe in dry savanna. Habitat: bushveld around the animals — grass, scrub, trees, soil, waterhole edge, or (trail camera) night-time ground cover; lodge roofs can appear behind game near the buildings.
+
+FILE: 472283202_122145546866347210_3709067500156276886_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472295295_122145522788347210_473922214345027533_n.jpg
+  What you see: Trail cam; honey badgers foraging at night. Habitat: bushveld around the animals — grass, scrub, trees, soil, waterhole edge, or (trail camera) night-time ground cover; lodge roofs can appear behind game near the buildings.
+
+FILE: 472300530_122145528752347210_8636507095545270713_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472301546_122145546764347210_7130131033179673061_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472303943_122145528470347210_7415052204676457568_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472308075_122145546680347210_5955406270973449428_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472309478_122145530456347210_6360226638572261776_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472310189_122145528428347210_8736748517669511362_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472311353_122145528464347210_1494950706148480876_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472311737_122145661400347210_6739541542496079366_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472313278_122145523532347210_450107577666736681_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472313935_122145528848347210_2958005714453293953_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472314260_122145528458347210_8718053306278369164_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472314759_122145528710347210_4045047991560845001_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472314759_122145528764347210_5717243160114330313_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472314937_122145523634347210_9037915936375164479_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472315772_122145522770347210_2924909222405121938_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472320195_122145523190347210_6554905567444374441_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472361600_122145523280347210_6815147779888015823_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472408122_122145546824347210_288198221133347390_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472457044_122145528524347210_7488458034180838404_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472458214_122145660818347210_8505806492864675562_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472493736_122145528446347210_8975434975969841722_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472516253_122146186508347210_4595231276965604456_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 472571771_122145528416347210_4839204361271759104_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 473626941_122152227242331002_4068196177465252305_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 473887564_122152226708331002_4075536104323623472_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 475678135_122154364496331002_4974639651636501707_n.jpg
+  What you see: Male kudu in bushveld; spiralled horns. Habitat: bushveld around the animals — grass, scrub, trees, soil, waterhole edge, or (trail camera) night-time ground cover; lodge roofs can appear behind game near the buildings.
+
+FILE: 475745803_122154364514331002_1863615204489432119_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 475763558_122154364634331002_4949863100320151913_n.jpg
+  What you see: Dramatic cloudy sky at sunset; vehicle tracks. Vegetation and setting: open bushveld / savanna — grass (often golden or dry brown), scattered trees and shrubs, big sky; sometimes water, tracks, or vehicle foreground.
+
+FILE: 475790589_122154364694331002_1261266034961963268_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 475848991_122154364454331002_8930013370636488452_n.jpg
+  What you see: Three Cape buffalo; rough-bark tree. Habitat: bushveld around the animals — grass, scrub, trees, soil, waterhole edge, or (trail camera) night-time ground cover; lodge roofs can appear behind game near the buildings.
+
+FILE: 475887891_122154364388331002_1777757949422726433_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 475904510_122154364784331002_5457605393713508175_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 475981290_122154363782331002_5680682076489991017_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 475997681_122154363902331002_7115934165100123204_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 476002430_122154363794331002_1794364451065625865_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 476002530_122154364562331002_2915367943797062193_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 476008714_122154364676331002_3974736766383019952_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 476017103_122154364730331002_4227066649989596124_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 476062422_122154364400331002_7614550751315184277_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 476091728_122154364580331002_1589564305609816116_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 476099096_122154364448331002_7739474099388029230_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 476122194_122154364664331002_8561557636368277271_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 476126598_122154364424331002_7744983499098522020_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 476135646_122154364352331002_7497636243982156613_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 476172832_122154364484331002_8008916115587600005_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 476293755_122154364550331002_6044556060389459118_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 484079097_122160764474331002_4368997146950012698_n.jpg
+  What you see: 4x4 bull bar; MIWESU GP license plate. Vegetation and setting: open bushveld / savanna — grass (often golden or dry brown), scattered trees and shrubs, big sky; sometimes water, tracks, or vehicle foreground.
+
+FILE: 494174871_122168633432331002_752011722250168758_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 494182646_122168638502331002_6127045955421628723_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 494212993_122168638370331002_8350192092698678483_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 494223392_122168638730331002_8177572068978478350_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 494424288_122163627620347210_7338778897747428400_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 494443833_122168633366331002_1981939909650332701_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 494482336_122168915450331002_7061155750737361749_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 494546021_122163272072347210_2163809644879940627_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 494549540_122163271982347210_190965803567893667_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 494551121_122168915618331002_6162936145189706100_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 494551881_122168915540331002_1293280908636108328_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 494691632_122163627788347210_1888095977876127086_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 494701477_122163627830347210_8478332101548323770_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 494707730_122163272024347210_8486508120998124695_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 494717804_122168638820331002_2109919254396945222_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 494801774_122168638592331002_8616951157956625532_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 494947881_122168915732331002_3893658478842317518_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 494960500_122163271880347210_3547503672093659469_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 494981890_122163627746347210_6716053138116192090_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 494998744_122164420868347210_5086515494667493007_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495019358_122168915492331002_3571819794434853686_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495039138_122168915396331002_794711174355403055_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495090263_122168915660331002_5540388495766803744_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495153083_122168638460331002_9188655867950396521_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495165963_122164420820347210_8212342459193522340_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495180613_122163627704347210_8228905945943945121_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495196272_122164420736347210_4792752913674305946_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495205869_122164421714347210_5244322180299770242_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495307685_122164420346347210_4858237844494952919_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495336122_122168638664331002_1284238555255611822_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495337532_122168915858331002_7639972321280701925_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495338196_122164420778347210_6201424976122407808_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495338357_122164421606347210_5985091593711740534_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495367173_122163627494347210_361319437702031583_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495367580_122168638778331002_746641130925818190_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495369136_122163627662347210_6999073973572184885_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495370293_122164420298347210_4270460982792120546_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495370322_122164420568347210_1117546929778918496_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495371817_122164420256347210_8782598188216136542_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495372501_122164421648347210_8566132800422492398_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495372702_122164420610347210_3337035568861427775_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495373420_122163627872347210_6858443424068074972_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495374194_122163627536347210_1435225770127826376_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495374971_122168915354331002_6305711825731016928_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495375687_122168633306331002_4973567500696179514_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495377341_122164420694347210_6202423907832892189_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495377778_122164420910347210_3823102939338925259_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495380219_122164420652347210_4787496871253097872_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 495383426_122163627578347210_2291363741979879491_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 497496982_122165179784347210_7036982298285315642_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 497622743_122165179604347210_5867245630557374204_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 497740048_122165179730347210_4213410725218948786_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 497865523_122165179646347210_8216090993651371913_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 497923301_122165179688347210_4089010610881461637_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 498599125_122165179562347210_706862235660541450_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 499488235_122166020030347210_8319107604728564675_n.jpg
+  What you see: Lodge pool and water slide at golden hour. Setting: lodge infrastructure — thatch, timber, glass, tiles, lawn or paving; pool, braai, boma fire, bedrooms, bathrooms, or signage as applicable.
+
+FILE: 499557594_122166020258347210_6407854708352660773_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 499586680_122166020384347210_5444044079255061899_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 499603315_122166020174347210_5447136657823966079_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 499686472_122166020126347210_4408829988394450505_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 499712485_122166020216347210_882667898010157574_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 499713124_122166019904347210_1581370190220651900_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 499796630_122166019820347210_3015530254418326011_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 499798478_122166019988347210_7825748255850794383_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 499950533_122166020342347210_2052097022008382388_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 499989180_122166019946347210_5215523151650332285_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 500020192_122166020432347210_1167627831745239428_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 500103108_122166020078347210_7602927387560815593_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 500123648_122166020300347210_1559279057450783392_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 500135129_122166019862347210_4082177606534190120_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 501343675_122166633056347210_872573826582977695_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 501757205_122166633098347210_6944480551112217977_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 505427025_122169509012347210_4220049658504875960_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 505747127_122169508994347210_5130630960536663760_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 505764099_122169508934347210_8019928741895470396_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 506460323_122169508910347210_4249482892821494061_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 506505958_122169508892347210_424147550684895172_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 506954681_122169508700347210_4197207931476135195_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 508180528_122169508514347210_153617213011783503_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 508217252_122169508610347210_822104630244296950_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 508451257_122169508652347210_8873871785041178103_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 508454383_122169508562347210_1296031292016357599_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 508604847_122169508472347210_2070093585617942333_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 508629095_122169508286347210_3552771503472876306_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 512680750_122170979522347210_7676331889374337603_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 512695864_122170979834347210_2454442884246613609_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 513722344_122170979432347210_1200013524374182837_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 513870856_122170979390347210_517882262651373258_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 513925848_122170979882347210_8858475302538080133_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 514021121_122170979786347210_1876214618465668714_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 514071821_122170979696347210_4781427204753899934_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 514080335_122170979564347210_2706336509371062430_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 514091763_122170979480347210_3102823174877619385_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 514335067_122170979606347210_876042409251874938_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 514369688_122170979342347210_500251857881119498_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 514395777_122170979744347210_872626290733761682_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 514515704_122170979924347210_2859952222781339429_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 514708602_122170979648347210_3278961012391889119_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 515897873_10163657011604529_3013100922306598813_n.jpg
+  What you see: Two rifles from vehicle; sunset over savanna. Vegetation and setting: open bushveld / savanna — grass (often golden or dry brown), scattered trees and shrubs, big sky; sometimes water, tracks, or vehicle foreground.
+
+FILE: 516437005_122172797840347210_6828355303460955892_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 516938832_122172975266347210_8522835767120908280_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 517577252_122172797630347210_6174904871150977157_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 518152788_122172975008347210_2445794197445338949_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 518163211_122172797756347210_4472747494048325919_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 518271648_122172975140347210_4082144437374687816_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 518271709_122172797714347210_1945453597026902171_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 518274988_122172974972347210_4254820939734252643_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 518294922_122172797966347210_802061842049723825_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 518296846_122172797882347210_3278594254510022665_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 518298846_122172797924347210_8101344009950596870_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 518324277_122172974930347210_6717656934194015384_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 518325404_122172975098347210_7000440143649269158_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 518330588_122172797798347210_1377651881055308814_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 518331754_122172975182347210_8293456505728824753_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 518332201_122172974888347210_7563272295204053144_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 518334480_122172797672347210_2083238280217119476_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 518390138_122172975224347210_2112209846576243448_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 558423669_122183668376347210_8611791526221429398_n.jpg
+  What you see: Sun through silhouetted tree; golden hour. Vegetation and setting: open bushveld / savanna — grass (often golden or dry brown), scattered trees and shrubs, big sky; sometimes water, tracks, or vehicle foreground.
+
+FILE: 558459699_122183668496347210_3644049589267463413_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 558781260_122183668532347210_8617007774875064828_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 558831319_122183668568347210_5754632190698973281_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 559017519_122183668412347210_8632878748549306008_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 559019403_122183668604347210_6618812920507023005_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 559938385_122183668340347210_2752550304370141467_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+
+FILE: 560627195_122183668448347210_4508648517103555113_n.jpg
+  What you see: no caption yet. Add a paragraph to data/facebook-folder-captions.json (key = this filename), or run: npm run facebook-captions-openai — requires OPENAI_API_KEY and charges the API per image.
+================================================================================
+END — 240 file(s)
+================================================================================

@@ -8,7 +8,7 @@ Luxury Next.js 15 application for the private sanctuary in the Makoppa district 
 ## 1. Project Summary
 
 **What it is**  
-A marketing, booking, and operations site for **MIWESU Game Farm** (“Iron Eden”) in the Makoppa Dome, Thabazimbi. The site presents two private residences (The Homestead 16 sleepers, The Stone Villa 6 sleepers), 14 huntable species, activities (conservation harvest, photographic safaris, celestial safaris, wellness, wildlife viewing), conservation impact, and practical tools (SAPS 520 PDF, Biltong calculator). Guests submit **enquiry-only** bookings (no online payment); owners manage enquiries in a **private admin portal** (dashboard, bookings list/detail, **calendar view**, manual “Add booking,” email from platform, invoice PDF, status workflow). A **Rates Manager** lets owners edit accommodation/species/activities/extras and export a **Master Pricelist PDF**. **Pricing is on request only on the public site**; no amounts are shown on the website. SEO is implemented site-wide (metadata, canonicals, sitemap, robots, JSON-LD). Design: Onyx/Gold palette, Cinzel + Montserrat, Liquid Glass, Bento Grids; sensory UX (optional ambient audio, haptic on primary actions).
+A marketing, booking, and operations site for **MIWESU Game Farm** (“Iron Eden”) in the Makoppa Dome, Thabazimbi. The site presents two private residences (The Homestead 16 sleepers, The Stone Villa 6 sleepers), 14 huntable species, activities (conservation harvest, guided game drives, walking safaris, boma evenings, wellness, wildlife viewing, birding), conservation impact, and practical tools (SAPS 520 PDF, Biltong calculator). Guests submit **enquiry-only** bookings (no online payment); owners manage enquiries in a **private admin portal** (dashboard, bookings list/detail, **calendar view**, manual “Add booking,” email from platform, invoice PDF, status workflow). A **Rates Manager** lets owners edit accommodation/species/activities/extras and export a **Master Pricelist PDF**. **Pricing is on request only on the public site**; no amounts are shown on the website. SEO is implemented site-wide (metadata, canonicals, sitemap, robots, JSON-LD). Design: Onyx/Gold palette, Cinzel + Montserrat, Liquid Glass, Bento Grids; sensory UX (optional ambient audio, haptic on primary actions).
 
 **Tech**  
 Next.js 15 (App Router), React 19, TypeScript, Tailwind CSS, Framer Motion. Data: `lib/*` (residences, species, activities, blog, gallery); **Prisma + Supabase** (PostgreSQL) for bookings, units, rates, email log; when DB is empty, admin uses mock data. **Resend** for all email (contact form, booking notifications, admin→guest, confirmation on status→Confirmed). **pdf-lib** (SAPS 520, invoice); **@react-pdf/renderer** (Master Pricelist PDF; uses built-in Helvetica fonts so PDF generates reliably in serverless). Stripe checkout wired but not used in enquiry flow.
@@ -39,18 +39,19 @@ All species page images integrated. Home: Hero (Ken Burns, vignette), Private Re
 Indoor: full kitchen, living, first patio (thatched). Lapa: pool table, darts, wet bar. Outdoor: boma/braai, braai under trees, trampoline/jungle gym, pool with water slide, lawn, thatched shade.
 
 ### Stone Villa amenities
-Indoor: kitchen, living, master en-suite, second bedroom (bunks, en-suite). Outdoor: braai overlooking dam, near main pool; stargazing deck and telescope; Nespresso; daily housekeeping.
+Indoor: kitchen, living, master en-suite, second bedroom (bunks, en-suite). Outdoor: braai overlooking dam, near main pool; outdoor deck; Nespresso; daily housekeeping.
 
 ### Activities (brief)
 | Activity | Description |
 |----------|-------------|
 | Conservation Harvest | Quota-based ethical hunting with professional trackers. |
-| Photographic Safaris | Guided wildlife photography in the Makoppa. |
-| Celestial Safaris | Dark-sky astronomy sessions. |
-| Friends & family / shared stays | Exclusive-use groups, boma evenings, multi-gen rhythm. |
-| Wildlife Viewing | Game drives and walking safaris. |
+| Guided game drives | Wildlife viewing from safari vehicles with the PH team. |
+| Walking safaris | On-foot time with guides when arranged. |
+| Boma, lapa & braai | Homestead outdoor braai, boma fire, shared evenings. |
+| Friends & family / shared stays | Exclusive-use groups, pool and play, multi-gen rhythm. |
+| Wildlife Viewing | Quiet viewing and birding in habitat. |
 
-Additional themes: birding, 4x4 trails. **Page:** `/activities`; imagery from `lib/activity-images.ts`.
+Additional themes: birding. **Page:** `/activities`; imagery from `lib/activity-images.ts`.
 
 ---
 
@@ -98,7 +99,7 @@ Each species page: hero, Quick Facts (SpeciesBentoGrid), Compare button, taxonom
 ### Experience
 | Route | Summary |
 |-------|--------|
-| **/activities** | Activities include Conservation Harvest, Photographic Safaris, Celestial Safaris, Friends & family, Wildlife Viewing; expandable sections with imagery; hero. |
+| **/activities** | Conservation Harvest, guided game drives, walking safaris, birding, boma/lapa section, Friends & family, wildlife viewing; sections with imagery; hero. |
 | **/wildlife** | Species grid (cards with image, name, tag, link); featured species; Specialist Species list; Ecological Management; Compare and Rates CTAs. |
 | **/compare** | Side-by-side species comparison; select species A/B; URL params `?a=slug&b=slug`; table (weight, height, diet, habitat, caliber, Rowland Ward, lifespan). CompareButton on each species page. |
 | **/conservation** | “If It Pays, It Stays”; Guardian’s Pledge; impact (ethical harvest, anti-poaching, local economy); anti-poaching; community; habitat. |

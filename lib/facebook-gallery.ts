@@ -20,7 +20,7 @@ export const authenticGalleryItems: AuthenticGalleryItem[] = [
   { src: `${BASE}/515897873_10163657011604529_3013100922306598813_n.jpg`, category: 'Landscape', title: 'Two rifles from vehicle; sunset over savanna' },
   { src: `${BASE}/470233517_122143086188347210_5519937489259998324_n.jpg`, category: 'Landscape', title: 'Sunset from vehicle; rifles in foreground; orange horizon' },
   { src: `${BASE}/469596637_122145814640331002_3373304811628708345_n.jpg`, category: 'Landscape', title: 'Rifle in wooden hunting blind; diagonal sunlight' },
-  { src: `${BASE}/484079097_122160764474331002_4368997146950012698_n.jpg`, category: 'Landscape', title: '4x4 bull bar; MIWESU GP license plate' },
+  { src: `${BASE}/484079097_122160764474331002_4368997146950012698_n.jpg`, category: 'Landscape', title: 'Farm bakkie on track; MIWESU GP license plate' },
   { src: `${BASE}/469407140_122145814454331002_6316558962875209734_n.jpg`, category: 'Landscape', title: 'Sunrise/sunset landscape; golden-brown grass' },
   { src: `${BASE}/469463473_122145814766331002_6875660384412212554_n.jpg`, category: 'Landscape', title: 'Waterhole at sunset; reflections' },
   { src: `${BASE}/475763558_122154364634331002_4949863100320151913_n.jpg`, category: 'Landscape', title: 'Dramatic cloudy sky at sunset; vehicle tracks' },

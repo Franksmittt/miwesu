@@ -2,6 +2,8 @@
 MIWESU GAME FARM (IRON EDEN) — WHAT WE OFFER
 ================================================================================
 Reference document derived from site copy and lib/* data (March 2026).
+The same text is inlined in PROJECT_OVERVIEW.txt (section 9); update both files
+when this content changes.
 For live public wording, use the website; for admin pricing, use the Rates
 Manager / Prisma RateItem data. Lodge rates on the public site are generally
 shown as "on request" — detailed figures are in the confidential Conservation
@@ -74,7 +76,7 @@ B) ROOIBOK KRAAL ("Stone Villa" route — near the main pool)
     • Outdoor braai
 
   Notes:
-    • Site copy references stargazing deck / telescope / Nespresso in marketing
+    • Site copy references outdoor deck / braai / Nespresso in marketing
       — align guest comms with current on-site amenities when booking.
 
 ================================================================================
@@ -90,7 +92,7 @@ PRICING (LODGE, HARVEST, ACTIVITIES)
   What affects price (from FAQ / product logic):
     • Length of stay, season, which residence
     • Conservation harvest / trophy fees by species (quota & census-driven)
-    • Activities (photographic safari, celestial, etc.) as add-ons
+    • Activities (game drives, walks, etc.) as arranged with the concierge
     • Meals may be additional to base accommodation (per FAQ)
 
   Admin / owner:
@@ -98,9 +100,10 @@ PRICING (LODGE, HARVEST, ACTIVITIES)
       RateItem: accommodation, species, activity, extras) and export to PDF.
 
 ================================================================================
-WILDLIFE — 14 MANAGED SPECIES (CONSERVATION HARVEST PORTFOLIO)
+WILDLIFE — 14+ MANAGED SPECIES (CONSERVATION HARVEST PORTFOLIO)
 ================================================================================
 Each species has a dedicated page on the site (/[slug]) plus compare tool.
+Marketing uses "14+"; the fourteen slugs below are those currently modelled in code.
 
   1. Greater Kudu           (greater-kudu)
   2. Blue Wildebeest        (wildebeest)
@@ -128,24 +131,25 @@ ACTIVITIES & EXPERIENCES (MARKETING CATEGORIES)
   • Conservation harvest     Ethical, quota-based hunting with professional
                              trackers; rifle/bow themes as presented on site.
 
-  • Photographic safaris     Guided wildlife photography, bushveld & waterholes.
+  • Guided game drives       Wildlife viewing from safari vehicles with the PH
+                             team; farm roads, waterholes, sweetveld.
 
-  • Celestial safaris        Dark-sky / astronomy experiences (malaria-free
-                             nights).
+  • Walking safaris          On-foot time with guides when arranged; family-
+                             friendly educational pace.
 
-  • Friends & family /       Exclusive-use groups, boma evenings, shared stays.
+  • Boma, lapa & braai       Homestead outdoor braai, boma fire, shared
+                             evenings (social heart of the stay).
+
+  • Friends & family /       Exclusive-use groups, pool & play, long tables.
     gatherings
 
-  • Wildlife viewing         Game drives and walking safaris.
+  • Wildlife viewing         Quiet viewing and birding; binoculars, habitat.
 
   • Birding                  Dedicated bushveld birding content on activities.
 
-  • 4x4 trails               Vehicle / terrain experience (imagery & copy on
-                             activities page).
-
   Non-hunters:
-    Photographic safaris, drives, walks, celestial experiences — families and
-    observers welcome (Guardian's Pledge applies to all guests).
+    Game drives, walks, birding, boma evenings — families and observers welcome
+    (Guardian's Pledge applies to all guests).
 
 ================================================================================
 CONSERVATION & HOUSE RULES (SUMMARY)
@@ -191,7 +195,8 @@ CONTENT & EDUCATION
 
   • Species comparison (/compare) — side-by-side stats; URL ?a=&b= slugs.
 
-  • Gallery — landscapes, lodge, wildlife (curated + Facebook-sourced).
+  • Gallery — landscapes, lodge, wildlife (public/images/Facebook plus curated
+    metadata in lib/facebook-gallery.ts).
 
 ================================================================================
 STAYS — POLICY SNIPPETS (FROM FAQ; VERIFY WITH CONCIERGE)

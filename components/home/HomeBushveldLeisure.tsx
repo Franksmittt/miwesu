@@ -11,22 +11,22 @@ const items = [
     imageAlt: 'Wildlife viewing across sweetveld and bushveld at MIWESU',
   },
   {
-    title: '4×4 trails',
-    body: 'Trail exploration by 4×4 on the farm’s tracks when arranged as part of your stay.',
-    image: activityImages.fourByFourMain,
-    imageAlt: '4×4 trail driving on farm tracks at MIWESU',
+    title: 'Guided game drives',
+    body: 'Game viewing from safari vehicles on the farm’s roads and sweetveld, with your professional team—quiet approaches, waterholes, and the rhythm of the bush without selling a separate “safari package.”',
+    image: activityImages.gameDriveCard,
+    imageAlt: 'Safari vehicles and game viewing at MIWESU Homestead',
   },
   {
-    title: 'Photographic safaris',
-    body: 'Unhurried photographic outings when the rifle stays in the safe, same landscape, slower pace.',
-    image: activityImages.photographicSafariCard,
-    imageAlt: 'Photographic safari in the Makoppa bushveld',
+    title: 'Walking safaris',
+    body: 'Guided walks on foot when arranged with your hosts—tracks, trees, and the small detail you miss from the vehicle. Suited to families who want a slower, educational pace.',
+    image: activityImages.walkingSafariCard,
+    imageAlt: 'Walking safari and bushveld on MIWESU',
   },
   {
-    title: 'Stargazing at the Stone Villa',
-    body: 'Clear Waterberg skies; the Stone Villa stargazing deck includes a telescope for night-sky sessions.',
-    image: activityImages.celestialSafariMain,
-    imageAlt: 'Night sky and stargazing at the Stone Villa deck',
+    title: 'Boma, lapa & braai evenings',
+    body: 'The social heart of the stay: outdoor braai, boma fire, and lapa space at the Homestead—where the day’s stories land and generations share the same table.',
+    image: activityImages.bomaLapaEveningCard,
+    imageAlt: 'Outdoor braai, pool and boma area at MIWESU Homestead',
   },
   {
     title: 'Family gatherings at the Homestead',
@@ -55,7 +55,7 @@ export function HomeBushveldLeisure() {
             Bushveld leisure
           </h2>
           <p className="type-lead mt-6 text-onyx/85">
-            Not every hour is spent in the field. Miwesu is built for families, photographers, and guests who want the
+            Not every hour is spent in the field. Miwesu is built for families, observers, and guests who want the
             bushveld without rushing the clock.
           </p>
         </header>

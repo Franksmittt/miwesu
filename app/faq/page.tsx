@@ -146,7 +146,7 @@ export default function FAQPage() {
                       <div>
                         <h4 className="font-serif text-lg text-onyx mb-2">Green Season (November–March)</h4>
                         <p className="font-sans text-gray-600 leading-relaxed">
-                          Hot (30°C–40°C), summer rainfall, lush vegetation. Birder's paradise, baby season (lambing), and excellent for photographic safaris. Swimming pool essential.
+                          Hot (30°C–40°C), summer rainfall, lush vegetation. Birder&apos;s paradise, baby season (lambing), and strong for quiet wildlife viewing and green-season colour. Swimming pool essential.
                         </p>
                       </div>
                       <div>

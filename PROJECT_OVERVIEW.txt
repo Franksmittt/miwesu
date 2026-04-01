@@ -1,9 +1,12 @@
 ================================================================================
 MIWESU / IRON EDEN — PROJECT OVERVIEW (SNAPSHOT)
 ================================================================================
-Generated as a root-level snapshot. Last aligned with repo state: March 2026.
+Root-level snapshot. Last aligned with repo state: March 2026.
 For the longest-form narrative (every page, lodge copy, admin detail), see:
   docs/PROJECT_OVERVIEW.md
+Guest/commercial offerings (lodge, wildlife, pricing context, wood SKUs) are also
+maintained in MIWESU_OFFERINGS.txt — section 9 below inlines that document; keep both
+in sync when rates or inventory change.
 
 ================================================================================
 1. WHAT THIS PROJECT IS
@@ -15,9 +18,10 @@ Thabazimbi, Limpopo, South Africa (Waterberg, malaria-free bushveld).
 
 Public site:
   - Two exclusive-use residences (Homestead ~16 sleepers, Rooibok Kraal / Stone
-    Villa ~6 sleepers), activities, conservation story, 14+ species guides,
-    gallery, blog ("Hunter's Journal"), tools (SAPS 520, biltong calculator),
-    wood products, partners, trophy export guidance.
+    Villa ~6 sleepers), activities, conservation story, species hunting guides,
+    gallery (Facebook folder under public/images/Facebook), blog ("Hunter's
+    Journal"), tools (SAPS 520, biltong calculator), wood products, partners,
+    trophy export guidance.
   - Booking is enquiry-first (no public checkout for lodge stays); public rates
     are presented as "on request" where configured.
 
@@ -32,7 +36,39 @@ Locale:
     reach with hreflang from root metadata.
 
 ================================================================================
-2. TECH STACK (AS OF NOW)
+2. PLAINS GAME SPECIES (CANONICAL DATA)
+================================================================================
+
+Single source of truth: lib/species-data.ts (SPECIES_BY_SLUG / SPECIES_SLUGS).
+Each record carries common name, scientific name, and optional Wikidata /
+Wikipedia URLs for structured data.
+
+Marketing copy uses "14+ species" (not a hard cap of 14) so snippets and UI do
+not imply the portfolio is fixed; additional species may be added over time.
+
+The fourteen species currently modelled in code (slug → common name):
+
+  greater-kudu          Greater Kudu
+  wildebeest            Blue Wildebeest
+  golden-wildebeest     Golden Wildebeest
+  impala                Impala
+  dapple-impala         Dapple Impala
+  gemsbok               Gemsbok
+  warthog               Warthog
+  blesbok               Blesbok
+  bushbuck              Bushbuck
+  cape-buffalo          Cape Buffalo
+  lechwe                Lechwe
+  livingstone-eland     Livingstone Eland
+  red-hartebeest        Red Hartebeest
+  springbok             Springbok
+
+User-facing routes include the wildlife hub at /wildlife, compare at /compare,
+per-species marketing pages (App Router under app/ and app/wildlife/[slug]),
+and tools that reference the same slug order (e.g. biltong calculator).
+
+================================================================================
+3. TECH STACK (AS OF NOW)
 ================================================================================
 
 Core:
@@ -55,14 +91,15 @@ Not in package.json today (named in .cursor rules for future consistency):
     server-cache or global UI state per master rules.
 
 ================================================================================
-3. REPOSITORY LAYOUT (HIGH LEVEL)
+4. REPOSITORY LAYOUT (HIGH LEVEL)
 ================================================================================
 
 app/               Next.js App Router routes (marketing, blog, species, tools,
                    admin, API route handlers, sitemap.ts, robots.ts)
-components/      Shared UI, Layout, StructuredData (JSON-LD), modals, widgets
+components/        Shared UI, Layout, StructuredData (JSON-LD), modals, widgets
 lib/               Domain data (species, residences, blog, SEO helpers, images),
                    wood products, FAQ, comparison data, etc.
+lib/server/        Server-only helpers (e.g. reading public/images/Facebook)
 prisma/            Schema, migrations, seed, booking/rates documentation
 public/            Static assets, images, audio, favicons
 docs/              Extended documentation (PROJECT_OVERVIEW.md, audits, etc.)
@@ -74,36 +111,80 @@ Configuration:
   - .env.example              Env template (BASE_URL, DB, Resend, admin, GSC, etc.)
 
 ================================================================================
-4. WHERE THE PRODUCT STANDS (MATURITY)
+5. WHERE THE PRODUCT STANDS (MATURITY)
 ================================================================================
 
 Strengths:
   - Broad marketing surface: home, about, residences (+ sub-pages), wildlife
-    hub, 14 dedicated species URLs, compare tool, conservation, gallery, blog
-    (dynamic slugs + two static pillar articles), FAQ, contact, book flow,
+    hub, dedicated species URLs, compare tool, conservation, gallery, blog
+    (dynamic slugs + static pillar articles), FAQ, contact, book flow,
     availability, rates (on-request presentation), wood, trophy-export,
     partners, tools subtree.
   - Admin workflow for owners: bookings list/detail, status workflow, calendar,
     manual booking creation, rates editing, pricelist export, email logging.
-  - SEO investment: metadata per segment, canonicals, Open Graph / Twitter
-    images centralised (lib/open-graph.ts), sitemap covering static routes,
-    blog slugs, species; robots.txt blocks admin/API appropriately in production.
-  - Structured data: Organization, WebSite, LodgingBusiness (home), species
-    WebPage entities, FAQPage, Article on blog routes, Product samples on rates,
-    TouristTrip on activities, wood Product graph, gallery ItemList, WebPage
-    JSON-LD on many marketing layouts, dynamic compare WebPage + metadata for
-    ?a=&b= pairs.
+  - SEO and structured data (see section 6 below).
   - Google Search Console verification supported via
     NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION when set.
 
 Operational notes:
   - Requires valid DATABASE_URL (and Resend keys) for full admin/email flows;
     empty DB may fall back to mock patterns in places (see code/docs).
-  - Image assets: many paths are curated under public/images; blog/species use
-    real card and lodge photography where mapped.
+  - Image assets: many paths are curated under public/images; gallery pulls
+    filenames from public/images/Facebook at build/runtime (see lib/server/
+    facebook-folder.ts). Commit those files for production if they should appear
+    on the live site.
 
 ================================================================================
-5. BUILD & QUALITY
+6. SEO — WHAT THE SITE DOES (AND RECENT COPY ALIGNMENT)
+================================================================================
+
+Canonicals and base URL
+  - NEXT_PUBLIC_BASE_URL (default https://www.miwesu.co.za) drives absolute
+    URLs. lib/seo.ts constructCanonicalUrl() builds consistent canonicals
+    (no trailing slash except root).
+
+Metadata surfaces
+  - Per-route or per-segment Metadata in App Router layouts/pages: title,
+    description, keywords where used, alternates.canonical, openGraph and
+    twitter via generateOpenGraph / generateTwitterCard.
+  - Open Graph images are centralised in lib/open-graph.ts (marketingOgAbsolute)
+    so key templates get appropriate hero/OG art.
+
+International
+  - Root metadata alternates.languages: en-GB, de, es, x-default for hreflang.
+  - German and Spanish landing routes (/de, /es) mirror core positioning;
+    species count and similar phrases use "14+" wording in EN/DE/ES so search
+    snippets do not read as "exactly fourteen animals only."
+
+Structured data (JSON-LD)
+  - Organization, WebSite, LodgingBusiness (local lodge entity with geo and
+    amenities) on the home narrative.
+  - Species: WebPage with biological alignment — Taxon (schema.org) with
+    sameAs to Wikidata/Wikipedia where configured; richer "power" graph on
+    wildlife species pages combining WebPage + Taxon + Product/Offer for
+    enquiry-led hunts (generateSpeciesPowerPageJsonLd in lib/seo.ts).
+  - FAQPage (standalone FAQ + nested home FAQ graph), Article/BlogPosting on
+    posts, BreadcrumbList on many layouts, WebPage schema on marketing layouts,
+    compare page handling for query pairs, gallery ItemList (image URLs from
+    Facebook folder when present, else curated list), TouristTrip on activities,
+    Product samples where rates/tools warrant it, wood commerce graph where used.
+  - Components under components/StructuredData.tsx emit the above from layout
+    wrappers.
+
+Discovery
+  - app/sitemap.ts lists static routes, blog slugs, and all SPECIES_SLUGS.
+  - robots.txt (app/robots.ts) allows the public site and blocks /admin and
+    /api in production.
+
+Content signals (E-E-A-T)
+  - Species pages tie common names to scientific names and authoritative
+    sameAs links. Blog and conservation copy support topical depth.
+
+This overview does not replace ongoing SEO work (Search Console, Core Web
+Vitals, content updates); it documents what the codebase implements.
+
+================================================================================
+7. BUILD & QUALITY
 ================================================================================
 
 Commands:
@@ -115,15 +196,237 @@ Commands:
 The codebase is intended to ship: TypeScript checking runs on build; keep
 environment variables set in Vercel (or host) for production.
 
+If Next.js reports a missing webpack chunk after interrupted builds, delete the
+.local .next folder and run npm run build again.
+
 ================================================================================
-6. DOCUMENTATION & GOVERNANCE
+8. DOCUMENTATION & GOVERNANCE
 ================================================================================
 
   docs/PROJECT_OVERVIEW.md  — Full narrative (pages, admin, data models).
-  PROJECT_OVERVIEW.txt      — This file: quick root snapshot only.
+  PROJECT_OVERVIEW.txt      — This file: quick root snapshot + offerings (§9).
+  MIWESU_OFFERINGS.txt      — Same offerings reference as §9; edit both when
+                              commercial copy or wood/rates notes change.
   .cursorrules + .cursor/rules/master.mdc — Enforce RSC-first SEO patterns,
     8-point grid / CWV-minded UI rules, and state architecture guidance for
     future changes.
+
+================================================================================
+9. WHAT WE OFFER (INLINED FROM MIWESU_OFFERINGS.TXT)
+================================================================================
+
+Reference document derived from site copy and lib/* data (March 2026).
+For live public wording, use the website; for admin pricing, use the Rates
+Manager / Prisma RateItem data. Lodge rates on the public site are generally
+shown as "on request" — detailed figures are in the confidential Conservation
+Investment Guide and quotes from concierge.
+
+--------------------------------------------------------------------------------
+LOCATION & SETTING
+--------------------------------------------------------------------------------
+
+  Address (public):  D1432 Road, Makoppa District, Thabazimbi, Limpopo 0380,
+                     South Africa
+  Region:            Waterberg; malaria-free
+  Distance:          ~40 km from Thabazimbi town
+  Airport (typical): OR Tambo (Johannesburg) ~2.5 hours drive
+  GPS (from FAQ):    -24.4523956, 27.0450853
+  Road note:         High-clearance vehicle recommended on D1432, especially
+                     Oct–Mar (rainy season)
+
+  Contact:
+    Email:   info@miwesu.co.za
+    Phone:   +27 73 030 9679
+
+--------------------------------------------------------------------------------
+ACCOMMODATION — CAPACITY & ROOMS
+--------------------------------------------------------------------------------
+
+Two private residences (exclusive use of the one you book). Combined maximum
+sleeping capacity across both houses (if ever let together) is 22 guests; normal
+bookings are ONE house at a time.
+
+────────────────────────────────────────────────────────────────────────────
+A) HUNTER'S HOUSE (main lodge / "The Homestead")
+────────────────────────────────────────────────────────────────────────────
+  Total sleepers:     16
+  Bedrooms:           4 (two levels)
+
+  Layout (from lodge data):
+    • Lower level — Lower Room 1: sleeps 3 (singles), en-suite
+    • Lower level — Lower Room 2: sleeps 3 (singles), en-suite (shared bathroom
+      concept for lower floor as documented in facility copy)
+    • Upper level — Upper Room 1: sleeps 5 (singles)
+    • Upper level — Upper Room 2: sleeps 5 (singles)
+
+  Shared / indoor:
+    • Open-plan kitchen, dining, living (thatched; glass to first patio)
+    • First patio (thatched, outdoor seating)
+    • Boma + built-in braai
+    • Lapa: pool table, darts, wet bar — links to pool area
+    • Braai under the trees (waterhole views in some angles)
+
+  Outdoor / family:
+    • Swimming pool with multi-slide complex
+    • Trampoline & jungle gym
+    • Lawn, thatched shade
+
+  Included (typical — confirm with concierge):
+    • Exclusive use of the house, daily housekeeping, utilities, fibre internet,
+      access to the reserve (per FAQ copy)
+
+────────────────────────────────────────────────────────────────────────────
+B) ROOIBOK KRAAL ("Stone Villa" route — near the main pool)
+────────────────────────────────────────────────────────────────────────────
+  Total sleepers:     6
+  Bedrooms:           2
+
+  Layout:
+    • Master bedroom: one main bed, en-suite with shower (no tub in master bath)
+    • Second bedroom: two bunk beds (sleeps 4), own en-suite with bathtub
+    • Open-plan kitchen + living
+    • Outdoor braai
+
+  Notes:
+    • Site copy references outdoor deck / braai / Nespresso in marketing
+      — align guest comms with current on-site amenities when booking.
+
+--------------------------------------------------------------------------------
+PRICING (LODGE, HARVEST, ACTIVITIES)
+--------------------------------------------------------------------------------
+
+  Public website:
+    • Accommodation and activity dollar/ZAR figures are generally presented as
+      "On request" on /rates (no public price list on the marketing site).
+    • Guests request the confidential "Conservation Investment Guide" (e.g. 2026)
+      and tailored quotes.
+
+  What affects price (from FAQ / product logic):
+    • Length of stay, season, which residence
+    • Conservation harvest / trophy fees by species (quota & census-driven)
+    • Activities (game drives, walks, etc.) as arranged with the concierge
+    • Meals may be additional to base accommodation (per FAQ)
+
+  Admin / owner:
+    • Master pricelist and per-category rates live in the database (Prisma
+      RateItem: accommodation, species, activity, extras) and export to PDF.
+
+--------------------------------------------------------------------------------
+WILDLIFE — 14+ MANAGED SPECIES (CONSERVATION HARVEST PORTFOLIO)
+--------------------------------------------------------------------------------
+Each species has a dedicated page on the site (/[slug]) plus compare tool.
+Marketing uses "14+"; the fourteen slugs below are those currently modelled in code.
+
+  1. Greater Kudu           (greater-kudu)
+  2. Blue Wildebeest        (wildebeest)
+  3. Golden Wildebeest      (golden-wildebeest)
+  4. Impala                 (impala)
+  5. Dapple Impala          (dapple-impala)
+  6. Gemsbok                (gemsbok)
+  7. Warthog                (warthog)
+  8. Blesbok                (blesbok)
+  9. Bushbuck               (bushbuck)
+ 10. Cape Buffalo           (cape-buffalo)   [dangerous game — special rules]
+ 11. Lechwe                 (lechwe)
+ 12. Livingstone Eland      (livingstone-eland)
+ 13. Red Hartebeest        (red-hartebeest)
+ 14. Springbok             (springbok)
+
+  Management note:
+    Availability of species for harvest is driven by annual ecological census
+    and sustainable quotas — not all animals available at all times.
+
+--------------------------------------------------------------------------------
+ACTIVITIES & EXPERIENCES (MARKETING CATEGORIES)
+--------------------------------------------------------------------------------
+
+  • Conservation harvest     Ethical, quota-based hunting with professional
+                             trackers; rifle/bow themes as presented on site.
+
+  • Guided game drives       Wildlife viewing from vehicles with the PH team.
+
+  • Walking safaris          On-foot time with guides when arranged.
+
+  • Boma, lapa & braai       Homestead outdoor braai, boma, shared evenings.
+
+  • Friends & family /       Exclusive-use groups, pool & play, long tables.
+    gatherings
+
+  • Wildlife viewing         Quiet viewing and birding in real habitat.
+
+  • Birding                  Dedicated bushveld birding content on activities.
+
+  Non-hunters:
+    Game drives, walks, birding, boma evenings — families and observers welcome
+    (Guardian's Pledge applies to all guests).
+
+--------------------------------------------------------------------------------
+CONSERVATION & HOUSE RULES (SUMMARY)
+--------------------------------------------------------------------------------
+
+  • "If it pays, it stays" — sustainable use funding conservation.
+  • Guardian's Pledge: sanctuary of silence, fair chase, respect; violations
+    can mean eviction.
+  • Vetting: prospective guests screened for fit with conservation ethos.
+  • Anti-poaching, community, habitat themes on /conservation.
+
+--------------------------------------------------------------------------------
+PRACTICAL SERVICES & PRODUCTS
+--------------------------------------------------------------------------------
+
+  Trophy export & travel (/trophy-export)
+    Field prep, dipping, CITES, shipping context; links to partners.
+
+  Trusted partners (/partners)
+    Taxidermy, dipping/shipping agents, travel insurance — logistics chain.
+
+  Wood & thermal (/wood) — MIWESU Premium Firewood (ZAR, enquiry order)
+    Product catalogue (from lib/wood-products.ts):
+      • Geelhak        12 kg bag   R25   MOQ 50 bags
+      • Braai Mix      12 kg bag   R25   MOQ 50 bags
+      • Sekelbos       30 kg bag   R75   MOQ 20 bags
+      • Braai Mix      30 kg bag   R75   MOQ 20 bags
+    Marketing claims: e.g. high peak temperature, verified moisture, no
+    chemical additives; Gauteng delivery narrative — confirm operational detail
+    when selling.
+
+  Tools (free utilities for hunters)
+    • SAPS 520 temporary firearm import PDF helper (/tools/saps-520)
+    • Biltong yield calculator — 14+ species (/tools/biltong-calculator)
+
+--------------------------------------------------------------------------------
+CONTENT & EDUCATION
+--------------------------------------------------------------------------------
+
+  • Hunter's Journal (/blog) — articles on ballistics, logistics, conservation,
+    lodge life, Limpopo vs Eastern Cape, Sweetveld vs Sourveld, etc.
+    (Full slugs in lib/blog-posts.ts.)
+
+  • Species comparison (/compare) — side-by-side stats; URL ?a=&b= slugs.
+
+  • Gallery — landscapes, lodge, wildlife (Facebook folder public/images/Facebook
+    plus curated metadata in lib/facebook-gallery.ts).
+
+--------------------------------------------------------------------------------
+STAYS — POLICY SNIPPETS (FROM FAQ; VERIFY WITH CONCIERGE)
+--------------------------------------------------------------------------------
+
+  • Minimum stay: often ~3 nights recommended; peak may require longer.
+  • Children: welcome; same conduct expectations.
+  • Malaria: not required in this Waterberg location.
+  • What's included: exclusive house, housekeeping, utilities, fibre, reserve
+    access; meals / harvest / activities typically additional.
+
+--------------------------------------------------------------------------------
+LOCALE / LANGUAGES ON SITE
+--------------------------------------------------------------------------------
+
+  Primary: English (full site)
+  Short landers: /de (German), /es (Spanish) with links into English routes.
+
+--------------------------------------------------------------------------------
+END OF OFFERINGS (keep aligned with MIWESU_OFFERINGS.txt)
+--------------------------------------------------------------------------------
 
 ================================================================================
 END

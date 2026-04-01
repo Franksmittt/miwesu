@@ -12,8 +12,9 @@ const breadcrumbItems = [
 
 export const metadata: Metadata = {
   title: 'Bespoke Bushveld Living in Limpopo | Rooibok Kraal',
-  description: 'Rooibok Kraal: exclusive 6-sleeper, 2-bedroom property. Stargazing deck, telescope, outdoor braai. Malaria-free Waterberg. Makoppa district, Thabazimbi.',
-  keywords: ['Rooibok Kraal', '6-sleeper Thabazimbi', 'stargazing', 'bushveld lodge', 'Limpopo', 'Makoppa', 'exclusive use', 'MIWESU'],
+  description:
+    'Rooibok Kraal: exclusive 6-sleeper, 2-bedroom property. Outdoor deck, braai, and privacy beside the dam. Malaria-free Waterberg. Makoppa district, Thabazimbi.',
+  keywords: ['Rooibok Kraal', '6-sleeper Thabazimbi', 'outdoor deck', 'bushveld lodge', 'Limpopo', 'Makoppa', 'exclusive use', 'MIWESU'],
   alternates: { canonical: constructCanonicalUrl(path) },
   openGraph: generateOpenGraph(
     'Rooibok Kraal | Private Residences',
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
 const stoneVillaWebPage = generateWebPageSchema({
   name: 'Rooibok Kraal | 6-sleeper boutique lodge MIWESU',
   description:
-    'Intimate Waterberg residence near the pool: two en-suites, outdoor braai, stargazing deck. Exclusive use, Makoppa, Thabazimbi, Limpopo.',
+    'Intimate Waterberg residence near the pool: two en-suites, outdoor braai, sunset deck. Exclusive use, Makoppa, Thabazimbi, Limpopo.',
   url: constructCanonicalUrl(path),
 })
 

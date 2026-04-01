@@ -108,8 +108,8 @@ export function getDefaultRateItems(): RateItemRecord[] {
     {
       id: 'activity-safari',
       category: 'ACTIVITY',
-      name: 'Photographic Safari',
-      description: 'Per person',
+      name: 'Game drives & walking safaris',
+      description: 'Per person when itemised; often arranged with stay',
       priceZAR: 2500,
       priceUSD: 135,
       isAvailable: true,

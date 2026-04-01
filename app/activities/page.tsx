@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Layout from '@/components/Layout'
 import { activityImages } from '@/lib/activity-images'
 import {
-  Target, Star, Camera, Binoculars, Mountain, ArrowRight, Car, Bird, Footprints, Users,
+  Target, Binoculars, Mountain, ArrowRight, Car, Bird, Footprints, Users, Flame,
 } from 'lucide-react'
 
 export default function ActivitiesPage() {
@@ -29,14 +29,51 @@ export default function ActivitiesPage() {
 
   const activities = [
     {
-      icon: Target, title: 'Conservation Harvest', description: 'Ethical hunting experiences guided by our professional trackers. All harvests follow strict conservation quotas and ethical practices.', image: activityImages.conservationHarvestCard, }, {
-      icon: Camera, title: 'Photographic Safaris', description: 'Capture the beauty of the Makoppa district with guided photographic safaris. Perfect for wildlife enthusiasts and photographers.', image: activityImages.photographicSafariCard, }, {
-      icon: Star, title: 'Celestial Safaris', description: 'Thabazimbi offers some of the darkest skies in the southern hemisphere. Private astronomy sessions available.', image: activityImages.celestialSafariCard, }, {
-      icon: Users, title: 'Friends & family', description:
-        'Exclusive-use stays where generations meet: first hunts beside seasoned hands, kids on the trampoline, long tables at the boma, and evenings that belong to everyone.', image: activityImages.gatheringsFamilyCard, }, {
-      icon: Binoculars, title: 'Wildlife Viewing', description: 'Guided game drives and walking safaris to observe the diverse wildlife of the Iron Mountain.', image: activityImages.wildlifeViewingCard, }, {
-      icon: Bird, title: 'Birding', description:
-        'A transition zone between moist Bushveld and arid Kalahari, raptors, bee-eaters, hornbills, and regional specials. Neighboring farms record 140–200+ species.', image: activityImages.birdingCard, sectionId: 'birding-section', }, ]
+      icon: Target,
+      title: 'Conservation Harvest',
+      description:
+        'Ethical hunting experiences guided by our professional trackers. All harvests follow strict conservation quotas and ethical practices.',
+      image: activityImages.conservationHarvestCard,
+    },
+    {
+      icon: Car,
+      title: 'Guided game drives',
+      description:
+        'Wildlife viewing from safari vehicles on farm roads and sweetveld, led by your professional team—waterholes, koppies, and quiet approaches at MIWESU’s pace.',
+      image: activityImages.gameDriveCard,
+      sectionId: 'game-drives-section',
+    },
+    {
+      icon: Footprints,
+      title: 'Walking safaris',
+      description:
+        'On-foot time in the bushveld with guides: tracks, trees, and the details you miss from the vehicle. Family-friendly when arranged with your hosts.',
+      image: activityImages.walkingSafariCard,
+      sectionId: 'walking-safaris-section',
+    },
+    {
+      icon: Users,
+      title: 'Friends & family',
+      description:
+        'Exclusive-use stays where generations meet: first hunts beside seasoned hands, kids on the trampoline, long tables at the boma, and evenings that belong to everyone.',
+      image: activityImages.gatheringsFamilyCard,
+    },
+    {
+      icon: Binoculars,
+      title: 'Wildlife viewing',
+      description:
+        'Binoculars, patience, and real habitat—sweetveld and bushveld mosaic across the farm, without packaged “safari theatre.”',
+      image: activityImages.wildlifeViewingCard,
+    },
+    {
+      icon: Bird,
+      title: 'Birding',
+      description:
+        'A transition zone between moist Bushveld and arid Kalahari, raptors, bee-eaters, hornbills, and regional specials. Neighboring farms record 140–200+ species.',
+      image: activityImages.birdingCard,
+      sectionId: 'birding-section',
+    },
+  ]
 
   return (
     <Layout>
@@ -47,7 +84,7 @@ export default function ActivitiesPage() {
             <div className="absolute w-[120%] h-[120%] -left-[10%] -top-[10%] motion-safe:animate-ken-burns motion-reduce:animate-none">
               <Image
                 src={activityImages.hero}
-                alt="Activities at MIWESU Game Farm - conservation harvest, photographic safari, celestial safari Makoppa Thabazimbi"
+                alt="Activities at MIWESU Game Farm — conservation harvest, guided game drives, walking safaris, birding, Makoppa Thabazimbi"
                 fill
                 sizes="100vw"
                 className="object-cover opacity-50"
@@ -194,29 +231,27 @@ export default function ActivitiesPage() {
                 </div>
               </div>
 
-              {/* Photographic Safaris - Detailed */}
-              <div className="reveal delay-100">
+              {/* Guided game drives — detailed */}
+              <div id="game-drives-section" className="scroll-mt-28 reveal delay-100">
                 <div className="grid md:grid-cols-2 gap-12 items-center mb-12">
                   <div>
-                    <span className="type-eyebrow-dark mb-4 block">Photographic Safaris</span>
-                    <h3 className="type-h2-section-dark mb-6">
-                      Capture the Makoppa
-                    </h3>
+                    <span className="type-eyebrow-dark mb-4 block">Guided game drives</span>
+                    <h3 className="type-h2-section-dark mb-6">From the vehicle, at MIWESU’s pace</h3>
                     <p className="type-lead-onyx mb-6">
-                      Guided photographic safaris through the Makoppa district offer unparalleled opportunities to capture the beauty of the Arid Sweet Bushveld. From the granite koppies at sunrise to the Leadwood forests at golden hour, every moment is a photograph waiting to happen.
+                      Game viewing runs on farm roads and open sweetveld with your professional hunter and team—not a separate ticketed “safari product.” You read the veld as they do: where animals drink, how the wind lies, and when to stay quiet.
                     </p>
                     <p className="type-lead-onyx mb-8">
-                      Our guides know the best locations for wildlife photography, from waterholes where animals congregate to the thick Acacia thickets where the Grey Ghost (Kudu) moves silently. Perfect for wildlife enthusiasts, photographers, and those who prefer non-consumptive experiences.
+                      Expect waterholes, granite koppies, and Leadwood shade the same way hunters and observers share the day. Cameras welcome; the emphasis is on authentic bushveld time rather than a packaged photo itinerary.
                     </p>
                     <div className="flex items-center gap-4 text-gold-400 font-sans text-sm uppercase tracking-widest">
-                      <Camera className="w-5 h-5 shrink-0" aria-hidden />
-                      <span>Professional Photography Tours</span>
+                      <Car className="w-5 h-5 shrink-0" aria-hidden />
+                      <span>With your PH &amp; team</span>
                     </div>
                   </div>
                   <div className="relative h-[500px] rounded-2xl overflow-hidden border border-white/10 shadow-luxury">
                     <Image
-                      src={activityImages.photographicSafariMain}
-                      alt="Photographic safari in the Makoppa district"
+                      src={activityImages.gameDriveCard}
+                      alt="Safari vehicles at MIWESU for guided game viewing"
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover"
@@ -224,12 +259,20 @@ export default function ActivitiesPage() {
                   </div>
                 </div>
 
-                {/* Photography Gallery */}
                 <div className="grid md:grid-cols-3 gap-6 mb-12">
                   <div className="relative h-[300px] rounded-2xl overflow-hidden border border-white/10 shadow-luxury">
                     <Image
+                      src={activityImages.photographicSafariMain}
+                      alt="Plains game and sweetveld seen from game drives at MIWESU"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="relative h-[300px] rounded-2xl overflow-hidden border border-white/10 shadow-luxury">
+                    <Image
                       src={activityImages.photographicSafariWaterhole}
-                      alt="Wildlife photography at waterhole"
+                      alt="Waterhole game viewing on the farm"
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover"
@@ -238,53 +281,11 @@ export default function ActivitiesPage() {
                   <div className="relative h-[300px] rounded-2xl overflow-hidden border border-white/10 shadow-luxury">
                     <Image
                       src={activityImages.photographicSafariKoppies}
-                      alt="Landscape photography of granite koppies"
+                      alt="Granite koppies and bushveld from the farm road network"
                       fill
                       sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover"
                     />
-                  </div>
-                  <div className="relative h-[300px] rounded-2xl overflow-hidden border border-white/10 shadow-luxury">
-                    <Image
-                      src={activityImages.photographicSafariSunset}
-                      alt="Sunset photography in the bushveld"
-                      fill
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              {/* Celestial Safaris, same content width as sections above/below (no extra horizontal inset) */}
-              <div className="reveal delay-200 mb-20">
-                <div className="rounded-2xl bg-gradient-to-br from-onyx to-onyx/90 py-10 md:py-14">
-                  <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-                    <div className="relative h-[500px] rounded-2xl overflow-hidden border border-white/10 shadow-luxury">
-                      <Image
-                        src={activityImages.celestialSafariMain}
-                        alt="Stargazing in Thabazimbi dark skies"
-                        fill
-                        sizes="(max-width: 768px) 100vw, 50vw"
-                        className="object-cover"
-                      />
-                    </div>
-                    <div>
-                      <span className="type-eyebrow-dark mb-4 block">Celestial Safaris</span>
-                      <h3 className="type-h2-section-dark mb-6">
-                        The Darkest Skies
-                      </h3>
-                      <p className="type-lead-onyx mb-6">
-                        Thabazimbi offers some of the darkest skies in the southern hemisphere. Far from light pollution, the Makoppa district provides an unparalleled stargazing experience. Rooibok Kraal includes a telescope for private astronomy sessions.
-                      </p>
-                      <p className="type-lead-onyx mb-8">
-                        From the Milky Way arching overhead to the Southern Cross guiding the way, the night sky at Miwesu is a spectacle that rivals any daytime safari. Private astronomy sessions can be arranged, perfect for couples or families seeking a unique experience.
-                      </p>
-                      <div className="flex items-center gap-4 text-gold-400 font-sans text-sm uppercase tracking-widest">
-                        <Star className="w-5 h-5 shrink-0" aria-hidden />
-                        <span>Private Astronomy Sessions</span>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -339,37 +340,8 @@ export default function ActivitiesPage() {
                 </div>
               </div>
 
-              {/* 4x4 Trails Section */}
-              <div className="grid md:grid-cols-2 gap-12 items-center mb-20 reveal delay-400">
-                <div className="relative h-[500px] rounded-2xl overflow-hidden border border-white/10 shadow-luxury">
-                  <Image
-                    src={activityImages.fourByFourMain}
-                    alt="4x4 tracks through the Makoppa district"
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover"
-                  />
-                </div>
-                <div>
-                  <span className="type-eyebrow-dark mb-4 block">4x4 Trails</span>
-                  <h3 className="type-h2-section-dark mb-6">
-                    Explore the Terrain
-                  </h3>
-                  <p className="type-lead-onyx mb-6">
-                    The granite terrain and bush of the Makoppa district create an extensive network of 4x4 tracks perfect for exploration. Navigate through the Leadwood forests, across the Sweetveld plains, and up to the granite koppies for panoramic views.
-                  </p>
-                  <p className="type-lead-onyx mb-8">
-                    These tracks are ideal for self-guided game viewing, allowing you to explore at your own pace. High-clearance vehicles are recommended, especially during the summer rainy season when the tracks can become challenging.
-                  </p>
-                  <div className="flex items-center gap-4 text-gold-400 font-sans text-sm uppercase tracking-widest">
-                    <Car className="w-5 h-5 shrink-0" aria-hidden />
-                    <span>Self-Guided Exploration</span>
-                  </div>
-                </div>
-              </div>
-
               {/* Walking Safaris & Nature Walks */}
-              <div className="grid md:grid-cols-2 gap-12 items-center mb-20 reveal delay-500">
+              <div id="walking-safaris-section" className="scroll-mt-28 grid md:grid-cols-2 gap-12 items-center mb-20 reveal delay-400">
                 <div>
                   <span className="type-eyebrow-dark mb-4 block">Walking Safaris</span>
                   <h3 className="type-h2-section-dark mb-6">
@@ -397,6 +369,37 @@ export default function ActivitiesPage() {
                 </div>
               </div>
 
+              {/* Boma, lapa & braai evenings */}
+              <div className="reveal delay-500 mb-20">
+                <div className="rounded-2xl bg-gradient-to-br from-onyx to-onyx/90 py-10 md:py-14">
+                  <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                    <div className="relative h-[500px] rounded-2xl overflow-hidden border border-white/10 shadow-luxury">
+                      <Image
+                        src={activityImages.bomaLapaEveningCard}
+                        alt="Outdoor braai, pool and lapa at MIWESU Homestead"
+                        fill
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                        className="object-cover"
+                      />
+                    </div>
+                    <div>
+                      <span className="type-eyebrow-dark mb-4 block">Boma, lapa &amp; braai</span>
+                      <h3 className="type-h2-section-dark mb-6">Evenings at the Homestead</h3>
+                      <p className="type-lead-onyx mb-6">
+                        The Homestead is built for shared meals: outdoor braai, boma fire, and lapa space where syndicates and families decompress after the day. This is the rhythm MIWESU sells—honest bushveld hospitality, not a scripted entertainment lineup.
+                      </p>
+                      <p className="type-lead-onyx mb-8">
+                        Harvest meat from our professional facility often ends here too: field-to-table context your group actually lives, with room for kids at the pool and adults at the fire.
+                      </p>
+                      <div className="flex items-center gap-4 text-gold-400 font-sans text-sm uppercase tracking-widest">
+                        <Flame className="w-5 h-5 shrink-0" aria-hidden />
+                        <span>Fire, food &amp; family</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               {/* Friends & family, shared experience */}
               <div className="grid md:grid-cols-1 gap-12 mb-20">
                 <div className="bg-onyx-light border border-white/5 rounded-2xl p-10 reveal delay-600">
@@ -406,7 +409,7 @@ export default function ActivitiesPage() {
                     MIWESU is built for groups: syndicates, extended families, and couples who want the bushveld together, not on separate schedules. Share the smell of rain on dust, the crackle of the boma, and stories that outlast the fire.
                   </p>
                   <p className="type-lead-onyx">
-                    Observers and photographers are as welcome as hunters. Everyone finds a place in the rhythm of the day, from dawn coffee to starlight on the patio.
+                    Observers and camera-carrying guests are as welcome as hunters. Everyone finds a place in the rhythm of the day, from dawn coffee to the last coals in the boma.
                   </p>
                 </div>
               </div>
@@ -420,7 +423,7 @@ export default function ActivitiesPage() {
             <Mountain className="w-16 h-16 text-gold-500 mx-auto mb-8" aria-hidden />
             <h2 className="type-h2-section mb-8">Custom Experiences</h2>
             <p className="type-lead mb-10 max-w-2xl mx-auto">
-              Every stay at Miwesu can be tailored to your preferences. Our concierge team will work with you to create a bespoke itinerary that matches your interests, whether you&apos;re a hunter, photographer, birder, or simply seeking tranquility in the Makoppa.
+              Every stay at Miwesu can be tailored to your preferences. Our concierge team will work with you to create a bespoke itinerary that matches your interests, whether you&apos;re a hunter, observer, birder, or simply seeking tranquility in the Makoppa.
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center">
               <Link

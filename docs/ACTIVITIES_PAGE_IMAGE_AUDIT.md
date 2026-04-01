@@ -3,6 +3,8 @@
 **Page:** https://www.miwesu.co.za/activities  
 **Purpose:** Replace random or duplicate images with content-matched images from the Facebook gallery and existing `public/images` assets.
 
+**Update (March 2026):** The page no longer markets separate “Photographic safaris,” “Celestial safaris,” or “4×4 trails” product lines. Top cards and deep sections are **Conservation Harvest**, **Guided game drives** (gallery reuses former waterhole/koppies assets), **Walking safaris**, **Birding**, **Boma/lapa/braai**, and **Friends & family**. Keys `photographicSafari*` and `celestialSafariMain` in `lib/activity-images.ts` remain as **legacy image paths** where still used in the game-drive gallery or elsewhere.
+
 ---
 
 ## Current Issues

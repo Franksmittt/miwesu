@@ -115,14 +115,15 @@ CTAs
 4.5 — HomeBushveldLeisure
 ------------------------------------------------------------------------------
 - bg-marble-dark; “Beyond the hunt” / “Bushveld leisure” + shared lead.
-- Five tiles (verified on-farm framing only):
+- Six tiles (verified on-farm framing only):
 
 1. Quiet wildlife viewing — birding/viewing; copy notes no “safari theatre.”
-2. 4×4 trails — farm tracks when arranged with stay.
-3. Photographic safaris — slower pace when rifle in safe.
-4. Stargazing at the Stone Villa — deck + telescope.
+2. Guided game drives — PH-led viewing from safari vehicles on farm roads.
+3. Walking safaris — on-foot time with guides when arranged.
+4. Boma, lapa & braai evenings — Homestead outdoor braai, fire, shared tables.
 5. Family gatherings at the Homestead — pool, slide, trampoline, jungle gym,
    boma, lapa, multi-gen groups.
+6. Birding & habitat — transition-zone species; quiet hours.
 
 - Footer link: “Full activities overview” → /activities
 

@@ -21,7 +21,7 @@ export const FAQ_ITEMS: Array<{ question: string; answer: string }> = [
   {
     question: 'What activities are available for non-hunters?',
     answer:
-      'We offer photographic safaris, guided game drives, walking safaris, and celestial safaris (astronomy). The reserve is perfect for observers, photographers, families, and those seeking a luxury wilderness experience together.',
+      'We offer guided game drives, walking safaris, birding, and quiet wildlife viewing as part of your stay, plus the Homestead’s pool, boma, and lapa for shared evenings. The reserve suits observers, families, and hunters sharing the same rhythm.',
   },
   {
     question: 'Is Miwesu malaria-free?',

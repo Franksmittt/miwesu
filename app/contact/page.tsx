@@ -179,7 +179,7 @@ export default function ContactPage() {
                       <option value="">Select an option</option>
                       <option>Ethical Hunting (Meat/Trophy)</option>
                       <option>Non-hunting visit / observer</option>
-                      <option>Observer / Photographic Retreat</option>
+                      <option>Observer / wildlife viewing</option>
                       <option>Corporate / Syndicate Inquiry</option>
                       <option>Accommodation Only</option>
                     </select>

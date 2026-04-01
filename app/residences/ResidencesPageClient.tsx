@@ -82,12 +82,12 @@ export default function ResidencesPageClient() {
             imageAlt="Rooibok Kraal at MIWESU"
             eyebrow="Intimate Seclusion"
             title="THE STONE VILLA"
-            description="Carved from the earth. Elevated to provide sweeping views of the ancient canopy, offering a stargazing master deck and immediate access to the wild."
+            description="Carved from the earth. Elevated to provide sweeping views of the ancient canopy, with an outdoor deck and immediate access to the wild."
             exploreHref="/residences/stone-villa"
             stats={[
               { value: secondHouse.sleepers, label: 'Sleepers' },
               { value: 2, label: 'En-Suites' },
-              { value: 'Deck', label: 'Stargazing' },
+              { value: 'Deck', label: 'Outdoor deck' },
             ]}
           />
         </div>

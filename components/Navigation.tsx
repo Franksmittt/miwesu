@@ -124,7 +124,6 @@ export default function Navigation() {
                 <li><Link href="/wildlife" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Wildlife</Link></li>
                 <li><Link href="/compare" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Compare species</Link></li>
                 <li><Link href="/conservation" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Conservation</Link></li>
-                <li><Link href="/gallery" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Gallery</Link></li>
               </ul>
             </div>
             <div>
@@ -133,6 +132,7 @@ export default function Navigation() {
                 <li><Link href="/blog" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Journal</Link></li>
                 <li><Link href="/rates" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Rates</Link></li>
                 <li><Link href="/faq" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">FAQ</Link></li>
+                <li><Link href="/gallery" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Gallery</Link></li>
                 <li><Link href="/wood" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Wood & Thermal</Link></li>
                 <li><Link href="/tools" onClick={closeMenu} className="font-serif text-lg sm:text-xl text-white/90 hover:text-gold-500 transition-colors block py-2.5 -my-2.5 min-h-[44px] flex items-center touch-manipulation">Tools</Link></li>
               </ul>

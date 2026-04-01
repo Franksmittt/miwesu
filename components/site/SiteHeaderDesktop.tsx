@@ -131,6 +131,12 @@ export function SiteHeaderDesktop() {
                 </div>
               </div>
             ))}
+            <Link
+              href="/gallery"
+              className="inline-flex shrink-0 items-center whitespace-nowrap rounded-md px-2 py-2 font-sans text-[10px] font-semibold uppercase tracking-[0.14em] text-white transition-colors duration-200 ease-in-out sm:px-3 sm:text-[11px] sm:tracking-[0.16em] hover:bg-white/5 hover:text-gold-400"
+            >
+              Gallery
+            </Link>
           </nav>
 
           {/* Actions */}

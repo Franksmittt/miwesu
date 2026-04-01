@@ -1,40 +1,12 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import Image from 'next/image'
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import { ArrowRight, ArrowLeft } from 'lucide-react'
-import { mainLodgeHouse, lodgeSummary, type ResidenceFacility } from '@/lib/residences-data'
-
-function FacilityImage({
-  facility,
-  sizes,
-  className,
-}: {
-  facility: ResidenceFacility
-  sizes: string
-  className?: string
-}) {
-  const [src, setSrc] = useState(facility.imagePath)
-  useEffect(() => {
-    setSrc(facility.imagePath)
-  }, [facility.imagePath])
-  return (
-    <Image
-      src={src}
-      alt={facility.label}
-      fill
-      sizes={sizes}
-      className={className}
-      onError={() => {
-        if (facility.fallbackImagePath && src === facility.imagePath) {
-          setSrc(facility.fallbackImagePath)
-        }
-      }}
-    />
-  )
-}
+import { mainLodgeHouse, lodgeSummary } from '@/lib/residences-data'
+import { ResidenceFacilitiesGrid } from '@/components/residences/ResidenceFacilitiesGrid'
 
 export default function HomesteadPage() {
   useEffect(() => {
@@ -98,24 +70,7 @@ export default function HomesteadPage() {
             <h2 className="font-serif text-3xl sm:text-4xl text-white mb-8 reveal">
               Facilities & Layout
             </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-              {mainLodgeHouse.facilities.map((facility) => (
-                <div key={facility.id} className="bg-onyx-light border border-white/5 overflow-hidden reveal group">
-                  <div className="relative h-[220px] sm:h-[260px] overflow-hidden">
-                    <FacilityImage
-                      facility={facility}
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                  </div>
-                  <div className="p-4 sm:p-5 border-t border-white/5">
-                    <span className="font-serif text-white text-sm sm:text-base">
-                      {facility.label}
-                    </span>
-                  </div>
-                </div>
-              ))}
-            </div>
+            <ResidenceFacilitiesGrid facilities={mainLodgeHouse.facilities} />
 
             <div className="pt-8 border-t border-white/10 reveal">
               <Link

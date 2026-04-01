@@ -2,14 +2,13 @@
 
 import Link from 'next/link'
 import { Menu } from 'lucide-react'
-import { AmbientAudioToggle } from '@/components/AmbientAudio'
 import { useMobileSiteMenu } from '@/components/site/MobileSiteMenuProvider'
 
 export function SiteHeaderMobileStrip() {
   const { sheetOpen, openSheet, closeSheet } = useMobileSiteMenu()
 
   return (
-    <div className="grid h-14 grid-cols-[auto_1fr_auto] items-center gap-2 border-b border-white/15 bg-onyx/95 px-4 text-white shadow-[inset_0_-1px_0_rgba(255,255,255,0.06)] backdrop-blur-xl sm:px-6 lg:hidden">
+    <div className="relative grid h-14 grid-cols-[2.75rem_1fr_2.75rem] items-center gap-2 border-b border-white/15 bg-onyx/95 px-4 text-white shadow-[inset_0_-1px_0_rgba(255,255,255,0.06)] backdrop-blur-xl sm:px-6 lg:hidden">
       <div className="flex min-w-0 justify-start">
         <button
           type="button"
@@ -25,13 +24,8 @@ export function SiteHeaderMobileStrip() {
       </div>
       <Link href="/" className="min-w-0 justify-self-center text-center text-white">
         <span className="block font-serif text-lg font-bold tracking-widest">MIWESU</span>
-        <span className="mt-0.5 block font-sans text-[8px] uppercase tracking-[0.3em] text-gold-400">
-          Iron Eden
-        </span>
       </Link>
-      <div className="flex min-w-0 justify-end">
-        <AmbientAudioToggle />
-      </div>
+      <div className="min-w-0" aria-hidden />
     </div>
   )
 }

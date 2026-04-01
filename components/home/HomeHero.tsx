@@ -60,11 +60,11 @@ export function HomeHero() {
             'linear-gradient(180deg, rgba(5,5,5,0.88) 0%, rgba(8,6,5,0.55) 38%, rgba(12,8,6,0.75) 100%), radial-gradient(ellipse 90% 70% at 50% 45%, rgba(40,18,12,0.25) 0%, transparent 55%)', }}
         aria-hidden
       />
-      <div className="relative z-10 mx-auto flex min-h-[calc(100svh-4rem)] max-w-4xl flex-col items-center justify-center px-4 py-16 text-center sm:px-6 lg:px-8">
+      <div className="relative z-10 mx-auto flex min-h-[calc(100svh-4rem)] w-full max-w-7xl flex-col items-start justify-center px-4 py-16 text-left sm:px-6 lg:px-8">
         <p className="type-hero-eyebrow-fluid text-gold-400/95">Thabazimbi · Waterberg · Malaria-free</p>
         <h1
           id="home-hero-heading"
-          className="type-display-fluid mt-6 text-balance text-white"
+          className="type-display-fluid mt-6 max-w-4xl text-balance text-white"
           style={{
             textShadow: '0 2px 12px rgba(8,4,2,0.85), 0 12px 40px rgba(5,3,2,0.55)', }}
         >
@@ -73,19 +73,19 @@ export function HomeHero() {
         <p className="type-display-fluid mt-4 max-w-3xl text-balance text-[clamp(1.15rem,2.8vw,1.65rem)] font-normal leading-snug tracking-[0.08em] text-white/95">
           Where Conservation Meets Legacy.
         </p>
-        <p className="type-lead-fluid mx-auto mt-8 max-w-2xl text-pretty text-gray-200/95">
+        <p className="type-lead-fluid mt-8 max-w-2xl text-pretty text-gray-200/95">
           A 2.5-billion-year-old private sanctuary. Ethical harvests. Absolute silence.
         </p>
-        <div className="mt-10 flex w-full max-w-md flex-col items-stretch gap-4 sm:flex-row sm:justify-center">
+        <div className="mt-10 flex w-full max-w-2xl flex-col gap-4 sm:flex-row sm:items-stretch">
           <Link
             href="/book"
-            className="inline-flex min-h-12 items-center justify-center border border-gold-500 bg-gold-500/90 px-8 py-3 font-sans text-xs font-semibold uppercase tracking-[0.2em] text-onyx transition-all duration-200 hover:bg-gold-400"
+            className="flex min-h-12 w-full flex-1 basis-0 items-center justify-center border border-gold-500 bg-gold-500/90 px-4 py-3 text-center font-sans text-xs font-semibold uppercase tracking-[0.2em] text-onyx transition-all duration-200 hover:bg-gold-400 sm:min-h-[3.25rem] sm:px-6"
           >
             Enquire now
           </Link>
           <Link
             href="/contact"
-            className="inline-flex min-h-12 items-center justify-center border border-white/25 bg-white/5 px-8 py-3 font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white backdrop-blur-sm transition-all duration-200 hover:border-gold-500/50 hover:text-gold-400"
+            className="flex min-h-12 w-full flex-1 basis-0 items-center justify-center border border-white/25 bg-white/5 px-4 py-3 text-center font-sans text-xs font-semibold uppercase tracking-[0.2em] text-white backdrop-blur-sm transition-all duration-200 hover:border-gold-500/50 hover:text-gold-400 sm:min-h-[3.25rem] sm:px-6"
           >
             Conservation investment guide
           </Link>

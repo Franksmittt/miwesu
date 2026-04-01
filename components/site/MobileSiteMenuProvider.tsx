@@ -30,11 +30,6 @@ export function useMobileSiteMenu() {
 }
 
 function MobileSiteMenuSheet({ sheetOpen, closeSheet }: { sheetOpen: boolean; closeSheet: () => void }) {
-  const openVetting = () => {
-    closeSheet()
-    document.getElementById('vettingModal')?.classList.remove('hidden')
-  }
-
   return (
     <div
       className={`fixed inset-0 z-[55] lg:hidden ${sheetOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}
@@ -88,15 +83,6 @@ function MobileSiteMenuSheet({ sheetOpen, closeSheet }: { sheetOpen: boolean; cl
                 </ul>
               </div>
             ))}
-            <div className="border-t border-white/10 pt-6">
-              <button
-                type="button"
-                onClick={openVetting}
-                className="flex min-h-11 w-full items-center justify-center rounded-xl border border-white/20 px-4 font-sans text-xs uppercase tracking-[0.2em] text-white/80 transition-colors hover:border-gold-500/40 hover:text-gold-400"
-              >
-                Private access
-              </button>
-            </div>
           </div>
         </div>
       </div>

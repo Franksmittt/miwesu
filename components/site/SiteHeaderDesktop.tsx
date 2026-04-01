@@ -3,7 +3,6 @@
 import { useRef, useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { AmbientAudioToggle } from '@/components/AmbientAudio'
 import { MEGA_NAV_CATEGORIES } from '@/lib/site-mega-nav'
 
 /**
@@ -30,10 +29,6 @@ export function SiteHeaderDesktop() {
     closeTimer.current = null
   }
 
-  const openVetting = () => {
-    document.getElementById('vettingModal')?.classList.remove('hidden')
-  }
-
   return (
     <div className="hidden border-b border-white/15 bg-onyx/95 text-white shadow-[inset_0_-1px_0_rgba(255,255,255,0.06)] backdrop-blur-xl lg:block">
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -46,9 +41,6 @@ export function SiteHeaderDesktop() {
           >
             <span className="block font-serif text-lg font-bold tracking-[0.2em] text-white sm:text-xl">
               MIWESU
-            </span>
-            <span className="mt-0.5 block font-sans text-[9px] uppercase tracking-[0.28em] text-gold-400">
-              Iron Eden
             </span>
           </Link>
 
@@ -143,14 +135,6 @@ export function SiteHeaderDesktop() {
 
           {/* Actions */}
           <div className="flex shrink-0 items-center gap-2 sm:gap-4">
-            <AmbientAudioToggle />
-            <button
-              type="button"
-              onClick={openVetting}
-              className="hidden font-sans text-[10px] uppercase tracking-[0.2em] text-white/85 transition-colors duration-200 ease-in-out hover:text-gold-400 lg:inline-flex lg:min-h-10 lg:items-center"
-            >
-              Private access
-            </button>
             <Link
               href="/book"
               className="inline-flex min-h-10 items-center border border-gold-500/60 bg-gold-500/15 px-3 py-2 font-sans text-[10px] font-semibold uppercase tracking-[0.16em] text-gold-300 transition-all duration-200 ease-in-out hover:border-gold-400 hover:bg-gold-500/25 hover:text-gold-200 sm:px-4 sm:tracking-[0.18em]"

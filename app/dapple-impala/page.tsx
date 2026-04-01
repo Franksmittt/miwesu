@@ -72,8 +72,8 @@ export default function DappleImpalaPage() {
         {/* Introduction Section */}
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <span className="type-eyebrow mb-6 block">
                   Introduction
                 </span>
@@ -90,7 +90,7 @@ export default function DappleImpalaPage() {
                   In the Makoppa district, Dapple Impala occur naturally within Impala populations, though they are relatively rare. Their unique appearance and rarity make them a special trophy for hunters seeking something beyond the ordinary.
                 </p>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden">
                 <Image
                   src="/images/_filename_dapple-impala-ram-po_Nano_Banana_Pro_49376.jpg"
                   alt="Dapple Impala ram showing unique coloration"
@@ -114,8 +114,8 @@ export default function DappleImpalaPage() {
               </h2>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-4">Genetic Variation</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   The Dapple Impala's unique coloration is the result of a genetic variation that affects pigmentation. This variation can be inherited, though the expression of the dapple pattern can vary significantly between individuals. Some Dapple Impala show subtle mottling, while others display dramatic patches of lighter and darker coloration.
@@ -130,7 +130,7 @@ export default function DappleImpalaPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/dapple-impala-color-pattern.png"
                   alt="Dapple impala colour pattern"
@@ -143,7 +143,7 @@ export default function DappleImpalaPage() {
 
             <div className="bg-gradient-to-br from-onyx-light to-onyx p-8 md:p-12 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Comparison with Standard Impala</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Standard Impala</h4>
                   <ul className="text-gray-300 space-y-2">
@@ -227,8 +227,8 @@ export default function DappleImpalaPage() {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden">
                 <Image
                   src="/images/_filename_dapple-impala-ram-po_Nano_Banana_Pro_49376.jpg"
                   alt="Dapple Impala horn configuration"
@@ -236,7 +236,7 @@ export default function DappleImpalaPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div className="md:w-[calc(50%-1.5rem)]">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
                 <p className="type-lead mb-4">
                   Only rams carry horns, which are lyre-shaped and ridged. The horns grow upward and backward in a graceful curve, creating the distinctive lyre shape. Horn development and characteristics are identical to standard Impala.
@@ -294,13 +294,13 @@ export default function DappleImpalaPage() {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Dapple Impala Behavior Image Placeholder</span>
                 </div>
               </div>
-              <div className="md:w-[calc(50%-1.5rem)]">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Feeding Behavior</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Dapple Impala are mixed feeders, consuming both grass and browse. They prefer fresh, green grass when available but will browse on leaves, fruits, and flowers when grass is scarce. This dietary flexibility allows them to thrive in a variety of habitats.
@@ -332,8 +332,8 @@ export default function DappleImpalaPage() {
             </div>
 
             {/* Hunting Strategies */}
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Hunting Strategies</h3>
                 <div className="space-y-6">
                   <div className="bg-white border border-gray-200 shadow-sm p-6">
@@ -361,7 +361,7 @@ export default function DappleImpalaPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/dapple-impala-hunting-stalk.png"
                   alt="Dapple impala in bushveld, spot-and-stalk"
@@ -431,8 +431,8 @@ export default function DappleImpalaPage() {
             </div>
 
             {/* Shot Placement */}
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/dapple-impala-shot-placement.png"
                   alt="Dapple impala shot placement diagram"
@@ -441,7 +441,7 @@ export default function DappleImpalaPage() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
-              <div className="md:w-[calc(50%-1.5rem)]">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Shot Placement</h3>
                 <p className="type-lead mb-6">
                   Proper shot placement is essential for clean kills and to preserve the unique hide for taxidermy. Since Dapple Impala are often mounted as full mounts to showcase the dapple pattern, careful shot placement is important.
@@ -486,8 +486,8 @@ export default function DappleImpalaPage() {
               </p>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Horn Evaluation</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   Horn evaluation follows the same criteria as standard Impala: length, mass, and symmetry. A mature ram will have horns measuring 23 inches or more, with exceptional specimens exceeding 28 inches.
@@ -510,7 +510,7 @@ export default function DappleImpalaPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/dapple-impala-trophy-ram.png"
                   alt="Dapple impala ram, trophy evaluation"
@@ -523,7 +523,7 @@ export default function DappleImpalaPage() {
 
             <div className="bg-gradient-to-br from-onyx-light to-onyx p-8 md:p-12 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-8">Evaluating the Dapple Pattern</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Pattern Distinctiveness</h4>
                   <p className="text-gray-300 leading-loose mb-4">
@@ -574,8 +574,8 @@ export default function DappleImpalaPage() {
               </p>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Meat Characteristics</h3>
                 <p className="type-lead mb-4">
                   Dapple Impala venison is lean, fine-grained, and flavorful. The meat is lighter in color than browsing antelope and has a mild, sweet flavor. It is highly regarded and versatile in the kitchen.
@@ -587,7 +587,7 @@ export default function DappleImpalaPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/dapple-impala-venison.png"
                   alt="Dapple impala venison"

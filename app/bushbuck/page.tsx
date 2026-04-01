@@ -72,8 +72,8 @@ export default function BushbuckPage() {
         {/* Introduction Section */}
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <span className="type-eyebrow mb-6 block">
                   Introduction
                 </span>
@@ -90,7 +90,7 @@ export default function BushbuckPage() {
                   In the Makoppa district, Bushbuck thrive in the dense riverine thickets and forest edges. Their preference for cover makes them challenging to hunt, but their exceptional venison quality and the thrill of the pursuit make them a highly sought-after trophy.
                 </p>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden">
                 <Image
                   src="/images/_filename_bushbuck-ram-portrai_Nano_Banana_Pro_79460.jpg"
                   alt="Bushbuck ram in thicket"
@@ -114,8 +114,8 @@ export default function BushbuckPage() {
               </h2>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-4">Taxonomic Classification</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   The Bushbuck belongs to the family Bovidae, subfamily Bovinae, and the tribe Tragelaphini. Recent genetic research has revealed that what was once considered a single species is actually two distinct species that diverged approximately 2.5 to 2.7 million years ago.
@@ -130,7 +130,7 @@ export default function BushbuckPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/bushbuck-taxonomy.png"
                   alt="Bushbuck taxonomy and identification"
@@ -143,7 +143,7 @@ export default function BushbuckPage() {
 
             <div className="bg-gradient-to-br from-onyx-light to-onyx p-8 md:p-12 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Historical Distribution & Conservation Status</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Range and Habitat</h4>
                   <p className="text-gray-300 leading-loose mb-4">
@@ -227,8 +227,8 @@ export default function BushbuckPage() {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden">
                 <Image
                   src="/images/_filename_bushbuck-ram-portrai_Nano_Banana_Pro_79460.jpg"
                   alt="Bushbuck coat coloration and markings"
@@ -236,7 +236,7 @@ export default function BushbuckPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div className="md:w-[calc(50%-1.5rem)]">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Coat Coloration and Markings</h3>
                 <p className="type-lead mb-4">
                   The Bushbuck's coat is a masterpiece of disruptive coloration, designed to break up the animal's outline against the dappled light of the forest floor. White spots and stripes are geometrically arranged on the ears, chin, tail, legs, and flanks.
@@ -254,8 +254,8 @@ export default function BushbuckPage() {
             </div>
 
             {/* Horn Configuration */}
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
                 <p className="type-lead mb-4">
                   Only rams carry horns, which are distinct from the wide spirals of the Kudu. Bushbuck horns are relatively straight but feature a strong spiral keel that twists around the core. They grow backward, roughly parallel to the neck, preventing snagging on vines and branches when running through thick bush.
@@ -270,7 +270,7 @@ export default function BushbuckPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/bushbuck-horn-detail.png"
                   alt="Bushbuck horn detail"
@@ -284,7 +284,7 @@ export default function BushbuckPage() {
             {/* Physical Adaptations */}
             <div className="bg-onyx text-white p-8 md:p-12 mb-16 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Physical Adaptations for Thicket Living</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Body Shape</h4>
                   <p className="text-gray-300 leading-loose mb-4">
@@ -344,8 +344,8 @@ export default function BushbuckPage() {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/bushbuck-behavior.png"
                   alt="Bushbuck behaviour in habitat"
@@ -354,7 +354,7 @@ export default function BushbuckPage() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
-              <div className="md:w-[calc(50%-1.5rem)]">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Activity Cycles: The Ghost in the Darkness</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Bushbuck are fundamentally crepuscular (active at dawn and dusk) and nocturnal. While they have the physiological capacity to be active during the day, their activity budget is heavily dictated by anthropogenic disturbance and predation pressure.
@@ -373,7 +373,7 @@ export default function BushbuckPage() {
 
             <div className="bg-gradient-to-br from-onyx-light to-onyx p-8 md:p-12 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Vocalizations</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">The Bark</h4>
                   <p className="text-gray-300 leading-loose mb-4">
@@ -409,8 +409,8 @@ export default function BushbuckPage() {
               </h2>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">The Edge Effect</h3>
                 <p className="type-lead mb-4">
                   The Bushbuck is an "ecotone" specialist. It thrives at the interface between two habitats: dense cover (for safety/rest) and open clearing (for high-quality forage). They are rarely found far from dense vegetation -riverine forest, montane forest, coastal dune bush, or dense Acacia thickets.
@@ -422,7 +422,7 @@ export default function BushbuckPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden">
                 <Image
                   src="/images/_filename_bushbuck-ram-portrai_Nano_Banana_Pro_79460.jpg"
                   alt="Bushbuck in riverine thicket"
@@ -432,8 +432,8 @@ export default function BushbuckPage() {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/bushbuck-feeding.png"
                   alt="Bushbuck feeding or browsing"
@@ -442,7 +442,7 @@ export default function BushbuckPage() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
-              <div className="md:w-[calc(50%-1.5rem)]">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Selective Browsing</h3>
                 <p className="type-lead mb-4">
                   Bushbuck are selective browsers (concentrate selectors). They feed primarily on high-quality browse: leaves, buds, flowers, and fruits of dicotyledonous plants. They are highly selective, choosing the most nutritious parts of the plant to maximize energy intake per bite.
@@ -477,8 +477,8 @@ export default function BushbuckPage() {
             </div>
 
             {/* Hunting Strategies */}
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Hunting Strategies</h3>
                 <div className="space-y-6">
                   <div className="bg-onyx-light border border-white/10 p-6">
@@ -506,7 +506,7 @@ export default function BushbuckPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/bushbuck-hunting-stalk.png"
                   alt="Bushbuck in thicket habitat, spot-and-stalk"
@@ -585,8 +585,8 @@ export default function BushbuckPage() {
             </div>
 
             {/* Shot Placement */}
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/bushbuck-shot-placement.png"
                   alt="Bushbuck shot placement diagram"
@@ -595,7 +595,7 @@ export default function BushbuckPage() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
-              <div className="md:w-[calc(50%-1.5rem)]">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Shot Placement</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   Anatomy is key. A wounded Bushbuck is a liability -they are known to counter-attack when cornered. Proper shot placement is absolutely critical.
@@ -640,8 +640,8 @@ export default function BushbuckPage() {
               </p>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">The "Ear Rule"</h3>
                 <p className="type-lead mb-6">
                   The most reliable field estimation method involves comparing the horn length to the ear length.
@@ -680,7 +680,7 @@ export default function BushbuckPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/bushbuck-trophy-ram.png"
                   alt="Bushbuck ram, trophy evaluation"
@@ -693,7 +693,7 @@ export default function BushbuckPage() {
 
             <div className="bg-gradient-to-br from-gold-500/10 to-gold-500/5 border border-gold-500/20 p-8 md:p-12 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-8">Scoring Systems</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-onyx mb-4">Rowland Ward (RW)</h4>
                   <p className="text-gray-600 text-sm leading-relaxed mb-2">
@@ -730,8 +730,8 @@ export default function BushbuckPage() {
               </p>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Meat Characteristics</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Because Bushbuck are browsers, the meat is aromatic and flavorful. It is fine-grained, darker than Impala, and lacks the stringy texture of larger antelope. The meat is often described as having a rich, gamey flavor that is more pronounced than grazers.
@@ -743,7 +743,7 @@ export default function BushbuckPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/bushbuck-venison.png"
                   alt="Bushbuck venison"
@@ -756,7 +756,7 @@ export default function BushbuckPage() {
 
             <div className="bg-onyx-light border border-white/10 p-8 md:p-12 mb-16 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-8">Primary Cuts and Usage</h3>
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-6">
                 <div className="bg-onyx p-6">
                   <h4 className="font-serif text-xl text-gold-400 mb-3">Fillet (Tenderloin)</h4>
                   <p className="text-gray-300 text-sm leading-relaxed">
@@ -784,8 +784,8 @@ export default function BushbuckPage() {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 reveal">
-              <div className="md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 reveal">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Traditional Recipes</h3>
                 <div className="space-y-6">
                   <div className="bg-onyx-light border border-white/10 p-6">
@@ -805,7 +805,7 @@ export default function BushbuckPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/bushbuck-culinary.png"
                   alt="Bushbuck culinary preparation"

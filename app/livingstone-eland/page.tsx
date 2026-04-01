@@ -72,8 +72,8 @@ export default function LivingstoneElandPage() {
         {/* Introduction Section */}
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <span className="type-eyebrow mb-6 block">
                   Introduction
                 </span>
@@ -90,7 +90,7 @@ export default function LivingstoneElandPage() {
                   In the Makoppa district, Livingstone Eland thrive in the open bushveld areas where they can take advantage of both browsing and grazing opportunities. Their massive size and impressive trophy quality make them a highly sought-after species for hunters.
                 </p>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden">
                 <Image
                   src="/images/_filename_livingstone-eland-bu_Nano_Banana_Pro_88557.jpg"
                   alt="Livingstone Eland bull in open bushveld"
@@ -114,8 +114,8 @@ export default function LivingstoneElandPage() {
               </h2>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-4">Taxonomic Classification</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   The Livingstone Eland belongs to the family Bovidae, subfamily Bovinae, and the genus <em className="text-gold-400">Taurotragus</em>. The specific name <em className="text-gold-400">oryx livingstonei</em> refers to the subspecies found in southern and eastern Africa, named after the explorer David Livingstone.
@@ -130,7 +130,7 @@ export default function LivingstoneElandPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/livingstone-eland-taxonomy.png"
                   alt="Livingstone eland taxonomy and identification"
@@ -143,7 +143,7 @@ export default function LivingstoneElandPage() {
 
             <div className="bg-gradient-to-br from-onyx-light to-onyx p-8 md:p-12 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Historical Distribution & Conservation Status</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Range and Habitat</h4>
                   <p className="text-gray-300 leading-loose mb-4">
@@ -227,7 +227,7 @@ export default function LivingstoneElandPage() {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
                 <Image
                   src="/images/_filename_livingstone-eland-bu_Nano_Banana_Pro_88557.jpg"
@@ -236,7 +236,7 @@ export default function LivingstoneElandPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div className="md:w-[calc(50%-1.5rem)]">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Coat Coloration and Markings</h3>
                 <p className="type-lead mb-4">
                   The Livingstone Eland's coat is typically tan to fawn in color, with faint white vertical stripes on the sides. The coat is short and smooth, with a distinctive dewlap (fold of skin) hanging from the neck. The face has distinctive markings, including a dark patch on the forehead and white markings around the eyes.
@@ -254,8 +254,8 @@ export default function LivingstoneElandPage() {
             </div>
 
             {/* Horn Configuration */}
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
                 <p className="type-lead mb-4">
                   Both bulls and cows carry horns, though bulls' horns are typically longer and more massive. The horns grow in a distinctive spiral pattern, creating a unique appearance. They are ridged and can be straight or slightly curved.
@@ -284,7 +284,7 @@ export default function LivingstoneElandPage() {
             {/* Physical Adaptations */}
             <div className="bg-onyx text-white p-8 md:p-12 mb-16 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Physical Adaptations for Size and Agility</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Massive Build</h4>
                   <p className="text-gray-300 leading-loose mb-4">
@@ -344,7 +344,7 @@ export default function LivingstoneElandPage() {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
                 <div className="absolute inset-0 bg-gray-800 border-2 border-dashed border-gray-600 flex items-center justify-center">
                   <span className="text-gray-400 text-sm">Livingstone Eland Behavior Image Placeholder</span>
@@ -385,8 +385,8 @@ export default function LivingstoneElandPage() {
             </div>
 
             {/* Hunting Strategies */}
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Hunting Strategies</h3>
                 <div className="space-y-6">
                   <div className="bg-white border border-gray-200 shadow-sm p-6">
@@ -414,7 +414,7 @@ export default function LivingstoneElandPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/livingstone-eland-hunting-stalk.png"
                   alt="Livingstone eland in habitat, spot-and-stalk"
@@ -478,8 +478,8 @@ export default function LivingstoneElandPage() {
             </div>
 
             {/* Shot Placement */}
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/Gemini_Generated_Image_8i5xne8i5xne8i5x.png"
                   alt="Livingstone eland shot placement diagram"
@@ -488,7 +488,7 @@ export default function LivingstoneElandPage() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
-              <div className="md:w-[calc(50%-1.5rem)]">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Shot Placement</h3>
                 <p className="type-lead mb-6">
                   Proper shot placement is essential for clean kills. Livingstone Eland are massive animals, so accurate shot placement is critical. The animal's size makes shot placement even more important.
@@ -533,8 +533,8 @@ export default function LivingstoneElandPage() {
               </p>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Field Judging Guide</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   When evaluating a Livingstone Eland trophy, look for long, massive horns with good spiral development. The horns should be thick at the base and maintain good mass throughout. The distinctive spiral pattern is most desirable.
@@ -557,7 +557,7 @@ export default function LivingstoneElandPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/livingstone-eland-trophy-bull.png"
                   alt="Livingstone eland bull, trophy evaluation"
@@ -570,7 +570,7 @@ export default function LivingstoneElandPage() {
 
             <div className="bg-gradient-to-br from-onyx-light to-onyx p-8 md:p-12 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-8">Scoring Systems</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Rowland Ward (RW)</h4>
                   <p className="text-gray-300 leading-loose mb-2">
@@ -607,8 +607,8 @@ export default function LivingstoneElandPage() {
               </p>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Meat Characteristics</h3>
                 <p className="type-lead mb-4">
                   Livingstone Eland venison is lean, dark red, and flavorful. The meat has a rich, gamey flavor that is often compared to beef but with a distinctive wild game character. It is highly regarded and versatile in the kitchen.

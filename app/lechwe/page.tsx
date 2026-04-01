@@ -72,8 +72,8 @@ export default function LechwePage() {
         {/* Introduction Section */}
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <span className="type-eyebrow mb-6 block">
                   Introduction
                 </span>
@@ -90,7 +90,7 @@ export default function LechwePage() {
                   In the Makoppa district, Lechwe thrive in wetland areas and near water sources where they can take advantage of their specialized adaptations. Their unique habitat requirements and striking appearance make them a special trophy for hunters.
                 </p>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden">
                 <Image
                   src="/images/_filename_lechwe-ram-portrait-_Nano_Banana_Pro_14464.jpg"
                   alt="Lechwe ram in wetland habitat"
@@ -114,8 +114,8 @@ export default function LechwePage() {
               </h2>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-4">Taxonomic Classification</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   The Lechwe belongs to the family Bovidae, subfamily Reduncinae, and the genus <em className="text-gold-400">Kobus</em>. The specific name <em className="text-gold-400">leche</em> refers to the species' wetland habitat preferences.
@@ -130,7 +130,7 @@ export default function LechwePage() {
                   </p>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/lechwe-taxonomy.png"
                   alt="Lechwe taxonomy and identification"
@@ -143,7 +143,7 @@ export default function LechwePage() {
 
             <div className="bg-gradient-to-br from-onyx-light to-onyx p-8 md:p-12 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Historical Distribution & Conservation Status</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Range and Habitat</h4>
                   <p className="text-gray-300 leading-loose mb-4">
@@ -227,7 +227,7 @@ export default function LechwePage() {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
                 <Image
                   src="/images/_filename_lechwe-ram-portrait-_Nano_Banana_Pro_14464.jpg"
@@ -236,7 +236,7 @@ export default function LechwePage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div className="md:w-[calc(50%-1.5rem)]">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Coat Coloration and Markings</h3>
                 <p className="type-lead mb-4">
                   The Lechwe's coat is typically reddish-brown to chestnut in color, with a white underbelly. The coat is water-resistant, helping to keep the animal dry when wading in water. The coloration provides good camouflage in wetland environments.
@@ -254,8 +254,8 @@ export default function LechwePage() {
             </div>
 
             {/* Horn Configuration */}
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
                 <p className="type-lead mb-4">
                   Only rams carry horns, which are lyre-shaped and ridged. The horns grow upward and backward in a graceful curve, creating the distinctive lyre shape. Horn development and characteristics are similar to other Reduncini species.
@@ -284,7 +284,7 @@ export default function LechwePage() {
             {/* Physical Adaptations */}
             <div className="bg-onyx text-white p-8 md:p-12 mb-16 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Physical Adaptations for Wetland Living</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Specialized Hooves</h4>
                   <p className="text-gray-300 leading-loose mb-4">
@@ -344,7 +344,7 @@ export default function LechwePage() {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
               <div className="relative h-full min-h-[400px] overflow-hidden rounded-sm">
                 <Image
                   src="/images/lechwe-taxonomy.png"
@@ -354,7 +354,7 @@ export default function LechwePage() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
-              <div className="md:w-[calc(50%-1.5rem)]">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Feeding Behavior</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Lechwe are bulk grazers, feeding primarily on grasses and aquatic vegetation. They prefer fresh, green growth when available and will wade into shallow water to access aquatic plants. Their grazing helps maintain wetland health.
@@ -389,8 +389,8 @@ export default function LechwePage() {
             </div>
 
             {/* Hunting Strategies */}
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Hunting Strategies</h3>
                 <div className="space-y-6">
                   <div className="bg-white border border-gray-200 shadow-sm p-6">
@@ -418,7 +418,7 @@ export default function LechwePage() {
                   </div>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/lechwe-taxonomy.png"
                   alt="Lechwe in wetland habitat, spot-and-stalk"
@@ -482,8 +482,8 @@ export default function LechwePage() {
             </div>
 
             {/* Shot Placement */}
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/lechwe-shot-placement.png"
                   alt="Lechwe shot placement diagram"
@@ -492,7 +492,7 @@ export default function LechwePage() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
-              <div className="md:w-[calc(50%-1.5rem)]">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Shot Placement</h3>
                 <p className="type-lead mb-6">
                   Proper shot placement is essential for clean kills. Lechwe are medium-sized antelope, so accurate shot placement is critical. The animal's alertness and wetland habitat make shot placement even more important.
@@ -537,8 +537,8 @@ export default function LechwePage() {
               </p>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Field Judging Guide</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   When evaluating a Lechwe trophy, look for long, graceful horns with good curvature. The horns should be thick at the base and maintain good mass throughout. The classic lyre shape is most desirable.
@@ -561,7 +561,7 @@ export default function LechwePage() {
                   </div>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/lechwe-trophy-ram.png"
                   alt="Lechwe ram, trophy evaluation"
@@ -574,7 +574,7 @@ export default function LechwePage() {
 
             <div className="bg-gradient-to-br from-onyx-light to-onyx p-8 md:p-12 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-8">Scoring Systems</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Rowland Ward (RW)</h4>
                   <p className="text-gray-300 leading-loose mb-2">
@@ -611,8 +611,8 @@ export default function LechwePage() {
               </p>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Meat Characteristics</h3>
                 <p className="type-lead mb-4">
                   Lechwe venison is lean, fine-grained, and flavorful. The meat is lighter in color than browsing antelope and has a mild, sweet flavor. It is highly regarded and versatile in the kitchen.

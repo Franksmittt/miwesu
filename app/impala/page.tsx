@@ -72,7 +72,7 @@ export default function ImpalaPage() {
         {/* Introduction Section */}
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+            <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-12 items-stretch mb-16 reveal">
               <div className="flex flex-col">
                 <span className="type-eyebrow mb-6 block">
                   Introduction
@@ -115,7 +115,7 @@ export default function ImpalaPage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+            <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-12 items-stretch mb-16 reveal">
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-4">Taxonomic Classification</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
@@ -144,7 +144,7 @@ export default function ImpalaPage() {
 
             <div className="bg-gradient-to-br from-onyx-light to-onyx p-8 md:p-12 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Historical Distribution & Conservation Status</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Range and Habitat</h4>
                   <p className="text-gray-300 leading-loose mb-4">
@@ -228,7 +228,7 @@ export default function ImpalaPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+            <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-12 items-stretch mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
                 <Image
                   src="/images/impala-ram-portrait-02.png"
@@ -238,7 +238,7 @@ export default function ImpalaPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div className="md:w-[calc(50%-1.5rem)]">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Coat Coloration and Markings</h3>
                 <p className="type-lead mb-4">
                   The Impala's coat is a beautiful reddish-brown to tan color, with a lighter underside. The most distinctive feature is the black markings: a vertical stripe on each hind leg (the "M" marking), black patches on the forehead, and black tips on the ears.
@@ -256,7 +256,7 @@ export default function ImpalaPage() {
             </div>
 
             {/* Horn Configuration */}
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+            <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-12 items-stretch mb-16 reveal">
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
                 <p className="type-lead mb-4">
@@ -286,7 +286,7 @@ export default function ImpalaPage() {
             {/* Physical Adaptations */}
             <div className="bg-onyx text-white p-8 md:p-12 mb-16 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Physical Adaptations for Speed and Agility</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Leaping Ability</h4>
                   <p className="text-gray-300 leading-loose mb-4">
@@ -346,7 +346,7 @@ export default function ImpalaPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+            <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-12 items-stretch mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
                 <Image
                   src="/images/impala-herd-bushveld-01.png"
@@ -356,7 +356,7 @@ export default function ImpalaPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div className="md:w-[calc(50%-1.5rem)]">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Daily Activity Cycle</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Impala are active throughout the day, with peak feeding activity during early morning and late afternoon. During the heat of midday, they may rest in the shade, but remain alert and ready to flee.
@@ -375,7 +375,7 @@ export default function ImpalaPage() {
 
             <div className="bg-gradient-to-br from-onyx-light to-onyx p-8 md:p-12 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">The Rut and Reproductive Cycle</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Breeding Season</h4>
                   <p className="text-gray-300 leading-loose mb-4">
@@ -411,7 +411,7 @@ export default function ImpalaPage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+            <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-12 items-stretch mb-16 reveal">
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Mixed Feeding Strategy</h3>
                 <p className="type-lead mb-4">
@@ -435,7 +435,7 @@ export default function ImpalaPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+            <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-12 items-stretch mb-16 reveal">
               <div className="relative h-full min-h-[400px]">
                 <Image
                   src="/images/impala-herd-bushveld-01.png"
@@ -445,7 +445,7 @@ export default function ImpalaPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div className="md:w-[calc(50%-1.5rem)]">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Habitat Requirements</h3>
                 <p className="type-lead mb-4">
                   Impala prefer areas with a mix of grassland and woodland, known as "bushveld fringe." They require access to both open areas for grazing and dense cover for security. This mixed habitat provides food, water, and protection from predators.
@@ -480,7 +480,7 @@ export default function ImpalaPage() {
             </div>
 
             {/* Hunting Strategies */}
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+            <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-12 items-stretch mb-16 reveal">
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Hunting Strategies</h3>
                 <div className="space-y-6">
@@ -573,7 +573,7 @@ export default function ImpalaPage() {
             </div>
 
             {/* Shot Placement */}
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+            <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-12 items-stretch mb-16 reveal">
               <div className="relative h-full min-h-[500px] overflow-hidden rounded-sm">
                 <Image
                   src="/images/impala-shot-placement.png"
@@ -583,7 +583,7 @@ export default function ImpalaPage() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
-              <div className="md:w-[calc(50%-1.5rem)]">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Shot Placement</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   Proper shot placement is critical. The Impala's vitals are positioned slightly lower and more forward than in North American deer.
@@ -628,7 +628,7 @@ export default function ImpalaPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+            <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-12 items-stretch mb-16 reveal">
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Trophy Characteristics</h3>
                 <p className="type-lead mb-6">
@@ -679,7 +679,7 @@ export default function ImpalaPage() {
 
             <div className="bg-gradient-to-br from-gold-500/10 to-gold-500/5 border border-gold-500/20 p-8 md:p-12 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-8">Scoring Systems</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-onyx mb-4">Rowland Ward (RW)</h4>
                   <p className="text-gray-600 text-sm leading-relaxed mb-2">
@@ -716,8 +716,8 @@ export default function ImpalaPage() {
               </p>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Meat Characteristics</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Impala meat is deep red, fine-grained, and extremely lean. It has a mild, sweet flavor that is less gamey than some other antelope species. The meat is tender and versatile, suitable for a wide variety of cooking methods.
@@ -729,7 +729,7 @@ export default function ImpalaPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/impala-venison.png"
                   alt="Impala venison, lean game meat"
@@ -742,7 +742,7 @@ export default function ImpalaPage() {
 
             <div className="bg-onyx-light border border-white/10 p-8 md:p-12 mb-16 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-8">Primary Cuts and Usage</h3>
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-6">
                 <div className="bg-onyx p-6">
                   <h4 className="font-serif text-xl text-gold-400 mb-3">Fillet (Tenderloin)</h4>
                   <p className="text-gray-300 text-sm leading-relaxed">

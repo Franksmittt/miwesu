@@ -72,8 +72,8 @@ export default function RedHartebeestPage() {
         {/* Introduction Section */}
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <span className="type-eyebrow mb-6 block">
                   Introduction
                 </span>
@@ -90,7 +90,7 @@ export default function RedHartebeestPage() {
                   In the Makoppa district, Red Hartebeest thrive in the open plains and grasslands where they can take advantage of their speed and endurance. Their adaptability and high reproductive rate make them an important species for sustainable utilization.
                 </p>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden">
                 <Image
                   src="/images/2red-hartebeest-bull-standing-01.png"
                   alt="Red Hartebeest bull in open plains"
@@ -114,8 +114,8 @@ export default function RedHartebeestPage() {
               </h2>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-4">Taxonomic Classification</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   The Red Hartebeest belongs to the family Bovidae, subfamily Alcelaphinae, and the genus <em className="text-gold-400">Alcelaphus</em>. The specific name <em className="text-gold-400">buselaphus caama</em> refers to the subspecies found in southern Africa, distinguished by its reddish coloration.
@@ -130,7 +130,7 @@ export default function RedHartebeestPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden">
                 <Image
                   src="/images/3red-hartebeest-cow-bushveld-01.png"
                   alt="Red Hartebeest cow in grassland"
@@ -142,7 +142,7 @@ export default function RedHartebeestPage() {
 
             <div className="bg-gradient-to-br from-onyx-light to-onyx p-8 md:p-12 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Historical Distribution & Conservation Status</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Range and Habitat</h4>
                   <p className="text-gray-300 leading-loose mb-4">
@@ -226,8 +226,8 @@ export default function RedHartebeestPage() {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden">
                 <Image
                   src="/images/1red-hartebeest-bull-portrait-01.png"
                   alt="Red Hartebeest coat coloration"
@@ -235,7 +235,7 @@ export default function RedHartebeestPage() {
                   className="object-cover shadow-luxury"
                 />
               </div>
-              <div className="md:w-[calc(50%-1.5rem)]">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Coat Coloration and Markings</h3>
                 <p className="type-lead mb-4">
                   The Red Hartebeest's coat is a rich reddish-brown color, giving it its name. The coloration can vary from light tan to deep reddish-brown, with darker markings on the face, legs, and tail. The underbelly is typically lighter in color.
@@ -253,8 +253,8 @@ export default function RedHartebeestPage() {
             </div>
 
             {/* Horn Configuration */}
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
                 <p className="type-lead mb-4">
                   Both bulls and cows carry horns, though bulls' horns are typically longer and more massive. The horns grow upward and backward in a distinctive lyre shape, creating a unique appearance. They are ridged and black-tipped.
@@ -269,7 +269,7 @@ export default function RedHartebeestPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden">
                 <Image
                 src="/images/1red-hartebeest-bull-portrait-01.png"
                 alt="Red Hartebeest horn configuration"
@@ -282,7 +282,7 @@ export default function RedHartebeestPage() {
             {/* Physical Adaptations */}
             <div className="bg-onyx text-white p-8 md:p-12 mb-16 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Physical Adaptations for Speed and Endurance</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Body Shape</h4>
                   <p className="text-gray-300 leading-loose mb-4">
@@ -342,8 +342,8 @@ export default function RedHartebeestPage() {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden">
                 <Image
                   src="/images/3red-hartebeest-cow-bushveld-01.png"
                   alt="Red Hartebeest herd in grassland"
@@ -351,7 +351,7 @@ export default function RedHartebeestPage() {
                   className="object-cover"
                 />
               </div>
-              <div className="md:w-[calc(50%-1.5rem)]">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Feeding Behavior</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Red Hartebeest are bulk grazers, feeding primarily on grasses. They prefer fresh, green growth when available and will move to areas with recent rain or new growth. Their grazing helps maintain grassland health by preventing grass from becoming too tall and unpalatable.
@@ -386,8 +386,8 @@ export default function RedHartebeestPage() {
             </div>
 
             {/* Hunting Strategies */}
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Hunting Strategies</h3>
                 <div className="space-y-6">
                   <div className="bg-white border border-gray-200 shadow-sm p-6">
@@ -415,7 +415,7 @@ export default function RedHartebeestPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden">
                 <Image
                   src="/images/2red-hartebeest-bull-standing-01.png"
                   alt="Red Hartebeest in habitat for spot and stalk"
@@ -478,8 +478,8 @@ export default function RedHartebeestPage() {
             </div>
 
             {/* Shot Placement */}
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden overflow-hidden rounded-sm">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden overflow-hidden rounded-sm">
                 <Image
                   src="/images/redhardt_Shotplacement.png"
                   alt="Red Hartebeest shot placement diagram: broadside, quartering away, and frontal aim points"
@@ -488,7 +488,7 @@ export default function RedHartebeestPage() {
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
-              <div className="md:w-[calc(50%-1.5rem)]">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Shot Placement</h3>
                 <p className="type-lead mb-6">
                   Proper shot placement is essential for clean kills. Red Hartebeest are large, tough animals, so accurate shot placement is critical. The animal's speed and alertness make shot placement even more important.
@@ -533,8 +533,8 @@ export default function RedHartebeestPage() {
               </p>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="flex flex-col md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="flex min-w-0 flex-col md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Field Judging Guide</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
                   When evaluating a Red Hartebeest trophy, look for long, graceful horns with good curvature. The horns should be thick at the base and maintain good mass throughout. The distinctive lyre shape is most desirable.
@@ -557,7 +557,7 @@ export default function RedHartebeestPage() {
                   </div>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden">
                 <Image
                   src="/images/1red-hartebeest-bull-portrait-01.png"
                   alt="Trophy Red Hartebeest bull"
@@ -569,7 +569,7 @@ export default function RedHartebeestPage() {
 
             <div className="bg-gradient-to-br from-onyx-light to-onyx p-8 md:p-12 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-8">Scoring Systems</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Rowland Ward (RW)</h4>
                   <p className="text-gray-300 leading-loose mb-2">
@@ -606,8 +606,8 @@ export default function RedHartebeestPage() {
               </p>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Meat Characteristics</h3>
                 <p className="type-lead mb-4">
                   Red Hartebeest venison is lean, dark red, and flavorful. The meat has a rich, gamey flavor that is often compared to beef but with a distinctive wild game character. It is highly regarded and versatile in the kitchen.
@@ -619,7 +619,7 @@ export default function RedHartebeestPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/Gemini_Generated_Image_aclqtfaclqtfaclq.png"
                   alt="Red Hartebeest venison: lean, dark red meat"

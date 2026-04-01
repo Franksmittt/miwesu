@@ -72,7 +72,7 @@ export default function GreaterKuduPage() {
         {/* Introduction Section */}
         <section className="py-20 md:py-32 bg-marble">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 gap-12 items-stretch mb-16 reveal">
+            <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-12 items-stretch mb-16 reveal">
               <div className="flex flex-col">
                 <span className="type-eyebrow mb-6 block">
                   Introduction
@@ -115,7 +115,7 @@ export default function GreaterKuduPage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
+            <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-12 mb-16 items-stretch reveal">
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-4">Taxonomic Classification</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-6">
@@ -144,7 +144,7 @@ export default function GreaterKuduPage() {
 
             <div className="bg-gradient-to-br from-onyx-light to-onyx p-8 md:p-12 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Historical Distribution & Conservation Status</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Range and Habitat</h4>
                   <p className="text-gray-300 leading-loose mb-4">
@@ -228,7 +228,7 @@ export default function GreaterKuduPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
+            <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-12 mb-16 items-stretch reveal">
               <div className="relative h-full min-h-[400px]">
                 <Image
                   src="/images/kudu-bull-portrait-02.png"
@@ -256,7 +256,7 @@ export default function GreaterKuduPage() {
             </div>
 
             {/* Horn Configuration */}
-            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
+            <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-12 mb-16 items-stretch reveal">
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Horn Configuration</h3>
                 <p className="type-lead mb-4">
@@ -286,7 +286,7 @@ export default function GreaterKuduPage() {
             {/* Physical Adaptations */}
             <div className="bg-onyx text-white p-8 md:p-12 mb-16 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Physical Adaptations for Thicket Living</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Body Shape</h4>
                   <p className="text-gray-300 leading-loose mb-4">
@@ -346,7 +346,7 @@ export default function GreaterKuduPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
+            <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-12 mb-16 items-stretch reveal">
               <div className="relative h-full min-h-[400px]">
                 <Image
                   src="/images/kudu-bull-shade-01.png"
@@ -375,7 +375,7 @@ export default function GreaterKuduPage() {
 
             <div className="bg-gradient-to-br from-onyx-light to-onyx p-8 md:p-12 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">The Rut and Reproductive Cycle</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-gold-400 mb-4">Breeding Season</h4>
                   <p className="text-gray-300 leading-loose mb-4">
@@ -411,7 +411,7 @@ export default function GreaterKuduPage() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
+            <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-12 mb-16 items-stretch reveal">
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Browsing Preferences</h3>
                 <p className="type-lead mb-4">
@@ -435,7 +435,7 @@ export default function GreaterKuduPage() {
               </div>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
+            <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-12 mb-16 items-stretch reveal">
               <div className="relative h-full min-h-[400px]">
                 <Image
                   src="/images/kudu-bull-portrait-01.png"
@@ -480,7 +480,7 @@ export default function GreaterKuduPage() {
             </div>
 
             {/* Hunting Strategies */}
-            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
+            <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-12 mb-16 items-stretch reveal">
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Hunting Strategies</h3>
                 <div className="space-y-6">
@@ -573,7 +573,7 @@ export default function GreaterKuduPage() {
             </div>
 
             {/* Shot Placement */}
-            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
+            <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-12 mb-16 items-stretch reveal">
               <div className="relative h-full min-h-[500px] overflow-hidden rounded-sm">
                 <Image
                   src="/images/greater-kudu-shot-placement.png"
@@ -628,7 +628,7 @@ export default function GreaterKuduPage() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12 mb-16 items-stretch reveal">
+            <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-12 mb-16 items-stretch reveal">
               <div className="flex flex-col">
                 <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-6">Trophy Characteristics</h3>
                 <p className="type-lead mb-6">
@@ -679,7 +679,7 @@ export default function GreaterKuduPage() {
 
             <div className="bg-gradient-to-br from-gold-500/10 to-gold-500/5 border border-gold-500/20 p-8 md:p-12 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-onyx mb-8">Scoring Systems</h3>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-8">
                 <div>
                   <h4 className="font-serif text-xl text-onyx mb-4">Rowland Ward (RW)</h4>
                   <p className="text-gray-600 text-sm leading-relaxed mb-2">
@@ -716,8 +716,8 @@ export default function GreaterKuduPage() {
               </p>
             </div>
 
-            <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-16 reveal">
-              <div className="md:w-[calc(50%-1.5rem)]">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-16 reveal">
+              <div className="min-w-0 md:flex-1 md:basis-0">
                 <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">Meat Characteristics</h3>
                 <p className="text-gray-300 text-lg leading-loose mb-4">
                   Kudu meat is deep red, fine-grained, and extremely lean. It has a rich, gamey flavor that is more pronounced than that of grazers like Impala or Blesbok, reflecting the animal's browsing diet.
@@ -729,7 +729,7 @@ export default function GreaterKuduPage() {
                   </p>
                 </div>
               </div>
-              <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden rounded-sm">
+              <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden rounded-sm">
                 <Image
                   src="/images/greater-kudu-venison.png"
                   alt="Kudu venison, lean game meat"
@@ -742,7 +742,7 @@ export default function GreaterKuduPage() {
 
             <div className="bg-onyx-light border border-white/10 p-8 md:p-12 mb-16 reveal">
               <h3 className="font-serif text-2xl md:text-3xl text-white mb-8">Primary Cuts and Usage</h3>
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-6">
                 <div className="bg-onyx p-6">
                   <h4 className="font-serif text-xl text-gold-400 mb-3">Fillet (Tenderloin)</h4>
                   <p className="text-gray-300 text-sm leading-relaxed">

@@ -290,8 +290,8 @@ export default function WildlifeIndexPage() {
             <div className="space-y-20 mt-20">
               {/* Greater Kudu - Featured */}
               <div className="reveal">
-                <div className="flex flex-col md:flex-row md:items-stretch gap-8 md:gap-12 mb-8 sm:mb-12">
-                  <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
+                <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-8 md:gap-12 mb-8 sm:mb-12">
+                  <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden">
                     <Image
                       src="/images/kudu-bull-standing-01.png"
                       alt="Greater Kudu bull - The Grey Ghost"
@@ -300,7 +300,7 @@ export default function WildlifeIndexPage() {
                       className="object-cover object-center shadow-luxury"
                     />
                   </div>
-                  <div className="md:w-[calc(50%-1.5rem)]">
+                  <div className="min-w-0 md:flex-1 md:basis-0">
                     <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-3 sm:mb-4 block">
                       The Grey Ghost
                     </span>
@@ -371,8 +371,8 @@ export default function WildlifeIndexPage() {
               </div>
 
               {/* Additional Species */}
-              <div className="flex flex-col md:flex-row md:items-stretch gap-12 mb-20 reveal delay-200">
-                <div className="md:w-[calc(50%-1.5rem)]">
+              <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-12 mb-20 reveal delay-200">
+                <div className="min-w-0 md:flex-1 md:basis-0">
                   <h3 className="font-serif text-3xl text-white mb-6">Specialist Species</h3>
                   <div className="space-y-6">
                     <div className="border-l-2 border-gold-500 pl-6">
@@ -413,7 +413,7 @@ export default function WildlifeIndexPage() {
                     </div>
                   </div>
                 </div>
-                <div className="relative min-h-[280px] md:min-h-0 md:w-[calc(50%-1.5rem)] overflow-hidden">
+                <div className="relative min-h-[280px] md:min-h-0 min-w-0 md:flex-1 md:basis-0 overflow-hidden">
                   <Image
                     src="/images/1warthog-boar-portrait-01.png"
                     alt="Warthog at waterhole"
@@ -427,7 +427,7 @@ export default function WildlifeIndexPage() {
               {/* Predators Section */}
               <div className="bg-gradient-to-br from-onyx to-onyx/90 p-12 md:p-16 mb-20 reveal delay-300">
                 <div className="max-w-6xl mx-auto">
-                  <div className="grid md:grid-cols-2 gap-12 items-center">
+                  <div className="grid md:grid-cols-2 [&>*]:min-w-0 gap-12 items-center">
                     <div>
                       <span className="text-gold-500 text-xs tracking-[0.3em] uppercase font-bold mb-4 block">
                         The Silent Watchers
@@ -465,7 +465,7 @@ export default function WildlifeIndexPage() {
         {/* Ecological Management Section */}
         <section className="py-32 bg-marble-dark">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col md:flex-row md:items-stretch gap-16 mb-20 reveal">
+            <div className="flex flex-col md:flex-row md:items-stretch [&>*]:min-w-0 gap-16 mb-20 reveal">
               <div className="md:w-[calc(50%-2rem)]">
                 <span className="type-eyebrow mb-6 block">
                   Sustainable Management

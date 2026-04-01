@@ -18,7 +18,7 @@ export function HomeConservationHarvest() {
               The conservation harvest
             </h2>
             <p className="type-lead-dark mt-6">
-              Fourteen plains-game species are available for ethical rifle and bow hunting, trophy and biltong. The
+              14+ plains-game species are available for ethical rifle and bow hunting, trophy and biltong. The
               experience is governed by our Guardian&apos;s Pledge: fair chase, silence, and respect for the land and
               the animal.
             </p>
@@ -30,7 +30,7 @@ export function HomeConservationHarvest() {
                 href="/wildlife"
                 className="inline-flex min-h-11 items-center justify-center border border-gold-500/60 px-6 py-3 font-sans text-xs uppercase tracking-[0.2em] text-gold-400 transition-colors hover:bg-gold-500/10"
               >
-                14 species, profiles
+                14+ species, profiles
               </Link>
               <Link
                 href="/conservation"

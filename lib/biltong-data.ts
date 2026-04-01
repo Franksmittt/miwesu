@@ -13,7 +13,7 @@ export type BiltongSpeciesOption = {
   carcassKgMax: number
 }
 
-/** All 14 MIWESU species in canonical slug order (matches SPECIES_SLUGS). */
+/** All 14+ MIWESU species in canonical slug order (matches SPECIES_SLUGS). */
 export const biltongSpecies: BiltongSpeciesOption[] = SPECIES_SLUGS.map((slug) => {
   const range = SPECIES_CARCASS[slug] ?? { carcassKgMin: 40, carcassKgMax: 80 }
   const rec = SPECIES_BY_SLUG[slug]

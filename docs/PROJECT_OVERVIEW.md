@@ -56,7 +56,7 @@ Additional themes: birding, 4x4 trails. **Page:** `/activities`; imagery from `l
 
 ## 3. Wildlife / Species
 
-**14 species**, each with a dedicated page and an entry in the **Compare** tool (`lib/species-comparison-data.ts`, `lib/species-data.ts`).
+**14+ species**, each with a dedicated page and an entry in the **Compare** tool (`lib/species-comparison-data.ts`, `lib/species-data.ts`).
 
 | Species | Slug | Notes |
 |---------|------|--------|
@@ -201,7 +201,7 @@ Private backend for lodge owners: receive booking enquiries, view them in one pl
 - **Unit** — name, maxGuests, description, basePricePerNight.  
 - **Booking** — guest details, dates, unitId, totalGuests, status (PENDING, QUOTED, CONFIRMED, CANCELLED), totalPrice, internalNotes; relation to Unit, EmailLog, Quote.  
 - **EmailLog** — bookingId, subject, body, sentAt, direction.  
-- **RateItem** — category (ACCOMMODATION, SPECIES, ACTIVITY, EXTRA), name, description, priceZAR, priceUSD, isAvailable, sortOrder. Seed has mock prices for accommodation, 14 species, activities, extra.  
+- **RateItem** — category (ACCOMMODATION, SPECIES, ACTIVITY, EXTRA), name, description, priceZAR, priceUSD, isAvailable, sortOrder. Seed has mock prices for accommodation, 14+ species, activities, extra.  
 - **Quote / QuoteItem** — linked to Booking; items from RateItem.  
 - **SystemSettings** — e.g. exchangeRateZarUsd.  
 

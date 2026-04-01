@@ -12,15 +12,15 @@ const breadcrumbItems = [
 
 export const metadata: Metadata = {
   title: 'Biltong Yield Calculator | 38% SA dry yield', description:
-    'Interactive wet carcass to dry biltong calculator for all 14 MIWESU species. Uses the standard 38% South African processing conversion. Hardware Noir tool for hunters.', keywords: ['biltong calculator', '38% yield', 'game meat yield', 'wet carcass', 'South Africa', 'MIWESU'], openGraph: generateOpenGraph(
-    'Biltong Yield Calculator | MIWESU', '14 species · wet kg in → dry biltong kg out · 38% SA standard.', constructCanonicalUrl(path), ogImage
+    'Interactive wet carcass to dry biltong calculator for all 14+ MIWESU species. Uses the standard 38% South African processing conversion. Hardware Noir tool for hunters.', keywords: ['biltong calculator', '38% yield', 'game meat yield', 'wet carcass', 'South Africa', 'MIWESU'], openGraph: generateOpenGraph(
+    'Biltong Yield Calculator | MIWESU', '14+ species · wet kg in → dry biltong kg out · 38% SA standard.', constructCanonicalUrl(path), ogImage
   ), twitter: generateTwitterCard(
     'Biltong Yield Calculator | MIWESU', 'Estimate dry biltong from wet carcass, 38% conversion.', ogImage
   ), alternates: { canonical: constructCanonicalUrl(path) },
 }
 
 const webPage = generateWebPageSchema({
-  name: 'Biltong yield calculator | MIWESU 14 species', description:
+  name: 'Biltong yield calculator | MIWESU 14+ species', description:
     'Wet carcass to dry biltong estimator using the 38% South African industry standard. All managed MIWESU species.', url: constructCanonicalUrl(path),
 })
 

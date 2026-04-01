@@ -41,7 +41,7 @@ export default function EsPage() {
               Caza en <span className="text-gradient-gold">Limpopo</span>
             </h1>
             <p className="text-white/80 text-base sm:text-lg max-w-2xl mx-auto mb-10">
-              Residencias privadas de lujo y caza de trofeos en el distrito de Makoppa, Thabazimbi. Waterberg, Arid Sweet Bushveld. 14 especies -kudú, impala, búfalo y más.
+              Residencias privadas de lujo y caza de trofeos en el distrito de Makoppa, Thabazimbi. Waterberg, Arid Sweet Bushveld. 14+ especies -kudú, impala, búfalo y más.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -70,7 +70,7 @@ export default function EsPage() {
               MIWESU GAME FARM está en el <strong>distrito de Makoppa</strong>, cerca de Thabazimbi, en
               el <strong>Waterberg</strong> de Limpopo, <strong>zona libre de malaria</strong>. Combinamos
               residencias de lujo de uso exclusivo, <strong>Arid Sweet Bushveld</strong> y una cartera de{' '}
-              <strong>14 especies</strong> de caza mayor, desde kudú y búfalo hasta impala, ñu y eland.
+              <strong>14+ especies</strong> de caza mayor, desde kudú y búfalo hasta impala, ñu y eland.
             </p>
             <p>
               Encuentre guías en inglés sobre{' '}

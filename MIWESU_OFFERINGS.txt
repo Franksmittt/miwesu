@@ -179,7 +179,7 @@ PRACTICAL SERVICES & PRODUCTS
 
   Tools (free utilities for hunters)
     • SAPS 520 temporary firearm import PDF helper (/tools/saps-520)
-    • Biltong yield calculator — 14 species (/tools/biltong-calculator)
+    • Biltong yield calculator — 14+ species (/tools/biltong-calculator)
 
 ================================================================================
 CONTENT & EDUCATION

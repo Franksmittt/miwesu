@@ -14,7 +14,7 @@ const breadcrumbItems = [
 export const metadata: Metadata = {
   title: 'Tools & Resources | SAPS 520, Biltong Calculator',
   description:
-    'SAPS 520 firearm permit generator and Biltong Yield Calculator for 14 species. Free planning tools for international hunters at MIWESU.',
+    'SAPS 520 firearm permit generator and Biltong Yield Calculator for 14+ species. Free planning tools for international hunters at MIWESU.',
   keywords: [
     'SAPS 520',
     'firearm permit South Africa',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 const toolsWebPage = generateWebPageSchema({
   name: 'Tools & resources | MIWESU hunter utilities',
   description:
-    'SAPS 520 PDF helper and biltong yield calculator for 14 species. Free tools for international hunters.',
+    'SAPS 520 PDF helper and biltong yield calculator for 14+ species. Free tools for international hunters.',
   url: constructCanonicalUrl(path),
 })
 

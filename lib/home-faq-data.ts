@@ -27,7 +27,7 @@ export const HOME_PAGE_FAQ_ITEMS: HomeFaqItem[] = [
   {
     question: 'What plains game species are available?',
     answer:
-      'MIWESU manages fourteen plains-game species for ethical rifle and bow hunting under quota and the Guardian’s Pledge. See the wildlife hub and individual species pages for profiles, or use the compare tool.',
+      'MIWESU manages 14+ plains-game species for ethical rifle and bow hunting under quota and the Guardian’s Pledge. See the wildlife hub and individual species pages for profiles, or use the compare tool.',
   },
   {
     question: 'How do I get to the farm from Johannesburg?',

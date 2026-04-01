@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const nav = [
   { href: '/residences', label: 'Residences' },
-  { href: '/wildlife', label: 'Hunting (14 species)' },
+  { href: '/wildlife', label: 'Hunting (14+ species)' },
   { href: '/activities', label: 'Activities' },
   { href: '/wood', label: 'Firewood' },
   { href: '/contact', label: 'Contact' },

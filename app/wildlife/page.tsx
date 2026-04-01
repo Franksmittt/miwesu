@@ -12,7 +12,7 @@ const breadcrumbItems = [
 const wildlifeWebPage = generateWebPageSchema({
   name: 'Wildlife & species | MIWESU plains game portfolio',
   description:
-    'Fourteen managed species for ethical conservation harvest in the Makoppa Dome, Arid Sweet Bushveld, Thabazimbi, Limpopo.',
+    '14+ managed species for ethical conservation harvest in the Makoppa Dome, Arid Sweet Bushveld, Thabazimbi, Limpopo.',
   url: constructCanonicalUrl('wildlife'),
 })
 

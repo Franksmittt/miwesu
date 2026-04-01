@@ -9,7 +9,7 @@ import { heroImages } from '@/lib/hero-images'
 import { lodgeSummary, mainLodgeHouse, secondHouse } from '@/lib/residences-data'
 import { ResidenceFlagshipCard } from '@/components/residences/ResidenceFlagshipCard'
 
-/** Species card images (same as wildlife page) for the 14 Species sliding bento */
+/** Species card images (same as wildlife page) for the 14+ Species sliding bento */
 const SPECIES_CARD_IMAGES = [
   '/images/greater-kudu_card.png',
   '/images/blue-wildebeest_card.png',
@@ -178,7 +178,7 @@ export default function ResidencesPageClient() {
               />
               <div className="relative z-10 [text-shadow:0_1px_4px_rgba(0,0,0,0.8),0_2px_12px_rgba(0,0,0,0.6)]">
                 <h3 className="font-serif text-2xl md:text-3xl text-gold-400 mb-2 font-normal tracking-tight">
-                  14 Species
+                  14+ Species
                 </h3>
                 <p className="font-sans text-white/95 text-base md:text-lg font-light leading-relaxed">
                   Encounter unmatched biodiversity. From majestic herds to elusive quarry, the sanctuary is alive right

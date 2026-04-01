@@ -13,7 +13,7 @@ For a full project overview (lodge features & benefits, wildlife, accommodation 
 It covers:
 
 - Lodge / farm features and benefits (location, accommodation summary, on-site facilities, activities, conservation).
-- All 14 wildlife species (Greater Kudu, Blue Wildebeest, Impala, Gemsbok, Warthog, Blesbok, Bushbuck, Cape Buffalo, Dapple Impala, Golden Wildebeest, Springbok, Red Hartebeest, Lechwe, Livingstone Eland).
+- 14+ wildlife species (Greater Kudu, Blue Wildebeest, Impala, Gemsbok, Warthog, Blesbok, Bushbuck, Cape Buffalo, Dapple Impala, Golden Wildebeest, Springbok, Red Hartebeest, Lechwe, Livingstone Eland).
 - Accommodation and facilities (Homestead 16 sleepers, Stone Villa 6 sleepers; facilities data model and gallery).
 - Layout and styling (design system, colours, fonts, hero images, navigation, responsiveness).
 - Every page and a short summary of each (Home, About, Residences, Book, Activities, Wildlife, Compare, Conservation, Gallery, Rates, Contact, FAQ, species pages, blog, etc.).

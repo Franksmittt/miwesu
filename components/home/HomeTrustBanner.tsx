@@ -33,7 +33,7 @@ export function HomeTrustBanner() {
               A working farm, not a stage set, bushveld you can hear when you stop talking.
             </h2>
             <p className="mt-6 max-w-2xl text-pretty text-base leading-relaxed text-gray-300 sm:text-lg sm:leading-relaxed">
-              MIWESU is built for guests who want depth over noise: exclusive-use residences, fourteen plains-game
+              MIWESU is built for guests who want depth over noise: exclusive-use residences, 14+ plains-game
               species under quota, and the same discipline we bring to cold rooms, firewood, and the land itself.
             </p>
 
@@ -54,7 +54,7 @@ export function HomeTrustBanner() {
                 href="/wildlife"
                 className="flex min-h-12 w-full items-center justify-center px-4 py-3 text-center font-sans text-sm font-medium text-gray-300 underline decoration-gold-500/40 underline-offset-[6px] transition-colors hover:text-white hover:decoration-gold-400"
               >
-                Fourteen species, profiles
+                14+ species, profiles
               </Link>
             </div>
           </div>

@@ -10,7 +10,7 @@ const breadcrumbItems = [
 
 export const metadata: Metadata = {
   title: 'Jagd in Limpopo | MIWESU GAME FARM', description:
-    'Luxus-Jagd und Privatresidenzen in Limpopo, Südafrika: malariafreier Waterberg, Makoppa bei Thabazimbi. 14 Arten, ethische Erhaltungsjagd, Hunter\'s House und Rooibok Kraal. D1432, internationale Gäste willkommen.', keywords: ['Jagd Limpopo', 'Südafrika Jagd', 'Trophäenjagd', 'Waterberg', 'Malaria-frei', 'MIWESU GAME FARM'], openGraph: generateOpenGraph(
+    'Luxus-Jagd und Privatresidenzen in Limpopo, Südafrika: malariafreier Waterberg, Makoppa bei Thabazimbi. 14+ Arten, ethische Erhaltungsjagd, Hunter\'s House und Rooibok Kraal. D1432, internationale Gäste willkommen.', keywords: ['Jagd Limpopo', 'Südafrika Jagd', 'Trophäenjagd', 'Waterberg', 'Malaria-frei', 'MIWESU GAME FARM'], openGraph: generateOpenGraph(
     'Jagd in Limpopo | MIWESU GAME FARM', 'Luxus-Jagdlodge in Limpopo. Trophäenjagd, Malaria-frei. Makoppa, Thabazimbi.', constructCanonicalUrl('de'), ogImage
   ), twitter: generateTwitterCard(
     'Jagd in Limpopo | MIWESU GAME FARM', 'Luxus-Jagdlodge in Limpopo. Trophäenjagd, Malaria-frei. Makoppa, Thabazimbi.', ogImage

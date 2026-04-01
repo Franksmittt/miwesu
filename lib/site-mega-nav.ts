@@ -33,7 +33,7 @@ export const MEGA_NAV_CATEGORIES: MegaNavCategory[] = [
     id: 'hunt', label: 'The Hunt', href: '/wildlife', imageSrc: '/images/_filename_Panoramicjpg_style_P_Nano_Banana_Pro_26379.jpg', imageAlt: 'Plains game and conservation harvest at MIWESU', columns: [
       {
         heading: 'Portfolio', links: [
-          { label: 'Fourteen species hub', href: '/wildlife' }, { label: 'Compare species', href: '/compare' }, ], }, {
+          { label: '14+ Species hub', href: '/wildlife' }, { label: 'Compare species', href: '/compare' }, ], }, {
         heading: 'Ethics', links: [
           { label: 'Conservation & Guardian’s Pledge', href: '/conservation' }, { label: 'Trophy export & logistics', href: '/trophy-export' }, ], }, ], }, {
     id: 'experience', label: 'The Experience', href: '/activities', imageSrc: '/images/_filename_Thabazimbi_N_198jpeg_Nano_Banana_Pro_00728.jpg', imageAlt: 'Bushveld activities and lodge life at MIWESU', columns: [

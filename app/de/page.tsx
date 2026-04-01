@@ -41,7 +41,7 @@ export default function DePage() {
               Jagd in <span className="text-gradient-gold">Limpopo</span>
             </h1>
             <p className="text-white/80 text-base sm:text-lg max-w-2xl mx-auto mb-10">
-              Luxus-Privatresidenzen und Trophäenjagd im Makoppa-Bezirk, Thabazimbi. Waterberg, Arid Sweet Bushveld. 14 Arten -Kudu, Impala, Büffel und mehr.
+              Luxus-Privatresidenzen und Trophäenjagd im Makoppa-Bezirk, Thabazimbi. Waterberg, Arid Sweet Bushveld. 14+ Arten -Kudu, Impala, Büffel und mehr.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -70,7 +70,7 @@ export default function DePage() {
               MIWESU GAME FARM liegt im <strong>Makoppa-Bezirk</strong> bei Thabazimbi, im malariafreien{' '}
               <strong>Waterberg</strong> (Limpopo). Hier treffen Arid Sweet Bushveld, exklusive
               Privatresidenzen und eine verwaltete Population von{' '}
-              <strong>14 Huftierarten</strong> zusammen, von Großer Kudu und Kapbüffel bis Impala, Springbock und Lechwe.
+              <strong>14+ Huftierarten</strong> zusammen, von Großer Kudu und Kapbüffel bis Impala, Springbock und Lechwe.
             </p>
             <p>
               Internationale Jäger profitieren von klarer Kommunikation zu{' '}

@@ -89,7 +89,7 @@ CTAs
   py-16–24; max-w-7xl inner.
 - Eyebrow: “Below the skyline”
 - H2 + lead (readable body, ~base/lg): working farm / not a stage set; MIWESU
-  positioning (exclusive-use, fourteen species, discipline).
+  positioning (exclusive-use, 14+ species, discipline).
 - CTAs: “Plan your stay” → /book (gold fill); underlined text links → /conservation,
   /wildlife.
 - Three pillar cards (title serif lg, body sm+): Private Waterberg land; Enquiry-first
@@ -109,7 +109,7 @@ CTAs
 ------------------------------------------------------------------------------
 - bg-onyx, white text; “Hunting & conservation” / “The conservation harvest”;
   Guardian’s Pledge copy; cold room / slaughter room; buttons → /wildlife,
-  /conservation; “Plains game on quota” + 14 species names (lib/species-data order).
+  /conservation; “Plains game on quota” + 14+ species names (lib/species-data order).
 
 ------------------------------------------------------------------------------
 4.5 — HomeBushveldLeisure
@@ -162,13 +162,13 @@ FAQ items (full text also in JSON-LD — lib/home-faq-data.ts)
 4. How do I book an exclusive-use stay?
    → Enquiry-first, no public checkout; book or contact flow.
 5. What plains game species are available?
-   → Fourteen species, rifle/bow, quota, Guardian’s Pledge; wildlife hub / compare.
+   → 14+ species, rifle/bow, quota, Guardian’s Pledge; wildlife hub / compare.
 
 ================================================================================
 5. FOOTER (SiteMarketingFooter)
 ================================================================================
 - onyx, border-t white/10; MIWESU + Iron Eden · Makoppa; grey blurb; Explore
-  links (Residences, Hunting (14 species), Activities, Firewood, Contact);
+  links (Residences, Hunting (14+ species), Activities, Firewood, Contact);
   address D1432; info@miwesu.co.za; +27 73 030 9679; WhatsApp.
 - © [year] MIWESU Game Farm.
 

@@ -32,7 +32,7 @@ export function BiltongYieldCalculator() {
         </div>
 
         <label className="mt-8 block" htmlFor="biltong-species">
-          <span className="type-overline text-gray-500">Species (14 MIWESU plains-game)</span>
+          <span className="type-overline text-gray-500">Species (14+ MIWESU plains-game)</span>
           <select
             id="biltong-species"
             value={speciesSlug}

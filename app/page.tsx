@@ -25,7 +25,7 @@ export default function HomePage() {
           This website is no longer available
         </h1>
         <p className="mt-8 font-sans text-base leading-8 text-white/70">
-          Thank you for visiting. This site has been taken offline.
+          Thank you for visiting.
         </p>
       </section>
     </main>

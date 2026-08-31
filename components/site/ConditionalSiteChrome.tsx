@@ -9,7 +9,7 @@ import { SiteMarketingFooter } from '@/components/site/SiteMarketingFooter'
 
 export function ConditionalSiteChrome({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
-  if (pathname?.startsWith('/admin')) {
+  if (pathname?.startsWith('/admin') || pathname === '/') {
     return <>{children}</>
   }
 

@@ -4,6 +4,14 @@ export const metadata: Metadata = {
   title: 'This website is no longer available',
   description: 'This website is no longer available.',
   robots: { index: false, follow: false, googleBot: { index: false, follow: false } },
+  openGraph: {
+    title: 'This website is no longer available',
+    description: 'This website is no longer available.',
+  },
+  twitter: {
+    title: 'This website is no longer available',
+    description: 'This website is no longer available.',
+  },
 }
 
 export default function HomePage() {
